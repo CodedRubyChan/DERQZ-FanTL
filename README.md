@@ -1,5 +1,9 @@
 # DERQZ-FanTL-o3p
-DERQZ Fan Translation by @o3p (Discord)
+DERQZ Fan Translation by:
+
+**CREDITS:**
+- @o3p (Discord)
+- Luden @levelzeroib (Discord)
 
 # INSTALLING THE PATCH - Emulator
 
