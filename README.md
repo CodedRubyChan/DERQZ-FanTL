@@ -17,6 +17,14 @@ DERQZ Fan Translation by @o3p (Discord)
 
 4. **ENJOY!!!**
 
+# INSTALLING THE PATCH - Modded Switch
+
+1. Follow Step 1 from above
+
+2. Go into the "DERQZ-FanTL-o3p-master" Folder and extract the "romfs" folder to:
+
+"<\Root of your SD Card>/atmosphere/contents/010054B01BE90000"
+
 # HELP WITH THE TRANSLATION
 
 1. Fork the Repo with your Github Account
