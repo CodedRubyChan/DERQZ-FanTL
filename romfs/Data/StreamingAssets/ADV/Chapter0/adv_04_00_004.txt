@@ -1,0 +1,118 @@
+//スクリプト
+// 指定秒数待機する
+[delay sec=0.1]
+
+
+
+//adv_04_00_004
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+// 指定秒数かけてフェードアウト
+//[fade type=out anim=simple sec=0.5]
+
+// ADV用のカメラに切り替え
+[camera type=setup]
+
+// 指定秒数待機する
+//[delay sec=0.5]
+
+// 指定の名前のBGMを再生
+[sound type=bgm state=play name=Chapter1_3]
+
+// 指定の背景を表示
+//[image type=bg id=000140]
+
+// 指定秒数かけてフェードイン
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+
+//BGM02　　／ストレインエリア深層
+//背景無し　／ダンジョンプレイアブルシーン【ストレインエリア深層】
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// テキストウィンドウを表示
+[visible show=true]
+
+[message name=Alice voice=00_004_0010 charaid=600801 icon=true]
+We're moving smoothly.
+Oh...?
+[/message]
+
+//敵キャラの居る部屋
+
+[face id=100101 type=thoughts]
+[message name=Alice voice=00_004_0020 charaid=600801 icon=true]
+That's a Stranger, isn't it?
+Even among those who wander into this space,
+they love to hurt others.
+[/message]
+
+[message name=Alice voice=00_004_0030 charaid=600801 icon=true]
+It's a sight to behold, so let's get rid of it.
+[/message]
+
+[message name=Alice voice=00_004_0040 charaid=600801 icon=true]
+Yeah, even if I say I'll kill you.
+I won't really kill you.
+I'm just going to make you suffer and kick you out, so don't worry♪
+[/message]
+
+[message name=Alice voice=00_004_0050 charaid=600801 icon=true]
+I think I can handle the weapon she's carrying right now. 
+Could you give it a try?
+[/message]
+
+[face id=100101 type=smile]
+[message name=Alice voice=00_004_0060 charaid=600801 icon=true]
+Also, I recommend you retrieve the items that have fallen.
+There might be something that will give you the upper hand in a fight against the "Strangers..."
+[/message]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+
+//##########################################################################//
+//終了
+//##########################################################################//
+:end
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+// 再生中のBGMを停止
+//[sound type=bgm state=stop]
+
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+
+
+// ここでスクリプトを終了します
+[exit]
+//##########################################################################//
+//終了
+//##########################################################################//
+//END
+

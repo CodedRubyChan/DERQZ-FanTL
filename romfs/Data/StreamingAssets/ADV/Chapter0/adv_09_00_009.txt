@@ -1,0 +1,553 @@
+//スクリプト
+// 指定秒数待機する
+[delay sec=0.1]
+
+///////////////////////////再生中のSEをストップ
+[sound type=se state=stop]
+
+//adv_09_00_009
+//##########################################################################//
+//開始
+//##########################################################################//
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+// ADV用のカメラに切り替え
+[camera type=setup]
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////登場するスチルとキャラを先に表示（初回読み込み対策）
+[character id=200101 posx=-2 anim=none face=smile show=true wait=false]
+[character id=100107 posx=-2 anim=none face=default show=true wait=false]
+[character id=601701 posx=-2 anim=none face=default show=true wait=false]
+[character id=100105 posx=-2 anim=none face=default show=true wait=false]
+[delay sec=0.05]
+[character id=200101 anim=none show=false wait=false]
+[character id=100107 anim=none show=false wait=false]
+[character id=601701 anim=none show=false wait=false]
+[character id=100105 anim=none show=false wait=false]
+[delay sec=0.05]
+[character id=200102 posx=-2 anim=none face=default show=true wait=false]
+[character id=100101 posx=-2 anim=none face=default show=true wait=true]
+[delay sec=0.05]
+[character id=200102 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ダンジョンフロアを非表示
+//[dungeon type=all show=false]
+
+
+// 指定の名前のBGMを再生
+[sound type=bgm state=play name=Chapter1_4_5]
+
+// 指定の背景を表示
+[image type=bg id=000420]
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//開始
+//##########################################################################//
+
+//BGM03
+//背景420　／ストレインエリア出口～駅発着
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+//シイナとさや香の立ち絵表示
+[character id=200101 posx=0.32 anim=fade face=smile show=true wait=false]
+[character id=100107 posx=0.66 anim=fade face=surprise show=true wait=true]
+// 指定秒数待機する
+[delay sec=1]
+
+// テキストウィンドウを表示
+[visible show=true]
+//話者名：Shina
+[message name=Shina charaid=200101 voice=00_009_0010]
+Phew! We escaped in one fell swoop...!
+[/message]
+
+
+//話者名：Red Rudens
+[message name=Red Rudens charaid=100107 voice=00_009_0020]
+Amazing?!
+The scenery suddenly changed...!
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+//しいな移動
+[move id=200101 posx=0.19 sec=0.5 wait=false]
+//さや香移動
+[move id=100107 posx=0.49 sec=0.5 wait=false]
+//スナークの立ち絵表示
+[character id=601701 posx=0.8 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+//テキストウィンドウを再表示
+[visible show=true]
+
+//話者名：Intimidating Man
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=00_009_0030]
+—Hmph.
+Alice’s suggestion of drastic measures seems to have worked.
+[/message]
+
+
+[face id=100107 type=panic]
+[message name=Red Rudens charaid=100107 voice=00_009_0040]
+...Another weirdo...
+[/message]
+
+
+[face id=200101 type=default]
+[message name=Shina charaid=200101 voice=00_009_0050]
+Ah, this person is fine...!
+[/message]
+
+
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=00_009_0060]
+I never thought the day would come when I'd be treated like a person.
+[/message]
+
+
+[face id=200101 type=confuse]
+[message name=Shina charaid=200101 voice=00_009_0070]
+Come on... It's fine! Please don't sulk!
+[/message]
+[face id=200101 type=default]
+
+
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=00_009_0080]
+…Don't mess up your clothes.
+[/message]
+
+
+[face id=100107 type=confuse]
+[message name=Red Rudens charaid=100107 voice=00_009_0090]
+...Huh?
+[/message]
+
+
+////////////////////////////////「Dress」SEを再生
+[sound type=se name=Dress]
+
+//さや香の立ち絵変更
+[character id=100107 anim=fade show=false wait=false]
+[character id=100105 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+
+[message name=Red Rudens charaid=100105 voice=00_009_0100]
+H-Huh?
+My clothes...
+[/message]
+
+///////////////////////////再生中のSEをストップ
+[sound type=se state=stop]
+
+
+[face id=200101 type=confuse]
+[message name=Shina charaid=200101 voice=00_009_0110]
+He's really strong.
+You can't make him angry, so just shut up and obey him for now. Okay?!
+[/message]
+
+//さや香表情切り替え
+[face id=100105 type=confuse]
+
+
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=00_009_0120]
+I won't let anyone yell at you for keeping up appearances.
+Now, we're done chatting. Let's head for the city.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1]
+//テキストウィンドウを再表示
+[visible show=true]
+
+
+[face id=601701 type=thoughts]
+[message name=Intimidating Man charaid=601701 voice=00_009_0130]
+Four people, including me...
+[/message]
+
+
+//////////////////////////////////////////////【Choice】//////////////////////////////////////////////
+//１：Well then, let's go together.
+[select]
+[link text=Well then, let's go together. label=together]
+[/select]
+
+
+※１のみ
+//////////////////////////////////////////////【合流】//////////////////////////////////////////////
+:together
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=00_009_0140]
+Come on, get in.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1]
+
+
+/////////////////////////////////////　場面転換　/////////////////////////////////////
+[fade type=out anim=simple sec=1.5]
+
+//裏でさや香、しいな、スナークを非表示
+[character id=200101 anim=none show=false wait=false]
+[character id=100105 anim=none show=false wait=false]
+[character id=601701 anim=none show=false wait=false]
+
+
+///////////////////////////////////////////////////ストレイントレインの一枚絵表示
+[image type=still id=200042 fade=false show=true ]
+//電車走行SE
+[sound type=se name=Train]
+
+
+///////////////////////////////////////////////////カメラズーム開始
+[camera type=zoom pivot=13 fov=0.5 sec=0.1 active=true wait=true]
+// 指定秒数待機する
+[delay sec=0.05]
+//////////////////////////////////////////////////カメラ平行移動
+[camera type=zoom pivot=4 fov=-0.5 sec=10 active=true wait=false]
+
+[fade type=in anim=simple sec=1.0]
+/////////////////////////////////////　場面転換　/////////////////////////////////////
+
+
+[delay sec=3]
+
+
+/////////////////////////////////////　もう一度場面転換　/////////////////////////////////////
+[fade type=out anim=simple sec=1.5]
+///////////////////////////////////////////////////ストレイントレインの一枚絵非表示
+[image type=still id=200042 show=false fade=false]
+// カメラズームを解除
+[camera type=zoom sec=0.1 active=false]
+// 再生中のBGMを停止
+[sound type=bgm state=stop]
+
+
+
+//BGM26　
+//背景430（佐上市交差点）
+[image type=bg id=000430 show=true]
+[sound type=bgm name=TalkD]
+
+[fade type=in anim=simple sec=1]
+/////////////////////////////////////　もう一度場面転換　/////////////////////////////////////
+///////////////////////////再生中のSEをストップ
+[sound type=se state=stop]
+
+[delay sec=0.5]
+
+
+
+[visible show=true]
+//スナークは立ち絵無し
+
+[face id=601701 type=default]
+
+[message name=Intimidating Man charaid=601701 voice=00_009_0150]
+See you later. That's all I have to do.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1]
+
+//私服シイナの立ち絵ON
+//さや香の立ち絵ON
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100105 posx=0.66 anim=fade face=default show=true wait=true]
+
+
+[delay sec=0.5]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+[face id=200102 type=smile]
+[message name=Shina charaid=200102 voice=00_009_0160]
+Okay! We're here this time...!
+[/message]
+
+
+[face id=100105 type=confuse]
+[message name=Red Rudens charaid=100105 voice=00_009_0170]
+H-Huh...?
+[/message]
+
+
+[message name=Shina charaid=200102 voice=00_009_0180]
+Welcome to "Sagami City"!
+[/message]
+
+
+
+[face id=100105 type=surprise]
+[face id=200102 type=default]
+[message name=Red Rudens charaid=100105 voice=00_009_0190]
+Umm... The air is colored, too.
+It smells nice...
+[/message]
+
+
+[face id=100105 type=default]
+[message name=Red Rudens charaid=100105 voice=00_009_0200]
+What's this place...?
+[/message]
+
+
+[face id=100105 type=smile]
+[message name=Red Rudens charaid=100105 voice=00_009_0210]
+It's so warm!
+Strange...
+[/message]
+
+
+[face id=200102 type=smile]
+[message name=Shina charaid=200102 voice=00_009_0220]
+That's right...
+You're going to be a part of this...!
+[/message]
+
+
+[face id=100105 type=surprise]
+[message name=Red Rudens charaid=100105 voice=00_009_0230]
+...Wait, that's weird...
+Why is your hair and outfit different from before?!
+[/message]
+
+
+[face id=200102 type=confuse]
+[message name=Shina charaid=200102 voice=00_009_0240]
+Ahaha! Did you just notice?!
+Well, that's... someday...
+[/message]
+
+
+[face id=200102 type=angry]
+[message name=Shina charaid=200102 voice=00_009_0250]
+...No, let's forget about it!
+[/message]
+
+
+[face id=100105 type=confuse]
+[message name=Red Rudens charaid=100105 voice=00_009_0260]
+Forget about it...!?
+[/message]
+
+
+[face id=200102 type=default]
+[message name=Shina charaid=200102 voice=00_009_0270]
+As long as you live here, it's trivial!
+[/message]
+
+
+[face id=100105 type=confuse]
+[message name=Red Rudens charaid=100105 voice=00_009_0280]
+????
+[/message]
+
+
+[face id=200102 type=default]
+[message name=Shina charaid=200102 voice=00_009_0290]
+Oh yeah, what's your name?
+We're going to live together!
+[/message]
+
+
+[face id=100105 type=thoughts]
+[message name=Red Rudens charaid=100105 voice=00_009_0300]
+We're... going to live together...?
+[/message]
+
+
+[face id=200102 type=sad]
+[message name=Shina charaid=200102 voice=00_009_0310]
+...Huh? You don't like it that much?
+[/message]
+
+
+[face id=100105 type=confuse]
+[message name=Red Rudens charaid=100105 voice=00_009_0320]
+No, it's not that I don't like it...
+But are you sure? I'm not really sure about myself...
+[/message]
+
+
+//////////////////////////////////////////////【Choice】//////////////////////////////////////////////
+//１：Let's go learn from now on.
+//２：Let's get along well with Shina.
+
+[select]
+[link text=Let's go learn from now on. label=name]
+[link text=Let's get along well with Shina. label=nicetomeetyou]
+[/select]
+
+//１の場合
+:name
+[face id=100105 type=thoughts]
+
+[message name=Red Rudens charaid=100105 voice=00_009_0330]
+Th-Then…
+I'd like to know my name first...
+[/message]
+[goto label=director]
+
+//２の場合
+
+:nicetomeetyou
+[face id=100105 type=confuse]
+
+[message name=Red Rudens charaid=100105 voice=00_009_0340]
+ll... If you say so... 
+Umm, it's kind of sad, I don't even know your name, but it'll be nice to meet you...
+[/message]
+[goto label=director]
+
+//////////////////////////////////////////////【合流】//////////////////////////////////////////////
+
+:director
+[face id=200102 type=default]
+
+[message name=Shina charaid=200102 voice=00_009_0350]
+...I see... Then, if I may be so presumptuous... I'll name you as the director.
+[/message]
+
+[face id=200102 type=thoughts]
+[message name=Shina charaid=200102 voice=00_009_0360 lipsync=false]
+... (I wonder what Mizunashi would do at a time like this... I don't know how to name it...)
+[/message]
+
+[face id=200102 type=default]
+[message name=Shina charaid=200102 voice=00_009_0370]
+Mizunashi... Yeah, it's done!
+[/message]
+
+
+[face id=100105 type=confuse]
+[message name=Red Rudens charaid=100105 voice=00_009_0380]
+……?
+[/message]
+
+
+[face id=200102 type=smile]
+[message name=Shina charaid=200102 voice=00_009_0390]
+...Your name is... Sayaka! Sayaka Hiwatari!
+[/message]
+
+
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////しいな・さや香を非表示
+[character id=200102 anim=fade show=false wait=false]
+[character id=100105 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////さや香を表示
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+
+//テキストウィンドウを再表示
+[delay sec=0.1]
+[visible show=true]
+
+
+
+
+[face id=100101 type=surprise]
+[message name=Sayaka charaid=100101 voice=00_009_0400]
+...Saya...ka...
+[/message]
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1]
+
+
+//黒背景、立ち絵無し
+/////////////////////////////////////　場面転換　/////////////////////////////////////
+[fade type=out anim=simple sec=1.5]
+
+//しいな、さや香の立ち絵を非表示
+[character id=200102 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=false]
+[image type=bg id=000380 show=true]
+
+[fade type=in anim=simple sec=1.5]
+/////////////////////////////////////　場面転換　/////////////////////////////////////
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+//心の声
+[message name=Sayaka charaid=100101 voice=00_009_0410]
+...And so, without really understanding, I received a name from Shiina...
+[/message]
+
+
+[message name=Sayaka charaid=100101 voice=00_009_0420]
+Truly, without understanding anything at all, at that moment, I became me and began to live.
+[/message]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+
+//##########################################################################//
+//終了
+//##########################################################################//
+:end
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+// 再生中のBGMを停止
+//[sound type=bgm state=stop]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ダンジョンフロアを表示
+//[dungeon type=all show=true]
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+///////////////////////////再生中のSEをストップ
+[sound type=se state=stop]
+
+// ここでスクリプトを終了します
+[exit]
+//##########################################################################//
+//終了
+//##########################################################################//
+//END
