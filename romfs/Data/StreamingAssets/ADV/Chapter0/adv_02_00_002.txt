@@ -1,0 +1,463 @@
+//スクリプト
+// 指定秒数待機する
+[delay sec=0.1]
+
+
+
+//adv_02_00_002
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+// ADV用のカメラに切り替え
+[camera type=setup]
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////登場するスチルとキャラを先に表示（初回読み込み対策）
+[character id=100105 posx=-2 anim=none face=default show=true wait=false]
+[character id=600801 posx=-2 anim=none face=default show=true wait=true]
+[delay sec=0.05]
+[character id=100105 anim=none show=false wait=false]
+[character id=600801 anim=none show=false wait=true]
+
+// 指定の名前のBGMを再生
+[sound type=bgm state=play name=TalkG]
+
+// 指定の背景を表示
+[image type=bg id=000030]
+
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+
+//BGM29　／プロローグ用
+//背景30　／ストレインエリアロビー
+
+//ゆっくりフェードイン
+
+//話者名も無し
+
+// 指定秒数待機する
+[delay sec=1.5]
+
+// テキストウィンドウを表示
+[visible show=true]
+
+[message]
+―Year ????
+―Month ??
+[/message]
+
+//話者名も無し
+//＠機械音声
+
+[message voice=00_002_0010]
+Connection completed.
+[/message]
+
+//以下はプレイヤーの発言
+//プレイヤーにはボイス無し
+
+//話者名も無し
+
+[message]
+It was a strange space.
+[/message]
+
+//話者名も無し
+
+[message]
+As far as the eye can see, it's composed mainly of "white" and "black",
+lacking in color, but strangely extending endlessly in a strangely mesmerizing way.
+[/message]
+
+//話者名も無し
+
+[message]
+What catches my eye the most are the numerous doors floating mid-air.
+Some of them, like living creatures, open and close on their own accord repeatedly.
+[/message]
+
+//話者名も無し
+
+[message]
+This scene... It feels familiar...
+[/message]
+
+//【Choice】
+//１：I have no recollection of this at all.
+//２：I remember seeing this before.
+
+[select]
+[link text=I have no recollection of this at all.  label=someidea]
+[link text=I remember seeing this before. label=memory]
+[/select]
+
+
+//１の場合
+
+//話者名も無し
+
+:someidea
+[message]
+Have I wandered into some other world?
+[/message]
+[goto label=problem]
+
+//２の場合
+
+//話者名も無し
+
+:memory
+[message]
+The "Strain Area". That was the name of this place, I believe.
+Although, I'm unsure if "place" is the correct term to use.
+[/message]
+[goto label=problem]
+
+//【合流】
+
+//話者名も無し
+
+:problem
+[message]
+More importantly, why am I here...?
+That's my biggest concern.
+[/message]
+
+//話者名：少女の声
+//＠アイリス
+
+[message name=GirlsVoice voice=00_002_0020 charaid=600601 icon=true]
+Stop being so mean!
+[/message]
+
+//話者名も無し
+
+[message]
+Suddenly, from one of the open doors,
+although I couldn't tell which one...
+[/message]
+
+//話者名も無し
+
+[message]
+A voice, seemingly belonging to both a man and a woman, leaked out,
+suggesting they're arguing.
+[/message]
+
+
+	
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////////画面ズームイン
+// カメラズーム
+[camera type=zoom pivot=4 fov=0.1 sec=0.5 active=true wait=true]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+
+//話者名：少女の声
+//＠アイリス
+[face id=600601 type=painful]
+[message name=GirlsVoice voice=00_002_0030 charaid=600601 icon=true]
+I told you a dozen times...
+We don't have much time!
+[/message]
+
+//話者名：男性の声
+//＠スナーク
+[message name=MalesVoice voice=00_002_0040 charaid=601701 icon=true]
+This is far from sufficient to convince me.
+Do you even comprehend what you are attempting to accomplish?
+[/message]
+
+//話者名：男性の声
+//＠スナーク
+[message name=MalesVoice voice=00_002_0050 charaid=601701 icon=true]
+This time's deeds, your manner of being a 'person',
+it strikes me as no different from the conceited behavior of that 'cult'.
+[/message]
+
+
+//話者名：少女の声
+//＠アイリス
+[message name=GirlsVoice voice=00_002_0060 charaid=600601 icon=true]
+Ugh?!
+There’s no way that could be...!
+That’s not it! I swear, that’s not it!
+[/message]
+
+//話者名：女性の声
+//＠新アリス
+[message name=WomansVoice voice=00_002_0070 charaid=600801]
+Sigh... This situation truly exemplifies what a stalemate is, doesn't it?
+[/message]
+
+//話者名：女性の声
+//＠新アリス
+[message name=WomansVoice voice=00_002_0080 charaid=600801]
+Masters, have you noticed? The 'guest' has already arrived, so I'll go and introduce them.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+//ズームイン終了
+// カメラズームを解除
+[camera type=zoom sec=0.5 active=false wait=true]
+
+//指定秒数待機する
+[delay sec=0.5]
+
+
+//テレポートSE
+[sound type=se name=Teleport]
+
+//新アリスの立ち絵表示
+[character id=600801 posx=0.33 anim=fade face=default show=true wait=false]
+
+//さや香の立ち絵を表示
+[character id=100105 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+//話者名も無し
+[message]
+.........!
+[/message]
+
+
+[message]
+In the blink of an eye, in a space where there hadn't been a single person just moments ago, 'they' were standing.
+[/message]
+
+
+//話者名：高貴そうな女性
+[message name=NobleWoman voice=00_002_0090 charaid=600801]
+Thank you for your patience.
+Allow me to explain the situation...
+[/message]
+
+//話者名：高貴そうな女性
+[face id=600801 type=painful]
+[message name=NobleWoman voice=00_002_0100 charaid=600801]
+Oh no... How terrible of me.
+I really shouldn't skip the formalities.
+[/message]
+
+//話者名：アリス（※以後ずっとアリス）
+[face id=600801 type=default]
+[message name=Alice voice=00_002_0110 charaid=600801]
+I am one of the 'Ludens' born from the 'game' of people's memories...
+Luden Alice.
+If possible, please call me Alice.
+[/message]
+
+[face id=600801 type=thoughts]
+[message name=Alice voice=00_002_0120 charaid=600801]
+So, is this a long-awaited encounter with 'you'?
+Or is it our first time meeting?
+[/message]
+
+//話者名も無し
+[message]
+I suppose so...
+[/message]
+
+
+///////////////////////////////////////////　【選択肢】　///////////////////////////////////////////
+//１："Long time no see, Alice."
+//２："...Nice to meet you."
+
+[select]
+[link text="Long time no see, Alice." label=longtimetosee]
+[link text="...This is our first meeting." label=firstmet]
+[/select]
+
+/////////////// １の場合 ///////////////
+:longtimetosee
+[face id=600801 type=default]
+[message name=Alice voice=00_002_0130 charaid=600801]
+Is that so...?
+In that case, may I call you "God of Death" like before?
+[/message]
+
+[face id=600801 type=smile]
+[message name=Alice voice=00_002_0140 charaid=600801]
+Hehehe, Just kidding!
+But the truth is, I'm not the Alice you remember...
+Hehe... We'll discuss this issue in due time.
+[/message]
+
+//合流地点に移動
+[goto label=keyperson]
+
+
+/////////////// ２の場合 ///////////////
+:firstmet
+[message name=Alice voice=00_002_0150 charaid=600801]
+Alright, may this become a fruitful relationship going forward.
+[/message]
+//合流地点に移動
+[goto label=keyperson]
+
+:keyperson
+///////////////////////////////////////////　【選択肢合流】　///////////////////////////////////////////
+
+
+//アリス表情切り替え
+[face id=600801 type=default]
+
+
+[message name=Alice voice=00_002_0160 charaid=600801]
+And also, there is one more thing...
+This Ludens next to me... is the new 'key' and a significant great 'catalyst'.
+[/message]
+
+//話者名：赤いルーデンス
+[face id=100105 type=thoughts]
+[message name=Red Ludens voice=00_002_0170 charaid=100105]
+............
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+
+
+///////////////////////////////////////////////裏で最背面に黒背景生成///////////////////////////////////////////////
+[image type=black show=true]
+
+
+//新アリスの立ち絵OFF
+[character id=600801 anim=fade show=false wait=false]
+//背景ストレインエリアロビーをフェードアウト
+[image type=bg id=000030 show=false fade=true wait=true]
+
+//さや香の立ち絵を真ん中に移動
+//[move id=100105 posx=0.49 sec=0.5 wait=false]
+//[delay sec=0.1]
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////画面ズームイン
+// カメラズーム
+[camera type=zoom pivot=11 fov=0.5 sec=0.5 active=true wait=true]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+//話者名も無し
+[message]
+A girl with red locks.
+Although her eyes are wide open, there’s a complete lack of life in her...
+[/message]
+//一回テキストウィンドウを非表示
+[visible show=false]
+
+
+// カメラズームを解除
+[camera type=zoom sec=0.5 active=false wait=false]
+
+
+//さや香を右に移動
+//[move id=100105 posx=0.66 sec=0.5 wait=false]
+
+
+//////////////////////////////////////////////////////////////////////////新アリスの立ち絵ON
+[character id=600801 posx=0.33 anim=fade face=smile show=true wait=false]
+//背景ストレインエリアロビーをフェードイン
+[image type=bg id=000030 show=true fade=true wait=true]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+//話者名：少女の声
+//＠アイリス
+[message name=Voice voice=00_002_0180 charaid=600601 icon=true]
+...Hey!? Alice!
+Wh-What are you going to do with "that thing"...!?
+[/message]
+
+
+//話者名も無し
+[message]
+Though I can't see the source of the young voice,
+it feels as if it's coming from right next to me.
+[/message]
+
+
+[message name=Alice voice=00_002_0190 charaid=600801]
+Hehe, just like that...
+Please observe from there, my master! I assure you, nothing bad will happen.
+[/message]
+
+//話者名：赤いルーデンス
+[face id=100105 type=sad]
+[message name=Red Ludens voice=00_002_0200 charaid=100105]
+.....Ugh..........
+[/message]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+
+//##########################################################################//
+//終了
+//##########################################################################//
+:end
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+//裏で新アリスとさや香の立ち絵を非表示
+[character id=600801 anim=none show=false wait=false]
+[character id=100105 anim=none show=false wait=false]
+
+
+// 再生中のBGMを停止
+//[sound type=bgm state=stop]
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+// カメラズームを解除
+[camera type=zoom sec=0.5 active=false wait=true]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+
+
+// ここでスクリプトを終了します
+[exit]
+//##########################################################################//
+//終了
+//##########################################################################//
+//END
+
+//画面がダンジョンに切り替わる
+//さや香プレイアブル
+

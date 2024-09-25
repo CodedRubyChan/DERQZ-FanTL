@@ -1,0 +1,144 @@
+//スクリプト
+// 指定秒数待機する
+[delay sec=0.1]
+
+
+
+//adv_03_00_003
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+// 指定秒数かけてフェードアウト
+//[fade type=out anim=simple sec=0.5]
+
+// ADV用のカメラに切り替え
+[camera type=setup]
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// 指定の名前のBGMを再生
+[sound type=bgm state=play name=Chapter1_3]
+
+// 指定秒数待機する
+//[delay sec=2]
+
+
+// 指定の背景を表示
+//[image type=bg id=000010 show=true]
+
+
+//裏背景を非表示
+//[image type=black show=false]
+
+
+// 指定秒数かけてフェードイン
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+
+//BGM02　　／ストレインエリア深層
+//背景無し　／ダンジョンプレイアブルシーン【ストレインエリア深層】
+
+// 指定秒数待機する
+//[delay sec=0.5]
+
+// テキストウィンドウを表示
+[visible show=true]
+
+[message name=Alice voice=00_003_0010 charaid=600801 icon=true]
+Now, setting aside my noisy masters... I've shifted the 'perspective' a bit.
+Can you see the girl?
+[/message]
+
+
+
+
+///////////////////////////////////////////////////////////////// カメラをズームする
+//[camera type=zoom pivot=4 fov=0.8 sec=0.5 active=true]
+
+
+[face id=600801 type=painful]
+[message name=Alice voice=00_003_0020 charaid=600801 icon=true]
+This red-haired girl... is surprisingly more vicious than her appearance leads on.
+Frankly, I’ve found it difficult to handle her.
+[/message]
+
+[face id=600801 type=default]
+[message name=Alice voice=00_003_0030 charaid=600801 icon=true]
+Therefore, as a desperate measure...
+I've temporarily detached her sense of self.
+[/message]
+
+
+[message name=Alice voice=00_003_0040 charaid=600801 icon=true]
+But if I leave it out, she will forever be a living puppet, merely a hunk of junk in human form...
+This is where you come in, dear master.
+[/message]
+
+[message name=Alice voice=00_003_0050 charaid=600801 icon=true]
+I would like to synchronize her with you, who can connect to this world,
+and for you to guide her correctly. Thus, I took the liberty of reaching out...
+[/message]
+
+[face id=600801 type=smile]
+[message name=Alice voice=00_003_0060 charaid=600801 icon=true]
+I'm not making any extraordinary demands.
+First, let's start by releasing her from this enclosed world!
+[/message]
+
+[face id=600801 type=default]
+[message name=Alice voice=00_003_0070 charaid=600801 icon=true]
+Please head towards the exit, using the 'map' as your guide.
+[/message]
+
+// テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+
+
+//Weapons have initial equipment.
+//No enemy characters.
+//Mobile tutorial.
+//I want you to demonstrate diagonal movement in a room with obstacles.
+//Our destination is the stairs.
+
+//##########################################################################//
+//終了
+//##########################################################################//
+:end
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+// 再生中のBGMを停止
+//[sound type=bgm state=stop]
+
+[image type=bg show=false]
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+
+
+// ここでスクリプトを終了します
+[exit]
+//##########################################################################//
+//終了
+//##########################################################################//
+//END
+

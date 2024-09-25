@@ -1,0 +1,822 @@
+//スクリプト
+// 指定秒数待機する
+[delay sec=0.1]
+
+
+
+//adv_01_00_001
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+// ADV用のカメラに切り替え
+[camera type=setup]
+
+
+//黒背景
+[image type=bg]
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////登場するスチルとキャラを先に表示（初回読み込み対策）
+[character id=600201 posx=-2 anim=none face=default show=true wait=false]
+[character id=200301 posx=-2 anim=none face=default show=true wait=false]
+[character id=100101 posx=-2 anim=none face=default show=true wait=true]
+[image type=still id=100001 show=true fade=false]
+[delay sec=0.05]
+[image type=still id=100001 show=false fade=false]
+[delay sec=0.05]
+[image type=still id=100002 show=true fade=false]
+[delay sec=0.05]
+[image type=still id=100002 show=false fade=false]
+[delay sec=0.05]
+[image type=still id=100003 show=true fade=false]
+[delay sec=0.05]
+[image type=still id=100003 show=false fade=false]
+[character id=600201 anim=none show=false wait=false]
+[character id=200301 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+
+
+// 指定の名前のBGMを再生
+[sound type=bgm state=play name=TalkE]
+
+// 指定の背景を表示
+[image type=bg id=000410]
+
+// 指定秒数待機する
+[delay sec=0.05]
+// 背景に対してズーム
+[camera type=zoom pivot=11 fov=0.5 sec=0.1 active=true wait=true]
+
+// 指定秒数待機する
+[delay sec=0.05]
+// 背景に対してズーム
+[camera type=zoom pivot=9 fov=0 sec=60 active=true wait=false]
+
+
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+
+//BGM27　　／恐怖シーン用
+//背景410　／崩壊～ストレインエリア化 佐上市
+
+
+// 指定秒数待機する
+[delay sec=1]
+// テキストウィンドウを表示
+[visible show=true]
+
+//（※ナレーションは話者名：無し）
+//話者名も無し
+[message]
+April 2025
+[/message]
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0010]
+Without a sound, the wind blows,
+And debris of buildings floats carelessly in the air.
+[/message]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0020]
+Who could truly envision how this city used to be?
+[/message]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0030]
+The voice of the end resonates,
+No matter how tightly I cover my ears,
+Enhancing the bizarre scenery stretching as far as the eye can see.
+[/message]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0040]
+Beneath a sky darkly glowing in an unearthly purple,
+Things barely retaining human shapes lie everywhere,
+Continuing to groan even now――.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+//貪り喰うSE
+[sound type=se name=Wolfdown]
+[delay sec=1]
+[sound type=se name=Wolfdown]
+[delay sec=1]
+
+
+[sound type=se state=stop]
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.3]
+
+// カメラズームを解除
+[camera type=zoom sec=0.1 active=false]
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.3]
+
+
+
+
+
+
+//ミズナシアラタ登場
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+[delay sec=0.5]
+
+//テキストウィンドウを再表示
+[visible show=true]
+
+
+// Speaker name: ???
+[message name=??? charaid=600201 voice=00_001_0050]
+Ha ha ha!
+Make sure to chew well,
+You can't leave leftovers after coming this far!
+[/message]
+
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0060]
+In the midst of this, a glasses-wearing man in filthy clothes laughs wildly, commanding "something."
+[/message]
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0070]
+If I were to describe it, it was a "bug."
+[/message]
+
+
+// Speaker name: ???
+[message name=??? charaid=600201 voice=00_001_0080]
+Now, here's an extra treat!
+[/message]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0090]
+In stark contrast to his clouded eyes,
+that man's voice is teeming with vigor.
+[/message]
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0100]
+As he raised his hand leisurely like a conductor,
+In response to his gestures,
+a creepy swarm of insects gathers, forming a black vortex.
+[/message]
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0110]
+The vortex wraps around those who have fallen,
+devouring them without leaving a bone.
+[/message]
+
+
+// Speaker name: ???
+[message name=??? charaid=600201 voice=00_001_0120]
+Well, you know, for me to use a bug to crush bugs...
+Doesn't that have a twist of irony?
+[/message]
+
+
+
+
+
+
+// Speaker name: ???
+[face id=600201 type=default]
+[message name=??? charaid=600201 voice=00_001_0130]
+Hey... you think so too, right,
+candidate Shina?
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.3]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////一枚絵01を表示【瀕死のしいな＆さや香】
+[image type=still id=100001 show=true fade=false]
+
+// 指定秒数待機する
+//[delay sec=0.05]
+///////////////////////////////////////////////////////////////// カメラをズームする
+//[camera type=zoom pivot=11 fov=0.4 sec=0.05 active=true wait=true]
+
+
+
+//裏でミズナシアラタを非表示
+[character id=600201 show=false anim=none wait=true]
+
+// 指定秒数待機する
+//[delay sec=0.05]
+///////////////////////////////////////////////////////////////// カメラを平行移動
+//[camera type=zoom pivot=4 fov=-0.4 sec=30 active=true wait=false]
+
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.7]
+
+
+[delay sec=0.5]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+
+
+
+
+
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0140]
+In front of the man who spoke, a woman with blue hair stands trembling with anger,
+and beside her, a red-haired girl lies fallen.
+[/message]
+
+
+
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0150]
+The girl, called "Candidate Shina" in a strange way,
+is already fatally wounded.
+Even so...
+[/message]
+
+
+
+// No speaker name
+// @ Alice
+[message voice=00_001_0160]
+She gazes firmly at her opponent,
+and spoke with a voice imbued with hostility.
+[/message]
+
+
+// From now on, speaker name is Ninomiya Shiina
+[message name=Shina charaid=200101 voice=00_001_0170]
+We are definitely not bugs!
+And neither is this child...!
+[/message]
+
+
+// Speaker name: ???
+[message name=??? charaid=600201 voice=00_001_0180]
+Oh, you really think that? If I were to explain it bluntly,
+it's only due to old favors that I’m sparing you.
+You're just getting in my way...
+[/message]
+
+
+[message name=Shina charaid=200101 voice=00_001_0190]
+Is this... is this really what you want...!?
+Arata Mizunashi!!
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1]
+
+
+///////////////////////////////////////////////////////////////// カメラのズームを解除する
+//[camera type=zoom sec=0.5 active=false wait=false]
+//指定秒数待機
+//[delay sec=0.1]
+
+[image type=still id=110001 show=false wait=true]
+/////////////////////////////////////////////////////////////////////////一枚絵01非表示【瀕死のしいな＆さや香】
+
+//指定秒数待機
+[delay sec=0.5]
+
+//ミズナシアラタの立ち絵のみ表示
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+
+
+// Redisplay text window
+[visible show=true]
+// No speaker name
+// @ Alice
+[message voice=00_001_0200]
+While the man seemed a little displeased to be referred to as Mizunashi,
+he continued to smile.
+[/message]
+
+
+// Speaker name: Mizunashi
+[message name=Mizunashi charaid=600201 voice=00_001_0210]
+Ah, is that so?
+The purpose of this Sako city has met it's end.
+It took a considerable time, though.
+[/message]
+
+// Speaker name: Mizunashi
+[face id=600201 type=angry]
+[message name=Mizunashi charaid=600201 voice=00_001_0220]
+As for you, things could've ended differently if you gave me 'that' sooner.
+[/message]
+
+[face id=600201 type=default]
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0230]
+Accompanied by a swarm of insects,
+Mizunashi draws closer to the woman with red hair.
+[/message]
+
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+
+//////////////////////////////////////アラタが近寄ってくる音
+[sound type=se name=Upstairs]
+// 指定秒数待機する
+[delay sec=2]
+
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.3]
+
+///////////////////////////再生中のSEをストップ
+[sound type=se state=stop]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////まい登場
+//画面振動
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+//斬撃エフェクト
+[effect type=SlashLarge show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+[sound type=se name=Slash]
+
+//まいを動かしながら表示。一緒にアラタも移動
+[character id=200301 posx=0.32 anim=ltor show=true face=angry wait=false]
+[move id=600201 posx=0.67 sec=0.5 wait=false]
+
+//テキストウィンドウを再表示
+[visible show=true]
+//話者名：？？？
+[message name=？？？ face=angry charaid=200301 voice=00_001_0240]
+I WON'T LET YOU!!
+[/message]
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0250]
+Another individual, who was hiding among the wreckage,
+suddenly jumps out, brandishing a machete.
+[/message]
+
+
+//話者名：ミズナシ
+[face id=600201 type=smile]
+[message name=Mizunashi charaid=600201 voice=00_001_0260]
+Well, well ～♪
+look who's still kicking, candidate Mai!
+[/message]
+
+[face id=600201 type=default]
+
+//話者名：ミズナシ
+[message name=Mizunashi charaid=600201 voice=00_001_0270]
+... It's all in vain, but...
+[/message]
+
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0280]
+Mai's ambush caught her opponent by surprise,
+but the insects controlled by Mizunashi swiftly wrapped her arm holding the weapon.
+[/message]
+
+
+//話者名：東山まい（以後、東山まい）
+[face id=600201 type=painful]
+[face id=200301 type=painful]
+//貪り喰うSE
+[sound type=se name=Wolfdown]
+//まい振動
+[shake target=chara id=200301 type=horizontal sec=1 pow=5 fade=false wait=false]
+
+[message name=Mai charaid=200301 voice=00_001_0290]
+Huh...！？
+Ugh...！！？
+[/message]
+//貪り喰うSE
+[sound type=se name=Wolfdown]
+
+//まい振動
+[shake target=chara id=200301 type=horizontal sec=1 pow=5 fade=false wait=false]
+//話者名も無し
+//＠アリス
+[message voice=00_001_0300]
+The discordant buzzing that reverberates
+is a mix of insects wriggling and the sound of meat being crudely eaten.
+[/message]
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+
+
+///////////////////////////////////////////////////////////////// カメラをズームする
+[camera type=zoom pivot=9 fov=0.5 sec=20 active=true wait=false]
+[delay sec=0.5]
+
+//貪り喰うSE
+[sound type=se name=Wolfdown]
+//まい振動
+[shake target=chara id=200301 type=horizontal sec=0.8 pow=5 fade=false wait=false]
+[delay sec=1.5]
+[sound type=se name=Wolfdown]
+//まい振動
+[shake target=chara id=200301 type=random sec=0.8 pow=6 fade=false wait=false]
+[delay sec=1]
+//貪り喰うSE
+[sound type=se name=Chairprotrusions]
+//画面振動
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+
+// カメラズームを解除
+[camera type=zoom sec=0.05 active=false wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////////////一枚絵02を表示【まいの腕切断】
+[image type=still id=100002 show=true fade=false wait=false]
+
+
+//裏でミズナシアラタとまいの立ち絵非表示
+[character id=200301 show=false wait=false]
+[character id=600201 show=false wait=false]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////出血エフェクト
+[effect type=BloodSmall1 show=true wait=false auto_hide=false posx=0.5 posy=0.75 priority=FrontCutin]
+[effect type=BloodSmall2 show=true wait=false auto_hide=false posx=0.45 posy=0.5 priority=FrontCutin]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+[message name=Mai charaid=200301 voice=00_001_0310]
+Ugh... Gii!! Gigyah?!
+[/message]
+
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0320]
+By the time Mai let out her heart-wrenching scream,
+all remained of one arm was merely a stump.
+[/message]
+
+
+
+///////////////////////////////////////////////////エフェクト解除
+[effect type=BloodSmall1 show=false wait=false]
+[effect type=BloodSmall2 show=false wait=false]
+
+
+[message name=Shina charaid=200101 voice=00_001_0330]
+Mai!!
+[/message]
+
+
+//話者名：ミズナシ
+[message name=Mizunashi charaid=600201 voice=00_001_0340]
+Bugs can serve as a barrier when piled up.
+Hope is beyond reach...
+Will you remember the lesson?
+[/message]
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0350]
+With her arm consumed by the insects serving as a barrier, it seemed to resemble a bursting red fruit.
+[/message]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0360]
+The insects swiftly feast on the arm of the woman who rushed in,
+quickly reducing it to crumbs.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1]
+
+
+
+//指定秒数待機
+[delay sec=0.1]
+
+[image type=still id=100002 show=false wait=true]
+//////////////////////////////////////////////////////////////////////////////一枚絵02を非表示【まいの腕切断】
+
+
+
+
+//指定秒数待機
+[delay sec=0.5]
+
+
+//アラタの立ち絵のみ表示
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+//話者名も無し
+//＠アリス
+[message voice=00_001_0370]
+After the ambush failed, the anxiety of the two women intensifies.
+Their fear and uncertainty eclipsed by a powerful rage.
+Mizunashi let out a cold laugh at the sight of the two struggling to catch their breath.
+[/message]
+
+
+//話者名：ミズナシ
+[face id=600201 type=angry]
+[message name=Mizunashi charaid=600201 voice=00_001_0380]
+Look at how hard the two guests are trying,
+but you're still lying there asleep, huh?!
+[/message]
+
+
+
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0390]
+As Mizunashi nonchalantly drew closer to the red-haired woman, no one was left to intervene.
+[/message]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0400]
+Walking amidst the penetrating glances of the two women who stood frozen, he suddenly stopped in his tracks.
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+[delay sec=1.5]
+
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.3]
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////一枚絵03を表示【さや香のアップ】
+[image type=still id=100003 show=true fade=false wait=true]
+
+// 指定秒数待機する
+//[delay sec=0.05]
+///////////////////////////////////////////////////////////////// カメラをズームする
+//[camera type=zoom pivot=12 fov=0.22 sec=0.05 active=true wait=true]
+
+// 指定秒数待機する
+//[delay sec=0.05]
+// カメラズームを解除
+//[camera type=zoom sec=20 active=false wait=false]
+
+// 指定秒数かけてフェードイン
+[fade type=in anim=simple sec=0.7]
+
+
+
+//裏でミズナシアラタを非表示
+[character id=600201 anim=none show=false wait=false]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+
+//話者名も無し
+//＠アリス
+[message voice=00_001_0410]
+That woman appeared more gravely injured than the two in agony from their missing arms, seeming almost dead...
+But still, her eyes, while devoid of light, were undoubtedly in motion.
+[/message]
+
+
+
+//話者名：ミズナシ
+[message name=Mizunashi charaid=600201 voice=00_001_0420]
+Since you all hate this so much, how about this...
+Let her choose whether she wants to stay here to rot, or come with me.
+[/message]
+
+
+//話者名：東山まい
+[message name=Mai charaid=200301 voice=00_001_0430]
+... What did you say?
+That's an absurd proposal...
+Sayaka would never go with someone like you!
+[/message]
+
+
+//話者名：ミズナシ
+[message name=Mizunashi charaid=600201 voice=00_001_0440]
+There's no way we will know unless you ask.
+Hey, Sayaka! Wake up already.
+Remember your 'duty'!
+[/message]
+
+
+//話者名：さや香
+[message name=Sayaka Hiwatari charaid=100101 voice=00_001_0450]
+...Ugh, uuh...
+[/message]
+
+
+//話者名：ミズナシ
+[message name=Mizunashi charaid=600201 voice=00_001_0460]
+Alright, princess... Take a deep breath and think back from the start. You should realize that I'm in the right.
+How about we think this through together, nice and slow?
+[/message]
+
+
+//一回テキストウィンドウを非表示
+[visible show=false]
+
+
+
+
+
+///////////////////////////////　画面暗転　///////////////////////////////
+[fade type=out anim=simple sec=0.5]
+
+
+// カメラのズームを解除する
+//[camera type=zoom sec=0.5 active=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////一枚絵03を非表示【さや香のアップ】
+[image type=still id=100003 show=false fade=false]
+[delay sec=0.5]
+
+//黒背景
+[image type=bg id=000380 show=true fade=false]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+///////////////////////////////　画面暗転明け　///////////////////////////////
+
+
+//さや香を表示
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+[delay sec=0.3]
+
+
+//テキストウィンドウを再表示
+[visible show=true]
+
+[message name=Sayaka charaid=100101 voice=00_001_0470 lipsync=false]
+(I... I am...)
+[/message]
+
+[message name=Sayaka charaid=100101 voice=00_001_0480]
+What could have possibly led to this...?
+[/message]
+
+[message name=Sayaka charaid=100101 voice=00_001_0490]
+I need to sort this out...
+[/message]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+//さや香立ち絵OFF
+[character id=100101 anim=fade show=false wait=true]
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+//BGM停止
+[sound type=bgm state=stop]
+
+//間を置いてセリフ再開
+[delay sec=1.5]
+//テキストウィンドウを再表示
+[visible show=true]
+[message name=Sayaka charaid=100101 voice=00_001_0500]
+Injured and bewildered, the memories reach deep into the past.
+[/message]
+
+[message name=Sayaka charaid=100101 voice=00_001_0510]
+Yes, that was still,
+[/message]
+
+[message name=Sayaka charaid=100101 voice=00_001_0520]
+when I had not yet found myself...
+[/message]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+//フラッシュバックSE
+[sound type=se name=Flashback]
+
+
+//##########アイキャッチ##########//
+//黒背景
+[image type=bg]
+// 指定秒数待機する
+[delay sec=1]
+[sound type=se name=Eyecatch]
+// ADVアイキャッチを表示
+[eyecatch chapter=0 title=ハロー・ワールド]
+// 指定秒数待機する
+[delay sec=1]
+
+//##########アイキャッチ##########//
+
+//##########################################################################//
+//終了
+//##########################################################################//
+:end
+
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+
+// 再生中のBGMを停止
+//[sound type=bgm state=stop]
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// カメラズームを解除
+[camera type=zoom sec=0.1 active=false]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+
+
+
+// ここでスクリプトを終了します
+[exit]
+//##########################################################################//
+//終了
+//##########################################################################//
+//END
+

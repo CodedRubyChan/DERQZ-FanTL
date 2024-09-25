@@ -1,0 +1,153 @@
+//スクリプト
+// 指定秒数待機する
+[delay sec=0.1]
+
+
+
+//adv_07_00_007
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+// 指定秒数かけてフェードアウト
+//[fade type=out anim=simple sec=0.5]
+
+// ADV用のカメラに切り替え
+[camera type=setup]
+
+// 指定秒数待機する
+//[delay sec=0.5]
+
+// 指定の名前のBGMを再生
+[sound type=bgm state=play name=Chapter1_3]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////登場するスチルとキャラを先に表示（初回読み込み対策）
+[character id=100107 posx=-2 anim=none face=default show=true wait=true]
+[delay sec=0.05]
+[character id=100107 anim=none show=false wait=true]
+
+// 指定の背景を表示
+//[image type=bg id=000140]
+
+// 指定秒数かけてフェードイン
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//開始
+//##########################################################################//
+
+
+
+//BGM02　　／ストレインエリア深層
+//背景無し　／ダンジョンプレイアブルシーン【ストレインエリア深層】
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+
+
+[character id=100107 posx=0.49 anim=fade face=painful show=true wait=true]
+
+
+// テキストウィンドウを表示
+[visible show=true]
+[message name=Red Ludens voice=00_007_0010  charaid=100107]
+Hah! Hah! Hah...!!
+[/message]
+
+//話者名：アリス
+[message name=Alice voice=00_007_0020 charaid=600801 icon=true]
+Oh my, I thought for sure she had kicked the bucket♪
+Hehehe!
+[/message]
+
+//[face id=600801 type=surprise]
+[message name=Alice voice=00_007_0030 charaid=600801 icon=true]
+See!
+I knew you could manage to avoid it like this...
+[/message]
+
+//新アリス視点では、さや香が死亡～生き返る瞬間が見えておらず、
+//急にさや香が緊急回避をした（プレイヤーがさせた）ように映っている
+
+[face id=600801 type=default]
+[message name=Alice voice=00_007_0040 charaid=600801 icon=true]
+However, from now on, that convenient power of yours may face some limitations.
+[/message]
+
+[message name=Alice voice=00_007_0050 charaid=600801 icon=true]
+Based on the difficulty level you are selecting,
+the penalties for her death will differ.
+[/message]
+
+[message name=Alice voice=00_007_0060 charaid=600801 icon=true]
+If the difficulty level exceeds 'Elite',
+you will lose items and currency you have when you die.
+[/message]
+
+//一枚絵（チュートリアル絵）：ゲームオーバー時のペナルティ
+
+[message name=Alice voice=00_007_0070 charaid=600801 icon=true]
+Death is something to be avoided as much as possible...
+Still, I think a glorious demise would please you and perhaps someone else.
+[/message]
+
+[face id=600801 type=smile]
+[message name=Alice voice=00_007_0080 charaid=600801 icon=true]
+...You’re curious why my form has changed once more?
+Well, isn’t that an interesting question?
+Hehehe!
+[/message]
+
+[message name=Red Ludens voice=00_007_0090 charaid=100107]
+Tch... It hurts!
+My body...
+[/message]
+
+[face id=600801 type=default]
+[message name=Alice voice=00_007_0100 charaid=600801 icon=true]
+Hey, this girl is suffering!
+We need to move quickly and get out!
+We’re almost at our destination!
+[/message]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+[delay sec=0.5]
+
+//##########################################################################//
+//終了
+//##########################################################################//
+:end
+
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+// 指定秒数かけてフェードアウト
+[fade type=out anim=simple sec=0.5]
+
+
+//裏でさや香の立ち絵を非表示
+[character id=100107 anim=fade show=false wait=false]
+
+// 再生中のBGMを停止
+//[sound type=bgm state=stop]
+
+// 指定秒数待機する
+[delay sec=0.5]
+
+
+// テキストウィンドウを非表示
+[visible show=false]
+
+
+// ここでスクリプトを終了します
+[exit]
+//##########################################################################//
+//終了
+//##########################################################################//
+//END
+
