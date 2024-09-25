@@ -1,4 +1,4 @@
-# DERQZ-FanTL-o3p
+# DERQZ-FanTL
 DERQZ Fan Translation by:
 
 **CREDITS:**
