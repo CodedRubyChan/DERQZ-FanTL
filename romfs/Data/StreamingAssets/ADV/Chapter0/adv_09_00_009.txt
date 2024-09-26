@@ -98,7 +98,7 @@ The scenery changed all of a sudden...!
 
 //話者名：Intimidating Man
 [face id=601701 type=default]
-[message name=IntimidatingMan charaid=601701 voice=00_009_0030]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0030]
 Hmph,
 it looks like Alice's suggestion of 'drastic measures' has been a success.
 [/message]
@@ -117,7 +117,7 @@ Oh, don't worry about this person...!
 
 
 [face id=601701 type=default]
-[message name=IntimidatingMan charaid=601701 voice=00_009_0060]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0060]
 I never thought a day would come when I'd be treated like a person.
 [/message]
 
@@ -131,7 +131,7 @@ Please don't be so stubborn!
 
 
 [face id=601701 type=default]
-[message name=IntimidatingMan charaid=601701 voice=00_009_0080]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0080]
 ... Don't wear your clothes all crooked.
 [/message]
 
@@ -170,7 +170,7 @@ You shouldn't anger him, so keep quiet and follow his lead for now, okay?
 
 
 [face id=601701 type=default]
-[message name=IntimidatingMan charaid=601701 voice=00_009_0120]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0120]
 I won't tolerate passengers lamenting about being presentable.
 Now, enough with the chit-chat. We're departing to the city.
 [/message]
@@ -184,15 +184,15 @@ Now, enough with the chit-chat. We're departing to the city.
 
 
 [face id=601701 type=thoughts]
-[message name=IntimidatingMan charaid=601701 voice=00_009_0130]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0130]
 If I count myself, that makes four people...
 [/message]
 
 
 //////////////////////////////////////////////【Choice】//////////////////////////////////////////////
-//１：Alright, let's go together.
+//１：Alright, let's go together.
 [select]
-[link text=Alright, let's go together. label=together]
+[link text=Alright, let's go together. label=together]
 [/select]
 
 
@@ -200,7 +200,7 @@ If I count myself, that makes four people...
 //////////////////////////////////////////////【合流】//////////////////////////////////////////////
 :together
 [face id=601701 type=default]
-[message name=IntimidatingMan charaid=601701 voice=00_009_0140]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0140]
 Hurry up and get in!
 [/message]
 
@@ -269,7 +269,7 @@ Hurry up and get in!
 
 [face id=601701 type=default]
 
-[message name=IntimidatingMan charaid=601701 voice=00_009_0150]
+[message name=An Intimidating Man. charaid=601701 voice=00_009_0150]
 Well then... This is where my duty ends.
 [/message]
 
@@ -400,11 +400,11 @@ I don't really understand myself.
 
 
 //////////////////////////////////////////////【Choice】//////////////////////////////////////////////
-//１：We will learn as we go.
+//１：We will learn as we go.
 //２：Let's get along well with Shina.
 
 [select]
-[link text=We will learn as we go. label=name]
+[link text=We will learn as we go. label=name]
 [link text=Let's get along well with Shina. label=nicetomeetyou]
 [/select]
 
@@ -447,7 +447,7 @@ I will name you as the ‘Director'.
 
 [face id=200102 type=default]
 [message name=Shina charaid=200102 voice=00_009_0370]
-Arata MIZUNASHI... It has been settled!
+Arata Mizunashi... It has been settled!
 [/message]
 
 

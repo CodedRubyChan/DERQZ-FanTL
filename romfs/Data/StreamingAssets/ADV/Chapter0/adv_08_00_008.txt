@@ -128,12 +128,12 @@ Do you have any idea?
 [/message]
 
 //【Choice】
-//１：Are you talking to... 'me'?
-//２：Honestly, I'm not sure.
+//１：Are you talking to...  me?
+//２：Honestly, I'm not sure.
 
 [select]
-[link text=Are you talking to... 'me'? label=said]
-[link text=Honestly, I'm not sure. label=idontknow]
+[link text=Are you talking to...  me? label=said]
+[link text=Honestly, I'm not sure. label=idontknow]
 [/select]
 
 //１の場合
@@ -177,7 +177,7 @@ Well then... thank you.
 [face id=100107 type=surprise]
 
 //話者名：白い女
-[message name=A White Woman. voice=00_008_0130 charaid=200101]
+[message name=A Girl In White. voice=00_008_0130 charaid=200101]
 Okay! I think we're good to go!
 [/message]
 
@@ -194,7 +194,7 @@ Whoa!? You shocked me...!
 
 
 [face id=200101 type=confuse]
-[message name=A White Woman. voice=00_008_0150 charaid=200101]
+[message name=A Girl In White. voice=00_008_0150 charaid=200101]
 Seriously... You've been there the entire time.
 I was just babbling on to myself, making it hard for you to speak up!
 [/message]
@@ -212,24 +212,24 @@ Isn't there already someone else here...?
 
 
 [face id=200101 type=surprise]
-[message name=A White Woman. voice=00_008_0170 charaid=200101]
+[message name=A Girl In White. voice=00_008_0170 charaid=200101]
 ...Really?
 [/message]
 
 
 //////////////////////////////////////////////【Choice】//////////////////////////////////////////////
-//１：Pleased to meet you!
-//２：Long time no see, Shina.
+//１：Pleased to meet you!
+//２：Long time no see, Shina.
 
 [select]
-[link text=Pleased to meet you! label=cantsee]
-[link text=Long time no see, Shina. label=kingofdeath]
+[link text=Pleased to meet you! label=cantsee]
+[link text=Long time no see, Shina. label=kingofdeath]
 [/select]
 
 //１の場合
 :cantsee
 [face id=200101 type=sad]
-[message name=A White Woman. voice=00_008_0180 charaid=200101]
+[message name=A Girl In White. voice=00_008_0180 charaid=200101]
 I can hear a voice, but... I can't see anyone...!
 Ah... I suppose I'm still not quite fully a Luden...
 [/message]
@@ -237,7 +237,7 @@ Ah... I suppose I'm still not quite fully a Luden...
 
 //２の場合
 :kingofdeath
-[message name=A White Woman. voice=00_008_0190 charaid=200101]
+[message name=A Girl In White. voice=00_008_0190 charaid=200101]
 Y-You know about me... the invisible person!
 S-Surely... you must be that 'God of Death,' right!?
 [/message]
@@ -249,7 +249,7 @@ S-Surely... you must be that 'God of Death,' right!?
 
 //シイナの立ち絵移動
 [move id=200101 posx=-0.26 sec=1 wait=false]
-[message name=A White Woman. voice=00_008_0200 charaid=200101]
+[message name=A Girl In White. voice=00_008_0200 charaid=200101]
 Could this be the way?
 Hello, invisible personーー!!
 [/message]
@@ -280,7 +280,7 @@ No, you're going the wrong way...
 [visible show=true]
 
 
-[message name=A White Woman. voice=00_008_0220 charaid=200101]
+[message name=A Girl In White. voice=00_008_0220 charaid=200101]
 Grrr... Did I miss?
 [/message]
 
@@ -318,12 +318,12 @@ Alice, seriously, you can't just abandon this girl like this! Really~!
 [/message]
 
 //////////////////////////////////////////////【Choice】//////////////////////////////////////////////
-//１：I think it should be alright.
-//２：It's alright to put your trust in her.
+//１：I think it should be alright.
+//２：It's alright to put your trust in her.
 
 [select]
-[link text=I think it should be alright. label=ithinksotoo]
-[link text=It's alright to put your trust in her. label=huh]
+[link text=I think it should be alright. label=ithinksotoo]
+[link text=It's alright to put your trust in her.+ label=huh]
 [/select]
 
 //１の場合
