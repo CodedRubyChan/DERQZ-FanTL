@@ -4,6 +4,7 @@ DERQZ Fan Translation by:
 **CREDITS:**
 - @o3p (Discord)
 - Luden @levelzeroib (Discord)
+- RubyX_Coded/CodedRubyChan/ME @rubyxcoded (Discord)
 
 # INSTALLING THE PATCH - Emulator
 
