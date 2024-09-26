@@ -95,8 +95,8 @@ Still, I think a glorious demise would please you and perhaps someone else.
 
 [face id=600801 type=smile]
 [message name=Alice voice=00_007_0080 charaid=600801 icon=true]
-...You’re curious why my form has changed once more?
-Well, isn’t that an interesting question?
+...You're curious why my form has changed once more?
+Well, isn't that an interesting question?
 Hehehe!
 [/message]
 
@@ -109,7 +109,7 @@ My body...
 [message name=Alice voice=00_007_0100 charaid=600801 icon=true]
 Hey, this girl is suffering!
 We need to move quickly and get out!
-We’re almost at our destination!
+We're almost at our destination!
 [/message]
 
 

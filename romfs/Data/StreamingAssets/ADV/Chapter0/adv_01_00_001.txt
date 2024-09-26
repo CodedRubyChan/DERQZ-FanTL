@@ -83,7 +83,8 @@
 //（※ナレーションは話者名：無し）
 //話者名も無し
 [message]
-April 2025
+―April
+―2025
 [/message]
 
 
@@ -289,7 +290,7 @@ Even so...
 // No speaker name
 // @ Alice
 [message voice=00_001_0160]
-She gazes firmly at her opponent,
+She gazes firmly at him,
 and spoke with a voice imbued with hostility.
 [/message]
 
@@ -297,21 +298,21 @@ and spoke with a voice imbued with hostility.
 // From now on, speaker name is Ninomiya Shiina
 [message name=Shina charaid=200101 voice=00_001_0170]
 We are definitely not bugs!
-And neither is this child...!
+And neither is this girl...!
 [/message]
 
 
 // Speaker name: ???
 [message name=??? charaid=600201 voice=00_001_0180]
 Oh, you really think that? If I were to explain it bluntly,
-it's only due to old favors that I’m sparing you.
+it's only due to old favors that I'm sparing you.
 You're just getting in my way...
 [/message]
 
 
 [message name=Shina charaid=200101 voice=00_001_0190]
 Is this... is this really what you want...!?
-Arata Mizunashi!!
+ARATA MIZUNASHI!!
 [/message]
 
 
@@ -340,21 +341,21 @@ Arata Mizunashi!!
 // No speaker name
 // @ Alice
 [message voice=00_001_0200]
-While the man seemed a little displeased to be referred to as Mizunashi,
+While the man seemed a little displeased to be referred to as MIZUNASHI,
 he continued to smile.
 [/message]
 
 
-// Speaker name: Mizunashi
-[message name=Mizunashi charaid=600201 voice=00_001_0210]
+// Speaker name: MIZUNASHI
+[message name=MIZUNASHI charaid=600201 voice=00_001_0210]
 Ah, is that so?
 The purpose of this Sako city has met it's end.
 It took a considerable time, though.
 [/message]
 
-// Speaker name: Mizunashi
+// Speaker name: MIZUNASHI
 [face id=600201 type=angry]
-[message name=Mizunashi charaid=600201 voice=00_001_0220]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0220]
 As for you, things could've ended differently if you gave me 'that' sooner.
 [/message]
 
@@ -365,7 +366,7 @@ As for you, things could've ended differently if you gave me 'that' sooner.
 //＠アリス
 [message voice=00_001_0230]
 Accompanied by a swarm of insects,
-Mizunashi draws closer to the woman with red hair.
+MIZUNASHI draws closer to the woman with red hair.
 [/message]
 
 
@@ -403,8 +404,8 @@ Mizunashi draws closer to the woman with red hair.
 
 //テキストウィンドウを再表示
 [visible show=true]
-//話者名：？？？
-[message name=？？？ face=angry charaid=200301 voice=00_001_0240]
+//話者名：???
+[message name=??? face=angry charaid=200301 voice=00_001_0240]
 I WON'T LET YOU!!
 [/message]
 
@@ -419,7 +420,7 @@ suddenly jumps out, brandishing a machete.
 
 //話者名：ミズナシ
 [face id=600201 type=smile]
-[message name=Mizunashi charaid=600201 voice=00_001_0260]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0260]
 Well, well ～♪
 look who's still kicking, candidate Mai!
 [/message]
@@ -427,7 +428,7 @@ look who's still kicking, candidate Mai!
 [face id=600201 type=default]
 
 //話者名：ミズナシ
-[message name=Mizunashi charaid=600201 voice=00_001_0270]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0270]
 ... It's all in vain, but...
 [/message]
 
@@ -437,7 +438,7 @@ look who's still kicking, candidate Mai!
 //＠アリス
 [message voice=00_001_0280]
 Mai's ambush caught her opponent by surprise,
-but the insects controlled by Mizunashi swiftly wrapped her arm holding the weapon.
+but the insects controlled by MIZUNASHI swiftly wrapped her arm holding the weapon.
 [/message]
 
 
@@ -450,8 +451,8 @@ but the insects controlled by Mizunashi swiftly wrapped her arm holding the weap
 [shake target=chara id=200301 type=horizontal sec=1 pow=5 fade=false wait=false]
 
 [message name=Mai charaid=200301 voice=00_001_0290]
-Huh...！？
-Ugh...！！？
+Huh...！?
+Ugh...！！?
 [/message]
 //貪り喰うSE
 [sound type=se name=Wolfdown]
@@ -533,7 +534,7 @@ Mai!!
 
 
 //話者名：ミズナシ
-[message name=Mizunashi charaid=600201 voice=00_001_0340]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0340]
 Bugs can serve as a barrier when piled up.
 Hope is beyond reach...
 Will you remember the lesson?
@@ -584,13 +585,13 @@ quickly reducing it to crumbs.
 [message voice=00_001_0370]
 After the ambush failed, the anxiety of the two women intensifies.
 Their fear and uncertainty eclipsed by a powerful rage.
-Mizunashi let out a cold laugh at the sight of the two struggling to catch their breath.
+MIZUNASHI let out a cold laugh at the sight of the two struggling to catch their breath.
 [/message]
 
 
 //話者名：ミズナシ
 [face id=600201 type=angry]
-[message name=Mizunashi charaid=600201 voice=00_001_0380]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0380]
 Look at how hard the two guests are trying,
 but you're still lying there asleep, huh?!
 [/message]
@@ -601,7 +602,7 @@ but you're still lying there asleep, huh?!
 //話者名も無し
 //＠アリス
 [message voice=00_001_0390]
-As Mizunashi nonchalantly drew closer to the red-haired woman, no one was left to intervene.
+As MIZUNASHI nonchalantly drew closer to the red-haired woman, no one was left to intervene.
 [/message]
 
 //話者名も無し
@@ -656,7 +657,7 @@ But still, her eyes, while devoid of light, were undoubtedly in motion.
 
 
 //話者名：ミズナシ
-[message name=Mizunashi charaid=600201 voice=00_001_0420]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0420]
 Since you all hate this so much, how about this...
 Let her choose whether she wants to stay here to rot, or come with me.
 [/message]
@@ -671,7 +672,7 @@ Sayaka would never go with someone like you!
 
 
 //話者名：ミズナシ
-[message name=Mizunashi charaid=600201 voice=00_001_0440]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0440]
 There's no way we will know unless you ask.
 Hey, Sayaka! Wake up already.
 Remember your 'duty'!
@@ -685,7 +686,7 @@ Remember your 'duty'!
 
 
 //話者名：ミズナシ
-[message name=Mizunashi charaid=600201 voice=00_001_0460]
+[message name=MIZUNASHI charaid=600201 voice=00_001_0460]
 Alright, princess... Take a deep breath and think back from the start. You should realize that I'm in the right.
 How about we think this through together, nice and slow?
 [/message]

@@ -75,7 +75,7 @@ There's someone in white clothing by that big crystal, correct?
 
 
 [message name=Alice voice=00_008_0020 charaid=600801 icon=true]
-I’ll leave it in their hands from here, so this is my farewell for now...
+I'll leave it in their hands from here, so this is my farewell for now...
 Until we meet again♪
 [/message]
 
@@ -178,7 +178,7 @@ Well then... thank you.
 
 //話者名：白い女
 [message name=A White Woman. voice=00_008_0130 charaid=200101]
-Okay! I think we’re good to go!
+Okay! I think we're good to go!
 [/message]
 
 
@@ -195,7 +195,7 @@ Whoa!? You shocked me...!
 
 [face id=200101 type=confuse]
 [message name=A White Woman. voice=00_008_0150 charaid=200101]
-Seriously... You’ve been there the entire time.
+Seriously... You've been there the entire time.
 I was just babbling on to myself, making it hard for you to speak up!
 [/message]
 
@@ -207,7 +207,7 @@ I was just babbling on to myself, making it hard for you to speak up!
 [face id=100107 type=thoughts]
 [message name=Red Ludens voice=00_008_0160 charaid=100107]
 Talking to myself...?
-Isn’t there already someone else here...?
+Isn't there already someone else here...?
 [/message]
 
 
@@ -230,8 +230,8 @@ Isn’t there already someone else here...?
 :cantsee
 [face id=200101 type=sad]
 [message name=A White Woman. voice=00_008_0180 charaid=200101]
-I can hear a voice, but... I can’t see anyone...!
-Ah... I suppose I’m still not quite fully a Luden...
+I can hear a voice, but... I can't see anyone...!
+Ah... I suppose I'm still not quite fully a Luden...
 [/message]
 [goto label=hello]
 
@@ -256,7 +256,7 @@ Hello, invisible personーー!!
 
 [face id=100107 type=confuse]
 [message name=Red Ludens voice=00_008_0210 charaid=100107]
-No, you’re going the wrong way...
+No, you're going the wrong way...
 [/message]
 
 
@@ -292,8 +292,8 @@ Grrr... Did I miss?
 [face id=200101 type=smile]
 [message name=Shina voice=00_008_0230 charaid=200101]
 Ah, right! I need to introduce myself...
-I’m Shina Ninomiya.
-I’m a Luden, just like you!
+I'm Shina Ninomiya.
+I'm a Luden, just like you!
 [/message]
 
 [face id=100107 type=confuse]
@@ -303,8 +303,8 @@ Lu... Luden...?
 
 [face id=200101 type=confuse]
 [message name=Shina voice=00_008_0250 charaid=200101]
-Wait a minute!? You don’t comprehend that either...?
-Alice, seriously, you can’t just abandon this girl like this! Really~!
+Wait a minute!? You don't comprehend that either...?
+Alice, seriously, you can't just abandon this girl like this! Really~!
 [/message]
 
 
@@ -340,7 +340,7 @@ I'm starting to get that feeling too.
 :huh
 [message name=Red Ludens voice=00_008_0290 charaid=100107]
 Hmm...
-You say that confidently, don’t you?
+You say that confidently, don't you?
 [/message]
 [goto label=trustme]
 

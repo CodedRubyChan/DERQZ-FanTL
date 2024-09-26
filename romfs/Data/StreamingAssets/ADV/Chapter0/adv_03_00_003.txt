@@ -67,7 +67,7 @@ Can you see the girl?
 [face id=600801 type=painful]
 [message name=Alice voice=00_003_0020 charaid=600801 icon=true]
 This red-haired girl... is surprisingly more vicious than her appearance leads on.
-Frankly, I’ve found it difficult to handle her.
+Frankly, I've found it difficult to handle her.
 [/message]
 
 [face id=600801 type=default]

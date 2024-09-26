@@ -84,7 +84,7 @@ but now this is an ungoverned alternate realm.
 [/message]
 
 [message name=Alice voice=00_005_0060 charaid=600801 icon=true]
-Is it a slip of the 'Great Sage'’s work, or merely a prank?
+Is it a slip of the 'Great Sage''s work, or merely a prank?
 There are sometimes 'traps' that turn their fangs against explorers.
 Since we're here... shall we give it a shot?
 [/message]

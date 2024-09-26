@@ -96,11 +96,11 @@ This scene... It feels familiar...
 [/message]
 
 //【Choice】
-//１：I have no recollection of this at all.
+//１：I have no recollection of this at all.
 //２：I remember seeing this before.
 
 [select]
-[link text=I have no recollection of this at all.  label=someidea]
+[link text=I have no recollection of this at all.  label=someidea]
 [link text=I remember seeing this before. label=memory]
 [/select]
 
@@ -139,7 +139,7 @@ That's my biggest concern.
 //話者名：少女の声
 //＠アイリス
 
-[message name=GirlsVoice voice=00_002_0020 charaid=600601 icon=true]
+[message name=A Girl's Voice voice=00_002_0020 charaid=600601 icon=true]
 Stop being so mean!
 [/message]
 
@@ -174,21 +174,21 @@ suggesting they're arguing.
 //話者名：少女の声
 //＠アイリス
 [face id=600601 type=painful]
-[message name=GirlsVoice voice=00_002_0030 charaid=600601 icon=true]
+[message name=A Girl's Voice voice=00_002_0030 charaid=600601 icon=true]
 I told you a dozen times...
 We don't have much time!
 [/message]
 
 //話者名：男性の声
 //＠スナーク
-[message name=MalesVoice voice=00_002_0040 charaid=601701 icon=true]
+[message name=A Male's Voice voice=00_002_0040 charaid=601701 icon=true]
 This is far from sufficient to convince me.
 Do you even comprehend what you are attempting to accomplish?
 [/message]
 
 //話者名：男性の声
 //＠スナーク
-[message name=MalesVoice voice=00_002_0050 charaid=601701 icon=true]
+[message name=A Male's Voice voice=00_002_0050 charaid=601701 icon=true]
 This time's deeds, your manner of being a 'person',
 it strikes me as no different from the conceited behavior of that 'cult'.
 [/message]
@@ -196,21 +196,21 @@ it strikes me as no different from the conceited behavior of that 'cult'.
 
 //話者名：少女の声
 //＠アイリス
-[message name=GirlsVoice voice=00_002_0060 charaid=600601 icon=true]
+[message name=A Girl's Voice voice=00_002_0060 charaid=600601 icon=true]
 Ugh?!
-There’s no way that could be...!
-That’s not it! I swear, that’s not it!
+There's no way that could be...!
+That's not it! I swear, that's not it!
 [/message]
 
 //話者名：女性の声
 //＠新アリス
-[message name=WomansVoice voice=00_002_0070 charaid=600801]
+[message name=A Woman's Voice voice=00_002_0070 charaid=600801]
 Sigh... This situation truly exemplifies what a stalemate is, doesn't it?
 [/message]
 
 //話者名：女性の声
 //＠新アリス
-[message name=WomansVoice voice=00_002_0080 charaid=600801]
+[message name=A Woman's Voice voice=00_002_0080 charaid=600801]
 Masters, have you noticed? The 'guest' has already arrived, so I'll go and introduce them.
 [/message]
 
@@ -251,14 +251,14 @@ In the blink of an eye, in a space where there hadn't been a single person just 
 
 
 //話者名：高貴そうな女性
-[message name=NobleWoman voice=00_002_0090 charaid=600801]
+[message name=A Noble Woman voice=00_002_0090 charaid=600801]
 Thank you for your patience.
 Allow me to explain the situation...
 [/message]
 
 //話者名：高貴そうな女性
 [face id=600801 type=painful]
-[message name=NobleWoman voice=00_002_0100 charaid=600801]
+[message name=A Noble Woman voice=00_002_0100 charaid=600801]
 Oh no... How terrible of me.
 I really shouldn't skip the formalities.
 [/message]
@@ -289,7 +289,7 @@ I suppose so...
 
 [select]
 [link text="Long time no see, Alice." label=longtimetosee]
-[link text="...This is our first meeting." label=firstmet]
+[link text="...This is our first meeting." label=firstmet]
 [/select]
 
 /////////////// １の場合 ///////////////
@@ -367,7 +367,7 @@ This Ludens next to me... is the new 'key' and a significant great 'catalyst'.
 //話者名も無し
 [message]
 A girl with red locks.
-Although her eyes are wide open, there’s a complete lack of life in her...
+Although her eyes are wide open, there's a complete lack of life in her...
 [/message]
 //一回テキストウィンドウを非表示
 [visible show=false]
@@ -391,7 +391,7 @@ Although her eyes are wide open, there’s a complete lack of life in her...
 [visible show=true]
 //話者名：少女の声
 //＠アイリス
-[message name=Voice voice=00_002_0180 charaid=600601 icon=true]
+[message name=A Girl's Voice voice=00_002_0180 charaid=600601 icon=true]
 ...Hey!? Alice!
 Wh-What are you going to do with "that thing"...!?
 [/message]

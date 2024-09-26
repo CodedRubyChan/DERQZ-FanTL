@@ -112,7 +112,7 @@ it looks like Alice's suggestion of 'drastic measures' has been a success.
 
 [face id=200101 type=default]
 [message name=Shina charaid=200101 voice=00_009_0050]
-Oh, don’t worry about this person...!
+Oh, don't worry about this person...!
 [/message]
 
 
@@ -132,7 +132,7 @@ Please don't be so stubborn!
 
 [face id=601701 type=default]
 [message name=IntimidatingMan charaid=601701 voice=00_009_0080]
-... Don’t wear your clothes all crooked.
+... Don't wear your clothes all crooked.
 [/message]
 
 
@@ -311,7 +311,7 @@ Welcome to the city of Saouji!
 [face id=200102 type=default]
 [message name=Red Ludens charaid=100105 voice=00_009_0190]
 Hmm… The air feels colorful.
-There’s a pleasant smell too…
+There's a pleasant smell too…
 [/message]
 
 
@@ -375,8 +375,8 @@ As long as we're here, it doesn't matter much!
 
 [face id=200102 type=default]
 [message name=Shina charaid=200102 voice=00_009_0290]
-Ah, that’s right. What’s your name?
-Since we’ll be roommates from here on!
+Ah, that's right. What's your name?
+Since we'll be roommates from here on!
 [/message]
 
 
@@ -425,7 +425,7 @@ I'd like to know my name...
 
 [message name=Red Ludens charaid=100105 voice=00_009_0340]
 Well… if you say so…
-Um, Shina, I don’t even know my name, but nice to meet you…
+Um, Shina, I don't even know my name, but nice to meet you…
 [/message]
 [goto label=director]
 
@@ -437,7 +437,7 @@ Um, Shina, I don’t even know my name, but nice to meet you…
 [message name=Shina charaid=200102 voice=00_009_0350]
 ...I see...
 Well then, if I may be so bold,
-I will name you as the ‘Director’.
+I will name you as the ‘Director'.
 [/message]
 
 [face id=200102 type=thoughts]
@@ -447,7 +447,7 @@ I will name you as the ‘Director’.
 
 [face id=200102 type=default]
 [message name=Shina charaid=200102 voice=00_009_0370]
-Arata Mizunashi... It has been settled!
+Arata MIZUNASHI... It has been settled!
 [/message]
 
 
@@ -516,7 +516,7 @@ Arata Mizunashi... It has been settled!
 
 
 [message name=Sayaka charaid=100101 voice=00_009_0420]
-Truly, I found myself in a situation where I didn’t understand anything,
+Truly, I found myself in a situation where I didn't understand anything,
 yet here I am, living as myself in this moment.
 [/message]
 

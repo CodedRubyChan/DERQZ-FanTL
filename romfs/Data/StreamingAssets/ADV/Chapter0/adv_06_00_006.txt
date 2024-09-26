@@ -209,51 +209,51 @@ her limbs and spirit giving in completely.
 
 [message name=Alice voice=00_006_0070 charaid=600701]
 Oh sure, sure…
-you really didn’t last long, did you?
+you really didn't last long, did you?
 [/message]
 
 [face id=600701 type=default]
 [message name=Alice voice=00_006_0080 charaid=600701]
 For you, this may be happening right now,
-but for me, it’s already a distant memory.
-It didn’t leave much of an impression...
+but for me, it's already a distant memory.
+It didn't leave much of an impression...
 [/message]
 
 [face id=600701 type=confuse]
 [message name=Alice voice=00_006_0090 charaid=600701]
 I mean, sure… I have a taste for death in any form,
-but this time it felt a bit hasty, wouldn’t you agree?
+but this time it felt a bit hasty, wouldn't you agree?
 [/message]
 
 [face id=600701 type=default]
 [message name=Alice voice=00_006_0100 charaid=600701]
-If that’s what pleases you… well,
-I suppose that’s fine...
+If that's what pleases you… well,
+I suppose that's fine...
 [/message]
 
 [face id=600701 type=confuse]
 [message name=Alice voice=00_006_0110 charaid=600701]
 I am…
-as you can see, I’m Alice, aren’t I?
+as you can see, I'm Alice, aren't I?
 [/message]
 
 [face id=600701 type=smile]
 [message name=Alice voice=00_006_0120 charaid=600701]
-You noticed I’ve changed?
+You noticed I've changed?
 Ufufufu, of course.
-But there’s little point in dwelling on it, don’t you think?
+But there's little point in dwelling on it, don't you think?
 [/message]
 
 [face id=600701 type=default]
 [message name=Alice voice=00_006_0130 charaid=600701]
 Take the child and go quickly.
-It’s not 'degradation,' but 'restoration.'
+It's not 'degradation,' but 'restoration.'
 Just a 'return'... with your unique ability, as always.
 [/message]
 
 [face id=600701 type=smile]
 [message name=Alice voice=00_006_0140 charaid=600701]
-Next time, I’m looking forward to a more delectable demise, alright…?!
+Next time, I'm looking forward to a more delectable demise, alright…?!
 [/message]
 
 
