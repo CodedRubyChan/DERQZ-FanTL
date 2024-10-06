@@ -1,0 +1,21 @@
+BattleLog - COMPLETED
+CharacterHealthLotteryMst - SKIPPED
+CharacterLevelMst - SKIPPED
+CharacterMst - COMPLETED
+CheckPointMst - COMPLETED
+ClientConstantMst - SKIPPED
+ContentsReleaseConditionMst - SKIPPED
+########## SAVED - V2_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle #########
+DeathendMst - COMPLETED
+DeathendSkillTreeMst - SKIPPED
+DungeonEnemyGroupMst - COMPLETED
+########## SAVED - V3_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
+DungeonFloorMst - COMPLETED
+DungeonItemGroupMst - COMPLETED
+DungeonMst - COMPLETED
+DungeonPresetMst - SKIPPED
+DungeonResultMst - SKIPPED
+DungeonShopBugTextMst - COMPLETED
+DungeonShopProductMst - SKIPPED
+DungeonTrapGroupMst - COMPLETED
+########## SAVED - V4_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
