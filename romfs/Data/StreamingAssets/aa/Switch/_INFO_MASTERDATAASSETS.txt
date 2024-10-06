@@ -19,15 +19,16 @@ DungeonShopBugTextMst - COMPLETED
 DungeonShopProductMst - SKIPPED
 DungeonTrapGroupMst - COMPLETED
 ########## SAVED - V4_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
-EnemyItemDropMst
-EnemyMotionMst
-EnemyMst
-EnemyResistMst
-EnemySkillMst
-EnemySummonTableMst
-EnemyVoiceMst
-EventActionMst
-EventTriggerMst
+EnemyItemDropMst - SKIPPED
+EnemyMotionMst - SKIPPED
+EnemyMst - COMPLETED
+EnemyResistMst - SKIPPED
+EnemySkillMst - SKIPPED
+EnemySummonTableMst - SKIPPED
+EnemyVoiceMst - SKIPPED
+EventActionMst - SKIPPED
+EventTriggerMst - SKIPPED
+########## V5_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
 FigureGroupMst
 FigureMst
 GalleryCharacterFaceMst
