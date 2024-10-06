@@ -1,0 +1,536 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+// adv_28_03_022
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+// [fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=1.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkF]
+
+// Display specified background
+// [image type=bg id=000140]
+[character id=100106 posx=0.84 anim=fade face=default show=true wait=true]
+
+// Fade in over a specified time
+// [fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Strain Area Deep
+// Background remains dungeon
+// BGM28
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+//////// Display text window again
+[visible show=true]
+
+[message name=Girls Heart voice=03_028_0010]
+...Ah, I can't heal... I can't revive anymore. 
+You've really improved...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=03_028_0020]
+Getting praised by a monster doesn't make me happy!
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0030]
+...I see, a monster, huh... 
+That's right... I surrender...
+[/message]
+
+[character id=100106 anim=fade show=false wait=false]
+[sound type=se name=VsActivate]
+[character id=100102 posx=0.84 anim=fade face=default show=true wait=true]
+
+[face id=100102 type=default]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=03_028_0040]
+So, how about you die now?
+[/message]
+
+// 【Choice】
+// 1: Better finish her off quickly
+// 2: Killing her is…
+
+[select]
+[link text="Better finish her off quickly" label=quiet]
+[link text="Killing her is…" label=quiet]
+[/select]
+
+// Regardless of choice, the scene continues with no change in dialogue
+
+:quiet
+[face id=100102 type=default]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=03_028_0050]
+Hehe, just stay quiet, partner. 
+I'll do what I want...
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0060]
+This is the end.
+Iris-sama, I'm sorry... I failed you...
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[face id=100102 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=03_028_0070 lipsync=false]
+(Iris-sama…?)
+[/message]
+
+// Fade out
+// Fade in
+// Rottie appears
+
+[visible show=false]
+[fade type=out anim=simple sec=0.5]
+[move id=100102 posx=0.84 sec=0.1 wait=true]
+[face id=100102 type=default]
+[sound type=se name=Jump]
+[character id=200401 posx=0.15 anim=ltor face=sad show=true wait=false]
+[fade type=in anim=simple sec=0.5]
+[visible show=true]
+
+// Speaker name: ???
+
+[face id=200401 type=painful]
+
+[message name=??? charaid=200401 voice=03_028_0080]
+N-no!! Don't kill her!!
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+/// Slight horizontal screen shake
+// [shake type=horizontal sec=0.15 pow=5 fade=false wait=false]
+
+[message name=Girls Heart voice=03_028_0090]
+Rottie...!! 
+It's dangerous, you shouldn't be out here!!
+[/message]
+
+// Sayaka cancels transformation
+
+[character id=100102 anim=fade show=false wait=false]
+[sound type=se name=VsInactivate]
+[character id=100101 posx=0.84 anim=fade face=default show=true wait=true]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0100]
+Rottie!!??
+[/message]
+
+[face id=200401 type=sad]
+
+[message name=Rottie charaid=200401 voice=03_028_0110]
+Ugh, this person... 
+She may look like this, but she's not bad... 
+Please believe me~!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0120]
+Y-you're Rottie…?
+[/message]
+
+// BGM20
+[sound type=bgm state=play name=Home]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0130 lipsync=false]
+(I thought she'd be a boy... 
+But she's a girl who looks way younger than Mai-san...)
+[/message]
+
+[face id=200401 type=painful]
+
+[message name=Rottie charaid=200401 voice=03_028_0140]
+Are you okay? Can you stand? 
+I'll give you a hand.
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0150]
+I-I'm fine... 
+But don't worry about me... You might get hurt.
+[/message]
+
+[face id=200401 type=confuse]
+
+[message name=Rottie charaid=200401 voice=03_028_0160]
+Do I really not have enough strength to pull you...?!
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0170]
+U-um, nice to meet you. 
+I'm Sayaka. I'm Mai-san's friend... 
+Does that... sound familiar?
+[/message]
+
+[face id=200401 type=surprise]
+
+[message name=Rottie charaid=200401 voice=03_028_0180]
+Wha... really!? 
+You know Mai-chan!?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0190]
+Y-yeah, of course...!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0200 lipsync=false]
+(She's so cheerful... 
+Easier to talk to than Mai-san...)
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0210]
+Mai-san's really worried about you. 
+If it's okay, I'd like for you to come with us...
+[/message]
+
+[face id=200401 type=thoughts]
+
+[message name=Rottie charaid=200401 voice=03_028_0220]
+Ah, so you've come to take me... 
+For Rottie!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0230]
+Huh... um.
+So, how did you end up here, Rottie? 
+Were you captured by a monster...?
+[/message]
+
+[face id=200401 type=angry]
+
+[message name=Rottie charaid=200401 voice=03_028_0240]
+Calling her a monster is rude!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0250]
+I'm sorry...!
+[/message]
+[face id=100101 type=default]
+
+// Change to BGM01
+
+[face id=200401 type=smile]
+
+[message name=Rottie charaid=200401 voice=03_028_0260]
+So, I was walking home from school... 
+when a blue-haired girl stopped me.
+[/message]
+
+[delay sec=0.84]
+
+[sound type=bgm state=play name=TitleGallery]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0270]
+Blue hair... could it be?
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0280]
+Yes, that's Iris-sama, the creator of this world.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0290]
+The creator?
+Isn't she the one who was created, not the creator? 
+Iris president?
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0300]
+W-well, it's a bit complicated... 
+But I'm one of the Ludens that Iris-sama created.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0310]
+For something created by Iris, 
+you look awfully scary...
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0320]
+...Being in the depths of the Strain Area for so long 
+makes your appearance glitch out!
+[/message]
+
+[face id=200401 type=confuse]
+
+[message name=Rottie charaid=200401 voice=03_028_0330]
+For so long...? 
+I've only been here for a few hours, right?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0340]
+A few hours? 
+Have you been somewhere else?
+[/message]
+
+[face id=200401 type=surprise]
+
+[message name=Rottie charaid=200401 voice=03_028_0350]
+No, not that! 
+I've only been here... a few hours?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0360]
+Uhh... huh...?
+[/message]
+
+// In a low voice
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0370 lipsync=false]
+(...The flow of time is strange here...)
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0380 lipsync=false]
+(I see... 
+But Rottie looks normal, doesn't she? 
+Unlike you.)
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0390 lipsync=false]
+(You seem to be adjusting to this place too, though? 
+Earlier, your form changed a bit as well.)
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0400 lipsync=false]
+(Ah, that's called Vanquish Style...)
+[/message]
+
+[face id=200401 type=smile]
+
+[message name=Rottie charaid=200401 voice=03_028_0410]
+Yeah, yeah! You two seem to be getting along now!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0420]
+S-sorry... for attacking so much. 
+So, you were created by Iris and protected this girl...?
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0430]
+She's special, so I've been protecting her... 
+From people like Arata Mizunashi and the others.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0440]
+I see... 
+But still...
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0450]
+Yeah. I always thought it was strange 
+to keep Rottie here forever.
+[/message]
+
+[face id=200401 type=smile]
+
+[message name=Rottie charaid=200401 voice=03_028_0460]
+Ah! I didn't hate it here! 
+I got to eat delicious things... 
+And mebibak too~!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0470]
+Mebibak... what?
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0480]
+Ahhh, don't worry about it! 
+It's definitely safe to eat though...!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0490]
+Eat...?
+[/message]
+
+
+
+
+
+
+
+
+// Time passes
+// Background 30 / Strain Area Lobby
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[image type=bg id=000030 show=true]
+[delay sec=1.5]
+
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0500]
+Then, Rottie, I'll make sure you get to eat 
+lots of other things too...!
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+// Sayaka's expression change
+
+[face id=100101 type=default]
+
+[message name=Girls Heart voice=03_028_0510]
+Yes, be careful on your way back!
+[/message]
+
+[face id=200401 type=sad]
+
+[message name=Rottie charaid=200401 voice=03_028_0520]
+Is it already time to say goodbye...?
+[/message]
+
+// Speaker name: Girls Heart
+// Female Extra 20
+
+[message name=Girls Heart voice=03_028_0530]
+We'll meet again someday...! 
+Thank you, I had so much fun...! 
+I'll leave Rottie in your care, Sayaka! 
+Give Iris-sama my regards!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_028_0540]
+That's a big responsibility... 
+But I'll do my best!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

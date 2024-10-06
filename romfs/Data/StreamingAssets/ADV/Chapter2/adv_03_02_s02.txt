@@ -1,0 +1,297 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_03_02_s02
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000530]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM25  / Comedy Scene
+// Background530  / Convenience Store
+
+[character id=602401 posx=0.25 anim=fade face=default show=true wait=true]
+// Change Assistant's expression
+[face id=602401 type=smile]
+
+// Feedback from Yamazaki: “⇒ Store clerk should start speaking with a smile, right?”
+// Adjusted the clerk's expression to smile for this reason.
+
+// Show the text window
+[visible show=true]
+
+[message name=Assistant charaid=602401 voice=02_903_0010]
+Welcome!
+Oh, it's the usual beautiful lady!
+[/message]
+
+[character id=200102 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_903_0020]
+Haha… Thank you.
+[/message]
+
+[character id=200202 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Change Yurisa's expression
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0030]
+Oh ho!
+It seems like this clerk has recognized Shina's charm.
+This store must hire some really exceptional employees!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=02_903_0040]
+Hahaha.
+Are you complimenting me? Thanks a lot!
+[/message]
+
+[message name=Assistant charaid=602401 voice=02_903_0050]
+But it's not me who's amazing.
+It's that the usual lady is just way too beautiful.
+I mean, who wouldn't notice her charm?
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0060]
+I get it! I completely understand!
+The clerk is right on the mark!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0070]
+Shina's beauty is enough to captivate all of humanity!
+I feel like I could get along great with this clerk!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_903_0080]
+Um, both of you…
+I'm really happy, but could you keep it down a bit?
+It's kind of embarrassing…
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0090]
+Hehe.
+There's no need to feel embarrassed.
+After all, it's just the truth that you're beautiful, Shina.
+[/message]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=02_903_0100]
+Exactly, exactly.
+And even your embarrassed face is the best.
+You're seriously cute.
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0110]
+I get it! I totally understand!
+Look at Shina, blushing just a little!
+Ah, I can't handle how cute this is!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_903_0120]
+Ugh… I feel like there's some strange synergy happening here…
+[/message]
+
+// Change Assistant's expression
+[face id=602401 type=angry]
+
+[message name=Assistant charaid=602401 voice=02_903_0130]
+You know, I really think this meeting is fate.
+It feels like we were destined to meet.
+So, how about we exchange contact info?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+// Change Assistant's expression
+[face id=602401 type=smile]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0140]
+…Huh?
+That doesn't seem quite right, does it?
+Because Shina's destined partner is me.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0150]
+I understand having feelings for Shina, but
+You'll need to respect proper boundaries.
+[/message]
+
+// Change Assistant's expression
+[face id=602401 type=angry]
+
+[message name=Assistant charaid=602401 voice=02_903_0160]
+I'm sorry, but there's no way I can suppress these feelings.
+This passion can't be contained.
+Nobody can stop me.
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0170]
+Oh?
+So, you want to fight me?
+I'm ready whenever you are!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_903_0180]
+L-Lily! Calm down, okay?
+Let's not say anything too dangerous.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0190]
+I'm sorry, Shina.
+It seems I let myself get carried away.
+I've been rude to the clerk, too…
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=eyeleft]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=02_903_0200]
+Hahaha, don't worry about it.
+It just means that this lady's charm
+Has driven us all a little crazy!
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_903_0210]
+I get it! I completely understand!
+It's all Shina's fault for being too beautiful!
+Ah! What a sinful person you are, Shina!
+[/message]
+
+// Assistant exits to the left
+[character id=602401 anim=rtol show=false wait=false]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_903_0220]
+Ugh… things are just getting more heated.
+[/message]
+
+// Sayaka enters from the right
+// [character id=100101 posx=0.74 anim=fade face=smile show=true wait=true]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[move id=200102 posx=0.25 wait=false]
+[move id=200202 posx=0.5 wait=false]
+
+[character id=100101 posx=0.74 anim=fade face=smile show=true wait=true]
+
+// Placeholder for adjustments
+// [character id=602401 anim=fade show=false wait=false]
+// [character id=100101 posx=0.24 anim=fade face=smile show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_903_0230]
+But I understand how Yamamura-san feels.
+Shina is so beautiful and kind.
+I totally get wanting to stay with her forever. It's true, you know?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_903_0240]
+Gosh, even you too, Sayaka…?
+But thank you. Hehe.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+[sound type=se state=stop]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,223 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_06_03_s02
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// BGM25 / Workplace scene
+// Background 470 / Iris Corporation - Development Room
+
+[character id=100101 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.66 anim=fade face=default show=true wait=false]
+
+[face id=100101 type=thoughts]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0010]
+...Akagi, you're not your usual self today, it's like something's missing...
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=03_906_0020]
+Hmm? What do you mean, newbie?
+[/message]
+
+/// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0030]
+Ah! Oh yeah, by the way, I haven't seen Mai around today!
+She hasn't come in yet?
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=03_906_0040]
+Oh, now that you mention it...
+Maybe she overslept.
+She's been really busy lately.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0050]
+Shouldn't we, you know, contact her or something?
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=03_906_0060]
+Nah, it's fine. She's in a different department now anyway.
+Let her rest if she needs it. Things are a bit relaxed at the moment.
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=03_906_0070]
+Besides, Mai isn't the type to show when she's tired.
+We should be the ones looking out for her and letting her rest.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeright]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0080]
+Hmm. Akagi, you've changed, haven't you? You don't seem to have that edge anymore when it comes to Mai.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+/// Sayaka is surprised
+[shake target=chara id=602601 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=03_906_0090]
+N-no way! I'm just really content with my life now!
+I don't care about Mai anymore, that's all!
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=03_906_0100]
+Sumika introduced me to this web design job, and it's been going great!
+I get to use my strengths and feel happy every day!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0110]
+That's great to hear! You should definitely thank Sumika!
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=03_906_0120]
+I've even been lucky lately! Yesterday, I was going to go to the hospital, but I got pulled into some last-minute work and couldn't go.
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=03_906_0130]
+But get this! There was a fire at the hospital! 
+If I'd gone, I would've been caught up in it for sure!
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=default]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0140 lipsync=false]
+(A fire? That's not what really happened... but I guess that's what's being reported. 
+Maybe it's because the director activated the sprinklers...)
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=03_906_0150]
+Sayaka? You look like you're thinking about something. 
+Are you worried about Mai?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0160]
+Uh, well... yeah, I guess I am...
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=03_906_0170]
+Pfft, she's the type that wouldn't die even if you tried to kill her, trust me...
+But if you're that worried...
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=03_906_0180]
+Why don't you ask Kouji? He's her dad, after all. 
+He might know something about today.
+[/message]
+
+[face id=602601 type=default]
+
+[face id=100101 type=surprise]
+
+////////////////////////////////////////////////////////////It's not "Mai-san"
+[message name=Sayaka Hiwatari charaid=100101 voice=03_906_0190]
+Wait, that guy's really Mai's dad?! 
+I'll have to talk to him if I get the chance.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

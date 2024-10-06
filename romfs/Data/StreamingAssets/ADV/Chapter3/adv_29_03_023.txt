@@ -1,0 +1,190 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+// adv_29_03_023
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkD]
+
+// Display specified background
+[image type=bg id=000160]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+// Background 160 / Night City
+// BGM 26
+
+[character id=200402 posx=0.32 anim=fade face=default show=true wait=false]
+
+[character id=100101 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_029_0010]
+Ugh, made a bit of a mistake. Now I've ended up in a place like this!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=03_029_0020]
+Wow, so pretty…!
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=03_029_0030]
+Wait, was the view outside always like this…?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_029_0040]
+Hey, Rottie! Your outfit has changed. You also… look even younger?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=03_029_0050]
+Oh, this is what I wore in Romania!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=03_029_0060]
+...Wow, this is amazing! Sayaka! This… this is another country~~!!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_029_0070]
+Rottie, where exactly have you been all this time?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=03_029_0080]
+Like I said, in Romania! I met Mai when she was visiting different schools because of her mom's work. That's how we got to know each other!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_029_0090 lipsync=false]
+(Wait… was it really okay to bring her here?)
+[/message]
+
+// Mai enters
+
+[move id=100101 posx=0.74 wait=false]
+[move id=200402 posx=0.5 wait=false]
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_029_0100]
+Sayaka, you took your time… I was worried because of what happened with Liliana and the others, and…
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=03_029_0110]
+R…Rottie?!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=03_029_0120]
+Ah! It's Mai! Wow, you're wearing such cool clothes! You look so different, even though we haven't seen each other for that long!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_029_0130]
+What are you saying… I was so worried about you, idiot!!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=03_029_0140]
+I… I'm an idiot?! Rottie… is an idiot?!
+[/message]
+
+[face id=200302 type=sad]
+
+[message name=Mai Toyama charaid=200302 voice=03_029_0150]
+Ugh… I was just so worried…
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_029_0160]
+Well, seeing Mai like this… I guess bringing her here was the right choice!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=03_029_0170]
+Mai called me an idiot?!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_029_0180]
+That's not what she meant…!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

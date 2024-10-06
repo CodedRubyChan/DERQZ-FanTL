@@ -1,0 +1,196 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_16_02_008
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+// Snark appears
+[character id=601701 posx=0.33 anim=none face=default show=true wait=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//BGM19 — For subway scenes
+//Background 580 — Subway
+
+[character id=100101 posx=0.66 anim=rtol face=panic show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_016_0010]
+Sorry for the sudden appearance!! I came back!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+//Speaker: Intimidating Man
+
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Intimidating Man charaid=601701 voice=02_016_0020]
+You're in a rush again today.
+It seems you've gained a new power.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Intimidating Man charaid=601701 voice=02_016_0030]
+I can guess why you've come here, but this is a contract. 
+What do you seek? State your request.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_016_0040]
+Yamamura-san's hospital… 
+Something's wrong with it. I want to go to the Strain Area and destroy the door from there!
+[/message]
+
+[face id=601701 type=thoughts]
+
+[message name=Intimidating Man charaid=601701 voice=02_016_0050]
+I see.
+So the Strain Area's encroachment is happening through the gate…
+[/message]
+
+[face id=601701 type=thoughts]
+
+[message name=Intimidating Man charaid=601701 voice=02_016_0060]
+Iris… So even with her management, it's only this much.
+You have it rough as well.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+[fade type=out anim=simple sec=1]
+// Sayaka changes expression
+[face id=100101 type=default]
+[face id=601701 type=default]
+[image type=bg id=000590 show=true]
+[delay sec=0.5]
+[sound type=se name=Intrain]
+[fade type=in anim=simple sec=1]
+
+// Background changes to inside the train
+
+[visible show=true]
+[face id=100101 type=surprise]
+
+/// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_016_0070]
+Come to think of it…
+Snark, you know Iris too?
+[/message]
+
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=02_016_0080]
+...Hmph.
+We're more than just acquaintances… 
+You could say we're close.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=02_016_0090]
+But more importantly, Sayaka… 
+How do you know my name?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_016_0100]
+Well, I'm a Luden too, you know. 
+If I try, I can do something like this.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_016_0110]
+Besides… Snark isn't your real name, is it?
+[/message]
+
+[face id=601701 type=confuse]
+
+[message name=Snark charaid=601701 voice=02_016_0120]
+Oh?
+...You've figured that out as well, I see. 
+It seems I underestimated you.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_016_0130]
+Snark, you're pretty amazing too. 
+You know my name! Are you a Luden like me?
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=02_016_0140]
+I have many acquaintances, you see. 
+I just heard about you from someone who knows you well.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

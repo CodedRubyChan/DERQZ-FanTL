@@ -1,0 +1,1039 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+
+//adv_21_02_013
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Preload the still images and characters for the scene (to avoid load time on first appearance)
+[image type=still id=100009 show=true fade=false]
+[delay sec=0.05]
+[image type=still id=100009 show=false fade=false]
+
+
+// Display the specified background
+[image type=bg id=000500]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+//BGM02
+//Background 500 / University Hospital
+
+// Display Mai and Sugiura
+[character id=602201 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.66 anim=fade face=panic show=true wait=true]
+
+[face id=200302 type=panic]
+
+// Display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_021_0010]
+Haa...! Haa...!
+It looks like we haven't shaken them off yet...!
+[/message]
+
+[face id=602201 type=painful]
+
+[message name=Sugiura charaid=602201 voice=02_021_0020]
+Yeah, and... 
+It looks like we got separated from the director and the others...
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Sugiura exits
+[character id=602201 anim=fade show=false wait=false]
+// Mai exits
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Yurisa, Shina, and Sayaka appear
+// Yurisa appears
+[character id=200202 posx=0.24 anim=fade face=surprise show=true wait=false]
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=surprise show=true wait=true]
+
+[face id=200102 type=default]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+// Display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0030]
+That works out for the best! 
+It seemed like that girl Lilith was mainly after me anyway...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0040]
+So, as long as we protect Shina and get away,
+the mission is complete...!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+// Change Yurisa's expression
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0050]
+Sh-Shina... I'm really sorry...!!
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0060]
+Wh-what's wrong, Lilith!?
+[/message]
+
+[face id=200202 type=sad]
+// Change Sayaka's expression
+[face id=100101 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0070]
+I-if I hadn't invited you here today, 
+none of this would've happened...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0080]
+No... it's about Mizunashi. 
+He would've come up with something else, 
+and being here means we can do something about it!
+[/message]
+
+[face id=200102 type=thoughts]
+// Change Sayaka's expression
+[face id=100101 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0090]
+We need to make sure all the patients 
+can get out safely...!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Exit the female characters
+
+// Yurisa Yamamura
+[character id=200202 anim=fade show=false wait=false]
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Sugiura appears
+[character id=602201 posx=0.49 anim=fade face=smile show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_021_0100]
+You're really brave, Shina... 
+If I didn't have my wife Maria, 
+I might have fallen for you!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Sugiura exits
+[character id=602201 anim=fade show=false wait=true]
+
+// Yurisa appears
+[character id=200202 posx=0.49 anim=fade face=sad show=true wait=false]
+// Wait for the specified time to adjust
+[delay sec=0.2]
+
+// Display the text window
+[visible show=true]
+
+// Slap sound effect
+[sound type=se name=Hand]
+// Screen shake
+[shake type=random sec=0.1 pow=10 fade=false wait=false]
+
+[face id=200202 type=angry]
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0110]
+Stop it at a time like this!!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.2]
+
+// Sugiura appears
+[character id=602201 posx=0.49 anim=fade face=smile show=true wait=true]
+[face id=602201 type=painful]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_021_0120]
+M-my lady... I'm terribly sorry!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Sugiura exits
+[character id=602201 anim=fade show=false wait=false]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Shina appears
+[character id=200102 posx=0.24 anim=fade face=confuse show=true wait=false]
+// Mai appears
+[character id=200302 posx=0.49 anim=fade face=confuse show=true wait=false]
+// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=surprise show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0130 lipsync=false]
+(Is it possible that Miss Yamamura is really strong in a fight...?)
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=02_021_0140]
+Something... feels off...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0150]
+Mai...?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=02_021_0160]
+...!? 
+Get away from that door!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+[face id=602201 type=confuse]
+
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+// Mai exits
+[character id=200302 anim=fade show=false wait=false]
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Sugiura appears
+[character id=602201 posx=0.32 anim=fade face=confuse show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_021_0170]
+Huh? 
+This is the entrance to the morgue...
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// BGMOFF
+// Magic sound effect
+
+[sound type=bgm state=stop]
+
+// Sound effect for Sugiura's face glitching
+[sound type=se name=Magic]
+
+[face id=602201 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[shake type=random sec=2.5 pow=30.5 fade=true wait=false]
+[message name=Sugiura charaid=602201 voice=02_021_0180]
+...Gwaaahhh!!
+[/message]
+
+
+// Blood effect
+[effect type=BloodLarge1 show=true wait=true auto_hide=false posx=0.33 posy=0.5 priority=FrontCutin]
+
+// Yurisa appears
+[character id=200202 posx=0.66 anim=fade face=panic show=true wait=true]
+// Yurisa is shocked
+[shake target=chara id=200202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0190]
+N-no way...
+Sugiura!!?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Remove the blood effect
+[effect type=BloodLarge1 show=false wait=true auto_hide=false posx=0.5 posy=0.5 priority=FrontCutin]
+
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=false]
+// Sugiura exits
+[character id=602201 anim=fade show=false wait=true]
+
+///////////////////////////////////////////////////////////////////////////////BGM08
+///////////////////////////////////////////////////////////////////////////////Display Still Image 08
+[sound type=bgm state=play name=Chapter6]
+[image type=still id=100008 show=true]
+
+
+[character id=602201 anim=fade show=false wait=false]
+// G Lucil appears
+
+
+// Speaker name: Cute Voice
+[face id=500202 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Cute Voice charaid=500202 voice=02_021_0200]
+Infernal Parade!
+[/message]
+
+// Speaker name: Cute Voice
+
+[face id=500202 type=default]
+
+[message name=Cute Voice charaid=500202 voice=02_021_0210]
+This was Kiki's revolutionary idea!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Temporarily hide
+//[image type=still id=100008 show=false]
+
+[image type=still id=100008 show=false]
+///////////////////////////////////////////////////////////////////End of Still Image
+// Wait for the specified time
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////////Display Still Image 09
+[image type=still id=100009 show=true]
+
+// Speaker name: Cute Voice
+[face id=500202 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Cute Voice charaid=500202 voice=02_021_0220]
+An undead master who infiltrated by pretending to be a corpse!
+[/message]
+
+// Speaker name: Cute Voice
+// Background 510 / Morgue
+[image type=bg id=000510 show=true]
+
+[face id=500202 type=default]
+
+[message name=Cute Voice charaid=500202 voice=02_021_0230]
+Wriggling like marionettes, the corpses begin to dance... 
+To use corpses like that... I'm a genius! 
+Aren't I!?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+[sound type=bgm state=play name=Chapter6]
+
+// Cut-in won't disappear
+//[image type=still id=100008 show=true]
+//[image type=still id=100009 show=true]
+
+// Script to hide cut-in ↓
+[image type=still id=100008 show=false]
+[image type=still id=100009 show=false]
+///////////////////////////////////////////////////////////////////End of Still Image
+
+///////////////////////////////////////////////////////////////////Background 510 / Morgue
+ Display the specified background
+[image type=bg id=000510 sec=1]
+
+// Fade in over the specified time
+//[fade type=in anim=simple sec=1]
+
+//// Kiki Amo appears
+[character id=500202 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Change Amo's expression
+[face id=500202 type=smile]
+
+// Display the text window
+[visible show=true]
+
+[message name=Cute Voice charaid=500202 voice=02_021_0240]
+Go, NPC zombie bombs!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+////////// Kiki Amo exits
+[character id=500202 anim=fade show=false wait=false]
+
+///////////////////////////////////////////////////////////////////Display Shina's cut-in
+
+// Sound effect for Shina's spider thread cut-in
+[sound type=se name=Spider]
+
+[cutin id=000001 type=ltor sec=0.5 show=true]
+[delay sec=1.5]
+[cutin id=000001 type=fade sec=0.5 show=false]
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=painful show=true wait=false]
+
+[sound type=se name=Myorrhexis]
+
+// Display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0250]
+Ugh!? 
+This is too heavy for me to handle...
+[/message]
+
+[character id=100103 posx=0.74 anim=ltor face=angry show=true wait=true]
+
+[sound type=se name=Makeblade]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0260]
+Then I'll cut it down...!
+[/message]
+
+[face id=200202 type=sad]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.24 anim=fade face=panic show=true wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0270]
+W-wait, Sayaka...! 
+That's... Sugiura... 
+That's Sugiura!!
+[/message]
+
+[face id=100103 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0280]
+...!
+(If he's already dead, 
+it's okay to slice him, right...?)
+[/message]
+
+[face id=200202 type=sad]
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0290]
+Using a corpse as a weapon... 
+That's horrible...
+It's beyond disgraceful!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=false]
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+// Sayaka exits
+[character id=100103 anim=fade show=false wait=false]
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// From here on, display the name as Kiki Amo
+
+// Kiki Amo appears
+[character id=500202 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0300]
+Hey, hey!
+I'm the adorable Kiki Amo...
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0310]
+Against my will, 
+I came to help out Lilith-chi~
+[/message]
+
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0320]
+...But I haven't been able to kill much today.
+Is Lilith-chi already retiring?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+////////// Kiki Amo exits
+[character id=500202 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Mai appears
+[character id=200302 posx=0.49 anim=fade face=angry show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_021_0330]
+Y-you're!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Mai exits
+[character id=200302 anim=fade show=false wait=true]
+// Wait for the specified time
+[delay sec=0.2]
+// Kiki Amo appears
+[character id=500202 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0340]
+...Ugh!? 
+Why are you here again...!?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+////////// Kiki Amo exits
+[character id=500202 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Mai appears
+[character id=200302 posx=0.32 anim=fade face=angry show=true wait=false]
+// Shina appears
+[character id=200102 posx=0.66 anim=fade face=thoughts show=true wait=false]
+
+// Display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_021_0350]
+That's my line...!!
+Shina, Sayaka. 
+This is the one responsible. 
+She's the reason Akagi-senpai almost died yesterday...
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0360]
+After the fake Lilith, 
+it's... Lucil, isn't it...?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Mai exits
+[character id=200302 anim=fade show=false wait=false]
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Kiki Amo appears
+[character id=500202 posx=0.8 anim=fade face=default show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[face id=500202 type=sad]
+[message name=Kiki Amo charaid=500202 voice=02_021_0370]
+...Ugh!? Lucil...!? 
+No way... don't call me by the same name 
+as that gloomy creep... Kiki-chan's gonna cry...
+[/message]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.4 anim=fade face=angry show=true wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0380]
+I agree... 
+A character from "World's Odyssey" 
+shouldn't be as disrespectful as you...!
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0390]
+...Trying to act tough? 
+In this situation? I won't forgive 
+such bravado from a weakling... 
+Should I kill you all at once!?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Magic sound effect and screen flash
+
+[sound type=se name=Magic]
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+[face id=200202 type=painful]
+
+//////////////////////////////////////////////////Move Kiki Amo towards Yurisa
+[move id=500202 posx=0.75 sec=0.2 wait=false]
+//////////////////////////////////////////////// Move Yurisa a bit
+[move id=200202 posx=0.15 sec=0.2 wait=false]
+
+// Display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0400]
+Kyaa!?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+/// Sayaka appears
+
+// Sayaka's position at 0.51 OK?
+
+
+[character id=100103 posx=0.51 anim=fade face=panic show=true wait=false]
+// Move Amo to the left
+[move id=500202 posx=0.84 sec=0.9 wait=false]
+
+// Slashing sound effect
+[sound type=se name=Slash]
+
+// Slashing effect
+[effect type=SlashSmall show=true wait=true auto_hide=false posx=0.7 posy=0.5 priority=FrontCutin]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0410]
+T-that was close!!
+[/message]
+
+/// Shina appears
+[character id=200102 posx=0.32 anim=fade face=thoughts show=true wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0420]
+Sayaka, thank you...!!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+// Change Amo's expression
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0430]
+...Can you withstand 
+a second round of corpse bombs in a row? 
+Let's find out!
+[/message]
+
+// Magic sound effect and screen flash
+[sound type=se name=Magic]
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Hide the text window
+[visible show=false]
+
+// Shake Sayaka
+[shake target=chara id=100103 type=vertical sec=0.3 pow=10 fade=false wait=false]
+
+[face id=100103 type=painful]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0440 lipsync=false]
+(Ugh!? My body... 
+I can't move anymore...)
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+//【Choice】
+// 1: Don't give up!
+// 2: Hang in there!
+
+[select]
+[link text="Don't give up!" label=dontlose]
+[link text="Hang in there!" label=dontlose]
+[/select]
+
+:dontlose
+
+// Move Shina and Sayaka to the left
+[move id=200102 posx=0.16 sec=0.9 wait=false]
+[move id=100103 posx=0.32 sec=0.9 wait=false]
+
+// Change Yurisa's expression[face id=200202 type=angry]
+
+// Move Yurisa to where Sayaka was standing
+[move id=200202 posx=0.64 sec=0.5 wait=true]
+
+
+// Yurisa's position at 0.51 OK?
+
+
+//// Display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_021_0450]
+I-I won't let you!!!
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0460]
+That's reckless, Lily!!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0470 lipsync=false]
+(Partner... I'm sorry...
+Even though you were cheering me on... Now Miss Yamamura...
+won't make it in time!!)
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// BGMOFF
+// G Lilith appears
+
+[sound type=bgm state=stop]
+
+// Shake Yurisa
+[shake target=chara id=200202 type=vertical sec=0.4 pow=10 fade=false wait=false]
+
+// Move Yurisa
+//[move id=200202 posx=0.8 sec=0.2 wait=false]
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Dimensional Rift sound effect
+[sound type=se name=Mirror]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_021_0480]
+Just like that...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0490]
+Miss Yamamura... disappeared!?
+[/message]
+
+[face id=500202 type=angry]
+[message name=Kiki Amo charaid=500202 voice=02_021_0500]
+...Huh!?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0510]
+Noooo!!
+[/message]
+
+// BGM13
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+// Lilith appears
+[character id=500102 posx=0.64 anim=fade face=default show=true wait=true]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_021_0520]
+Hold on, hold on... Shina. 
+"She" is safe.
+[/message]
+
+[face id=200102 type=painful]
+
+
+// Move Shina
+[move id=200102 posx=0.13 wait=false]
+// Move Sayaka
+[move id=100103 posx=0.29 wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0530]
+...Huh? 
+Wait, Lilith... 
+You already caught up to us...
+[/message]
+
+//[character id=200102 anim=fade show=false wait=false]
+
+//[character id=100103 posx=0.2 anim=fade face=angry show=true wait=true]
+
+// Change Sayaka's expression
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0540]
+"Dimensional Rift." 
+Did you let Miss Yamamura escape?
+[/message]
+
+//[character id=100103 anim=fade show=false wait=false]
+
+//[character id=200102 posx=0.2 anim=fade face=surprise show=true wait=true]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0550]
+...Let her escape!?
+[/message]
+
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_021_0560]
+...I dislike her just enough 
+that I don't want to let that murderer kill her. 
+Yurisa, that is
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0570]
+You...! 
+What are you doing... 
+I came here to help you, didn't I...!?
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_021_0580]
+...I don't need help.
+Amo, your sense of humor is terrible, 
+and your methods of killing are disgusting. 
+I won't let you kill Shina.
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0590]
+...H-huh...?
+[/message]
+
+// Kiki Amo shakes in surprise
+[shake target=chara id=500202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0600]
+Don't call me Amo Amo!!
+I hate Svetlana Amou!! 
+I'm nothing like her!!
+[/message]
+
+// Kiki Amo shakes in anger
+[shake target=chara id=500202 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=02_021_0610]
+If you interfere any further... 
+I'll make sure you regret it!!
+[/message]
+
+[face id=500102 type=angry]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_021_0620]
+...Fine, let's settle this “inside.”
+[/message]
+
+// Dimensional Rift sound effect
+[sound type=se name=Mirror]
+
+// Lilith and Kiki Amo exit
+[character id=500202 anim=fade show=false wait=false]
+[character id=500102 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Move Shina
+[move id=200102 posx=0.25 wait=false]
+// Move Sayaka
+[move id=100103 posx=0.75 wait=true]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0630]
+They both disappeared... 
+Did we get saved by their infighting!?
+[/message]
+
+[character id=200302 posx=0.5 anim=fade face=panic show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_021_0640]
+Not yet, Sayaka...!!
+You're a Luden, right!? 
+Do you know where Miss Yamamura is now!? Can you tell!?
+[/message]
+
+[face id=100103 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0650]
+...Uh, those two vanished... 
+That's where she went...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0660]
+We have to rescue her... immediately!!
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_021_0670]
+...I'm really sorry for always relying on you, Sayaka... 
+Please, save Lily in my place...
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_021_0680]
+Leave it to me, Shina!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

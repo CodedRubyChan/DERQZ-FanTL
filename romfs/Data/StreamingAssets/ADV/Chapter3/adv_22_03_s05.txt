@@ -1,0 +1,172 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_22_03_s05
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter6]
+
+// Display the specified background
+[image type=bg id=000130]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM04
+// Background 130 / Station Front Day
+
+[character id=602701 posx=0.33 anim=fade face=default show=true wait=true]
+
+//// The men are surprised
+[shake target=chara id=602701 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+/////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Aphesis Follower charaid=602701 voice=03_922_0010]
+Question this world for the sake of your freedom!
+Come, join us in the Aphesis Sect!
+Let's reform the world together!
+[/message]
+
+[character id=100101 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_922_0020 lipsync=false]
+(Those are more people from the Aphesis Sect...
+A lot of people have stopped to listen.
+Is what they're saying really that captivating?)
+[/message]
+
+[face id=602701 type=default]
+
+[message name=Aphesis Follower charaid=602701 voice=03_922_0030]
+What you see with your eyes.
+What you hear with your ears.
+Can you really say those things exist as you perceive them!?
+[/message]
+
+///// The men are surprised
+[shake target=chara id=602701 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[face id=602701 type=default]
+
+[message name=Aphesis Follower charaid=602701 voice=03_922_0040]
+Question everything.
+It all starts with doubt!
+[/message]
+
+[face id=602701 type=default]
+
+[message name=Aphesis Follower charaid=602701 voice=03_922_0050]
+Right now, the only truth in this world is the Aphesis Sect!
+We are the only ones who are real.
+Our voices are the only truth!
+[/message]
+
+///// The men are surprised
+[shake target=chara id=602701 type=vertical sec=0.2 pow=30 fade=false wait=false]
+[face id=602701 type=default]
+
+[message name=Aphesis Follower charaid=602701 voice=03_922_0060]
+Therefore, believe in us, the Aphesis Sect!
+We will lead you!
+Not to the false world, but to the real one!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_922_0070 lipsync=false]
+(They're telling people to doubt, but also to believe...
+This is way too complicated for me.)
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_922_0080 lipsync=false]
+(But look at how many people are listening to them...
+I guess it must be striking a chord with some.
+Maybe there's something they can relate to...?)
+[/message]
+
+// Slight horizontal screen shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+///// The men are surprised
+[shake target=chara id=602701 type=vertical sec=0.2 pow=30 fade=false wait=false]
+[face id=602701 type=default]
+
+[message name=Aphesis Follower charaid=602701 voice=03_922_0090]
+You are not alone.
+Come with us! 
+Together, we will break free from this prison!
+Reform the world with us!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+///// Move Sayaka to Shiina's side
+[move id=100101 posx=0.75 sec=1 wait=false]
+
+[face id=100101 type=confuse]
+
+/////// Display the text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_922_0100]
+...This is starting to creep me out a bit.
+I wonder why?
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

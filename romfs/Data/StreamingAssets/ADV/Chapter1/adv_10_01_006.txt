@@ -1,0 +1,279 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_10_01_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=1]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000480]
+
+/////////////////////////////////////////////////////////////////////////// Show Shina's character
+[character id=200102 posx=0.24 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM23 / For peaceful scenes
+// Background480 / Iris Corp - VR and Sound Studio
+///////////////////////////////////////////////////////////////////////////// Show Sumika and Sayaka
+[character id=601101 posx=0.49 anim=rtol face=default show=true wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+[character id=100101 posx=0.74 anim=rtol face=thoughts show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_010_0010]
+Okay, I brought Sayaka back,  
+ready for work!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_010_0020]
+Thanks, Sumika!  
+So, Sayaka, how was it?  
+How do you feel about the company atmosphere?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_010_0030]
+...Everyone is...  
+pretty unique.
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_010_0040]
+Wait…?!  
+You look like you've already burned out!  
+The real work is just about to start, you know?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_010_0050]
+Honestly... I'm starting to wonder  
+if there's any work I can actually do here.  
+I've spent most of my time at home just browsing the internet…
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_010_0060]
+...Don't forget!  
+Today is also the day you get to meet ‘Celica'!  
+Just trust me and try putting on these goggles.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_010_0070]
+What is this…?  
+‘White Rabbit'?  
+Is that the name of the goggles?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_010_0080]
+Heheh!  
+Prepare to experience the wonders of Luden technology,  
+handcrafted by the chairman herself!  
+This is the culmination of our programmer team's hard work!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_010_0090]
+(There's that ‘Luden' term again...)  
+So, I just put these on, right?  
+Sumika-san... this...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sound of VR goggles being put on
+[sound type=se name=Wear]
+///////////////////////////////////////////////////////////////////////////////////// Screen goes dark
+[fade type=out anim=simple sec=0.5]
+
+[character id=601101 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=true]
+
+// Only show Celica's character
+[character id=200901 posx=0.49 anim=none face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=1]
+
+[image type=bg id=000240 show=true]
+///////////////////////////////////////////////////////////////////////////////////// Fade in after blackout
+[fade type=in anim=simple sec=1]
+
+// BGM03 / For VR Dungeon scenes
+[sound type=bgm state=play name=Chapter1_4_5]
+
+// Background240 / VR Game
+
+// Wait for specified seconds
+[delay sec=1]
+
+///////////////////////////////////////////////////////////////// Zoom the camera
+[camera type=zoom pivot=4 fov=0.1 sec=0.5 active=true wait=false]
+
+// Display text window
+[visible show=true]
+
+// Change Celica's expression
+[face id=200901 type=smile]
+[message name=Celica charaid=200901 voice=01_010_0100]
+Hey there!!
+[/message]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.5 active=false wait=false]
+
+// Screen shake effect
+[shake type=random sec=0.5 pow=10 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_010_0110]
+Whoa?!
+[/message]
+
+[message name=Celica charaid=200901 voice=01_010_0120]
+Are you the adventurer  
+who's going to help me explore this mansion?  
+I'm Celica. Let's go!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////// Celica OFF
+[character id=200901 anim=rtol show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Show Sayaka
+[character id=100103 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_010_0130]
+W-what's happening?!  
+She just ran off...
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: So this is ‘work'?
+// 2: Let's wait and see for a bit.
+
+[select]
+[link text="So this is ‘work'?" label=blade]
+[link text="Let's wait and see for a bit." label=blade]
+[/select]
+
+// The story continues the same regardless of choice, no change in dialogue
+
+:blade
+
+// Change Sayaka's expression
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_010_0140]
+Whoa, something's attached to my arm?!  
+I'm holding a sword?!  
+And there's something dangling from my waist too...
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: It's all exploration gear.
+
+[select]
+[link text="It's all exploration gear." label=fun]
+[/select]
+
+// Inner thoughts
+
+:fun
+// Change Sayaka's expression
+[face id=100103 type=surprise]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_010_0150]
+(Everything is so surprising...!  
+But it's fun...!)
+[/message]
+
+// Change Sayaka's expression
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_010_0160]
+(This is my first time here,  
+but the atmosphere...  
+I feel like I can handle this!)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Transition to dungeon part
+// In this section, if Sayaka's HP reaches 0,
+// she can revive immediately inside the dungeon as a special rule
+// (similar to auto-revive in Final Fantasy)
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

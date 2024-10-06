@@ -1,0 +1,669 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+
+//adv_01_03_001
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Display ADV eyecatch
+[eyecatch chapter=3 title="Balbos"]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=1]
+//########## Eyecatch ##########//
+
+// Play the specified BGM
+[sound type=bgm state=play name=TitleGallery]
+
+// Display the specified background
+[image type=bg id=000390]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM01
+// Background 390: / White background
+
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+////////// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0010]
+Eh.........
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0020]
+What is this place...?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0030]
+......
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0040]
+Where am I...?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0050]
+...Wait,
+didn't I make it out of the hospital
+somehow...?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//【Choices】
+// 1: ■■■■■!
+// 2: ●●●●●......
+
+[select]
+[link text="■■■■■!" label=listen]
+[link text="●●●●●......" label=listen]
+[/select]
+
+// The outcome is the same, no change in the dialogue regardless of choice
+
+:listen
+[face id=100101 type=confuse]
+
+////////// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0060]
+No good, partner.
+I can't hear it well...
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Switch to Background 30: Strain Area Lobby
+
+[image type=bg id=000030 show=true]
+
+[face id=100101 type=default]
+
+//////// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0070]
+Oh, my mind's waking up... 
+This place...
+I recognize it...
+[/message]
+
+// Sayaka's expression changes
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0080]
+This is,
+the place where I used to be...
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Move Sayaka's standing position
+[move id=100101 posx=0.66 wait=false]
+
+// Show Yurisa Yamamura's standing figure
+[character id=200202 posx=0.32 anim=fade face=surprise show=true wait=true]
+
+// Sayaka's expression changes
+[face id=100101 type=surprise]
+
+/////////// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0090]
+...Sayaka...!
+[/message]
+
+// Sayaka's expression changes
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0100]
+Even Yamamura-san?! 
+Why are you here...?
+[/message]
+
+//////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Move Sayaka
+[move id=100101 posx=0.74 sec=0.5 wait=false]
+// Move Yurisa
+[move id=200202 posx=0.49 sec=0.5 wait=false]
+
+// Iris appears
+[character id=600601 posx=0.24 anim=fade face=painful show=true wait=true]
+
+/////////// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Iris charaid=600601 voice=03_001_0110]
+Sorry for calling you to a place like this...
+I only called your "heart," so don't worry.
+[/message]
+
+//// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0120]
+President?!
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0130]
+...What business do you have...? 
+I want to see Shina...
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=thoughts]
+
+[face id=600601 type=default]
+
+[message name=Iris charaid=600601 voice=03_001_0140]
+I'll make it quick.
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=default]
+
+[face id=600601 type=default]
+
+[message name=Iris charaid=600601 voice=03_001_0150]
+Sayaka, thank you so much for everything at the hospital...
+Shina, Lily, and many others were saved.
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0160]
+...But,
+Sugiura and...
+some others who were too late...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris charaid=600601 voice=03_001_0170]
+Yes... 
+It was very unfortunate...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris charaid=600601 voice=03_001_0180]
+And, there was a lot of damage to the building itself...
+It's become a big issue for the patients still in there...
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=thoughts]
+
+[face id=600601 type=default]
+
+[message name=Iris charaid=600601 voice=03_001_0190]
+So, as a treasure...
+Shina and I will use what we've gathered... 
+The "universal material"...
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=default]
+
+[face id=600601 type=default]
+
+[message name=Iris charaid=600601 voice=03_001_0200]
+We'll use the "Eni" to restore
+the building and the people who were lost.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0210]
+Is that even possible?!
+Because you're a Luden... 
+Or, because you're the "President"...?
+[/message]
+
+// Iris' expression changes
+[face id=600601 type=thoughts]
+
+[message name=Iris charaid=600601 voice=03_001_0220]
+Hmm...
+Right now, I'm the only Luden who can do this...
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0230]
+...Is that different from
+the "Degrade"...?
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Iris charaid=600601 voice=03_001_0240]
+!
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris charaid=600601 voice=03_001_0250]
+Lily... you've regained your "previous" memories
+from the shock of nearly dying...!
+[/message]
+
+// Iris' expression changes
+[face id=600601 type=thoughts]
+
+[message name=Iris charaid=600601 voice=03_001_0260]
+Yes, it's different from the Degrade...
+[/message]
+
+// Sayaka's expression changes
+[face id=100105 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0270]
+Degrade?
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris charaid=600601 voice=03_001_0280]
+The Degrade is turning back time in the world.
+With it,
+you don't need to use any materials.
+[/message]
+
+// Iris' expression changes
+[face id=600601 type=painful]
+
+[message name=Iris charaid=600601 voice=03_001_0290]
+But,
+other people's memories would reset
+to the day the time was rolled back to...
+[/message]
+
+// Yurisa's expression changes
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0300]
+I don't want to forget anything about Shina...
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0310]
+And... 
+I don't want to forget about you, either, Sayaka...
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0320]
+Eh, me?
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_001_0330]
+Thank you so much for saving me...
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0340]
+Hehe, it was no big deal!
+[/message]
+
+[face id=200202 type=default]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0350]
+There were hard times, but...
+I'd rather use the material
+than the Degrade.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0360]
+Though I guess that material 
+must be limited.
+[/message]
+
+[message name=Iris charaid=600601 voice=03_001_0370]
+Yes—but for now, 
+it'll work.
+[/message]
+
+[face id=600601 type=smile]
+
+[message name=Iris charaid=600601 voice=03_001_0380]
+Thank you, both of you.
+[/message]
+
+[face id=600601 type=smile]
+
+[message name=Iris charaid=600601 voice=03_001_0390]
+Now, let's go to tomorrow!
+[/message]
+
+///////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+// White out the screen
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[delay sec=2.0]
+[sound type=bgm state=play name=TalkD]
+[image type=bg id=000450 show=true]
+[fade type=in anim=simple sec=2 color=white]
+
+// BGM26
+// Background 450 / Shina's apartment room
+
+[character id=100101 posx=0.32 anim=fade face=thoughts show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0400]
+...............
+[/message]
+
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0410]
+Ah...
+Sayaka, are you awake?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0420]
+...A dream?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0430]
+Yesterday... no, even yesterday was tough...
+Did you have a bad dream?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0440]
+Um,
+where's Yamamura-san...?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0450]
+If you're asking about Lily,
+she's at Yamamura Hospital right now.
+With her father.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0460]
+That hospital... 
+Is it safe now?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0470]
+Yes...
+We're still "handling" it.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0480]
+By "handling"... do you mean the President?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0490]
+Hehe,
+that's right.
+[/message]
+[face id=200102 type=default]
+
+// Sayaka's expression changes
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0500]
+That's amazing... 
+Being a Luden means you have to do even that much. 
+Even though the ones responsible are Arata, Lilith, and...
+Kiki, wasn't it? Those guys...
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0510]
+Well, Iris is...
+special among the special, you know.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0520]
+Is she more amazing than you, Shina?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0530]
+Haha! I'll have to work hard so I don't lose...
+today too.
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0540]
+But... 
+I'm already losing to you in terms of achievements, Sayaka.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0550]
+No way! I'm here today because of you, Shina. 
+You'll always be number one for me.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0560]
+You sure know how to make me happy!
+[/message]
+
+[face id=200102 type=default]
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0570 lipsync=false]
+(And of course, that goes for you too, partner!)
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+
+//【Choices】
+// 1: It's an honor
+// 2: Let's keep working together
+
+[select]
+[link text="It's an honor" label=trouble]
+[link text="Let's keep working together" label=trouble]
+[/select]
+[face id=100101 type=default]
+
+:trouble
+[face id=200102 type=thoughts]
+
+/// Show the text window again
+[visible show=true]
+
+// Sayaka's expression changes
+[face id=100101 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0580]
+Sayaka, after all the things that happened over these two days...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0590]
+Today... 
+no,
+it's okay to take a break for a while, you know?
+[/message]
+
+// Sayaka's expression changes
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0600]
+No way! Shina, you said... 
+"I'll work hard so I don't lose... today too."
+Didn't you!
+[/message]
+
+// Sayaka's expression changes
+[face id=100101 type=eyeright]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0610]
+I'm coming with you! I'm too curious now.
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0620]
+Haha... 
+I gave myself away with that, huh?
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0630]
+Alright, let's go to work again... 
+Let's head out early!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_001_0640]
+"Let's go, Celica!"
+Right♪
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_001_0650]
+Yeah♪ 
+Celica is surely watching our efforts!
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+/////////////////////////// Stop any playing sound effects
+[sound type=se state=stop]
+
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

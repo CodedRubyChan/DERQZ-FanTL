@@ -1,0 +1,882 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_03_03_003
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000530]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// BGM25 / For gag scenes
+// Background 530 / Convenience store
+
+[character id=600901 posx=0.20 anim=fade face=default show=true wait=false]
+
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Shina changes expression
+[face id=200102 type=eyeleft]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0010]
+So, Nova,
+the first place we're going is the convenience store?
+[/message]
+
+// Nova changes expression
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=03_003_0020]
+Yep. Even as a Luden… I'm modeled after humans,
+so my stomach gets hungry. Gotta grab a snack.
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_003_0030]
+Sayaka,
+what do you and Granny want to eat?
+I'll treat you!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0040]
+Are you seriously going to call me that from now on…?
+Well, I guess it's fine…
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0050]
+I'll have some tea and a plum rice ball.
+What about you, Granny Shina!?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0060]
+Sayaka, not you too…!
+U-uh, melon steamed bun... doesn't seem like they have it…
+Then I'll have the same thing…
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+// Shina changes expression
+[face id=200102 type=confuse]
+
+// Nova changes expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0070]
+Alrighty.
+I'll get myself coffee and a sandwich.
+Now, let's head to the register...
+[/message]
+
+/// Hide the text window
+[visible show=false]
+
+// Sayaka temporarily exits
+[character id=100101 anim=fade show=false wait=false]
+
+// Wait the specified seconds to adjust
+[delay sec=0.5]
+
+// Move Shina and Nova to 0.75 and 0.55 respectively, retake
+[move id=200102 posx=0.75 wait=false]
+[move id=600901 posx=0.55 wait=false]
+
+// Wait the specified seconds to adjust
+[delay sec=0.5]
+
+// Convenience store clerk enters from the side
+[character id=602401 posx=0.25 anim=ltor face=default show=true wait=true]
+
+////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Assistant charaid=602401 voice=03_003_0080]
+Welcome, lovely ladies!
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0090]
+Oh boy, it's him again, working today...
+[/message]
+
+// First event forcing them to come to the convenience store
+// A bit of explanatory conversation
+
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=03_003_0011]
+Huh?
+What's up with this guy…?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0021]
+He doesn't seem like a bad person, 
+but he's always trying to hit on girls.
+Yeah, I think he's just a bit of a joker…
+[/message]
+
+/// Store clerk gets surprised
+[shake target=chara id=602401 type=vertical sec=0.1 pow=10 fade=false wait=false]
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=03_003_0031]
+Thanks for the compliment…!
+What an honor!
+You're just as beautiful as ever!
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Store clerk exits
+[character id=602401 anim=fade show=false wait=false]
+
+// Nova and Shina exit
+[character id=600901 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+
+// Sayaka enters center stage
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0041 lipsync=false]
+(I'm feeling a little irritated.)
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+
+// Store clerk, Nova, and Shina enter
+
+Store clerk enters from the side
+[character id=602401 posx=0.20 anim=ltor face=default show=true wait=true]
+
+// Shina enters at 0.45
+[character id=200102 posx=0.70 anim=rtol face=default show=true wait=false]
+
+// Nova enters at 0.45
+[character id=600901 posx=0.45 anim=rtol face=default show=true wait=true]
+
+// Nova changes expression
+[face id=600901 type=confuse]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=03_003_0051]
+Alright, let's hurry up and check out.
+I'll pay by card.
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0061]
+Nova, you have a card…?!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=03_003_0071]
+Come on now,
+I mostly live in Japan these days…
+I live a normal life, y'know!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=default]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=03_003_0081]
+Here's your receipt!
+[/message]
+
+[face id=602401 type=confuse]
+
+[message name=Assistant charaid=602401 voice=03_003_0091]
+…By the way, miss…
+Could it be that you're one of those popular... Ludens...?
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0100]
+Oh! You caught on quickly.
+It's not some detective or black cat cosplay…
+…Wait, what do you mean "popular"?
+[/message]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=03_003_0110]
+Well… Ludens have become widely known 
+over the past 10 years, haven't they?
+[/message]
+
+// Nova changes expression
+[face id=600901 type=default]
+
+[face id=602401 type=thoughts]
+
+[message name=Assistant charaid=602401 voice=03_003_0120]
+It's because of that one famous cult...
+What was it called? ‘Apparel'?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0130]
+You mean ‘Aphesis'!
+‘Aphesis' is Greek, meaning separation.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Move the character
+[move id=602401 posx=0.28 sec=0.5 wait=false]
+
+// Move the character
+[move id=600901 posx=0.62 sec=0.5 wait=true]
+
+[face id=602401 type=default]
+
+////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Assistant charaid=602401 voice=03_003_0140]
+Right! That's the name of the cult!
+One of my friends is a follower…
+It's pretty well known in Japan too!
+[/message]
+
+// Store clerk changes expression
+[face id=602401 type=painful]
+
+[message name=Assistant charaid=602401 voice=03_003_0150]
+Previously, people used to call them ghosts,
+psychics, monsters, and all sorts of things…
+[/message]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=03_003_0160]
+But the cult proposed calling all of them
+‘Ludens,' as a term for nighttime beings.
+[/message]
+
+// Store clerk changes expression
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=03_003_0170]
+They even revealed exactly how Ludens come into existence!
+It's all thanks to the Aphesis cult!
+[/message]
+
+// Store clerk changes expression
+[face id=602401 type=default]
+
+// Nova changes expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0180]
+Yeah, it's nice and easy for people to just say,
+“Oh, it's a Luden.”
+[/message]
+
+/// Store clerk gets surprised
+[shake target=chara id=600901 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=03_003_0190]
+…Wait, who are you calling an "underground being"?
+You mocking me…?
+[/message]
+
+/// Store clerk gets surprised
+[shake target=chara id=602401 type=vertical sec=0.2 pow=15 fade=false wait=false]
+// Store clerk changes expression
+[face id=602401 type=confuse]
+
+[message name=Assistant charaid=602401 voice=03_003_0200]
+Eek!? P-please don't hit me with those big hands!
+[/message]
+
+// Store clerk changes expression
+[face id=602401 type=default]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0210]
+Heh… By the way, these hands may be big,
+but they're gloves inspired by cat whiskers.
+I can actually take them off.
+[/message]
+
+// Store clerk changes expression
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=03_003_0220]
+Oh!? You have normal hands too...!
+You're quite close to humans, Luden lady!
+And you're beautiful to top it off!
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_003_0230]
+Flattery won't get you anywhere.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Store clerk changes expression
+[face id=602401 type=default]
+
+// Nova exits
+[character id=602201 anim=fade show=false wait=true]
+
+/// Wait the specified seconds to adjust
+[delay sec=1.0]
+
+// Sayaka enters
+[character id=100101 posx=0.87 anim=rtol face=confuse show=true wait=true]
+
+/////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0240]
+Uh… Other customers are starting to line up,
+so we should probably go now.
+[/message]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=03_003_0250]
+Oh, right… 
+Thank you for your purchase~...
+[/message]
+
+/// Hide the text window
+[visible show=false]
+
+// Sayaka exits
+[character id=100101 anim=fade show=ltor wait=false]
+
+// Store clerk exits
+[character id=602401 anim=fade show=false wait=false]
+
+// Nova exits
+[character id=600901 anim=fade show=ltor wait=true]
+
+// Scene transition
+// Main Street
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+/// Nova enters
+[character id=600901 posx=0.20 anim=fade face=default show=true wait=false]
+/// Shina enters
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+// Sayaka enters
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+[face id=100101 type=smile]
+
+[image type=bg id=000060 show=true]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+/////////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0260]
+Yummy yum!
+This rice ball is delicious!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_003_0270]
+Yeah, sure.
+By the way,
+did you figure out anything about Ludens yet?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0280]
+Munch munch... Gulp gulp...
+Yes!!
+But there's one crucial thing I still want to know...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0290]
+How was I born…?
+And what about the other Ludens...?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0300]
+Then let me explain.
+I've told you before about the time I got hit by a truck, right?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0310]
+Could it be that I also got hit by something before?
+[/message]
+
+/// Nova gets surprised
+[shake target=chara id=600901 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0320]
+Pfft…
+It's not the getting hit part that's important…
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0330]
+Shocking events stay imprinted in a person's "memory," right?
+The driver who hit me had my image burned into his brain…
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0340]
+Now, imagine an event on a much bigger scale.
+If there were a story or rumor that remained deeply imprinted in
+the memories of hundreds, no, thousands, or tens of thousands of people—
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0350]
+Vampire legends, well-known superheroes,
+terrifying monsters, ghosts… figures talked about at night.
+What if they, like me, were able to manifest into reality…?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0360]
+Ah, I see…
+The Ludens born from these nighttime stories
+are able to manifest into the real world!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_003_0370]
+By the way, our president, Iris…
+was born from an event in "World's Odyssey."
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0380]
+"World's Odyssey"...
+The video game!?
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_003_0390]
+She was just a cute little girl with no name,
+whose only setting was that she liked flowers.
+An NPC with nothing else to her…
+[/message]
+
+/// Nova gets surprised
+[shake target=chara id=600901 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Nova changes expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0400]
+One day, she was attacked by a monster in town,
+and her lower body was crushed, just like that!
+[/message]
+
+/// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0410]
+…Wha…?
+[/message]
+
+// Nova changes expression
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=03_003_0420]
+Her final words were:
+“Ahh, flowers, red… flowers... blooming…
+dirty… painful… hurts…”
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0430]
+…Those red flowers… 
+Were they her own…!?
+That's just too sad…
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_003_0440]
+By the way, that was the very first VR event
+when playing "World's Odyssey."
+[/message]
+
+/// Gentle horizontal screen shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+/// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[face id=100101 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0450]
+… I didn't know!!
+What a horrible game…!!
+Is that really the kind of game Shina works on…?
+[/message]
+
+// Nova changes expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_003_0460]
+And guess who wrote the script?
+Granny Shina herself!
+[/message]
+[face id=100101 type=default]
+
+// Shina changes expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0470]
+Ahem.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_003_0480]
+Because the event was so shocking,
+our president, Iris, was born from the memories
+of hundreds of thousands of players!
+[/message]
+
+/// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0490]
+!?
+Then… does that mean…
+Shina, you're Iris's creator…?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=200103 posx=0.49 anim=fade face=smile show=true wait=true]
+
+/// Display the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=03_003_0500]
+Heheh—  
+Yes, I am.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0510]
+Why did you put on glasses to say that!?
+Where did you even pull them from!?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200103 voice=03_003_0520]
+I've been wearing contacts for a while now…
+But sometimes I miss glasses,
+so I carry around a pair without a prescription.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0530]
+That's such an unnecessary detail!?
+I see… So, Iris is Shina's Luden…
+Shina's child, huh…
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200103 anim=fade show=false wait=false]
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=true]
+
+////////////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0540]
+Well, yeah…
+If you ignore how awkward that sounds,
+that's pretty much it…
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0550]
+Do all the people at Iris Corporation know about this?
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_003_0560]
+Maybe… only about 10% of the hundred employees?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0570]
+Yeah. Just Nova and the other executives.
+I haven't even told Mai or Sumika.
+[/message]
+
+/// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0580]
+W-what!?
+This is such a big deal!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0590]
+It would just mess up the company's hierarchy… Plus,
+no company goes around sharing every employee's background.
+That's personal, you know!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0600]
+I-I guess… By the way, Nova, where do you come from…?
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_003_0610]
+No big secret there.
+I'm a Luden created from Iris's memories.
+That's why Shina's my "Granny."
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0620]
+I see!!
+Now I get it…
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0630]
+...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0640]
+…
+So… whose memory am I from…?
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0650]
+I'm sorry…
+I can't tell you that… just yet…
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0660]
+…Why not!?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0670]
+That's because—―――――
+[/message]
+
+// No BGM
+
+[sound type=bgm state=stop]
+
+/// Nova gets surprised
+[shake target=chara id=600901 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Nova changes expression
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=03_003_0680]
+Whoa!!
+Sorry, you two!!
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_003_0690]
+Huh!? What's wrong all of a sudden!?
+[/message]
+
+// Nova changes expression
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=03_003_0700]
+There's trouble…
+My sensors picked up "enemies."
+If we don't move now, we'll get caught up in it.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_003_0710 lipsync=false]
+(Enemies!? Ugh, the timing is terrible…!)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

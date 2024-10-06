@@ -1,0 +1,143 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+//adv_16_03_s03
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display the specified background
+[image type=bg id=000580]
+
+[character id=601701 posx=0.33 anim=none face=default show=true wait=true]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Background 580
+// BGM16
+
+[character id=100101 posx=0.66 anim=rtol face=angry show=true wait=true]
+
+// Show the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_916_0010]
+Snark!
+Give me the usual! 
+We're going to rescue someone named Rottie!
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=03_916_0020]
+So, you're willingly heading into the depths of the Strain Area
+again and again, huh?
+[/message]
+
+[face id=601701 type=confuse]
+
+[message name=Snark charaid=601701 voice=03_916_0030]
+Could it be that you're completely unaware
+of the effects the Strain Area has on you?
+Do you feel no fear at all?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_916_0040]
+...Well, maybe I do feel a little scared,
+but I can ignore that if it means saving someone.
+Isn't that just normal?
+[/message]
+
+[face id=601701 type=thoughts]
+
+[message name=Snark charaid=601701 voice=03_916_0050]
+No, not at all.
+For a normal person, that's impossible.
+You might actually be a madwoman.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=03_916_0060]
+However... it's a good sign.
+What makes you who you are lies in that very fearlessness...
+[/message]
+
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=03_916_0070]
+Impressive, Sayaka.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_916_0080]
+Wait, are you actually complimenting me?
+Wow, that's rare.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=03_916_0090]
+Now, let's go.
+With that brave heart of yours.
+I expect great things from you, Sayaka.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

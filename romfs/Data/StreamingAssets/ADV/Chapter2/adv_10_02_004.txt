@@ -1,0 +1,661 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_10_02_004
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=1]
+
+// Switch to the camera for ADV
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Show the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//BGM24 / Serious scene
+//Background470 / Iris Corporation, Development Room
+
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0010]
+Well then,
+I look forward to working with you starting today!
+[/message]
+
+[character id=200202 posx=0.32 anim=fade face=surprise show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0020]
+...No way, here of all places...
+You're also a debugger, just like me?
+Sayaka-san...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0030]
+Yes, that's right. Really...
+Seems like Shina didn't tell you anything about me.
+[/message]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0040]
+...Sayaka!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0050]
+Huh?! 
+Ah, yes?!
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0060]
+...I won't comment on how things are at home,
+but this is the workplace.
+Here, you must address her as "Director Shina."
+[/message]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0070]
+However...
+This is the workplace. Here,
+you will call her "Director Shina."
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0080]
+Y-yes...
+She is...
+Director Shina...
+[/message]
+
+[move id=100101 posx=0.74 wait=false]
+[move id=200202 posx=0.49 wait=false]
+
+[character id=601101 posx=0.24 anim=fade face=default show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_010_0090]
+Oh, you're doing it, huh.
+Is this the new employee training?
+Training by the interns?
+[/message]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0100]
+Please don't make fun of this,
+Chief Tokiwa.
+It's important to establish a clear hierarchy!
+[/message]
+
+[face id=200202 type=default]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_010_0110]
+Well, it's true that it's something our company is lacking...
+Sayaka~ 
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0120]
+Y-yes!
+[/message]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_010_0130]
+Yamamura-san, you're the senior debugger,
+so don't hesitate to ask for help if you need it!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0140]
+Roger that!
+[/message]
+
+// Sumika exits
+
+[character id=601101 anim=fade show=false wait=false]
+
+[move id=100101 posx=0.66 wait=false]
+[move id=200202 posx=0.32 wait=true]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0150]
+Now then, let's start test-playing
+the non-VR part of "End-to-Odyssey."
+It's not a competition, so take your time.
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen fades to black
+// After the blackout
+
+[fade type=out anim=simple sec=1.5]
+[visible show=false]
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[face id=100101 type=default]
+
+//// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0160]
+Phew... Test for Chapter 2 is done.
+So, Yamamura-san...
+Is everything okay?
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0170]
+What?! Already finished Chapter 2...
+Are you sure you're testing thoroughly?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0180]
+Y-yes... 
+I followed the steps on your checklist...
+The instructions were so detailed, it went smoothly.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0190]
+Hmm...
+So, it was thanks to me, huh...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0200]
+You could say that...
+Since there were no issues, I'd like to move on.
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0210]
+Sure! It's all good.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0220]
+I'll proceed with debugging Chapter 3...
+Is the data ready?
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0230]
+There's a folder called "For Chapter 3"
+in the scenario folder on the ETO server.
+Download it all to your local machine.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0240]
+Roger that.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0250 lipsync=false]
+("Local" refers to your own PC's space,
+not on the network, apparently.)
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0260 lipsync=false]
+(First, I'll delete the Chapter 2 data I downloaded before,
+and replace it with Chapter 3...)
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0270]
+Yes, that's right!
+It launched successfully.
+Now, start playing!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0280]
+Alright!
+[/message]
+
+[face id=100101 type=default]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200202 anim=fade show=false wait=false]
+
+[move id=100101 posx=0.49 wait=true]
+
+// Black background
+
+[image type=bg id=000380 show=true]
+
+//// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0290 lipsync=false]
+(After reporting to Yamamura-san,
+I grabbed the controller, full of excitement
+to immerse myself in the world of "End-to-Odyssey.")
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwarati charaid=100101 voice=02_010_0300 lipsync=false]
+(A dense forest appeared in front of me.
+I carefully proceeded forward.)
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// End of black background
+
+[image type=bg id=000470 show=true]
+
+// BGM25
+
+[sound type=bgm state=play name=TalkC]
+
+[face id=100101 type=confuse]
+
+/// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0310]
+...Huh? I can't move forward into the forest?
+Some weird text popped up.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0320]
+What does it say...
+"Sorry, this part isn't finished yet.
+Please take a detour. By Shina. Tehepero."
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0330 lipsync=false]
+(My excitement started cooling off...
+But this is work.
+First, I should check the debug specification sheet.)
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0340]
+"The Rizzaria Forest is currently unplayable,
+so please use the temporary magic stone to shortcut."
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0350]
+I see, this is the current specification...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0360 lipsync=false]
+(So, I didn't log this in the bug list
+and proceeded with the game... Then...)
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0370 lipsync=false]
+(A strong-looking character appeared. She's a boss.
+According to the spec sheet, she's one of the Four Heavenly Kings.)
+[/message]
+
+[message name=Boss Character voice=02_010_0380]
+Heh, heh, heh, you made it through
+the Rizzaria Forest alive.
+[/message]
+
+[message name=Boss Character voice=02_010_0390]
+Sinner... Bow down to the ground,
+and offer your blood to your skull in repentance!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0400 lipsync=false]
+(I didn't even enter the forest though...
+I felt a bit guilty as I entered the battle.)
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0410]
+What should I do in this situation... partner?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//【Choices】
+// 1: Let's fight with normal attacks
+// 2: Let's try using a special move
+
+[select]
+[link text="Let's fight with normal attacks" label=onehitkill]
+[link text="Let's try using a special move" label=amazing]
+[/select]
+
+// If you choose 1
+
+:onehitkill
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Play the boss defeat sound effect - Slash
+[sound type=se name=Slash]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+///// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0420]
+Huh... I defeated her in one hit.
+Isn't this a bit strange...[/message]
+
+// Stop the currently playing SE
+[sound type=se state=stop]
+
+[move id=100101 posx=0.32 wait=false]
+
+[character id=200202 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0430]
+You're talking to yourself too much, Sayaka!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0440]
+Ah... Sorry.
+But the boss got defeated
+in one hit...
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0450]
+Let me take a look.
+[/message]
+[goto label=boss]
+
+// If you choose 2
+
+:amazing
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Play the flashy boss defeat sound effect - Bigbomb
+[sound type=se name=Bigbomb]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+///// Show the text window again
+[visible show=true]
+
+/// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0460]
+W-whoa!!
+That was an incredible effect and power!!
+The boss was killed in one hit!
+[/message]
+
+// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Yurisa changes expression
+[face id=200202 type=default]
+[move id=100101 posx=0.32 wait=false]
+
+[character id=200202 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+// Yurisa changes expression
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0470]
+Hehe... Surprised, right?
+I created that effect!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0480]
+Wow?! Yamamura-san, you can do that too?!
+But isn't the power way too strong?
+It doesn't feel like a battle at all.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0490]
+No... I only handled the graphic settings for the special move.
+I didn't touch the power balance.
+Let me see!
+[/message]
+[goto label=boss]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//【Merged】
+
+:boss
+[face id=100101 type=default]
+
+/// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0500]
+This boss fight.
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0510]
+Ah... Wait, what?
+This boss character...
+Is actually implemented?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0520]
+Yes. It's one of the Four Heavenly Kings, "Sariga."
+According to the spec sheet, she's supposed to appear here, right?
+[/message]
+
+// Stop the BGM for an ominous mood
+
+[sound type=bgm state=stop]
+// Stop the currently playing BGM
+
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0530]
+...Hey.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0540]
+W-what is it?
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0550]
+This Sariga...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0560]
+?
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0570]
+...Doesn't she look like Shina?!
+[/message]
+
+// Play the specified BGM
+[sound type=bgm state=play name=BGM_TalkC]
+// Resume the BGM, returning to a cheerful atmosphere
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0580]
+Huh? Uh, well...
+Her hairstyle and color are kinda...
+(But her body shape is completely different...)
+[/message]
+
+[sound type=bgm state=play name=TalkC]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0590]
+Right?! You think so too, don't you, Sayaka?!
+She's so cute and charming...!
+Wow, I'm really looking forward to debugging this part...♪
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0600]
+Uh, Chief?
+By the way, what about Sariga getting defeated in one hit?
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_010_0610]
+...Yeah!! That's weird.
+Thanks for the bug report!
+You're really sharp, Sayaka. I'll look into this,
+so please check other areas.
+[/message]
+
+[face id=200202 type=default]
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0620]
+Y-yes.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_010_0630 lipsync=false]
+(So... I guess that's it for now?)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

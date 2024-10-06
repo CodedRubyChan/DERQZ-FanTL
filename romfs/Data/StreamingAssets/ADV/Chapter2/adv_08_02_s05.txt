@@ -1,0 +1,348 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_08_02_s05
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//BGM25 / For comedic scenes
+//Background470 / Iris Company - Development Room
+
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_908_0010 lipsync=false]
+(Oh, Sumika-san, Mai-san, and Akagi-san.
+Looks like they're talking about something.)
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Sumika Tokiwa enters
+[character id=601101 posx=0.22 anim=fade face=default show=true wait=false]
+// Akagi enters
+[character id=602601 posx=0.47 anim=fade face=default show=true wait=false]
+// Mai enters
+[character id=200302 posx=0.72 anim=fade face=default show=true wait=true]
+
+// Wait for specified seconds
+//[delay sec=1.5]
+
+// Change Sumika Tokiwa's expression
+[face id=601101 type=painful]
+
+/// Display text window again
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_908_0020]
+I heard about what happened yesterday from the president.
+It must have been tough...
+Especially you, Akagi, I'm really glad you're safe!
+[/message]
+
+// Akagi is surprised
+[shake target=chara id=602601 type=vertical sec=0.1 pow=10 fade=false wait=false]
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=02_908_0030]
+That's right, Chief Sumika!
+It was seriously rough for me!
+[/message]
+
+// Change Akagi's expression
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=02_908_0040]
+I got tied up by some weird woman,
+and when I came to, I was holding a gun.
+I honestly thought I was going to die!
+[/message]
+
+// Change Akagi's expression
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=02_908_0050]
+Well, uh…?
+Mai-san saved me though.
+That's why I'm here in one piece.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0060]
+Did you sleep properly?
+It looks like you have bags under your eyes.
+[/message]
+
+// Change Akagi's expression
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=02_908_0070]
+...Nope. Couldn't manage that.
+Whenever I close my eyes, I see that creepy woman's face.
+Her sleazy laugh won't leave my ears either!
+[/message]
+
+// Akagi is surprised
+[shake target=chara id=602601 type=vertical sec=0.1 pow=10 fade=false wait=false]
+// Change Akagi's expression
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=02_908_0080]
+Even thinking about it now gives me goosebumps.
+Who the heck was that woman...?
+Honestly, I never want to see her again!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0090]
+That's a natural way to feel.
+Please don't push yourself too hard.
+If necessary, take some time to rest.
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=02_908_0100]
+Uh, thanks?
+You've gotten awfully kind, haven't you, Mai-san...?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0110 lipsync=false]
+(It's easier to work alone anyway~)
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=02_908_0120]
+Did you say something?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0130]
+No, nothing at all.
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=02_908_0140]
+I'm honestly fine now.
+Actually, working helps take my mind off things!
+[/message]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_908_0150]
+Alright! Then, I'll give you some work without hesitation.
+Akagi, from today I'm having you switch from programmer to web designer.
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_908_0160]
+Remember how you used to make websites as a hobby?
+"Venus," right? The uniform collection site.
+So, I'd like you to team up with Mori from the web department.
+[/message]
+
+[face id=602601 type=default]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=02_908_0170]
+Wow.
+A new path for me…!!
+Sure, I'll gladly take it on!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0180]
+Oh.
+Does that mean
+today is the last day we're working together...?
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=02_908_0190]
+Hehe!
+Seems like it!
+Are you feeling a little lonely, maybe?
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0200]
+...Well,
+we might return to how we were before.
+Like when we first joined the company.
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=02_908_0210]
+When we first joined?
+Wait, what kind of relationship did we have back then?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0220]
+...Now that I think about it, maybe it wasn't that different from now.
+You were cocky right from the start, weren't you?
+—Thinking about it makes me irritated. Ugh.
+[/message]
+
+[face id=200302 type=default]
+
+[face id=602601 type=angry]
+
+/// Gentle horizontal screen shake
+[shake type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+[message name=Akagi charaid=602601 voice=02_908_0230]
+W-what's that!? 
+I thought you were finally showing a little sweetness because you were worried about me!
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0240]
+No, it's just that being around someone who's sleep-deprived or unwell
+gets in the way of my work.
+I was just making sure of that.
+[/message]
+
+[face id=602601 type=angry]
+
+// Akagi is surprised
+[shake target=chara id=602601 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[message name=Akagi charaid=602601 voice=02_908_0250]
+W-what kind of attitude is that!?
+I want to punch the version of me from a few seconds ago that was thanking you!
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=02_908_0260]
+Just make sure that punch doesn't leave you unable to recover.
+[/message]
+
+[face id=602601 type=angry]
+
+/// Gentle horizontal screen shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+// Akagi is surprised
+[shake target=chara id=602601 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Sound effect for a slap (Hand)
+[sound type=se name=Hand]
+
+[message name=Akagi charaid=602601 voice=02_908_0270]
+Not a chance!!
+[/message]
+
+// Change Sumika Tokiwa's expression
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_908_0280]
+*sigh*...
+Please, can you two try to get along a little better!
+I'm not switching your seats!
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_908_0290 lipsync=false]
+(Sumika-san has a tough job again today...)
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

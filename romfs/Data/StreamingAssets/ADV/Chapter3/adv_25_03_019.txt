@@ -1,0 +1,836 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_25_03_019
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1_4_5]
+
+// Display the specified background
+[image type=bg id=000010]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Alice's Mansion
+// Background 10
+// BGM03
+
+[character id=100101 posx=0.49 anim=rtol face=thoughts show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0010]
+W-what is this place...?
+Was there ever a mansion like this in Sagami City?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0020]
+Is this really the right place?
+Could I have come to the wrong location...?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sugiura ON
+
+[move id=100101 posx=0.66 wait=false]
+
+[character id=602201 posx=0.32 anim=fade face=confuse show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=03_025_0030]
+........
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0040]
+S-S-Sugiura-san!? What are you doing here!?
+[/message]
+
+// Sugiura changes expression
+[face id=602201 type=surprise]
+
+[message name=Sugiura charaid=602201 voice=03_025_0050]
+...Ah, I wonder why I'm here...
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// New Alice ON
+
+[move id=100101 posx=0.75 wait=false]
+[move id=602201 posx=0.49 wait=false]
+
+// Speaker: Noble-Looking Woman
+
+[character id=600801 posx=0.2 anim=fade face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Noble-Looking Woman charaid=600801 voice=03_025_0060]
+Watch your step. Things are still a bit chaotic here.
+[/message]
+
+// Speaker: Noble-Looking Woman
+
+// New Alice changes expression
+[face id=600801 type=surprise]
+
+[message name=Noble-Looking Woman charaid=600801 voice=03_025_0070]
+Since yesterday, you've been here—helping us prepare for the party.
+[/message]
+
+// Speaker: Noble-Looking Woman
+
+// New Alice changes expression
+[face id=600801 type=smile]
+
+[message name=Noble-Looking Woman charaid=600801 voice=03_025_0080]
+Please don't forget that.
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=default]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0090 lipsync=false]
+(That woman...?)
+[/message]
+
+[face id=602201 type=default]
+
+[message name=Sugiura charaid=602201 voice=03_025_0100]
+...Understood. I'll go along with it...
+[/message]
+
+// Sugiura changes expression
+[face id=602201 type=confuse]
+
+[message name=Sugiura charaid=602201 voice=03_025_0110]
+...Have we met before?
+[/message]
+
+/// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0120]
+—No, this is our first meeting!
+[/message]
+
+[face id=602201 type=thoughts]
+
+[message name=Sugiura charaid=602201 voice=03_025_0130]
+...Is that so...
+[/message]
+
+[face id=602201 type=confuse]
+
+[message name=Sugiura charaid=602201 voice=03_025_0140]
+...Everyone's always lying...
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sugiura OFF
+[character id=602201 anim=ltor show=false wait=true]
+
+[move id=100101 posx=0.66 wait=false]
+[move id=600801 posx=0.32 wait=true]
+
+// Speaker: Noble-Looking Woman
+
+[face id=600801 type=smile]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// New Alice changes expression
+[face id=600801 type=smile]
+
+[message name=Noble-Looking Woman charaid=600801 voice=03_025_0150]
+You're pretty good at keeping up!
+[/message]
+
+// Speaker: Noble-Looking Woman
+
+[face id=600801 type=default]
+
+[message name=Noble-Looking Woman charaid=600801 voice=03_025_0160]
+Anyway, thank you for coming, Sayaka!
+Long time no see, huh? I never properly introduced myself, did I?
+[/message]
+
+// Speaker: Alice *from now on: Alice
+
+// New Alice changes expression
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=03_025_0170]
+My name is Alice! It's been a few months in Japanese time!
+Still hanging in there?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0180]
+Uh, um... Yeah. I've been living with Shina.
+Thanks for asking...
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=03_025_0190]
+Good, good. You're speaking well!
+Now, what brings you here, Sayaka?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0200]
+Well...
+[/message]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=03_025_0210]
+Well, Nova already told me everything, so you don't really have to explain it, lol.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0220 lipsync=false]
+(She's more down-to-earth than I thought... She's a Luden too, right?)
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=03_025_0230]
+Actually, I can't really help you, Sayaka!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0240]
+N-no way...
+But you have something in mind, right?
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=03_025_0250]
+I love a quick-witted girl.
+Today, we're hosting a party in the garden! Loads of famous people from the gaming industry are here!
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=03_025_0260]
+For instance, producer Ichirou Nika from *Final Re:Quest*, and even Liddy from *World's Odyssey* are attending!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sayaka and Alice OFF
+// Briefly show Liddy's illustration
+// Sayaka and Alice ON
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=false]
+
+[character id=601901 posx=0.5 anim=fade face=default show=true wait=true]
+[delay sec=1.5]
+[character id=601901 anim=fade show=false wait=false]
+
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=false]
+[character id=600801 posx=0.32 anim=fade face=default show=true wait=true]
+
+[face id=100101 type=default]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0270]
+...Oh, it's true.
+Wait, are you in the game industry too, Alice-san?
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=03_025_0280]
+That's right. Sharp guess.
+You know the game engine, *Alice Code*? I'm its creator.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0290]
+...?
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=painful]
+
+[message name=Alice charaid=600801 voice=03_025_0300]
+I guess that didn't land... *World's Odyssey* was made using this engine, though...
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=default]
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0310]
+...Wow, that's impressive!! Got it now!
+So, you're with Enigma?
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=confuse]
+
+[message name=Alice charaid=600801 voice=03_025_0320]
+Well, technically, I'm with the higher-ups... I'm an overseer for the Aphesis Church.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0330]
+...With Aphesis!? So, you're after Mai-san too...?
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=03_025_0340]
+No, not really. I'm only interested in matters between Ludens.
+[/message]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=03_025_0350]
+Anyway, there's someone I want you to meet, Sayaka! Come with me!
+[/message]
+
+[face id=600801 type=default]
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0360 lipsync=false]
+(That person I don't want to meet...?)
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sayaka OFF
+[character id=100101 anim=ltor show=false wait=false]
+[character id=600801 anim=ltor show=false wait=false]
+
+// Time passes
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+[character id=600301 posx=0.5 anim=fade face=default show=true wait=true]
+[sound type=bgm state=play name=TalkI]
+
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+// Basilissa's sprite displayed
+
+// @Male Mob 23
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Slight screen shake horizontally
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[message name=Enthusiastic Fan 1 voice=03_025_0370]
+Thanks to you, the theme song was a big hit!
+It's an honor to speak with you in person today!
+[/message]
+
+// @Male Mob 24
+
+[message name=Enthusiastic Fan 2 voice=03_025_0380]
+If possible…! We would love for you to be part of our next project too…!
+[/message]
+
+// @Male Mob 25
+
+[message name=Enthusiastic Fan 3 voice=03_025_0390]
+Your involvement alone guarantees success, so please consider it…!
+[/message]
+
+// Speaker: ???
+
+// Basilissa changes expression
+[face id=600301 type=confuse]
+
+[message name=??? charaid=600301 voice=03_025_0400]
+Yes, if my schedule permits, I'd love to participate.
+Feel free to reach out with any opportunities.
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=default]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=600301 posx=0.21 wait=false]
+[delay sec=0.3]
+
+[character id=600801 posx=0.5 anim=rtol face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=rtol face=default show=true wait=true]
+
+[face id=600801 type=smile]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// New Alice changes expression
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=03_025_0410]
+Pardon me for interrupting.
+Do you have a moment, Ripl— I mean, Basilissa?
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=default]
+
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=03_025_0420]
+Did you just try to say "Ripuka"? That name's in hibernation!
+[/message]
+
+// Basilissa moves
+[move id=600301 posx=0.35 sec=1 wait=true]
+
+// New Alice changes expression
+[face id=600801 type=panic]
+
+[shake target=chara id=600301 type=vertical sec=0.1 pow=10 fade=false wait=false]
+/ Alice is surprised
+[shake target=chara id=600801 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[message name=Alice charaid=600801 voice=03_025_0430]
+Ow!! No grinding with your fist! Stop it… R-... Basilissa!!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Basilissa moves
+[move id=600301 posx=0.21 sec=1 wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0440]
+Ripuka… Did she just say Ripuka—!?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Basilissa OFF
+[character id=600301 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=false]
+
+// All OFF – Liddy appears in the distance
+
+[character id=601901 posx=0.5 anim=fade face=default show=true wait=true]
+
+///// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_025_0450]
+.........
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Liddy OFF
+
+[character id=601901 anim=fade show=false wait=false]
+
+[character id=600301 posx=0.21 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=panic show=true wait=false]
+[character id=600801 posx=0.5 anim=fade face=default show=true wait=true]
+
+[face id=600301 type=angry]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Basilissa changes expression
+[face id=600301 type=angry]
+
+[message name=Basilissa charaid=600301 voice=03_025_0460 lipsync=false]
+(Please stop shouting my real name out loud, okay?)
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0470 lipsync=false]
+(Sorry… I didn't mean to…)
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=03_025_0480]
+No one cares about your real name here, Basilissa.
+Compared to you, Sayaka's way more put together! Maybe thanks to Shina?
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=03_025_0490]
+Alice, could you please stay quiet for a while?
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=03_025_0500]
+At last, we meet. Sayaka, right?
+I'm a music producer and creator, Basilissa.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0510]
+...Have we met before?
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=03_025_0520]
+In a way, yes. I believe we first met in a deep, dark forest...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Show a still image of Ripuka from Death End Request 1
+// Still Image 14
+
+[image type=still id=100014 show=true]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Basilissa changes expression
+[face id=600301 type=default]
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Sayaka changes expression
+[face id=100101 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0530]
+...Ugh?! 
+Cough, cough...!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// End the still image display
+[image type=still id=100014 show=false]
+
+[face id=600301 type=thoughts]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Basilissa changes expression
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=03_025_0540]
+Oops. Did we meet too soon? Maybe this wasn't the right time.
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=confuse]
+
+[message name=Alice charaid=600801 voice=03_025_0550]
+Hmm.
+Anyway, let's just get this over with.
+You want to strengthen your Ripuka Code, right?
+[/message]
+
+// New Alice changes expression
+[face id=600801 type=default]
+
+[face id=100101 type=painful]
+
+// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0560]
+...I, uh... I came here out of the blue, and now this...
+But thank you... I guess...
+[/message]
+
+// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.2 pow=30 fade=false wait=false]
+
+[face id=100101 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0570]
+...I haven't... killed anyone... yet... right?
+Am I... really okay?
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=03_025_0580]
+Hmm.
+I'm very curious to know what you're really worried about.
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=03_025_0590]
+Now, give me your head.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Basilissa and Sayaka move to the left
+[move id=600301 posx=0.14 wait=false]
+[move id=100101 posx=0.34 wait=false]
+
+// Alice moves to the right to get out of the way
+[move id=600801 posx=0.75 wait=true]
+
+/// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.2 pow=20 fade=false wait=false]
+[face id=100101 type=painful]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0600]
+...
+(Am I... unable to resist? My body... is moving on its own...)
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=confuse]
+
+[message name=Basilissa charaid=600301 voice=03_025_0610]
+...World's Odyssey Developer Code 4274.
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen flash
+
+[face id=100101 type=surprise]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Ripuka starts brainwashing Sayaka SE
+[sound type=se name=Brainwash]
+
+// Screen shake
+[shake type=random sec=0.6 pow=40 fade=false wait=false]
+// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.2 pow=40 fade=false wait=false]
+
+// Sayaka OFF
+[character id=100101 anim=fade show=false wait=false]
+
+// Replace Sayaka with a new version (without highlights)
+
+[character id=100105 posx=0.34 anim=fade face=painful show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0620]
+...H-Huh?!
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=100101 posx=0.74 wait=false]
+[face id=600301 type=default]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=03_025_0630]
+Alright, it's done. Now you can kill if you want to.
+[/message]
+
+// Sayaka changes expression
+[face id=100105 type=panic]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=03_025_0640]
+Oh, everyone? Don't worry, it's just game talk. Please continue enjoying your meal!
+[/message]
+
+// Sayaka changes expression
+[face id=100105 type=surprise]
+
+[face id=600801 type=default]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=03_025_0650]
+You're not ready for the party yet.
+We'll meet again if fate allows.
+[/message]
+
+///////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// New Alice and Basilissa OFF
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=false]
+
+// Sayaka changes expression
+[face id=100105 type=surprise]
+
+[move id=100105 posx=0.49 wait=false]
+
+[face id=100105 type=thoughts]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Sayaka changes expression
+[face id=100105 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0660]
+......
+[/message]
+
+// Sayaka changes expression
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0670 lipsync=false]
+(I feel... more power... surging through me...)
+[/message]
+
+// Sayaka changes expression
+[face id=100105 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_025_0680 lipsync=false]
+(Now... I could kill!!)
+[/message]
+
+//////// Temporarily hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+/////////////////////////// Stop any SE playing
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

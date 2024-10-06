@@ -1,0 +1,328 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_04_02_s03
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000190]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// BGM25  / Comedy Scene
+// Background190  / Family Restaurant
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.24 anim=fade face=default show=true wait=false]
+// Shina Ninomiya appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+// Sayaka Hiwatari appears
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=false]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Show the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0010]
+Looks like all the food is here.
+Now, let's dig in!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Wait a few seconds
+// Wait for 1.5 seconds before moving to the next command
+[delay sec=1.5]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Yurisa's expression
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0020]
+...Hmm.
+This is very delicious.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_904_0030]
+Wow. The way Yamamura-san eats is so elegant.
+It's like watching a princess from a movie.
+I can't help but stare.
+[/message]
+
+[face id=100101 type=default]
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0040]
+Hehe, thank you, Sayaka.
+I was taught table manners very thoroughly from a young age.
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+// Change Shina's expression
+[face id=200102 type=smile]
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0050]
+That's so like you, Lily.
+Even just watching you eat is mesmerizing.
+I wish I could eat as gracefully as you do.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0060]
+But I guess that's hard for me.
+With my job, I always end up eating quickly.
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0070]
+I like your hearty way of eating, Shina.
+You make the food look so delicious when you dig in.
+It makes me smile just watching you.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0080]
+Haha.
+It's nice to hear you say that.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0090]
+Sugiura's fast eating, on the other hand, worries me a little.
+He always eats quietly, with no expression, as if he only cares about getting the minimum nutrition.
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0100]
+Sugiura-san, you mean the associate professor at Yamamura University Hospital, right?
+[/message]
+
+[face id=200102 type=default]
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0110]
+Yes.
+I've known him for a long time, but every time we meet, he always worries about me.
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0120]
+He asks if I'm eating three meals a day, if I'm getting enough sleep, if I'm overworking myself…
+But he's the one who's always so busy, and I'm the one who's worried about him.
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0130]
+That's just how he is.
+He always puts others, whether it's his patients or me, before himself.
+[/message]
+
+[face id=200102 type=smile]
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0140]
+Hehe.
+He sounds like a knight or something.
+Like, “I will protect Lily and her people!”
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0150]
+You're right.
+He's very reliable, no doubt about it.
+I trust him almost as much as I trust you, Shina. Hehe.
+[/message]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+// Play "Hungry" sound effect
+[sound type=se name=Hungry]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+// Change Yurisa's expression
+[face id=200202 type=panic]
+
+// Re-display the text window
+[delay sec=1.5]
+[visible show=true]
+
+// Play the specified BGM again
+[sound type=bgm state=play name=TalkC]
+
+// Stop the current sound effect
+[sound type=se state=stop]
+
+// Shake Yurisa
+[shake target=chara id=200202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0160]
+Ah! I-I'm sorry.
+I got so caught up in the conversation, I forgot to eat, and now my stomach is growling loudly…
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0170]
+So, this is the sound of the Yamamura University Hospital's lady's stomach…
+[/message]
+
+[face id=200202 type=panic]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0180]
+W-What?! How embarrassing!
+…Really embarrassing…
+[/message]
+
+[face id=200102 type=default]
+[face id=200202 type=default]
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0190]
+L-Let's continue eating!
+If we keep talking, the food will get cold!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_904_0200]
+Everything is so delicious!
+This, this, and even this one! They're all great!
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0210]
+...Wait. What?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_904_0220]
+What's wrong all of a sudden?
+[/message]
+
+[face id=200202 type=thoughts]
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_904_0230]
+When we're all sitting here eating happily like this, I can't help but feel like something bad will happen afterward.
+Something really bad…?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_904_0240]
+I'm sure it's just your imagination… right?
+[/message]
+
+// Stop the BGM
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0250]
+Y-Yeah…
+[/message]
+
+// Hide Yurisa
+[character id=200202 anim=fade show=false wait=false]
+// Hide Sayaka
+[character id=100101 anim=fade show=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_904_0260 lipsync=false]
+(I have an idea, but I'll keep quiet about it.)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+[sound type=se state=stop]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

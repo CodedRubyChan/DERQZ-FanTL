@@ -1,0 +1,211 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_12_03_010
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+//[delay sec=0.5]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Strain Area - Deep
+// Background: Dungeon remains
+// No BGM
+
+[character id=100103 posx=0.28 anim=ltor face=panic show=true wait=true]
+[delay sec=0.5]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_012_0010]
+Mai-san...!! Is that you, Mai-san!?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Display Mai's 3D model
+
+// Speaker name: Mai?
+
+// Show the text window again
+[visible show=true]
+
+[message name=Mai? charaid=500202 voice=03_012_0020]
+...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_012_0030]
+S-sorry!! I didn't expect us to get separated when we warped...
+[/message]
+
+// Speaker name: Mai?
+
+[face id=500202 type=default]
+
+[message name=Mai? charaid=500202 voice=03_012_0040]
+Ki ki...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Display Glitched Lucille's 3D model
+
+////////////////////////////////////////////////////////////////////////////
+// Hide Mai
+[dungeon id=9002 type=Barricade show=false]
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+// Show Glitched Lucille
+[dungeon id=9003 type=Barricade show=true]
+////////////////////////////////////////////////////////////////////////////
+
+[shake type=random sec=1.0 pow=20 fade=true wait=false]
+
+[character id=500202 posx=0.71 anim=rtol sec=0.1 face=smile show=true wait=false]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=03_012_0050]
+Boo?! It's Kiki-chan!!
+[/message]
+
+// BGM33
+
+[sound type=bgm state=play name=GlitchGirls]
+
+// Sayaka gets startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_012_0060]
+Ugh, really?! Right now of all times!?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=03_012_0070]
+This is our home turf, after all (≧▽≦)
+[/message]
+
+// Kiki Amo gets startled
+[shake target=chara id=500202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=03_012_0080]
+Oh wow, look at you panic!
+Did you mess up or something...?
+Wanna play tag, Ripuka?!
+[/message]
+
+// Sayaka gets startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_012_0090]
+It's Sayaka!! I don't have time to deal with you!
+Maybe later!!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Black background
+
+[character id=100103 anim=rtol show=false wait=false]
+[move id=500202 posx=0.5 wait=false]
+
+[image type=bg id=000380 show=true]
+
+[face id=500202 type=confuse]
+
+// Show the text window again
+[visible show=true]
+[delay sec=0.5]
+
+[message name=Kiki Amo charaid=500202 voice=03_012_0100]
+Huh?! You're... running away, Ripuka?!
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=03_012_0110]
+And after you saved Liliana yesterday, because of you,
+I got into trouble with Arata...
+[/message]
+
+// Kiki Amo gets startled
+[shake target=chara id=500202 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=03_012_0120]
+Ugh!! Don't run away!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

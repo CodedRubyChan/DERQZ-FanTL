@@ -1,0 +1,889 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_09_03_007
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkD]
+
+// Display the specified background
+[image type=bg id=000220]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hospital room background
+//BGM26
+//Background 450 / Room in Shina's apartment
+
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0010]
+This is... right, Yamamura Hospital.
+Certainly...
+It looks like it's properly fixed.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0020]
+This hospital room... it's really clean.
+Yesterday, there were arrows shot all over the place by a certain someone...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0030]
+... I also feel like
+I'm in better shape than this morning.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+//*Activate Yurisa Yamamura
+
+[move id=100101 posx=0.32 wait=false]
+
+[character id=200202 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0040]
+Ah, good.
+It looks like you've finally woken up.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0050]
+—!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+//Turn on still image from Lily's Death Enishid Request 1
+
+[image type=still id=100010 show=true]
+[delay sec=1.0]
+
+[face id=200202 type=default]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0060]
+How do you feel?
+Did you wake up well?
+I even gave you a massage.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Turn off still image
+// Show the current Lily
+
+[image type=still id=100010 show=false]
+
+[face id=100101 type=smile]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0070]
+I feel great. Thanks!
+...Yamamura-san,
+you really were a trainee doctor.
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0080]
+... Huh.
+You didn't suspect that all this time, did you—?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0090]
+... N-no no no!
+I wasn't mocking you or anything...!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0100]
+I'm not sure whose memory it is,
+but I somehow got a vision of
+you as a serious trainee doctor in the past.
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0110]
+So, in other words,
+I'm not serious now—
+[/message]
+
+[face id=100101 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0120]
+T-that's not what I meant...!
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0130]
+All kidding aside. Ludens are amazing, aren't they...
+If I were a Luden, I'd be watching only Shina all the time!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0140]
+Uh... by the way, did you bring me here?
+Actually, I collapsed at work...
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0150]
+No, it was the Toyama family!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0160]
+What!? Oh, I see...
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0170]
+Kouji-san left right away,
+but Mai-san should still be in the hallway.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0180]
+!
+Then I should go now.
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0190]
+I see. Take care!
+“Say hi to Shina for me!”
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0200]
+Yamamura-san, will you be at the company tomorrow?
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0210]
+Yes, I'll show my face tomorrow.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0220]
+Then you can say your greeting yourself!
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0230]
+Oh hoh, you're sharp...!
+Got it. Then I'll say it again,
+“Give my regards to Mai-san!”
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0240]
+Alright!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Turn off Sayaka
+
+[character id=100101 anim=fade show=false wait=false]
+[move id=200202 posx=0.5 wait=false]
+
+[face id=200202 type=thoughts]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0250]
+Whew...
+[/message]
+
+// Turn off BGM
+
+[sound type=bgm state=stop]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=03_009_0260]
+—It looks like the one who really needs a break
+is Mai Toyama...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Scene change to hallway
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+[sound type=bgm state=play name=TalkB]
+[image type=bg id=000500 show=true]
+
+[fade type=in anim=simple sec=2]
+
+//BGM24
+//Background 500: / Hospital hallway
+
+[visible show=true]
+
+[face id=100101 type=default]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0270]
+Ah... Mai-san!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Serious expression
+
+[character id=200302 posx=0.32 anim=fade face=thoughts show=true wait=true]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0280]
+————
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0290]
+S-sorry.
+Did I make you wait for me to wake up or...?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0300]
+Hey. Don't you think this hospital is strange...?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0310]
+Uh, well yeah,
+there seemed to be some evil spirits lurking around,
+so it's definitely not normal...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0320]
+I see.
+Evil spirits, huh...
+[/message]
+
+[sound type=bgm state=stop]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0330]
+—There are people around here
+who should already be dead.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0340]
+... What do you mean by that?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0350]
+For example... the woman who just left that hospital room.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0360]
+Yes.
+She seemed like an ordinary woman.
+Nothing seemed unnatural about her...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0370]
+That's what's strange.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0380]
+I saw it...
+[/message]
+
+[sound type=bgm state=play name=TownMapB]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0390]
+Yesterday, I saw it... wasn't it Lilith?
+That weird girl who looks like Yamamura shot a stray arrow...
+It pierced through that woman's... head.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0400]
+...You sure it wasn't a mistake?
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0410]
+No! That person also...
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0420]
+That person... Look closely...
+Can't you see... a dark shadow... from her feet?!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Fade out and then fade in
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[face id=100101 type=confuse]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0430]
+A-a dark shadow...?
+Unfortunately, I don't see
+anything like that...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0440]
+No one else seems to be making a fuss, either.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0450]
+—Am I the one who's strange...?
+[/message]
+
+// Sayaka is startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0460]
+...
+... Ah, that's it!!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0470]
+W-what?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0480]
+At least, as for the people who died? It's...
+our chairman from Iris Company.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[shake target=chara id=200302 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[message name=Mai Toyama charaid=200302 voice=03_009_0490]
+... Huh!?
+Why...?
+How...?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0500]
+It was something that happened at Yamamura-san's workplace...
+Maybe they were worried?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0510]
+The chairman said it herself.
+Using "Eni", will “fix” both the building
+and the people who died.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0520]
+I wonder what Eni is.
+But if it's the Ludens, they could probably do anything
+with some amazing materials...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0530]
+Fixing dead people...?
+I've never heard of that before!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0540]
+No... wait...
+It seems they actually can...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Sugiura and Enishi make their appearance
+
+[move id=100101 posx=0.79 wait=false]
+[move id=200302 posx=0.59 wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+[character id=602201 posx=0.39 anim=fade face=default show=true wait=true]
+
+[face id=602201 type=default]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=03_009_0550]
+Ah, the friends of the young lady!
+Yesterday was... well,
+I'm glad you're safe!
+[/message]
+
+[character id=602101 posx=0.19 anim=fade face=default show=true wait=true]
+
+[message name=Enishi Yamamura charaid=602101 voice=03_009_0560]
+—It was quite a disaster.
+Even our hospital wasn't designed
+to withstand a terrorist raid.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0570]
+Well, I seem to be lucky!
+Thanks, I'm fine!
+[/message]
+
+[face id=100101 type=default]
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0580]
+Y-yeah.
+Same here.
+[/message]
+
+[face id=602101 type=smile]
+
+[message name=Enishi Yamamura charaid=602101 voice=03_009_0590]
+I see... I'm glad to hear that!
+[/message]
+
+[face id=602101 type=default]
+
+[message name=Enishi Yamamura charaid=602101 voice=03_009_0600]
+I'm sorry to be so abrupt,
+but I must excuse myself now.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[character id=602101 anim=rtol show=false wait=false]
+
+// Sugiura moves
+[move id=602201 posx=0.20 sec=2.5 wait=false]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=03_009_0610]
+Director, at this time,
+the young lady is in the front hospital room.
+[/message]
+
+[face id=602101 type=confuse]
+
+[message name=Enishi Yamamura charaid=602101 voice=03_009_0620]
+You didn't have to say that...
+[/message]
+
+// Turn off Enishi
+
+[face id=602201 type=smile]
+
+[message name=Sugiura charaid=602201 voice=03_009_0630]
+Despite how he appears, the director cares deeply for his daughter.
+He's been sad because he hasn't seen her today.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0640]
+Hahaha...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[face id=602201 type=default]
+
+[message name=Sugiura charaid=602201 voice=03_009_0650]
+Well then, I'll be on my way...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[face id=200302 type=panic]
+
+// Turn off BGM
+
+[sound type=bgm state=stop]
+
+// Switch positions of Sayaka and Mai
+
+[move id=100101 posx=0.79 wait=false]
+[move id=200302 posx=0.39 wait=true]
+
+// Screen shake
+[shake type=random sec=0.5 pow=10 fade=false wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[face id=200302 type=panic]
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0660]
+Wait, Sugiura-san!
+[/message]
+
+[face id=602201 type=confuse]
+
+[message name=Sugiura charaid=602201 voice=03_009_0670]
+W-what's wrong...?
+Grabbing my hand so suddenly...
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0680]
+Ah, you're warm...
+[/message]
+
+[face id=602201 type=default]
+
+[message name=Sugiura charaid=602201 voice=03_009_0690]
+I'm not suffering from hypothermia...
+so this should be normal, right...?
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0700]
+Hey, Sugiura-san...
+Do you remember what exactly
+happened here yesterday?
+[/message]
+
+// Sayaka is startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0710]
+W-wait...!
+Mai-san!
+[/message]
+
+[face id=602201 type=painful]
+
+[message name=Sugiura charaid=602201 voice=03_009_0720]
+...The terrorist attack, right?
+We escaped together, didn't we?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0730]
+Yes, to the morgue...
+And then what happened?
+[/message]
+
+// Sayaka is startled
+[shake target=chara id=100101 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0740]
+Mai-san! This is a bad joke!
+[/message]
+
+[face id=602201 type=confuse]
+
+[message name=Sugiura charaid=602201 voice=03_009_0750]
+...Explosion?
+Human bombs?
+[/message]
+
+[face id=602201 type=thoughts]
+
+[message name=Sugiura charaid=602201 voice=03_009_0760]
+...I was...?
+At that time, I was...
+[/message]
+
+[face id=602201 type=surprise]
+
+[message name=Sugiura charaid=602201 voice=03_009_0770]
+...Dead...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Sugiura's face glitches
+//BGM27
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=painful]
+// Change Mai's expression
+[face id=200302 type=surprise]
+
+[shake type=random sec=3.0 pow=30.5 fade=true wait=false]
+
+[sound type=bgm state=play name=TalkE]
+
+[face id=602201 type=angry]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=03_009_0780]
+Deathdeathdeathdeathdeathdeathdeathdeath
+Deathdeathdeathdeathdeathdeathdeathdeath
+Deathdeathdeathdeathdeathdeathdeathdeath
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0790]
+Wha—?!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Screen shake
+
+[shake type=random sec=1.5 pow=20 fade=true wait=false]
+
+[face id=100101 type=painful]
+
+// Sayaka is startled
+[shake target=chara id=100101 type=vertical sec=0.2 pow=20 fade=false wait=false]
+// Mai is startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_009_0800]
+Kyaaahhhh!!!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[move id=100101 posx=0.6 sec=0.4 wait=false]
+[move id=200302 posx=0.45 sec=0.4 wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.2]
+
+[face id=200302 type=surprise]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0810]
+W-wait...!
+Sayaka!?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[move id=100101 posx=0.85 sec=0.3 wait=false]
+[move id=200302 posx=0.65 sec=0.3 wait=true]
+
+// Sayaka is startled
+[shake target=chara id=100101 type=vertical sec=0.3 pow=30 fade=false wait=false]
+// Mai is startled
+[shake target=chara id=200302 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[face id=200302 type=panic]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_009_0820]
+Y-you're pulling too hard!
+SAYA—!?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+[character id=100101 anim=ltor show=false wait=false]
+[character id=200302 anim=ltor show=false wait=false]
+
+//##########################################################################//
+//Enishid
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// The script ends here
+[exit]
+//##########################################################################//
+//Enishid
+//##########################################################################//
+//END

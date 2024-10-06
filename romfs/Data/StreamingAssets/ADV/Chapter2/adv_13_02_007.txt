@@ -1,0 +1,1199 @@
+//Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+
+//adv_13_02_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000500]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+//BGM23 / peaceful theme
+//Background500 / University Hospital
+
+//Speaker: Hospital Staff
+//@Female NPC 10
+
+// Display the text window
+[visible show=true]
+
+[message name=Hospital Staff voice=02_013_0010]
+Lady Yurisa, you must be tired. Are these your friends?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200202 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0020]
+Yes, they'll be undergoing detailed examinations later.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0030]
+...I see, despite how it looks from the outside...
+the atmosphere inside the hospital is nice. 
+There are even Luden patients here.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0040]
+Yes. We've made sure there's no discrimination against Ludens here.
+[/message]
+
+// Mai changes expression
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0050]
+You're quite satisfied with your father's hospital, then?
+[/message]
+
+[face id=200202 type=thoughts]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0060]
+...Aside from the business aspect.
+My father is a bit of a money-grubber...
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0070]
+No matter how much he tries to cover it up, this is still just a facility for collecting money...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=confuse]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0080]
+I... I see...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Time passes
+[fade type=out anim=simple sec=1.5]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+// Move Mai
+[move id=200302 posx=0.74 anim=fade face=default show=true wait=true]
+[delay sec=1.5]
+[fade type=in anim=simple sec=1.5]
+[visible show=true]
+
+[face id=200202 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0090]
+By the way, Shina. Do you remember the first day you came to our hospital?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0100]
+That was years ago, wasn't it? But the interior hasn't changed much, and I remember the staff, the patients... the weather, and the air in the hospital were all so pleasant.
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0110]
+I was the one who showed you around when you came for your "research for game development."
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0120]
+O-of course I remember that too, so don't worry...!!
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0130]
+—This is my first time visiting, but I'm impressed. No wonder it served as the model for the Old Hartis Castle in our game. The layout is identical!
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0140]
+Shina's eyes were so bright that day. I was completely captivated by them... at a time when I was feeling so stuck...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Move Yurisa
+[move id=200202 posx=0.19 anim=fade face=default show=true wait=false]
+// Move Shina
+[move id=200102 posx=0.39 anim=fade face=default show=true wait=false]
+// Move Mai
+[move id=200302 posx=0.59 anim=fade face=default show=true wait=false]
+// Sayaka appears
+[character id=100101 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Display the text window
+[visible show=true]
+[delay sec=0.1]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0150]
+So that's how it's been this whole time, huh?
+[/message]
+
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0160]
+Well, I didn't think you'd come here just to model the castle from our hospital...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=default]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0170]
+The princess, betrayed by her family, turning the palace into a dark castle... Thanks to that, it became one of the most memorable episodes in "World's Odyssey"!
+[/message]
+
+// Mai changes expression
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0180]
+Director! When you think about it... what kind of story are you creating using a hospital as your model!?
+[/message]
+
+[face id=200102 type=painful]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0190]
+That's why I couldn't officially list anyone as a contributor for research! But more importantly... Mai, Sayaka!
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0200]
+What about the hospital itself? Are you noticing anything strange?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0210]
+Well... nothing that really stands out...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0220]
+No, there definitely is!
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=surprise]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0230]
+!?
+[/message]
+
+[face id=100101 type=default]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0240]
+Look, Mai-san. There's a huge abnormality right in front of us.
+[/message]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0250]
+What do you mean? It's just a door... Wait, no... this design...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0260]
+Shina and I can't see anything! Can't you show us what you're seeing? Besides, there shouldn't be any door there...
+[/message]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0270]
+Sayaka, do you remember when you manifested a weapon from the VR game? Could you try to recreate that feeling here?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0280]
+Got it. I'll overwrite what I'm seeing so you all can see it too!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// SE
+// Display the cut-in of the door from the Strain Area
+// Apply fade-in for the cut-in
+/////////////////////////////////////////////////////////////////////////////////////////
+
+[sound type=se name=materialization]
+[cutin id=000009 type=fade sec=0.5 show=true]
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+[face id=100101 type=smile]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0290]
+Alright! Success!
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0300]
+What the...!? What is this eerie gray door...?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0310]
+Yeah, this door definitely wasn't originally part of the hospital's design...
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0320]
+It's... not a door to the Strain Area, is it!?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0330]
+Yeah... I definitely recognize it as part of the Strain Area too...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Mob voices
+
+//Speaker: Hospital Staff
+//@Female NPC 10
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+// Shina changes expression
+[face id=200102 type=surprise]
+// Mai changes expression
+[face id=200302 type=confuse]
+// Yurisa changes expression
+[face id=200202 type=panic]
+
+// Display the text window
+[visible show=true]
+
+[message name=Hospital Staff voice=02_013_0340]
+Whoa, a weird door just appeared on the wall!
+[/message]
+
+//Speaker: Patient
+//@Male NPC 10
+
+[message name=Patient voice=02_013_0350]
+This is creepy! What's going on!?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0360]
+Sayaka, do you mean this door appeared throughout the entire hospital!?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0370]
+The hospital will go into a panic! Can't you make it disappear... somehow?
+[/message]
+
+[face id=100101 type=surprise]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0380]
+Wait, no! I only dealt with the one door in front of us...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Hide the cut-in of the Strain Area's door
+// BGM OFF
+
+[cutin id=000009 type=fade sec=0.5 show=false]
+[sound type=bgm state=stop]
+
+//Speaker: Creepy Voice
+
+// Shina changes expression
+[face id=200102 type=panic]
+
+[face id=600201 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Creepy Voice charaid=600201 voice=02_013_0390]
+Whoa, that's impressive... Manifesting the Strain Area like that isn't something even I can pull off so easily...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Shina and Sayaka move
+// [move id=200102 posx=0.2 wait=false]
+// [move id=100101 posx=0.4 wait=false]
+
+////////////////////////////////////////////////////////////////// Character change.
+
+// Remove the female characters
+
+// Yurisa Yamamura
+[character id=200202 anim=fade face=panic show=false wait=false]
+// Shina Ninomiya
+[character id=200102 anim=fade face=panic show=false wait=false]
+// Sayaka Hiwatari
+[character id=100101 anim=fade face=panic show=false wait=false]
+// Mai Toyama
+[character id=200302 anim=fade face=panic show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character change.
+
+// Arata appears ////////////////////////////////////////////////////////////////////////////
+[character id=600201 posx=0.5 anim=fade face=smile show=true wait=true]
+
+[delay sec=0.1]
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0400]
+Thanks for linking up with the Strain Area for me!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+////////////////////////////////////////////////////////////////////////////////////
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Yurisa appears
+[character id=200202 posx=0.33 anim=fade face=panic show=true wait=false]
+
+// Sayaka appears
+[character id=100101 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+// Shina changes expression
+[face id=200102 type=surprise]
+// Yurisa changes expression
+[face id=200202 type=surprise]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0410]
+You...!? That guy with the glasses from yesterday...!!
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=panic]
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0420]
+Where did you suddenly come from!?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// BGM17
+[sound type=bgm state=play name=TownMapB]
+
+///////////////////////////////////////////////////////////////////// Character change.
+// Remove the female characters
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+
+///////////////////////////////////////////////////////////////////// Character change.
+
+[face id=600201 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0430]
+Well, you see... I came from here! From the area beyond that door! Room 4274!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Girls' part
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.3]
+
+// Yurisa appears
+[character id=200202 posx=0.24 anim=fade face=angry show=true wait=false]
+
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=surprise show=true wait=false]
+
+// Mai appears
+[character id=200302 posx=0.74 anim=fade face=surprise show=true wait=false]
+
+///////////////////////////////////////////////////////////////////////////////////////
+[face id=200202 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0440]
+There's no such room in this hospital!
+[/message]
+
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0450]
+Mizunashi... what are you planning this time?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0460]
+Mizunashi!? He does resemble him a bit... but... is this really the missing Arata Mizunashi!?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Arata part
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=angry show=true wait=true]
+
+///////////////////////////////////////////////////////////////////// Character change.
+
+[face id=600201 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0470]
+Hey, don't throw that name around so casually. You must be Mai, right?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Girls' part
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Mai appears
+[character id=200302 posx=0.49 anim=fade face=panic show=true wait=true]
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+// Display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0480]
+...Yes. I admired you and joined Iris Corporation...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Arata part
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+///////////////////////////////////////////////////////////////////// Character change.
+[face id=600201 type=thoughts]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0490]
+Iris Corporation, huh? So it's no longer Enigma Corporation. Iris sure loves making things complicated!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Girls' part
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=angry show=true wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0500]
+Everyone, be careful! This man... yesterday he...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[face id=600201 type=smile]
+
+// Arata part
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character change.
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0510]
+Do you really want to talk about that? Instead... shouldn't you be doing something about all the "gates" in the hospital?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=02_013_0520]
+The entire hospital is about to merge with another dimension. And then, congratulations, you'll all become Strangers!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Girls' part
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=panic show=true wait=false]
+
+////////////////////////////////////////////////////////////////////////////////////
+
+//Speaker: Hospital Staff
+//@Female NPC 10
+
+// Display the text window
+[visible show=true]
+
+[message name=Hospital Staff voice=02_013_0530]
+There's... strange gas coming out of the doors...!
+[/message]
+
+//Speaker: Patient
+//@Male NPC 10
+
+[message name=Patient voice=02_013_0540]
+What the hell is going on?!
+[/message]
+
+// Shina changes expression
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0550]
+Mizunashi...!! Stop this!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Arata part
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=angry show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character change.
+
+[face id=600201 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0560]
+Hey, it wasn't me! Blame the Ripuka over there!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Girls' part
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=angry show=true wait=true]
+
+//////////////////////////////////////////////////////////////////////////////////
+
+[face id=100101 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0570]
+I did this? If it was my fault... I'll fix it! What do I need to do...?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Arata part
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character change.
+
+
+[face id=600201 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0580]
+You have to destroy the "gates" from the inside. Didn't you practice that yesterday?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Girls' part
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////
+
+[face id=100101 type=panic]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0590]
+...It won't open!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Re-display the cut-in of the Strain Area's door
+//////////////////////////////////// Pressed fade!!! Could cause a bug!!!!!
+[cutin id=000009 type=fade sec=0.5 show=true]
+[delay sec=1.5]
+[cutin id=000009 type=fade sec=0.5 show=false]
+
+[face id=600201 type=default]
+
+// Arata part
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=painful show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character change.
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0600]
+That's why you have to break it! From the inside!
+[/message]
+
+[face id=600201 type=thoughts]
+
+[message name=Arata charaid=600201 voice=02_013_0610]
+Remember yesterday... How did you manage to save her, Shina's reject?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+//【Choice】
+//1: Took a ride
+//2: That "station attendant" was there...
+
+[select]
+[link text="I took a ride" label=tube]
+[link text="That station attendant was there..." label=tube]
+[/select]
+
+:tube
+[/message]
+
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Girls' part
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=false]
+[face id=100101 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0620]
+...The subway!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+[face id=600201 type=smile]
+
+// Move Sayaka to the left
+[move id=100101 posx=0.66 sec=1.5 wait=true]
+
+// Move Arata next to Sayaka
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=true]
+
+// Arata Mizunashi changes expression
+[face id=600201 type=smile]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0630]
+Good job! You figured it out from my hint. Nice one, Ripuka-chan♪
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0640 lipsync=false]
+(He can't see my partner... None of them can... I need to remember that...)
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=02_013_0650]
+Alright, everyone! I'm just going to send this girl on an errand! After all, no one else here can get to the other dimension—officially, it's called the Strain Area!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+[face id=600201 type=confuse]
+
+// Move Sayaka to the far right
+[move id=100101 posx=0.80 sec=0.5 wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_013_0660]
+Because you all can't go there... Hey, wait! Ripuka!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+[face id=100101 type=angry]
+
+// Move Sayaka back a little
+[move id=100101 posx=0.72 sec=0.5 wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0670]
+It's Sayaka! What is it?
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=02_013_0680]
+Are you dumb!? You're seriously planning to run to the subway? Didn't I show you... "dimensional tearing"? You've already done something similar before...
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0690]
+Ah, right... Well then, everyone, I'm off!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////// Character change. Remove female characters
+[character id=100101 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Shina appears
+[character id=200102 posx=0.5 anim=fade face=painful show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character change.
+
+[face id=200102 type=thoughts]
+
+// Display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0700]
+Please be careful, Sayaka... We'll keep an eye on him from here.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Shina exits
+[character id=200102 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=angry show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character change.
+
+[face id=100101 type=angry]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_013_0710]
+Alright! I'm counting on you!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Warp SE
+// Sayaka exits
+
+[sound type=se name=warp]
+[character id=100101 anim=rtol show=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Shina appears
+[character id=200102 posx=0.25 anim=fade face=painful show=true wait=false]
+///////////////////////////////////////////////////////////////////// Character change.
+
+// Yurisa appears
+[character id=200202 posx=0.5 anim=fade face=surprise show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_013_0720]
+She just vanished...!? I feel like... I'm losing my mind...
+[/message]
+
+// Mai appears
+[character id=200302 posx=0.75 anim=fade face=painful show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_013_0730]
+Honestly, I'm barely holding it together myself, but... Hang in there, Yamamura-san...
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0740]
+Don't worry, I'll protect you both!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Display Shina's cut-in
+[cutin id=000001 type=ltor sec=0.5 show=true]
+// SE for Shina shooting spider webs
+[sound type=se name=Spider]
+
+[delay sec=2.0]
+[cutin id=000001 type=fade sec=0.5 show=false]
+
+// Mai exits
+[character id=200302 anim=fade show=false wait=false]
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=false]
+
+// Shina moves
+[move id=602201 posx=0.33 sec=0.1 wait=true]
+
+// Arata appears
+[character id=600201 posx=0.67 anim=fade face=painful show=true wait=true]
+
+[face id=600201 type=confuse]
+
+// Display the text window
+[visible show=true]
+[delay sec=0.1]
+
+[message name=Arata charaid=600201 voice=02_013_0750]
+Hah! A bug that looks like a spider's web... How pathetic...
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0760]
+I'll use whatever I can. Especially when it's my own memories!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=02_013_0770]
+Memories... of a previous life? Must be a sad life if you were a spider before.
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0780]
+You can talk all you want, but don't move, Mizunashi. Even as I am now, I can still hold you back.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+[move id=200102 posx=0.49 sec=1.5 wait=true]
+
+[face id=200102 type=painful]
+
+// Display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_013_0790 lipsync=false]
+(C'mon, Sayaka... Hurry and take care of the gate!)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

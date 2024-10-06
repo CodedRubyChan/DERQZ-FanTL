@@ -1,0 +1,733 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_06_02_002
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=1]
+//##########################################################################//
+//Start
+//##########################################################################//
+// Wait for specified seconds
+[delay sec=1.5]
+
+//BGM23   / For peaceful scenes
+//Background430  / Intersection
+
+[character id=200202 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+// Display text window
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0010]
+By the way, you know how there's a character in "World's Odyssey," Lily, who was based on someone...
+Are there any other characters that are modeled after real people?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0020]
+Of course!
+Even the protagonist, Celica, has a model.
+[/message]
+
+[face id=100101 type=smile]
+[face id=200102 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0030]
+Really!? Is that so...!
+Shina, you really like Celica the most, judging by the amount of posters in your room...?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0040]
+Huh?
+That's not right. The number one is Lily.
+...Isn't that so?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0050]
+Hehe.
+Lily isn't just number one...
+She's "special."
+[/message]
+
+[face id=200202 type=smile]
+// Yurisa jumps a little
+// Sayaka is surprised
+[shake target=chara id=200202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+// Move Yurisa toward Shina
+[move id=200202 posx=0.3 sec=1 wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0060]
+Aha!
+I see.
+The director sure says clever things... as expected!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0070]
+Um, can I hear more about Celica...?
+[/message]
+
+///// Move Yurisa toward Shina
+[move id=200202 posx=0.25 sec=1 wait=false]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0080]
+Sure.
+Didn't I tell you yesterday about the girl who is Celica's model?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0090]
+...Um...?
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+//【Choices】
+//1: Yeah, you told me at the "convenience store" yesterday.
+//2: This is about an event I haven't seen.
+
+[select]
+[link text="Yeah, you told me at the convenience store yesterday." label=store]
+[link text="This is about an event I haven't seen." label=blurry]
+[/select]
+
+//※↑ No need to prepare flags. Regardless of whether it's read or unread, the story continues from the selected choice.
+
+// In case of choice 1
+
+:store
+[face id=100101 type=default]
+
+//// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0100]
+Oh, that one!
+I think I heard that story when I "chose" to go to the convenience store before coming to work...
+[/message]
+[goto label=forget]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// In case of choice 2
+
+:blurry
+[face id=100101 type=confuse]
+
+//// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0110 lipsync=false]
+(Is Shina a bit confused?
+Or... am I the one who's confused...?)
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+[face id=100101 type=default]
+[goto label=forget]
+
+//【Merge】
+
+:forget
+
+// Change Shina's expression
+[face id=200102 type=smile]
+
+//// Display the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0120]
+Well, never mind whether I told you or not, I forgot myself,
+so I'll tell you again. Celica's model is the super famous actress "Chloe Aaron"!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0130]
+"World's Odyssey" is getting a movie adaptation,
+and she played the role of Celica.
+So, we adjusted her appearance to resemble Chloe afterward.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0140]
+Ah, I see.
+Did Mr. Koji also make design revisions like with Lily?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0150]
+Exactly, he whipped it up overnight! Even the hair color now is more associated with the movie version than the original brown hair, right?
+Though the poster in my room is of the old Celica!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0160]
+Wow. Chloe Aaron, huh.
+Let me search for her on my phone...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+// Change Yurisa's expression
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0170]
+Wait, Sayaka. Hey Shina,
+she's in Sagami City right now, isn't she?
+Shall we go see her?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0180]
+What!?
+We can meet Celica...
+in the real world...?
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0190]
+Yep♪
+Leaving home early today was largely because of that.
+I was planning to drop by...
+[/message]
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0200]
+The filming location is... uh, this way. Follow me!
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Scene transition
+
+[character id=200202 posx=0.25 anim=ltor face=default show=false wait=false]
+[character id=100101 posx=0.5 anim=ltor face=default show=false wait=false]
+[character id=200102 posx=0.75 anim=ltor face=default show=false wait=true]
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+[image type=bg id=000100 show=true]
+[sound type=bgm state=play name=TalkB]
+
+[delay sec=1.0]
+[sound type=se name=crowded]
+
+[fade type=in anim=simple sec=1.0]
+[visible show=true]
+
+// Crowd noise SE — use the "crowded" SE
+[sound type=se name=Russia]
+
+//BGM24   / For serious scenes
+//Background100  / Back alley
+
+// Speaker name: Female Police Officer
+
+[character id=601501 posx=0.5 anim=fade face=angry show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Female Police Officer charaid=601501 voice=02_006_0210]
+Everyone,
+please do not enter inside the ropes.
+[/message]
+
+// Change the officer's expression
+[face id=601501 type=thoughts]
+
+[message name=Female Police Officer charaid=601501 voice=02_006_0220]
+Filming will begin shortly.
+Please remain quiet.
+[/message]
+
+[face id=601501 type=default]
+
+[message name=Female Police Officer charaid=601501 voice=02_006_0230]
+Please, just watch and do not interfere.
+[/message]
+
+//// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601501 anim=fade show=false wait=true]
+
+[character id=200202 posx=0.25 anim=fade face=surprise show=true wait=false]
+[character id=200102 posx=0.5 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.75 anim=fade face=surprise show=true wait=true]
+
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0240]
+Wow... As expected of an internationally famous beautiful actress...
+The number of people watching the filming is... incredible...
+Chloe-chan is so far away...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0250]
+Well, I mean... Filming a movie in Sagami City is extremely rare...
+[/message]
+
+///////////////////// Screen shakes
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[face id=100101 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0260]
+This kind of crowd...
+It's my first time...
+I'm being pushed... crushed...!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=painful]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0270]
+Hang in there...!
+How many chances in life do we have to see her in person...!
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Turn off Shina and others' sprites
+
+[character id=200202 posx=0.25 anim=fade face=default show=false wait=false]
+[character id=100101 posx=0.5 anim=fade face=default show=false wait=false]
+[character id=200102 posx=0.75 anim=fade face=default show=false wait=true]
+[visible show=false]
+
+// Turn on Chloe's sprite
+[character id=200902 posx=0.5 anim=fade face=angry show=true wait=true]
+
+[face id=100101 type=default]
+[visible show=true]
+
+//// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0280 lipsync=false]
+(Huh... Did she make eye contact with me—?)
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker name: Director's Voice
+// @ Male Mob 07
+
+/// Display the text window again
+[visible show=true]
+
+[message name=Director's Voice voice=02_006_0290]
+Five seconds to action! Four! Three! ...!
+Cue!
+[/message]
+
+[face id=200902 type=thoughts]
+
+[message name=Chloe charaid=200902 voice=02_006_0300]
+Ahhh, you're running away again...
+[/message]
+
+[face id=200902 type=angry]
+
+[message name=Chloe charaid=200902 voice=02_006_0310]
+Heh heh heh...
+So you keep running away from me...
+Incompetent detective!!
+[/message]
+
+// Speaker name: Crowd
+// @ Male Mob 08
+
+//// Text window shakes
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[message name=Crowd voice=02_006_0320]
+Ooooh...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0330 lipsync=false]
+(Wow... Chloe-chan is amazing as always...
+It's like she's using a megaphone...!
+She really suits playing a villain...)
+[/message]
+
+[face id=200902 type=thoughts]
+
+[message name=Chloe charaid=200902 voice=02_006_0340]
+......
+[/message]
+
+[face id=200902 type=angry]
+
+[message name=Chloe charaid=200902 voice=02_006_0350]
+Look at me more...
+I won't run or hide!
+[/message]
+
+// Chloe's cut-in
+
+// Speaker name: Excited Crowd
+// @ Male Mob 08
+
+//// Text window shakes
+[shake type=horizontal sec=0.5 pow=10 fade=false wait=false]
+
+[message name=Excited Crowd voice=02_006_0360]
+Wooooah!!
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0370]
+Is she taking off her clothes!?
+[/message]
+
+// Speaker name: Director's Voice
+// @ Male Mob 07
+
+[message name=Director's Voice voice=02_006_0380]
+And... cut!
+Cuuuut!!
+[/message]
+
+[face id=200902 type=confuse]
+
+[message name=Chloe charaid=200902 voice=02_006_0390]
+......
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0400 lipsync=false]
+(Again! She's looking this way...
+No, is she looking at Shina instead of me...?)
+[/message]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+//// Hide the text window once
+[visible show=false]
+[delay sec=0.3
+
+// Screen darkens and time passes
+//BGM23   / For peaceful scenes
+//Background430  / Intersection
+
+[character id=200902 anim=fade show=false wait=false]
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+[sound type=bgm state=play name=TalkA]
+[image type=bg id=000430 show=true]
+
+[fade type=in anim=simple sec=2]
+[character id=200102 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=default show=true wait=true]
+
+[face id=200102 type=smile]
+[visible show=true]
+
+/////// Display the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0410]
+Ahhh, we got to see something amazing before coming to work!
+Even though she was far away,
+it felt like we saw her up close, right!?
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0420]
+But didn't she come over to our side...?
+I felt like she was showing off something...
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0430]
+W-well, it's probably just your imagination.
+I didn't tell her I'd be watching...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=expectation]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0440]
+Ahh, more importantly! Thanks to seeing Celica in person,
+I'm feeling inspired again...!
+Today, I'm going to get plenty of work done—
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0450]
+No way! I haven't heard the details yet, but
+you went through something tough yesterday, right?
+You're leaving early today!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0460]
+Ugh, but I'm the director...
+Leaving early two days in a row...
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0470]
+If you like, why not come to my hospital, Shina?
+How long has it been...
+I'll give you a thorough check-up at a discount?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0480]
+O-okay, but! First, let's go to work.
+I have unfinished business too!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=confuse]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0490]
+Sayaka, do you want to come to the hospital today?
+...Huh.
+Sayaka? Hellooo!
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+
+// Shina moves Yurisa to the left to bring in Sayaka
+
+/////////// Move Shina toward Yurisa
+[move id=200102 posx=0.24 sec=1.0 wait=false]
+
+/////////// Move Yurisa toward Shina
+[move id=200202 posx=0.49 sec=1.0 wait=false]
+
+// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=surprise show=true wait=true]
+
+//// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0500]
+...Oh! Sorry. I was lost in thought...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_006_0510]
+Haha! Still dazzled by seeing Chloe-chan?
+She was cool, wasn't she!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0520]
+...Y-yeah...
+[/message]
+
+/// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Black background
+// BGM OFF
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[move id=100101 posx=0.5 wait=true]
+
+[image type=bg id=000380 show=true]
+[sound type=bgm state=stop]
+
+[face id=100101 type=thoughts]
+
+///// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0530 lipsync=false]
+(Was that acting?)
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0540 lipsync=false]
+(I feel like she was glaring at us...
+But maybe I'm overthinking...)
+[/message]
+
+//// Hide the text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Flashback of the evil spirit
+// Display the evil spirit's sprite and VR game background 240
+
+// Unsettling SE of the evil spirit — use the "Broken" SE
+[sound type=se name=Broken]
+
+[visible show=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[image type=bg id=000240 show=true]
+[character id=602001 posx=0.5 anim=fade face=default show=true wait=true]
+
+[delay sec=2.0]
+
+// After displaying for a while, return
+
+[character id=602001 anim=fade show=false wait=true]
+[image type=bg id=000430 show=true]
+[sound type=bgm state=play name=TalkA]
+
+[character id=100101 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+[visible show=true]
+
+//BGM23   / For peaceful scenes
+//Background430  / Intersection
+
+[face id=100101 type=panic]
+
+/// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_006_0550 lipsync=false]
+(No, I'm overthinking it! Definitely that's it! Yeah...!)
+[/message]
+[face id=100101 type=thoughts]
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_006_0560 lipsync=false]
+(Huh? So this girl is coming to my hospital too?
+Ehh~)
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

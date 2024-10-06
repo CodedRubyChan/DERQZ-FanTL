@@ -1,0 +1,109 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_11_03_009
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera
+[camera type=setup]
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+// Wait for the specified number of seconds
+[delay sec=2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+//[delay sec=0.5]
+
+// Strain Area - Deep
+
+// Background: Dungeon remains
+// BGM02
+
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Sayaka changes expression
+[face id=100101 type=smile]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_011_0010]
+Yes!! I managed to enter the Strain Area all on my own!!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeright]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_011_0020]
+Looks like we escaped from the troublesome Liliana too, Mai-san!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_011_0030]
+...Wait, what!?
+[/message]
+
+// Sayaka gets startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_011_0040]
+M-Mai...san!? Where are you!?
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

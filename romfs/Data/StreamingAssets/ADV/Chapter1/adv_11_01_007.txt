@@ -1,0 +1,117 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_11_01_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=1]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=Chapter1_4_5]
+
+// Wait for specified seconds
+//[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Show Sayaka
+[character id=100103 posx=0.49 anim=none face=surprise show=true wait=true]
+
+// Display specified background
+[image type=bg id=000240 fade=false]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM03 / For VR Dungeon scenes
+// Background240 / VR Game
+
+// Display text window
+[visible show=true]
+[message name=Sumika Tokiwa charaid=601101 voice=01_011_0010 icon=true]
+Hello,  
+I'm calling you through chat.  
+Sayaka, can you hear me?
+[/message]
+
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_011_0020]
+Y-yes!  
+The scenery changed so suddenly…  
+And Celica! …She's not here anymore, though…
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_011_0030 icon=true]
+That's the power of the goggles you're wearing.  
+What you're seeing right now is the world of  
+"End to Odyssey."
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_011_0040 icon=true]
+Though at this moment,  
+you can only access the DLC dungeon,  
+‘Hero's Mansion,' which is currently in front of you~
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_011_0050]
+...So, what am I supposed to do here?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_011_0060 icon=true]
+“Debugging.”  
+Celica went ahead into the dungeon.  
+Go find her and follow her!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_011_0070 icon=true]
+Don't worry, we've adjusted it so that you won't  
+get hurt, so relax and do your best, “Debugger!”
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,155 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_26_01_s07
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000530]
+
+///////////////////////////////////////////////////////////////////////////
+// Display convenience store clerk
+[character id=602401 posx=0.31 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM25 - Comedy scene
+// Background 530 - Convenience store
+
+[character id=100101 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Assistant charaid=602401 voice=01_926_0010]
+Welcomeee!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_926_0020]
+Ugh, why did I even stop here...
+[/message]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=01_926_0030]
+Is something bothering you?  
+Well, this store gets all kinds of lost souls, so… no worries!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_926_0040]
+You're just trying to sound fancy… but you're just a cashier, right?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_926_0050]
+Well, since I'm here, I might as well grab a drink...  
+I'm feeling really thirsty.
+[/message]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=01_926_0060]
+What kind of drink do you like?
+[/message]
+
+[message name=Assistant charaid=602401 voice=01_926_0070]
+It's hard to find a drink that suits someone like you.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_926_0080]
+Why?
+[/message]
+
+// Convenience store clerk expression change
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=01_926_0090]
+Because you're too beautiful for any drink here…  
+That's why!
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_926_0100]
+...It feels like my fists are thirsty too…  
+For a punching bag.
+[/message]
+
+// Convenience store clerk expression change
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=01_926_0110]
+Haha! Thanks for coming! If it's my face, I'm happy to help!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_926_0120]
+Ugh...! This weird aura…  
+I feel like I've lost this one…!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

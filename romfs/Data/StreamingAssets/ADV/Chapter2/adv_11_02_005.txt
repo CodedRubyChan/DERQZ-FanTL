@@ -1,0 +1,466 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_11_02_005
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Show the specified background
+[image type=bg id=000470]
+
+///////////////////////////////////////////////////////////////////////////// Display Sayaka and Yurisa first
+[character id=200202 posx=0.33 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=default show=true wait=true]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+//BGM23 / Peaceful scene
+//Background 470 / Iris Corporation, Development Room
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+// Show the text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0010]
+The debugging process is finally done...
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0020]
+Yes, it is! You did great!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0030]
+No, it's all thanks to you, Yamamura-san...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0040]
+You don't need to flatter me that much!
+I'm not treating you as coldly as I did last night...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0050 lipsync=false]
+(Wait, was she already treating me coldly when we first met?)
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0060]
+By the way, Yamamura-san... you're a medical intern, right?
+You seem like a total debugger though, so why Iris Corporation?
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=surprise]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0070]
+Oh? You know I'm an intern?
+How do you know that? Did I mention it?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0080]
+Y-yes! You casually mentioned it last night during the shower.
+Also, you told Mai and the others today!
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=panic]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0090]
+Oh, right... I did say that...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=sad]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0100]
+Well, to put it simply... it's escapism.
+I don't have much interest in the family medical practice due to some personal reasons.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0110]
+I see.
+That sounds complicated.
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=default]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0120]
+Let's not focus on me...
+It's already afternoon. The work over there should be done too, so let's go call Shina!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////////// Time passage transition
+[fade type=out anim=simple sec=1.5]
+[delay sec=0.5]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+// Move Sayaka and Yurisa, display Shina
+[move id=100101 posx=0.74 sec=0.1 wait=false]
+[move id=200202 posx=0.25 sec=0.1 wait=true]
+[character id=200102 posx=0.49 anim=none face=default show=true wait=true]
+
+[fade type=in anim=simple sec=1.5]
+////////////////////////////////////////////////////////////////////////////////////////////// Time passage transition
+
+// Show the text window again
+[delay sec=0.5]
+[visible show=true]
+
+// Shina changes expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0130]
+Alright, everyone,
+I'm heading to the hospital now.
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=smile]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0140]
+Don't worry, I'll be escorting you!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0150]
+Somehow, I ended up coming along too...
+Sorry about that.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character swap. Display Sumika and Iris
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+[character id=600601 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=601101 posx=0.65 anim=fade face=smile show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character swap. Display Sumika and Iris
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show the text window again
+[visible show=true]
+[message name=Sumika Tokiwa charaid=601101 voice=02_011_0160]
+All right! There's no delay in the work, so no worries!
+You can take your time at the hospital.
+[/message]
+
+[message name=Iris President charaid=600601 voice=02_011_0170]
+Shina. Since it was just yesterday, 
+please be careful.
+If anything happens to you... I...
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Iris President charaid=600601 voice=02_011_0180]
+...Oh, of course.
+Lily and... uh, Sayaka too.
+[/message]
+[face id=600601 type=default]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character swap. Display Sayaka, Yurisa, and Shina
+[character id=600601 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+[character id=200202 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character swap. Display Sayaka, Yurisa, and Shina
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show the text window again
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0190 lipsync=false]
+(For some reason, it feels like the president is keeping her distance from me.
+I wonder why...)
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0200]
+It's just a nearby hospital, no need to worry, President!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0210]
+I'll make sure that what happened yesterday doesn't happen again.
+I've taken some “precautions.”
+[/message]
+
+// Shina changes expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0220]
+So...
+Mai-chaaan!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=1]
+
+///////////////////////////////////////////////////////////////////////////// Mai enters from the side
+// Display Mai off-screen
+[character id=200302 posx=-0.2 anim=none face=default show=true wait=false]
+
+// Move Mai, Yurisa, Shina, and Sayaka
+[move id=200302 posx=0.19 sec=1 wait=false]
+[move id=200202 posx=0.4 sec=1 wait=false]
+[move id=200102 posx=0.59 sec=1 wait=false]
+[move id=100101 posx=0.8 sec=1 wait=true]
+
+///////////////////////////////////////////////////////////////////////////// Mai enters from the side
+
+// Show the text window again
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=02_011_0230]
+Yes?
+What is it, Shina-san?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0240]
+Hey, Mai. This is sudden, but
+are you feeling unwell? I heard from Iris.
+It seems like you had a tough time last night.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=02_011_0250]
+I only pushed Akagi-san out of the way to help,
+so it wasn't a big deal...
+It's not like I'm a “Luden” like you, Shina-san.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0260]
+I want you to come to the hospital with us, Mai.
+We might need your intuition and decision-making,
+and your skills as a programmer!
+[/message]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=02_011_0270]
+You need me at the hospital...??
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character swap. Display Sumika and Iris
+// Hide Mai, Yurisa, Shina, and Sayaka
+[character id=200302 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Display Iris and Sumika
+[character id=600601 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.65 anim=fade face=thoughts show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character swap. Display Sumika and Iris
+
+// Show the text window again
+[visible show=true]
+[message name=Iris President charaid=600601 voice=02_011_0280]
+...Yes.
+I want you by Shina's side.
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=02_011_0290]
+It's bad to lose one of our department's key members...
+But wait, even the president is in on this?
+Something must be going on... What will you do, Mai?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Character swap. Display Mai, Yurisa, Shina, and Sayaka
+// Hide Iris and Sumika
+[character id=600601 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Display Mai, Yurisa, Shina, and Sayaka
+[character id=200302 posx=0.19 anim=fade face=confuse show=true wait=false]
+[character id=200202 posx=0.4 anim=fade face=thoughts show=true wait=false]
+[character id=200102 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.8 anim=fade face=default show=true wait=true]
+
+///////////////////////////////////////////////////////////////////////////// Character swap. Display Mai, Yurisa, Shina, and Sayaka
+
+// Show the text window again
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=02_011_0300]
+Well, um... Everyone is always helping me, so...
+If I can be of any help, I'll come along.
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=angry]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0310 lipsync=false]
+(Wh-why are there more and more people...?!
+My chances to be alone with Shina are decreasing...)
+[/message]
+
+// Shina changes expression
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0320]
+L-Lily.
+I know what you're thinking, but...!
+There's a reason for this...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=sad]
+[message name=Yurisa Yamamura charaid=200202 voice=02_011_0330]
+*Sigh*...
+I understand. If Shina says so...
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0340]
+Alright then, everyone, let's go!
+Iris, and...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+//////////////////////////////////////////////////////////// Mai and Yurisa fade out. Shina and Sayaka move
+
+// Fade out Mai and Yurisa
+[character id=200302 anim=rtol show=false wait=false]
+[character id=200202 anim=rtol show=false wait=false]
+
+// Move Shina and Sayaka
+[move id=200102 posx=0.32 sec=1.5 wait=false]
+[move id=100101 posx=0.66 sec=1.5 wait=true]
+
+[delay sec=1]
+// Shina changes expression
+[face id=200102 type=smile]
+
+//////////////////////////////////////////////////////////// Mai and Yurisa fade out. Shina and Sayaka move
+// Wait for the specified number of seconds
+[delay sec=1]
+
+// Show the text window again
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=02_011_0350]
+...Mizunashi-san, I'm heading out!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0360 lipsync=false]
+(She's even talking to the picture frame.
+That person called "Mizunashi-san" must be as important as Celica...)
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////【Cut-in】02 Mizunashi Arata's Photo
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=1]
+
+[cutin id=000002 type=fade sec=0.5 show=true]
+[delay sec=1.0]
+[cutin id=000002 type=fade sec=1.5 show=false]
+
+[delay sec=0.5]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_011_0370]
+Mizunashi-san, I'm heading out too.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

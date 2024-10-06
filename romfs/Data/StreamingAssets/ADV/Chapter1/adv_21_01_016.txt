@@ -1,0 +1,97 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_21_01_016
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+//[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+// Display specified background
+//[image type=bg id=000140]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Background: Dungeon as is
+// BGM: 02
+
+// This event starts when reaching the boss room entrance
+////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100104 posx=0.49 anim=rtol face=panic show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_021_0010]
+Huff... Huff... Huff...!
+[/message]
+
+//【Choices】
+// 1: Are you okay?!
+
+[select]
+[link text="Are you okay?!" label=worry]
+[/select]
+
+:worry
+[face id=100104 type=default]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_021_0020]
+Thanks for worrying about me...!  
+I definitely can't afford to die here...!
+[/message]
+
+// Meta explanation of avoiding a "death end" // Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////// Ensure Sayaka's character is hidden
+[character id=100104 anim=none show=false wait=true]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

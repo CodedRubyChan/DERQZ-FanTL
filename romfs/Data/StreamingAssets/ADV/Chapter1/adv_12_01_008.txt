@@ -1,0 +1,114 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_12_01_008
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+// Display specified background
+[image type=bg id=000240]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM13 / Boss Battle BGM
+// Background240 / VR Game
+//////////////////////////////////////////////////////////////////////// Show Sayaka
+[character id=100103 posx=0.49 anim=rtol face=panic show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_012_0010]
+What? There are enemies inside this mansion?!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_012_0020 icon=true]
+Is this according to the scenario, Director?  
+Why are there enemies in the mansion,  
+from a story perspective?
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_012_0030 icon=true]
+I'll come up with a reasonable explanation later~
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_012_0040 icon=true]
+Come on, we've got Sayaka playing for us,  
+and this is what she gets…
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_012_0050 icon=true]
+Sayaka, there's a ‘Stranger' right in front of you.  
+*You*, of all people, should know how to fight.  
+Use the sword you've been given and smash it up!
+[/message]
+
+// Change Sayaka's expression
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_012_0060]
+Got it, I'll give it a try! By the way,  
+how did Celica just ignore the enemies  
+and go on ahead?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_012_0070 icon=true]
+I'll come up with a reasonable explanation  
+for that later too...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

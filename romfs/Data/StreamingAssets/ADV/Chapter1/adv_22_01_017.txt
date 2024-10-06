@@ -1,0 +1,207 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_22_01_017
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+//[sound type=bgm state=play name=GameOver]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Display specified background
+//[image type=bg id=000140]
+
+///////////////////////////////////////////////////////////////////////////// Display Shina first
+[character id=200101 posx=0.19 anim=fade face=painful show=true wait=true]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// The event starts when you talk to Shina in the boss room
+
+// Background: Dungeon as is
+// No BGM
+
+///////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100104 posx=0.79 anim=rtol face=panic show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_022_0010]
+Shina...!  
+I... I finally found you...!  
+Ah, your appearance changed again...
+[/message]
+
+[message name=Shina Ninomiya charaid=200101 voice=01_022_0020]
+Ah... ugh... oooh—
+[/message]
+
+[face id=100104 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_022_0030]
+You're alive... thank goodness!  
+I'm taking you back right now!
+[/message]
+
+// Arata does not have a sprite
+
+[face id=600201 type=surprise]
+
+[message name=Arata charaid=600201 voice=01_022_0040 icon=true]
+—Yeah, that's not gonna happen...  
+It's too early to clock out just yet...
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////////// Shina vibrates
+[shake target=chara id=200101 type=horizontal sec=3 pow=30 fade=true wait=false]
+
+//////////////////////////////// Play "Noise" SE
+[sound type=se name=Noise]
+
+[message name=Shina Ninomiya charaid=200101 voice=01_022_0050]
+Ahh?!  
+Oh, oh...  
+Wha—?!  
+Ahh!! Oh—
+[/message]
+
+[face id=100104 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_022_0060]
+—?!  
+What did you do to Shina?!
+[/message]
+
+[message name=Arata charaid=600201 voice=01_022_0070 icon=true]
+Nothing much, really.  
+I was just taking a peek into her memories.  
+Everything. Even from her past lives...
+[/message]
+
+[message name=Arata charaid=600201 voice=01_022_0080 icon=true]
+Your precious Shina?  
+Turns out, in her previous life...  
+She was a spider!  
+Go ahead, 'meet' her!
+[/message]
+
+[message name=Shina Ninomiya charaid=200101 voice=01_022_0090]
+Eeek?!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Transformation sound
+// Shina OFF, Boss 3D model Arafool appears
+
+///////////////////////////////////// Hide Shina's model and display Arafool /////////////////////////////////////
+[fade type=out anim=simple sec=0.5]
+
+[dungeon id=9012 type=Barricade show=false]
+[dungeon id=410201 type=Enemy show=true]
+
+[sound type=se name=Metamorphosis]
+[character id=200101 anim=none show=false wait=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+///////////////////////////////////// Hide Shina's model and display Arafool /////////////////////////////////////
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM13
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[face id=100104 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_022_0100]
+—Damn it!!  
+Where is Shina?!  
+Where did she go?!
+[/message]
+
+[message name=Arata charaid=600201 voice=01_022_0110 icon=true]
+Sorry about that.  
+I still need a bit more time with Shina.  
+But hey, this guy can keep you company, right?
+[/message]
+
+[face id=100104 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_022_0120]
+—Yeah, fine!  
+I'll take you on!!
+[/message]
+
+// Sayaka doesn't realize that Arafool is Shina—boss fight
+// Event battle // Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Start the boss battle
+[bossbattle active=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////// Ensure Sayaka's character is hidden
+[character id=100104 anim=none show=false wait=true]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

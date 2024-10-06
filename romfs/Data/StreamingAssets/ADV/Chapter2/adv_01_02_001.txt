@@ -1,0 +1,459 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_01_02_001
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+////////////////////////////////////////////////////////////////////////// Sayaka appears
+[character id=100101 posx=0.24 anim=none face=thoughts show=true wait=true]
+
+// Display the specified background
+[image type=bg id=000450]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM23  / Peaceful Scene
+// Background450  / Shina's Apartment Room
+
+// Show the text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0010 lipsync=false]
+(Today, during debugging, I ran into something scary,
+ And then Shina was abducted by some weird guy with glasses.)
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0020 lipsync=false]
+(Then, just when I thought I rescued her,
+ That strange guy shows up at our house...
+ What's going on...?)
+[/message]
+
+////////////////////////////////////////////////////////////////////////// Shina and Yurisa appear
+[character id=200102 posx=0.59 anim=rtol face=default show=true wait=false]
+[character id=200202 posx=0.79 anim=rtol face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0030]
+... Let me introduce you, Sayaka!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0040]
+This is "Lily," or Yurisa Yamamura.
+She's a part-time planner at Iris Corporation!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0050]
+She mostly handles debugging,
+But she also works on character dialogue and data generation!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0060]
+... Huh? So you're from the same company as me?!
+But I didn't see you at all yesterday...
+[/message]
+
+// Placeholder left in
+//[character id=200202 posx=0.75 anim=fade face=thoughts show=true wait=true]
+
+// Change Yurisa's expression
+[face id=200202 type=thoughts]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0070]
+I'm just a part-timer at Iris Corporation,
+I have another main job...
+I only show up twice a week.
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0080]
+That's why I occasionally come over
+To visit Shina directly at her place!
+Sorry for bothering you tonight.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0090]
+Yeah.
+... It seems like you've been doing more than just visiting, though!
+[/message]
+
+//////////////////////////////////////////////// Yurisa moves toward Shina
+[move id=200202 posx=0.74 sec=1 wait=false]
+
+// Change Yurisa's expression
+[face id=200202 type=smile]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0100]
+Hehe, whatever do you mean?
+More importantly,
+Shina looks so cute with that troubled expression...
+[/message]
+
+//////////////////////////////////////////////// Shina moves a bit
+[move id=200102 posx=0.58 sec=1 wait=false]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0110]
+R-really...?
+You're getting too close...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0120]
+(I'm amazed we haven't run into each other until now...)
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0130]
+(I've been scheduling things to keep it that way...)
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0140]
+Okay, I have a question!
+What exactly is the relationship between you two?!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=smile]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0150]
+Hehehe...
+It's a destined...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0160]
+Sayaka, you know the figurines displayed in our room, right?
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0170]
+Our room?
+You mean mine and Shina's room?
+Right???
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0180]
+Yeah. Now that you mention it... 
+She kinda reminds me of that "Lily" character from "World's Odyssey."
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+// Black background
+// * Show the standing figure of Adventurer Lily
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+
+[image type=bg id=000380 show=true]
+[character id=200201 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[visible show=true]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0190]
+Oh my...! You've figured it out, haven't you...?
+Yes, I'm the true model...
+For Princess Lily of Hartis!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0200]
+...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0210]
+That's right! Originally, she was designed as a blonde,
+But I had them change the design to match Yamamura-san, with my D-authority.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0220]
+Wow!! That's such a cool backstory!
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0230]
+Why didn't you react like that when I explained it...?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+[character id=200201 anim=fade show=false wait=false]
+[image type=bg id=000450 show=true]
+
+////////////////////////////////////////////////////////////////////////// Sayaka, Shina, and Yurisa reappear
+[character id=100101 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[visible show=true]
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0240]
+Now you understand how deep my relationship with Shina is, right...?
+Now, it's your turn to introduce yourself, Sayaka!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0250]
+Uh… well, that's…
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0260]
+Sorry, Lily, we've been through a lot and just got back.
+Would it be okay if we took a shower and went to bed? We have work tomorrow...
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0270]
+Well, in that case,
+I'll join you in the shower...!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////// Yurisa moves toward Shina
+[move id=200202 posx=0.74 sec=0.1 wait=true]
+// Change Shina's expression
+[face id=200102 type=panic]
+// Change Sayaka's expression
+[face id=100101 type=panic]
+//////////////////////////////////////////////// Shina and Yurisa disappear
+[character id=200202 anim=ltor show=false wait=false]
+[delay sec=0.1]
+[character id=200102 anim=ltor show=false wait=true]
+
+//////////////////////////////////////////////// Move Sayaka to the center
+[move id=100101 posx=0.49 sec=1 wait=true]
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0280]
+… She's such a pushy princess...
+[/message]
+
+//////////////////////////////////////////////////////////////////【Choice】
+// 1: Alright, I'll join the shower too!
+// 2: This looks tough, Sayaka. Need any help?
+
+[select]
+[link text="Alright, I'll join the shower too!" label=quiet]
+[link text="This looks tough, Sayaka. Need any help?" label=quiet]
+[/select]
+
+// No change in outcome, different dialogue
+:quiet
+
+// Change Sayaka's expression
+[face id=100101 type=angry]
+// Inner monologue
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0290 lipsync=false]
+(Hey, partner, keep quiet for a second.
+They can't see you right now, so stay put!
+Don't make things more complicated…!)
+[/message]
+
+//////////////////////////////////////////////////////////////////【Choice】
+// 1: Just kidding
+// 2: Gutted...
+
+[select]
+[link text="Just kidding" label=shower]
+[link text="Gutted..." label=shower]
+[/select]
+
+// No change in outcome, different dialogue
+:shower
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////// Hide Sayaka
+[character id=100101 anim=fade show=false wait=true]
+
+// Screen fades, shower sound
+[image type=bg id=000380 show=true]
+// Since there was no shower sound, I used a sprinkler sound
+[sound type=se name=Sprinkler]
+
+// Re-display the text window
+[visible show=true]
+
+//////////////////////////////////////////////// Screen shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_001_0300]
+Hyaa…!? Hey, Lily, the shower's freezing!! Noo~♪
+Raise the temperature, ah...! Kyaa!!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0310]
+Where have you been so late...? 
+You're all dirty…?
+Here, let me clean you up...!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0320]
+Yamamura-san, uh... Shina's clearly uncomfortable…
+Aren't you being a bit too pushy? Stand down!
+I'll wash her instead!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_001_0330]
+Heh, to stand in the way of me, a “doctor in training”...
+Fine, if you want to get involved,
+Let's settle this with some "naked bonding"...! Take this!
+[/message]
+
+//////////////////////////////////////////////// Screen shake
+[shake type=horizontal sec=0.5 pow=10 fade=false wait=false]
+
+// Takeabath sound effect
+[sound type=se name=Takeabath]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_001_0340]
+C-cold!!! A freezing towel bath!
+Aaaah! They're scrubbing me down!! Ugh!!
+It… it feels… good… N-nooo!
+[/message]
+
+//【Choice】
+// 1: Are they... slowly getting closer?
+
+// Yamazaki-san feedback: "The last two choices don't trigger a message, is this intentional?" Should we leave Sayaka's last line visible?
+
+[delay sec=0.5]
+
+[select]
+[link text="Are they... slowly getting closer?" label=double]
+[/select]
+
+// A slight pause
+// Two choices in a row
+
+:double
+// Stop the current sound effect
+[sound type=se state=stop]
+// Hide the text window
+[visible show=false]
+
+[delay sec=1]
+
+//【Choice】
+// 1: And then, morning came. Time to go to work early.
+
+[select]
+[link text="And then, morning came. Time to go to work early." label=homage]
+[/select]
+
+:homage
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+// Wait for the specified number of seconds
+[delay sec=1]
+[sound type=se name=Eyecatch]
+// Show the ADV eyecatch
+[eyecatch chapter=2 title=Things at Yamamura Hospital?]
+// Wait for the specified number of seconds
+[delay sec=1]
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+//########## Eyecatch ##########//
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the current SE
+[sound type=se state=stop]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//

@@ -1,0 +1,250 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+
+//adv_23_02_015
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+//[delay sec=0.5]
+
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified time
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Background: Remain in the dungeon
+// No BGM
+
+[character id=100103 posx=0.22 anim=fade face=smile show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_023_0010]
+That's... it's not Lilith! 
+It's the other Miss Yamamura!!
+[/message]
+
+[character id=200201 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0020]
+.........
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0030]
+Wow, we've been looking for you! 
+I can't believe you're safe way back here... 
+Wait, what's with that look...? You look just like Lilith!
+[/message]
+
+[face id=200201 type=default]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0040]
+......... Disgusting.
+[/message]
+
+[face id=100103 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0050]
+Are you talking about me!? 
+That's harsh...
+[/message]
+
+// BGM28
+
+[sound type=bgm state=play name=TalkF]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0060]
+...Smells, smells! 
+Ah, it's the blood of Gilsura. 
+Did you get that on you back then?
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0070]
+G-Gilsura...? 
+Who's that...? 
+Back when...?
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0080]
+How filthy, 
+...Not suitable for a princess's feast, 
+not suitable at all, 
+NOT SUITABLE AT ALL!
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0090]
+W-wait... what...?
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0100]
+You've come well, adventurer. 
+Were you the one who killed Gilsura!?
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0110]
+...Huh?
+[/message]
+
+[face id=200201 type=default]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0120]
+The bug on your arm is the stigma 
+that distinguishes between sinners 
+and those saved by the Ark.
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0130]
+...Is that so?
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0140]
+Ahh, one who fears not even the glory of God! 
+You wretched sinner... Bow your head to the earth, 
+offer your blood and skull in repentance!
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0150]
+...That's Sariga's line!?
+I get it now... you're a fake too, 
+just like the other Miss Yamamura!
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0160]
+A curse! It will devour everything! 
+The world is ending!! 
+The priests and pastors have all thrown themselves away!
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_023_0170]
+Give up already!! 
+Your journey ends here, adventurer!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+/////////////////////////////////////////////////////////////////////////
+// Transform into Sariga
+[fade type=out anim=simple sec=0.5]
+
+// We want to make Sayaka disappear to show the transformed form clearly.
+// Hide Sayaka with the following script:
+
+// Yurisa exits
+[character id=200201 anim=fade show=false wait=false]
+
+// Sayaka exits
+[character id=100103 anim=fade show=false wait=true]
+
+[dungeon id=9014 type=Barricade show=false]
+[dungeon id=410301 type=Enemy show=true]
+
+[sound type=se name=Metamorphosis]
+
+[fade type=in anim=simple sec=0.5]
+// Wait for the specified time
+[delay sec=0.5]
+////////////////////////////////////////////////////////////////////////
+
+
+// Sayaka reappears
+[character id=100103 posx=0.5 anim=fade face=default show=true wait=false]
+
+//[move id=100101 posx=0.1 wait=false]
+[face id=100103 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_023_0180]
+...So you've shown your true form! 
+I'll take you down!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Start boss battle
+[bossbattle active=true]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

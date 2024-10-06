@@ -1,0 +1,295 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+
+//adv_20_02_012
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkF]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+//BGM28 / For Confrontation
+// Display Still Image 05 【Tragedy in the Hospital】
+
+// Sprinkler sound effect
+[sound type=se name=Sprinkler]
+
+[image type=still id=100007 show=true]
+
+[face id=500101 type=default]
+
+// Display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500101 voice=02_020_0010]
+...Water?
+[/message]
+
+[face id=602101 type=default]
+
+[message name=Yamamura Tsubasa charaid=602101 voice=02_020_0020]
+I activated the sprinkler! 
+Everyone, run away!
+[/message]
+
+#N/A
+
+[message name=Patient voice=02_020_0030]
+W-what is happening anymore!?
+[/message]
+
+#N/A
+
+[message name=Patient voice=02_020_0040]
+Help meeee!!
+[/message]
+
+[face id=500101 type=default]
+
+[message name=Lilith Yamamura charaid=500101 voice=02_020_0050]
+...You're not getting away.
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// End Still Image
+
+[image type=still id=100007 show=false]
+
+// Background 500 / University Hospital
+
+[image type=bg id=000500 show=true]
+
+[face id=200102 type=default]
+
+//////// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_020_0060]
+I won't let you!!
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sound effect for Shina's cut-in of spider thread
+[sound type=se name=Spider]
+
+// Display Shina's cut-in
+[cutin id=000001 type=ltor sec=0.5 show=true]
+[delay sec=2.0]
+[cutin id=000001 type=fade sec=0.5 show=false]
+
+[character id=200102 posx=0.39 anim=fade face=angry show=true wait=false]
+
+[character id=200202 posx=0.19 anim=fade face=surprise show=true wait=true]
+
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_020_0070]
+Amazing!! 
+Shina caught the arrow...
+[/message]
+
+[character id=602201 posx=0.79 anim=fade face=confuse show=true wait=true]
+
+[message name=Sugiura charaid=602201 voice=02_020_0080]
+Ladies, hurry!!
+[/message]
+
+[character id=602201 anim=fade show=false wait=false]
+
+[character id=100103 posx=0.59 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_020_0090]
+Shina, hurry!!
+[/message]
+
+[character id=200202 anim=fade show=false wait=false]
+
+[character id=200102 anim=fade show=false wait=false]
+
+[character id=100103 anim=fade show=false wait=true]
+
+// Arata appears
+[character id=600201 posx=0.67 anim=fade face=default show=true wait=true]
+
+[message name=Arata charaid=600201 voice=02_020_0100]
+Run, run!! 
+Even if you die, you'll just become my material!
+[/message]
+
+[face id=600201 type=angry]
+
+[message name=Arata charaid=600201 voice=02_020_0110]
+Tch, you Shina wannabe...
+Do you think you can bind me with such flimsy threads!?
+[/message]
+
+// Stop currently playing sound effect
+[sound type=se state=stop]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=02_020_0120]
+Phew, it came off. 
+As much as I'll miss this, 
+I think it's time for me to go.
+[/message]
+
+[character id=500101 posx=0.33 anim=fade face=default show=true wait=true]
+
+[message name=Lilith Yamamura charaid=500101 voice=02_020_0130]
+...So.
+How far can I go?
+[/message]
+
+[face id=600201 type=thoughts]
+
+[message name=Arata charaid=600201 voice=02_020_0140]
+It doesn't matter how many you kill. 
+Use that weapon however you want. 
+Just make sure to collect "Eni" after they're dead. That's important!
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=02_020_0150]
+And also, drive Ripuka into the Strain Area one more time. 
+I'll leave the method to you.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=02_020_0160]
+Oh, and I've already called Kiki too. 
+Make sure you cooperate with her well.
+[/message]
+
+[face id=500101 type=angry]
+
+[message name=Lilith Yamamura charaid=500101 voice=02_020_0170]
+...Tch,
+her... I really hate her...
+[/message]
+
+// Change Lilith's transformation expression
+[face id=500101 type=default]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=02_020_0180]
+We agree on something! I don't like her either... 
+But do your best to work together! 
+See ya...
+[/message]
+
+// Arata OFF
+
+[character id=600201 anim=fade show=false wait=false]
+[delay sec=1.5]
+// Return to the previous state
+
+// Changed script to true ↓
+//[character id=500101 anim=rtol show=false wait=true]
+
+// Lilith's standing image moves back to the center
+[move id=500101 posx=0.5 sec=2.5 wait=false]
+
+// Lilith exits
+[character id=500101 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Lilith changes into casual clothes
+[character id=500102 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_020_0190]
+...Every single one of them...
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_020_0200]
+...Shina, don't run away...
+Let me kill you already...
+[/message]
+
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_020_0210]
+... 
+...Though these feelings are...
+merely borrowed anyway...
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

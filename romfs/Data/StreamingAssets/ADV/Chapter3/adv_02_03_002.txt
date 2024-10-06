@@ -1,0 +1,368 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_02_03_002
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000430]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+////////////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message]
+――Year 2025
+――Morning of February 3rd, Day 3
+[/message]
+
+// No BGM
+// Background 430 / Intersection
+
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_002_0010 lipsync=false]
+(! ? I sense someone approaching…)
+[/message]
+
+// Sayaka moves
+[move id=100101 posx=0.66 wait=false]
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0020]
+…Is something wrong?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[sound type=se name=VsInactivate]
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+
+////// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+// Change Sayaka's sprite
+[character id=100103 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Sound effect for drawing a weapon, "Makeblade"
+[sound type=se name=Makeblade]
+
+// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_002_0030 lipsync=false]
+(What's going on so early in the morning…?)
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0040]
+…Wha-? A weapon…?!
+Should I…do something too…?
+Though I can only make threads…!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Nova appears
+[move id=100103 posx=0.74 wait=false]
+[move id=200102 posx=0.49 wait=false]
+[character id=600901 posx=0.20 anim=fade face=default show=true wait=true]
+
+[face id=600901 type=smile]
+
+// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[message name=Nova charaid=600901 voice=03_002_0050]
+Ahaha! Hey hey,
+no need to be on guard… It's me. It's me.
+Have you already forgotten, Sayaka?
+[/message]
+
+// BGM23 / For peaceful scenes
+
+[sound type=bgm state=play name=TalkA]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+// Change Sayaka's expression with the blade
+[face id=100106 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_002_0060]
+…Ah!!
+Umm… You're Nova, the one we met in town while helping Shina…
+[/message]
+
+// Change Nova's expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_002_0070]
+Yep, that's right.
+Make sure to remember that, okay?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[sound type=se name=VsInactivate]
+// Sound effect for sheathing a weapon, "Brandish"
+[sound type=se name=Brandish]
+
+// Sayaka exits
+[character id=100103 anim=fade show=false wait=false]
+
+// Change Sayaka's sprite
+[character id=100101 posx=0.74 anim=fade face=surprise show=true wait=true]
+
+// Wait the specified seconds to adjust
+[delay sec=1.0]
+
+// Change Nova's expression
+[face id=600901 type=smile]
+
+////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=03_002_0080]
+And now, greetings to you~
+How's my dear grandmother? In good spirits?
+…Something like that, right?
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0090]
+…Grandmother!?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_002_0100]
+…Shina, are you actually that old?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0110]
+N-No, no!
+I'm not even 30 yet!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+// Change Nova's expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_002_0120]
+It's nothing strange, is it?
+She's my birth mother's mother, so she's technically my grandmother, right?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_002_0130]
+………Huh??
+[/message]
+
+// Change Nova's expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_002_0140]
+…Oh? Seems like there's a lot you don't know, Sayaka.
+The Iris Corporation sure keeps a lot of secrets, huh?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0150]
+…We're just waiting for the right time to explain.
+[/message]
+
+// Change Nova's expression
+[face id=600901 type=confuse]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0160]
+Is your plan just to brush everything off as “It is because the Ludens”?
+That kind of explanation would just confuse Sayaka.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+
+// Change Nova's expression
+[face id=600901 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_002_0170]
+"Haha.
+Well, I still don't really understand what a Luden is or even what I am…"
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_002_0180]
+Oh, seems like there's a lot to teach you! Haha!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0190]
+But more importantly,
+it's rare for you to visit us in person, Nova, instead of just at the company.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+// Change Shina's expression
+[face id=200102 type=eyeleft]
+
+// Change Nova's expression
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=03_002_0200]
+Well, a lot happened the day before yesterday and yesterday, right?
+So I'm here as protection, protection!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_002_0210]
+If something happens to you two, it'd be a disaster!
+We'd never be able to finish “End to Odyssey”… haha!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_002_0220]
+Well, yeah…
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_002_0230]
+…Am I really that important to completing it!? That makes me happy!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+// Change Nova's expression
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=03_002_0240]
+…Yeah, yeah.
+That's why I'm here to protect you.
+At least in the shallow parts of the Strain Area.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_002_0250]
+Shallow…parts…?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_002_0260]
+Standing here talking is getting old, let's walk and chat!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

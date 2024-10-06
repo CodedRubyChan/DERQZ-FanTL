@@ -1,0 +1,164 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_15_02_s08
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display the specified background
+[image type=bg id=000090]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//BGM21 — For the café scene
+//Background 90 — Café
+
+[character id=601001 posx=0.33 anim=fade face=default show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Levin charaid=601001 voice=02_915_0010]
+…I see. So, Yamamura University Hospital was attacked.
+[/message]
+
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_915_0020]
+That's right. The enemy is that guy, Arata Mizunashi…!
+[/message]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=02_915_0030]
+Words can be dangerous if you get caught up in them.
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=02_915_0040]
+Take "rain" and "candy." Both are shiny and beautiful, but the one that tastes good in your mouth is candy!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_915_0050]
+...What exactly does that mean?
+[/message]
+
+[message name=Levin charaid=601001 voice=02_915_0060]
+It's just a warning. Nothing more than that.
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Levin charaid=601001 voice=02_915_0070]
+So, the enemy is Arata Mizunashi, you say. Although, it may not be just him…
+[/message]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=02_915_0080]
+Nova mentioned that there was also a random assault last night.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_915_0090]
+Does that mean there are more enemies besides Arata Mizunashi?
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=02_915_0100]
+Who knows, really. I'm just speculating.
+It could be be demons, snakes, or both...
+[/message]
+
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_915_0110]
+Uh, Levin-san, you're a Luden too, right? Would you maybe help me out? You know, like joining the rescue mission or something…
+[/message]
+
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=02_915_0120]
+M-me?! Accompany you?! That's a bit much!!
+I'm way too scared to join…!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_915_0130]
+Yeah, I figured... I mean, I don't want to drag you into anything dangerous either. Just thought there might be a chance.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=02_915_0140]
+—But, if you need anything, or if there's something you want, just ask. We can trade right here at this shop.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_915_0150]
+Got it! That alone is a huge help.
+Thanks, Levin-san!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

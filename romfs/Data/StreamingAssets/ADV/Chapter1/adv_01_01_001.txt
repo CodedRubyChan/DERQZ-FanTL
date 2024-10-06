@@ -1,0 +1,489 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_01_01_001
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000450]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// BGM 23 / For calm scenes
+// Background 450 / Shina's apartment room
+
+// No speaker name
+
+// Wait for the specified seconds
+[delay sec=1.5]
+
+// Display the text window
+[visible show=true]
+
+[message]
+――2025  
+――January, Morning
+[/message]
+
+// Still no character display
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0010]
+Snooore~  
+Whooosh...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0020]
+Mmm...  
+Mmmmmm...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0030]
+Heh,  
+Hehehe...!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0040]
+L-Lily,  
+that's...  
+――No, not there...
+[/message]
+
+//【Choices】
+// 1:"... That's quite some sleep talking."
+// 2:"Should I wake them up soon?"
+
+[select]
+[link text="... That's quite some sleep talking." label=wakeup]
+[link text="Should I wake them up soon?" label=wakeup]
+[/select]
+
+/////////////////////////////////////////////////////////// Regardless of choice, no change in outcome or dialogue
+:wakeup
+
+// Temporarily hide the text window
+[visible show=false]
+
+////////////////////////////////////// Alarm sound
+[sound type=se state=play name=Alarm]
+
+// Wait for the specified seconds
+[delay sec=1.5]
+
+// Re-display the text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0050]
+Ughhh...!  
+Is... is it morning already?
+[/message]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0060]
+...Mnya!?  
+Shina, fwaa—  
+...Good Morning...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0070]
+Oh, Sayaka...  
+The morning greeting is "Good morning!"  
+You should really remember that by now...!
+[/message]
+
+// Change Sayaka's expression[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0080]
+So... does that mean we managed to wake up early today?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0090]
+Y-You're being noisy...  
+It's not like I oversleep all the time...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Rustling sound SE
+[sound type=se state=play name=Rummage]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Re-display the text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0100]
+Ah... Contacts—  
+Contact lenses, check.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Changing sound SE
+[sound type=se name=Dress]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+/////////////////////////////////////////////////////////////////////////// Display Sayaka and Shina
+// Display Sayaka's sprite
+[character id=100101 posx=0.32 anim=fade face=default show=true wait=true]
+// Display Shina's sprite
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=false]
+
+// Wait for the specified seconds
+[delay sec=1]
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0110]
+Well then, I'm off to work... As usual,  
+there's food in the fridge, and you can watch TV or browse the net.  
+I'm heading out, Sayaka!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0120]
+Alright, take care!  
+Your game development job... you're in the beta testing phase, right?  
+Good luck!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0130]
+Yes. For "End to Odyssey!"  
+As a director, I can't afford to lose!  
+Thanks a lot...!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.2]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeright]
+// Move Shina toward the Celica poster
+[move id=200102 posx=0.79 wait=true]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0140]
+..."Let's go, Celica!"
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Door opening sound
+[sound type=se state=play name=OpenTheDoor]
+//////////////////////////////////////////////////////////////////////////// Hide Shina's sprite
+[character id=200102 anim=ltor show=false wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+// Move Sayaka to the center
+[move id=100101 posx=0.49 sec=1 wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0150]
+Heheh.  
+Shina always talks to her wall poster before heading off to work.
+[/message]
+
+///////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: "This room is certainly unique."
+// 2: "Some otakus are like that."
+
+[select]
+[link text="This room is certainly unique." label=individuality]
+[link text="Some otakus are like that." label=otaku]
+[/select]
+
+//////////////////////////////////////////////////////// 1st option
+:individuality
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0160]
+Right? It's all "End to Odyssey"...  
+Wait, or was it "World's Odyssey"?  
+Anyway, it's all characters from the game...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[goto label=partner]
+
+//////////////////////////////////////////////////////// 2nd option
+:otaku
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0170]
+Ah. So Shina really is an "otaku", huh!  
+Now I feel like I can relate to her even more!
+[/message]
+[goto label=partner]
+
+///////////////////////////////////////////////////////////////////////////////【Choices merge】
+:partner
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0180]
+So... hey, partner.  
+Since you helped me out in the Strain Area,  
+I'm sorry to bring this up now, but...
+[/message]
+
+///////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: "Are you calling me 'partner'?"
+// 2: "What is it?"
+
+[select]
+[link text="Are you calling me 'partner'?" label=me]
+[link text="What is it?" label=what]
+[/select]
+
+//////////////////////////////////////////////////////// 1st option
+
+:me
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0190]
+That's right! It's a common word in famous dramas  
+and the game Shina is developing too. "Partner."  
+From now on, I'll call you that♪
+[/message]
+[goto label=boredom]
+
+//////////////////////////////////////////////////////// 2nd option
+
+:what
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0200]
+Right, right, that's just how it is!  
+That phrase from the "End to Odyssey" game keeps popping up in my head too!
+[/message]
+[goto label=boredom]
+
+///////////////////////////////////////////////////////////////////////////////【Choices merge】
+
+:boredom
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0210]
+――So, this brings me back to the Strain Area.  
+I realized I've gotten used to the excitement and turmoil that comes with it...  
+How should I put it? I'm starting to feel a bit bored.
+[/message]
+
+// Shina expression change
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0300]
+Sorry... there are some special circumstances.  
+But believe me, Sayaka is cheerful, kind, and a good girl.  
+As long as you're not a bad person, you can go outside anytime.
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=sad]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0310]
+I'm not a bad person.  
+Do I look like a bad person to you, Shina?
+[/message]
+
+// Shina expression change
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0320]
+No!  
+Not at all!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=surprise]
+
+// Shina expression change
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0330]
+Then, how about this—  
+Why don't we...  
+Head to work together today?
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=eyeright]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0340]
+Wow! Sounds good!  
+I've always wanted to say this once:  
+..."Let's go, Celica!"
+[/message]
+
+// Shina expression change
+[face id=200102 type=eyeleft]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0350]
+Uh,  
+but I'm Shina...?
+[/message]
+
+//////////////////////////////////////////////////////// Sayaka vibration
+[shake target=chara id=100101 type=horizontal sec=0.1 pow=5 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0360]
+I know that...!  
+I was just mimicking you!
+[/message]
+
+// Shina expression change
+[face id=200102 type=expectation]
+// Sayaka expression change
+[face id=100101 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_001_0370]
+Haha, I was just messing with you!  
+I can even introduce you to Celica  
+once we're at the office!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0380]
+Huh... what do you mean?  
+I'm looking forward to it!
+[/message]
+
+////////////////////////////////////////////////////////////【Choices】
+// 1: "Does Shina still not see me?"
+// 2: "Should I tag along to work too?"
+
+// Regardless of the choice, the story continues the same, with no change in dialogue.
+
+[select]
+[link text="Does Shina still not see me?" label=nice]
+[link text="Should I tag along to work too?" label=nice]
+[/select]
+
+////////////////////////////////////////////////////////////【Choices merge】
+:nice
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////// Shina disappears, Sayaka moves
+// Shina disappears
+[character id=200102 show=false anim=fade wait=true]
+// Sayaka moves
+[move id=100101 posx=0.49 wait=true]
+
+[delay sec=0.5]
+// Re-display the text window
+[visible show=true]
+// Sayaka expression change
+[face id=100101 type=smile]
+// Inner monologue
+[message name=Sayaka Hiwatari charaid=100101 voice=01_001_0390 lipsync=false]
+(Perfect timing, partner.  
+We're heading out together now!)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Sayaka disappears
+[character id=100101 show=false anim=none wait=false]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Display the ADV eyecatch
+[eyecatch chapter=1 title=Warriors of the Game Company]
+// Wait for the specified seconds
+[delay sec=1]
+//########## Eyecatch ##########//
+
+// The home menu becomes available
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop the currently playing BGM
+//[sound type=bgm state=stop]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END
+
+

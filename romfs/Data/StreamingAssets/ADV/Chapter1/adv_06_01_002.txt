@@ -1,0 +1,867 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+
+// adv_06_01_002
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000060]
+
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+// BGM23 / For peaceful scenes
+// Background60 / Sako City Main Street
+
+//////////////////////////////////////////////////////////////////////////// Shina and Sayaka appear
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0010]
+So, if you keep going straight down this main street,  
+you'll reach the workplace where both me and Sayaka work.
+[/message]
+
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0020]
+…………
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0030]
+...Oh?  
+What's wrong? You've frozen up.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0040]
+Um, isn't there a place...  
+closer than this main street...  
+with more...people?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0050]
+Well... yeah.  
+Oh! Were you more scared to meet people  
+than just seeing them on TV or the internet?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0060]
+...Just passing by people... is exhausting.  
+It's hard to decide whether to move left or right...  
+Some people even give you angry looks...
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0070]
+S-sorry...!  
+I should've taken it more gradually...  
+So, should we just call it a day and head back?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0080]
+W-wait, wait!  
+Just give me a little rest, and I'll make up my mind!  
+Yeah!
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////////////////////////////////////// Scene change, fade out
+[fade type=out anim=simple sec=0.5]
+
+
+/////////////////////////////////////////// Background70: Sako City Park, noon
+// Display specified background
+[image type=bg id=000070]
+
+
+///////////////////////////////////////////////////// Hide Shina and Sayaka
+[character id=200102 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+
+[fade type=in anim=simple sec=0.5]
+///////////////////////////////////////////////////////////// Scene change, fade in
+
+
+//////////////////////////////////////////////////////////////////////////// Shina and Sayaka reappear
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+// Re-display text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0090]
+Let's take a break in the park.  
+I often take a rest here during work breaks.
+[/message]
+
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0100]
+Huh... hearing that makes it worth stopping by!  
+There aren't many people, just the right spot.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0110]
+Yeah, it's a hidden gem.  
+It's great to come here with friends,  
+and there's a nice bench in the corner of the park...
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0120]
+You're right! Let's sit down.
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0130]
+...Wait a second, Sayaka.  
+Before you sit down.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0140]
+?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0150]
+There's an ant climbing up.  
+It'd be sad to squash it under your butt.  
+Shoo, shoo!  
+Oh, and be careful not to step on it either. Watch your feet!
+[/message]
+
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0160]
+Ants... that black thing, right?  
+It's just a bug. Is it really that important?
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0170]
+It might be harsh to say this, but if you think,  
+“Who cares about bugs?” then eventually you'll think,  
+“Who cares about people?”
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0180]
+...Maybe.  
+Think of it as a kind of training.
+[/message]
+
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0190]
+I see...  
+This outing...  
+was training for me...
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0200]
+Yeah, kind of!  
+But don't be so tense.  
+It's just about being considerate to your surroundings.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+
+
+///////////////////////////////////////////////////////////////////////////// BGM stops
+[sound type=bgm state=stop]
+
+
+// Wait for specified seconds
+[delay sec=1]
+
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+// Re-display text window
+[visible show=true]
+// Speaker: Voice of a rough male high schooler
+// @Male Mob 01
+[message name=Voice of Rough High Schooler voice=01_006_0210]
+Hey, man.  
+You just gave us a nasty look, didn't you?
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////// Hide Shina and Sayaka
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Sugiura appears
+[character id=602201 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+// Speaker: Handsome man
+[message name=Handsome Man charaid=602201 voice=01_006_0220]
+I didn't mean it like that at all.  
+I might've glanced at you two for a moment,  
+wondering why you weren't at school at this hour, though.
+[/message]
+
+
+// Speaker: Girlfriend of Rough High Schooler
+// @Female Mob 02
+[message name=Girlfriend of Rough High Schooler voice=01_006_0230]
+Huh? Gross! You're probably just a shut-in, huh?  
+Are you lecturing us in the middle of the day?  
+Hey, should we beat him up?
+[/message]
+
+
+// Speaker: Voice of Rough High Schooler
+// @Male Mob 01
+[message name=Voice of Rough High Schooler voice=01_006_0240]
+Sounds good! I'm actually...  
+pretty strong, you know?  
+Wanna see?
+[/message]
+
+
+// Speaker: Girlfriend of Rough High Schooler
+// @Female Mob 02
+[message name=Girlfriend of Rough High Schooler voice=01_006_0250]
+Yeah, I wanna see!!  
+Make him cry!!
+[/message]
+
+
+[face id=602201 type=confuse]
+// Speaker: Handsome man
+[message name=Handsome Man charaid=602201 voice=01_006_0260]
+Oh dear...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+
+//////////////////////////////////////////////////////////////////// Sugiura temporarily hides
+[character id=602201 anim=fade show=false wait=true]
+
+
+////////////////////////////////////////////////////////////////////////// Shina and Sayaka reappear
+[character id=200102 posx=0.32 anim=fade face=thoughts show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+// Re-display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0270]
+W-what was that... Do people like that exist outside?  
+Shina, is that why you didn't want me to go out?  
+You're so kind!
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0280]
+It's more like a “Don't look at them” situation...  
+There shouldn't be many people like that, though...
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0290]
+They look dangerous.  
+Maybe I should step in and help...
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+
+///////////////////////////////////////////////////////////// Shina moves, Sayaka hides
+// Hide Sayaka
+[character id=100101 anim=fade show=false wait=true]
+// Move Shina
+[move id=200102 posx=0.49 sec=0.5 wait=true]
+[delay sec=0.2]
+
+
+// BGM25 / For comical scenes
+[sound type=bgm state=play name=TalkC]
+// Change Shina's expression
+[face id=200102 type=angry]
+
+
+[delay sec=1]
+
+
+// Display Cut-in 01 (Shina's spider thread release)
+[sound type=se name=SwordSwing]
+[cutin id=000001 type=rtol sec=0.2 show=true]
+
+
+[delay sec=1]
+
+
+// Re-display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0300]
+!?
+[/message]
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////// Instant blackout
+[fade type=out anim=simple sec=0.3]
+///////////////////////////////////////////////////////////// Hide Shina and Sayaka
+[character id=100101 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=true]
+[cutin id=000001 type=none sec=0.5 show=false]
+[fade type=in anim=simple sec=0.3]
+/////////////////////////////////////////////////////////////////////////////////////////////// Fade-in after blackout
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+// Speaker: Voice of Rough High Schooler
+// @Male Mob 01
+// Re-display text window
+[visible show=true]
+[message name=Voice of Rough High Schooler voice=01_006_0310]
+Huh? What the hell!?  
+My legs are suddenly super sticky!
+[/message]
+
+// Speaker: Girlfriend of Rough High Schooler
+// @Female Mob 02
+
+[message name=Girlfriend of Rough High Schooler voice=01_006_0320]
+No way? What's happening? … Seriously?
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+
+////////////////////////////////////////////////////////////////////////// Sugiura appears
+// Speaker: Handsome Man
+[character id=602201 posx=0.49 anim=fade face=default show=true wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Handsome Man charaid=602201 voice=01_006_0330]
+...Do you need help?
+[/message]
+
+// Speaker: Voice of Rough High Schooler
+// @Male Mob 01
+
+[sound type=se name=Cantmove]
+
+[message name=Voice of Rough High Schooler voice=01_006_0340]
+Huh!? Actually, it's you!  
+You're the one who did something, right!?  
+Damn... Damn it!!
+[/message]
+
+
+// Speaker: Girlfriend of Rough High Schooler
+// @Female Mob 02
+[message name=Girlfriend of Rough High Schooler voice=01_006_0350]
+Ugh, that's pathetic...  
+Total turn-off...
+[/message]
+
+
+// Change Sugiura's expression
+[face id=602201 type=confuse]
+// Speaker: Handsome Man
+[message name=Handsome Man charaid=602201 voice=01_006_0360]
+...I'm sorry I couldn't be of help.  
+My break is over, so I'm heading off.
+[/message]
+
+
+[character id=602201 anim=rtol show=false wait=false]
+
+// Speaker: Voice of Rough High Schooler
+// @Male Mob 01
+
+[message name=Voice of Rough High Schooler voice=01_006_0370]
+Hey, wait a minute!?
+[/message]
+
+
+	
+// Temporarily hide text window
+[visible show=false]
+[delay sec=1]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////// Blackout
+[fade type=out anim=simple sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Shina and Sayaka appear
+[character id=200102 posx=0.32 anim=none face=thoughts show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=panic show=true wait=true]
+[fade type=in anim=simple sec=0.3]
+///////////////////////////////////////////////////////////////////////////////////////////// Fade-in after blackout
+
+
+// Wait for specified seconds
+[delay sec=1]
+
+
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0380]
+Shina... what did you just do?  
+That was so cool!
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0390]
+Ah... Sayaka, did you... see that?  
+That's the power of Ludens, so don't tell anyone.  
+It's a restraint ability, won't harm them.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0400]
+Whoa, that's awesome!?  
+Can I... do something like that too?  
+Do I have any powers?
+[/message]
+
+
+// Speaker: Voice of Rough High Schooler
+// @Male Mob 01
+[message name=Voice of Rough High Schooler voice=01_006_0410]
+Aaahh~~!!  
+What the hell is this!?  
+It's still stuck on me!!
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0420]
+Ugh, I'm starting to feel sorry for them.  
+Let's just leave, shall we?
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////// Fade out
+[fade type=out anim=simple sec=0.5]
+//########################################################################
+//######################################################################## End of Park Scene
+//########################################################################
+
+// Scene change
+//// Background60 / Sako City Main Street
+[image type=bg id=000060 show=true]
+
+
+/////////////////////////////////////////////////////////////////////////// Temporarily hide Shina and Sayaka
+[character id=200102 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+
+[fade type=in anim=simple sec=0.5]
+//////////////////////////////////////////////////////////////////////// Fade-in
+
+
+/////////////////////////////////////////////////////////////////////////// Shina and Sayaka appear
+[character id=100101 posx=0.66 anim=ltor face=default show=true wait=false]
+[delay sec=0.1]
+[character id=200102 posx=0.32 anim=ltor face=default show=true wait=true]
+
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0430]
+Sorry...  
+We didn't really get much rest, did we...
+[/message]
+
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0440]
+It's fine!  
+I got to see something amazing!
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+
+
+// BGM23 / For peaceful scenes
+[sound type=bgm state=play name=TalkA]
+
+[delay sec=0.5]
+
+
+////////////////////////////////////////////////////////////////////////// Sugiura appears
+// Speaker: Handsome Man
+[move id=200102 posx=0.49 wait=false]
+[move id=100101 posx=0.74 wait=false]
+[character id=602201 posx=0.24 anim=ltor face=default show=true wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Handsome Man charaid=602201 voice=01_006_0450]
+Um, excuse me...
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=default]
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0460]
+...Oh, yes? What is it?
+[/message]
+
+
+// Speaker: Handsome Man
+[message name=Handsome Man charaid=602201 voice=01_006_0470]
+Earlier, you were at the park, right?  
+Actually, before that, at the university hospital...  
+Aren't you Shina-san?
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0480]
+...Oh!! Y-yes, that's me...  
+I'm sorry, uh, who are you...?  
+Have we met?
+[/message]
+
+
+// Speaker: Sugiura (in Katakana)
+// Change Sugiura's expression
+[face id=602201 type=smile]
+[message name=Sugiura charaid=602201 voice=01_006_0490]
+No, we just passed by each other briefly, and I didn't introduce myself.  
+I'm Associate Professor Sugiura.  
+Yurisa-san from your company is under my care.
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0500]
+...Ah, ah!? Yes, of course!!  
+L-Lily... I mean! Yurisa-san!  
+Yurisa-san is such an energetic person! Haha!
+[/message]
+
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0510 lipsync=false]
+(――So they do know each other…?)
+[/message]
+
+//////////////////////////////////////////////////////////////////////【Choice】
+// 1: Looks like they knew each other
+
+[select]
+[link text="Looks like they knew each other" label=friend]
+[/select]
+
+// Only option 1
+:friend
+
+
+// Change Sugiura's expression
+[face id=602201 type=default]
+[message name=Sugiura charaid=602201 voice=01_006_0520]
+And to you as well, nice to meet you.
+[/message]
+
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0530]
+N-nice to meet you...
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+
+////////////////////////////////////////////////////////// Hide Sayaka's sprite
+[character id=100101 anim=ltor show=false wait=true]
+/////////////////////////////////////////////////////// Move Sugiura and Shina
+// Move Sugiura
+[move id=602201 posx=0.33 sec=0.5 wait=false]
+// Move Shina
+[move id=200102 posx=0.66 sec=0.5 wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+// Re-display text window
+[visible show=true]
+
+
+[message name=Sugiura charaid=602201 voice=01_006_0540]
+Shina-san, what are you doing after this...?
+[/message]
+
+
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0550]
+Well, I'm planning to head to work  
+with this girl.  
+Our company starts a bit later in the morning!
+[/message]
+
+
+[message name=Sugiura charaid=602201 voice=01_006_0560]
+I see... Then next time,  
+allow me to thank you for today.
+[/message]
+
+// In a low voice
+
+[face id=602201 type=thoughts]
+
+[message name=Sugiura charaid=602201 voice=01_006_0570]
+You saved me earlier, didn't you,  
+Shina-san?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0580]
+...Huh?  
+W-what are you talking about...!
+[/message]
+
+[face id=602201 type=smile]
+
+[message name=Sugiura charaid=602201 voice=01_006_0590]
+Let's just leave it at that.  
+Sorry for taking up your time.  
+I'll see you again, perhaps at the hospital!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0600]
+Sure! Take care!
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+
+///////////////////////////////////////////////////// Hide Sugiura
+[character id=602201 anim=rtol show=false wait=true]
+
+///////////////////////////////////////////////////////////////////////////// Move Shina
+[move id=200102 posx=0.32 wait=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Show Sayaka
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+// Re-display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0610]
+Shina... you're pretty popular, huh?  
+Heeey~
+[/message]
+
+
+// Change Shina's expression
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0620]
+W-wait a minute.  
+I've only met him once.  
+I'm not the type to be popular at all.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0630]
+The only one who'd even consider me popular is...  
+maybe Mizunashi?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_006_0640]
+Mizunashi...?  
+You mention that name sometimes...  
+A coworker?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_006_0650]
+Well, well.  
+I'll explain more once we get to the office!
+[/message]
+
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+// Stop playing current BGM
+//[sound type=bgm state=stop]
+
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+
+// Hide text window
+[visible show=false]
+
+// Script ends here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

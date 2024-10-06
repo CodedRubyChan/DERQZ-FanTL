@@ -1,0 +1,504 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_19_01_014
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM23 / Peaceful Scene
+// Background 430 / Intersection
+
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0010]
+So much happened on the first day, huh?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0020]
+Yeah...
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0030]
+You must be exhausted today...  
+Are you okay walking to the apartment? Do you want to take a taxi?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0040]
+No, I'm fine.  
+Walking home with you is fun too.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0050]
+Haha...  
+That's such a nice thing to say!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0060]
+Speaking of which, this intersection we're walking through...  
+This is where I first met you, right?
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0070]
+Oh, that's right!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0080]
+It feels like it was just recently.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0090]
+But it's already been three months since then.  
+Time really flies, doesn't it?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0100]
+...Is there anything else you want to ask?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0110]
+Honestly... there's so much, I don't even know where to start.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0120]
+Haha!  
+Sorry, I shouldn't laugh at that.
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0130]
+If there's one thing I feel bad about...  
+It's that I didn't really contribute much at work today...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0140]
+Don't worry! It was only your first day!  
+You just had really bad luck today. You only happened to pick up a weird memory...
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0150]
+To be specific...  
+It was like Celica transformed into this terrifying figure with two heads and multiple hands...
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0160]
+...Really?  
+Hearing that, it sounds like it could be a “bug” after all.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0170]
+Bug... like an insect?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0180]
+In gaming terms, we call technical problems “bugs.”  
+They're not living creatures like insects, they're more like errors or glitches caused by mistakes.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0190]
+The work you did today is called “debugging,”  
+which is all about finding these bugs.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0200]
+Ohh!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0210]
+Celica is the protagonist of ‘End to Odyssey,'  
+the ultimate hero I've always dreamed of!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0220]
+I see.  
+That's why you've got that huge poster of her in your room? That's cool!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0230]
+Haha, exactly!
+[/message]
+
+// Suddenly, a voice is heard (no character image)
+
+// Speaker: ???
+
+[message name=??? voice=01_019_0240]
+Wow, have you forgotten all about me? Am I just someone from the past now?
+[/message]
+
+[face id=200102 type=surprise]
+[face id=100101 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0250]
+...Huh?  
+Whose voice is that?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0260]
+Shina... This feeling...  
+It's just like when we were debugging earlier. Does this happen often outside?
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=panic]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sound effect of a mirror shattering
+// BGM stops
+// Change background to 440
+
+//////////////////////////////////////////////////////////////////////////////////// Camera shakes
+[shake type=random sec=2.0 pow=30.5 fade=true wait=false]
+[sound type=se name=Mirror]
+[sound type=bgm state=stop]
+[image type=bg id=000440 show=true]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0270]
+“A dimensional rift”?!  
+No way!  
+Why is this happening here... again?
+[/message]
+
+[face id=600101 type=smile]
+
+[message name=Arata Mizunashi charaid=600101 voice=01_019_0280]
+Because I made it happen. Genius, remember?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////// Display Arata Mizunashi's character
+[character id=600101 posx=0.19 anim=fade face=default show=true wait=false]
+
+[move id=200102 posx=0.59 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=true]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0290]
+Wh-what...  
+Why are you here, Mizunashi...?
+[/message]
+
+[move id=200102 posx=0.49 sec=2 wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0300]
+Shina!!  
+What do you see?!  
+There's no one there...
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////【Choice】
+// 1: Is it the same as what Sayaka encountered?
+
+[select]
+[link text="Is it the same as what Sayaka encountered?" label=encounter]
+[/select]
+:encounter
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0310]
+...I see!  
+Shina's seeing something only she can... because she's a Luden too!
+[/message]
+
+[message name=Arata Mizunashi charaid=600101 voice=01_019_0320]
+Sorry to keep you waiting.  
+Now, lend me your strength.
+[/message]
+
+//////////////////////////////// "Cantmove" SE plays
+[sound type=se name=Cantmove]
+
+[shake target=chara id=200102 type=horizontal sec=1 pow=10 fade=false wait=false]
+
+[face id=200102 type=painful]
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0330]
+...S-Sayaka, help... me...
+[/message]
+
+// Change BGM to a battle theme BGM33
+[sound type=bgm state=play name=GlitchGirls]
+
+/////////////////////////////////////////////////////////////////////////////////////【Choice】
+// 1: Sayaka!! This opponent looks bad!
+
+[select]
+[link text="Sayaka!! This opponent looks bad!" label=enemy]
+[/select]
+
+:enemy
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_019_0340]
+I'll help!!  
+I get it... Partner!! Debug the weapon!
+[/message]
+
+///////////////////////////////////////////////////////////////////////// Flash and SE
+// Change Sayaka's character
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=VsInactivate]
+
+[character id=100101 anim=none show=false wait=true]
+[character id=100103 posx=0.79 anim=none face=angry show=true wait=true]
+[sound type=se name=Makeblade]
+[delay sec=0.05]
+
+[fade type=in anim=simple sec=0.3 color=white]
+///////////////////////////////////////////////////////////////////////// Flash and SE
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_019_0350]
+I did it!!  
+Shina, I'll bring you back!
+[/message]
+
+[message name=Arata Mizunashi charaid=600101 voice=01_019_0360]
+Oh? She's using structured language without even knowing it!
+[/message]
+
+[message name=Arata Mizunashi charaid=600101 voice=01_019_0370]
+Haha, you're really something, “Ripuka”!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_019_0380]
+Ripuka...?  
+I'm SAYAKA!! Shina, dodge!!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////// Sayaka attacks
+[move id=100103 posx=0.69 sec=0.1 wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////////////////// Slashing SE
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.3 posy=0.5 priority=FrontCutin]
+[sound type=se name=Slash]
+
+/////////////////////////////////////////////// Shin dodges
+[move id=600101 posx=0.09 sec=0.1 wait=true]
+
+/////////////////////////////////////////////// Sayaka attacks
+[move id=100103 posx=0.79 sec=0.3 wait=false]
+
+[delay sec=0.1]
+
+/////////////////////////////////////////////// Shin dodges
+[move id=600101 posx=0.19 sec=0.3 wait=true]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[face id=200102 type=painful]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_019_0390]
+...Ugh...
+[/message]
+
+[face id=600101 type=default]
+
+[message name=Arata Mizunashi charaid=600101 voice=01_019_0400]
+Whoa! That was close!  
+What would you have done if you hit this girl?!  
+Wait, you can actually see where I am?!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_019_0410]
+You talk too much! I can sense you!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////// Black fade-out
+[fade type=out anim=simple sec=0.3]
+
+//////////////////////////////////////////////////////////////////////////// Change Arata Mizunashi's character to Arata
+[character id=600101 anim=none show=false wait=false]
+[character id=600201 posx=0.2 anim=none face=default show=true wait=true]
+//////////////////////////////// Play “Metamorphosis” SE
+[sound type=se name=Metamorphosis]
+
+[fade type=in anim=simple sec=0.3]
+////////////////////////////////////////////////////////////////////////////// Black fade-in
+
+// Re-display text window
+[visible show=true]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=01_019_0420]
+You've got real talent! I look forward to seeing you grow!  
+As a reward, let me show you all my handsome self!
+[/message]
+
+////////////////////////////////////////////////////////////// Sounds of a crowd
+[sound type=se name=Panic]
+
+// Speaker: Crowd
+// @Female Mob 03
+[message name=Crowd voice=01_019_0430]
+What the heck is that? A movie shoot?
+[/message]
+
+// Speaker: Spectators/Crowd
+// @Male Mob 02
+
+[message name=Spectators/Crowd voice=01_019_0440]
+But it feels off, doesn't it?  
+That guy's weird, but the girl swinging that sword is even more dangerous...
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=01_019_0450]
+Oops! Sorry!  
+I'm just a streamer! Sorry for the trouble!  
+Alright, Ripuka, let's continue inside!
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_019_0460]
+I told you, I'm SAYAKA!!
+[/message]
+
+// Camera zooms in
+[camera type=zoom pivot=4 fov=0.5 sec=20 active=true wait=false]
+
+// Hide text window
+[visible show=false]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+// Sound of mirror shattering again
+[sound type=se name=Mirror]
+[shake type=random sec=2.0 pow=30.5 fade=true wait=false]
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.1 active=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//

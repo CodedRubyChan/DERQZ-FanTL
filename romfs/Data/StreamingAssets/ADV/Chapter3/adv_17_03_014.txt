@@ -1,0 +1,183 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_17_03_014
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Strain Area Depths
+// Background / Dungeon remains
+// BGM25
+
+[character id=100103 posx=0.8 anim=rtol face=panic show=true wait=true]
+
+// Show the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_017_0010]
+I've never felt this kind of presence before…
+Could it be… further ahead!?
+[/message]
+
+///// Hide the text window
+[visible show=false]
+
+/////////////////////////////////////////////////////////////////////////
+[fade type=out anim=simple sec=0.5]
+
+[dungeon id=410401 type=Enemy show=true]
+
+[fade type=in anim=simple sec=0.5]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+/////////////////////////////////////////////////////////////////////////
+
+// Speaker: Stranger
+// @Female Mob 20
+
+////// Show the text window again
+[visible show=true]
+
+[message name=Stranger voice=03_017_0020]
+N-No one's here!
+[/message]
+
+/// Sayaka is startled
+[shake target=chara id=100103 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[face id=100103 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_017_0030]
+Whoa!? 
+A giant monster…!!
+And it talks!?
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=03_017_0040]
+Hold on, hold on now. "Monster" is a bit harsh…
+I've got a name, you know. It's 'Girl's Heart.'
+[/message]
+
+[face id=100103 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_017_0050]
+...A woman?
+Or, used to be?
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+// Screen shake
+[shake type=horizontal sec=0.4 pow=5 fade=false wait=false]
+
+[message name=Girl's Heart voice=03_017_0060]
+Used to be!? I'm still very much in action!
+How rude…
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=03_017_0070]
+But that's not the point. 
+Come on, focus, me!
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=03_017_0080]
+Ahem.
+Rottie isn't here, so you might as well give up and search somewhere else!
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_017_0090]
+...How do you even know I'm looking for Rottie?
+Something's definitely fishy here…
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+// Screen shake
+[shake type=horizontal sec=0.2 pow=10 fade=false wait=false]
+
+[message name=Girl's Heart voice=03_017_0100]
+Ugh!? I messed up…
+Now I've made you even more suspicious…
+Well, in any case, I'm not letting you through…
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_017_0110]
+Well, no need to feel down about it.
+Let's settle this fair and square!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Start boss battle
+[bossbattle active=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

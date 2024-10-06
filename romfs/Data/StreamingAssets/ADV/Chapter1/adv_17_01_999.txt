@@ -1,0 +1,666 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// adv_17_01_999
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=TalkD]
+
+// Display specified background
+[image type=bg id=000480]
+
+////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100104 posx=0.56 anim=none face=painful show=true wait=true]
+////////////////////////////////////////////////////////////////////////// Display Shina
+[character id=200102 posx=0.32 anim=none face=panic show=true wait=true]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Return without showing the results screen
+// If a results screen is needed, divide the scenario here
+
+// Background 480 / Iris Corporation Booth
+// BGM26 / Emotional scene
+
+//////////////////////////////////////////////////////////// Sayaka moves, staggers
+[move id=100104 posx=0.66 sec=0.1 wait=false]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.05]
+[shake type=horizontal sec=0.3 pow=10 fade=false wait=false]
+
+// Display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100104 voice=01_017_0110]
+Huff, huff... ah...  
+This place is...
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=sad]
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0120]
+Sayaka, I'm really sorry!!
+[/message]
+
+// Sayaka's expression changes to thoughtful
+[face id=100104 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_017_0130]
+Shina, you really...  
+managed to save me, huh... as expected...!
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0140]
+Forget about that!  
+Something really serious happened, didn't it...!?
+[/message]
+
+[face id=100104 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=01_017_0150]
+Well... yeah...  
+Celica was acting really strange...  
+It might be hard for me to look at her poster now...
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0160]
+Celica...?  
+Anyway, let's fix your clothes.  
+...You're looking pretty, um, revealing right now.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Shina moves
+[move id=200102 posx=0.49 sec=0.5 wait=true]
+
+//////////////////////////////// Play "Dress" SE
+[sound type=se name=Dress]
+
+/////////////////////////////////////////////////////////////////////////// Change Sayaka's standing image
+[character id=100104 anim=fade show=false wait=false]
+[character id=100103 posx=0.66 anim=fade face=thoughts show=true wait=true]
+[delay sec=0.1]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Shina moves
+[move id=200102 posx=0.32 sec=1 wait=true]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_017_0170]
+Thanks...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Sumika enters, Shina and Sayaka move
+[character id=601101 posx=0.24 anim=ltor face=thoughts show=true wait=false]
+[move id=200102 posx=0.49 sec=0.5 wait=false]
+[move id=100103 posx=0.74 sec=0.5 wait=true]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0180]
+Hmm... but after a quick check,  
+there's no sign of any abnormalities in the program. And also...
+[/message]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0190]
+Sayaka, I'm really sorry to ask after what happened, but...
+[/message]
+
+[face id=601101 type=surprise]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0200]
+How did you bring equipment from *End to Odyssey* into the real world?!  
+That's the real mystery here!
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_017_0210]
+...Huh?
+[/message]
+
+/////////////////////////////////////////////////////////////////////////// Change Sayaka's standing image
+[sound type=se name=VsInactivate]
+[character id=100103 anim=fade show=false wait=false]
+[character id=100101 posx=0.74 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0220]
+...
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=panic]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0230]
+Now how did you make it disappear?!  
+How did you store it away!?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0240]
+Ahem. Sumika, I thought I briefly explained this the other day...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0250]
+She's a ‘Luden,' just like me...  
+Though she's a much higher level than me.
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=surprise]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0260]
+Oh! Right...  
+Then it's no surprise she can break through the boundaries of the code...
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=thoughts]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0270]
+...Actually, I'm kinda jealous!  
+As a normal human, I could never experience that world...!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0280]
+...L-Luden...?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0290]
+Sumika, Sayaka is exhausted. Let's stop here...
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=painful]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0300]
+Sorry!! My bad...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0310]
+...Nah, it's fine. But more importantly...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////// Iris enters
+[character id=600601 posx=0.19 anim=fade face=default show=true wait=false]
+[move id=601101 posx=0.39 sec=0.5 wait=false]
+[move id=200102 posx=0.59 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=true]
+// Sumika's expression changes
+[face id=601101 type=default]
+
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=01_017_0320]
+You're curious about Ludens, aren't you, Sayaka?
+[/message]
+
+// Change BGM to BGM20
+[sound type=bgm state=play name=Home]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0330]
+President?!
+[/message]
+
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0340]
+Iris! Is Sayaka going to be okay?
+[/message]
+
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0350]
+...?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=01_017_0360]
+No... it's not something to be scared of.  
+If you want to talk about it... it's better to face it sooner rather than later.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=01_017_0370]
+Sayaka, Ludens...  
+They all don't have full memories.  
+You can't remember your parents, right?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0380]
+...Well, yeah. That's true...
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_017_0390]
+Yeah, that's a ‘memory bug.'  
+That's why you see scary things, like what happened earlier.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0400]
+President! Did you see what happened in the game too?
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=surprise]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0410]
+Without any VR equipment?!  
+That's amazing, Iris President...
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_017_0420]
+Ludens are people made purely of memory.  
+They're completely different from ordinary humans.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=01_017_0430]
+Inside, all sorts of human memories flow through them,  
+making them a completely different kind of being.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0440]
+...So I'm not human...?  
+I kinda suspected it, but...  
+Memories of other people... flowing through me?!
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0450]
+Yeah... I thought you might be shocked,  
+so I didn't tell you. I was hoping you'd figure it out yourself.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0460]
+I'm sorry I didn't meet your expectations...  
+But wait, does that mean... Shina isn't human either...?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0470]
+Well, I was born human,  
+but when I was a kid... I got into a car accident.  
+That's when my memory got severely damaged...
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0480]
+I really didn't want to die!!  
+So, I was lucky enough to “read” the memory of the truck driver who hit me...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0490]
+And I was able to reconstruct myself from his memory.  
+That's how it started.
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0500]
+Yes, Ludens can read other people's memories,  
+that's part of the ‘Luden Syndrome'...
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0510]
+Normal humans can't do that.  
+The ‘life flashing before your eyes' moment before death?  
+That's like a Luden recruitment test!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0520]
+There are cases of this happening all over the world.  
+It's still “rare,” but...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0530]
+It could happen to anyone close to you.  
+That's the process of ‘Luden transformation.'  
+There's still so much we don't understand about it.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0540]
+So, Shina was a human who became a Luden...  
+What about... me...?
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_017_0550]
+Sayaka, you've always been a Luden.  
+Shina talked to me about you,  
+and that's how I got interested...
+[/message]
+
+// Iris's expression changes
+[face id=600601 type=smile]
+
+[message name=Iris President charaid=600601 voice=01_017_0560]
+I figured working together with us would be the best way  
+to help you as another Luden.
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0570]
+There's about one Luden for every 1,000 people,  
+so it's not that unusual, Sayaka!
+[/message]
+
+// Sumika's expression changes
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0580]
+From a regular person's perspective,  
+you're just someone with incredible talent!
+[/message]
+
+// Iris's expression changes
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=01_017_0590]
+*End to Odyssey* has a lot of data.  
+It's just that for you, Sayaka...
+[/message]
+
+// Iris's expression changes
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=01_017_0600]
+You happened to encounter some painful data.  
+Memories from someone's difficult past probably got mixed in...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0610]
+Wow... sounds complicated...  
+(Not that I want to simplify it...)
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0620]
+Let's give Sayaka a different assignment starting tomorrow.  
+Iris, I'm going to take her home now.
+[/message]
+
+// Iris's expression changes
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=01_017_0630]
+Yes, that's a good idea, Shina.  
+I'll have someone else take over.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Hide Iris, Sumika, Shina, Sayaka
+[character id=600601 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Koji and Mai enter
+// Change BGM to BGM23
+[sound type=bgm state=play name=TalkA]
+[character id=200302 posx=0.66 anim=ltor face=default show=true wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+[character id=601301 posx=0.27 anim=ltor face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=01_017_0640]
+Oh, looks like the debugging session is over.  
+Too bad there's no significant results.  
+Though, I overheard some of the conversation.
+[/message]
+
+[face id=601301 type=angry]
+
+[message name=Koji Toyama charaid=601301 voice=01_017_0650]
+Hey! The rookie just ran into some bad luck, that's all!  
+Do you always have to make these snide comments?!
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=01_017_0660]
+...Dad, really?  
+Is that any way to talk to your own daughter?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Koji and Mai
+[character id=601301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0670 lipsync=false]
+(No way, are they... father and daughter...?  
+But they don't seem like it...)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Sayaka
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Koji, Mai, Iris, and Sumika enter
+[character id=601301 posx=0.09 anim=fade face=angry show=true wait=false]
+[character id=200302 posx=0.34 anim=fade face=angry show=true wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+[character id=600601 posx=0.64 anim=rtol face=default show=true wait=false]
+[character id=601101 posx=0.84 anim=rtol face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=01_017_0680]
+Hah! And you're no better—
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_017_0690]
+Okay, no fighting in the office...! Thanks for coming.  
+Check if there are any other bugs where Sayaka debugged today.  
+I'm counting on both of you!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////// Hide Iris
+[character id=600601 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+// Sumika's expression changes
+[face id=601101 type=smile]
+[message name=Sumika Tokiwa charaid=601101 voice=01_017_0700]
+We're counting on you, our genius programmer!  
+Koji, make sure to check the design data, too!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=01_017_0710]
+It's an honor, Chief. I'll do my best.
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=01_017_0720]
+Yeah, yeah... I'll make sure to send in a hefty overtime bill.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Koji, Mai, and Sumika
+[character id=601301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Display Shina and Sayaka
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_017_0730]
+Alright then... Sayaka, let's head home!  
+We're leaving now!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_017_0740]
+We're heading out.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina and Sayaka
+[character id=200102 anim=rtol show=false wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+[character id=100101 anim=rtol show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+END

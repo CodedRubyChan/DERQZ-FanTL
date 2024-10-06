@@ -1,0 +1,210 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_18_01_s05
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000480]
+
+/////////////////////////////////////////////////////////////////////////// Display Koji, Shina, and Sayaka
+[character id=601301 posx=0.19 anim=none face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+//BGM25 / For comedic scenes
+//Background 480 / Iris Corporation Booth
+
+// Show text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_918_0010]
+Ah, that's right, Koji-san. I haven't introduced you yet. Just for a moment!  
+This girl is Sayaka Hiwatari...
+[/message]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0020]
+Sorry, I can't really listen right now. Too busy with urgent stuff...  
+Plus, there's that spec change. Gotta handle that first.
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0030]
+Oh, but you already know about that, right, Shina?  
+I mean, you're the one who gave the order.  
+But hey, I should've checked properly—my bad.
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_918_0040]
+There you go again, Koji-san, teasing me like that!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_918_0050]
+Haha...
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0060]
+Here's some advice for you, newbie.  
+Don't let Shina influence you too much.
+[/message]
+
+[face id=100101 type=default]
+[face id=601301 type=painful]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0070]
+This girl makes me design all kinds of weird and intense characters.
+[/message]
+
+[face id=601301 type=thoughts]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0080]
+She wants me to draw characters that practically reek of passion,  
+always sweating, always searching for a goal, full of energy and life...
+[/message]
+
+[face id=601301 type=painful]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0090]
+Honestly, I don't get it!
+[/message]
+
+// Shina's expression changes
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_918_0100]
+Oh...  
+I'm sorry about that.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_918_0110]
+But, it's because it's you, Koji-san, that I feel safe leaving it to you.
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0120]
+Yeah, yeah. Thanks a lot.
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0130]
+Well, in short, Shina's a weirdo with a strong personality.  
+Good luck living with her, but don't bend over backwards to keep up!
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=01_918_0140]
+Still, she's cuter than my daughter, at least.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_918_0150]
+This guy's pretty funny!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Koji, Shina, and Sayaka
+[character id=601301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Display Mai
+[character id=200302 posx=0.49 anim=fade face=angry show=true wait=true]
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=01_918_0160]
+...........
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Mai
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Display Shina
+[character id=200102 posx=0.49 anim=fade face=confuse show=true wait=true]
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_918_0170]
+Haha, everyone here is pretty unique...  
+Well, I'll be heading out. See you later!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina
+[character id=200102 anim=fade show=false wait=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//

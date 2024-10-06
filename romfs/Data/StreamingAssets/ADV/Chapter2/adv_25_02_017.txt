@@ -1,0 +1,124 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+//adv_25_02_017
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+// Display the specified background
+[image type=bg id=000510]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// BGM02
+// Background 510 - / Morgue
+
+[character id=100101 posx=0.2 anim=ltor face=panic show=true wait=false]
+[character id=200202 posx=0.4 anim=ltor face=panic show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_025_0010]
+We made it out...!!
+[/message]
+
+[character id=200102 posx=0.6 anim=fade face=surprise show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_025_0020]
+Lily!! 
+Sayaka too...!!
+[/message]
+
+[face id=200202 type=sad]
+// Yurisa moves closer to Shina, 0.45 position
+[move id=200202 posx=0.45 sec=0.5 wait=true]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_025_0030]
+Wah, wah... 
+Shina, I'm so glad you're safe...
+[/message]
+
+//[character id=200102 anim=fade show=false wait=false]
+
+[character id=200302 posx=0.8 anim=fade face=default show=true wait=false]
+[message name=Mai Toyama charaid=200302 voice=02_025_0040]
+Sayaka, you really did an amazing job...! 
+What about the other two?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_025_0050]
+I don't know. 
+If they come out, it'll be trouble, so... 
+Let's hurry and escape the hospital!!
+[/message]
+
+/// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,194 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_02_01_s01
+// ########################################################################## //
+// Start
+// ########################################################################## //
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000190]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// ########################################################################## //
+// Start
+// ########################################################################## //
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM25 / For gag scenes
+// Background 190 / Family restaurant
+
+// ////////////////////////////////////////////////////////////////////////////
+// Display Shina and Sayaka
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=false]
+// Wait for the specified number of seconds
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1]
+
+// Show text window
+[visible show=true]
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0010]
+"This is... a family restaurant?"
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0020]
+"It's a place where families eat together, right?"
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=expectation]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0030]
+"Hehe... family..."
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0040]
+"What's wrong? You're suddenly smiling."
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0050]
+"Hehe, it's nothing. There are a lot of people here even though it's so early in the morning. Is everyone hungry?"
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0060]
+"Some people are so busy with work they can't eat at lunch, so many eat a lot early in the morning."
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0070]
+"Wow. It's like, 'You can't fight on an empty stomach,' huh?"
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0080]
+"Exactly. Now, let's choose something from the menu. You just need to press the pictures on the touch panel. Oh, feel free to order whatever you like!"
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0090]
+"Eh? What should I pick..."
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0100]
+"They have pancakes for breakfast. This looks good!"
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0110]
+"Then, I'll have that too. Alright, click!"
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0120]
+"Then maybe I'll pick something else. The sandwiches look good, and curry sounds nice too."
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0130]
+"Yeah, that looks good too. Can you order that as well?"
+[/message]
+
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0140]
+"Which one? The sandwich or the curry?"
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0150]
+"Both."
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0160]
+"Both? So, are we canceling the pancakes we ordered first?"
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0170]
+"Nope, that too. Like I said earlier, if you eat a lot in the morning, you can last until night without eating again, right?"
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=expectation]
+[message name=Shina Ninomiya charaid=200102 voice=01_902_0180]
+"You have to eat as much as you can when you get the chance."
+[/message]
+
+// Sayaka is flustered
+[move id=100101 posx=0.7 sec=2 wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+[message name=Sayaka Hinoto charaid=100101 voice=01_902_0190]
+"Th-That sounds like a tough job... Now I'm a bit worried..."
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// ########################################################################## //
+// End
+// ########################################################################## //
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop the currently playing BGM
+// [sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ########################################################################## //
+// End
+// ########################################################################## //
+// END

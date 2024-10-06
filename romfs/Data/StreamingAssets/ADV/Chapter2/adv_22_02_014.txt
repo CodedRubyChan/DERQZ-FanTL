@@ -1,0 +1,106 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+
+//adv_22_02_014
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+//[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera
+[camera type=setup]
+//[delay sec=0.5]
+
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Wait for the specified time
+[delay sec=2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified time
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+//[delay sec=0.5]
+
+// Background: Remain in the dungeon
+// BGM05
+
+[character id=100103 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_022_0010]
+I never thought I'd end up coming here twice today... 
+Even Snark had his usual look, but I bet he was surprised...
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_022_0020]
+Ugh... 
+Those two are here, too...
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=02_022_0030]
+I don't want to see them... 
+If I do, I'll just run away...
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

@@ -1,0 +1,127 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+//adv_20_03_017
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM19 / Subway BGM
+// Background 580 / Subway
+
+[character id=100101 posx=0.67 anim=rtol face=thoughts show=true wait=false]
+
+[character id=601701 posx=0.32 anim=fade face=default show=true wait=true]
+
+// Show the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Snark changes expression
+[face id=601701 type=painful]
+
+[message name=Snark charaid=601701 voice=03_020_0010]
+What's wrong? You don't look too happy.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_020_0020]
+Yeah, I made it pretty far in, but I couldn't beat 
+the boss-like guy...
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=03_020_0030]
+It seems you still haven't fully mastered the Ripuka Code.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_020_0040]
+Th-That might be true, but... 
+then what should I do...?
+[/message]
+
+// Snark changes expression
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=03_020_0050]
+You're a Luden. 
+You should rely more on the other Ludens.
+[/message]
+
+// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.2 pow=20 fade=false wait=false]
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_020_0060]
+But you're a Luden too, Snark!
+[/message]
+
+[face id=100101 type=sad]
+[face id=601701 type=thoughts]
+
+[message name=Snark charaid=601701 voice=03_020_0070]
+Indeed. That's why I've already given you my advice. 
+That's all there is to it.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

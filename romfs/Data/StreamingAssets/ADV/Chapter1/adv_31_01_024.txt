@@ -1,0 +1,313 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+//adv_31_01_024
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkH]
+
+// Display specified background
+[image type=bg id=000140]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Successfully escaped from dungeon
+
+// BGM30
+// Background 140: Sajo City Station Front - Night
+
+///////////////////////////////////////////////////////////////////////////// Shina and Sayaka appear
+[character id=100101 posx=0.66 anim=ltor face=panic show=true wait=false]
+[character id=200102 posx=0.32 anim=ltor face=painful show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Show text window
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0010]
+We did it!!  
+Shina, we made it back alive!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0020]
+Really... it's all thanks to you, Sayaka!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Move Shina and Sayaka
+[move id=200102 posx=0.49 sec=0.2 wait=false]
+//////////////////////////////// Play SE
+[sound type=se name=Jump]
+[delay sec=0.05]
+// Camera zoom
+[camera type=zoom pivot=11 fov=0.45 sec=0.1 active=true wait=false]
+[delay sec=0.05]
+[shake target=chara id=100101 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+// Show text window again
+[visible show=true]
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0030]
+W-wait, hugging in the middle of the street...  
+People are watching, you know!!
+[/message]
+
+// Camera zoom out
+[camera type=zoom sec=0.5 active=false wait=false]
+[delay sec=0.05]
+// Move Shina and Sayaka
+[move id=200102 posx=0.32 sec=0.5 wait=false]
+[delay sec=0.1]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0040]
+Ah, sorry... I got carried away!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0050]
+...The city feels kind of tense, doesn't it?  
+Especially for this late at night...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0060]
+Hmm... let's just head home for now!  
+Don't worry about it!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0070]
+...By the way?  
+What happened to that Arata guy?  
+I haven't seen him again...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0080]
+Oh, him?  
+Don't worry, for tonight, we're safe.  
+He guaranteed it himself for the sake of his plans.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0090]
+...That sounds suspiciously vague, you know?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0100]
+Well, he said that for his own reasons,  
+he would ensure our safety tonight.  
+It's irritating to trust him, but...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0110]
+...We've been through battles so unbelievable  
+that even the police wouldn't believe us, but...  
+It does feel strangely real, doesn't it?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0120]
+For now...  
+Let's just go back to the apartment and rest!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//##########################################################################//
+// Scene transition
+//##########################################################################//
+// Turn off BGM
+[sound type=bgm state=stop]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=1]
+
+// Display room background
+[image type=bg id=000450]
+
+// Hide Shina and Sayaka
+[character id=100101 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=1]
+//##########################################################################//
+// Scene transition
+//##########################################################################//
+
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////// Shina and Sayaka appear
+//////////////////////////////// Play SE
+[sound type=se name=OpenTheDoor]
+[character id=100101 posx=0.32 anim=rtol face=surprise show=true wait=false]
+[delay sec=0.1]
+[character id=200102 posx=0.66 anim=rtol face=surprise show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0130]
+The lights... are on!?
+[/message]
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0140]
+C-could it be that someone's followed us here...?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Door opening sound
+//[sound type=se name=OpenTheDoor]
+
+// Yurisa Yamamura enters
+// Speaker: ???
+
+// Move Shina and Sayaka
+[move id=100101 posx=0.24 sec=0.5 wait=false]
+[move id=200102 posx=0.49 sec=0.5 wait=false]
+
+// Yurisa enters
+[character id=200202 posx=0.74 anim=rtol face=sad show=true wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+// Change Shina's expression
+[face id=200102 type=surprise]
+
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=??? charaid=200202 voice=01_031_0150]
+Shina!! I've been so worried!  
+When I heard you were missing,  
+I couldn't sit still, so I came in with my spare key and waited...
+[/message]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_031_0160]
+...Who the heck are you!?
+[/message]
+
+// Speaker: ???
+
+// Change Yurisa's expression
+[face id=200202 type=panic]
+[message name=??? charaid=200202 voice=01_031_0170]
+Who are YOU!?
+[/message]
+
+// BGM25
+[sound type=bgm state=play name=TalkC]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_031_0180]
+Ah, Lily, wasn't it...?  
+It looks like tonight is going to be even longer than expected...
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=1]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// Camera zoom out
+[camera type=zoom sec=0.5 active=false wait=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

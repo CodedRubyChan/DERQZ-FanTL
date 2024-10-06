@@ -1,0 +1,132 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_25_01_019
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display specified background
+[image type=bg id=000090]
+
+//////////////////////////////////////////////////////////////////////////////
+// Display Levin and Sayaka
+[character id=601001 posx=0.32 anim=none face=default show=true wait=false]
+// Sayaka is off-screen
+[character id=100101 posx=1.2 anim=none face=panic show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Cafe shop function unlocks
+
+// BGM21 - Cafe BGM
+// Background 90 - Cafe
+
+//////////////////////////////////////////////////////////////////////////////////
+// Sayaka moves
+[move id=100101 posx=0.66 sec=0.5 wait=false]
+[sound type=se name=Incafe]
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Show text window
+[visible show=true]
+
+[message name=Levin charaid=601001 voice=01_025_0010]
+Welcome――
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_025_0020]
+......
+[/message]
+
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=01_025_0030]
+Oh? There's only one Luden in this shop... me.  
+What brings you here?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_025_0040]
+Please... help Shina!
+[/message]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=01_025_0050]
+You're quite confused.  
+If not for being a Luden, you'd probably be seen as insane.  
+It's frightening, isn't it?
+[/message]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=01_025_0060]
+I know about her.  
+As for the man, I only have a vague idea...  
+But you'll need preparation to fight him.
+[/message]
+
+[message name=Levin charaid=601001 voice=01_025_0070]
+Look, you can exchange what you found in the Strain Area or jewels for Eni――  
+It should help you, even just a little.
+[/message]
+
+[message name=Levin charaid=601001 voice=01_025_0080]
+...So, what will you do?
+[/message]
+
+// Shop function unlocks in the cafe // Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,334 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_05_01_s04
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Display black background
+[image type=bg]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// BGM19 / For subway
+// Background 580 / Subway
+
+///////////////////////////////////////////////////////////////////////////// Appearance of Shina and Sayaka
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=false]
+// Wait for a specified number of seconds
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+// Display the text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0010]
+Isn't this... somewhere I've been before?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=eyeleft]
+[message name=Shina Ninomiya charaid=200102 voice=01_905_0020]
+I don't think so, though. 
+Maybe you just saw it on TV?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+Oh, that might be it...
+But look! That train is...!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+Ah, ahh...!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+Um, Sayaka, do you like trains? 
+There's a good spot over there where we can see better,
+so let's go check it out.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+Yeah...
+I rode that train and escaped from that strange space.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+Hehe.
+It brings back memories.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_905_0080]
+Um, no.
+That's not it, right?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+Huh?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+Sayaka was my roommate and has been in my room
+the whole time!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_905_0110]
+It's been such a long time since I went outside.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+Huh? 
+Do we have to make it that way?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=angry]
+Yes! 
+That's how it is!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Resume the BGM
+[sound type=bgm state=play name=Subway]
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Shina's expression
+[face id=200102 type=sad]
+[message name=Shina Ninomiya charaid=200102 voice=01_905_0140]
+Phew...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_905_0150]
+Come on, I can't be late on my first day at work!
+Let's get going soon!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide Shina
+[character id=200102 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0160]
+...Yeah.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Move Sayaka to the center
+[move id=100101 posx=0.49 sec=1 wait=true]
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0170 lipsync=false]
+(Hey, partner...
+Shina is obviously dodging the subject, isn't she?)
+[/message]
+
+// Choices
+// 1: There must be a reason
+// 2: Is that so?
+
+[select]
+[link text="There must be a reason" label=reason]
+[link text="Is that so?" label=question]
+[/select]
+
+// If 1
+:reason
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0180 lipsync=false]
+(Well, I guess so.
+But why does she want to avoid talking about that place...?)
+[/message]
+[goto label=foryou]
+
+// If 2
+:question
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0190 lipsync=false]
+(That's right. When she talks about that place,
+she dodges the topic.
+I don't know why, though.)
+[/message]
+[goto label=foryou]
+
+// Choices
+:foryou
+
+// Choices
+// 1: She must be thinking about you
+[select]
+[link text="She must be thinking about you" label=donotworry]
+[/select]
+
+:donotworry
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0200 lipsync=false]
+(...Yeah, that must be it.
+Then, I guess I don't need to worry about it.)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Scene transition (fade out)
+[fade type=out anim=simple sec=0.5]
+
+// Hide Sayaka
+[character id=100101 anim=none show=false wait=true]
+
+// Sound effect for climbing stairs
+[sound type=se state=play name=Upstairs]
+[delay sec=1]
+
+// Stop the currently playing sound effect
+[sound type=se state=stop]
+
+// Background 130 / Station front
+[image type=bg id=000130 show=true]
+
+[fade type=in anim=simple sec=1]
+// Scene transition (fade in)
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Display Shina
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_905_0210]
+Sayaka, hurry up!
+If you space out, you'll get left behind!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Display Sayaka
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Re-display the text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_905_0220]
+Wait for me!
+I'm coming!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide Sayaka and Shina's character sprites
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop the currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

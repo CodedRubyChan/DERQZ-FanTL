@@ -1,0 +1,227 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+//adv_21_03_s04
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display the specified background
+[image type=bg id=000090]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM21 / For the Cafe
+// Background 90 / Cafe
+
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=false]
+[character id=601001 posx=0.32 anim=fade face=default show=true wait=true]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+//// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+// Sayaka changes expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0010]
+Levin! Thanks, as always! I've brought some Eni today too, 
+so let's do the usual trade, okay?
+[/message]
+
+[face id=601001 type=thoughts]
+[message name=Levin charaid=601001 voice=03_921_0020]
+...Isn't it about time we stop? 
+I've already provided you with plenty of supplies.
+I don't think we can keep this up anymore.
+[/message]
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0030]
+W-What!? Why are you saying that?! 
+That would seriously be a problem for me!
+Look, I've got plenty of Eni! Come on!
+[/message]
+
+// Levin changes expression
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=03_921_0040]
+It's not about the Eni. 
+It's the hassle that comes with it. 
+Do you even know how difficult it is to maintain all of this…?
+[/message]
+
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0050]
+I don't really get it, 
+but are you saying managing the Eni is hard? 
+Like, has the cost of goods increased or something?
+[/message]
+
+// Levin changes expression
+[face id=601001 type=angry]
+
+[message name=Levin charaid=601001 voice=03_921_0060]
+No, no, no! That's not it!!
+It's about storage and maintenance!
+Every second of it is stressful!
+[/message]
+[face id=600001 type=default]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0070]
+Storage, huh? Well, why not just get a vault or something? 
+Or maybe deposit it in some kind of bank?
+[/message]
+
+// Levin changes expression
+[face id=601001 type=painful]
+[message name=Levin charaid=601001 voice=03_921_0080]
+I've got a vault, but…
+It's not really under my control...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0090]
+What? Then why not switch with whoever's in charge of that?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+//// Levin is surprised
+[shake target=chara id=601001 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=601001 type=angry]
+[message name=Levin charaid=601001 voice=03_921_0100]
+If I could do that, don't you think I would've done it by now?!
+I'm stuck managing this, and there's no way out!
+Can't you see that's why I'm struggling here?!
+[/message]
+
+//// Levin is surprised
+[shake target=chara id=601001 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[message name=Levin charaid=601001 voice=03_921_0110]
+Sayaka…!! I'm your handler! 
+I'm the one who has to deal with all your troublesome things!
+Do you understand what that means?!
+[/message]
+
+[face id=100101 type=sad]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0120]
+S-Sorry…
+I guess I don't really understand…
+But hey, let's just calm down, okay?
+[/message]
+
+// Levin changes expression
+[face id=601001 type=thoughts]
+[message name=Levin charaid=601001 voice=03_921_0130]
+Ugh, I can't do this anymore...
+I don't even want to see Eni anymore... you money-obsessed...
+[/message]
+
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0140]
+W-Wait, really...?
+That's kind of a problem...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0150]
+By the way, what even is Eni, exactly? 
+I mean, why is it in the Strain Area, and what kind of properties does it have?
+I don't really understand any of that.
+[/message]
+
+// Levin changes expression
+[face id=601001 type=smile]
+
+[message name=Levin charaid=601001 voice=03_921_0160]
+Now that's the kind of question that helps. 
+Understanding that might help you realize how much trouble it is for me.
+[/message]
+
+[face id=601001 type=thoughts]
+[message name=Levin charaid=601001 voice=03_921_0170]
+So… do you still want to do this trade?
+[/message]
+
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_921_0180]
+Yes, yes, yes! It would really help me out!
+I'd be so grateful, Levin!
+[/message]
+
+// Levin changes expression
+[face id=601001 type=painful]
+
+[message name=Levin charaid=601001 voice=03_921_0190]
+*Sigh*... 
+Well, I guess I have no choice. 
+But boy, this is exhausting...
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

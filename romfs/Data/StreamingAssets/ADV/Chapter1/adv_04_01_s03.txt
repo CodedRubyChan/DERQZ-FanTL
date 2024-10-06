@@ -1,0 +1,326 @@
+//Script
+// Wait for a specified time
+[delay sec=0.1]
+
+//adv_04_01_s03
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display a black background
+[image type=black show=true]
+
+// Display the specified background
+[image type=bg id=000530]
+
+/////////////////////////////////////////////////////////////////////////// Display Assistant
+[character id=602401 posx=0.18 anim=none face=default show=true wait=true]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+//BGM25 / For Gag Scene
+//Background530 / Convenience Store
+
+/////////////////////////////////////////////////////////////////////////// Display Shina and Sayaka
+[character id=200102 posx=0.49 anim=rtol face=default show=true wait=false]
+// Wait for a specified time
+[delay sec=0.1]
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=true]
+
+// Display the text window
+[visible show=true]
+[message name=Assistant charaid=602401 voice=01_904_0010]
+Welcome!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0020]
+Uh, I wonder if it's still there...
+I hope it's not sold out...
+[/message]
+
+// Change the clerk's expression
+[face id=602401 type=smile]
+[message name=Assistant charaid=602401 voice=01_904_0030]
+Oh, it's the usual lady! 
+If you need help, I'm happy to assist. 
+After all, I'm such a kind guy!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0040]
+Haha... no, it's fine.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0050 lipsync=false]
+(Is he someone you know?)
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0060 lipsync=false]
+(It's just that I use this convenience store a lot, 
+so I guess he's familiar with my face.)
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0070]
+Uh, where's the magazine section again? Huh?
+[/message]
+
+// Change the clerk's expression
+[face id=602401 type=default]
+[message name=Assistant charaid=602401 voice=01_904_0080]
+Ah, we've moved it to the back this month!
+[/message]
+
+[message name=Assistant charaid=602401 voice=01_904_0100]
+Oh, I haven't seen the girl with the ponytail before.
+As expected, beauties always accompany other beauties...!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0110]
+...Shina, this guy isn't your friend, is he?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0120]
+N-no.
+He's just someone I run into here often.
+[/message]
+
+// Change the clerk's expression
+[face id=602401 type=smile]
+[message name=Assistant charaid=602401 voice=01_904_0090]
+I'm really curious to know what kind of magazines
+a beauty like you reads!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0130]
+Shina.
+May I teach him some manners?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0140]
+If you're raising your fist as you say that, 
+then I have no choice but to stop you!
+[/message]
+
+// Change the clerk's expression
+[face id=602401 type=confuse]
+[message name=Assistant charaid=602401 voice=01_904_0150]
+M-my apologies!
+But if a beauty like you were to hit me, 
+I wouldn't resist...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0160]
+Alright, that's enough out of you!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////// Time passes / Fade out
+[fade type=out anim=simple sec=0.5]
+
+// Hide the Assistant
+[character id=602401 anim=none show=false wait=false]
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+
+// Move Shina and Sayaka
+[move id=200102 posx=0.32 sec=0.1 wait=false]
+[move id=100101 posx=0.66 sec=0.1 wait=true]
+
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=1]
+////////////////////////////////////////////////////// Time passes / Fade in
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+// Change Shina's expression
+[face id=200102 type=surprise]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0170]
+...Ah!
+There it is! 
+The magazine with Chloe-chan on the cover!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0180]
+Thank goodness!
+It was sold out at the other convenience store yesterday!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0190]
+That girl...
+I see her all the time on TV and the internet.
+You really like her, huh?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0200]
+Yep! I sure do.
+Oh, look, she's even on the monitor over there!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////// Hide Shina and Sayaka sprites
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////// Hide Convenience Store background
+[image type=bg id=000530 show=false fade=true wait=true]
+
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////// Display Celica's Transformation Sprite
+[character id=200901 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for a specified time
+[delay sec=0.5]
+// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0210]
+She's the lead in the movie *World's Odyssey*!
+Her acting and looks are both amazing, Chloe-chan!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0220]
+Shina, you talk like it's about yourself.
+Yeah, I think she's really beautiful too.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Change background: Shina and Sayaka's apartment
+[image type=bg id=000450 show=true fade=true wait=true]
+
+[delay sec=0.5]
+// Re-display the text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0230]
+Now that I think about it, the girl on the poster 
+you have in your room...! 
+She looks just like Celica.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Celica
+[character id=200901 anim=fade face=default show=false wait=true]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Return to the convenience store background and display Shina and Sayaka sprites
+[image type=bg id=000530 show=true fade=true wait=true]
+
+[character id=200102 posx=0.32 anim=fade show=true wait=false]
+[character id=100101 posx=0.66 anim=fade show=true wait=true]
+
+// Wait for a specified time
+[delay sec=0.5]
+// Re-display the text window
+[visible show=true]
+// Change Shina's expression
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0240]
+Yes!
+She plays the role of Celica. Hehe.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=01_904_0250]
+I want to meet Chloe-chan again...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_904_0260 lipsync=false]
+(Is she an acquaintance or something?
+Shina sure knows a lot of people.)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Stop the currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

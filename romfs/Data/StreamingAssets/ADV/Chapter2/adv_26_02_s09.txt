@@ -1,0 +1,817 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+//adv_26_02_s09
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+
+// Play the specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display the specified background
+[image type=bg id=000220]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+//BGM16 / Map track (for atmosphere)
+//Background 220 / Hospital room
+
+// No speaker name
+
+// Display the text window
+[visible show=true]
+
+[message]
+――1 day ago
+Yamamura University Hospital - Patient Room
+[/message]
+
+// Speaker: Gentle Male Voice
+// @Hizumi Senji
+
+[message name=Gentle Male Voice voice=02_926_0010]
+Hey.
+I'm back again.
+Kureha.
+[/message]
+
+// Speaker: Tired Female Voice
+// @Female NPC 15
+
+[message name=Tired Female Voice voice=02_926_0020]
+Ah, thank you, as always.
+You didn't need to come—
+[/message]
+
+// Speaker: Tired Female Voice
+// @Female NPC 15
+
+[message name=Tired Female Voice voice=02_926_0030]
+I already have someone to talk to,
+so you really don't need to worry so much.
+[/message]
+
+// Speaker: Gentle Male Voice
+// @Hizumi Senji
+
+////////////////////////////////////////////////////////Screen shakes
+[shake type=horizontal sec=0.1 pow=3 fade=false wait=false]
+
+[message name=Gentle Male Voice voice=02_926_0040]
+Yeah, but when I hear you're “talking to ghosts,” 
+that's enough to make anyone worry!
+Are you sure this hospital is safe...?
+[/message]
+
+// Speaker: Tired Female Voice
+// @Female NPC 15
+
+[message name=Tired Female Voice voice=02_926_0050]
+I'm not sure about other hospitals, but...
+from what I've heard,
+I'd say it's not too bad.
+[/message]
+
+// Speaker: Gentle Male Voice
+// @Hizumi Senji
+
+[message name=Gentle Male Voice voice=02_926_0060]
+I see.
+So... how are you feeling today?
+[/message]
+
+// Speaker: Tired Female Voice
+// @Female NPC 15
+
+[message name=Tired Female Voice voice=02_926_0070]
+I'm clear-headed today.
+It feels a bit awkward though,
+being stuck in the hospital all the time.
+[/message]
+
+// Speaker: Gentle Male Voice
+// @Hizumi Senji
+
+[message name=Gentle Male Voice voice=02_926_0080]
+Hey, don't get too down.
+You're living with a one-in-a-hundred-thousand disease.
+It's a miracle just to be alive.
+[/message]
+
+// Speaker: Tired Female Voice
+// @Female NPC 15
+
+[message name=Tired Female Voice voice=02_926_0090]
+Hmm, but I still feel a bit unlucky.
+It would've been better if I could've been reborn
+as something like a Luden.
+[/message]
+
+// Speaker: Gentle Male Voice
+// @Hizumi Senji
+
+[message name=Gentle Male Voice voice=02_926_0100]
+Haha, neither of us have ever had good luck...
+but maybe our daughter took all of it for herself, huh?
+[/message]
+
+// Speaker: Tired Female Voice
+// @Female NPC 15
+
+////////////////////////////////////////////////////////Screen shakes
+[shake type=horizontal sec=0.2 pow=5 fade=false wait=false]
+
+[message name=Tired Female Voice voice=02_926_0110]
+Oh my!
+Now you're making me want to see Kaede's face...!
+[/message]
+
+// Speaker: Gentle Male Voice
+// @Hizumi Senji
+
+[message name=Gentle Male Voice voice=02_926_0120]
+Well, let me play you a voice message from her—
+right here on my phone, all modern-like! Here you go!
+[/message]
+
+// Screen fades to black
+
+// Black background fades in
+//[fade type=out anim=simple sec=1.5]
+// Black background fades out
+//[fade type=in anim=simple sec=1.5]
+
+// Speaker: Kaede's Voice
+// @Hizumi Kaede
+
+[message name=Kaede's Voice voice=02_926_0130]
+Mom! How are you feeling? Sorry I haven't been able to visit much.
+Next time I come to Japan, I'll bring some souvenirs to make up for it.
+And by the way...
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Fade in black background
+[fade type=out anim=simple sec=1.5]
+
+// Change background to / Background 490
+
+[image type=bg id=000490 show=true]
+[visible show=false]
+
+// Time passes
+// Screen fades in
+
+[delay sec=2.0]
+
+// Disable fade-in effect
+//[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+// Fade in black background
+[fade type=in anim=simple sec=1.5]
+
+
+// Hizumi Senji appears
+[character id=601601 posx=0.30 anim=fade face=smile show=true wait=true]
+
+////// Re-display the text window
+[visible show=true]
+
+// Speaker: Gentle Male Voice
+[message name=Gentle Male Voice charaid=601601 voice=02_926_0140]
+Phew...
+I'm glad she seemed happy—
+[/message]
+
+
+// Speaker: Unfriendly Female Police Officer
+// Female police officer appears
+[character id=601501 posx=0.64 anim=fade face=default show=true wait=true]
+
+[message name=Unfriendly Female Police Officer charaid=601501 voice=02_926_0150]
+Even on your day off, you're working hard,
+Senji.
+[/message]
+
+// Speaker: Gentle Male Voice
+
+[face id=601601 type=angry]
+
+[message name=Gentle Male Voice charaid=601601 voice=02_926_0160]
+Hmph!
+Don't tease me.
+Family service is just as important as police duty, you know...!
+[/message]
+
+// Speaker: Unfriendly Female Police Officer
+
+// Change Chiri Sendo's expression[face id=601501 type=thoughts]
+
+[message name=Unfriendly Female Police Officer charaid=601501 voice=02_926_0170]
+Yes, you're absolutely right.
+[/message]
+
+// Speaker: Hizumi Senji (From now on, Senji Hizumi)
+
+// Change Hizumi Senji's expression
+[face id=601601 type=painful]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0180]
+Ahh...
+You're as laid back as ever, Chiri...
+So what's keeping you busy these days?
+[/message]
+
+// Speaker: Chiri Sendo (From now on, Chiri Sendo)
+
+[face id=601501 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0190]
+Well, I'm on security detail
+for an international superstar.
+For a while, I'll be watching from a distance.
+[/message]
+
+// Change Hizumi Senji's expression
+[face id=601601 type=thoughts]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0200]
+Ugh, what a hassle...
+Why'd they have to come to Japan? These foreign celebrities...
+Just making more work for us.
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0210]
+Yes... but both Kaede and Kureha are
+fans of Chloe Aaron, I believe.
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0220]
+What!? 
+They are...?
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0230]
+...Wait...
+How do you even know that, Chiri!?
+[/message]
+
+// Comedy moment
+
+[face id=601501 type=smile]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0240]
+Heh heh heh...
+I'm quite well-informed.
+Shall I get you an autograph while I'm at it?
+[/message]
+
+// Change Hizumi Senji's expression
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0250]
+I... I don't... No, wait, I do! 
+Never mind! I'll get one on my own... somehow!
+[/message]
+
+[face id=601501 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0260]
+Is that so? I wish you the best of luck with that.
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0270]
+Well then, I'll be off.
+Shall we get going?
+[/message]
+
+// Change Hizumi Senji's expression
+[face id=601601 type=confuse]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Move Hizumi Senji to position 0.25
+[move id=601601 posx=0.25 sec=1 wait=false]
+
+// Move Chiri Sendo to position 0.75
+[move id=601501 posx=0.75 sec=1 wait=true]
+
+// Speaker: ???
+// Chloe Falena appears at position 0.5
+[character id=500502 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=??? charaid=500502 voice=02_926_0280]
+Ah... umm...
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Chiri Sendo exits
+[character id=601501 anim=fade show=false wait=false]
+
+// Falena exits
+[character id=500502 anim=fade show=false wait=true]
+
+// Change Hizumi Senji's expression
+[face id=601601 type=confuse]
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0290]
+Uh, umm...
+[/message]
+
+// Change Hizumi Senji's expression
+[face id=601601 type=painful]
+
+[message name=Senji Hizumi charaid=601601 voice=02_926_0300]
+—Who was that? And how long have they been here?
+Ugh, Chiri always throws me off...
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Time passes
+// Screen fades out
+// BGM21 - / Café (for atmosphere)
+// Background 100 - / Back Alley
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+[character id=601601 anim=fade show=false wait=false]
+[delay sec=1.5]
+[image type=bg id=000100 show=true]
+[sound type=bgm state=play name=Cafe]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+// Screen fades in
+
+[character id=200903 posx=0.24 anim=fade face=thoughts show=true wait=true]
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Chloe charaid=200903 voice=02_926_0310]
+Sigh... 
+Hey, isn't she late?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//-------Chiri Sendo appears at 0.74 position---------------
+[character id=601501 posx=0.74 anim=fade face=default show=true wait=true]
+
+/// Re-display the text window
+[visible show=true]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0320]
+Apologies.
+I'm only 30 minutes early for our scheduled time.
+I sincerely apologize if it caused any inconvenience.
+[/message]
+
+// Change Chloe's expression
+[face id=200903 type=confuse]
+
+[message name=Chloe charaid=200903 voice=02_926_0330]
+...Ah, right.
+Didn't expect that kind of response.
+You're quite serious, aren't you?
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0340]
+I don't have much to boast about, unlike you.
+[/message]
+
+[face id=601501 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0350]
+Let me formally introduce myself again...
+I'm Chiri Sendo, head of the security team at this location,
+representing Sagami Police Station. We have a 20-man, 24-hour surveillance team,
+so please rest assured.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=02_926_0360]
+...Okay, thank you.
+Do I need to introduce myself too?
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0370]
+That won't be necessary.
+We're well aware of who you are, and it's an honor to provide security
+for someone as famous as you.
+[/message]
+
+// Change Chloe's expression
+[face id=200903 type=confuse]
+
+[message name=Chloe charaid=200903 voice=02_926_0380]
+Right, sure.
+[/message]
+
+[face id=601501 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0390]
+And... there's one more person
+I'd like to introduce to you.
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen edge: Show G-Celica
+
+
+// Speaker: Mysterious Girl
+// -----Display Falena at 0.99 position-----------
+[character id=500502 posx=0.99 anim=fade face=default show=true wait=true]
+
+// ------Move Falena to 0.97 to peek in--------
+[move id=500502 posx=0.97 sec=1.5 wait=true]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+/// Re-display the text window
+[visible show=true]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0400]
+H-hello...
+No, no, no! That's wrong!! 
+Nice to meet you!!
+[/message]
+
+[face id=200903 type=confuse]
+
+[message name=Chloe charaid=200903 voice=02_926_0410]
+...You're far away.
+Who... who is that, exactly?
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0420]
+Didn't your father or mother, 
+or perhaps producer Viktor, mention anything to you?
+[/message]
+
+// Change Chloe's expression
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=02_926_0430]
+Maybe the producer said something... as for my parents,
+I don't read their emails. Too annoying.
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0440]
+Then... then it's probably in the emails...
+but I'm not suspicious at all, okay~...!!
+[/message]
+
+// Change Chloe's expression
+[face id=200903 type=confuse]
+
+[message name=Chloe charaid=200903 voice=02_926_0450]
+Hmm, Chiri.
+Your first job might just be
+to kick this girl out, don't you think?
+[/message]
+
+[face id=601501 type=smile]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0460]
+...Heh.
+[/message]
+
+[face id=500502 type=painful]
+
+
+// Falena is shocked
+[shake target=chara id=500502 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0470]
+Nooo!?? 
+Chiri-san!! 
+W-wait a moment, Lady Celica...!
+[/message]
+
+[face id=200903 type=confuse]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+
+[message name=Chloe charaid=200903 voice=02_926_0480]
+Celica...? 
+Why are you calling me by a character name?
+[/message]
+
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=02_926_0490]
+And from *World's Odyssey*... 
+that restrictive game...
+[/message]
+
+// Change Chloe's expression
+[face id=200903 type=angry]
+
+[message name=Chloe charaid=200903 voice=02_926_0500]
+...Oh, I see now! You're a fan and aspiring actress, huh?
+That's why you're cosplaying... 
+What's with that hood!?
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=default]
+
+[face id=500502 type=painful]
+// Falena is shocked
+[shake target=chara id=500502 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0510]
+Eep...
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+// Change Chloe's expression
+[face id=200903 type=confuse]
+
+[message name=Chloe charaid=200903 voice=02_926_0520]
+Are you... insecure?
+You should show your face properly—
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Move G-Celica to the center / Zoom the screen
+
+[move id=601501 posx=0.75 wait=false]
+
+//[character id=601501 anim=fade show=false wait=false]
+[move id=500502 posx=0.47 wait=false sec=1.5]
+
+// Change Chloe's expression
+[face id=200903 type=panic]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Chloe charaid=200903 voice=02_926_0530]
+Huh—
+You—
+[/message]
+
+[face id=500502 type=confuse]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0540]
+W-wait, I'm not... 
+I mean, I'm not that great looking...
+[/message]
+
+[face id=200903 type=angry]
+
+[message name=Chloe charaid=200903 voice=02_926_0550]
+That humility.
+—It's like you're insulting my face...
+[/message]
+
+[face id=500502 type=painful]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0560]
+Eek!? No, no, no...
+Lady... Lady Chloe...!
+[/message]
+
+[face id=200903 type=panic]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=default]
+
+[message name=Chloe charaid=200903 voice=02_926_0570]
+—Why?
+And why do you sound so much
+like my... deceased manager...?
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0580]
+Well... that's...
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0590]
+By the way... I'm your...
+...your new
+personal manager!
+[/message]
+
+[face id=200902 type=surprise]
+
+[message name=Chloe charaid=200902 voice=02_926_0600]
+—!
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0610]
+It's true.
+I have a signed document from your father, Mr. Anderson,
+to prove it.
+[/message]
+
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=02_926_0620]
+......
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=default]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0630]
+This time...
+no, no, it's my first time, but I'll do my best!!
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=02_926_0640]
+...Your name.
+[/message]
+
+[face id=500502 type=confuse]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0650]
+...Lady Chloe?
+[/message]
+
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=02_926_0660]
+No.
+...I want to know your name.
+[/message]
+
+[face id=500502 type=confuse]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0670]
+Oh! Right, right... I should introduce myself...!
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Mysterious Girl charaid=500502 voice=02_926_0680]
+I-I'm...
+‘Falena'!
+[/message]
+
+[face id=200902 type=confuse]
+
+[message name=Chloe charaid=200903 voice=02_926_0690]
+...That's... quite an unusual stage name...
+[/message]
+
+[face id=200903 type=smile]
+
+[message name=Chloe charaid=200903 voice=02_926_0700]
+...Okay, I'll call you ‘Lena.'
+Is that fine?
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=02_926_0710]
+O-of course!!!
+Yes!!
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=smile]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0720]
+...Heh.
+Looks like you've bonded.
+Now then...
+[/message]
+
+// Change Chiri Sendo's expression
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=02_926_0730]
+Please call on me whenever you need.
+...I'll be on my way now...
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

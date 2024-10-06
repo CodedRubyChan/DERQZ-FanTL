@@ -1,0 +1,411 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_27_01_020
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TownMapB]
+
+// Display specified background
+[image type=bg id=000160]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Background 160: Downtown
+// BGM: 17
+
+[character id=100101 posx=0.49 anim=rtol face=panic show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0010]
+...Partner! You do have a destination in mind, right!?
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: The main event happens here
+// 2: Trust me
+
+[select]
+[link text="The main event happens here" label=iris]
+[link text="Trust me" label=iris]
+[/select]
+
+// Regardless of the choice, the scene continues with no change, just different lines
+
+:iris
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0020]
+...You're saying that, but isn't this the wrong direction from Iris Corp?
+[/message]
+
+/////////////////////////////////////////////////////////////////////////// Glock and Mai Toyama appear
+[move id=100101 posx=0.74 sec=0.5 wait=false]
+[character id=601201 posx=0.5 anim=ltor face=confuse show=true wait=false]
+[character id=200302 posx=0.24 anim=ltor face=default show=true wait=true]
+
+[message name=Glock President charaid=601201 voice=01_027_0030]
+Sayaka, leaving work early and still wandering around here?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0040]
+...President! And the programmer lady...!
+[/message]
+
+// Mai's expression changes
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=01_027_0050]
+It's Mai... You'll remember eventually.
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Mai Toyama and Glock
+[character id=200302 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Nova and Iris appear
+[character id=600901 posx=0.20 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=01_027_0060]
+Glock, Sayaka was actually looking for us...  
+She has an urgent issue.
+[/message]
+
+// Speaker: ????
+
+[message name=??? charaid=600901 voice=01_027_0070]
+Hey,  
+I've got a pretty urgent issue myself, you know?
+[/message]
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0080 lipsync=false]
+(This presence feels just like the President!  
+Another Luden I don't know!  
+But right now… that's not important…)
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0090]
+...President, it's really serious!  
+Shina—she's...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=01_027_0100]
+She was captured. By someone like Arata Mizunashi.  
+You couldn't beat the guardian,  
+So you ran, didn't you?
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0110]
+Ugh...!
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: I didn't run away
+// 2: It was a strategic retreat
+
+[select]
+[link text="I didn't run away" label=words]
+[link text="It was a strategic retreat" label=words]
+[/select]
+
+:words
+// Iris expression change
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=01_027_0120]
+Sorry, just a figure of speech.
+[/message]
+
+// Speaker: Detective-looking girl?
+
+[face id=600901 type=smile]
+
+[message name=Detective-looking girl? charaid=600901 voice=01_027_0130]
+Don't worry about it!  
+We already figured something was up when a ‘Dimensional Rift' happened for the first time in 10 years.
+[/message]
+
+// Iris expression change
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=01_027_0140]
+Yes, Sayaka—Shina is really important to me too.  
+But still... I'm leaving this to you.
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0150]
+...I...I...
+[/message]
+
+// Iris expression change
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=01_027_0160]
+Don't cry. I'm frustrated too, but we can't stay in the Strain Area for long.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0170 lipsync=false]
+(Shina said the same thing.  
+But why am I okay…?)
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Hide Nova, Iris, and Sayaka
+[character id=600901 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Glock appears
+[character id=601201 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=01_027_0180]
+President.  
+It seems Sayaka can't beat the guardian on her own.
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Hide Glock
+[character id=601201 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Nova, Iris, and Sayaka appear
+[character id=600901 posx=0.20 anim=fade show=true wait=false]
+[character id=600601 posx=0.49 anim=fade show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=01_027_0190]
+Nova, do you have any ideas?
+[/message]
+
+[message name=Nova charaid=600901 voice=01_027_0200]
+It's simple, right?  
+Just let Sayaka use the Ripuka Code!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0210 lipsync=false]
+(Ripuka…!?)
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Iris President charaid=600601 voice=01_027_0220]
+!?  
+N-No, not that...!
+[/message]
+
+[message name=Nova charaid=600901 voice=01_027_0230]
+We're already dealing with an enemy in the Strain Area.  
+The only one who can move right now is... Sayaka!  
+And on top of that, to get into the Strain Area, we need the ‘brown one'...
+[/message]
+
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=01_027_0240]
+Got any other ideas, oh all-powerful master?
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=01_027_0250]
+Ugh...!
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Hide Nova, Iris, and Sayaka
+[character id=600901 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Mai and Glock appear
+[character id=200302 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.67 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=01_027_0260]
+...I don't really understand the situation,  
+But don't bully the president too much.  
+It'll only delay our objectives further.
+[/message]
+
+[message name=Glock President charaid=601201 voice=01_027_0270]
+Sayaka.  
+The president may still have doubts,  
+But as someone who interviewed you today, I'll trust you.
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Mai and Glock
+[character id=200302 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Nova, Iris, and Sayaka appear
+[character id=600901 posx=0.20 anim=fade show=true wait=false]
+[character id=600601 posx=0.49 anim=fade show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_027_0280]
+What is the Ripuka Code...?
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_027_0290]
+Sorry, but this conversation ends here...  
+We need to hurry, or there will be more damage on this side…!
+[/message]
+
+// Nova expression change
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=01_027_0300]
+Heh! Good news, Sayaka—if she didn't stop you, that's her approval!  
+Next, head for the subway!
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=01_027_0310]
+The brown one will help you out!  
+Just don't get him mad! Haha!  
+See ya!
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Hide Nova, Iris, and Sayaka
+[character id=600901 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+[character id=200302 posx=0.49 anim=fade face=smile show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=01_027_0320]
+Good luck. I'm rooting for you.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

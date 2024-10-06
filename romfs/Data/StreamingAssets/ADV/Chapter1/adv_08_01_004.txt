@@ -1,0 +1,351 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_08_01_004
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM24 / For serious scenes
+// Background470 / Iris Corp - Development Room
+
+//////////////////////////////////////////////////////////////////////////// Show Glock and Sayaka
+[character id=601201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+// Display text window
+[visible show=true]
+// Change Glock's expression
+[face id=601201 type=smile]
+[message name=President Glock charaid=601201 voice=01_008_0010]
+Alright, Sayaka-kun,  
+let's formally introduce ourselves to each other again!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0020]
+Y-yes…
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0030]
+I am Werner Glock, the president of Iris Corporation.  
+My motto is… nurturing people is nurturing the work itself.
+[/message]
+
+// Change Glock's expression
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_008_0040]
+How about you?  
+It's a good opportunity, so tell me whatever comes to mind!
+[/message]
+
+// Change Glock's expression
+[face id=601201 type=default]
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0050]
+Uh, um...  
+I'm Sayaka Hiwatari… currently… u-unemployed…  
+As for a motto… I'm not sure…
+[/message]
+
+// Change Glock's expression
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_008_0060]
+Haha! You're someone worth nurturing!  
+It's alright, in my interviews,  
+"I don't know" or "I've never thought about it" is a common answer.
+[/message]
+
+// Change Glock's expression
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0070]
+Alright then, let me keep asking you questions.  
+Do you know what our company produces?
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0080]
+...Games!
+[/message]
+
+// Change Glock's expression
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_008_0090]
+Correct! That's right.  
+You'd be surprised how many people answer "flowers" though.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0100]
+...Iris...  
+That's the name of a flower, right?
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0110]
+Exactly! The person who inspired our company's name  
+should be joining us soon—  
+Chairman! Could you spare a moment?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Iris appears
+[move id=601201 posx=0.5 wait=false]
+[move id=100101 posx=0.74 wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+[character id=600601 posx=0.24 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[visible show=true]
+
+// Speaker: ???
+[message name=??? charaid=600601 voice=01_008_0120]
+Hmm...
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0130 lipsync=false]
+(Wow!  
+A cute girl just appeared…!  
+Huh? Chairman…?)
+[/message]
+
+[message name=Chairman Iris charaid=600601 voice=01_008_0140]
+I am... Iris.  
+I'm...  
+the chairman of this company...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0150]
+Th-thank you for the introduction...  
+I'm Sayaka...
+[/message]
+
+[message name=Chairman Iris charaid=600601 voice=01_008_0160]
+No problem…  
+Nice to meet you.  
+Well then...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////// Iris disappears
+[character id=600601 anim=fade show=false wait=true]
+
+[move id=601201 posx=0.33 wait=false]
+[move id=100101 posx=0.66 wait=true]
+
+// Re-display text window
+[visible show=true]
+
+// Change Glock's expression
+[face id=601201 type=surprise]
+[message name=President Glock charaid=601201 voice=01_008_0170]
+Huh? …The chairman is leaving pretty early today.  
+Sorry about that, she seemed a bit under the weather.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0180]
+W-wow… that young girl is... the chairman?
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_008_0190]
+Haha, don't judge people by their appearance!  
+She's a Luden.  
+To be honest, we're not even sure how old she is.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0200]
+Luden...!  
+That's a term I've heard quite a bit…  
+What does it mean, exactly?
+[/message]
+
+[face id=601201 type=confuse]
+
+[message name=President Glock charaid=601201 voice=01_008_0210]
+Oh come on. You can look it up on TV or the internet.  
+You shouldn't just ask about everything, you know!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0220]
+(What? Is it really that common…?)
+[/message]
+
+////////////////////////////////////////////////////////////【Choice】
+// 1: Wow, I thought it was a rare thing.
+
+[select]
+[link text="Wow, I thought it was a rare thing." label=rarespecies]
+[/select]
+
+:rarespecies
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0230 lipsync=false]
+(Agreed.  
+I had no idea it was something I could just look up.)
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0240]
+Originally, this company was founded to create the things  
+that she wanted to create. You could say it exists  
+to fulfill Chairman Iris' dreams.
+[/message]
+
+[message name=President Glock charaid=601201 voice=01_008_0250]
+She uses her Luden abilities to gather a team,  
+and she's been working to create "games that make people happy."  
+Are you familiar with any of our released games?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0260]
+...What? Uh, um...  
+"World's Odyssey"...?
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0270]
+Close! That's actually made by a different company, Enigma Corp...  
+But we are working on the sequel,  
+"End to Odyssey."
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0280]
+I'm so sorry! That was a mistake!  
+But I know that one too!  
+It's the game where Celica is the main character!
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_008_0290]
+That's good to hear!
+[/message]
+
+[message name=President Glock charaid=601201 voice=01_008_0300]
+We're currently preparing the next DLC for "End to Odyssey,"  
+so if you could help with development,  
+that would be great!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_008_0310]
+B-but, I'm just… um...  
+I'm mostly here as Shina's companion...  
+I don't know anything about development or what I'd even do...
+[/message]
+
+// Change Glock's expression
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0320]
+Ah, I see. I misunderstood a bit.  
+But don't worry!  
+There's definitely work that only you can do!
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_008_0330]
+That's it from me. Sorry for keeping you so long.  
+Next, go to Mai Toyama's desk and  
+get your work instructions from her!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

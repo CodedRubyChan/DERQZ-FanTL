@@ -1,0 +1,510 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_04_03_s01
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000100]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// No BGM
+// Background 100 / Back Alley
+
+// Nova and Sayaka enter
+/// Nova enters
+[character id=600901 posx=0.28 anim=fade face=default show=true wait=false]
+// Sayaka enters
+[character id=100101 posx=0.61 anim=fade face=panic show=true wait=true]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Nova changes expression
+[face id=600901 type=confuse]
+[message name=Nova charaid=600901 voice=03_904_0010]
+…Huh?
+[/message]
+
+// Speaker: Nova
+// @Nova
+
+[message name=Nova voice=03_904_0020]
+Hey, what's that?
+Isn't that Kiki over there with the cops?
+I've got a bad feeling about this.
+[/message]
+
+// Speaker: Sayaka
+// @Sayaka
+
+[message name=Sayaka Hiwatari voice=03_904_0030]
+T-this isn't good…
+We shouldn't get involved carelessly…!
+[/message]
+
+// Nova and Sayaka exit
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+// Nova exits
+[character id=600901 anim=fade show=false wait=true]
+
+// BGM6
+
+[sound type=bgm state=play name=Chapter4]
+
+// Speaker: Police Officer
+// @Male Mob 20
+
+/////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Police Officer voice=03_904_0040]
+H-hey…!
+Stop right there…!
+[/message]
+
+// Kiki Amo enters
+[character id=500202 posx=0.5 anim=fade face=smile show=true wait=true]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0050]
+Come on, come on… you're feeling better and better, right? (*´ω｀*)
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker: Police Officer
+// @Male Mob 20
+
+// Screen shake
+[shake type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Police Officer voice=03_904_0060]
+Ugh…
+I feel… so good… it feels sooo good…
+Pleasure… PLEASUREEEE!!
+[/message]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0070]
+Ugh.
+How disgusting. "(-""-)"
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0080]
+But Kiki-chan would be super happy to see your blood gushing out all over.
+Of course, you'll grant my request, won't you? (*'▽')
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Brainwashing sound effect
+[sound type=se name=Brainwash]
+
+// Screen flash … ?
+
+// Speaker: Police Officer
+// @Male Mob 20
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Screen shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[message name=Police Officer voice=03_904_0090]
+Y-yes…
+I-I-I'll do it right away…!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0100]
+Ahaha!!
+Yes, yes,
+just go ahead and die! (*^▽^*)
+[/message]
+
+// Amo changes expression
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0110]
+A cop trying to stop Kiki-chan? That's just rude.
+The world would be better off without you! (#°Д°)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Amo changes expression
+[face id=500202 type=default]
+
+// Sayaka enters
+// BGM stops
+
+// Kiki Amo moves
+[move id=500202 posx=0.8 wait=false]
+
+// Sayaka enters
+[character id=100101 posx=0.4 anim=fade face=panic show=true wait=true]
+[sound type=bgm state=stop]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_904_0120]
+Hey!! What do you think you're doing?!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600901 posx=0.2 anim=fade face=smile show=true wait=true]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=03_904_0130]
+Haha, you were the one trying to stop things,
+but now you're the first one to jump in.
+Not bad, though.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Nova changes expression
+[face id=600901 type=default]
+
+// Kiki Amo moves to make space
+[move id=500202 posx=0.83 wait=false]
+
+// Nova and Sayaka move right
+[move id=100101 posx=0.50 wait=false]
+
+// Nova and Sayaka move right
+[move id=600901 posx=0.28 wait=false]
+
+// Shina enters
+[character id=200102 posx=0.10 anim=fade face=angry show=true wait=true]
+
+/// Display the text window again
+[visible show=true]
+
+/// Display the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_904_0140]
+… I can't just sit back and watch anymore…!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM13
+
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+// Amo changes expression
+[face id=500202 type=angry]
+
+///////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0150]
+…You guys!? Are you seriously going to interrupt Kiki-chan again?
+I got scolded last time because of you…!
+[/message]
+
+/// Surprised reaction
+[shake target=chara id=500202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0160]
+Sayaka!!
+Kiki-chan will never forgive you for rescuing Yurisa Yamamura!
+I hate you even more than Lilith!
+[/message]
+
+// Surprised reaction
+[shake target=chara id=500202 type=vertical sec=0.2 pow=30 fade=false wait=false]
+
+// Amo changes expression
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0170]
+I'll never forget.
+I'll hold a grudge until the day I see you suffer and die.
+I won't ever forgive you!!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_904_0180]
+Oh great,
+another wild case of misplaced resentment…
+Anyway, let the cop go!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0190]
+Hmm, what should I do?
+I'm starting to get restless… Should I kill him now?
+Should I do it right here and now!? (#ﾟДﾟ)
+[/message]
+
+// Nova changes expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_904_0200]
+Haha, bold words!
+But you know…
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_904_0210]
+This is Iris Corporation's territory.
+You really think you can keep causing chaos here?
+[/message]
+
+// Nova changes expression
+[face id=600901 type=default]
+
+// Amo changes expression
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0220]
+!?
+[/message]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0230 lipsync=false]
+(Ugh… I feel… a lot of presences around me…?
+How many people do they have ready here…?
+Could they all be fighters…?)
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0240]
+…Ahhh! I can't get serious here.
+Well then, I'll save it for next time.
+Haha, I'll have to think carefully until then!
+[/message]
+
+// Amo changes expression
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=03_904_0250]
+How can I make you all suffer the most before killing you…
+Well then, see ya!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM stops
+
+// Kiki Amo exits
+[character id=500202 anim=ltor show=false wait=true]
+
+[sound type=bgm state=stop sec=1.5]
+
+[move id=600901 posx=0.45 wait=false]
+[move id=100101 posx=0.70 wait=false]
+// Shina moves
+[move id=200102 posx=0.20 wait=false]
+
+[face id=100101 type=thoughts]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_904_0260]
+Phew, I'm not sure what just happened,
+but she backed off…
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_904_0270 lipsync=false]
+(Nova… it worked…!)
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+// Speaker: Police Officer
+// @Male Mob 20
+
+/// Gentle horizontal screen shake
+[shake type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Police Officer voice=03_904_0280]
+…Huh? What was I doing here just now!?
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_904_0290]
+Phew. Managed to avoid making a scene.
+Hey, you're still on duty, aren't you?
+Better get back to your patrol, officer.
+[/message]
+
+// Speaker: Police Officer
+// @Male Mob 20
+
+[message name=Police Officer voice=03_904_0300]
+I-I'm not really sure what happened, but
+I'll be on my way…!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=03_904_0310]
+Sayaka,
+next time, don't just jump in without thinking!
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_904_0320]
+You're right…
+I dragged both of you into danger.
+I'm really sorry.
+[/message]
+
+// Nova changes expression
+[face id=600901 type=default]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_904_0330]
+But the officer's safe, so it all worked out!
+I'll actually praise you for this!
+You did great! Good job!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_904_0340]
+Shina…!
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_904_0350]
+Haha. Seriously.
+I wish you'd think more about the people who have to protect you~♪
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_904_0360]
+I'll make sure to be more careful from now on!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

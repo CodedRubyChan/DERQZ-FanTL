@@ -1,0 +1,969 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_12_02_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Show the specified background
+[image type=bg id=000490]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show the text window
+[visible show=true]
+
+// Location: In front of the university hospital
+
+// A large glitch is visible on the hospital background
+
+//BGM23 / Peaceful scene
+//Background490 / University Hospital
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.19 anim=fade face=default show=true wait=false]
+
+// Shina appears
+[character id=200102 posx=0.39 anim=fade face=default show=true wait=false]
+
+// Mai appears
+[character id=200302 posx=0.59 anim=fade face=default show=true wait=false]
+
+// Sayaka appears
+[character id=100101 posx=0.79 anim=fade face=default show=true wait=true]
+
+[face id=200202 type=default]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0010]
+Alright, everyone,
+whether you know it or not,
+please pay attention!
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0020]
+This is the largest medical facility in Sagami City,
+the Sagami University Medical School Hospital,
+run by my family for generations!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0030]
+It's a long name, so most people in Sagami City
+just call it "Yamamura University Hospital."
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0040]
+It has over 700 beds! And it's not just big—
+it even has a special outpatient clinic
+dedicated to 'Ludens,' a rare feature in this country.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0050]
+Haha, Lily, you sound like a tour guide.
+It seems like this place is special to you too, right?
+[/message]
+
+[face id=200102 type=default]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0060]
+Well, yes... even though I'm still
+unsure about pursuing a career in medicine...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0070]
+......
+[/message]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_012_0080]
+............
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0090]
+Huh? You two...
+Is something wrong? Did I say something strange?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0100]
+Hey... could it be that you're seeing
+the strange pattern too, Mai-san? The one
+covering the whole building...
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_012_0110]
+Yes... there's a pattern on the wall,
+like something a street artist would paint.
+Is that pattern perhaps...?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=02_012_0120]
+Yamamura-san,
+are you really into bees?
+It's all over the wall, really noticeable...
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0130]
+...Huh?
+Well, I do like honey... but...
+The wall? It's just a normal wall, right? Shina?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0140]
+Hmm... I had a feeling.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0150]
+Sayaka is also a 'Luden,' just like me.
+She's particularly good at reading data from objects.
+She can spot anomalies in a building just by looking at it.
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0160]
+...S-Sayaka's a Luden too, like you, Shina?!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0170]
+Well,
+the fact that we're both Ludens
+isn't the important part right now...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=surprise]
+
+// Mai changes expression
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=02_012_0180]
+B-but... even though I'm not a Luden,
+I can clearly see that honeycomb pattern too...
+[/message]
+
+// Shina changes expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0190]
+I suspected as much after seeing you in action at work.
+As for me, even though I'm a Luden, it's something I developed later, so my ability to see or feel things is pretty weak.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_012_0200]
+Do I have some kind of... innate Luden-like power?
+What does this mean...?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0210]
+I'm not sure about the details yet...
+But I specifically asked you to come with us because I was hoping to rely on your practical skills too!
+[/message]
+
+//[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0220]
+But even you, Director Shina,
+can summon something like a spider web
+from your hands, right?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0230]
+Haha, well... it's just a little trick based on my memory...
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0240]
+Still, for there to be a problem with the hospital...
+What should we do...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0250]
+We're here to check on your health, Shina.
+Can't we investigate another time?
+[/message]
+
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0260]
+No, this is a serious problem in a large hospital.
+Especially one related to you, Lily! At the very least,
+we should check to see if it's having any harmful effects—
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//BGNOFF
+///////////////////////////////////////////////////////////////////// Character swap
+
+// Remove the female characters
+
+// Yurisa Yamamura
+[character id=200202 anim=fade show=false wait=false]
+// Shina
+[character id=200102 anim=fade show=false wait=false]
+// Sayaka
+[character id=100101 anim=fade show=false wait=false]
+// Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Bring out the director and Sugiura
+[character id=602101 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=602201 posx=0.65 anim=fade face=default show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character swap
+
+// Show the text window again
+[visible show=true]
+
+// Speaker: ???
+[message name=??? charaid=602101 voice=02_012_0270]
+—Excuse me.
+Are you planning to spread rumors in front of our hospital?
+That's quite improper.
+[/message]
+
+// Sugiura changes expression
+[face id=602201 type=smile]
+
+[message name=Sugiura charaid=602201 voice=02_012_0280]
+Hello, Lady Yurisa.
+I thought you'd be arriving soon, so I came to greet you.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//BGM24
+
+[sound type=bgm state=play name=TalkB]
+
+// Fade out the director and Sugiura
+[character id=602101 anim=fade show=false wait=false]
+[character id=602201 anim=fade show=false wait=true]
+
+// Sayaka appears
+[character id=100101 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0290 lipsync=false]
+(That's the guy I met at the park yesterday!
+And the person standing next to him is...?)
+[/message]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.33 anim=fade face=panic show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0300]
+Sugiura... and Father!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=true]
+
+// The director appears
+[character id=602101 posx=0.33 anim=fade face=default show=true wait=false]
+// Sugiura appears
+[character id=602201 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Speaker: Yurisa's Father
+
+[face id=602101 type=default]
+
+// Sugiura changes expression
+[face id=602201 type=thoughts]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0310]
+Hmm, Sugiura. Don't spoil my daughter too much.
+We're only passing by here on our way to dinner, after all.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// The director and Sugiura exit
+[character id=602101 anim=fade show=false wait=false]
+[character id=602201 anim=fade show=false wait=true]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.5 anim=fade face=surprise show=true wait=true]
+
+[face id=200202 type=sad]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0320]
+...This afternoon, I'll be studying closely here at the hospital.
+Father, Master Enishi...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=true]
+
+// The director appears
+[character id=602101 posx=0.33 anim=fade face=default show=true wait=false]
+// Sugiura appears
+[character id=602201 posx=0.66 anim=fade face=default show=true wait=true]
+
+[face id=602101 type=angry]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0330]
+What are you studying for? You say you want to become a doctor, not a nurse, but you haven't even chosen your path yet. Instead, you're working part-time at a game company...
+[/message]
+
+[face id=602101 type=angry]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0340]
+Continuing your internship with such a half-hearted attitude is just a burden to others.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// The director and Sugiura exit
+[character id=602101 anim=fade show=false wait=false]
+[character id=602201 anim=fade show=false wait=true]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.5 anim=fade face=sad show=true wait=true]
+
+// She appears with a sad expression
+///[face id=200202 type=sad]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0350]
+...Yes. I need to make up my mind.
+[/message]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=true]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// The director appears
+[character id=602101 posx=0.49 anim=fade face=default show=true wait=true]
+
+[face id=602101 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0360]
+I hope your words are backed by actions.
+[/message]
+
+// Show the text window again
+[visible show=true]
+
+// The director exits
+[character id=602101 anim=fade show=false wait=true]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.59 anim=fade face=sad show=true wait=false]
+// Yurisa changes expression
+//[face id=200202 type=sad]
+
+// Sayaka appears
+[character id=100101 posx=0.79 anim=fade face=confuse show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0370 lipsync=false]
+(Lily's father seems like a strict person...)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Bring Mai and Shina back into the scene
+
+// Sayaka?
+//[character id=100101 anim=fade show=false wait=false]
+
+// Shina appears
+[character id=200102 posx=0.39 anim=fade face=panic show=true wait=false]
+// Mai appears
+[character id=200302 posx=0.19 anim=fade face=default show=true wait=true]
+
+// Shina changes expression
+[face id=200102 type=surprise]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0380]
+Um!
+Yurisa-san is doing an excellent job at our company...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character swap
+
+// Remove the female characters
+
+// Yurisa Yamamura
+[character id=200202 anim=fade show=false wait=false]
+// Shina
+[character id=200102 anim=fade show=false wait=false]
+// Sayaka
+[character id=100101 anim=fade show=false wait=false]
+// Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Bring out the director and Sugiura
+[character id=602101 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=602201 posx=0.65 anim=fade face=default show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character swap
+
+[face id=602101 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0390]
+Oh. Upon closer inspection, it seems you're here too...
+You must be the friend my daughter often talks about, Shina, correct?
+[/message]
+
+// Sugiura changes expression
+[face id=602201 type=smile]
+
+[message name=Sugiura charaid=602201 voice=02_012_0400]
+Yes, Director.
+She's also the director of a popular game.
+She's even visited us before regarding a building for some research.
+[/message]
+
+// Yurisa's Father changes expression
+[face id=602101 type=angry]
+
+// Sugiura changes expression
+[face id=602201 type=default]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0410]
+Ah, I read about that in the media.
+You modeled some of the interior design of a demon king's castle based on our hospital, didn't you?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// The director and Sugiura exit
+[character id=602101 anim=fade show=false wait=false]
+[character id=602201 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Mai appears
+[character id=200302 posx=0.19 anim=fade face=default show=true wait=false]
+
+// Shina appears
+[character id=200102 posx=0.39 anim=fade face=default show=true wait=false]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.59 anim=fade face=panic show=true wait=false]
+
+// Sayaka appears
+[character id=100101 posx=0.79 anim=fade face=surprise show=true wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+[face id=200102 type=panic]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0420]
+Gulp!? Th-that's... um...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0430 lipsync=false]
+(That story is... actually true?)
+[/message]
+
+// Mai changes expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=02_012_0440 lipsync=false]
+(It is. When Shina-san was looking for a large local building,
+that's when she met Yurisa-san, as I recall.)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character swap
+
+// Remove the female characters
+
+// Yurisa Yamamura
+[character id=200202 anim=fade show=false wait=false]
+// Shina
+[character id=200102 anim=fade show=false wait=false]
+// Sayaka
+[character id=100101 anim=fade show=false wait=false]
+// Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Bring out the director and Sugiura
+[character id=602101 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=602201 posx=0.65 anim=fade face=default show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character swap
+
+[face id=602101 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0450]
+You may see this hospital as a demon's lair, but for many patients, it's a place they visit regularly with satisfaction.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//BGMOFF
+// No character sprites
+
+[sound type=bgm state=stop]
+
+// The director and Sugiura exit
+[character id=602101 anim=fade show=false wait=false]
+[character id=602201 anim=fade show=false wait=false]
+// The four female characters exit
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+// Mai exits
+[character id=200302 anim=fade show=false wait=true]
+
+// Speaker: ???
+
+[face id=500102 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=??? charaid=500102 voice=02_012_0460]
+Is that really true?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+[face id=100101 type=panic]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0470]
+!?
+[/message]
+
+// Wait for the specified number of seconds
+[delay sec=0.9]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0480 lipsync=false]
+(Wait, what was that voice just now?
+Am I the only one who heard it...?)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Resume the BGM
+
+[sound type=bgm state=play name=TalkA]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////↓ Here's where the glitch happens
+
+// Here, bring out the director, Sugiura, Shina, and Yurisa
+
+[character id=602101 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=602201 posx=0.39 anim=fade face=confuse show=true wait=true]
+[character id=200102 posx=0.59 anim=fade face=panic show=true wait=false]
+[character id=200202 posx=0.79 anim=fade face=sad show=true wait=true]
+
+// Yurisa's Father changes expression
+[face id=602101 type=angry]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0490]
+Ever since I took over, there have been no scandals.
+So I'd prefer you not make any baseless remarks.
+I am not a patient man.
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0500]
+I understand...
+I have no intention of causing any trouble.
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0510]
+...U-um...
+[/message]
+
+[face id=602101 type=default]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0520]
+If you want to talk, we can do so later tonight.
+Now, if you'll excuse me.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+
+// Yurisa changes expression
+[face id=200202 type=sad]
+
+// The director exits to the left
+[character id=602101 anim=rtol show=false wait=true]
+
+// As the director exits left, add Sayaka to the far right, bringing the four characters into the scene
+
+//////////////////////////////////////////////////////// Move Sugiura, Shina, and Yurisa to the center
+
+[move id=602201 posx=0.24 sec=0.9 wait=false]
+
+[move id=200102 posx=0.49 sec=0.9 wait=false]
+
+[move id=200202 posx=0.74 sec=0.9 wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// Sugiura changes expression
+[face id=602201 type=thoughts]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_012_0530]
+Ah, that reminds me...
+[/message]
+
+[face id=602201 type=default]
+
+[message name=Sugiura charaid=602201 voice=02_012_0540]
+Everyone, this is just me thinking out loud, but...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Shina changes expression
+[face id=200102 type=surprise]
+
+// Yurisa changes expression
+[face id=200202 type=surprise]
+
+////////////////////////////////////////// Move Sugiura, Shina, and Yurisa to the side, and add Sayaka to the right
+
+[move id=602201 posx=0.19 sec=0.9 wait=false]
+
+[move id=200102 posx=0.39 sec=0.9 wait=false]
+
+[move id=200202 posx=0.59 sec=0.9 wait=true]
+
+//// In the meantime, add Sayaka to the same position
+[character id=100101 posx=0.79 anim=fade face=confuse show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0550]
+?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+// Sugiura changes expression
+[face id=602201 type=thoughts]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_012_0560]
+In recent years, there have been some patients who say they can "see things."
+Unfortunately, I'm not one of them...
+[/message]
+
+// Sugiura changes expression
+[face id=602201 type=confuse]
+
+[message name=Sugiura charaid=602201 voice=02_012_0570]
+However, patients disappearing in the hospital and then suddenly reappearing, rapid changes in symptoms...
+Even our staff have noticed some strange things happening.
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0580]
+That can't be...!
+[/message]
+
+// Sugiura changes expression
+[face id=602201 type=confuse]
+
+[message name=Sugiura charaid=602201 voice=02_012_0590]
+Could it be a case of mysterious disappearances or some mischievous spirit at play? We even tried a purification ritual, but it had no effect. Luckily, nothing that would involve the police has occurred...
+[/message]
+
+[face id=602201 type=default]
+
+[message name=Sugiura charaid=602201 voice=02_012_0600]
+Shina-san, since you're a Luden, if your goal today is to observe, I would certainly welcome you to “examine” the building.
+[/message]
+
+// No character sprites
+
+[face id=602101 type=default]
+
+//////////////////////////////////////////////////////// Screen shake
+[shake type=horizontal sec=0.5 pow=10 fade=false wait=false]
+
+[message name=Yurisa's Father charaid=602101 voice=02_012_0610]
+Sugiura! Hurry up!
+[/message]
+
+[face id=602201 type=painful]
+
+[message name=Sugiura charaid=602201 voice=02_012_0620]
+Apologies! I'm on my way!
+—Well then, I'll leave you to it. Best of luck...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sugiura exits
+
+[character id=602201 anim=rtol show=false wait=false]
+
+//////////////////////////// Move Shina, Yurisa, and Sayaka to the center /////////////////////////
+
+[move id=200102 posx=0.24 sec=0.9 wait=false]
+
+[move id=200202 posx=0.49 sec=0.9 wait=false]
+
+[move id=100101 posx=0.74 sec=0.9 wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+[face id=200102 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_012_0630]
+Even though I'm a Luden, I'm not that different from an ordinary person...
+[/message]
+
+/// Yurisa appears ↓
+///[character id=200202 posx=0.25 anim=fade face=default show=true wait=true]
+
+// Yurisa changes expression
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_012_0640]
+Sugiura sure has a way with words, doesn't he...
+Honestly!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_012_0650 lipsync=false]
+(I feel like I've ended up somewhere really intense...
+Both Shina and Yamamura-san look troubled...
+What's going to happen next...?)
+[/message]
+
+/// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

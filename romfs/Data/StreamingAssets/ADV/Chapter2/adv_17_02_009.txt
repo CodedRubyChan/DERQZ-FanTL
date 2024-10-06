@@ -1,0 +1,176 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_17_02_009
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+//[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera setup
+[camera type=setup]
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Wait for the specified number of seconds
+[delay sec=2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over a specified number of seconds
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+//[delay sec=0.5]
+
+// Background: Dungeon remains
+// BGM05
+
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_017_0010]
+So this is the other side of the door… 
+We're in the Strain Area!
+Thanks to the Strain Train, I managed to get around!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_017_0020]
+The hospital's remains are still here.
+And these doors… 
+There really are a lot of them... they're everywhere...
+[/message]
+
+// Snark's voice only
+
+[face id=601701 type=default]
+
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=02_017_0030 icon=true]
+Sayaka.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+
+// Sayaka gets startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_017_0040]
+Whoa!? You scared me...! 
+W-What is it all of a sudden?! 
+Please stop talking directly into my head...
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=02_017_0050 icon=true]
+About those doors… the gates, 
+it's impossible for you to destroy each one, 
+even with your strength.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_017_0060]
+...No way?! 
+You could've told me that sooner…
+So what do I do now?!
+[/message]
+
+[face id=601701 type=default]
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Snark charaid=601701 voice=02_017_0070 icon=true]
+Don't panic.
+With this many gates, I can't help but think 
+someone is intentionally causing this from the Strain Area.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=02_017_0080 icon=true]
+The disturbances in that hospital, 
+enough to become urban legends, 
+might be the work of a powerful Stranger.
+Go further in and find them.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_017_0090]
+...Ah, I get it. So there's some kind of boss 
+behind all this, right?
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=02_017_0100 icon=true]
+Something like that.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=02_017_0110 icon=true]
+...Well, I've said too much today. 
+The rest is up to you!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

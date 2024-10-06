@@ -1,0 +1,1777 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+
+//adv_08_03_006
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// No BGM
+// Background 470 / Iris Corporation - Development Room
+
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Sayaka's expression change
+[face id=100101 type=thoughts]
+
+// Sayaka's expression change
+[face id=100101 type=thoughts]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0010]
+Break time is almost over.
+Umm...
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0020]
+I guess I could drop by that convenience store…
+…Whoa!?
+[/message]
+
+// SE Collision
+[sound type=se name=Collision]
+
+//// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+[face id=100101 type=panic]
+
+[move id=100101 posx=0.66 wait=false]
+[character id=601901 posx=0.66 anim=fade face=default show=true wait=false]
+[shake type=random sec=1.5 pow=20 fade=true wait=false]
+
+[move id=100101 posx=0.32 wait=true]
+
+[face id=100101 type=panic]
+
+// Speaker: ???
+
+[face id=601901 type=confuse]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=??? charaid=601901 voice=03_008_0030]
+Ouch!
+Wow!
+Excuse me!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0040]
+N-No,
+I'm sorry too…
+[/message]
+[face id=601901 type=default]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0050 lipsync=false]
+(I bumped into her...
+A foreign girl?)
+[/message]
+
+// Speaker: ???
+
+[face id=601901 type=default]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0060 lipsync=false]
+(Wait… that's strange,
+it feels like I've met her before somewhere…
+Is it just my imagination?)
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0070]
+Umm…
+Do you understand what I'm saying…?
+[/message]
+
+// BGM23 / For peaceful scenes
+
+[sound type=bgm state=play name=TalkA]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0080]
+Oh, it's all good! Yeah,
+I can speak other languages fluently.
+Just go with the flow! Got it?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0090]
+Uh…
+Y-Yeah…
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0100 lipsync=false]
+(It must have been my imagination…
+I don't know anyone who talks like that.)
+[/message]
+
+// Liddy's expression change
+[face id=601901 type=confuse]
+
+[message name=Liddy charaid=601901 voice=03_008_0110]
+Hmm…
+I haven't seen you around here before.
+Are you new?
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0120]
+I-I guess you could say that…
+Um, what business do you have here…?
+[/message]
+
+[face id=601901 type=angry]
+
+[message name=Liddy charaid=601901 voice=03_008_0130]
+You mean, "Heisha", not "Onsha", right…?
+This is Iris Corporation, where Arata Mizunashi works, isn't it?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0140]
+Y-Yes!! I'm sorry, I'm not great with words!
+Um, Iris…
+Mizu…nashi…?
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0150]
+…Hmph. Does that name ring any bells?
+Well, it's okay.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0160 lipsync=false]
+(Oh yeah… Shina sometimes mentions him…
+He's the one whose picture is displayed at Iris Corp.
+Must have been someone really important?)
+[/message]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0170]
+Can you do me a favor?
+Just tell Shina that Liddy is here.
+That's all you need to say!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0180]
+Understood…
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Scene change
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+// Liddy exits
+[character id=601901 anim=fade show=false wait=false]
+[delay sec=1.5]
+
+// Sayaka moves to the center
+[move id=100101 posx=0.49 wait=false]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[face id=100101 type=default]
+
+/// Display the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0190]
+Um, Director Shina…
+There's a guest named "Liddy" here!
+Oh, the president and the chairman are here too…
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Sayaka exits
+// Sayaka
+[character id=100101 anim=fade show=false wait=false]
+
+// Glock appears in the center
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=false]
+[face id=601201 type=default]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=03_008_0200]
+Oh, it's you, Sayaka-kun.
+You're working hard as always!
+I'm impressed!
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Glock exits
+[character id=601201 anim=fade show=false wait=true]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Iris appears
+[character id=600601 posx=0.24 anim=fade face=default show=true wait=false]
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Shina's expression change
+[face id=200102 type=smile]
+
+/////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0210]
+You came to get me?
+Thank you, Sayaka! Liddy's on time too.
+Alright, let's go, Iris!
+[/message]
+
+[face id=600601 type=smile]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0220]
+Yes.
+Sayaka, could you please prepare some tea and snacks in the back?
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0230]
+Roger that!
+…Oh, by the way, Chairman…
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0240]
+What is it?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0250]
+About this morning…
+The issue with fixing…
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0260]
+Yes.
+It's still ongoing… We're working with others to resolve it.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0270]
+That sounds tough…
+[/message]
+
+[face id=100101 type=default]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0280]
+Iris, hurry up!
+[/message]
+
+[face id=200102 type=default]
+[face id=600601 type=smile]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0290]
+Alright! See you later!
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Scene transition & time passes
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=2.0]
+
+// Switch to BGM25
+[sound type=bgm state=play name=TalkC]
+[fade type=in anim=simple sec=2]
+
+// Liddy, Koji Toyama, and Mai appear
+// Toyama
+[character id=601301 posx=0.5 anim=fade face=default show=true wait=false]
+// Liddy
+[character id=601901 posx=0.75 anim=fade face=default show=true wait=true]
+//[sound type=bgm state=play name=TalkC]
+//[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+/// Liddy is surprised
+[shake target=chara id=601901 type=vertical sec=0.2 pow=20 fade=false wait=false]
+[face id=601901 type=smile]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_0300]
+WOW!!? Bravo!
+This is the original artwork for “Saliga”!
+Can I really have it!?
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_0310]
+Of course, miss…
+Considering the relationship between your company and ours!
+[/message]
+
+/// Liddy is surprised
+[shake target=chara id=601901 type=vertical sec=0.1 pow=10 fade=false wait=false]
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0320]
+Woo-hoo♪
+One of my objectives for today is complete!
+Koji-san, can you sign it for me too!?
+[/message]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_0330]
+Sure, sure,
+It's no problem at all!
+[/message]
+
+////////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Mai appears
+[character id=200302 posx=0.25 anim=ltor face=default show=true wait=false]
+
+[face id=200302 type=default]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_0340]
+Um… Koji-“san”,
+That's technically company property, so if you're going to give it away,
+you should check with Shina-san first…
+[/message]
+
+[face id=601301 type=painful]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_0350]
+What!?
+You're being really formal again…!
+Are you jealous of my popularity…!?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_0360 lipsync=false]
+(As if.)
+[/message]
+
+// Liddy's expression change
+[face id=601901 type=angry]
+
+[face id=200302 type=default]
+[message name=Liddy charaid=601901 voice=03_008_0370]
+Oh, come on, miss! Your father's signature work,
+“Magical Girl Dogura” has
+a cult following, you know!
+[/message]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0380]
+Liddy is super excited right now!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_0390]
+I-I'm sorry.
+Even if it's my father's work,
+still… It's an... eroge, so…
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_0400]
+Heh heh heh!! Well, I designed
+all the characters in that game by myself, so yeah,
+it's definitely my signature work!
+[/message]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0410]
+Wow! Koji-san even has a badge of Dogura-chan on his clothes!
+Her catchphrase, “Feed them dog food,” is the best!
+[/message]
+
+///// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Toyama exits
+[character id=601301 anim=fade show=false wait=false]
+
+// Shina and Glock enter in Toyama's place
+// Mai moves to 0.19, Liddy to 0.39
+[move id=200302 posx=0.19 wait=false]
+[move id=601901 posx=0.39 wait=true]
+
+// Wait for a few seconds to adjust
+[delay sec=1.0]
+
+// Shina enters at 0.59, Glock at 0.79
+[character id=200102 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Shina's expression change
+[face id=200102 type=smile]
+
+/// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0420]
+Wow,
+you've already got quite the conversation going.
+Mind if I join in the magical girl talk?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_0430]
+Shina-san!
+[/message]
+
+// Shina's expression change
+[face id=200102 type=default]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0440]
+Heh, you're late, Shina!
+Oh, you're looking more grown-up again. Anyway, here,
+this is the DLC contract for chapters 4 and 5. Hand-delivered!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0450]
+Thanks!
+[/message]
+
+// Shina's expression change
+[face id=200102 type=default]
+
+// Glock's expression change
+[face id=601201 type=confuse]
+
+[message name=President Glock charaid=601201 voice=03_008_0460]
+Liddy-chan, even though it's only a 30-minute walk from Enigma Corp,
+you don't have to hand-deliver every time.
+[/message]
+
+// Glock's expression change
+[face id=601201 type=default]
+
+// Liddy's expression change
+[face id=601901 type=angry]
+
+[message name=Liddy charaid=601901 voice=03_008_0470]
+Oh, come on! Liddy, the director, is super busy…
+Prepping for mailing out a piece of paper is a waste of time!
+[/message]
+
+// Liddy's expression change
+[face id=601901 type=default]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_0480]
+Oh, Shina-san.
+My father gave her some original artwork for internal review…
+[/message]
+
+///////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Glock exits
+[character id=601201 anim=fade show=false wait=true]
+
+// Wait for a few seconds
+[delay sec=0.2]
+
+// Mai, Liddy, and Shina move
+
+[move id=200302 posx=0.24 sec=1 wait=false]
+[move id=601901 posx=0.49 sec=1 wait=false]
+[move id=200102 posx=0.74 sec=1 wait=true]
+
+// Shina's expression change
+[face id=200102 type=eyeleft]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0490]
+It's fine. “Saliga” was originally
+a character created by this Director, Liddy Melan!
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Shina's expression change
+[face id=200102 type=default]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+// 【Choices】
+// 1: "Huh…!?"
+// 2: "I see. That's the name."
+
+[select]
+[link text="Huh…!?" label=who]
+[link text="I see. That's the name." label=who]
+[/select]
+
+:who
+[face id=200102 type=surprise]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0500 lipsync=false]
+(………? Did someone just speak…?)
+[/message]
+
+//// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Switch back to BGM23
+
+[sound type=bgm state=play name=TalkA]
+
+// Liddy, Mai, and Shina gather, and then Glock; all exit
+// Liddy
+[character id=601901 anim=fade show=false wait=false]
+// Mai
+[character id=200302 anim=fade show=false wait=false]
+// Shina
+[character id=200102 anim=fade show=false wait=false]
+// Glock
+[character id=601201 anim=fade show=false wait=true]
+
+// Wait for a few seconds to adjust
+[delay sec=1.0]
+
+// Koji appears in the center
+[character id=601301 posx=0.5 anim=fade face=smile show=true wait=true]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_0510]
+See? Shina totally gets it!
+There's no problem with Melan-chan involved!
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Koji exits
+[character id=601301 anim=fade show=false wait=true]
+
+// Wait for a few seconds to adjust
+[delay sec=0.5]
+
+
+//-------------------------------------------------------------------------------
+
+// Sayaka and Liddy
+
+[character id=100101 posx=0.32 anim=fade face=default show=true wait=true]
+[character id=601901 posx=0.66 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+[visible show=true]
+[face id=100101 type=default]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0620]
+I brought tea and snacks…
+[/message]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0630]
+Thanks~
+You're really working hard. Good job!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0640]
+This is all part of my job…!
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+//------------------------------------------------------------------------------------
+
+// More time passes
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.5 anim=fade face=default show=true wait=false]
+[move id=601901 posx=0.75 wait=true]
+[delay sec=1.5]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[face id=601901 type=default]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_0650]
+Well, that's all I wanted to discuss today~
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0660]
+Oh, wait.
+How has the response been since the release of the "World's Odyssey" movie?
+[/message]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0670]
+The movie is a huge hit in theaters!
+And the game is seeing a lot of new registrations lately too. It's great!
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0680]
+Yes, we're very grateful.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0690]
+"World's Odyssey" has become so mainstream…
+I'm overwhelmed…! I'm so glad Chloe was the lead actress…!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0700]
+Oh, by the way,
+I visited Chloe's filming location yesterday!
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0710]
+Oh, the detective one? The one that has nothing to do with the game?
+It was funny that she's playing a character named “Celica” in that too.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0720]
+Yeah! It's such a crazy coincidence!
+[/message]
+
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=03_008_0730]
+Heh! A coincidence.
+A coincidence, huh…
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0740]
+…So,
+what do you think, Iris-sama?
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0750]
+…………
+W-Why are you asking me?
+[/message]
+
+// Turn off BGM
+
+[sound type=bgm state=stop]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0760]
+Because.
+This is a project being led by the almighty Iris-sama, isn't it?
+[/message]
+
+////////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Iris, and Liddy exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+
+// Wait for a few seconds to adjust
+[delay sec=0.5]
+
+// Glock appears in the center
+[character id=601201 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=03_008_0770]
+――What do you mean by that, Liddy?
+[/message]
+
+///////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Glock exits
+[character id=601201 anim=fade show=false wait=true]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Liddy and Iris enter
+[character id=600601 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=601901 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Wait for a few seconds to adjust
+[delay sec=0.5]
+
+[face id=601901 type=thoughts]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_0780]
+I've been working hard in “this world”
+every day… But in the end?
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0790]
+Doesn't everything turn out perfectly no matter what?
+Is that just "fate"?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0800]
+…………
+No, that's not true.
+Without effort, nothing is certain, even in this world.
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Switch to BGM17
+
+[sound type=bgm state=play name=TownMapB]
+
+// Liddy and Iris exit
+[character id=601901 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+
+
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=false]
+[face id=100101 type=panic]
+
+/////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0810 lipsync=false]
+(Huh… What is this?
+The atmosphere suddenly changed… Shina?)
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for a few seconds to adjust
+[delay sec=0.5]
+
+// Shina appears
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=false]
+
+// Liddy appears
+[character id=601901 posx=0.66 anim=fade face=default show=true wait=false]
+
+[face id=200102 type=panic]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0820]
+Liddy.
+What's wrong all of a sudden…?
+[/message]
+
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=03_008_0830]
+Liddy, huh…
+[/message]
+
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=03_008_0840]
+You're always kind to me, Shina,
+but deep down, you're disappointed, aren't you?
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0850]
+The woman standing in front of you isn't
+"Lydia Nolan"… right!?
+[/message]
+
+//// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Shina and Liddy exit
+
+[character id=601901 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+
+Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Iris appears in the center
+[character id=600601 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_0860]
+…………!?
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600601 anim=fade show=false wait=false]
+
+Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+// Shina and Liddy appear
+
+[character id=200102 posx=0.32 anim=fade face=confuse show=true wait=false]
+[character id=601901 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+[face id=200102 type=panic]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0870]
+…N-No way.
+Liddy, you're Liddy, aren't you?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0880]
+Thanks to you,
+"World's Odyssey" has become a series
+and is still going. It's all thanks to you...
+[/message]
+[face id=600601 type=default]
+
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=03_008_0890]
+Hmph?
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0900]
+Then let me ask you,
+how do you feel about Mizunashi's unnatural absence?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0910]
+!
+T-That is...
+[/message]
+
+[face id=601901 type=panic]
+[message name=Liddy charaid=601901 voice=03_008_0920]
+The mysterious disappearance that even the police couldn't solve...
+Where did he disappear to!?
+[/message]
+
+[character id=200102 anim=fade show=false wait=false]
+[move id=601901 posx=0.5 sec=2 wait=true]
+
+[face id=601901 type=thoughts]
+[message name=Liddy charaid=601901 voice=03_008_0930]
+But…
+I saw him!!
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[face id=601901 type=default]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Camera zoom
+[camera type=zoom pivot=10 fov=0.8 sec=0.1 active=true wait=true]
+
+[face id=601901 type=angry]
+[message name=Liddy charaid=601901 voice=03_008_0940]
+I saw Arata…!!
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////// Scene transition (fade-out)
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=0.1]
+
+// Liddy disappears
+[character id=601901 anim=fade show=false wait=false]
+// Evil spirit appears
+[character id=602001 posx=0.5 anim=fade face=default show=true wait=true]
+
+
+// Black background
+[image type=bg id=000380 show=true]
+
+[visible show=true]
+
+[character id=100101 posx=0.8 anim=none face=painful show=true wait=false]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.1 active=false wait=true]
+
+/////////////////////////////////////////////////////////////// Scene transition (fade-in)
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=0.1]
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+///// Display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_0950]
+Wha…!? Nooo!!
+[/message]
+
+//// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// SE Fallhuman
+[sound type=se name=Fallhuman]
+[character id=100101 anim=ttob show=false wait=false]
+
+/////////////////////////////////////////////////////////////// Scene transition (fade-out)
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.1]
+
+[image type=bg id=000470 show=true]
+
+[character id=602001 anim=ttob show=false wait=false]
+
+[character id=200102 posx=0.15 anim=fade face=panic show=true wait=false]
+[character id=601901 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+/////////////////////////////////////////////////////////////// Scene transition (fade-in)
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.1]
+[delay sec=0.3]
+
+// Change to BGM20
+[sound type=bgm state=play name=Home]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[shake target=chara id=200102 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0960]
+Eh!? 
+Sayaka!? 
+What happened to you!?
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_0970]
+――Why? 
+Why did she collapse?
+Uuumm… It was just getting good.
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Liddy exits
+[character id=601901 anim=fade show=false wait=false]
+
+
+// Shina moves to the right
+[move id=200102 posx=0.74 sec=1.5 wait=true]
+
+[face id=200102 type=panic]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_0980]
+Mai-chaaan!! 
+Koji-saaaan!! 
+Please help Sayaka!!
+[/message]
+
+//////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Mai appears
+[character id=200302 posx=0.25 anim=fade face=default show=true wait=true]
+
+[face id=200302 type=surprise]
+
+//////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_0990]
+Yes…
+Huh!? She's foaming at the mouth…
+What's going on here…!?
+[/message]
+
+//////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Mai moves to the side
+[move id=200302 posx=0.49 sec=0.5 wait=true]
+
+
+// Koji fades in from the left
+[character id=601301 posx=0.24 anim=ltor face=confuse show=true wait=true]
+
+////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_1000]
+Is it anemia or something…?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_1010]
+No! 
+It might be something unique to Ludens…
+Could you carry her to the nap room…?
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_1020]
+G-Got it! 
+Let's move her, Sayaka…
+Are you ready?
+[/message]
+
+[face id=601301 type=confuse]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_1030]
+…Was that question directed at me?
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_008_1040]
+Of course the unconscious person can't answer!
+[/message]
+
+[face id=601301 type=confuse]
+
+[message name=Koji Toyama charaid=601301 voice=03_008_1050]
+…Alright! Don't get mad.
+I'll grab the left shoulder,
+You take the right, on three…
+[/message]
+
+//////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Koji and Mai exit
+
+[character id=200302 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+
+
+//-------------------------------------------------------------------------------
+
+// Shina moves
+[move id=200102 posx=0.24 sec=2.5 wait=true]
+
+// Wait to adjust for a few seconds
+[delay sec=1.0]
+
+// Glock and Liddy appear
+[character id=601201 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=601901 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Shina moves right to 0.75
+
+[face id=601201 type=thoughts]
+
+/////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=03_008_1060]
+…My apologies for the behavior of our part-time staff.
+Let's get back to the point.
+Where exactly did you see Mizunashi?
+[/message]
+
+[face id=601901 type=angry]
+
+[message name=Liddy charaid=601901 voice=03_008_1070]
+In the subway! His appearance was quite different,
+but I'm certain it was Arata!
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_1080]
+…That Mizunashi…
+Did he, by any chance, have white hair?
+[/message]
+
+[face id=601901 type=panic]
+
+[message name=Liddy charaid=601901 voice=03_008_1090]
+What!? You've seen him too, Shina?
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Glock, Liddy, and Shina exit
+[character id=601201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Iris appears in the center
+[character id=600601 posx=0.49 anim=fade face=painful show=true wait=true]
+
+///////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_1100]
+…That man you saw…
+isn't from this world.
+[/message]
+
+///////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Iris exits
+[character id=600601 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Liddy appears
+[character id=601901 posx=0.49 anim=fade face=painful show=true wait=true]
+
+[face id=601901 type=angry]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_1110]
+…Hmph! Is that Iris-sama's opinion?
+Her theory? Well, maybe she's right!
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601901 anim=fade show=false wait=true]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Iris appears in the center again
+[character id=600601 posx=0.49 anim=fade face=painful show=true wait=true]
+
+[face id=600601 type=painful]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_1120]
+No… I'm not all-powerful,
+but I do know this much.
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Iris exits
+[character id=600601 anim=fade show=false wait=true]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Liddy appears
+[character id=601901 posx=0.32 anim=fade face=painful show=true wait=true]
+
+[face id=601901 type=thoughts]
+
+////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_1130]
+…Haa. As someone from Enigma Corp,
+if Iris-sama says so, I have no choice but to believe her… even if I don't like it.
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Shina appears
+[character id=200102 posx=0.66 anim=fade face=painful show=true wait=true]
+
+[face id=200102 type=sad]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_1140]
+…Liddy, are you okay?
+Did that man do something to you?
+Maybe that's why you've been acting strange today...
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+// Screen shake
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+[face id=601901 type=angry]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_1150]
+…Don't say I'm acting strange!!
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_1160]
+…S-Sorry…
+[/message]
+
+// Shina exits
+[character id=601201 anim=fade show=false wait=false]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1170]
+…Arata told me.
+This world is just a pretty fiction that Iris designed.
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1180]
+No matter how hard we try,
+the outcome is the same,
+because it's all been "programmed" that way.
+[/message]
+
+//// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Glock, and Liddy return to their positions
+
+//-------------------------------------------------------------------------------
+// Conclusion
+
+[move id=601901 posx=0.49 sec=1 wait=false]
+[move id=601201 posx=0.24 sec=1 wait=false]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=03_008_1190]
+As much as I hate to admit it,
+you might be giving our chairman too much credit.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=03_008_1200]
+Iris is just one of many Luden businesspeople trying to navigate the rough waters.
+But she is indeed quite remarkable. And cute, too.
+[/message]
+
+///////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Glock, and Liddy exit
+[character id=601201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+
+Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Iris appears in the center
+[character id=600601 posx=0.49 anim=fade face=painful show=true wait=true]
+
+[face id=600601 type=default]
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Chairman Iris charaid=600601 voice=03_008_1210]
+…Glock.
+Thank you.
+[/message]
+
+///// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Iris exits
+[character id=600601 anim=fade show=false wait=true]
+
+// Switch to BGM23
+
+[sound type=bgm state=play name=TalkA]
+
+//-------------------------------------------------------------------------------
+// Ending
+
+[character id=601901 posx=0.32 anim=fade face=confuse show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+[face id=601901 type=default]
+
+/////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_1220]
+…Alright.
+Seems like I got a little too worked up earlier.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_1230]
+If you ever need to talk, feel free to reach out.
+Even a phone call is fine...
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1240]
+…Shina, you're really too kind.
+That's why you had those run-ins with the Aphesis cult back in the day.
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_008_1250]
+Ugh…
+Y-Yeah…
+[/message]
+
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+[face id=200102 type=default]
+
+[face id=601901 type=thoughts]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=03_008_1260]
+…Enigma Corp is still,
+after all,
+sponsored by the cult, you know.
+So, as long as you work with us…
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1270]
+You better not forget it's their money
+that's making your games possible!
+[/message]
+
+/////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+Liddy moves from 0.49 to 0.74
+[move id=601901 posx=0.24 sec=2.5 wait=false]
+
+[character id=601201 posx=0.74 anim=fade face=confuse show=true wait=true]
+
+[face id=601201 type=painful]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=03_008_1280]
+…As president, I've never forgotten that,
+and I won't.
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1290]
+Hmph, good.
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1300]
+Well then, I've got work this afternoon.
+I'm heading out. Bye!
+[/message]
+
+///// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Liddy moves
+[move id=601901 posx=0.24 sec=1 wait=false]
+
+// Wait for the specified number of seconds
+[delay sec=1.0]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+[message name=Chairman Iris charaid=600601 voice=03_008_1310]
+…Good work today.
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+[face id=601201 type=default]
+
+////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=03_008_1320]
+Good work, Liddy!
+[/message]
+
+[face id=601201 type=painful]
+
+[message name=President Glock charaid=601201 voice=03_008_1330]
+…You don't have to tell him, but
+…give my regards to Victor.
+[/message]
+
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=03_008_1340]
+――OK.
+[/message]
+
+////// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+[visible show=false]
+
+// Screen fade-out
+// No BGM
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+[sound type=bgm state=stop]
+[character id=600601 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+// Background 220 / Hospital Room
+[image type=bg id=000220 show=true]
+[fade type=in anim=simple sec=2]
+
+//-------------------------------------------------------------------------------
+
+[face id=100101 type=default]
+
+/// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_1350]
+Ugh… Hmmm…
+[/message]
+
+[character id=100101 posx=0.49 anim=btot face=default show=true wait=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_1360]
+Huh…?
+Where am I…?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_1370]
+How did I get here…?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_1380]
+…………
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_008_1390]
+Oh no, not this situation again…!?
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

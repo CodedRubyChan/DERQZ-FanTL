@@ -1,0 +1,967 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_32_01_s08
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000470]
+
+//////////////////////////////////////////////////////////////////////////// Display Akagi, Mai, and Sumika
+[character id=602601 posx=0.23 anim=none face=confuse show=true wait=false]
+[character id=200302 posx=0.49 anim=none face=default show=true wait=false]
+[character id=601101 posx=0.75 anim=none face=painful show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM24 - Serious Scene
+// Background 470 - Iris Corp. Development Room
+
+// Show text window
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0010]
+You two... This is completely unacceptable!
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0020]
+It's not my fault, Chief Sumika. It was all Mai's doing...
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0030]
+Oh, come on!  
+Stop making excuses!
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0040]
+Especially you, Akagi.  
+Submitting data with intentional bugs to the server—what were you thinking!?
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0050]
+And Mai! Downloading that data to fix it?  
+What a waste of time!
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0060]
+But, but, Mai said she could fix any bug, so...
+[/message]
+
+// Mai changes expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0070]
+And I did. Restoring from a backup wouldn't have demonstrated my skills.
+[/message]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0080]
+I... I can't believe this.  
+Please don't involve the company in your little competitions!
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0090]
+You're wasting time, creating unnecessary tasks...  
+This isn't what you should be doing during work hours!  
+At least do it on your break!
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=01_932_0100]
+But it was Mai who started it by showing off first!
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0110]
+And you're the one who escalated it!
+[/message]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0120]
+Stop calling your senior "you" like that.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0130]
+Oh, right...  
+Sorry.
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0140]
+Even if it's like this, Mai, Akagi is still your senior.
+[/message]
+
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0150]
+"Like this"!? 
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0160]
+*Sigh*...  
+Why does this always happen?  
+You two should be more honest with each other.
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=01_932_0170]
+What do you mean by "honest"?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=default]
+
+// Sumika changes expression
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0180]
+You know, they say that people who fight are really close.  
+You two weren't like this before.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0190]
+...No, we weren't.
+[/message]
+
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=01_932_0200]
+I could say the same thing!
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=01_932_0210]
+I can't take this anymore!  
+I'm going out for some fresh air!
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=01_932_0220]
+Or maybe I should just quit.  
+Being around Mai any longer will drive me crazy.
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0230]
+Hey, Akagi!
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=01_932_0240]
+Heh! Later!  
+I'm out of here!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+[character id=602601 anim=rtol show=false wait=true]
+
+// Show text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0250]
+Chief, just let her go.  
+She'll be back soon.
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0260]
+...Mai, you should reflect too.
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0270]
+...Yes.  
+I'm sorry.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////// Time passes
+[fade type=out anim=simple sec=0.5]
+[move id=200302 posx=0.4 wait=true]
+
+[face id=200302 type=default]
+
+// Turn off BGM
+[sound type=bgm state=stop]
+[move id=200302 posx=0.33 wait=false]
+[move id=601101 posx=0.66 wait=true]
+[fade type=in anim=simple sec=1]
+
+////////////////////////////////////////////////////////////////////////////////////// Time passes
+
+[delay sec=0.5]
+// Show text window again
+[visible show=true]
+
+[face id=601101 type=confuse]
+
+[visible show=true]
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0280]
+Hey, don't you think it's taking her too long?  
+Could Akagi really be quitting...?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0290]
+There's no way.  
+She's just embarrassed to come back after saying she'd quit.
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0300]
+...Wait.  
+But it's been over an hour.  
+Maybe it's a bit longer than usual.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0310]
+*Sigh*...  
+She really knows how to make us worry.
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0320]
+See?  
+I told you.
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0330]
+Told me what?
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0340]
+That you're worried about Akagi.  
+See?  
+You really do care about her.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////// Nova appears
+[character id=600901 posx=0.20 anim=ltor face=angry show=true wait=false]
+[move id=200302 posx=0.49 sec=0.5 wait=false]
+[move id=601101 posx=0.74 sec=0.5 wait=true]
+
+[delay sec=0.5]
+// Show text window again
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=01_932_0350]
+...Sorry to interrupt.
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_932_0360]
+Huh? Detective Nova?  
+What brings you here at this hour?  
+And why do you look so serious...?
+[/message]
+
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=01_932_0370]
+It's an emergency.  
+You all are coming with me.  
+Also, call Iris and Glock.
+[/message]
+
+// Sumika changes expression
+[face id=601101 type=confuse]
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0380]
+Wait a second.  
+What happened?
+[/message]
+
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=01_932_0390]
+It's Akagi...  
+She's in deep trouble.
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0400]
+What!?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////// Scene transition
+[fade type=out anim=simple sec=1]
+
+[character id=600901 anim=none show=false wait=false]
+[character id=200302 anim=none show=false wait=false]
+[character id=601101 anim=none show=false wait=true]
+
+[image type=bg id=000160 show=true]
+// Background 160 - Downtown at night
+
+[character id=602601 posx=0.48 anim=none face=thoughts show=true wait=true]
+
+// SFX: Crowd noise
+[sound type=se name=Panic]
+[fade type=in anim=simple sec=1]
+
+//////////////////////////////////////////////////////////////////////////////////////// Scene transition
+
+[delay sec=0.5]
+// Show text window again
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=01_932_0410]
+......
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=01_932_0420]
+Huh?  
+What's going on with this huge crowd...?
+[/message]
+
+// Speaker: Magician Girl?
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0430]
+I've been waiting for you!  
+Come on, darling, step this way!
+[/message]
+
+// Akagi changes expression
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0440]
+Huh?
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=01_932_0450]
+Why am I holding a gun...?  
+Is this a dream...?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// BGM17 - Fear scene
+[sound type=bgm state=play name=TownMapB]
+
+////////////////////////////////////////////////////////////////////////////////////////////////// Display G-Lusil
+[move id=602601 posx=0.31 sec=0.5 wait=false]
+[character id=500202 posx=0.66 anim=fade face=smile show=true wait=true]
+
+[delay sec=0.5]
+// Show text window again
+[visible show=true]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0460]
+Sorry, but this isn't a dream!  
+This is reality—tough, inescapable reality!
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////// Akagi shakes
+[shake target=chara id=602601 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+// Akagi changes expression
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0470]
+...What?!  
+Who are you!?
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0480]
+Oh, it's not about me!  
+It's you that everyone's interested in.
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0490]
+What is with this crowd...?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0500]
+Alright!  
+Now, let me introduce you all to Akagi!  
+She's a programmer at Iris Corp!
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0510]
+Amazing, right? Isn't she incredible?  
+Working for Iris Corp!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0520]
+But you know what's even more incredible?  
+She's actually completely useless!
+[/message]
+
+// Speaker: Crowd
+// Male Mob 03
+
+[message name=Crowd voice=01_932_0540]
+Hahaha!
+[/message]
+
+// Speaker: Crowd
+// Male Mob 04
+
+[message name=Crowd voice=01_932_0550]
+That's hilarious!
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=01_932_0560]
+...What?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0570]
+Totally incompetent!  
+I've never seen anyone as useless as you!
+[/message]
+
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0580]
+Wha-What are you talking about?  
+I'm not useless...!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0590]
+Are you sure?  
+Are you really sure about that?  
+You don't think you're completely useless?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0600]
+You always pick fights to get attention, right?
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0610]
+Th-That's not...
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0620]
+You interfere with important work, wasting your colleagues' and supervisors' time, just to get noticed.
+[/message]
+
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0630]
+N-No!  
+I just wanted Mai to acknowledge me...
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0640]
+Oh, here it is!  
+Akagi's one special skill—making excuses!
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0650]
+Ugh...
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0660]
+That's why Mai is tired of you!  
+Isn't that right?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0670]
+And Sumika too, I bet she's hoping you'd just quit already!
+[/message]
+
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0680]
+I...  
+Maybe you're right.  
+Maybe everyone does think that way...
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0690]
+So here's the deal, Akagi.  
+You're completely useless, but now you can finally be useful!
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0700]
+Useful...?  
+I can be useful...?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0710]
+Ladies and Gentlemen!  
+Thank you for waiting!
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0720]
+Now, Akagi will entertain you all with a game of Russian Roulette!
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0730]
+...Ah.
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0740]
+Come on, Akagi!  
+The only way a useless person like you can contribute is by using your life to make this show more exciting!
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=01_932_0750]
+Y-Yeah...  
+That's the only thing I can do...
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0760]
+See? Everyone's waiting!  
+Let's make it big and flashy!  
+Go out with a bang!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0770]
+*Boom-chika-boom!*
+[/message]
+
+// Speaker: Crowd
+// Male Mob 05
+
+[message name=Crowd voice=01_932_0780]
+Boom-chika-boom!
+[/message]
+
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=01_932_0790]
+...You're right.  
+This is the best thing I can do...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////// Akagi moves, Magician Girl disappears
+// Hide Magician Girl
+[character id=500202 anim=fade show=false wait=true]
+
+// Move Akagi
+[move id=602601 posx=0.48 sec=1 wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=01_932_0800]
+I'm sorry...  
+Chief Sumika...
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0810]
+Sorry... Mai...
+[/message]
+
+// Hide text window
+[visible show=false]
+
+// Zoom in camera
+[camera type=zoom pivot=4 fov=0.3 sec=5 active=true wait=true]
+
+// Turn off BGM
+[sound type=bgm state=stop]
+
+// Show text window again
+[visible show=true]
+
+// No character displayed - Mai
+[message name=Mai Toyama charaid=200302 voice=01_932_0820]
+Akagi!!!
+[/message]
+
+// Reset camera zoom
+[camera type=zoom sec=0.3 active=false wait=false]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////// Mai tackles Akagi
+// Display Mai off-screen
+[character id=200302 posx=1.2 anim=none face=angry show=true wait=true]
+// Move Mai to center of screen
+[move id=200302 posx=0.66 sec=0.05 wait=true]
+// Play tackle sound
+[sound type=se name=Charge]
+// Move Akagi to the left side of screen
+[move id=602601 posx=0.31 sec=0.1 wait=true]
+[shake target=chara id=602601 type=horizontal sec=1 pow=5 fade=false wait=false]
+
+// Show text window again
+[visible show=true]
+
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=01_932_0830]
+Ahh!  
+Mai!?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0840]
+Give me that gun!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////// Hide Akagi and Mai
+[character id=602601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////// Show Nova, Iris, and Magician Girl
+[character id=600901 posx=0.20 anim=fade face=smile show=true wait=false]
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.74 anim=fade face=angry show=true wait=true]
+
+[delay sec=0.5]
+// Show text window again
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=01_932_0850]
+Hahaha!  
+That was close!  
+Just in the nick of time!
+[/message]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0860]
+Oh come on!  
+We were so close!
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_932_0870]
+You're Lucil, aren't you...?  
+Why are you...?
+[/message]
+
+// BGM13
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+[face id=500202 type=painful]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0880]
+Ugh, the most annoying person just had to show up...
+[/message]
+
+// Magician Girl changes expression
+[face id=500202 type=thoughts]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0890]
+I'm at a disadvantage here...  
+Maybe I should just run...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////// Hide Nova and Iris
+[character id=600901 anim=fade sec=0.3 show=false wait=false]
+[character id=600601 anim=fade sec=0.3 show=false wait=true]
+
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////// Show Mai
+[character id=200302 posx=0.24 anim=fade sec=0.3 face=angry show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0900]
+You think you can just run away without even apologizing...?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Magician Girl? charaid=500202 voice=01_932_0910]
+Hehe♪ Yes, I do!  
+Maybe my backup will arrive too?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////// Lilith briefly appears, and Lucil disappears with her
+[character id=500102 posx=0.9 anim=ltor sec=0.1 face=default show=true wait=true]
+[character id=500202 anim=ltor sec=0.1 show=false wait=false]
+[delay sec=0.05]
+[character id=500102 anim=ltor sec=0.1 show=false wait=true]
+
+// Display Lilith Yamamura's portrait, no dialogue
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////// Display Akagi, Mai, Nova, and Iris
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.05]
+
+[character id=602601 posx=0.18 anim=fade face=painful show=true wait=false]
+[character id=200302 posx=0.39 anim=fade face=surprise show=true wait=false]
+[character id=600901 posx=0.55 anim=fade face=smile show=true wait=false]
+[character id=600601 posx=0.79 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+// Show text window again
+[visible show=true]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0920]
+What!?  
+She vanished in an instant!
+[/message]
+
+[message name=Nova charaid=600901 voice=01_932_0930]
+Damn, we've been played!  
+Looks like she had backup nearby...
+Iris, do we go after her?
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_932_0940]
+Yes...!  
+You guys head back first.  
+Nova, Glock, and I will investigate.
+[/message]
+
+[message name=Akagi charaid=602601 voice=01_932_0950]
+President... Be careful...  
+Mai...  
+I'm sorry...
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=01_932_0960]
+It's okay.  
+I'm just glad you're safe.  
+Come on, let's head back together.
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=01_932_0970]
+...Yeah.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////////// Scene transition
+[fade type=out anim=simple sec=0.5]
+
+[character id=602601 anim=none show=false wait=false]
+[character id=200302 anim=none show=false wait=false]
+[character id=600901 anim=none show=false wait=false]
+[character id=600601 anim=none show=false wait=true]
+
+[image type=bg id=000140 show=true]
+
+// SFX: Crowd noise
+[sound type=se name=Panic]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+
+// Fade out, fade in
+// Background: 140 - Station Front at Night
+//////////////////////////////////////////////////////////////////////////////////////////////// Scene transition
+
+[delay sec=0.5]
+
+[character id=600601 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600901 posx=0.45 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.75 anim=fade face=angry show=true wait=true]
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+// Iris changes expression
+[face id=600601 type=painful]
+[message name=Iris President charaid=600601 voice=01_932_0980]
+We can't catch up...  
+Look over there.
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=01_932_0990]
+Well, well... A murder near the station, huh?
+[/message]
+
+[message name=Glock President charaid=601201 voice=01_932_1000]
+Th-They killed all those people as they passed by...  
+How terrifying...
+[/message]
+
+[message name=Iris President charaid=600601 voice=01_932_1010]
+Ugh...
+[/message]
+
+// Iris changes expression
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=01_932_1020]
+Lucil...  
+Why...?
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//

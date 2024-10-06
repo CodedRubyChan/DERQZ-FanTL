@@ -1,0 +1,165 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_14_03_012
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Strain Area
+// Background: Dungeon remains
+// BGM16
+
+[character id=100103 posx=0.33 anim=ltor face=surprise show=true wait=true]
+
+[delay sec=0.3]
+
+// Sayaka changes expression
+[face id=100103 type=smile]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_014_0010]
+Mai-san!! It's really you this time!!
+[/message]
+
+[character id=200301 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0020]
+You're being dramatic...
+I can't die until I meet Rottie.
+[/message]
+
+[face id=200301 type=painful]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0030]
+I may sound tough, but...
+I'm almost at my limit running away from those monsters...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_014_0040]
+Don't worry!!
+Stay with me!!
+I'll protect you!
+[/message]
+
+[face id=200301 type=sad]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0050]
+...Just in case, should I call my sister?
+We might be considered missing soon...
+[/message]
+
+[face id=100103 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_014_0060]
+Don't say such unlucky things so casually!
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_014_0070]
+Besides, there's no cell signal down here!
+[/message]
+
+[face id=200301 type=thoughts]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0080]
+That's true... but thanks to you, we're in this mess!
+[/message]
+
+[face id=100103 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_014_0090]
+I-I'm sorry...!!
+Please don't kill me!!
+[/message]
+[face id=100103 type=default]
+[face id=200301 type=smile]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0100]
+Just don't trust everything Liliana says.
+Now, let's get moving!
+I am counting on you...!
+[/message]
+
+[face id=200301 type=default]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0110]
+Oh, by the way, while I was waiting for you,
+I found this strange weapon.
+[/message]
+
+[face id=200301 type=default]
+
+[message name=Mai Toyama charaid=200301 voice=03_014_0120]
+I can't seem to use it myself,
+so would you take it?
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=03_014_0130]
+Thanks!
+I'll take good care of it!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

@@ -1,0 +1,381 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+
+//adv_07_03_005
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=1]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//BGM25 / For comedy scenes
+//Background 470 / Iris Corporation - Development Room
+
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=false]
+[character id=601301 posx=0.32 anim=fade face=default show=true wait=true]
+
+[face id=100101 type=surprise]
+
+
+//////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0010]
+Huh?
+You seem awfully restless today.
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0020]
+Ah, it's you, part-timer! Today, you see…
+One of my fans is coming… And get this, it's a bigwig from Enigma Corp!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0030]
+Wow! Having a fan visit is amazing…
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0040]
+Sorry to ask suddenly, but,
+Enigma Corp is a related company of ours, right?
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=default]
+
+// Koji expression change
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0050]
+That's right.
+You young ones better remember that!
+I'll explain just in case!
+[/message]
+
+[face id=601301 type=thoughts]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0060]
+Enigma is the company that released and operates "World's Odyssey."
+It's the predecessor to "End to Odyssey."
+[/message]
+
+// Koji expression change
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0070]
+By the way, the president, Director Shina, and Chief Sumika
+all used to work there.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0080]
+Wow! So many people from Enigma ended up at our company…
+Did someone set that up?
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0090]
+Nah, it wasn't a poaching deal.
+They just thought it'd be more efficient to go independent
+to create "End to Odyssey."
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0100]
+And the director still managing the "World's Odyssey" series over there?
+They're a huge fan of mine!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0110]
+A director! Just like Shina, huh?
+So you're admired by some pretty important people!
+[/message]
+
+[face id=601301 type=painful]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0120]
+Yeah, but my own daughter never compliments my drawings…
+[/message]
+
+// Koji expression change
+[face id=601301 type=default]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0130]
+Oh, right… I just remembered…
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0140]
+Huh?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0150]
+Ah, um… Your daughter, Mai Toyama…?
+She hasn't come to work yet today.
+[/message]
+
+// Koji expression change
+[face id=601301 type=thoughts]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0160]
+Yeah, sorry, but we're living separately right now…
+So I really wouldn't know.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0170]
+Oh, I see…
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0180]
+By the way, it's actually pretty rare these days
+for a parent and child to work at the same company.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0190]
+Isn't that the case for Ms. Yamamura as well?
+[/message]
+
+[face id=601301 type=default]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0200]
+Ah, yeah, she's the hospital director's daughter.
+Now that you mention it, I guess so!
+[/message]
+
+/// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.3]
+
+// Finally, Mai arrives
+
+[character id=200302 posx=0.19 anim=ltor face=default show=true wait=false]
+[move id=601301 posx=0.44 wait=false]
+[move id=100101 posx=0.69 wait=true]
+
+[face id=200302 type=default]
+
+
+//////////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0210]
+Good morning!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0220]
+Ah, you just got here!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=default]
+// Mai expression change
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0230]
+Nova-san guided me here… Took the long way around.
+But it's understandable given what happened yesterday…
+[/message]
+
+// Mai expression change
+[face id=200302 type=default]
+// Sayaka expression change
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0240]
+I was worried since you didn't contact us!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=default]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0250]
+Huh?
+I emailed Dad that I'd be late today…
+[/message]
+
+[face id=601301 type=confuse]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0260]
+Wait, I didn't notice…
+You barely ever contact me, so…
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=surprise]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0270]
+You always brag about getting emails from Sanae!
+But today, I sent one myself!
+[/message]
+
+[face id=601301 type=confuse]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0280]
+Don't sulk! Sanae's emails are rarer
+since she lives with my ex-wife…
+[/message]
+
+[face id=200302 type=sad]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0290]
+What's that supposed to mean?
+Honestly, you're such a hopeless father…
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0300 lipsync=false]
+(Is Mai-san… not on good terms with her father?)
+[/message]
+
+/// Mai is startled
+[shake target=chara id=200302 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Mai expression change
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0310]
+Yeah! Ever since Mom got mad and left, we've been living separately.
+Then I moved out on my own after that.
+Sayaka, you shouldn't trust him too much either.
+[/message]
+
+// Mai expression change
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0320]
+He only has this job at Iris Corporation because I recommended him.
+And he's spoiled, despite not working much…
+[/message]
+
+// Mai expression change
+[face id=200302 type=default]
+
+[face id=601301 type=angry]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0330]
+You… Unlike that part-timer, you're tearing me apart with no hesitation…!
+[/message]
+
+
+/// Koji is startled
+[shake target=chara id=601301 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=601301 type=angry]
+
+[message name=Koji Toyama charaid=601301 voice=03_007_0340]
+Before you joined the company, you weren't this prickly
+when you used to hang out with your friends!
+[/message]
+
+
+/// Mai is startled
+[shake target=chara id=200302 type=vertical sec=0.15 pow=20 fade=false wait=false]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_007_0350]
+Before I started working? I've already forgotten all about that!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_007_0360 lipsync=false]
+(Not only does she have a bad relationship with Akagi-san,
+but with her father too…!)
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+/////////////////////////// Stop the currently playing sound effects
+[sound type=se state=stop]
+
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

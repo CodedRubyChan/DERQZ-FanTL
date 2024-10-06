@@ -1,0 +1,123 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_13_01_009
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=Chapter1_4_5]
+
+// Display specified background
+[image type=bg id=000240]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM03 / For VR Dungeon scenes
+// Background240 / VR Game
+
+//////////////////////////////////////////////////////////////////////// Show Sayaka
+[character id=100103 posx=0.49 anim=rtol face=smile show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_013_0010]
+I-it feels...  
+pretty good to defeat enemies...!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_013_0020 icon=true]
+Huh? How is she this good  
+at fighting on her first playthrough...?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_013_0030 icon=true]
+See, Sumika? I told you she's a natural debugger!  
+Let's have her test *that* feature while we're at it!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_013_0040 icon=true]
+Got it. Hey, Sayaka,  
+there's nothing wrong with enjoying the feeling  
+of beating enemies.
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_013_0050 icon=true]
+Do you see the "gauge" filling up right now?
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_013_0060]
+...You mean this blue, horizontal bar on the screen?
+[/message]
+
+// UI design needs to be confirmed before locking in the line
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_013_0070 icon=true]
+Exactly!  
+When the gauge is full, you can transform!
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_013_0080 icon=true]
+The more you fill it, the stronger your transformation  
+will be, but... that feature isn't in this build.  
+So for now, go ahead and transform right away!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Vanquish-style key assignment
+// The player is semi-forced to transform (Sayaka cannot move until transformed)
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

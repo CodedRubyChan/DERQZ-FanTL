@@ -1,0 +1,239 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_15_01_011
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=Chapter1_4_5]
+
+// Display specified background
+[image type=bg id=000240]
+
+// Show black overlay background
+[image type=black show=true]
+
+////////////////////////////////////////////////////////////////////////// Celica appears
+[character id=200901 posx=0.32 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM03 / VR Dungeon Theme
+// Background240 / VR Game
+
+[character id=100103 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0010]
+Phew, finally caught up to you,  
+Celica!  
+You've got some serious skill to get this far so quickly.
+[/message]
+
+[message name=Celica charaid=200901 voice=01_015_0020]
+........
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0030]
+And you look a little different from our poster.  
+Could that be Celica's Vanquish Style...?
+[/message]
+
+[message name=Celica charaid=200901 voice=01_015_0040]
+........
+[/message]
+
+// Stop BGM. Start eerie scene
+
+[sound type=bgm state=stop]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0050]
+Uh...  
+Did I upset her? Maybe Celica doesn't like me...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0060]
+Shina, Sumika-san!  
+Celica's not talking...  
+What should I do next?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_015_0070 icon=true]
+---●■■▲
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0080]
+Huh?  
+I didn't quite catch that...
+[/message]
+
+[message name=Celica charaid=200901 voice=01_015_0090]
+...Hehe
+[/message]
+
+[face id=100103 type=default]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0100]
+Oh, finally, a reaction...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=1]
+
+// Play broken sound effect
+[sound type=se name=Broken]
+
+//////////////////////////////////////////////////////// Celica starts shaking
+[shake target=chara id=200901 type=random sec=10 pow=50 fade=true wait=false]
+
+// Zoom camera
+[camera type=zoom pivot=9 fov=0.55 sec=0.1 active=true wait=false]
+
+// Sayaka changes expression
+[face id=100103 type=panic]
+
+// Re-display text window
+[visible show=true]
+[message name=Celica charaid=200901 voice=01_015_0110]
+...Heeahhahaha NYA gyggyyeh!!!  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[/message]
+
+// 【Choice】
+// 1: Be careful! Something's wrong...!
+// Only option
+
+[select]
+[link text="Be careful! Something's wrong...!" label=evilspirit]
+[/select]
+
+// Celica disappears. She transforms into an evil spirit.
+
+:evilspirit
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out to black
+[fade type=out anim=simple sec=0.3]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+// Reset camera zoom
+[camera type=zoom sec=0.05 active=false wait=false]
+
+//////////////////////////////// Play "Metamorphosis" SE
+[sound type=se name=Metamorphosis]
+
+// BGM27 / Horror Theme
+// Play specified BGM
+[sound type=bgm state=play name=TalkE]
+// Background250 / VR Game - Evil Spirit Version
+// Display specified background
+[image type=bg id=000250 show=true fade=false wait=false]
+
+[character id=200901 anim=none show=false wait=false]
+[character id=602001 posx=0.33 anim=none face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Fade back in
+[fade type=in anim=simple sec=0.3]
+
+[delay sec=1]
+
+// Re-display text window
+[visible show=true]
+// Speaker: ???
+[face id=602001 type=default]
+
+[message name=??? charaid=602001 voice=01_015_0120]
+!!TakiteinusidaWotsuiA  
+NetaeAttoya
+[/message]
+ //01_015_0130 ,01_015_0140 combined voice clips
+
+// "I've finally outwitted them!!"  
+// "I've waited so long to meet you"
+
+/////////////////////////////////////////////////////////////////////////////////// Sayaka starts shaking
+[shake target=chara id=100103 type=horizontal sec=0.3 pow=10 fade=false wait=false]
+
+[face id=100103 type=painful]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_015_0150]
+H-Huh!?
+[/message]
+
+// Sayaka's rationality drops to zero
+// Rationality Zero tutorial starts
+
+// Auto-revive continues for Sayaka
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+[character id=100103 anim=fade show=false wait=false]
+[character id=602001 anim=fade show=false wait=false]
+
+// Hide black overlay background
+[image type=black show=false]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

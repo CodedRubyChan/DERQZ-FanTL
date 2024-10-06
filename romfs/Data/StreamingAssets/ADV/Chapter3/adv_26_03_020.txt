@@ -1,0 +1,113 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+//adv_26_03_020
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+[character id=601701 posx=0.32 anim=none face=default show=true wait=true]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+//BGM19 / Subway
+//Background580 / Subway
+
+[character id=100105 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=03_026_0010]
+I never thought I'd be chatting with you like this, day after day.
+[/message]
+
+[face id=601701 type=thoughts]
+
+// Snark changes expression
+[face id=601701 type=confuse]
+
+[message name=Snark charaid=601701 voice=03_026_0020]
+...Oh? It seems you've acquired some impressive power,
+though it's borrowed...
+[/message]
+
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=03_026_0030]
+Hehe, isn't it great...?
+[/message]
+
+[face id=601706 type=default]
+
+[message name=Snark charaid=601701 voice=03_026_0040]
+However, in your current state, don't use that power on anyone
+other than your intended target. It's still too soon.
+[/message]
+
+// Snark changes expression
+[face id=601701 type=painful]
+
+// Sayaka is surprised
+[shake target=chara id=100105 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=03_026_0050]
+Got it, I'll save the fun for later...!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+/////////////////////////// Stop any SE playing
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

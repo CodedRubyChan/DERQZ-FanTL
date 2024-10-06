@@ -1,0 +1,190 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+
+//adv_24_02_016
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=1.5]
+
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=true]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified time
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Background: Remain in the dungeon
+// BGM05
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0010]
+Hah, hah... 
+Have you given up!?
+[/message]
+
+// No character standing image
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[message voice=02_024_0020]
+...Guh, g-gah...
+[/message]
+
+
+// Screen flash
+
+[move id=100101 posx=0.32 wait=false]
+
+[character id=200201 posx=0.66 anim=fade face=painful show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_024_0030]
+Ah... ah...
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0040]
+M-Miss Yamamura!? 
+Where did you come from...!
+[/message]
+
+[face id=200201 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_024_0050]
+Th-this... 
+where...?
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0060]
+Uhh... this place is called the Strain Area... 
+but I don't know the details myself...
+[/message]
+
+[face id=200201 type=sad]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_024_0070]
+Am I... alive...? 
+Is Shina... safe?
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0080]
+Of course, she's fine...! 
+It wouldn't be wrong to say 
+it's all thanks to you, Miss Yamamura!
+[/message]
+
+[face id=200201 type=painful]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_024_0090]
+...I want to get out of here quickly... 
+What is this...?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0100]
+Huh, what's that scary-looking weapon you have? 
+But it looks like something I could use really well...! 
+Where did you get that...?
+[/message]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_024_0110]
+It's a catalyst for transformation...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0120]
+So, you're not going to use it anymore!?
+[/message]
+
+[face id=200201 type=painful]
+
+[message name=Yurisa Yamamura charaid=200201 voice=02_024_0130]
+No... I don't need it anymore. 
+You can have it... use it.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0140]
+Th-thanks!! 
+I'll equip it later!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_024_0150 lipsync=false]
+(Miss Yamamura looks like she's in really bad shape... 
+We need to escape quickly...!)
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop currently playing sound effect
+[sound type=se state=stop]
+
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified time
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

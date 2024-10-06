@@ -1,0 +1,295 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_05_03_004
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Arriving at Iris Corporation
+// BGM24 / Workplace Scene
+// Background 470 / Iris Corporation - Development Room
+
+[character id=600901 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+///////// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=03_005_0010]
+Phew...
+We managed to get to work in one piece.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_005_0020]
+Thanks, Nova, you really saved us!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0030]
+Thank you!
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_005_0040]
+If you're gonna thank anyone, thank my boss, Lady Iris!
+Kihihi!
+[/message]
+
+[face id=100101 type=default]
+
+// Shina changes expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_005_0050]
+Do you want to go see Iris?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+// Nova changes expression
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=03_005_0060]
+Nah, I see her all the time.
+I've got work outside—can't trust the cops alone.
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_005_0070]
+Take care!
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_005_0080]
+You got it!
+[/message]
+
+// Shina changes expression
+[face id=200102 type=default]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Nova OFF
+
+[character id=600901 anim=rtol show=false wait=false]
+
+[move id=200102 posx=0.33 wait=false]
+[move id=100101 posx=0.66 wait=true]
+
+//// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0090]
+Uh, so today... Director Shina!
+Yamamura isn't here, right?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_005_0100]
+That's right. Sorry, but can you manage on your own?
+Just keep working on debugging like you were doing yesterday.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=03_005_0110]
+I'll go say hi to Iris and get ready for today's visitors.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0120]
+Got it.
+Good luck out there!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina OFF
+
+[character id=200102 anim=rtol show=false wait=true]
+[move id=100101 posx=0.49 wait=false]
+
+[face id=100101 type=thoughts]
+
+//// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0130]
+Phew...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0140]
+...
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// [Choice]
+// 1: Still thinking about yourself?
+
+[select]
+[link text="Still thinking about yourself?" label=worry]
+[/select]
+
+// Only option
+
+:worry
+[face id=100101 type=thoughts]
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0150]
+...Well, yeah.
+Who was I born from?
+Whose memories and feelings do I carry?
+[/message]
+
+// [Choice]
+// 1: Maybe someone named "Ripuka"?
+// 2: Let's keep investigating without rushing
+
+[select]
+[link text="Maybe someone named "Ripuka"? " label=refusal]
+[link text="Let's keep investigating without rushing" label=survey]
+[/select]
+
+// Option 1
+
+:refusal
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0160]
+...I don't know why, but I have a strong aversion to that name.
+Weird, huh?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0170]
+I've checked, but she isn't a character from "World's Odyssey" or "End to Odyssey."
+So, who is she...?
+[/message]
+[goto label=work]
+
+// Option 2
+
+:survey
+
+///// Display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0180]
+...You're right...
+[/message]
+[goto label=work]
+
+// [Merged Path]
+
+:work
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0190]
+Alright, back to work for today.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_005_0200 lipsync=false]
+(Doesn't matter if I'm a Luden or whatever,
+I still enjoy working...
+I gotta do my best for Yamamura's sake too!)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

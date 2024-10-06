@@ -1,0 +1,407 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_09_01_005
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000470]
+
+////////////////////////////////////////////////////////////////////////////// Mai and Sayaka appear
+[character id=200302 posx=0.32 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=confuse show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=1]
+
+// BGM25 / For comedy scenes
+// Background470 / Iris Corp - Development Room
+
+// Display text window
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=01_009_0010]
+.........
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+
+// Keyboard typing sound
+[sound type=se name=Keyboard]
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+// Re-display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0020]
+.........Um.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0030]
+.................
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=sad]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0040]
+...Um.  
+...I mean...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+/////////////////////////////////////////////////////////////////////////// Akagi appears
+[character id=602601 posx=0.23 anim=ltor face=default show=true wait=false]
+[move id=200302 posx=0.49 wait=false sec=0.5]
+[move id=100101 posx=0.74 wait=false sec=0.5]
+
+// Speaker: Sharp-eyed female employee
+[message name=Sharp-eyed female employee charaid=602601 voice=01_009_0050]
+...  
+Hey, you've been called for a while now,  
+Mai-san...!
+[/message]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0060]
+Haa...  
+What is it,  
+Akagi?
+[/message]
+
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=01_009_0070]
+...It's not me…!  
+Look behind you,  
+Behind you—!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0080]
+...Hello.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0090]
+Oh… sorry.  
+You're the new hire, right?
+[/message]
+
+// Change Akagi's expression
+[face id=602601 type=default]
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0100]
+...Y-yes!!!  
+Uh, well, I was told by the president  
+to get a job from Mai Toyama and I…
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0110]
+What's your name?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0120]
+…Huh!?  
+Oh, sorry! I forgot to introduce myself!  
+I-I'm Sayaka Hiwatari!!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0130]
+I see.  
+Well, Sayaka, I'm not in any particular need of help right now.  
+Why don't you try someone else? …That's all.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0140]
+Wha…  
+...  
+...No way!
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=01_009_0150]
+Oh wow! Mai-san's cold attitude strikes again.  
+You poor thing…? Being told to get work from such a  
+personality-defective woman, I truly feel for you!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0160 lipsync=false]
+(She doesn't sound like she actually feels sorry for me,  
+and honestly, I don't really want to get involved with her either…!)
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=01_009_0170]
+Well…  
+The president may have said that,  
+but I don't need anything right now—
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0180]
+—Actually, if I had to say,  
+I'd say I'm bothered by the poor work of the woman next to me.
+[/message]
+
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=01_009_0190]
+What was that!?  
+Is that how you speak to a senior colleague who's two years above you!?  
+You're just like your father—completely shameless!
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0200]
+Huh?  
+Can you not bring “him” up right now!?  
+You have no sense of decorum, senior-in-name-only!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0210 lipsync=false]
+(They're both a mess...  
+Aren't they…?)
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////// Sumika appears
+[character id=601101 posx=0.19 anim=ltor face=confuse show=true wait=false]
+////////////////////////////////////////////////////// Move Akagi, Mai, and Sayaka
+[move id=602601 posx=0.38 sec=0.5 wait=false]
+[move id=200302 posx=0.59 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=true]
+
+// Talented female employee
+[message name=Talented female employee charaid=601101 voice=01_009_0220]
+You two—  
+Yet again…  
+Can you please refrain from saying things that scare the new hires away?
+[/message]
+
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=01_009_0230]
+Oh, sorryyy  
+Chief Programmer Sumika~~♪
+[/message]
+
+[face id=601101 type=angry]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_009_0240]
+Ugh, don't suddenly act all cutesy…!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=01_009_0250]
+No, really, I'm thankful you're here, Chief.  
+While you're at it, can you assign some work to the new hire, Sayaka?
+[/message]
+
+// Change Sumika's expression
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_009_0260]
+…Did you hear that, Sayaka-chan?  
+This is probably a part of our company's unique culture—  
+“Use your boss as a tool”!
+[/message]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_009_0270]
+And... nice to meet you.  
+I'm Sumika Tokiwa.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0280]
+I'm… Sayaka… Hiwatari...
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_009_0290]
+Oh! What a coincidence.  
+Sayaka and Sumika sound pretty similar!
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=01_009_0300]
+Well, now that we're connected by fate…  
+Come on, Sayaka-chan,  
+Follow me next.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0310]
+Okay…  
+(I wonder if the president foresaw this outcome…)
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0320]
+.........
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+////////////////////////////// Hide Sumika and Sayaka
+[character id=100101 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////// Fade out screen
+[fade type=out anim=simple sec=0.5]
+
+// Change Akagi's expression
+[face id=602601 type=default]
+// Change Mai's expression
+[face id=200302 type=default]
+
+////////////////////////////// Move Akagi and Mai
+[move id=602601 posx=0.31 sec=0.1 wait=false]
+[move id=200302 posx=0.66 sec=0.1 wait=true]
+// Wait for specified seconds
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////////////// Fade in screen
+[fade type=in anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Change Mai's expression
+[face id=200302 type=smile]
+// Change Akagi's expression
+[face id=602601 type=smile]
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Re-display text window
+[visible show=true]
+// Speaker: Mai & Akagi
+[message name=Mai & Akagi voice=01_009_0330]
+Heheh
+[/message]
+// Combined voice lines from 01_009_0340 and 01_009_0350
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////// Fade out screen
+[fade type=out anim=simple sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Hide only Akagi and Mai
+[character id=200302 anim=none show=false wait=false]
+[character id=602601 anim=none show=false wait=true]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Show Sayaka
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=true]
+
+////////////////////////////////////////////////////////////////////////////////// Fade in screen
+[fade type=in anim=simple sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_009_0360 lipsync=false]
+(Why are they waving so happily at me?  
+Are those two actually close!?  
+I don't get it…!!)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

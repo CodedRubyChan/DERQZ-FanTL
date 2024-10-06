@@ -1,0 +1,746 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_07_01_003
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to camera for ADV
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play BGM with specified name
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000060]
+
+// Display black background
+[image type=black show=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=1]
+
+// BGM23 / For peaceful scenes
+// Background60 / Sako City Main Street
+
+// Display text window
+[visible show=true]
+[message]
+—Time: Just before noon
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Characters appear
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=false]
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0010]
+Ah! I'm gonna be late for work again…
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0020]
+So, Sayaka, I want to get in as quickly as possible,  
+so let's go in one go… OK? You good with that?  
+This is where I work, Iris Corporation.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0030]
+We've finally reached the sacred ground…  
+It's such an honor…!  
+Yeah, I'm ready! Let's go!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide background
+[image type=bg id=000060 show=false sec=0.5 fade=true]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0040]
+You're exaggerating! You'll be coming here every day.  
+Here, this is your security card.  
+Try scanning it.
+[/message]
+
+[sound type=se name=Cardkey]
+
+// Sayaka vibrates
+[shake target=chara id=100101 type=horizontal sec=0.5 pow=2 fade=false wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0050]
+What is this... Whoa, the door opened!?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0060]
+Get used to it quickly, this is how things work here.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+[delay sec=0.5]
+
+// BGM24 / For workplace scenes
+[sound type=bgm state=play name=TalkB]
+// Background470 / Iris Corp - Development Room
+[image type=bg id=000470 show=true fade=true]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0070]
+We've arrived, Sayaka.  
+First, take a look at this!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Move Shina and Sayaka
+[move id=200102 posx=0.19 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=true]
+
+// Wait for specified seconds
+[delay sec=0.1]
+
+// Display cut-in photo of Arata Mizunashi
+[cutin id=000002 type=fade sec=0.5 show=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0080]
+There's a photo displayed on the floor…  
+A photo... Could this be Arata Mizunashi?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0090]
+Yes.  
+An honorary member of our company!  
+…Although he's no longer here!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0100]
+?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide cut-in photo of Arata Mizunashi
+[cutin id=000002 type=fade sec=0.5 show=false]
+
+// Move Shina and Sayaka
+[move id=200102 posx=0.32 sec=0.5 wait=false]
+[move id=100101 posx=0.66 sec=0.5 wait=true]
+
+// Re-display text window
+[visible show=true]
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0110]
+Come on, let's go inside.  
+…Good morning, everyone!
+[/message]
+
+// Shake screen to match "Good morning!"
+[shake type=horizontal sec=1.5 pow=13 fade=true wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+// No character sprite
+[message voice=01_007_0120]
+Good morning!
+[/message]
+// 01_007_0130, 01_007_0140, 01_007_0150, 01_007_0160 are synthesized voices
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0170]
+Ugh... whoa...!
+[/message]
+
+// Screen fades to black
+[visible show=false]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide Sayaka sprite
+// Fade back in
+[fade type=out anim=simple sec=1.5]
+
+[character id=100101 anim=rtol show=false wait=false]
+[character id=200102 anim=rtol show=false wait=true]
+
+[fade type=in anim=simple sec=2]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Speaker: Sharp-eyed female employee
+// @Akagi
+
+[visible show=true]
+[message name=Sharp-eyed female employee charaid=602601 voice=01_007_0180]
+Huh… who's that girl?  
+She's just standing there, lost.
+[/message]
+
+// Speaker: Young and cool female employee
+// @Mai Toyama
+
+[message name=Young and cool female employee charaid=200302 voice=01_007_0190]
+Probably the rumored new hire.  
+Now get back to work.  
+We're already behind schedule.
+[/message]
+
+// Speaker: Sharp-eyed female employee
+// @Akagi
+
+[message name=Sharp-eyed female employee charaid=602601 voice=01_007_0200]
+Ugh, always nagging!  
+I hope that newbie doesn't end up in your team,  
+that'd be just too sad.
+[/message]
+
+// Speaker: Young and cool female employee
+// @Mai Toyama
+
+[message name=Young and cool female employee charaid=200302 voice=01_007_0210]
+—Actually,  
+I'd love for them to trade you for her.
+[/message]
+
+// Speaker: Sharp-eyed female employee
+// @Akagi
+
+[message name=Sharp-eyed female employee charaid=602601 voice=01_007_0220]
+Tch!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over 1 second
+[fade type=out anim=simple sec=1]
+[character id=601301 posx=0.27 anim=none face=default show=true wait=false]
+[character id=601101 posx=0.66 anim=none face=default show=true wait=true]
+[fade type=in anim=simple sec=1]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Fade in
+// With sprites
+
+[visible show=true]
+
+// Speaker: Talented female employee
+[message name=Talented female employee charaid=601101 voice=01_007_0230]
+Kouji-san,  
+the design data for DLC Chapter 2, ID 210 MAP.
+[/message]
+
+// Speaker: Talented female employee
+[face id=601101 type=default]
+
+[message name=Talented female employee charaid=601101 voice=01_007_0240]
+The request for additional artwork,  
+I believe you've received it,  
+could you start outsourcing that soon?
+[/message]
+
+// Speaker: Lazy male employee
+// Change Kouji's expression
+[face id=601301 type=confuse]
+[message name=Lazy male employee charaid=601301 voice=01_007_0250]
+Oh, come on! More work!?  
+Are we really using that much art for just Chapter 2?  
+And I haven't even heard anything about this!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Change Kouji's expression
+[face id=601301 type=default]
+
+[move id=601301 posx=0.19 sec=0.5 wait=false]
+[move id=601101 posx=0.49 sec=0.5 wait=false]
+
+[character id=200102 posx=0.74 anim=rtol face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0260]
+Hey there! Good job, everyone!
+[/message]
+
+// Speaker: Talented female employee
+[face id=601101 type=default]
+
+[message name=Talented female employee charaid=601101 voice=01_007_0270]
+Oh, there she is! The always-late director!  
+Perfect timing, Shina!  
+Have you explained the spec changes to the design team yet?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0280]
+Already done! Kouji-san!  
+Check your email folder from around 2 p.m. yesterday.
+[/message]
+
+[face id=601301 type=confuse]
+
+[message name=Kouji Toyama charaid=601301 voice=01_007_0290]
+…Huh? The only thing I got around that time  
+was the request to change Claire's gun color…  
+Wait, there's an attachment!?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0300]
+Yep, there's a lot written in that text.  
+That's the main thing. Adjust the schedule and materials.  
+We'll focus resources on Chapter 2, and manage Chapter 3 separately.
+[/message]
+
+[face id=601301 type=painful]
+
+[message name=Kouji Toyama charaid=601301 voice=01_007_0310]
+...Seriously...?  
+Alright, I'll get started today.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0320]
+Great! I'm counting on you!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide Sumika, Kouji, and Shina
+[character id=601301 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+// Show Sayaka
+[character id=100101 posx=0.49 anim=fade face=sad show=true wait=true]
+
+// Re-display text window
+[visible show=true]
+
+// No sprite for Sayaka
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0330]
+…………
+[/message]
+
+// Speaker: Talented female employee
+[message name=Talented female employee charaid=601101 voice=01_007_0340]
+Hey, Shina.  
+By the way, who's that over there?  
+She doesn't seem like a client, are you just going to leave her standing there?
+[/message]
+
+// Move Sayaka
+[move id=100101 posx=0.47 sec=0.5 wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0350]
+Uh… uh…
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=sad]
+[shake target=chara id=100101 type=horizontal sec=0.5 pow=3 fade=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0360]
+Oh no!!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide Sayaka
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+// Show Kouji, Sumika, and Shina
+[character id=601301 posx=0.17 anim=fade face=confuse show=true wait=false]
+[character id=601101 posx=0.39 anim=fade face=confuse show=true wait=false]
+[character id=200102 posx=0.59 anim=fade face=panic show=true wait=true]
+[delay sec=0.1]
+// Show Glock from offscreen
+[character id=601201 posx=1.2 anim=none face=default show=true wait=true]
+
+[delay sec=0.1]
+
+// Move Glock on screen
+[move id=601201 posx=0.8 sec=0.8 wait=true]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+// Speaker: Man with glasses
+[message name=Man with glasses charaid=601201 voice=01_007_0370]
+Oh my, Shina-kun is already leaving the newbie out in the cold?  
+Seems a bit rough for them to learn just by watching.
+[/message]
+
+// Speaker: Talented female employee
+// Change Sumika's expression
+[face id=601101 type=painful]
+
+[message name=Talented female employee charaid=601101 voice=01_007_0380]
+You're right, President!  
+There's not a single sane person among the directors or team leads!  
+I'm so sad!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0390]
+Sumika-san!  
+You sound like you're implying  
+you're different from us!
+[/message]
+
+// Change Kouji's expression
+[face id=601301 type=angry]
+[message name=Kouji Toyama charaid=601301 voice=01_007_0400]
+If that's what you mean,  
+I'm never going to accept it.
+[/message]
+
+// Speaker: Man with glasses
+[message name=Man with glasses charaid=601201 voice=01_007_0410]
+Alright, alright!  
+So, can I go ahead and do the introduction  
+and orientation for the newbie on behalf of everyone?
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=surprise]
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0420]
+...Oh, please do!  
+I was actually going to ask you to!
+[/message]
+
+// Speaker: Man with glasses
+[face id=601201 type=smile]
+
+[message name=Man with glasses charaid=601201 voice=01_007_0430]
+Got it. Leave it to me!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Hide Sumika, Kouji, Shina, and Glock
+[character id=601101 anim=none show=false wait=false]
+[character id=601301 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=false]
+[character id=601201 anim=none show=false wait=false]
+
+// Only show Sayaka
+[character id=100101 posx=0.66 anim=none face=confuse show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+
+// Fade-in after blackout
+
+// Re-display text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0440 lipsync=false]
+(What's going on? Everyone's so busy...  
+And Shina's fitting right in... That's amazing...  
+But what am I supposed to do here…?)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Show Glock
+[character id=601201 posx=0.33 anim=ltor face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+// Speaker: Man with glasses
+[face id=601201 type=smile]
+
+[message name=Man with glasses charaid=601201 voice=01_007_0450]
+Hey, nice to meet you!  
+There's a lot of confidential stuff in this room,  
+so try not to look around too much, okay?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0460 lipsync=false]
+(Wha!? Someone I don't know is talking to me!!  
+What should I do, Shina, Shina! Help me…)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Hide Glock and Sayaka
+[character id=100101 anim=none show=false wait=false]
+[character id=601201 anim=none show=false wait=false]
+
+// Only show Shina
+[character id=200102 posx=0.49 anim=none face=smile show=true wait=true]
+
+// Fade-in after blackout
+[fade type=in anim=simple sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=01_007_0470 lipsync=false]
+(Smiling)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Hide Shina
+[character id=200102 anim=none show=false wait=false]
+
+// Show Sayaka and Glock
+[character id=601201 posx=0.33 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=panic show=true wait=true]
+
+// Fade-in after blackout
+[fade type=in anim=simple sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+[face id=100101 type=sad]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0480 lipsync=false]
+(Shina's just waving!? Come back…!)
+[/message]
+
+// Speaker: Man with glasses
+// Change Glock's expression
+[face id=601201 type=painful]
+[message name=Man with glasses charaid=601201 voice=01_007_0490]
+Ahem! I may look like a dandy,  
+but seeing someone tear up like that,  
+it makes me a bit sad.  
+I am the president here, after all…
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0500]
+The... president…?  
+The top person!?
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_007_0510]
+Hahaha! Well, I'm not quite at the top.  
+But I am pretty important.  
+I'm Glock, nice to meet you.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_007_0520]
+You're Sayaka Hiwatari, right?
+[/message]
+
+// Shake character
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0530 lipsync=false]
+(*Nodding frantically*)
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=01_007_0540]
+Well then, I'll explain your tasks.  
+We've got a lot of eccentrics here,  
+but the company itself is solid,  
+so listen closely, alright? Haha!
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=01_007_0550]
+Don't worry, it won't take long.  
+Come over to the partition over there with me.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+
+// Hide Glock
+[character id=601201 anim=rtol show=false wait=true]
+
+[delay sec=0.5]
+
+// Move Sayaka afterward
+[move id=100101 posx=0.49 sec=1.5 wait=false]
+
+[delay sec=1]
+
+// Re-display text window
+[visible show=true]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0560]
+…………
+[/message]
+
+//【Choice】
+// 1: Don't be so nervous
+
+[select]
+[link text="Don't be so nervous" label=nervous]
+[/select]
+
+// Only option 1
+:nervous
+
+// Inner thoughts
+// Change Sayaka's expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_007_0570 lipsync=false]
+(It must be nice for my partner…  
+Nobody else can see them!  
+I can't stop worrying about all these people looking at me!)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

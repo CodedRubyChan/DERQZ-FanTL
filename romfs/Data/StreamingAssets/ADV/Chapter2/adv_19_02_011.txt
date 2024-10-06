@@ -1,0 +1,870 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+///////////////////////////Stop currently playing sound effect
+[sound type=se state=stop]
+
+//adv_19_02_011
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+// Display the specified background
+[image type=bg id=000500]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+//BGM02
+//Background 500 / University Hospital
+
+[character id=200202 posx=0.33 anim=fade face=surprise show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_019_0010]
+Ah...
+The hospital doors are disappearing one after another!
+[/message]
+
+// Speaker: Patient
+// @Male Mob21
+
+[message name=Patient voice=02_019_0020]
+Uh, what...?
+Suddenly back to normal...
+[/message]
+
+[character id=200302 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_019_0030]
+It looks like all the doors except for this first one are gone.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+
+///////////////////////////////////////////////////////////////////// Character switch.
+
+// Exit the female characters
+
+// Yurisa Yamamura
+[character id=200202 anim=fade show=false wait=false]
+// Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Bring in Arata
+[character id=600201 posx=0.5 anim=fade face=smile show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character switch.
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_019_0040]
+Oh!
+Looks like she completed the task safely... Good for you guys! Hahaha!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+/// Female characters' part
+/////////////////////////////////////////////////////////////////////////////////////
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Change Shina's expression
+[face id=200102 type=angry]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0050]
+Don't move!!
+Mr. Mizunashi!!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+///////////////////////////////////////////////////////////////////// Character switch.
+// Exit the female characters
+
+/// Shina
+[character id=200102 anim=fade show=false wait=false]
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Bring in Arata
+[character id=600201 posx=0.5 anim=fade face=smile show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character switch.
+
+[face id=600201 type=default]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_019_0060]
+Don't give me that scary face!
+I'm not gonna do anything today, alright?
+I mean, seriously...
+[/message]
+[face id=100101 type=smile]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+/// Female characters' part
+/////////////////////////////////////////////////////////////////////////////////////
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.2]
+
+// Mai appears
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=false]
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Change Mai's expression
+[face id=200302 type=angry]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_019_0070]
+You... 
+You're not the Mizunashi we know, are you!? 
+You're nothing like the person I admired...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+///////////////////////////////////////////////////////////////////// Character switch.
+// Exit the female characters
+
+// Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.2]
+
+// Bring in Arata
+[character id=600201 posx=0.79 anim=fade face=smile show=true wait=true]
+///////////////////////////////////////////////////////////////////// Character switch.
+
+[face id=600201 type=angry]
+
+////// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_019_0080]
+Ha! Annoying... Keep yapping, keep yapping!
+Interpret it however you like, seriously...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sugiura enters in a special way
+[character id=602201 posx=-0.26 anim=fade face=thoughts show=true wait=true]
+Sugiura moves to position 0.2
+[move id=602201 posx=0.4 sec=1.5 wait=false]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_019_0090]
+Director, hurry! 
+This way!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Director enters in a special way
+[character id=602101 posx=-0.26 anim=fade face=confuse show=true wait=true]
+The director moves to position 0.2
+[move id=602101 posx=0.2 sec=1.5 wait=false]
+
+// Change Sugiura's expression
+[face id=602201 type=confuse]
+
+// Change Yamamura's expression
+[face id=602101 type=surprise]
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Yamamura Tsubasa charaid=602101 voice=02_019_0100]
+What on earth is going on!? 
+Is this your doing!?
+[/message]
+
+// Change Sugiura's expression
+[face id=602201 type=confuse]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=02_019_0110]
+Oh my...! At last, Director, you've returned at the most crucial moment...
+But hey, at least the gas has stopped, right?
+[/message]
+
+// Change Yamamura's expression
+[face id=602101 type=angry]
+
+[message name=Yamamura Tsubasa charaid=602101 voice=02_019_0120]
+Yurisa!! 
+Is Yurisa here!?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=false]
+
+// Sugiura disappears
+[character id=602201 anim=fade show=false wait=true]
+
+// The director moves to position 0.67
+[move id=602101 posx=0.67 wait=false]
+
+// Yurisa appears at position 0.33
+[character id=200202 posx=0.33 anim=fade face=panic show=true wait=true]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_019_0130]
+Y-yes! I'm here!
+[/message]
+
+[face id=602101 type=angry]
+
+[message name=Yamamura Tsubasa charaid=602101 voice=02_019_0140]
+The whole hospital is a mess with rampaging patients and staff! 
+Explain what happened!
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_019_0150]
+W-well, that is...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[face id=500102 type=default]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0160]
+I'll give the explanation.
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Characters exit
+[character id=200202 anim=fade show=false wait=false]
+[character id=602101 anim=fade show=false wait=false]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+// Mai and Shina appear
+[character id=200102 posx=0.24 anim=fade face=surprise show=true wait=false]
+[character id=200302 posx=0.49 anim=fade face=surprise show=true wait=false]
+
+// Change Shina's expression
+[face id=200102 type=panic]
+// Change Mai's expression
+[face id=200302 type=surprise]
+
+[face id=200102 type=panic]
+
+//////// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0170]
+T-this voice!?
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=02_019_0180]
+Look, 
+the last door is opening...!?
+[/message]
+[shake type=random sec=2.0 pow=30.5 fade=true wait=false]
+[delay sec=1.0]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=panic show=true wait=true]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_019_0190]
+Uh, uh... hello...
+[/message]
+[delay sec=1.0]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// The following script is not yet implemented
+// Remove the three female characters, bring in Lilith
+
+
+////// Opponent part
+///////////////////////////////////////////////////////////////////// Character switch.
+
+// Exit the female characters
+
+// Shina
+[character id=200102 anim=fade show=false wait=false]
+// Sayaka
+[character id=100101 anim=fade show=false wait=false]
+// Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified time to adjust
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////// Character switch.
+
+// BGM27
+
+[sound type=bgm state=play name=TalkE]
+
+// Lilith appears
+[character id=500102 posx=0.5 anim=fade face=default show=true wait=true]
+
+[face id=500102 type=default]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0200]
+Ah, Director No. 10. 
+It's the first time we've spoken directly, isn't it?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+///// Female characters' part
+/////////////////////////////////////////////////////////////////////////////////////
+// Lilith exits
+[character id=500102 anim=fade show=false wait=false]
+
+// Wait for the specified time to adjust
+[delay sec=1.5]
+
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+///////////////////////////////////////////////////////////////////////////////////////
+
+[face id=200102 type=surprise]
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0210]
+Sayaka!! 
+And...
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina
+[character id=200102 anim=fade show=false wait=false]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+
+// The director and Yurisa appear
+[character id=602101 posx=0.25 anim=fade face=confuse show=true wait=true]
+[character id=200202 posx=0.5 anim=fade face=surprise show=true wait=true]
+
+[face id=602101 type=default]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Yamamura Tsubasa charaid=602101 voice=02_019_0220]
+You are...!?
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_019_0230]
+M-me!?
+[/message]
+
+// Sugiura appears
+[character id=602201 posx=0.74 anim=fade face=confuse show=true wait=true]
+
+// Change Sugiura's expression
+[face id=602201 type=surprise]
+
+[message name=Sugiura charaid=602201 voice=02_019_0240]
+Another lady... coming from the door...!? 
+What on earth is happening...!?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// The director exits
+[character id=602101 anim=fade show=false wait=false]
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=false]
+// Sugiura exits
+[character id=602201 anim=fade show=false wait=false]
+
+// Lilith appears
+[character id=500102 posx=0.33 anim=fade face=default show=true wait=true]
+
+[face id=500102 type=default]
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0250]
+Don't lump me together with that woman.
+I... 
+No, I am...
+Lilith Yamamura.
+[/message]
+
+// Arata appears
+[character id=600201 posx=0.67 anim=fade face=default show=true wait=true]
+
+[message name=Arata charaid=600201 voice=02_019_0260]
+Well, well, such a touching reunion!!
+I got to see something good!
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0270]
+I'll make this brief because it's a hassle.
+This man... Arata... gave me this body.
+[/message]
+
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0280]
+Until then...
+I was the existence that everyone called a "restless spirit" or whatever...
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0290]
+Don't think you can get rid of me with just an exorcism.
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Lilith exits
+[character id=500102 anim=fade show=false wait=false]
+// Arata exits
+[character id=600201 anim=fade show=false wait=false]
+
+// Sugiura appears
+[character id=602201 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Sugiura charaid=602201 voice=02_019_0300]
+Uh...
+Was it really the work of a spirit...?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Sugiura exits
+[character id=602201 anim=fade show=false wait=false]
+
+// Lilith appears
+[character id=500102 posx=0.5 anim=fade face=default show=true wait=true]
+
+[face id=500102 type=angry]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0310]
+A pathetic business like this hospital...
+The only interference I could manage was a bit of mischief...
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0320]
+But now things are different...
+I have a body...
+And that means I can touch you too...
+[/message]
+
+[face id=500102 type=angry]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0330]
+...Shina!!!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina appears
+[character id=200102 posx=0.22 anim=fade face=panic show=true wait=false]
+
+////////////////// Want to move Shina and Lilith //////////////////////////////////////////////////
+// Move Lilith
+[move id=500102 posx=0.5 sec=0.9 wait=true]
+// Move Shina
+[move id=200102 posx=0.22 sec=0.9 wait=true]
+//////////////////////////////////////////////////////////////////////////////////////
+
+////// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0340]
+Wha!? W-what!?
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0350]
+I want you...
+Even if I have to kill you—
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0360]
+M-me! Me!? 
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[face id=600201 type=smile]
+
+// Arata appears
+[character id=600201 posx=0.75 anim=fade face=default show=true wait=true]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_019_0370]
+Well, of course!
+The model for that body is the young lady over there!
+It's no wonder you'd think like that, right?♪
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Lilith exits
+[character id=500102 anim=fade show=false wait=false]
+// Shina exits
+[character id=200102 anim=fade show=false wait=false]
+// Arata exits
+[character id=600201 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.5 anim=fade face=panic show=true wait=false]
+
+// Change Yurisa's expression
+[face id=200202 type=panic]
+
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_019_0380]
+W-why is my body... given to that... 
+that Lilith!?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=true]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Arata appears at position 0.6
+[character id=600201 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+[face id=600201 type=smile]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_019_0390]
+Operation Code Z... 
+My plan... 
+To expel those "False Gods!"
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=false]
+
+// Wait for the specified time
+[delay sec=0.3]
+
+// Mai appears at position 0.4
+[character id=200302 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+////// Re-display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_019_0400]
+H-huh...?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Mai exits
+[character id=200302 anim=fade show=false wait=false]
+
+// Wait for the specified time
+[delay sec=0.2]
+
+// Arata appears
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+
+[face id=600201 type=default]
+
+////// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=02_019_0410]
+First, Iris... her original subordinates— 
+Lily, Al, Claire, Lucil, Celica.
+I'll strip their powers, and that little goddess will fall.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=02_019_0420]
+Thanks for the memories yesterday...!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Arata exits
+[character id=600201 anim=fade show=false wait=false]
+
+// Wait for the specified time
+[delay sec=0.3]
+
+// Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+
+[face id=200102 type=surprise]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0430]
+...No way.
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Display still image from Death Request 1
+// Still Image 06
+
+[image type=still id=100006 show=true]
+
+[character id=500102 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=false]
+
+[face id=100101 type=default]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_019_0440]
+Shina! From your kidnapped memories...
+you created this Lilith!?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_019_0450]
+...My memories?
+Those... 
+from the "previous cycle"?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// End Still Image 06 display
+
+[delay sec=0.5]
+
+[image type=still id=100006 show=false]
+
+[character id=500102 posx=0.5 anim=fade face=angry show=true wait=true]
+
+//// Re-display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0460]
+Correct.
+And... you're all so damn annoying...
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_019_0470]
+Together with Shina... 
+all of you...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Change standing image
+
+[character id=500102 anim=fade show=false wait=false]
+
+[character id=500101 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Change Lilith's transformed expression
+[face id=500101 type=angry]
+
+////// Re-display the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500101 voice=02_019_0480]
+Just die already.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+///////////////////////////Stop currently playing sound effect
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END
+

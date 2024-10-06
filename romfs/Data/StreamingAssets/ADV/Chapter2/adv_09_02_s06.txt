@@ -1,0 +1,246 @@
+    //Script
+    // Wait for specified seconds
+    [delay sec=0.1]
+    
+    
+    
+    //adv_09_02_s06
+    //##########################################################################//
+    //Start
+    //##########################################################################//
+    // Fade out over specified seconds
+    //[fade type=out anim=simple sec=1]
+    
+    // Switch to ADV camera
+    [camera type=setup]
+    [delay sec=0.5]
+    
+    
+    // Play specified BGM
+    [sound type=bgm state=play name=Subway]
+    
+    // Display specified background
+    [image type=bg id=000470]
+    
+    // Fade in over specified seconds
+    //[fade type=in anim=simple sec=1]
+    //##########################################################################//
+    //Start
+    //##########################################################################//
+    
+    //BGM19
+    //Background470 / Iris Company - Development Room
+    
+    [character id=601201 posx=0.33 anim=fade face=painful show=true wait=true]
+    
+    // Wait for specified seconds
+    [delay sec=1.5]
+    // Display text window
+    [visible show=true]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0010]
+    *Sigh*, here we go again.
+    Even though we've been blocking all attacks so far.
+    The opponent just won't give up...
+    [/message]
+    
+    [character id=100101 posx=0.66 anim=fade face=thoughts show=true wait=true]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0020]
+    President, is something wrong?
+    You look like you have a serious expression.
+    [/message]
+    
+    [face id=601201 type=confuse]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0030]
+    Oh dear.
+    To think I'd make Sayaka-kun worry.
+    I was really failing as a president. I'm sorry.
+    [/message]
+    
+    [face id=601201 type=confuse]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0040]
+    To be honest...
+    We've been facing some troublesome events lately.
+    It seems like it's showing on my face!
+    [/message]
+    
+    [face id=100101 type=surprise]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0050]
+    Troublesome things?
+    [/message]
+    
+    // Change President Glock's expression
+    [face id=601201 type=painful]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0060]
+    Actually, our company has been experiencing external cracking attacks recently.
+    Someone from somewhere is trying to illegally access our computers.
+    [/message]
+    
+    [face id=100101 type=confuse]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0070]
+    Mmmhmm?
+    What is "cracking"?
+    [/message]
+    
+    [face id=601201 type=default]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0080]
+    It's malicious hacking.
+    Someone is trying to unlawfully infiltrate our computers.
+    [/message]
+    
+    [face id=100101 type=surprise]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0090]
+    This is... serious...
+    [/message]
+    
+    [face id=601201 type=painful]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0100]
+    Well, so far I've been able to block all the cracking attempts easily,
+    but if it continues this frequently, it's getting a bit...
+    [/message]
+    
+    // Change President Glock's expression
+    [face id=601201 type=thoughts]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0110]
+    I really need to strengthen our security measures.
+    It's a pain, but maybe I should consult with an old acquaintance from Enigma Corporation.
+    [/message]
+    
+    [face id=100101 type=thoughts]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0120]
+    What was Enigma Corporation again?
+    I don't really remember much about companies other than Iris Corporation...
+    [/message]
+    
+    [face id=601201 type=smile]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0130]
+    If you're not interested, I can't help it.
+    Well, since they're our business partners,
+    it's not a bad idea to remember them!
+    [/message]
+    
+    // Change President Glock's expression
+    [face id=601201 type=smile]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0140]
+    As a main feature,
+    they are the company that made "World's Odyssey."
+    They're also my old stomping grounds.
+    [/message]
+    
+    [face id=100101 type=default]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0150]
+    Ah, I see. You have an acquaintance through that relationship.
+    You still have a good relationship now!
+    [/message]
+    
+    // Change President Glock's expression
+    [face id=601201 type=painful]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0160]
+    Well, we're making the sequel "End to Odyssey" by borrowing the rights for "World's Odyssey."
+    Although I can't quite top them...!
+    [/message]
+    
+    [face id=601201 type=thoughts]
+    // Change Sayaka's expression
+    [face id=100101 type=surprise]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0170]
+    Our employees get along well.
+    ...Well, some don't.
+    For example, with me and Victor...
+    [/message]
+    
+    // Sayaka is surprised
+    [shake target=chara id=601201 type=vertical sec=0.1 pow=10 fade=false wait=false]
+    
+    [face id=601201 type=angry]
+    // Change Sayaka's expression
+    [face id=100101 type=confuse]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0180]
+    I don't want to consult with him alone,
+    but Victor is stronger in this field.
+    ...Hmm? Rather, the line is that he's the culprit... Hmph!
+    [/message]
+    
+    [face id=601201 type=default]
+    // Change Sayaka's expression
+    [face id=100101 type=thoughts]
+    
+    [message name=President Glock charaid=601201 voice=02_909_0190]
+    I hope I'm just worrying for nothing―――Ah, no! Sorry!
+    I ended up complaining until the end.
+    Forget about it, Sayaka-kun!
+    [/message]
+    
+    [face id=100101 type=default]
+    
+    [message name=Sayaka Hiwatari charaid=100101 voice=02_909_0200]
+    Understood.
+    I see that the president is having a tough time too.
+    But I respect you.
+    [/message]
+    
+    // Hide text window
+    [visible show=false]
+    
+    // Wait for specified seconds
+    [delay sec=1.0]
+    // Hide text window
+    [visible show=false]
+    // Wait for specified seconds
+    [delay sec=0.5]
+    
+    
+    //##########################################################################//
+    //End
+    //##########################################################################//
+    :end
+    
+    
+    
+    // Fade out over specified seconds
+    [fade type=out anim=simple sec=0.5]
+    
+    // Wait for specified seconds
+    [delay sec=0.5]
+    
+    
+    /////////////////////////// Stop currently playing SE
+    [sound type=se state=stop]
+    
+    
+    // Stop currently playing BGM
+    [sound type=bgm state=stop]
+    
+    
+    // Wait for specified seconds
+    [delay sec=0.5]
+    
+    
+    
+    
+    // Hide text window
+    [visible show=false]
+    
+    // End the script here
+    [exit]
+    //##########################################################################//
+    //End
+    //##########################################################################//
+    //END

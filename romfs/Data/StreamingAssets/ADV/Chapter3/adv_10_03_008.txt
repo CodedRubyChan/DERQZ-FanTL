@@ -1,0 +1,1306 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_10_03_008
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000430]
+
+//[sound type=bgm state=play name=Dungeon]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// No BGM
+//Background 430 / Intersection
+
+[character id=200302 posx=0.32 anim=fade face=painful show=true wait=false]
+
+[character id=100101 posx=0.66 anim=fade face=painful show=true wait=true]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0010]
+Hah, hah, hah...!!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0020]
+Wow, Saya, you're more of a scaredy-cat than I thought—
+I can't believe you ran all the way here.
+[/message]
+
+[face id=100101 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0030]
+Mai-san,
+you are...
+way too calm, aren't you!?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0040]
+W-what was with Sugiura-san back there...?
+[/message]
+
+[face id=200302 type=sad]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0050]
+The director seemed to treat him normally,
+but maybe that's because he never saw Sugiura-san
+when he died.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0060]
+No one else seems to know that he's in this strange state,
+where you can't tell if he's alive or dead.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0070]
+...Maybe we should stop investigating the hospital
+for a while?
+I'm worried about Sugiura-san, but...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Liliana & Shizu appear
+//BGM08
+[move id=200302 posx=0.59 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=false]
+[sound type=bgm state=play name=Chapter6]
+[character id=601801 posx=0.14 anim=fade face=default show=true wait=false]
+[character id=200702 posx=0.34 anim=fade face=default show=true wait=true]
+
+// Speaker name: ???
+
+[face id=200702 type=default]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=??? charaid=200702 voice=03_010_0080]
+Hmph.
+A rather wise decision.
+You pass.
+[/message]
+
+// Speaker name: ???
+
+[face id=601801 type=default]
+
+[message name=??? charaid=601801 voice=03_010_0090]
+Even we don't know whether we're alive or dead~
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0100]
+...Wh-what is this? You're armed...
+A short person with glasses... and a tall person...
+[/message]
+
+// Speaker name: ???
+
+[face id=200702 type=confuse]
+
+[message name=??? charaid=200702 voice=03_010_0110]
+Calling me short is unnecessary...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Replace with three cult members
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=true]
+[delay sec=0.1]
+[character id=602701 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=602702 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=602703 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Speaker name: Men in black
+// @Man mob 20
+// @Man mob 21
+// @Man mob 22
+
+[face id=602701 type=default]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Men in black charaid=602701 voice=03_010_0120]
+..........
+[/message]
+//03_010_0130, 03_010_0140, 03_010_0150 synthetic voices
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[character id=602701 anim=fade show=false wait=false]
+[character id=602702 anim=fade show=false wait=false]
+[character id=602703 anim=fade show=false wait=true]
+[delay sec=0.1]
+// Show Sayaka and others
+[character id=601801 posx=0.18 anim=fade face=default show=true wait=false]
+[character id=200702 posx=0.4 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.59 anim=fade face=surprise show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=panic show=true wait=true]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0160]
+...S-so, the masked group of strangers...
+What do you want from us...?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0170]
+L-Liliana!?
+And Shizu-san!?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0180]
+...You know them?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0190]
+Y-yeah... I guess. We were...
+acquaintances when I lived abroad as a child,
+because of my parent's work.
+[/message]
+
+[message name=Liliana charaid=200702 voice=03_010_0200]
+You're being cold, Mai-san.
+It's been quite a while since we met in person.
+I've missed you.
+[/message]
+
+[face id=601801 type=smile]
+
+[message name=Shizu charaid=601801 voice=03_010_0210]
+Today, I even got a message from Liddy and followed you in secret~!
+[/message]
+
+[face id=200702 type=confuse]
+
+[message name=Liliana charaid=200702 voice=03_010_0220]
+D-don't say that out loud, Shizu-san...!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0230]
+...You must have a reason for approaching me.
+And why in a situation like this...?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=true]
+
+// Speaker name: Men in black
+// @Man mob 20
+// @Man mob 21
+// @Man mob 22
+
+[delay sec=0.1]
+[character id=602701 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=602702 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=602703 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Men in black charaid=602701 voice=03_010_0240]
+..........
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+//03_010_0250, 03_010_0260, 03_010_0270 synthetic voices
+[character id=602701 anim=fade show=false wait=false]
+[character id=602702 anim=fade show=false wait=false]
+[character id=602703 anim=fade show=false wait=true]
+[delay sec=0.1]
+
+[character id=601801 posx=0.18 anim=fade face=default show=true wait=false]
+[character id=200702 posx=0.4 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.59 anim=fade face=angry show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=panic show=true wait=true]
+
+// Show the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0280]
+Surrounding us with all these people...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0290]
+W-wait, Mai-san...!
+If you need help, I'll lend a hand!
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0300]
+And you're Sayaka Hiwatari-san, right? 
+Mai-san's companion.
+[/message]
+
+// Sayaka is startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0310]
+You know me well!
+...Are you Ludens or something?
+There's something off about you...
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0320]
+No, no, we're all just humble humans—
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=03_010_0330]
+To the weak, we offer love and compassion.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+//---------------------------------------------------------------------------------------
+// Replace with three cult members
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.2]
+
+[delay sec=0.1]
+[character id=602701 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=602702 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=602703 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Speaker name: Men in black
+// @Man mob 20
+// @Man mob 21
+// @Man mob 22
+
+[face id=602701 type=default]
+
+// Speaker name: Men in black
+// @Man mob 20
+// @Man mob 21
+// @Man mob 22
+
+[face id=602701 type=default]
+
+// Show the text window again
+[visible show=true]
+
+// Screen shake
+[shake type=random sec=0.2 pow=10 fade=false wait=false]
+
+[message name=Men in black charaid=602701 voice=03_010_0340]
+Love and compassion!!!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+//03_010_0350, 03_010_0360, 03_010_0370 synthetic voices
+
+[character id=602701 anim=fade show=false wait=false]
+[character id=602702 anim=fade show=false wait=false]
+[character id=602703 anim=fade show=false wait=true]
+[delay sec=0.1]
+
+//---------------------------------------------------------------------------------------
+
+// @Sayaka appears in the center
+[character id=100101 posx=0.49 anim=fade face=painful show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0380]
+...Whoa!?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=true]
+
+// Liliana appears in the center
+[character id=200702 posx=0.5 anim=fade face=default show=true wait=true]
+[face id=200702 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=03_010_0390]
+To the strong, we give harsh revelations.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Liliana exits
+[character id=200702 anim=fade show=false wait=true]
+
+//---------------------------------------------------------------------------------------
+
+// Wait for the specified number of seconds
+[delay sec=0.2]
+
+[character id=602701 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=602702 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=602703 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+// Screen shake
+[shake type=random sec=0.2 pow=10 fade=false wait=false]
+
+[message name=Men in black charaid=602701 voice=03_010_0400]
+Harsh revelations!!!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+//03_010_0410, 03_010_0420, 03_010_0430 synthetic voices
+
+[character id=602701 anim=fade show=false wait=false]
+[character id=602702 anim=fade show=false wait=false]
+[character id=602703 anim=fade show=false wait=true]
+[delay sec=0.1]
+
+//--------------------------------------------------------------------------------------
+
+// Sayaka, Mai, Liliana, Shizu appear
+
+// Liliana appears
+[character id=200702 posx=0.39 anim=fade face=default show=true wait=true]
+[face id=200702 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=03_010_0440]
+...Nice to meet you.
+We are the 'Aphesis Cult.'
+My name is Liliana, a disciple-in-training.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Shizu appears
+[character id=601801 posx=0.19 anim=fade face=painful show=true wait=true]
+[face id=601801 type=smile]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=03_010_0450]
+And I'm the overseer, Shizu!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+[face id=601801 type=default]
+
+// Mai appears
+[character id=200302 posx=0.59 anim=fade face=angry show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0460]
+No matter how many times you ask,
+I won't join your cult.
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Sayaka appears
+[character id=100101 posx=0.79 anim=fade face=confuse show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0470]
+...W-what?
+After all this mystery, it's just a religious recruitment!?
+[/message]
+
+[face id=601801 type=painful]
+[message name=Shizu charaid=601801 voice=03_010_0480]
+Well, if you put it that way, sure.
+But for Mai and Liliana, it's something else!
+[/message]
+
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0490]
+Huh...?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Sayaka and Shizu exit
+[character id=100101 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=true]
+
+// Liliana and Mai move to the center
+[move id=200702 posx=0.33 wait=false]
+[face id=200702 type=thoughts]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=03_010_0500]
+You're always so eager to know the “truth of the world,”
+and earlier at Yamamura Hospital, you must have seen
+a glimpse of something, didn't you?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0510]
+Liliana...
+You know a lot, don't you?
+Have you become my stalker?
+[/message]
+
+[face id=200702 type=smile]
+
+[message name=Liliana charaid=200702 voice=03_010_0520]
+Heh.
+So I'm a stalker now, huh?
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0530]
+A stalker...
+If that's what you think, then maybe...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0540]
+Yeah.
+Honestly... when I hear stalker, I can't help
+but think of Rottie, right?
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0550]
+Yes. Neither of us will ever forget that smile.
+[/message]
+
+[face id=200702 type=confuse]
+
+[message name=Liliana charaid=200702 voice=03_010_0560]
+The Japanese police still haven't
+found any leads on Rottie, have they...?
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0570]
+No.
+It's been seven years now.
+I really hope they find something soon.
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=03_010_0580]
+I see...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0590]
+Why are you being so secretive?
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0600]
+...The Aphesis Cult has recently
+found a lead on Rottie.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0610]
+...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[move id=200302 posx=0.6 wait=false]
+[move id=200702 posx=0.4 wait=false]
+
+// Shizu appears
+[character id=601801 posx=0.2 anim=fade face=smile show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=03_010_0620]
+Oh! Go for it, Liliana.
+Mai-chan seems rattled!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0630]
+And in return, you want me to join your cult, right?
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0640]
+Yes.
+Basically.
+Yes.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0650]
+—Sorry, but I refuse.
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=03_010_0660]
+...It's your first lead in seven years.
+Are you sure?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// BGM16
+
+[sound type=bgm state=play name=TownMapA]
+
+// Sayaka appears
+[character id=100101 posx=0.8 anim=fade face=default show=true wait=true]
+
+[face id=100101 type=confuse]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0670]
+U-uhm, Mai-san?
+If I may ask, who exactly is Rottie...?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0680]
+—She was someone precious to me, second only to my sister.
+A friend who just disappeared without a trace—
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0690]
+I see!
+Then, m-maybe we should consider joining...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0700]
+Listen, Saya.
+I don't want to die just yet.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0710]
+...What do you mean by that?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0720]
+Alright, I'll tell you.
+I was almost...
+[/message]
+
+[shake target=chara id=200302 type=vertical sec=0.1 pow=10 fade=false wait=false]
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0730]
+...killed by my friend Liliana once.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0740]
+...Wha—!?
+For real...!?
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0750]
+That is true.
+Yes.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0760]
+Did she just confirm it!?
+[/message]
+
+[message name=Shizu charaid=601801 voice=03_010_0770]
+Heheh...
+[/message]
+
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0780]
+Isn't that...
+something for the police to handle!?
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[message name=Liliana charaid=200702 voice=03_010_0790]
+Let me explain. It's not just Mai-san—
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Show still image 11
+[image type=still id=100011 show=true]
+
+[face id=200702 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=03_010_0800]
+She once tried to kill her own father.
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0810]
+Tch.
+[/message]
+
+// Camera zoom
+[camera type=zoom pivot=4 fov=0.1 sec=0.1 active=true wait=false]
+// Gentle horizontal screen shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0820]
+...Wh-what—!?
+[/message]
+
+// Cancel camera zoom
+[camera type=zoom sec=30 active=false wait=false]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=03_010_0830]
+I just happened to stop her, risking my life in the process.
+[/message]
+
+// BGM28
+
+[sound type=bgm state=play name=TalkF]
+
+[face id=200702 type=painful]
+
+[message name=Liliana charaid=200702 voice=03_010_0840]
+Mai-san's rampage was just like someone possessed by a demon!
+An ugly demon still clings to her even now, Sayaka-san.
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0850]
+Mai-san is dangerous if left unchecked.
+Sayaka-san, just as you suggested,
+please bring her to the cult for an exorcism!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.5 active=false wait=true]
+
+// End still image display
+[image type=still id=100011 show=false]
+
+[face id=100101 type=panic]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0860]
+I'm hearing so many new things,
+I can't even process it all!?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0870]
+—Saya.
+What do you want to do?
+[/message]
+
+[face id=200702 type=sad]
+
+[message name=Liliana charaid=200702 voice=03_010_0880]
+I'm sorry for dragging you into this so suddenly, Sayaka-san.
+But today was the right moment to discuss it.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0890]
+A... right moment...?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0900]
+...
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0910]
+Sayaka-san, you saw it too...
+[/message]
+
+[face id=200302 type=default]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0920]
+A hospital repaired by an unknown power,
+and the dead walking around as if life and death no longer matter.
+This is the world we live in.
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0930]
+Isn't that the power of
+the Ludens...?
+[/message]
+
+// BGM17
+
+[sound type=bgm state=play name=TownMapB]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0940]
+No!!
+[/message]
+
+[face id=200702 type=painful]
+
+[message name=Liliana charaid=200702 voice=03_010_0950]
+“A Luden who can blur the lines of death” is already beyond what Ludens are...
+That is a demon twisting the laws of reality!
+A demon we must despise—no, destroy!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_0960]
+...!
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0970]
+And Mai-san...
+she possesses that same power.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_0980]
+—What proof do you have...?
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_0990]
+Whether you realize it or not, it's still true.
+The Ludens around the world, we guide them.
+Otherwise, the weak will be trampled!
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_1000]
+So, Sayaka-san...
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1010]
+Alright, I've made my decision.
+[/message]
+
+[face id=200702 type=smile]
+
+[message name=Liliana charaid=200702 voice=03_010_1020]
+!
+Then...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1030]
+Uhm, Aphesis Cult members...
+I'm actually a Luden myself.
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=03_010_1040]
+I could tell.
+Even I could see that.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1050]
+And I don't think the girl you call a demon
+is someone that should be killed.
+[/message]
+
+// BGM10
+
+[sound type=bgm state=play name=Chapter8]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1060]
+Also, even though I've only known her for a short while,
+I've spent more time with Mai-san than with you, Liliana-san.
+So, sorry, but no help from me!
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_1070]
+...Sayaka.
+[/message]
+
+// Sayaka is startled
+[shake target=chara id=601801 type=vertical sec=0.2 pow=20 fade=false wait=false]
+
+// Shizu changes expression
+[face id=601801 type=painful]
+[message name=Shizu charaid=601801 voice=03_010_1080]
+Aww, failed to persuade her!
+Liliana-san, you put too much passion into your story...
+[/message]
+
+// Mai changes expression
+[face id=200302 type=default]
+
+// Shizu changes expression
+[face id=601801 type=default]
+
+// Liliana changes expression
+[face id=200702 type=angry]
+
+[message name=Liliana charaid=200702 voice=03_010_1090]
+...I won't give up!
+I'm sorry, but you're going to spend a bit more time with us today...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Shizu, Liliana, Sayaka, Mai exit
+// Liliana exits
+[character id=200702 anim=fade show=false wait=false]
+// Shizu exits
+[character id=601801 anim=fade show=false wait=false]
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+// Mai exits
+[character id=200302 anim=fade show=false wait=true]
+//--------------------------------------------------------------------------------------
+// @Man mob 20
+// @Man mob 21
+// @Man mob 22
+
+// Wait for the specified number of seconds
+[delay sec=0.2]
+
+[character id=602701 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=602702 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=602703 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+// Screen shake
+[shake type=random sec=0.2 pow=20 fade=false wait=false]
+
+[message name=Aphesis Cultist charaid=602701 voice=03_010_1100]
+For a world of happiness!!!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// The men exit
+[character id=602701 anim=fade show=false wait=false]
+[character id=602702 anim=fade show=false wait=false]
+[character id=602703 anim=fade show=false wait=true]
+// Wait for the specified number of seconds to adjust
+[delay sec=0.5]
+//--------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
+/// //-------------------------------------------------------------------------------------
+
+//++++++++++++++++++++++++++++ Here the story stalls without Sayaka appearing
+
+//// Shizu, Liliana, Sayaka, Mai appear
+
+// Shizu appears
+[character id=601801 posx=0.14 anim=fade face=default show=true wait=false]
+// Liliana appears
+[character id=200702 posx=0.34 anim=fade face=default show=true wait=false]
+// Mai appears
+[character id=200302 posx=0.64 anim=fade face=default show=true wait=false]
+// Sayaka appears
+[character id=100101 posx=0.84 anim=fade face=default show=true wait=true]
+
+// Normally, Sayaka would appear here
+
+// Wait for the specified number of seconds to adjust
+[delay sec=0.5]
+
+[face id=200302 type=angry]
+// Show the text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_1140]
+...Are you trying to capture us!?
+I'll call the police!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1150]
+Well, Mai-san,
+I have a secret escape plan!
+[/message]
+
+[message name=Liliana charaid=200702 voice=03_010_1160]
+In this situation.
+Where do you think you're going?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1170]
+Liliana-san, that place where Rottie is,
+it's the “Strain Area,” right?
+[/message]
+
+[face id=200702 type=surprise]
+
+[message name=Liliana charaid=200702 voice=03_010_1180]
+!!?
+H-how do you know!?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_010_1190]
+That dimensional rift from when the glasses guy appeared...
+Yeah, I think I can do something big with that.
+Alright, we're going to jump!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=03_010_1200]
+W-what!? Saya, what are you...!?
+W-woah!?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Dimensional explosion sound effect Mirror
+[sound type=se name=Mirror]
+
+// The two warp and disappear
+
+[character id=100101 anim=btot show=false wait=false]
+[character id=200302 anim=btot show=false wait=true]
+
+// Wait for the specified number of seconds to adjust
+[delay sec=0.5]
+
+// Move Shizu and Liliana to the center
+
+// Shizu moves
+[move id=601801 posx=0.33 sec=2.5 wait=false]
+// Liliana moves
+[move id=200702 posx=0.67 sec=2.5 wait=true]
+
+[face id=601801 type=smile]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=03_010_1210]
+Whoa...! It seems that
+Luden girl read your mind
+and found out where Rottie is!
+[/message]
+
+[face id=200702 type=confuse]
+
+[message name=Liliana charaid=200702 voice=03_010_1220]
+S-Shizu-san! If you suspected this,
+why didn't you strengthen the lock on my memories!?
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=03_010_1230]
+Sorryyy! I didn't think that Luden girl
+would overpower the mighty Liliana...
+What is she, anyway?
+[/message]
+
+[face id=200702 type=angry]
+
+[message name=Liliana charaid=200702 voice=03_010_1240]
+We can investigate later! We can't let
+them take our bargaining chip with Mai-san...
+We're going to the Strain Area too.
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=03_010_1250]
+A demon...
+There must be clues connecting to Iris!
+Let's be the first to uncover the truth!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+// Shizu and Liliana exit
+[character id=601801 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// @Man mob 20 appears
+
+[character id=602701 posx=0.49 anim=fade face=default show=true wait=true]
+
+[face id=602701 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Aphesis Cultist charaid=602701 voice=03_010_1260]
+I'm prepared for martyrdom!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+
+[character id=602701 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds to adjust
+[delay sec=0.5]
+
+// Liliana appears
+[character id=200702 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+//[face id=200702 type=default]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=03_010_1270]
+Very well.
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=03_010_1280]
+Let's see who can find Rottie first,
+Mai-san...
+[/message]
+
+[face id=200702 type=angry]
+
+[message name=Liliana charaid=200702 voice=03_010_1290]
+Dimensional Rift!
+[/message]
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.5]
+
+[character id=200702 anim=btot show=false wait=false]
+
+// Dimensional explosion sound effect Mirror
+[sound type=se name=Mirror]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+[character id=200702 anim=btot show=false wait=false]
+[character id=601801 anim=btot show=false wait=false]
+[character id=602701 anim=btot show=false wait=false]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// The script ends here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

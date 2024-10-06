@@ -1,0 +1,574 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_07_02_003
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=1]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000060]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=1]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+//BGM23   / For peaceful scenes
+//Background60  / Main Street
+
+[character id=200302 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Display text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0010]
+Ah, Shina-san.
+And everyone else.
+Good morning.
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=02_007_0020]
+Hey there.
+Good morning everyone!
+[/message]
+
+//// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+[visible show=false]
+
+// Mai and Akagi exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=true]
+
+// Shina, Yurisa, and Sayaka enter
+[character id=200102 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.75 anim=fade face=default show=true wait=true]
+
+[face id=200102 type=surprise]
+
+[visible show=true]
+
+// Display text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_007_0030]
+Ah, good morning to both of you…
+………
+……Wait, what!?
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0040]
+…What!?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0050]
+……Since we're here, I'll join too.
+What!?
+[/message]
+
+////// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Yurisa, and Sayaka exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+/// Mai and Akagi enter
+[character id=200302 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Change Mai's expression
+[face id=200302 type=confuse]
+
+/// Display text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0060]
+After Shina-san left early, 
+we somehow lost contact with her.
+[/message]
+
+[face id=200302 type=sad]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0070]
+The president was very worried,
+so later on, please report to her that Shina-san is safe
+and put her mind at ease...
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0080]
+What is going on...?
+All three of you are looking at us and going "What?!" in unison?
+[/message]
+
+// Change Akagi's expression
+[face id=602601 type=confuse]
+[message name=Akagi charaid=602601 voice=02_007_0090]
+Haha.
+Is it so strange to see Mai and me walking side by side together?
+[/message]
+
+//// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+/// Mai and Akagi exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=true]
+
+/// Shina and Yurisa enter
+[character id=200102 posx=0.32 anim=fade face=surprise show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+[face id=200102 type=panic]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_007_0100]
+Th-that's obvious!
+How many times do you two think we've mediated between you... in a year?!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=angry]
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0110]
+…Ugh!
+While I was busy with my duties as a resident,
+what happened…!?
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+/// Shina and Yurisa exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+
+// Akagi enters at center
+[character id=602601 posx=0.48 anim=fade face=default show=true wait=true]
+
+[face id=602601 type=thoughts]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=02_007_0120]
+Well, um, you see.
+There was a life-threatening situation…
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Akagi exits
+[character id=602601 anim=fade show=false wait=false]
+// Yurisa enters at center
+[character id=200202 posx=0.49 anim=fade face=default show=true wait=true]
+
+[face id=200202 type=surprise]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0130]
+I... A life-threatening situation!?
+M-Mai-chan, you've finally cornered her that far…
+[/message]
+
+//// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Yurisa exits
+[character id=200202 anim=fade show=false wait=false]
+
+// Mai enters at center
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=true]
+
+[face id=200302 type=confuse]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0140]
+Hey... Yurisa-san,
+that assumption of yours is just too much...
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Mai exits
+[character id=200302 anim=fade show=false wait=false]
+
+// Shina enters at center
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=true]
+
+//// Display text window again
+[visible show=true]
+
+// Change Shina's expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_007_0150]
+Anyway, going through a life-threatening danger to make up,
+is that what this is…?
+[/message]
+
+// Shina exits
+[character id=200102 anim=fade show=false wait=true]
+
+//// Mai and Akagi enter
+[character id=200302 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.66 anim=fade face=default show=true wait=true]
+
+//// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+[face id=200302 type=default]
+
+//// Display text window again
+[visible show=true]
+
+// Change Mai's expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0160]
+Well,
+it's like neither close nor far...
+[/message]
+
+// Change Akagi's expression
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=02_007_0170]
+Y-Yeah. Something like that.
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+//// Shina and Yurisa enter
+[character id=200102 posx=0.32 anim=fade face=surprise show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=surprise show=true wait=false]
+
+// Mai and Akagi exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=true]
+
+[face id=200102 type=default]
+
+///// Display text window again
+[visible show=true]
+
+// Change Shina's expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_007_0180]
+I can't fully rejoice, but...
+As long as both of you are safe...
+It's kind of dramatic...!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_007_0190]
+Actually, I also just yesterday
+had something like that level of... Oh
+[/message]
+
+// Yurisa is surprised
+[shake target=chara id=200202 type=vertical sec=0.2 pow=7 fade=false wait=false]
+
+// Change Yurisa's expression
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0200]
+Hah... Shina!?
+Did you also have
+a life-threatening situation—!?
+[/message]
+
+//// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+/// Shina and Yurisa exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+
+// Akagi enters at center
+[character id=602601 posx=0.48 anim=fade face=default show=true wait=true]
+
+[face id=602601 type=confuse]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=02_007_0210]
+Ahh, Yamamura-chi got
+burned up...!
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Akagi exits
+[character id=602601 anim=fade show=false wait=true]
+
+/// Shina, Yurisa, and Sayaka enter
+[character id=200102 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.5 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.75 anim=fade face=default show=true wait=true]
+
+[face id=200202 type=panic]
+
+//// Display text window again
+[visible show=true]
+
+
+// Yurisa approaches Shina
+Shina moves a bit
+[move id=200202 posx=0.45 sec=1 wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0220]
+Shina!!
+Let's definitely go to Yamamura Hospital this afternoon!!
+Even though I don't want to go...!!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0230 lipsync=false]
+(She doesn't want to go to her own hospital?
+That's strange...)
+[/message]
+
+[face id=200102 type=confuse]
+
+// Yurisa shakes horizontally
+[shake target=chara id=200202 type=vertical sec=0.3 pow=10 fade=false wait=false]
+// Shina is dragged along
+[shake target=chara id=200102 type=vertical sec=0.2 pow=8 fade=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_007_0240]
+Hi, hiiii...
+Yeah...
+Please don't grab my arm so tightly...
+[/message]
+
+// Yurisa shakes horizontally
+[move id=200102 posx=0.25 sec=0.4 wait=false]
+[move id=200202 posx=0.5 sec=0.4 wait=true]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Yurisa, and Sayaka exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+/// Mai enters on the left (0.25 0.5 0.75)
+[character id=200302 posx=0.25 anim=fade face=default show=true wait=false]
+/// Display text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=02_007_0250]
+Unlike us, these two have
+a relatively low rarity interaction, don't they?
+[/message]
+
+// Sayaka enters at center
+[character id=100101 posx=0.5 anim=fade face=panic show=true wait=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0260]
+……Excuse me, seniors!
+We're getting in the way of others on the main street...
+Let's get to work quickly.
+[/message]
+
+// Akagi enters
+[character id=602601 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Akagi charaid=602601 voice=02_007_0270]
+Hmm, newbie.
+Good job.
+Let's go~
+[/message]
+
+// Mai and Akagi exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=true]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+[face id=100101 type=confuse]
+
+///// Display text window again
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0280]
+……Haaah
+[/message]
+
+// Black background, turn off everyone except Sayaka
+
+[character id=602601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[move id=100101 posx=0.5 wait=true]
+
+[image type=bg id=000380 show=true]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0290 lipsync=false]
+(I'm getting tired of worrying about Chloe-chan from earlier,
+It's becoming ridiculous.)
+[/message]
+
+///// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+//【Choices】
+//1: That's good enough
+//2: There's no point in overthinking
+
+[select]
+[link text="That's good enough" label=understand]
+[link text="There's no point in overthinking" label=understand]
+[/select]
+
+// Regardless of choice, the development remains the same, no dialogue change
+
+:understand
+[face id=100101 type=smile]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0300 lipsync=false]
+(That's how it is... Yeah!
+    Got it, buddy.)
+[/message]
+
+///// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Restore background
+
+[image type=bg id=000060 show=true]
+
+[move id=100101 posx=0.33 wait=false]
+
+[character id=200202 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+//// Display text window again
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0310]
+…Whispering, who are you talking to?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_007_0320]
+Wawawa!?
+It's nothing, it's nothing!
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_007_0330 lipsync=false]
+(Is this an imaginary friend...
+    This Sayaka might also,
+    need to be examined further...)
+[/message]
+
+/// Hide text window once
+[visible show=false]
+[delay sec=0.3]
+
+// Natural airhead moment
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

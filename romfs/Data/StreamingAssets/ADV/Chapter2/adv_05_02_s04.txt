@@ -1,0 +1,215 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_05_02_s04
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000490]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// BGM23  / Peaceful Scene
+// Background490  / University Hospital
+
+[character id=200202 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+[face id=200202 type=default]
+
+// Show the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_905_0010]
+This is the Yamamura University Hospital,
+where I work as a resident doctor!
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_905_0020]
+Though, I guess there's no need to give a detailed tour.
+This is a place Shina knows very well.
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_905_0030]
+Yeah, that's true.
+It's been a few years since I last came here,
+but it's still such an impressive hospital!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_905_0040]
+……
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_905_0050]
+Sayaka?
+You look like you're confused about something?
+[/message]
+
+// Stop the BGM
+
+#N/A
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_905_0060 lipsync=false]
+(What is this...?
+There's this honeycomb-like pattern everywhere.)
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_905_0070 lipsync=false]
+(Is this supposed to be some kind of unique design?
+Neither Shina nor Yamamura-san seem to mind, though.)
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=thoughts]
+
+// Change Shina's expression
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_905_0080]
+...Sayaka?
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+
+[face id=100101 type=default]
+
+// Shake Sayaka
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_905_0090]
+Ah, no, it's nothing.
+[/message]
+
+// Shina, Sayaka, and Yurisa OFF
+// Briefly show Sugiura
+
+[character id=200202 posx=0.24 anim=fade face=default show=false wait=false]
+[character id=200102 posx=0.49 anim=fade face=default show=false wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=false wait=true]
+[visible show=false]
+
+// Slide Sugiura in from the left to the right with a fade
+[character id=602201 posx=0.49 anim=rtol face=thoughts show=true wait=true]
+
+// Show the text window
+[visible show=true]
+[message name=Sugiura charaid=602201 voice=02_905_0100]
+......
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Sugiura exits
+[character id=602201 anim=rtol show=false wait=true]
+
+[character id=200202 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Change Shina's expression
+[face id=200102 type=panic show=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.3]
+
+// Show the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_905_0110]
+Huh?
+Wasn't that Sugiura-san just now?
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_905_0120]
+Yes, it was.
+But he seemed unusually flustered.
+It's not like he was late or anything.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_905_0130]
+Oh well, he's probably being pushed around by my father again.
+He certainly has his hands full.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_905_0140]
+……
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+[sound type=se state=stop]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

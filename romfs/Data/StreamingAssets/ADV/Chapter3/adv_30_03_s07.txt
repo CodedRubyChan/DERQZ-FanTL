@@ -1,0 +1,546 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+// adv_30_03_s07
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display specified background
+[image type=bg id=000060]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// BGM16  / MAP track (to match the mood)
+// Background 60 / Main Street
+
+[character id=500502 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200903 posx=0.66 anim=fade face=default show=true wait=true]
+
+/////////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Falena charaid=500502 voice=03_930_0010]
+Lady Chloe, this is your manager Lena with today's schedule update!
+[/message]
+
+// Speaker name: Chloe
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=03_930_0020]
+Yes, yes… What's the first location again?
+[/message]
+
+// Speaker name: Falena
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=03_930_0030]
+Right! Let me confirm. First up is the convenience store's new product tie-up campaign! Please wear the Celica costume for the shoot.
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=03_930_0040]
+The hidden key point is the overwhelmingly high quality of the bento, which recreates the salad featured in the game…
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=03_930_0050]
+It would be great if you could eat it just like in the game! That way, the game fans' approval ratings will skyrocket for sure!
+[/message]
+
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=03_930_0060]
+Hmm, I guess I'll change before we head to the location. Gotta get into character.
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// BGM21
+// Background 530
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+[image type=bg id=000530 show=true]
+[sound type=bgm state=play name=Cafe]
+[delay sec=1.5]
+[character id=200903 anim=rtol show=false wait=false]
+[character id=500502 anim=rtol show=false wait=false]
+
+[delay sec=0.5]
+
+[character id=200901 posx=0.5 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[face id=200901 type=smile]
+
+/////////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chloe charaid=200901 voice=03_930_0070]
+New release from the "World's Odyssey" collaboration! Celica's eating it too! Strulfir Sailor Curry…
+[/message]
+
+// Sayaka is surprised
+[shake target=chara id=200901 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=200901 type=smile]
+
+[message name=Chloe charaid=200901 voice=03_930_0080]
+Spicy delicious~~~♪♪
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=500502 posx=0.5 anim=fade face=default show=true wait=true]
+
+[face id=500502 type=smile]
+
+///////////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Falena charaid=500502 voice=03_930_0090 lipsync=false]
+(Wow…! She even perfectly recreated the slight glitch from the game's motion… Just amazing!)
+[/message]
+
+// Speaker name: CM Director
+// Male Extra 34
+
+[message name=CM Director voice=03_930_0100]
+And… cut!! Perfect!! We got it!
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Black background
+[character id=500502 anim=fade show=false wait=true]
+[image type=bg id=000380 show=true]
+
+// Speaker name: Chloe
+
+/////////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chloe voice=03_930_0110]
+So, what's next?
+[/message]
+
+// Speaker name: Falena
+
+[message name=Falena voice=03_930_0120]
+Next is Aguru Corporation's popular web series, a quiz show with no script…!
+[/message]
+
+// Speaker name: Falena
+
+[message name=Falena voice=03_930_0130]
+...Although there is a script for this one! The only thing you can't do is answer before the veteran actress Ms. Wadaki, your co-star…
+[/message]
+
+// Speaker name: Chloe
+
+[message name=Chloe voice=03_930_0140]
+Ugh, lame… I'll read through it while we're on the move. Wait, isn't this the show that Komae-chan, the girl who committed suicide, used to be on…?
+[/message]
+
+// Speaker name: Chloe
+
+[message name=Chloe voice=03_930_0150]
+Now I'm kinda interested. I'll leave the Celica costume with you. Do my makeup.
+[/message]
+
+// Speaker name: Falena
+
+[message name=Falena voice=03_930_0160]
+Of course, leave it to me!
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Background 230
+
+[image type=bg id=000230 show=true]
+
+// Speaker name: Show Host
+// Female Extra 35
+
+////////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Show Host voice=03_930_0170]
+Ahh, Chloe, so close…!
+[/message]
+
+[character id=200902 posx=0.5 anim=fade face=sad show=true wait=true]
+
+[message name=Chloe charaid=200902 voice=03_930_0180]
+That question was too hard! I feel so frustrated~♪
+[/message]
+
+// Speaker name: Show Host
+// Female Extra 35
+
+// Chloe expression change
+[face id=200902 type=smile]
+
+[message name=Show Host voice=03_930_0190]
+And now for the announcement! Chloe will be joining us as a regular on the show! Stay tuned for next month's episode airing soon!
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Black background
+
+[character id=200902 anim=fade show=false wait=true]
+[image type=bg id=000380 show=true]
+
+// Speaker name: Chloe
+
+//////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chloe voice=03_930_0200]
+And… what's next?
+[/message]
+
+// Speaker name: Falena
+
+[message name=Falena voice=03_930_0210]
+Yes! The next location and highlight is…
+[/message]
+[visible show=false]
+// Brief pause, time passes
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[delay sec=2.0]
+
+// Background 160
+
+[image type=bg id=000160 show=true]
+
+[character id=500502 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200902 posx=0.66 anim=fade face=default show=true wait=true]
+
+[move id=200902 posx=0.75 sec=1 wait=false]
+
+[face id=500502 type=default]
+[visible show=true]
+
+////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Falena charaid=500502 voice=03_930_0220]
+Lady Chloe, you did great today… Oh, wait, please slow down!
+[/message]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=03_930_0230]
+Heh, try to catch up~♪
+[/message]
+
+[move id=500502 posx=0.48 sec=1 wait=false]
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=03_930_0240]
+Wait, it's not just me… What about the SP officers from Sagami Station…?!
+[/message]
+
+// Falena expression change
+[face id=500502 type=thoughts]
+
+[face id=200902 type=default]
+
+[message name=Chloe charaid=200902 voice=03_930_0250]
+If you're my manager, keep up!
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+// Time passes
+// BGM20
+
+[character id=200902 anim=ltor show=false wait=true]
+[character id=500502 anim=ltor show=false wait=true]
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+[sound type=bgm state=play name=Home]
+[delay sec=1.5]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[character id=200902 posx=0.66 anim=rtol face=default show=true wait=true]
+
+[character id=500502 posx=0.33 anim=rtol face=painful show=true wait=true]
+
+///////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Falena charaid=500502 voice=03_930_0260]
+Pant… Pant…
+[/message]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=03_930_0270]
+Haha… You did great. You've gotten faster! Manager ‘Lafi'!
+[/message]
+
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=03_930_0280]
+Haha! Guess I was caught… 
+[/message]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=03_930_0290]
+How could I not notice? You're just like before… Reborn? Turned into a Luden? It really happens, huh.
+[/message]
+
+[face id=200902 type=default]
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=03_930_0310]
+… I don't even know why I'm in this form now. It's a long story, but—
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=03_930_0320]
+I'm just glad I got to see you again, Ce… Chloe.
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[move id=200902 posx=0.5 sec=1 wait=false]
+[face id=200902 type=smile]
+
+///////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chloe charaid=200902 voice=03_930_0330]
+Haha! There you go again, messing up the name… This game-addicted manager!
+[/message]
+// Sayaka is surprised
+[shake target=chara id=200902 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+// Chloe expression change
+[face id=200902 type=default]
+[face id=500502 type=painful]
+
+// Sayaka is surprised
+[shake target=chara id=500502 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Falena charaid=500502 voice=03_930_0340]
+Ouch! I-It's only during my breaks…
+[/message]
+
+//// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.3]
+
+[move id=200902 posx=0.66 sec=1 wait=false]
+
+[face id=200902 type=smile]
+
+///////////// Display text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chloe charaid=200902 voice=03_930_0350]
+How can you finish all weapons and scenarios in "World's Odyssey" and level up Celica to the max in just your breaks…
+[/message]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=03_930_0360]
+You've even ended up looking like Celica now. Maybe you don't need to work with me anymore?
+[/message]
+
+[face id=200902 type=default]
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=03_930_0370]
+…That's not true…
+[/message]
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=03_930_0380]
+…Komae-chan, who was my rival in Japan, committed suicide, and— 
+you were devastated… It was terrible…
+[/message]
+
+// Chloe expression change
+[face id=200902 type=sad]
+
+[message name=Chloe charaid=200902 voice=03_930_0390]
+Haha! Yeah, that happened just when someone else was overworking themselves to death, huh.
+[/message]
+
+[face id=500502 type=painful]
+
+[message name=Falena charaid=500502 voice=03_930_0400]
+I'm truly sorry… I couldn't manage my health. But now, with this new body, I can stay with you again…
+[/message]
+
+[face id=200902 type=surprise]
+
+[message name=Chloe charaid=200902 voice=03_930_0410]
+You got this body? From whom? Is becoming a Luden something you can just be given?
+[/message]
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=03_930_0420]
+I don't think it works that way for everyone… Oh.
+[/message]
+
+[face id=200902 type=default]
+
+[message name=Chloe charaid=200902 voice=03_930_0430]
+Is that… a message?
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=03_930_0440]
+It's from the one who gave me this body…
+[/message]
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=03_930_0450]
+A department store…? An explosion?
+[/message]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=03_930_0460]
+Haha, what? Is this my next project?
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=03_930_0470]
+…Let's ignore that!
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=03_930_0480]
+Now, Chloe! Tonight's lodging is just around the corner! Come on, hurry up!
+[/message]
+
+[character id=500502 anim=rtol show=false wait=false]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=03_930_0490]
+You can still run, huh? Haha!!
+[/message]
+[visible show=false]
+// G Celica, Chloe exits
+
+[character id=200902 anim=rtol show=false wait=true]
+
+// Sendou enters
+
+[character id=601501 posx=0.5 anim=fade face=default show=true wait=true]
+[visible show=true]
+[message name=Chiri Sendou charaid=601501 voice=03_930_0500]
+Target has arrived at the hotel. Handing over to the hotel team. Over and out.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+///////////////////////////Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

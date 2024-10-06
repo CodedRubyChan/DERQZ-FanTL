@@ -1,0 +1,159 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_29_01_022
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+//[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+////////////////////////////////////////////////////// Display transparent background
+[image type=bg id=000999 show=true black=false]
+////////////////////////////////////////////////////// Hide previous background
+//[image type=black show=false]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-attempting dungeon, arriving back at the boss
+
+// Background: Dungeon
+// BGM: 13
+
+// Show text window
+[visible show=true]
+
+[message name=Arafoul voice=01_029_0010]
+Mogegegegege...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Display Sayaka in Blade form
+[character id=100103 posx=0.49 anim=fade face=angry show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_029_0020]
+This time, I won't hold back...  
+'Ripuka Code!'
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////// Ripuka Code effect
+// Camera zoom
+[camera type=zoom pivot=4 fov=0.1 sec=0.3 active=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Camera zoom
+[camera type=zoom pivot=1 fov=1 sec=0.05 active=true wait=false]
+
+// SE
+[sound type=se name=Code]
+// Camera shake
+[shake type=random sec=0.5 pow=10 fade=false wait=false]
+// Wait for specified seconds
+[delay sec=0.1]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.3 color=red]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.05 active=false wait=true]
+
+// Sayaka expression change to surprise
+[face id=100103 type=surprise]
+// Wait for specified seconds
+[delay sec=1]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.3 color=red]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_029_0030]
+!?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_029_0040]
+That annoying guy...  
+I—I feel like I just... have to kill him!  
+I can't hold it in any longer!
+[/message]
+
+// Sayaka expression change to angry
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=01_029_0050]
+Just let me kill him... just a little!!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Begin boss battle
+[bossbattle active=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.05 active=false wait=true]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

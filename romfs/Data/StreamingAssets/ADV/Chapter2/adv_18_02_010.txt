@@ -1,0 +1,307 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_18_02_010
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over a specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Background: Dungeon remains
+// BGM05
+
+[character id=100101 posx=0.24 anim=fade face=surprise show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0010]
+Whoa…! 
+I've found someone who's clearly suspicious.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0020]
+Could you be the boss causing all the trouble here?
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+[character id=500102 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=??? charaid=500102 voice=02_018_0030]
+……Who are you?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0040]
+...Wait…!? 
+Yamamura-san…?
+[/message]
+
+[message name=Yurisa Yamamura? charaid=500102 voice=02_018_0050]
+...Yes, I'm Yamamura.
+But I'm not doing anything wrong, you know?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0060]
+You look just like Yamamura-san, 
+so pretty... 
+but with blonde hair... 'Lily'...
+[/message]
+
+[face id=500102 type=angry]
+
+[message name=Yurisa Yamamura? charaid=500102 voice=02_018_0070]
+…That's wrong...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0080]
+…? 
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Yurisa Yamamura? charaid=500102 voice=02_018_0090]
+I am… Lilith. 
+Lilith Yamamura...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0100]
+Li…Lilith…? 
+You're not… Yurisa…?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0110]
+W-What are you doing here? 
+I thought you were outside all this time...
+[/message]
+
+// Speaker name: Lilith Yamamura
+[face id=100101 type=surprise]
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0120]
+Me? Outside? 
+…I haven't been out much.
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0130]
+Even haunting people gets tiring… 
+I didn't have a body for a long time…
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0140]
+…Well, now I do, though...
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0150]
+So, you're not the Yamamura-san I know... 
+What are you doing here…?
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0160]
+I've been “watching” the Yamamura Hospital…
+[/message]
+
+[face id=500102 type=angry]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0170]
+Good patients, annoying patients, 
+that greedy director, 
+and his foolish daughter…
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0180]
+How long will they live, anyway? 
+I wish they'd just die already... 
+That's how I feel now.
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0190]
+…If you're the one creating these doors 
+and wrecking the hospital, 
+I'm going to have to ask you to stop, now!
+[/message]
+
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0200]
+Why? 
+Why should I stop?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0210]
+What!? 
+Th-That's because… 
+there are people suffering because of it…!
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0220]
+People who want to die, 
+people who are wished to die, 
+and those who feel utterly trapped…
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0230]
+They come here even though there's no hope of recovery. 
+I've talked to a few of them, 
+and honestly, this place is better off gone.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0240]
+W-Wait a second! 
+Not everyone feels that way…!
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0250]
+For example, Shina would never...
+[/message]
+
+[face id=500102 type=confuse]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0260]
+—Shina?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0270]
+Ah, Shina is… well, she's someone very important to me...
+[/message]
+
+// BGM OFF
+[sound type=bgm state=stop]
+
+[face id=500102 type=smile]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0280]
+I see. 
+So… 
+Shina is here, isn't she?
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=02_018_0290]
+Then… 
+I must go welcome her.
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Move Lilith's sprite
+[move id=500102 posx=-1.25 sec=1 wait=false]
+
+// Sayaka gets startled
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100101 type=panic]
+
+[delay sec=0.5]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_018_0300]
+W-Where are you going?!
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Move Sayaka's sprite
+[move id=100101 posx=-1.25 sec=1.5 wait=false]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

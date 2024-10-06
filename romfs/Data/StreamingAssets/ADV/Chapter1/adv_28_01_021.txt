@@ -1,0 +1,286 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_28_01_021
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display specified background
+[image type=bg id=000580]
+
+// Display subway background
+//[image type=bg id=000580]
+// Snark appears at the start
+[character id=601701 posx=0.33 anim=none face=smile show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Sayaka appears
+[character id=100101 posx=0.66 anim=rtol show=true face=thoughts wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_028_0010]
+The brown one...  
+As I thought, it's you.
+[/message]
+
+// Snark expression change
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=01_028_0020]
+Hmm... It's been a while.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_028_0030]
+I still remember the time I rode this subway...
+[/message]
+
+[message name=Intimidating Man charaid=601701 voice=01_028_0040]
+Enough with the idle chatter. State your business.
+[/message]
+
+[face id=100101 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=01_028_0050]
+I want to save Shina!  
+For that, I need to go to the Strain Area!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_028_0060]
+And... the Ripuka Code! I just heard about it,  
+but I feel like I already know how to use it!
+[/message]
+
+// Snark expression change
+[face id=601701 type=smile]
+[message name=Intimidating Man charaid=601701 voice=01_028_0070]
+Heh...  
+It seems your “self-awareness” is growing steadily.  
+Clearly, you're not like the other girls.
+[/message]
+
+// Snark expression change
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=01_028_0080]
+Is it thanks to the one controlling things behind the scenes...  
+perhaps I have them to thank?
+[/message]
+
+// Choices. Same dialogue regardless of selection
+[select]
+[link text="I didn't do anything special" label=first]
+[link text="No, it's Shina's strength" label=first]
+[/select]
+
+:first
+
+// Snark expression change
+[face id=601701 type=smile]
+[message name=Intimidating Man charaid=601701 voice=01_028_0090]
+Let's leave it at that.  
+Now board the Strain Train. We'll continue inside.
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+//##########################################################################//
+// Scene transition
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Display train interior background
+[image type=bg id=000590]
+
+// Sayaka expression change
+[face id=100101 type=thoughts]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+[sound type=se name=Intrain]
+
+//##########################################################################//
+// Scene transition
+//##########################################################################//
+
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Intimidating Man charaid=601701 voice=01_028_0100]
+Now... show me your weapon.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_028_0110]
+Got it...
+[/message]
+
+// Hide text window
+[visible show=false]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Snark expression change
+[face id=601701 type=default]
+
+// SE
+[sound type=se name=VsActivate]
+
+// Hide Sayaka
+[character id=100101 anim=fade show=false wait=false]
+// Show Sayaka (Blade form)
+[character id=100103 posx=0.66 anim=fade show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window again
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=01_028_0120]
+......
+[/message]
+
+[message name=Intimidating Man charaid=601701 voice=01_028_0130]
+It seems you have a talent for memory recall.  
+And... you must be aware of the "Bug" manifesting in your arm.
+[/message]
+
+// Camera zoom
+[camera type=zoom pivot=13 fov=0.5 sec=1 active=true wait=false]
+
+// Sayaka expression change
+[face id=100103 type=eyeright]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_028_0140]
+Oh, you mean this big one?
+[/message]
+
+// Hide text window for a moment
+[visible show=false]
+[delay sec=0.1]
+// Cancel camera zoom
+[camera type=zoom sec=1 active=false wait=true]
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Sayaka (Blade) expression change
+[face id=100103 type=default]
+
+[message name=Intimidating Man charaid=601701 voice=01_028_0150]
+The unique language we Ludens possess...  
+It's something that takes shape separate from weapons.
+[/message]
+
+// Snark expression change
+[face id=601701 type=smile]
+[message name=Intimidating Man charaid=601701 voice=01_028_0160]
+Your “Bug” is the Ripuka Code given form.  
+As long as you focus, it can wound anything...  
+After all, it's the Ripuka Code.
+[/message]
+
+// Sayaka (Blade) expression change
+[face id=100103 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100103 voice=01_028_0170]
+I don't get good vibes from that name...  
+But thanks for everything.
+[/message]
+
+// Snark expression change
+[face id=601701 type=default]
+[message name=Intimidating Man charaid=601701 voice=01_028_0180]
+No need for thanks. Show me results!
+[/message]
+
+// Hide text window
+[visible show=false]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Cancel camera zoom
+[camera type=zoom sec=0.1 active=false wait=true]
+[delay sec=0.05]
+// Camera zoom
+[camera type=zoom pivot=11 fov=0.5 sec=0.1 active=true wait=true]
+
+//////////////////////////////////////////////////// Show still image 05 [Sayaka in Train]
+[image type=still id=100005 show=true fade=false]
+// Cancel camera zoom
+[camera type=zoom sec=8 active=false wait=false]
+[delay sec=0.5]
+
+[sound type=se name=Train]
+[fade type=in anim=simple sec=0.5]
+///////////////////////////////////////////////////////////////////////////// Fade in over specified seconds
+[delay sec=6]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+// Cancel camera zoom
+[camera type=zoom sec=0.1 active=false wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

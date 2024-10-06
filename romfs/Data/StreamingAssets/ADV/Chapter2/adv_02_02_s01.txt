@@ -1,0 +1,324 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_02_02_s01
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000150]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM23  / Peaceful Scene
+// Background150  / Shrine
+
+// Yurisa Yamamura appears
+[character id=200202 posx=0.25 anim=fade face=default show=true wait=false]
+// Shina appears
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=false]
+// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=false]
+
+// Show the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0010]
+Alright! This here is Sagami Shrine!
+I've been meaning to show you this place, Shina!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_902_0020]
+Wow.
+I didn't know there was a shrine out here on the edge of town!
+It has a rather solemn atmosphere, doesn't it?
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0030]
+Nice observation, Sayaka!
+…Though I was hoping Shina would say that.
+[/message]
+
+[face id=100101 type=default]
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0040]
+W-well, I already knew about the place, so…
+[/message]
+
+[face id=200202 type=default]
+[face id=200102 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0050]
+Did you know? This shrine dates all the way back to the Muromachi period.
+It's a historically significant shrine, one of the most prominent in Sagami City's history!
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0060]
+And to top it off, my family has been maintaining it!
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0070]
+Whaaat?! I… I didn't know that…
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0080]
+Great reaction, Shina!!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_902_0090]
+That's really impressive…!
+Are there any other stories or legends tied to this shrine?
+[/message]
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0100]
+Hehehe.
+I'm glad you asked!
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=thoughts]
+
+// Change Yurisa's expression
+[face id=200202 type=default]
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0110]
+Back in the Muromachi period...
+People were suffering from repeated outbreaks of disease and famine,
+Living their lives without any hope…
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_902_0120]
+Huh?! Yamamura-san's suddenly started telling a story?!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0130]
+Hehe.
+Sounds interesting, let's listen to her!
+[/message]
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+[face id=200202 type=default]
+
+// Change Yurisa's expression
+[face id=200202 type=smile]
+
+// Feedback from Yamazaki: "The crying heard from the houses => Yurisa's expression should be smiling (smile)"
+// Changed Yurisa's expression from [sad] to [smile] accordingly.
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0140]
+The sound of children crying could be heard from every house.
+Everyone wore an expression of anguish.
+It must have felt like hell on earth――
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=sad]
+
+// Feedback from Yamazaki: "=> Now her expression should turn gloomy here"
+// Changed back to [sad] only for this line.
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0150]
+Even my ancestors, who were prominent figures at the time,
+Did everything they could to help the people.
+But no matter what they did, the situation didn't improve.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0160]
+Then, one day, a single onmyoji appeared.
+Before giving her name,
+She said only one thing to my ancestor.
+[/message]
+
+// Change Yurisa's expression
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0170]
+"There is a vengeful spirit behind this calamity."
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0180]
+A vengeful spirit?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0190]
+Yes.
+Everything bad that was happening in this area
+Was the work of a vengeful spirit.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0200]
+With the help of the onmyoji,
+My ancestor immediately took steps to combat the spirit.
+The most important of which was the founding of this Sagami Shrine.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0210]
+My ancestor and the onmyoji worked together,
+Performing rituals at this shrine to calm the vengeful spirit.
+And thus, peace was finally restored to this land!
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0220]
+Wow.
+I had no idea Sagami City had such a rich history.
+I feel like I've learned so much!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0230]
+And your family goes that far back, too? That's incredible, Lily!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0240]
+Hehe.
+I guess I did brag a little, didn't I?
+But that's not the point of my story!
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0250]
+The truth is, after everything, my ancestor and the onmyoji fell deeply in love,
+And they lived happily ever after.
+And, what's more…
+[/message]
+
+// Yurisa is startled
+[shake target=chara id=200202 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0260]
+The onmyoji's features looked just like yours, Shina!
+Which means, Shina and I are destined to be together!!
+[/message]
+
+/////////////////////////////////// Yurisa moves closer to Shina
+[move id=200202 posx=0.35 sec=1 wait=false]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0270]
+Ah, it's wonderful, isn't it? To think that our love was destined
+From such a long time ago. There's no escaping fate now, is there?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=02_902_0280]
+Whoa... Yamamura-san is really getting into this!
+Though, it does feel a bit like a stretch…
+[/message]
+
+[face id=200102 type=smile]
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=02_902_0290]
+Hehe. Maybe so.
+But I do find it a bit romantic!
+About the shrine, that is.
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=02_902_0300 lipsync=false]
+(What… Not me?!
+It seems I need to push harder…!)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+[sound type=se state=stop]
+
+// Stop the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

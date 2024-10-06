@@ -1,0 +1,126 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+//adv_27_03_021
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over a specified duration
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Deep in the Strain Area
+// Background: Dungeon remains unchanged
+// BGM25
+
+[character id=100106 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Sayaka/Blade changes expression
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=03_027_0010]
+We meet again!! This time, I won't hold back!
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=03_027_0020]
+...Huh? You actually came all the way back here...!?
+[/message]
+
+// Sayaka changes expression
+[face id=100106 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=03_027_0030]
+Did you run into those cultists?
+[/message]
+
+[message name=Girl's Heart voice=03_027_0040]
+...No, aside from you, nobody else has made it this far.
+[/message]
+
+// Sayaka changes expression
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=03_027_0050]
+Good! I wish you had killed Liliana and the others for me♪
+[/message]
+
+// Sayaka is surprised
+[shake target=chara id=100106 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100106 type=default]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=03_027_0060]
+Thanks for the info! That's enough. Now die!!
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+[face id=100106 type=default]
+
+[message name=Girl's Heart voice=03_027_0070]
+...You're like a completely different person... The old lady's feeling like she might lose...
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+/////////////////////////// Stop any SE playing
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Start the boss battle
+[bossbattle active=true]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

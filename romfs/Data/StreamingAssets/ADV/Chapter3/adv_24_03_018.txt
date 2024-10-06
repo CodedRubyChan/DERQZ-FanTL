@@ -1,0 +1,161 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_24_03_018
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000430]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM23 / Peaceful Scene
+// Background 430 / Intersection
+
+[character id=100101 posx=0.66 anim=fade face=surprise show=true wait=false]
+
+[character id=600901 posx=0.28 anim=fade face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=03_024_0010]
+Oh, hey! What happened? I heard you were resting at the hospital!
+[/message]
+
+/// Sayaka is surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Sayaka changes expression
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_024_0020]
+Ah...! Nova-san! I'm glad you're here... Actually...
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Time passes
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+[face id=600901 type=confuse]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Nova changes expression
+[face id=600901 type=confuse]
+
+/// Nova is surprised
+[shake target=chara id=600901 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Nova charaid=600901 voice=03_024_0030]
+Y-you've gone that deep in?! And the Aphesis Church is involved too...?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_024_0040]
+I'm sure I'll be able to meet with Ms. Rottie soon!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=03_024_0050]
+I see... You're more capable than I gave you credit for.
+Looks like I underestimated you...
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_024_0060]
+Alright, I've decided! Check out this spot on the map.
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=03_024_0070]
+You're gonna meet someone interesting. 
+And probably someone you don't wanna meet either.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=03_024_0080]
+What do you mean!?
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=03_024_0090]
+You'll find out when you get there!
+If you want to grow your Ripuka Code, this is something you can't avoid. Heh heh!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
