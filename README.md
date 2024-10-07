@@ -6,6 +6,9 @@ DERQZ Fan Translation by:
 - Luden @levelzeroib (Discord)
 - RubyX_Coded/CodedRubyChan/ME @rubyxcoded (Discord)
 
+# BUGS
+- Opening the Gallery gets you stuck in a Loading Loop (not tested if it's a consistent problem or only with me or single cases)
+
 # INSTALLING THE PATCH - Emulator
 
 1. Download the Patch as Source Code:
