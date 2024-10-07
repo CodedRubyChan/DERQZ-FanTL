@@ -29,21 +29,22 @@ EnemyVoiceMst - SKIPPED
 EventActionMst - SKIPPED
 EventTriggerMst - SKIPPED
 ########## V5_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
-FigureGroupMst
-FigureMst
-GalleryCharacterFaceMst
-GalleryCharacterMst 
-GalleryDeathEndMst
-GalleryMovieMst
-GallerySoundMst
-GalleryStillMst
-GetEniMst
-GridgeGirlsVoiceMst
-HeroineSaveMst
-HeroineSkillMst
-HeroineVoiceMst
-IrisCompanyMst
-ItemMst
+FigureGroupMst - COMPLETED
+FigureMst - COMPLETED
+GalleryCharacterFaceMst - COMPLETED
+GalleryCharacterMst - COMPLETED
+GalleryDeathEndMst - COMPLETED
+GalleryMovieMst - COMPLETED
+GallerySoundMst - COMPLETED
+GalleryStillMst - COMPLETED
+GetEniMst - COMPLETED
+GridgeGirlsVoiceMst - SKIPPED
+HeroineSaveMst - SKIPPED
+HeroineSkillMst - SKIPPED
+HeroineVoiceMst - SKIPPED
+IrisCompanyMst - COMPLETED
+ItemMst - COMPLETED
+########## V6_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
 MemoryMst
 MissionMst
 PopupMst
@@ -51,7 +52,7 @@ ReleaseConditionMst
 ScenarioMst
 SkillMst
 SkillTreeSkillTypeTextMst
-StaffRollMst
+StaffRollMst - COMPLETED
 StatusEffectMst
 SubwayBossThumbnailMst
 TownCharaPhraseMst
