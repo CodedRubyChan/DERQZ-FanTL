@@ -45,16 +45,19 @@ HeroineVoiceMst - SKIPPED
 IrisCompanyMst - COMPLETED
 ItemMst - COMPLETED
 ########## V6_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
-MemoryMst
-MissionMst
-PopupMst
-ReleaseConditionMst
-ScenarioMst
-SkillMst
-SkillTreeSkillTypeTextMst
+MemoryMst - COMPLETED
+MissionMst - COMPLETED
+PopupMst - COMPLETED
+ReleaseConditionMst - SKIPPED
+ScenarioMst - COMPLETED
+SkillMst - COMPLETED
+SkillTreeSkillTypeTextMst - COMPLETED
 StaffRollMst - COMPLETED
-StatusEffectMst
-SubwayBossThumbnailMst
+StatusEffectMst - COMPLETED
+SubwayBossThumbnailMst - SKIPPED
+########## V7_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
+BUGFIX
+########## V7.2_masterdataassets_assets_all_7ae7aef5b0d3b1a5a150260226895c7e.bundle ##########
 TownCharaPhraseMst
 TownShopItemGroupMst
 TrapMst 
