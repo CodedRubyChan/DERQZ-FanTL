@@ -1,0 +1,427 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_16_04_s11
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+//BGM23 / For peaceful scenes
+//Background 430 / Intersection
+
+[character id=100101 posx=0.49 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0010]
+I'm out here during break to kill some time... 
+But, what should I do?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0020]
+Hm...? 
+There's a commotion over there. 
+...Wait, is that...?!
+[/message]
+
+////////////////////////////////////////////////////////////////////////////// Stop BGM
+[sound type=bgm state=stop]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////// Display only Shizu and Liliana
+[character id=100101 anim=fade show=false wait=true]
+// Wait for specified seconds
+[delay sec=0.5]
+[character id=601801 posx=0.31 anim=fade face=angry show=true wait=false]
+[character id=200702 posx=0.67 anim=fade face=angry show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=04_916_0030]
+This world is, after all, a false world!
+[/message]
+
+[message name=Shizu charaid=601801 voice=04_916_0040]
+A world where a false god indulges in childish puppet games, driven by their own desires...
+[/message]
+
+[message name=Liliana charaid=200702 voice=04_916_0050]
+A world like this should never have existed in the first place! 
+There will be no awakening unless you all achieve enlightenment!
+[/message]
+
+[message name=Liliana charaid=200702 voice=04_916_0060]
+We, the Aphesis, will guide you... 
+To the correct world where the true god smiles upon us!
+[/message]
+
+[message name=Shizu charaid=601801 voice=04_916_0070]
+Reformation! 
+A reformation of the world! 
+Grant us the one and only salvation!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+// Short pause
+
+// Sound effect: Applause
+[sound type=se name=Clap]
+[sound type=se name=Claptwo]
+[sound type=se name=Clapthree]
+
+// Short pause
+[delay sec=2.5]
+
+////////////////////////////////////////////////////////////////////////////// Display Sayaka as well
+[move id=601801 posx=0.23 wait=false]
+[move id=200702 posx=0.5 wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0080]
+...You sure are passionate. 
+A lot of people are listening, too. 
+It's really effective, huh?
+[/message]
+
+////////////////////////////////////////////////////////////////////////// BGM05
+[sound type=bgm state=play name=Chapter2]
+
+[face id=200702 type=smile]
+
+[message name=Liliana charaid=200702 voice=04_916_0090]
+Hehe. 
+Sayaka-san, we meet again.
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0100]
+I wasn't exactly looking forward to it!
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=04_916_0110]
+You're alone today, huh? 
+But, are you sure that's okay? 
+Things have been pretty dangerous lately. 
+Aren't you lacking a little sense of danger?
+[/message]
+
+[face id=601801 type=smile]
+
+[message name=Shizu charaid=601801 voice=04_916_0120]
+You never know, you might get kidnapped! 
+Hehehe...
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=04_916_0130]
+Shizu, don't joke around too much. 
+That's exactly why our salvation is necessary.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////// Hide Shizu, Liliana, and Sayaka
+[character id=601801 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+// Display two Aphesis cult members
+[character id=602701 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=602702 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Short pause
+[delay sec=1.0]
+
+/////////////////////////////////////////////////// Hide Aphesis cult members
+[character id=602701 anim=fade show=false wait=false]
+[character id=602702 anim=fade show=false wait=true]
+
+[delay sec=0.3]
+
+// Re-display Shizu, Liliana, and Sayaka
+[character id=601801 posx=0.23 anim=fade face=default show=true wait=false]
+[character id=200702 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0140]
+I don't object to your activities, 
+but if you're still using your followers as disposable pawns somewhere, 
+I won't stand for it!
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=04_916_0150]
+Disposable, huh? 
+That's a misunderstanding. 
+Their actions are noble martyrdom.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0160]
+That's not the point...!
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=04_916_0170]
+Oh, by the way... 
+How is Rottie doing?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0180]
+...Of course, she's fine. 
+More than fine, actually. 
+She's in perfect health!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0190]
+If you'd like to say hello, 
+she's at Iris Corporation.
+[/message]
+
+[face id=200702 type=smile]
+
+[message name=Liliana charaid=200702 voice=04_916_0200]
+Haha! Sayaka-san, you're too kind. 
+You shouldn't share personal information so easily.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0210]
+You said you were friends with Rottie, didn't you?
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=04_916_0220]
+One day, we'll... 
+we'll save Rottie, too.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0230]
+Uh... that sounds ominous. 
+For the record, Rottie has already been rescued! 
+By me and Mai-san!
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=04_916_0240]
+Heh. 
+Are you sure it's not just that you *think* you saved her?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0250]
+...What are you trying to say?
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=04_916_0260]
+Liliana, let's leave it at that. 
+We have a mission to guide even more people. 
+We don't have time to waste!
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=04_916_0270]
+...True. 
+Well then, Sayaka-san, until we meet again—
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////// Turn off Shizu and Liliana sprites
+[character id=601801 anim=rtol show=false wait=false]
+[delay sec=0.1]
+[character id=200702 anim=rtol show=false wait=true]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+// Speaker: Liliana
+// @Liliana
+[message name=Liliana charaid=200702 voice=04_916_0280]
+Come, let us reject this false world! 
+And let us reach out to the true world!
+[/message]
+
+// Speaker: Shizu
+// @Shizu
+[message name=Shizu charaid=601801 voice=04_916_0290]
+Only Aphesis can save you all! 
+Reformation for the world!!
+[/message]
+
+// Speaker: Liliana
+// @Liliana
+[message name=Liliana charaid=200702 voice=04_916_0300]
+Wake up! 
+See the ugliness of this world! 
+That's why we need reformation!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+[move id=100101 posx=0.49 sec=1 wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0310 lipsync=false]
+(This... "false world," huh. 
+It's almost like they already know about the president's story...)
+[/message]
+
+[face id=100101 type=expectation]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0320 lipsync=false]
+(No, I don't believe this world is false. 
+Everything I see and hear, 
+I feel it all myself.)
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_916_0330]
+Anyway, 
+it seems I don't need Aphesis after all—
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sayaka exits
+[character id=100101 anim=rtol show=false wait=true]
+
+[delay sec=1]
+
+// Display ghost sprite for a brief moment
+[character id=602001 posx=0.5 anim=rtol sec=0.3 face=default show=true wait=true]
+[delay sec=0.05]
+[character id=602001 anim=rtol sec=0.3 show=false wait=true]
+
+[delay sec=1]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+// Stop current BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

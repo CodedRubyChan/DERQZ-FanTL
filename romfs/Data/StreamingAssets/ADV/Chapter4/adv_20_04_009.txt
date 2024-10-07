@@ -1,0 +1,364 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_20_04_009
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000480]
+
+//////////////////////////////////////////////////////////////////////////////Sumika & Sayaka appear
+[character id=601101 posx=0.32 anim=none face=painful show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM23 / Peaceful Scene
+// Background 480 / Iris Corp, VR and Sound Studio
+
+// Display text window
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_020_0010]
+So... it happened again... 
+Sayaka, I'm sorry...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0020]
+Well... I mean, I'm pretty much okay this time!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Sumika disappears
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Yurisa & Mai appear, Sayaka moves
+[character id=200202 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=false]
+[move id=100101 posx=0.74 sec=0.5 wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_020_0030]
+But... that's strange.
+I was doing a test play just yesterday, and I didn't see anything wrong. 
+How could this happen all of a sudden...?
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_020_0040]
+Right. The recent bug reports show no issues in this dungeon. 
+It's been stable.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0050]
+Wait, you're telling me that ghost only shows up when I'm around?!
+That's... super inconvenient!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Yurisa disappears
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Shina appears
+[character id=200102 posx=0.24 anim=fade face=thoughts show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_020_0060]
+Well... maybe the bug isn't from Sumika or Mai.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_020_0070]
+Oh, right.
+I can think of one possible cause...
+Akagi's prank.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Sayaka disappears
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Akagi appears
+[character id=602601 posx=0.73 anim=rtol face=angry show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=04_020_0080]
+Give me a break!! 
+I haven't done anything since they moved me to a different department!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_020_0090]
+Ugh, you're here...? 
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_020_0100]
+Akagi, it's a little early for a break. 
+Why don't you head back to your seat?
+[/message]
+
+// Akagi's expression changes
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=04_020_0110]
+Yeah, yeah! 
+I just had some business with the sound team. 
+Mai, you really shouldn't talk behind my back!
+[/message]
+
+// Akagi leaves
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Akagi disappears
+[character id=602601 anim=ltor show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_020_0120]
+I was just considering the possibilities...
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_020_0130]
+...Now's the time to think of something more serious. 
+Like... Arata Mizunashi.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0140]
+Oh, right. 
+If that guy's involved, anything could happen...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0150]
+But would he really give advice...?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_020_0160]
+So, what exactly did the ghost say this time?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0170]
+Actually—
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////BGM Stop
+[sound type=bgm state=stop]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Shina & Mai disappear
+[character id=200102 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Rottie appears
+[character id=200402 posx=0.33 anim=ltor face=default show=true wait=false]
+// Sayaka moves
+[move id=100101 posx=0.66 sec=0.5 wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_020_0180]
+Shina, Sayaka! 
+Can you come over here for a second?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0190]
+Wait, you're still at the company, Rottie?!
+[/message]
+
+[face id=200402 type=angry]
+
+[message name=Rottie charaid=200402 voice=04_020_0200]
+That's so mean, Sayaka! 
+Rottie's part of Iris Corp now, too! 
+Humph!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Rottie & Sayaka disappear
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Yurisa appears
+[character id=200202 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_020_0210 lipsync=false]
+(She's shaping up to be a great mascot—!)
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Yurisa disappears
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Rottie & Sayaka appear
+[character id=200402 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_020_0220]
+President Glock is calling for you. 
+Come with me!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_020_0230]
+The president...? 
+Alright. Let's go, Director!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////Rottie & Sayaka disappear
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Sumika & Shina appear
+[character id=601101 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_020_0240]
+Right. Sumika, we'll pause the debugging here for now. 
+Please focus on the chapter's full playthrough.
+[/message]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_020_0250]
+Got it. I'll wrap things up here, so you two go ahead!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

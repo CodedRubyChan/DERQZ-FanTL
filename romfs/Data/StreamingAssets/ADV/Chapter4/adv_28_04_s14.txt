@@ -1,0 +1,464 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_28_04_s14
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Epilougue]
+
+// Display the specified background
+[image type=bg id=000550]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Up to 25 characters per line, 3 lines max
+//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Chapter 4
+// Sub Conversation 04_s014
+//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+// Background 550 / Department Store East Wing
+// BGM 12
+
+[character id=600901 posx=0.19 anim=rtol face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=rtol face=default show=true wait=false]
+[character id=601001 posx=0.74 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Display the text window
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=04_928_0010]
+The commotion is coming from here!!
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=04_928_0020]
+...I knew it. 
+I can sense Arata Mizunashi's presence. 
+Everyone, please be safe...
+[/message]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=04_928_0030]
+...Let's go quickly. 
+We need to protect the people important to you, Iris.
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=04_928_0040]
+Yeah! 
+No way I'm missing out on a festival this exciting! 
+Let's get moving!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Levin and Nova
+[character id=601001 anim=fade show=false wait=false]
+[character id=600901 anim=fade show=false wait=false]
+[move id=600601 posx=0.74 wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Huuki and Kiki
+[character id=500302 posx=0.23 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=04_928_0050]
+Nooope. ( ﾟДﾟ)
+You're not getting through here♪ 
+Huuki and I will handle this!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=04_928_0060]
+Ugh... 
+Y-You're... 
+The clones created by Arata!
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_928_0070]
+It's quite a busy day, 
+having to watch over both the Strain Area 
+and this side as well.
+[/message]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_928_0080]
+According to my master, 
+your interference would be considered 'cheating,' 
+and it's something he despises, no?
+[/message]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_928_0090]
+To keep this from turning into a bad game, 
+we've been ordered to stop you with all our might. 
+You will not pass.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=04_928_0100]
+Levin, Nova. 
+Can I count on you?
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Huuki, Kiki, and Iris
+[character id=500302 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Nova and Levin
+[character id=600901 posx=0.28 anim=fade face=default show=true wait=false]
+[character id=601001 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=04_928_0110]
+Of course... 
+Iris, please stay back.
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=04_928_0120]
+I'll take on that Kiki girl. 
+Alright, let's get this started!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Time Passage
+
+[fade type=out anim=simple sec=0.5]
+
+[character id=601001 anim=none show=false wait=false]
+[move id=600901 posx=0.62 sec=0.1 wait=true]
+[character id=500202 posx=0.32 anim=none face=default show=true wait=true]
+
+[delay sec=0.5]
+[fade type=in anim=simple sec=0.5]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=04_928_0130]
+Hehehe♪ 
+Here we go♪
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shaking
+[shake target=chara id=600901 type=horizontal sec=0.5 pow=10 fade=false wait=false]
+[sound type=se name=Laser]
+
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=04_928_0140]
+Gyaaah!? 
+W-What the heck is that attack, Kiki?! 
+Do more of it...!
+[/message]
+
+[shake target=chara id=600901 type=horizontal sec=1 pow=5 fade=false wait=false]
+
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=04_928_0150]
+If I take any more of this... I'm gonna ascend... 
+It feels so good... so good... 
+This... is a first for me...!!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=04_928_0160]
+Yay yay yay!(^^)!
+[/message]
+
+[shake target=chara id=600901 type=random sec=2 pow=10 fade=false wait=false]
+[sound type=se name=Laser]
+[delay sec=0.1]
+[sound type=se name=Laser]
+
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=04_928_0170]
+Ahh~ 
+No good... I can't stop drooling... 
+I'm done for. I can't think of anything anymore!!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=04_928_0180]
+Hahaha♪ 
+You're funny, Nova. 
+This is what you like, huh? This makes you happy, right?
+[/message]
+
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=04_928_0190]
+Yesss♪ Yes, it makes me so happy♪ 
+Please, more and more♪ 
+Ahhh, this is incredible!!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Kiki and Nova
+[character id=500202 anim=fade show=false wait=false]
+[character id=600901 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Levin and Iris
+[character id=601001 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=04_928_0200]
+Iris... I'm afraid it's the usual... 
+Nova abandoned the fight midway...
+[/message]
+
+// Iris changes expression
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=04_928_0210]
+Ugh... 
+Even at a time like this... 
+Nova, you idiot!
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Levin and Iris
+[character id=601001 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Nova
+[character id=600901 posx=0.45 anim=fade face=painful show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+//////////////////////////////////////////////////////////////////// Character shaking
+[shake target=chara id=600901 type=vertical sec=0.5 pow=10 fade=false wait=false]
+
+[message name=Nova charaid=600901 voice=04_928_0220]
+Uh-oh~ 
+Iris's scolding is the best~ 
+Come on, insult me more. Ahhh, it feels so good~
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Nova
+[character id=600901 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Levin and Iris
+[character id=601001 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.66 anim=fade face=painful show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=04_928_0230]
+Iris... I'm even more sorry... 
+I've lost all motivation to fight, too...
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Iris President charaid=600601 voice=04_928_0240]
+W-Why?!
+[/message]
+
+[face id=601001 type=painful]
+
+[message name=Levin charaid=601001 voice=04_928_0250]
+My opponent... 
+I can't stand them on a personal level... 
+I don't want to fight... and honestly, I don't even want to look at them.
+[/message]
+
+[face id=601001 type=painful]
+
+[message name=Levin charaid=601001 voice=04_928_0260]
+You know how it is... 
+Some people can't handle certain things, like... 
+being afraid of frogs or hating clusters... 
+That's how I feel about that person...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=04_928_0270]
+You're refusing to fight for something like that?! 
+That's terrible, Levin!
+[/message]
+
+[face id=601001 type=angry]
+
+[message name=Levin charaid=601001 voice=04_928_0280]
+Are you blaming meeeeeeee?! 
+Who do you think made me this wayyyyy?!
+[/message]
+
+[face id=600601 type=confuse]
+
+[message name=Iris President charaid=600601 voice=04_928_0290]
+Ugh... 
+Okay, fine, it was me...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Levin and Iris
+[character id=601001 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Huuki and Kiki
+[character id=500302 posx=0.31 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_928_0300]
+How boring. I shall return inside. 
+I leave the rest to you. Can you handle it?
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=04_928_0310]
+Of course! I can handle it all on my own. 
+It was a good call to split from Lilith~
+Now I can fully enjoy this...
+[/message]
+
+// Hide the text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Huuki and Kiki
+[character id=500302 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Iris
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=04_928_0320 lipsync=false]
+(Our codes aren't having any effect... 
+I'm sorry, Sayaka... 
+I'll do what I can to hold this one off...)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

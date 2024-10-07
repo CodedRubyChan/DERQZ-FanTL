@@ -1,0 +1,772 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+// adv_01_04_001
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000460]
+
+////////////////////////////////////////////////////////////////////////////// Display Rottie and Mai
+[character id=200302 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Background 460 / Mai's Apartment
+// BGM23
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_001_0010]
+Snooze... 
+Fwah!?
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_001_0020]
+Nya-nya... pshoo~
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0030]
+Hehe, what a funny sleeping face. 
+And those funny sleep talks.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0040]
+...Gotcha.
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0050]
+Mmm... huh?
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_001_0060]
+Mai-chan?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0070]
+It's still early but... 
+Good morning, Rottie.
+[/message]
+
+[character id=200402 posx=0.33 anim=btot face=expectation show=true wait=false]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_001_0080]
+Good morning... 
+But why are you poking my cheeks?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0090]
+No reason. 
+Seeing your sleeping face made me want to tease you.
+[/message]
+
+[face id=200402 type=angry]
+
+[message name=Rottie charaid=200402 voice=04_001_0100]
+Boo. Mai-chan, you're such a meanie! 
+You really haven't changed, huh?
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0110]
+Sorry. You must be tired, right? 
+Go back to sleep. 
+I'll just keep watching your funny sleeping face.
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_001_0120]
+Geez. My face isn't that funny. 
+But... hehe.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0130]
+What? 
+Why are you laughing?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0140]
+Because we were sleeping in the same bed.
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0150]
+Yesterday, you were so cute, Mai-chan. 
+You suddenly asked, ‘Can we sleep together?'
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0160]
+W-well, that's... 
+It's just how I was feeling at the time...
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_001_0170]
+Hehe, that's true. 
+So, how was it?
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0180]
+...I felt reassured. 
+Being close to you, Rottie, feeling your warmth...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0190]
+It feels like we switched roles! 
+Mai-chan was the one clinging to me this time.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0200]
+I-I can't help it. 
+I was so worried about you, and I finally got to see you again.
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_001_0210]
+You were that worried? 
+Hehe. I'm so happy you cared that much.
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_001_0220]
+Your sister... Sanae-chan, right? 
+If you're too focused on me, 
+she might get jealous!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0230]
+Can we not talk about Sanae right now? 
+Stop teasing me!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0240]
+Honestly... I'm the one who's grateful. 
+Rottie... thank you for being alive.
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_001_0250]
+Come on now... 
+You're exaggerating... 
+It feels a little awkward.
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0260]
+I was only apart from you for a few hours.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display text window again
+[delay sec=1.5]
+[visible show=true]
+
+// Change to BGM05
+[sound type=bgm state=play name=Chapter2]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0270]
+...That's right...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0280]
+Rottie... 
+It felt like only a few hours to you?
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_001_0290]
+...Yeah? 
+I was trapped in that place for about... 7 hours, right?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0300]
+...No. 
+Rottie, you were in that place...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0310]
+For 7 years. 
+You were imprisoned for 7 years.
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_001_0320]
+...Seven... years?!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_001_0330]
+...Haha! 
+Mai-chan, you can't fool me!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0340]
+I couldn't have been there for 7 years. 
+I would definitely notice if it were that long!
+[/message]
+
+// No BGM
+[sound type=bgm state=stop]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_001_0350]
+W-well, sure... 
+Mai-chan does seem more grown up now, 
+and... taller, too?
+[/message]
+
+// Return to BGM23
+[sound type=bgm state=play name=TalkA]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_001_0360]
+Oh! But if 7 years really passed, 
+wouldn't I have grown into a fine lady by now?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0370]
+...Hmm.
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_001_0380]
+Hehe. 
+Mai-chan, you're terrible at making jokes!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0390]
+...True. 
+Rottie still looks exactly as she did before she disappeared. 
+How is that possible?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0400]
+Is it some power unique to that place? 
+Or is it something about Rottie herself?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0410]
+What about Liliana-chan? 
+Did she get taller too?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0420]
+No, 
+she's still shorter than you, Rottie...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0430]
+See! 
+Maybe time sped up for you, Mai-chan!
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0440]
+......
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_001_0450]
+Eh... You're being so serious... It wasn't a joke? 
+Did I really spend 7 years there...? 
+If that's true, then...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+[face id=200302 type=default]
+[move id=200302 posx=0.49 sec=0.5 wait=false]
+
+// Display text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0460]
+...Hug.
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_001_0470]
+...Mai-chan?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0480]
+It's okay.
+I'm here with you now.
+I won't let us be separated again.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0490]
+Even if you feel anxious or afraid,
+You're not alone. I'll be with you.
+So, so...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0500]
+Yeah...
+Thank you, Mai-chan...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Sayaka enters
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=false]
+
+// Display text window again
+[visible show=true]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0510]
+Hey there! Mind if I barge in now— 
+W-whoa!?
+H-hey!!?
+[/message]
+
+//////////////////////////////////////////////////////////////////////////// Rottie and Mai move
+[move id=200402 posx=0.25 sec=0.3 wait=false]
+[move id=200302 posx=0.49 sec=0.3 wait=false]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0520]
+S-Saya!?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0530]
+What... you two hugging each other like that so early in the morning... 
+Is this some kind of "enjoying yourselves" situation...!?
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0540]
+Wait!! D-don't jump to conclusions! 
+It's nothing like that! 
+So, what's up?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0550]
+What's up? I've been isolated in the living room because there wasn't enough room in the bed! 
+I've been lonely since last night!
+[/message]
+
+[face id=200302 type=sad]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0560]
+Oh, sorry... 
+I usually live alone, so...
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_001_0570]
+This bed's a bit cramped for three people... 
+Sorry about that, Saya-chan!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0580]
+I know, I know... 
+Anyway, I came to tell you that breakfast is ready. 
+I figured Rottie might be hungry too.
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_001_0590]
+Yep! I'm starving! 
+I haven't had a normal meal in 7 years!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0600]
+Rottie, you...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0610]
+...Yeah. Honestly, it's still hard to believe... 
+But when you say it, Mai-chan, it starts to feel real.
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0620]
+...You'll stay with me, right?
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0630]
+...Of course.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0640]
+“And so, the two exchanged a passionate gaze.”
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0650]
+Stop narrating!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////////////// Screen fade
+// Time passes
+[fade type=out anim=simple sec=0.5]
+
+[face id=200302 type=default]
+[face id=100101 type=default]
+
+[delay sec=1.5]
+[fade type=in anim=simple sec=1]
+////////////////////////////////////////////////////////////////////////////////////////////////// Screen fade
+
+[delay sec=0.5]
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0660]
+...Hey, I've been thinking. 
+Maybe it's time to call Rottie's mother.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0670]
+We should let her know Rottie is safe, so she can stop worrying.
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_001_0680]
+My mom... 
+It's been 7 years, hasn't it? 
+And now I'm in Japan...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0690]
+After that, we should go to Iris Corporation together. 
+There are people there who clearly know more about what's going on.
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_001_0700]
+Iris Corporation...?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0710]
+That's where Mai-san and I work.
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_001_0720]
+...R-right... you're working now, huh...?
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0730]
+No more secrets! 
+We're going to make Iris President and Shina tell us everything they know!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0740]
+About you, Rottie, 
+and about this strange world we're in...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_001_0750]
+...Gotcha.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0760]
+...Rottie, why are you tugging on my cheek?
+[/message]
+
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=04_001_0770]
+Because you were making a scary face. 
+You shouldn't do that. You're so cute when you smile!
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0780]
+Geez... I'm trying to have a serious conversation here... 
+But thanks.
+[/message]
+
+// Mai changes expression
+[face id=200302 type=eyeright]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0790]
+So, Sayaka, are you ready for this?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0800]
+Yep, I'm good. 
+Let's call Rottie's mom, 
+then head to Iris Corporation and get some answers!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0810 lipsync=false]
+(You're on board with this too, right?)
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////////////////////【Choice】
+// 1: Yeah
+// 2: Mai's face was funny
+
+[select]
+[link text="Yeah" label=surprise]
+[link text="Mai's face was funny" label=smile]
+[/select]
+
+//////////////////////////////////////////////////////////// In case of 1:
+:surprise
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0820 lipsync=false]
+(Rottie's mom will be so shocked... 
+But I know she'll be happy.)
+[/message]
+[goto label=goout]
+
+//////////////////////////////////////////////////////////// In case of 2:
+:smile
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0840]
+Pfft!! 
+(Don't make me laugh! 
+Hehehe!)
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0850]
+S-a-y-a-k-a!
+What are you giggling about? 
+You're being weird.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_001_0860]
+S-sorry... 
+It's nothing.
+[/message]
+
+[goto label=goout]
+
+///////////////////////////////////////////////////////////////////////////////////////////【Convergence】
+:goout
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_001_0870]
+*Sigh* 
+Okay, let's head out then.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait a few seconds
+[delay sec=0.5]
+
+// Fade out
+[fade type=out anim=simple sec=0.5]
+
+// Hide characters
+[character id=200402 anim=none show=false wait=false]
+[character id=200302 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+
+// Stop playing current BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########
+// Black background
+[image type=bg]
+
+// Fade in
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Show ADV Eyecatch
+[eyecatch chapter=4 title=This Bomb Will Not Smile]
+// Wait for a few seconds
+[delay sec=1]
+//########## Eyecatch ##########
+
+//##########################################################################
+// End
+//##########################################################################
+:end
+
+// Fade out
+[fade type=out anim=simple sec=0.5]
+
+// Wait a few seconds
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait a few seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################
+// End
+//##########################################################################
+// END

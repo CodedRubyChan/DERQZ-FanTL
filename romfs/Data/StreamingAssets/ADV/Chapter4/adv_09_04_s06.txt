@@ -1,0 +1,235 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_09_04_s06
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000470]
+
+//////////////////////////////////////////////////////////////////////////// Kōji appears
+[character id=601301 posx=0.14 anim=none face=default show=true wait=false]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=1]
+
+// Background 470 / Iris Corporation
+// BGM25
+
+/////////////////////////////////////////////////////////////////////////////// Rottie, Mai, Sayaka appear
+[character id=200402 posx=0.4 anim=rtol face=default show=true wait=false]
+[character id=200302 posx=0.59 anim=rtol face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+// Change Kōji's expression
+[face id=601301 type=confuse]
+//////////////////////////////////////////////////////////////////// Character shaking
+[shake target=chara id=601301 type=vertical sec=0.5 pow=10 fade=false wait=false]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0010]
+Whoa!? 
+Wait, hold up! 
+Why the heck is that kid here!?
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_909_0020]
+Oh, it's Mai-chan's dad! 
+Long time no see♪
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_909_0030]
+Ex-dad. 
+He's my ex-dad.
+[/message]
+
+[face id=601301 type=angry]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0040]
+What nonsense is that!?
+There's no such thing as an ex-dad!
+Even legally, we're not divorced yet!
+[/message]
+
+[face id=601301 type=painful]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0050]
+No matter what happens, I'm still your father!
+That fact isn't changing!
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_909_0060]
+...Right.
+Just my bad luck.
+[/message]
+
+[face id=601301 type=angry]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0070]
+You're still just as mouthy as ever...
+Seriously, where did you get that attitude!?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_909_0080]
+That's pretty obvious...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_909_0090]
+Dad, you can't bully Mai-chan, okay?
+[/message]
+
+// Change Kōji's expression
+[face id=601301 type=painful]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0100]
+You know... I've quit drinking, smoking, 
+and even punching walls... Nowadays, 
+it's Mai bullying me more often than not!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_909_0110]
+Don't worry, Rottie.
+I made sure to move out for good measure.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+[face id=601301 type=confuse]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0120]
+More importantly!! Rottie, though. 
+Why is Rottie here? 
+She's been missing for a long time!!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_909_0130]
+We found her and rescued her, obviously.
+That's it.
+[/message]
+
+[face id=601301 type=painful]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0140]
+"That's it"? 
+Is that all the explanation you're going to give!?
+You really are a heartless one, aren't you?
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_909_0150]
+I don't care. 
+It's not like charming you would get me anywhere.
+...Are we done here?
+[/message]
+
+[face id=601301 type=angry]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0160]
+...Do whatever you want!
+Oh, and by the way...
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Kōji Toyama charaid=601301 voice=04_909_0170]
+Rottie, 
+I'm really glad you made it back.
+Please keep being friends with that one.
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_909_0180]
+Hehe.
+Of course I will!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_909_0190 lipsync=false]
+(She's got it together~!)
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_909_0200]
+Hmph.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+//[sound type=se state=stop]
+
+// Stop any playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+END

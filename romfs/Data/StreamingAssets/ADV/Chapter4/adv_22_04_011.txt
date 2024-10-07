@@ -1,0 +1,826 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_22_04_011
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000540]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM23
+// Background 540 / Department Store West Wing
+
+// Display the text window
+[visible show=true]
+
+// No speaker
+[message]
+Three days later...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////// Display Yurisa and Sayaka
+[character id=200202 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_022_0010]
+Sh-Shina… 
+We still have some time before the meeting with our contact.
+How about some window shopping together…? 
+I'd love to do that!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0020]
+By the way, 
+why did you come along, Yamamura-san?
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_022_0030]
+W-Why!? 
+Am I not allowed to be here!? 
+I'm also a proud part-time employee of Iris Corp.!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0040]
+N-No, 
+no problem at all...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////// Hide Yurisa
+[character id=200202 anim=fade show=false wait=true]
+//////////////////////////////////////////////////////////////////////////////// Display Rottie
+[character id=200402 posx=0.33 anim=ltor face=smile show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_022_0050]
+Wow! 
+There are so many stores I've never seen before! 
+This place has gotten a lot bigger since I last knew it!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0060]
+I thought only Yamamura-san would get all excited, 
+but now Rottie is all starry-eyed too.
+Don't forget why we're here, okay?
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_022_0070]
+Got it!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////// Hide Rottie
+[character id=200402 anim=fade show=false wait=true]
+//////////////////////////////////////////////////////////////////////////////// Display Shina
+[character id=200102 posx=0.32 anim=fade face=smile show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0080]
+Sayaka, is there something on your mind?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0090]
+Eh!? 
+W-Why?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0100]
+I don't know.
+You seem like you're feeling uneasy about something.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0110 lipsync=false]
+(I still couldn't tell her what that evil spirit said…)
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0120]
+Ah.
+You're worried that we might get attacked again, right?
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0130]
+I'm sorry…
+I've ended up making you anxious too, Shina.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0140]
+Don't worry about it! I've already asked Nova to patrol the area.
+Iris is also watching over the area today.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0150]
+W-Wow!
+As expected of you. That's a real relief!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////// Move Sayaka and Shina
+[move id=100101 posx=0.74 sec=0.5 wait=false]
+[move id=200102 posx=0.49 sec=0.5 wait=false]
+//////////////////////////////////////////////////////////////////////////////// Display Rottie
+[character id=200402 posx=0.25 anim=ltor face=smile show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_022_0160]
+Come on, Sayaka, hurry up, hurry up!
+I have so many stores I want to visit!
+We're running out of time!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////// Hide Rottie and Sayaka
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+//////////////////////////////////////////////////////////////////////////////// Move Shina and Display Yurisa
+[move id=200102 posx=0.66 sec=0.5 wait=false]
+[character id=200202 posx=0.32 anim=fade face=thoughts show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_022_0170]
+Then, Shina…
+How about we… um, spend some time together…?
+Just the two of us…?
+[/message]
+
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0180]
+Lily, how about we wait in a café until it's time?
+We don't have much time, but it'll be just the two of us.
+[/message]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_022_0190]
+…Yesssssssssss!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Time passes
+// Background 550 / Department Store East Wing
+// No BGM
+[fade type=out anim=simple sec=0.5]
+[sound type=bgm state=stop]
+
+////////////////////////////////////////////////////////////////// Hide Yurisa and Shina
+[character id=200202 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=false]
+[image type=bg id=000550 show=true fade=false wait=true]
+
+[delay sec=1]
+
+///////////////////////////////////////////////////////////////////////////// Display Yurisa, Shina, and Sayaka
+[character id=200202 posx=0.24 anim=none face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=none face=default show=true wait=true]
+
+[fade type=in anim=simple sec=1]
+// Time passes
+
+// Re-display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0200]
+We're at Sagami's East Wing rest area.
+This is where we're supposed to meet Kaede-san, right?
+The time is about now, but she hasn't shown up yet.
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0210]
+Well, we just got here on time, so…
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_022_0220]
+Shina, then how about we visit another store...?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Yurisa and Shina
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Senji Hizumi and Chiri Sendo
+[character id=601601 posx=0.49 anim=ltor face=default show=true wait=false]
+[delay sec=0.1]
+[character id=601501 posx=0.24 anim=ltor face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+// Speaker name: Scary Man
+
+[message name=Scary Man charaid=601601 voice=04_022_0230]
+You guys are from Iris Corp, right?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0240]
+Eh…?
+Why is this scary guy talking to us…!?
+[/message]
+
+// BGM16
+[sound type=bgm state=play name=TownMapA]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0250]
+I should introduce myself first, huh...
+I'm Senji Hizumi, Kaede's father. I'm a detective.
+This here is also one of my subordinates.
+[/message]
+
+// Chiri Sendo expression change
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=04_022_0260]
+On my day off…
+I'm stuck with guarding my boss's daughter, Chiri Sendo.
+Having a doting boss is my bad luck, I suppose.
+[/message]
+
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0270]
+Don't say unnecessary things! 
+Anyway, as for Kaede…
+She's in the restroom right now.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Move Chiri, Chiji, and Sayaka
+[move id=601501 posx=0.19 sec=0.5 wait=false]
+[move id=601601 posx=0.39 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=false]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Shina
+[character id=200102 posx=0.59 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0280]
+Kaede's father...! 
+What do you mean by 'guarding' her?
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0290]
+Kaede told us she was coming to Japan on short notice,
+So naturally, we were concerned...
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0300]
+My daughter is quite well known.
+It's only right she has some protection.
+[/message]
+
+[face id=601501 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=04_022_0310]
+By the way, Kaede-san doesn't know we're here.
+We're watching her discreetly from the shadows.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0320]
+...Isn't that kind of like stalking?
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0330]
+You can call it whatever you want.
+But protecting my daughter is my duty as her father!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Chiri, move Chiji
+[character id=601501 anim=fade show=false wait=false]
+[move id=601601 posx=0.19 sec=0.5 wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Yurisa
+[character id=200202 posx=0.39 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_022_0340]
+W-Wait, we're not dangerous...?
+We're from Iris Corp., after all. You could easily verify that.
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0350]
+Listen. Kaede is an exceptionally gifted person.
+She's been smart ever since she was a kid, 
+And her charm is second to none.
+[/message]
+
+[face id=601601 type=thoughts]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0360]
+And now, at her young age, she's successfully managing 
+A major online shopping site. That's no ordinary feat.
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0370]
+She's internationally famous now…
+So it's no surprise if someone tries to target her.
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0380]
+Wow... 
+That's some serious fatherly love...
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0390]
+And now you're trying to headhunt her, huh? 
+I'm going to make sure I personally evaluate 
+Whether Iris Corp. is a place worthy of my daughter.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0400]
+...Hehe.
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0410]
+What's so funny, kid?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0420]
+No, I wasn't laughing at you…
+I just feel happy. 
+Clea… she's really lucky.
+[/message]
+
+[face id=601601 type=thoughts]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0430]
+Clea, huh…
+That character you modeled after my daughter?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0440]
+Y-Y-You know about that...!?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0450 lipsync=false]
+(Is he planning to sit in on the negotiations too?
+This might turn out to be a huge hassle...)
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0460]
+First, we should meet with Kaede-san.
+She's still in the restroom, right?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Yurisa, move Chiji
+[character id=200202 anim=fade show=false wait=false]
+[move id=601601 posx=0.39 sec=0.5 wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Chiri
+[character id=601501 posx=0.19 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Chiri Sendo charaid=601501 voice=04_022_0470]
+Yes.
+...But it's been a little while now.
+Maybe it's… one of those women's issues?
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=04_022_0480]
+You really don't have any tact, do you?!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0490]
+I'll go check on her!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=100101 anim=ltor show=false wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_022_0500]
+...Oh, she already left!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////////////// Scene change: Sayaka moves to the restroom
+// No BGM
+// Background 560
+[fade type=out anim=simple sec=0.5]
+[sound type=bgm state=stop]
+
+/////////////////////////////////////////////////////////////////////////// Hide Chiri, Chiji, Shina
+[character id=601501 anim=none show=false wait=false]
+[character id=601601 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=false]
+
+[image type=bg id=000560 show=true fade=false wait=true]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////// Scene change: Sayaka moves to the restroom
+
+[delay sec=0.5]
+[character id=100101 posx=0.49 anim=ltor face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=1]
+[visible show=true]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0510]
+...Huh? 
+Nobody's here. That's strange.
+Did we just miss each other? Did she already leave?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////// Camera zoom
+// Camera zoom
+[camera type=zoom pivot=12 fov=0.5 sec=0.1 active=true wait=true]
+
+// Re-display the text window
+[visible show=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0520]
+Wait, what's this…
+There's blood… on the mirror...!?
+[/message]
+
+// Camera zoom reset
+[camera type=zoom sec=30 active=false wait=false]
+
+/////////////////////////////////////////////////////////////////////// BGM17
+[sound type=bgm state=play name=TownMapB]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0530]
+And this strange distortion in the air…
+No way… No way! Why now?
+...I feel it.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0540]
+Could it be... Kaede's been pulled into a Strain Area!?
+[/message]
+
+// No BGM
+[sound type=bgm state=stop]
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=1]
+
+// Loud explosion sound
+// Background 550 / Department store east wing
+[sound type=se name=Bigbomb]
+
+//////////////////////////////////////////////////////////////////// Camera shake
+[shake type=random sec=2.5 pow=30.5 fade=true wait=false]
+
+// Camera zoom reset
+[camera type=zoom sec=0.05 active=false wait=false]
+
+[face id=100101 type=panic]
+[delay sec=2.5]
+
+[delay sec=0.1]
+// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_022_0560]
+W-What was that!?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////////////// Scene change
+[fade type=out anim=simple sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Hide Sayaka
+[character id=100101 anim=none show=false wait=false]
+
+[image type=bg id=000550 show=true fade=false wait=true]
+[character id=600201 posx=0.5 anim=none face=default show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////// Scene change
+
+[delay sec=0.5]
+// Re-display the text window
+[visible show=true]
+
+// Department store first floor, Arata's gang
+
+[message name=Arata charaid=600201 voice=04_022_0570]
+Boom, baby! Haha, how's that!?
+[/message]
+
+// @Mob31
+
+[message name=Young Customer voice=04_022_0580]
+Aaaaah!
+[/message]
+
+// @Mob32
+
+[message name=Older Customer voice=04_022_0590]
+Ugh... Gah... Help... Somebody... 
+[/message]
+
+// BGM12
+[sound type=bgm state=play name=Epilogue]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_022_0600]
+Dead, dead, deaaaaad! 
+Look at 'em, dropping like flies! 
+Young and old, doesn't matter! Equal opportunity death!!!
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_022_0610]
+But it's not enough! I need more bodies!
+More sacrifices for my beautiful art!!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_022_0620]
+Hahaha! Hey, look at that! What a masterpiece, right?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Arata
+[character id=600201 anim=fade show=false wait=true]
+// Speaker: Kiki & Amo
+[character id=500102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kiki & Amo charaid=500202 voice=04_022_0630]
+Ahhh, in all the panic, they crushed their own child (>_<)
+Ohhh, look, the neck's all bent… how scary!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_022_0640]
+That kid's dead, alright. Snapped their own kid's neck, just like that.
+Man, I'd love to get their reaction for an interview!
+[/message]
+
+// Lilith expression change
+[face id=500102 type=thoughts]
+
+// Speaker: Yamamura Lilith
+[message name=Yamamura Lilith charaid=500102 voice=04_022_0650]
+Do we really need that…?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Lilith and Kiki
+[character id=500102 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Fuki & Arata
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=500302 posx=0.65 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+// Speaker: ??? 
+[face id=500302 type=default]
+
+[message name=??? charaid=500302 voice=04_022_0660]
+...Pointless slaughter does not impress me, master.
+[/message]
+
+[face id=600201 type=angry]
+
+[message name=Arata charaid=600201 voice=04_022_0670]
+Ugh, you're so uptight, newbie…! 
+Shut up!!!
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_022_0680]
+Hey, everybody~ There's a bomb in the store!
+You'd better run for your lives!! Hehehe!!♪
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_022_0690]
+Woohoo!!
+Hihihahaha!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a few seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End of scene
+//##########################################################################//
+:end
+
+// Fade out for a few seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a few more seconds
+[delay sec=0.5]
+
+// Stop any playing sound effects
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a few more seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// Script ends here
+[exit]
+//##########################################################################//
+// End of script
+//##########################################################################//
+//END

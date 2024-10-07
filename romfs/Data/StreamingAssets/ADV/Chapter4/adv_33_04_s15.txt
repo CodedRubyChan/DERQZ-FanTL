@@ -1,0 +1,425 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_33_04_s15
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter7]
+
+// Display the specified background
+[image type=bg id=000380]
+
+// Display the black background
+[image type=black show=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+// No speaker
+
+[message]
+――One day before Kaede's rescue
+[/message]
+
+// Background 380: Black background
+// BGM09
+
+// Speaker: ???
+// @G-Al
+
+[message name=??? voice=04_933_0010]
+――――――
+…………
+...
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0020]
+――Huh?
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0030]
+This is strange.
+I woke up…
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0040]
+…Even though I died,
+I'm waking up…
+Is this the rumored heaven――?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Background: 140
+[image type=bg id=000140 show=true wait=false]
+
+[character id=600201 posx=0.5 anim=fade face=smile show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=04_933_0050]
+Nope?
+That's wrong...?
+Welcome, miss! This is... Hell!!
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0060]
+Ah, I see...
+For hell, it doesn't look much different.
+You don't seem like a demon either.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0070]
+Oh?! I don't mind cool girls, you know…
+Speaking of cool, do you remember your name?
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0080]
+――Kanamo Kume
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0090]
+Alright. Your memory's intact.
+Let's talk somewhere less crowded.
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0100]
+………
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=04_933_0110]
+Hey, what's the matter?
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0120]
+I don't want to go with strangers.
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_933_0130]
+Smart girl…
+But shouldn't you be more concerned with yourself?
+Don't you think your perspective is a bit lower?
+[/message]
+
+// @G-Al
+
+[message voice=04_933_0140]
+Now that you mention it...
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0150]
+Here, let me lend you a mirror…
+Go ahead, take a look.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Display glitchy Arata
+
+[move id=600201 posx=0.33 wait=false]
+[character id=500402 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0160]
+…Who the heck is this?
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_933_0170]
+Kahaha!! That's you.
+Your new body…
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0180]
+Well, the body is modeled after a huge fan who used to visit you a lot.
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0190]
+This face… Hinata?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0200]
+Yep!! That's right!!
+It was at the top of your memories, so I matched it for you. Be grateful!
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0210]
+…So.
+I've come back to life in this Hinata-like body?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0220]
+You catch on quick.
+Your real body was splattered all over the tracks a month ago.
+[/message]
+
+[face id=600201 type=confuse]
+
+[move id=500402 posx=0.71 sec=2 wait=false]
+
+[message name=Arata charaid=600201 voice=04_933_0230]
+You really caused trouble with that death…
+Wait, where are you going!?
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0240]
+To the tracks… To get crushed again.
+[/message]
+
+[face id=600201 type=painful]
+
+[message name=Arata charaid=600201 voice=04_933_0250]
+You idiot!! If you do that, give me back the time, materials, and costs I spent turning you into a Luden!!
+[/message]
+
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0260]
+You could've asked me before reviving me…
+What, did my family approve of this?
+Only my grandma's at home.
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=04_933_0270]
+No, I didn't talk to your grandma…
+[/message]
+
+[face id=500402 type=default]
+
+[move id=500402 posx=0.66 wait=false]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0280]
+I see. But why did you bring me back?
+I doubt it's related to my job.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0290]
+Because! I've got this grand plan called ‘Code Z'!!
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0300]
+I see.
+And what's my role in this?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0310]
+Ah, you're so cool about it…
+Simple! You're going to help me destroy this “fake world”…
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0320]
+…Interesting.
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_933_0330]
+Oh! Oh?! Starting to get into it? Nice…
+[/message]
+
+// Screen shake
+
+[shake type=random sec=1.0 pow=15 fade=true wait=false]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0340]
+You can even get revenge on that Chloe Aaron!!
+How does that sound??
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0350]
+…Seems like I was chosen for a reason.
+And now I've got a different face and body.
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0360]
+Alright, I'll go with you.
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_933_0370]
+Thanks!! Don't worry, I won't screw you over.
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0380]
+…Yeah, yeah. And what should I call you?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_933_0390]
+Oh, right! Check the document in the notebook PC.
+It's got the plan and info about me.
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0400]
+…The password is “Arata”? That's so basic.
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_933_0410]
+Haha! You already peeked… Also, your code name's already chosen.
+A friend of mine came up with it!
+[/message]
+
+// BGM stops
+
+[sound type=bgm state=stop]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0420]
+――Naraku?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Black background
+// Show standing characters
+
+[character id=600201 anim=fade sec=0.5 show=false wait=false]
+[image type=bg id=000140 show=false fade=true sec=0.5 wait=true]
+
+[delay sec=0.3]
+
+[move id=500402 posx=0.49 wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0430]
+――Naraku Morikubo, huh.
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=04_933_0440]
+――What a strange name.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop all SE
+[sound type=se state=stop]
+
+// Stop all BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//

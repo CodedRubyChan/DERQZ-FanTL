@@ -1,0 +1,1491 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_11_04_004
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Display black background
+[image type=black show=true]
+
+/////////////////////////////////////////////////////////////////////////////// Sumika, Yurisa, Mai appear
+[character id=601101 posx=0.24 anim=none face=default show=true wait=false]
+[character id=200202 posx=0.49 anim=none face=default show=true wait=false]
+[character id=200302 posx=0.74 anim=none face=default show=true wait=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Background 470 / Iris Corp.
+// No BGM
+
+// Display the text window
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0010]
+The president suddenly called us, saying there's something important to discuss... 
+I wonder what it could be? It's rare for this company... 
+Anyone here got a clue?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0020 lipsync=false]
+(So this is how it's coming――
+Well, it's more relaxed than us having to go ask first.)
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0030]
+Hmm...
+I don't know. 
+Sayaka and Mai, you two don't seem to know anything either?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0040]
+I don't know exactly what she'll say, 
+but it might be something about 
+revealing the truth.
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0050]
+Wh-what... the truth? 
+What do you mean by that? 
+And who's that young girl over there I haven't seen before...?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Sumika and Mai
+[character id=601101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////////// Move Yurisa
+[move id=200202 posx=0.24 sec=0.5 wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Rottie and Sayaka appear
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+// Rottie changes expression
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_011_0060]
+Oh, nice to meet you. 
+I'm Rottie!
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0070]
+Wow, nice to meet you too. 
+You're unexpectedly polite!
+Such a cute girl... are you really an adult in the workforce? 
+Your cuteness is almost unfair...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0080]
+Yamamura-san, 
+hands off...!
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0090]
+Wh-what?! 
+I have Shina...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// BGM24
+[sound type=bgm state=play name=TalkB]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Yurisa, Rottie, and Sayaka
+[character id=200202 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=1]
+
+/////////////////////////////////////////////////////////////////////////////// Iris, Shina, Glock appear
+[character id=200102 posx=0.24 anim=rtol face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=rtol face=default show=true wait=false]
+[character id=601201 posx=0.75 anim=rtol face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0100 lipsync=false]
+(The president is here, but Shina and the CEO too.
+This... doesn't feel like a normal meeting at all.
+What could they be telling us?)
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0110 lipsync=false]
+(Could it be... bankruptcy!?)
+[/message]
+
+[face id=601101 type=thoughts]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0120 lipsync=false]
+(No, no, no!
+That's not possible. 
+We're doing fine as a company!)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// BGM24
+[sound type=bgm state=play name=TalkB]
+[delay sec=0.5]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=601201 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0130]
+Thank you all for gathering here.
+From now on, the president will share some very important news with you.
+It's not related to business matters, but...
+[/message]
+
+[face id=601201 type=thoughts]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0140]
+This will be quite an unexpected story.
+But for me, I feel like the day has finally come.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0150]
+You'll be shocked, and maybe won't believe it all, 
+but... what the president will say is the truth.
+I can vouch for it, along with the CEO.
+[/message]
+
+[face id=601201 type=thoughts]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0160]
+Yes.
+Please stay calm and listen.
+I believe you all can handle this...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0170 lipsync=false]
+(Such a serious buildup. Everyone looks tense...)
+[/message]
+
+[face id=601201 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0180]
+Now then, President Iris.
+Please go ahead.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0190]
+......
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Shina, Iris, and Glock
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Mai appears
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0200]
+......
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Mai
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Iris appears
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0210]
+Good morning, everyone.
+Today, 
+I will explain about this "world."
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0220]
+By "world," I don't mean just this workplace, 
+but... the world itself.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0230]
+You are all familiar with Ludens, I believe.
+Shina and I are Ludens as well.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0240]
+But what most people don't know is that 
+the world itself is also... 
+a kind of Luden-like entity.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Move Iris
+[move id=600601 posx=0.32 sec=0.5 wait=false]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Sumika appears
+[character id=601101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0250]
+...What do you mean by that?
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0260]
+――Definition.
+Ludens can only exist 
+once they are strongly perceived by someone.
+And actually, the world is the same.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0270]
+The special structural language, Iris Code.
+Using this, I made it so the world could be 
+perceived and lived in by everyone.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0280]
+Originally, it was all just white and black, 
+0 and 1, nothing more...
+The "Strain Area"...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0290]
+I was the one who transformed that place 
+into the world you all live in now. 
+It was me...
+[/message]
+
+// BGM stops
+
+[sound type=bgm state=stop]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Iris and Sumika
+[character id=600601 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Sumika, Yurisa, Mai, Sayaka appear
+[character id=601101 posx=0.19 anim=fade face=confuse show=true wait=false]
+[character id=200202 posx=0.39 anim=fade face=surprise show=true wait=false]
+[character id=200302 posx=0.59 anim=fade face=surprise show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0300]
+......
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0310]
+......Huh...?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0320]
+The president...
+created the world...!?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0330]
+Wait a second, doesn't that affect...
+the entire human race!?
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0340]
+Wow. 
+There was a "scenario" similar to this 
+in World's Odyssey...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Sumika, Yurisa, Mai, and Sayaka
+[character id=601101 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Iris appears
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=President Iris charaid=600601 voice=04_011_0350]
+I know it's hard to believe.
+And yes, I've kept this hidden until today...
+[/message]
+
+// BGM29 starts playing
+[sound type=bgm state=play name=TalkG]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0360]
+This world is connected to the Strain Area.
+Using the "universal material" called 'Eni,' I was able to create 
+the land, the nature, and the buildings you see around you today.
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=President Iris charaid=600601 voice=04_011_0370]
+But 'Eni' is finite... and there are still places where 
+the material has run out or wasn't enough in the first place...
+In those areas, it's still just black and white, the Strain Area.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0380]
+For example... let me show you a part of this very room, 
+returning it back to the original state of the Strain Area...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// Cut-in display 03
+// BGM05	
+// Play "Materialization" sound effect
+[sound type=se name=Materialization]
+[cutin id=000003 type=rtol sec=0.5 show=true]
+[sound type=bgm state=play name=Chapter2]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0390]
+Look, 
+can you see it? This is... the part of the room where 'Eni' has run out 
+and it's returned to the Strain Area, the truth.
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0400]
+W-whoa!! What is that...?
+The space... it's hollowed out!? Is that part... 
+is that like some kind of new VR game?
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0410]
+Th-th-that... 
+gray door peeking through that gap...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0420]
+That's an element of "1" within the Strain Area. 
+Because of all the doors in the Strain Area, it's connected to many dimensions.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0430]
+Now I will return this part of the "truth" 
+back to the "reality" we live in... 
+With 'Eni,' I can seal the door and bring it back to normal.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// End the cut-in display
+[cutin id=000003 type=fade sec=0.5 show=false]
+
+// Hide Iris
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Mai, Rottie, Sayaka appear
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_011_0440]
+Ahhhhh!! 
+Rottie figured it out!!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0450]
+R-Rottie!?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0460]
+W-was there something in all that that could give you a clue...?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_011_0470]
+The place where I was taken to and spent those 7 years... 
+its true identity must have been that Strain Area!
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_011_0480]
+The one who dragged me into it was... 
+Iris, wasn't it!? 
+You've grown taller, but I remember you!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Mai, Rottie, and Sayaka
+[character id=200302 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Iris appears
+[character id=600601 posx=0.49 anim=fade face=painful show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=President Iris charaid=600601 voice=04_011_0490]
+Yeah... that's right.
+I'm really sorry, Rottie...
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0500]
+In a Strain Area untouched by me,
+time doesn't flow...
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0510]
+When I was creating this world...
+I left behind people who were inconvenient for me 
+in the Strain Area.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0520]
+One of those people was... you, Rottie...
+I always intended to come back for you, but...
+it took until Sayaka found you...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=President Iris charaid=600601 voice=04_011_0530]
+I'm really sorry...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Iris
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Shina, Yurisa, Mai appear
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.49 anim=fade face=panic show=true wait=false]
+[character id=200302 posx=0.74 anim=fade face=confuse show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0540]
+What are you saying――
+President, 
+are you... a god or something...?
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0550]
+Hold on a minute! 
+Shina!!
+Can I interrupt with a quick question!?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0560]
+I assume it's about the incident at the hospital, right?
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_0570]
+Of course. That strange door that appeared at my hospital,
+and the fact that the hospital somehow "repaired" itself after that incident...!?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0580]
+That's right. Since this world is based on the Strain Area,
+you can fix anything... buildings, even people.
+As long as you have Iris's unique abilities.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Shina, Yurisa, and Mai
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0590]
+..........
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////// Screen fades to black—flashback
+// Iris's mansion / Background 10
+[fade type=out anim=simple sec=0.5]
+[image type=bg id=000010 show=true fade=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Sayaka
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.05]
+
+[character id=600801 posx=0.33 anim=none face=default show=true wait=false]
+[character id=602201 posx=0.66 anim=none face=default show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Speaker: Alice
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=04_011_0600]
+Be careful of your footing.
+You still seem a bit confused.
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=04_011_0610]
+You were here the whole time yesterday――
+Helping with the preparations for the party――
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=04_011_0620]
+Make sure you don't forget that.
+[/message]
+
+[face id=602201 type=thoughts]
+
+[message name=Sugiura charaid=602201 voice=04_011_0630]
+......Understood. 
+If that's what you say...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+[fade type=out anim=simple sec=0.5]
+//////////////////////////////////////////////////////////////////////////////////////////// Flashback ends
+
+[character id=600801 anim=none show=false wait=false]
+[character id=602201 anim=none show=false wait=true]
+
+[delay sec=1.0]
+
+/////////////////////////////////////////////////////////////////////////////// Shina, Sayaka appear
+[character id=200102 posx=0.32 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=panic show=true wait=true]
+[image type=bg id=000470]
+
+[fade type=in anim=simple sec=0.5]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0640]
+Ah... Alice too...!
+So she's also connected to the president, helping to fix things!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0650]
+That Levin working at the cafe, 
+"Night Owl," the one everyone frequents.
+Alice, the developer of Alice Code.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0660]
+Nova, who frequents our company, and...
+the globally famous artist, Ri... 
+no, Basilissa.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0670]
+These four are the Ludens directly under President Iris.
+They help maintain the security of this world.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Shina and Sayaka
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Iris, Glock, Sumika appear
+[character id=600601 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.74 anim=fade face=painful show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0680]
+Shina... the CEO... and the president...
+I've lived my whole life up to this point 
+completely unaware of all of this!
+[/message]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0690]
+President, just how old are you!? 
+When did you... create this world!?
+[/message]
+
+[face id=601201 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0700]
+Perhaps it's best to talk about that as well now...
+[/message]
+
+[face id=601101 type=default]
+
+[face id=601201 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0710]
+The president is also a Luden, but she was born 
+not in this world but in another, which she came here from 
+through the Strain Area.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_0720]
+We call that place 'DE-1.'
+Her original, true world is not this one.
+[/message]
+
+[face id=601101 type=surprise]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_0730]
+Then... 
+w-we... where did we come from? 
+When did we arrive here!?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0740]
+My original world... it was in a terrible state.
+So I... I created this place, modeled after my world.
+All of you... were born in this world after that...
+[/message]
+
+// Switch BGM to BGM24
+[sound type=bgm state=play name=TalkB]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Glock and Sumika
+[character id=601201 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Mai and Rottie appear
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0750]
+I... for now, I believe you. 
+I've seen the strange events at the hospital with my own eyes, 
+including what happened with Sugiura-san.
+[/message]
+
+[face id=600601 type=smile]
+
+[message name=President Iris charaid=600601 voice=04_011_0760]
+Thank you...!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0770]
+But you still need to answer my question.
+Why did you dislike my best friend Rottie so much 
+that she ended up imprisoned in the Strain Area?
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=04_011_0780]
+Aw... do you still hate me...?
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=President Iris charaid=600601 voice=04_011_0790]
+N-no! 
+Rottie is... an irregular.
+That's the only reason... I did what I did...
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_011_0800]
+An irregular?
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0810]
+Rottie, you see... in Romania,
+"originally,"
+you should have been trapped 30 years ago.
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_011_0820]
+Th-thirty years!? Four times seven... plus two!? 
+Rottie wasn't even born yet back then! 
+What do you mean by that!?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Iris, Mai, and Rottie
+[character id=600601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Change background: Background 290
+[image type=bg id=000290 show=true]
+// BGM27
+[sound type=bgm state=play name=TalkE]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// Mai and Sayaka appear
+[character id=200302 posx=0.32 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0830]
+...Wait a second.
+Thirty years ago, in Romania... 
+there was that famous "Carnival Incident" in Le Choara...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0840]
+Was that incident famous? 
+I don't know anything about it.
+What happened?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0850]
+...There was a toxic gas leak from the mines. 
+People exposed to it fell into comas.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0860]
+Strangely, those affected stopped aging,
+and recently some have woken up safely...
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0870]
+...Just like Rottie's situation...
+Could it be that this gas is actually...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Mai and Sayaka
+[character id=200302 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Iris appears
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_0880]
+Even though I created this world, 
+I can't see every corner of it... 
+I can't freely control everything. I'm sorry.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0890]
+I couldn't erase the Le Choara incident itself, 
+no matter what I tried.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=04_011_0900]
+So instead, I decided to... 
+shift the timeline for Rottie's birth.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Iris
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Mai, Rottie, and Sayaka appear
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=surprise show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_011_0910]
+Just like that!? That's totally cheating...!
+Even my mom's birthday must've gotten shifted too, right?!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0920]
+Then... the fact that I became friends with Rottie... 
+was that also thanks to the president?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0930]
+Wait, have I... experienced the "original" timeline...?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_0940]
+O-original...?
+Mai-san, what do you mean by that...?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////////// Background turns black
+// BGM stops
+[sound type=bgm state=stop]
+[image type=bg id=000290 show=false fade=false wait=false]
+[character id=200402 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+[image type=bg id=000999 show=true fade=false wait=true]
+[delay sec=1]
+[move id=200302 posx=0.49 wait=true]
+
+// Camera zooms in
+[delay sec=0.05]
+[camera type=zoom pivot=10 fov=0.1 sec=0.5 active=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0950]
+...Why? Why is that? Despite all these far-fetched stories, 
+why can't I deny any of this...?
+These nostalgic, mysterious memories... 
+they're coming back to me...
+[/message]
+
+[face id=200302 type=thoughts]
+
+// Camera zooms in
+[delay sec=0.05]
+[camera type=zoom pivot=10 fov=0.1 sec=0.5 active=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0960]
+...Rottie, 
+Liliana...
+And, Sa... Sanae――
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Camera zooms in
+[camera type=zoom pivot=10 fov=0.2 sec=3 active=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_0970]
+El―Strain――
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////////////////// Change background back
+// BGM21
+// Screen shakes
+// Mai changes expression
+// Camera zooms out
+[camera type=zoom sec=0.05 active=false wait=false]
+[sound type=se name=Mirror]
+[sound type=bgm state=play name=Cafe]
+[image type=bg id=000470 show=true fade=false wait=false]
+[shake type=random sec=2.5 pow=30.5 fade=true wait=false]
+[face id=200302 type=painful]
+
+[delay sec=3]
+
+[move id=200302 posx=0.74 wait=true]
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=fade face=painful show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_0980]
+Iris!
+Mai's memories... 
+they might be in danger...!
+[/message]
+
+[message name=President Iris charaid=600601 voice=04_011_0990]
+Mai, stay with us...!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_1000]
+...I'm fine. 
+I was just a little confused.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Shina, Iris, and Mai
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Sumika, Yurisa, Rottie appear
+[character id=601101 posx=0.24 anim=fade face=thoughts show=true wait=false]
+[character id=200202 posx=0.49 anim=fade face=thoughts show=true wait=false]
+[character id=200402 posx=0.75 anim=fade face=panic show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_011_1010]
+I'm so glad...
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_011_1020]
+I also... 
+I also have strange memories of the name Le Choara.
+Even though I've never been to Romania... what is this...?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_1030]
+Yeah.
+...Honestly, 
+I also have some blurry memories...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Sumika, Yurisa, Rottie
+[character id=601101 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Iris, Glock, Sayaka appear
+[character id=600601 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=panic show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_1040]
+Whaaat!?
+I don't have any of those memories though!?
+[/message]
+
+[message name=CEO Glock charaid=601201 voice=04_011_1050]
+That's nothing to worry about, Sayaka-kun. 
+There's a bit of personal variation in this.
+[/message]
+
+// Iris changes expression
+[face id=600601 type=thoughts]
+[message name=President Iris charaid=600601 voice=04_011_1060]
+......
+[/message]
+
+[face id=601201 type=default]
+// Iris changes expression
+[face id=600601 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_1070]
+The members gathered here have all, in some way, 
+been involved in the strange incident that took place 
+so far away in Romania.
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=CEO Glock charaid=601201 voice=04_011_1080]
+But don't worry, the incident has been resolved!
+That's why the president tried to fix the aftermath.
+By manipulating the memories of the entire world, no less.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Iris, Glock, Sayaka
+[character id=600601 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Shina, Iris, Mai appear
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_1090]
+...None of us consented to this, though, did we?
+And besides, with Rottie... 
+did she really need to stay locked up in the Strain Area...?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=04_011_1100]
+Rottie was... the central figure of that incident.
+If she wasn't kept in a state close to the event,
+I couldn't tell where the effects of it would spread...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=President Iris charaid=600601 voice=04_011_1110]
+I was too weak... I'm really sorry...
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_1120]
+It's hard to keep pressing when you're crying like that...
+[/message]
+
+// Shina changes expression
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_1130]
+Mai-chan...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Shina, Iris, Mai
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Sumika, Rottie, Mai appear
+[character id=601101 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_011_1140]
+Ummm, maybe I'm just too dumb,
+but I couldn't keep up with half of that...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_011_1150]
+But Iris-chan, you tried really hard, didn't you?
+If I was actually sleeping for 30 years instead of 7...
+maybe that's actually better, huh?
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_011_1160]
+You're such a strong girl...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_011_1170]
+Yeah, really. 
+But still... 
+how about we take a little break? 
+I doubt everyone's able to process all this as well as Rottie is...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Sumika, Rottie, Mai
+[character id=601101 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Shina, Glock appear
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.67 anim=fade face=default show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601201 type=default]
+
+[message name=CEO Glock charaid=601201 voice=04_011_1180]
+I agree. Even you've reached your limit.
+And besides, there's more we need to talk about.
+Take some time to sort this out.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_011_1190]
+Sayaka... thanks for listening. 
+I know this was a lot.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////// Hide Shina, Glock
+[character id=200102 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+// Redisplay the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_1200]
+Uh, right...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_1210 lipsync=false]
+(I feel like I'm kind of the outsider here...
+Partner, do you have any idea what they were talking about with that "Carnival Incident"?)
+[/message]
+
+////////////////////////////////////////////////////////////////////////【Choices】
+// 1: I have no idea
+// 2: I remember experiencing it before
+
+[select]
+[link text="I have no idea" label=mentalstate]
+[link text="I remember experiencing it before" label=death]
+[/select]
+
+//////////////////////////////////////////////////////////////////////// If option 1 is chosen
+:mentalstate
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_1220 lipsync=false]
+(Haha!
+Then we're in the same boat!)
+[/message]
+[goto label=merge]
+
+//////////////////////////////////////////////////////////////////////// If option 2 is chosen
+:death
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_1230 lipsync=false]
+(Death... End... 2?)
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_011_1240 lipsync=false]
+(What is that!? 
+Have they all been through something that amazing...?
+I-I'm kind of jealous...)
+[/message]
+[goto label=merge]
+
+//////////////////////////////////////////////////////////////////////////【Merge point】
+:merge
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+//[sound type=se state=stop]
+
+// Stop any playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+END

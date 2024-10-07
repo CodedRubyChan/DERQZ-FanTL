@@ -1,0 +1,341 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_13_04_s09
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000470]
+
+//////////////////////////////////////////////////////////////////////////////////////////// Display Glock, Shina, Mai
+[character id=601201 posx=0.25 anim=none face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=none face=default show=true wait=false]
+[character id=200302 posx=0.74 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Background 470 / Iris Corporation
+// BGM23
+
+// Display text window
+[visible show=true]
+
+[face id=601201 type=painful]
+
+[message name=Glock President charaid=601201 voice=04_913_0010]
+You must've been shocked by the Chairman's story, right? 
+Being told something like that all of a sudden... 
+it's tough to process, isn't it?
+[/message]
+
+[face id=601201 type=confuse]
+
+[message name=Glock President charaid=601201 voice=04_913_0020]
+If it weren't for Rottie, 
+we might have kept silent 
+a little longer...
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0030]
+Judging from how you're talking, 
+it sounds like you knew all along, didn't you?
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_913_0040]
+Yes. 
+Both Shina, myself, 
+and the Ludens directly under the Chairman, we all knew.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0050]
+I can understand why you kept it hidden. 
+Not everyone would be able to accept the truth.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_913_0060]
+I appreciate you saying that.
+[/message]
+
+[face id=601201 type=confuse]
+
+[message name=Glock President charaid=601201 voice=04_913_0070]
+And next up, 
+we need to discuss 
+how to deal with the greater threat of terrorism.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0080]
+...The Aphesis Cult...
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_913_0090]
+W-Wait... The cult is definitely dangerous, 
+but isn't there someone even more dangerous out there?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Move Glock, Shina, Mai
+[move id=601201 posx=0.2 sec=0.5 wait=false]
+[move id=200102 posx=0.39 sec=0.5 wait=false]
+[move id=200302 posx=0.59 sec=0.5 wait=false]
+
+/////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.79 anim=rtol face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_913_0100]
+The ones attacking us... the guy with glasses, 
+and the one who looks exactly like a character 
+from *Worlds Odyssey*, right?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_913_0110]
+Our main job is making games, but...
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_913_0120]
+In the past, there have been those who targeted Chairman Iris. 
+Unfortunately, we have to take our "side jobs" seriously too.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0130]
+...Will Rottie... 
+get dragged into this whole situation?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Glock
+[character id=601201 anim=rtol show=false wait=false]
+///////////////////////////////////////////////////////////////////////////// Move Shina and Mai
+[move id=200102 posx=0.19 sec=0.5 wait=false]
+[move id=200302 posx=0.39 sec=0.5 wait=false]
+[delay sec=0.5]
+/////////////////////////////////////////////////////////////////////////// Display Rottie
+[character id=200402 posx=0.59 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_913_0140]
+...Oh?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0150]
+I asked Saya for help, 
+and we rescued Rottie from the Strain Area...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_913_0160]
+Ugh... 
+I didn't think that far ahead...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_913_0170]
+Don't worry. Iris and I will protect Rottie. 
+Iris Corporation is the second safest place in the world.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_913_0180]
+Those lookalikes were able to move freely 
+within the Strain Area, you know? 
+I don't think it's the safest place anymore.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_913_0190]
+Hearing that from someone who's actually fought them 
+does give it more weight...
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_913_0200]
+I'm sorry. 
+Iris and I underestimated them...
+[/message]
+
+// Mai changes expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0210]
+Honestly, it's frustrating. 
+Even if you apologize, it doesn't change anything...
+[/message]
+
+[face id=200402 type=angry]
+
+[message name=Rottie charaid=200402 voice=04_913_0220]
+Ugh! 
+Mai-chan, stop being so uptight!
+[/message]
+
+// Mai changes expression
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0230]
+R-Rottie...
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_913_0240]
+I'm not just some helpless princess 
+who always needs to be protected, you know!
+[/message]
+
+// Mai changes expression
+[face id=200302 type=default]
+// Shina changes expression
+[face id=200102 type=default]
+// Sayaka changes expression
+[face id=100101 type=default]
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_913_0250]
+If there's something I can do to help, 
+I want to do my best here too!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_913_0260]
+Just like how Mai-chan and Saya-chan helped me, 
+if I can help someone else... I want to do it!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina
+[character id=200102 anim=rtol show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Glock
+[character id=601201 posx=0.2 anim=ltor face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=601201 type=surprise]
+
+[message name=Glock President charaid=601201 voice=04_913_0270]
+To say all that... 
+you're truly a strong girl...!
+[/message]
+[face id=601201 type=default]
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_913_0280]
+Rottie... I understand, but 
+no reckless stunts, okay?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_913_0290]
+Of course! 
+The reckless stuff is your and Saya-chan's job!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_913_0300]
+You can continue counting on us!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+//[sound type=se state=stop]
+
+// Stop any playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+END

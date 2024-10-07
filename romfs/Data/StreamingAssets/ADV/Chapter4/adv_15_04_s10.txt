@@ -1,0 +1,461 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_15_04_s10
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000530]
+
+/////////////////////////////////////////////////////////////////////////// Display Assistant
+[character id=602401 posx=0.31 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+//BGM23
+//Background 530 / Convenience Store
+
+////////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=04_915_0010]
+Welcome! 
+...Oh, Sayaka-san!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0020]
+Hey.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0030]
+Wait... did I tell you my name...? 
+How did you know...?
+[/message]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=04_915_0040]
+No, no! I didn't do anything strange, I swear! 
+I actually heard it from Shina-san the other day, 
+just in casual conversation...!
+[/message]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=04_915_0050]
+Everyone from Iris Corporation comes by regularly. 
+I just thought it'd be good to get to know you all a little better... so, yeah...!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0060]
+I see. 
+Well... 
+Has Mai been here recently?
+[/message]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=04_915_0070]
+Oh, she's sitting by the window in the eat-in area! 
+As beautiful as ever...! 
+Of course, you are too, Sayaka-san!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0080]
+Yeah, yeah, thanks.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////// Screen darkens
+[fade type=out anim=simple sec=0.5]
+
+//////////////////////////////////////////////////////////////// Hide Assistant
+[character id=602401 anim=none show=false wait=false]
+//////////////////////////////////////////////////////////////// Display Mai
+[character id=200302 posx=0.32 anim=none face=default show=true wait=true]
+
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+////////////////////////////////////////////////////////////////////////////// Screen brightens
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Re-display text window
+[visible show=true]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0090]
+Mmm! 
+This new frappuccino is so good! 
+All that sugar is just what my tired brain needs!
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0100]
+......
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0110]
+Whoa. 
+You haven't touched yours at all, Mai-san.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0120]
+Come on... 
+We're up against the parallel world Arata Mizunashi here. 
+You need to eat when you can!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0130]
+Ugh. Be quiet. I can't concentrate. 
+I'm trying to organize everything in my head right now.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0140]
+Oh, the chairman's talk... 
+It was long, wasn't it?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0150]
+It's not the length, it's the content...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0160]
+Maybe it's because I'm a Luden, but I kind of just settled on, “Oh, so that's how it is.”
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0170]
+...Lucky. 
+Humans like me overthink everything.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0180]
+Once you finish sorting it out, could you share it with me? 
+You're really good at that stuff, Mai-san. 
+I'd love to use it as a reference!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0190]
+Speaking of, what's going to happen to Rottie now?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0200]
+Oh, about her... for now, Iris Corporation will be taking care of her. 
+They're explaining everything to her.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0210]
+I mean, it makes sense. Given what the chairman did to her, 
+they've got to make up for it somehow.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0220]
+What about Rottie's parents...?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0230]
+I'm sure they want to fly over right away, 
+but with work and everything, 
+it seems they can't come to Japan just yet.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0240]
+...Well, looks like you're in luck, Mai-san!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0250]
+Wait... what do you mean?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0260]
+If Iris Corp is taking care of her, 
+you'll get to be with Rottie more!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0270]
+N-no, it's not like that at all... 
+As long as Sanae's there, I'm fine!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0280]
+Oh, come on, you're practically cuddling up in the same bed every morning! 
+Just be happy about it!
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0290]
+Ugh, you're so persistent! 
+It's not like that at all! 
+Rottie's just a really good friend. 
+I'll prove it right now!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0300]
+Prove it?
+[/message]
+
+//SE: Phone call sound
+[sound type=se state=play name=Call]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0310]
+......
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0320 lipsync=false]
+(She's calling someone...)
+[/message]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0330]
+Hey, Sanae?
+[/message]
+
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////// Change background to 210
+[fade type=out anim=simple sec=0.5]
+[character id=100101 anim=none show=false wait=false]
+[character id=200302 anim=none show=false wait=false]
+
+// Only Sanae's sprite displayed
+[image type=bg id=000210 show=true fade=false wait=false]
+[character id=601401 posx=0.49 anim=none face=default show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+////////////////////////////////////////////////////////////////////////////// Screen brightens
+
+[delay sec=1]
+[visible show=true]
+
+[face id=601401 type=default]
+
+[message name=Sanae Toyama charaid=601401 voice=04_915_0340]
+Oh, hey sis. 
+What's up today? 
+Kinda late for a morning call, though.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0350]
+Listen closely... 
+The person I care about most is... 
+you, Sanae!
+[/message]
+
+[face id=601401 type=confuse]
+
+[message name=Sanae Toyama charaid=601401 voice=04_915_0360]
+...Huh?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0370]
+You're the most important person to me, Sanae! 
+That's something that will never, ever change!
+[/message]
+
+[face id=601401 type=smile]
+
+[message name=Sanae Toyama charaid=601401 voice=04_915_0380]
+Heh. 
+You're being weird, sis. 
+Of course that's true!
+[/message]
+
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////// Screen darkens
+//Background 530
+[fade type=out anim=simple sec=0.5]
+
+[character id=601401 anim=none show=false wait=false]
+[image type=bg id=000530 show=true fade=false]
+
+[character id=200302 posx=0.32 anim=none face=smile show=true wait=false]
+[character id=100101 posx=0.66 anim=none face=panic show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////// Screen brightens
+
+[delay sec=0.5]
+// Re-display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0390 lipsync=false]
+(Whoa...)
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0400]
+Sorry for calling out of the blue. 
+I'll call you again tonight, okay? 
+Bye...
+[/message]
+
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+[face id=200302 type=default]
+//End call sound
+[sound type=se name=Callend]
+[delay sec=1]
+
+[delay sec=0.5]
+// Re-display text window
+[visible show=true]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0410]
+...So! How was that? 
+That's what I'm talking about! 
+Get it now?
+[/message]
+
+[face id=100101 type=confuse]
+
+////////////////////////////////////////////////////////// Sayaka backs off nervously
+[move id=100101 posx=0.7 sec=4 wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_915_0420]
+So not only friends, but your actual sister too...
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_915_0430]
+Ugh, whatever! 
+Do whatever you want!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+// Stop current BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

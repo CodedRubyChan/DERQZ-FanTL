@@ -1,0 +1,995 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_14_04_005
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+// [sound type=bgm state=play name=GameOver]
+// Stop current BGM
+[sound type=bgm state=stop]
+
+// Display specified background
+[image type=bg id=000470]
+
+///////////////////////////////////////////////////////////////////////////// Display Shina, Iris, Glock
+[character id=200102 posx=0.24 anim=none face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=none face=default show=true wait=false]
+[character id=601201 posx=0.75 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.1]
+
+// Background 470 / Iris Corporation
+// No BGM
+
+// Display text window
+[visible show=true]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0010]
+Iris... Please explain the immediate danger 
+we're facing right now.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_014_0020]
+If you get tired of explaining, 
+you can always hand it off to us.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0030]
+Yeah...
+[/message]
+
+// BGM04
+[sound type=bgm state=play name=Chapter1]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0040]
+—Three days ago, there was an incident 
+where Director Shina was kidnapped by a man with glasses.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Move Shina and Iris
+[move id=200102 posx=0.19 sec=0.5 wait=false]
+[move id=600601 posx=0.39 sec=0.5 wait=false]
+///////////////////////////////////////////////////////////////////////////// Hide Glock
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Display Yurisa and Sayaka
+[character id=200202 posx=0.59 anim=fade face=angry show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_014_0050]
+......!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0060]
+Sayaka... 
+Thank you so much for rescuing me!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0070]
+It was the obvious thing to do!
+[/message]
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0080]
+That same night, Ms. Akagi was attacked 
+by someone dressed like Lucil from *Worlds Odyssey*...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina, Iris, Yurisa, Sayaka
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Display Mai
+[character id=200302 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0090]
+...Are they targeting people from our company...?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Mai
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Display Shina, Iris, Yurisa, Sayaka
+[character id=200102 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.39 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0100]
+...And two days ago, the hospital where Ms. Yamamura works 
+was attacked by someone dressed like Lily...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0110]
+There was also someone there who looked like Lucil! 
+They were fighting, but it seemed like 
+they were on the same side.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0120]
+Yeah... And part of the hospital turned into a 
+honeycomb-patterned Strain Area... 
+It won't be easy to fix...
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_014_0130]
+Ugh... 
+It looks like a normal hospital to me now, 
+but it's still in that state, huh...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0140]
+It's been fixed enough that it won't affect people, 
+so it's safe to use as a hospital.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0150]
+Chairman... Are we short on repair Eni? 
+You can get that in the Strain Area, right? 
+Should I go gather more?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=angry]
+[face id=100101 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0160]
+No!!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0170]
+...?!
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0180]
+Ah, sorry... I raised my voice. 
+But, you see, the amount you'd get 
+from one or two trips isn't nearly enough. 
+We need it in the billions.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0190]
+Billions?!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0200]
+Yes, fixing the world's "bugs" is tough. 
+I've been getting by with reserves 
+from a long time ago, but at this rate, 
+we won't be able to fix things anymore.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Yurisa
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Display Rottie
+[character id=200402 posx=0.6 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_014_0210]
+Iris-chan, it must be so tough...! 
+Can't more people help out?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0220]
+Are there really that few members 
+who can freely fight in the Strain Area?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0230]
+Yes. There's Ripuka, the guardian "Girls Heart" 
+I recently created to protect Rottie, and Sayaka... 
+That's about it.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0240]
+Huh... So Ripuka too, huh. 
+I had a feeling she was pretty strong.
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0250]
+......
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0260]
+......
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0270]
+W-what's up... 
+Is it bad to even mention Ripuka?!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina, Rottie, Sayaka
+[character id=200102 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Move Iris
+[move id=600601 posx=0.24 sec=0.5 wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Sumika and Mai
+[character id=601101 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0280]
+—Ah. Well, even Iris can't say 
+everything. Some things must be hard to explain, right? 
+Isn't that right, Chairman?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0290]
+Ah... th-thank you... Sumika-san...
+[/message]
+
+// BGM23
+[sound type=bgm state=play name=TalkA]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0300]
+Chairman! Smile more! 
+I joined this company because of your amazing aura!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0310]
+...I think smiling in this situation 
+would be a bit inappropriate.
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0320]
+You can smile and still be serious! 
+If someone like you is panicking, 
+it'll really affect morale, right? Am I wrong?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sumika
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Display Glock
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=04_014_0330]
+Haha! You're spot on, Sumika-kun! 
+That's a sharp perspective!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0340]
+W-wait... I'm not a god...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0350]
+So... as for what we can do immediately, 
+we'll report this to the police 
+and be careful ourselves, right? 
+Though I doubt the police can handle it.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0360]
+Chairman, by hiding your true identity, 
+aren't you being underestimated? 
+You could get the entire police force 
+to mobilize if you wanted, right?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0370]
+I only created this world to mimic the original one. 
+I don't want to control everything. 
+That includes the police...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Glock, Mai
+[character id=601201 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+// Move Iris
+[move id=600601 posx=0.32 sec=0.5 wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Sumika
+[character id=601101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0380]
+That's quite a respectable stance! 
+But, the people targeting our colleagues, 
+I don't want to leave them alone. 
+Do you have any idea who the culprits are, Chairman?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0390]
+I know. First... The leader of the enemy we're fighting... 
+The man with the glasses. His name is...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0400]
+Arata. Arata Mizunashi.
+[/message]
+
+// Sumika changes expression
+[face id=601101 type=panic]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0410]
+A-Arata Mizunashi?! 
+Arata-kun?! Why...?!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0420]
+Wait... Sayaka, do you know who Arata is?! 
+He's our legendary programmer who's been missing!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Move Iris, Sumika
+[move id=600601 posx=0.24 sec=0.5 wait=false]
+[move id=601101 posx=0.49 sec=0.5 wait=false]
+
+/////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.74 anim=fade face=confuse show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0430]
+L-Legendary?! 
+If he's been missing, 
+does that mean he's returned?!
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0440]
+No. 
+...It's more like... an evil version of him.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////////// Fade out
+[fade type=out anim=simple sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////// Black background
+
+// Hide Iris, Sumika, Sayaka
+[character id=600601 anim=none show=false wait=false]
+[character id=601101 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+// Hide background, show black background
+[image type=bg id=000470 show=false fade=false]
+[image type=black show=true]
+
+// Display Arata Mizunashi
+[character id=600201 posx=0.5 anim=none face=default show=true wait=true]
+[delay sec=0.05]
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////////////// Fade in
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0450]
+The doors in the Strain Area connect 
+to various "worlds." 
+Including my original one.
+[/message]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0460]
+After he appeared at the hospital, 
+I had Alice investigate him. 
+She found out he came from the 'Uppermost World.'
+[/message]
+
+// No BGM
+// Stop current BGM
+[sound type=bgm state=stop]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////// Restore background
+
+/////////////////////////////////////////////////////// Hide Arata Mizunashi
+[character id=600201 anim=fade show=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////////////////////////// Fade out
+[fade type=out anim=simple sec=0.1]
+
+[image type=bg id=000470 show=true fade=false wait=true]
+[delay sec=0.05]
+
+//////////////////////////////////////////////////////////////////////////////////////// Display Sumika, Mai, Sayaka
+[character id=601101 posx=0.24 anim=none face=surprise show=true wait=false]
+[character id=200302 posx=0.49 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=none face=confuse show=true wait=true]
+[delay sec=0.05]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////////////// Fade in
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0470]
+...Huh. 
+Now we've got the 'Uppermost World'... 
+Another unfamiliar term!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0480]
+So... 
+an invader from a parallel world?! 
+Wait, then is he not the same Arata Mizunashi I know... phew.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0490]
+He only vaguely resembled Arata, 
+but now it makes sense. 
+This explanation is much more believable 
+than the idea of you creating a world.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0500]
+I almost started thinking my idol 
+had turned into that... 
+Thank goodness.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sumika, Mai
+[character id=601101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Yurisa, Rottie
+[character id=200202 posx=0.24 anim=fade face=thoughts show=true wait=false]
+[character id=200402 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_014_0510]
+Parallel worlds... 
+It's something everyone dreams about, 
+but hearing it in this context is... ugh.
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_014_0520]
+Hmm, I wonder if there's 
+a version of Rottie in a parallel world, too? 
+Ah, sorry, that's off topic!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////////////////////// BGM25
+[sound type=bgm state=play name=TalkC]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=panic]
+//////////////////////////////////////////////////////////////////// Character shakes
+[shake target=chara id=100101 type=horizontal sec=0.5 pow=10 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0530]
+Whaaaat?! 
+How is everyone just going along with this?!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_014_0540]
+Hehe, even Rottie knows about parallel worlds! 
+I can teach you all about it!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_014_0550]
+The 'Aphesis Cult'... 
+There's one in Rottie's homeland of Romania too, 
+and its founder was from another world!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_014_0560]
+A person from 1000 years ago, named 'Paraninas,' 
+an alchemist who spread the concept of parallel worlds! 
+It even comes up in exams!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0570]
+Hah, my knowledge has been way too limited...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Yurisa, Rottie
+[character id=200202 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Shina, Glock
+[character id=200102 posx=0.24 anim=fade face=thoughts show=true wait=false]
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_014_0580]
+The ultimate doctrine of the Aphesis Cult is to 
+abandon the physical body and return 
+to the founder's ideal world with just the soul.
+[/message]
+
+[face id=601201 type=thoughts]
+
+[message name=Glock President charaid=601201 voice=04_014_0590]
+—But, that's a story for another time.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0600]
+Have you ever heard the term 'parallel world' 
+in a manga or game, Sayaka?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0610]
+Well, yeah, 
+I've heard of it...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0620]
+In parallel worlds, anything is possible. 
+Their culture might be far more advanced than ours. 
+It's believed that another version of you 
+could be living there.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0630]
+So, in such a world, 
+there could be another me and another Shina, 
+right?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0640]
+Exactly. 
+Let's just hope they're not all as terrifying 
+as the ones we've encountered...
+[/message]
+
+[face id=601201 type=painful]
+
+[message name=Glock President charaid=601201 voice=04_014_0650]
+The 'Arata Mizunashi' we've encountered here 
+isn't like 'Paraninas,' a friendly figure... 
+For some reason, he's obsessed with our company 
+and our work.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_014_0660]
+I don't know why he's using characters 
+from *Worlds Odyssey*, 
+but maybe it's popular over there too, huh?
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////////////////////// No BGM
+[sound type=bgm state=stop]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina, Glock, Sayaka
+[character id=200102 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Iris
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0670]
+—The opponent we're facing might be 
+even more brilliant than the genius who created 
+*Worlds Odyssey*, Arata Mizunashi. 
+From now on, we need to act before they do...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0680]
+That's why... 
+We will release *End to Odyssey* 
+worldwide as soon as possible!
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////// BGM24
+[sound type=bgm state=play name=TalkB]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Iris
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Yurisa, Sayaka
+[character id=200202 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0690]
+*End to Odyssey* worldwide...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_014_0700]
+...Huh!? How does that connect 
+to fighting the bad guys? Does anyone else get it?
+[/message]
+
+// Yurisa changes expression
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_014_0710]
+Is completing the game going to save the world? 
+I'm completely lost here...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Yurisa, Sayaka
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Shina, Glock, Sumika
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=04_014_0720]
+We'll put a security program and Eni 
+into *End to Odyssey* 
+and have it installed on PCs worldwide!
+[/message]
+
+[message name=Glock President charaid=601201 voice=04_014_0730]
+The security program is designed 
+to counter the Uppermost World.
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0740]
+Ah... So, if we increase the number 
+of security programs, 
+the Uppermost World won't be able to access us anymore?
+[/message]
+
+[message name=Glock President charaid=601201 voice=04_014_0750]
+Exactly! Using just the company's PCs isn't enough, 
+but if we can get PCs worldwide, 
+we can deploy a massive firewall around this world!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0760]
+By using *End to Odyssey*, 
+we can back up PCs worldwide from Iris Corporation 
+and support them anytime!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0770]
+That way, we can prevent unexpected Strain Area 
+transformations from happening... 
+We can preemptively deal with them worldwide!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Glock, Sumika
+[character id=601201 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Iris, Mai
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0780]
+So, we'll be remotely... 
+taking over PCs worldwide. 
+Heh, this is getting exciting...
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_014_0790]
+The way you said that!! 
+No, no, we're not committing crimes here!
+[/message]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0800]
+I want to protect this world 
+in a legal way, 
+without relying on Ludens' power as much as possible...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_014_0810]
+That's your "stance," right. 
+It feels a bit too soft for me, 
+but as an employee, I'll follow it.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina, Mai
+[character id=200102 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+////////////////////////////////////////////////////// Move Iris
+[move id=600601 posx=0.33 sec=0.5 wait=false]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Sumika
+[character id=601101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_014_0820]
+Seriously, Mai... 
+It's simple, really. We finish the game in development. 
+Do our job, and we protect the world!
+[/message]
+
+[face id=600601 type=smile]
+
+[message name=Iris Chairman charaid=600601 voice=04_014_0830]
+Thank you... 
+Please continue to help me from now on.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop current SE
+// [sound type=se state=stop]
+
+// Stop current BGM
+// [sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

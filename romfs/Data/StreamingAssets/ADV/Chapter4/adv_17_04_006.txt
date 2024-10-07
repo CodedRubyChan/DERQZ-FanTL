@@ -1,0 +1,252 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_17_04_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display specified background
+[image type=bg id=000470]
+
+//////////////////////////////////////////////////////////////////////////// Display Yuri and Sumika
+[character id=200202 posx=0.24 anim=none face=default show=true wait=false]
+[character id=601101 posx=0.49 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Background 470 / Iris Corporation
+// BGM 21
+
+/////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=false]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0010]
+I'm back~
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_017_0020]
+Oh, looks like everyone's here.
+Sayaka, we talked with the president, 
+and we've decided on the roles moving forward!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0030]
+Really?! 
+So, what do I do!?
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_017_0040]
+You're on debugging!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0050]
+Same as always, huh...
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_017_0060]
+Hey, debugging is a super important process, you know? 
+When we properly debug and report everything, 
+it means Sumika and the others can be a bit more careless with the coding.
+[/message]
+
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_017_0070]
+I, I don't plan on being careless with the coding, though... 
+But yeah, it's true we can focus more on development thanks to that!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Hide Yurisa
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Mai
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_017_0080]
+Can I ask something a bit blunt? 
+Couldn't Iris President handle developing 'End to Odyssey' all by herself?
+[/message]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_017_0090]
+Nah, nah. The president is an amateur when it comes to programming. 
+Even if she's a Luden, there are still things she can't do!
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_017_0100]
+Is that... how it works?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0110]
+Yeah, just for reference, 
+I can't do it at all either.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_017_0120]
+I see. That makes a bit more sense now.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Hide Mai
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Shina
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_017_0130]
+Luden does not mean omnipotent~. 
+There are things everyone can do, and things they can't.
+[/message]
+
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_017_0140]
+Alright, Sayaka. 
+Let's continue developing the DLC chapter. 
+We'll pick up from where we left off with the VR debugging!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0150]
+Wait, VR... 
+We're diving into that dungeon again? 
+There were ghosts in there, it was super creepy... 
+I-I don't want to...
+[/message]
+
+// Sumika changes her expression
+[face id=601101 type=painful]
+
+[message name=Sumika Tokiwa charaid=601101 voice=04_017_0160]
+Sorry about last time! 
+But don't worry, we identified the bug-like issue and dealt with it. 
+It should be fine... I think.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0170]
+"Think"? Did you just say "think"? 
+That doesn't sound very confident! 
+I'm the one diving in, you know...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_017_0180]
+Even if something like that happens again, 
+I'll make sure you don't get too scared this time. 
+I'll give you the debug commands in advance.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0190]
+Well... got it, I guess. 
+Alright, let's head out then!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0200 lipsync=false]
+(But I have a bad feeling about this...)
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_017_0210 lipsync=false]
+(Just in case... If something happens to me, 
+I'll count on you again, partner... 
+Wait, can I get back on the Snark train? Oh, I see...)
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop current SE
+[sound type=se state=stop]
+
+// Stop current BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
+
+// Dungeon 02: Transitioning to "VR Game"

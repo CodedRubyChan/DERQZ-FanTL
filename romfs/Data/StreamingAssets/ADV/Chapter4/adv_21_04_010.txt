@@ -1,0 +1,785 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_21_04_010
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display the specified background
+[image type=bg id=000470]
+
+///////////////////////////////////////////////////////////////////////////Glock appears
+[character id=601201 posx=0.2 anim=none face=default show=true wait=false]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// BGM16
+// Background 470: Iris Corporation, Development Room
+
+///////////////////////////////////////////////////////////////////////////Rottie, Shina, and Sayaka appear
+[character id=200402 posx=0.4 anim=rtol face=default show=true wait=false]
+[delay sec=0.1]
+[character id=200102 posx=0.59 anim=rtol face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_021_0010]
+I brought them~!
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=Glock President charaid=601201 voice=04_021_0020]
+Ah, you came right away!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0030]
+President, what do you need us for?
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_021_0040]
+Hmm. I'll get straight to the point.
+I plan to call in an essential helper for the ongoing development of 'End to Odyssey'!
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_021_0050]
+The model for Clea Glaive from 'World's Odyssey'...
+I found her.
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0060]
+Whaaat!? You already found Kaede Hizumi!?
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=Glock President charaid=601201 voice=04_021_0070]
+Haha! Who do you think I am?
+Actually, Hizumi is also a businessperson in this world. In fact, she runs that shopping site... 'Ogre.com.'
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0080]
+Whoa... she's amazing...
+I had no idea at all!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0090]
+Huh? So besides Lily and Celica, there were other models for the 'World's Odyssey' characters?
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0100]
+Yep! Every one of Celica's companions has a real-life model. Like I mentioned before, Lily's model is Yamamura...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0110]
+And the person we're about to meet, Kaede Hizumi, is the actual model for Clea. It's my first time meeting her, though.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0120]
+Wait, your first time meeting her...?
+How did you even model her in the first place?
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=Glock President charaid=601201 voice=04_021_0130]
+Haha, that might come up later in the conversation. In any case, she's essential for accurately bringing Clea into the game.
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_021_0140]
+I feel like Sayaka and I are going to be totally lost in the conversation from here on...
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_021_0150]
+Not necessarily. Kaede has requested to meet multiple members from our team...
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_021_0160]
+Oh, it's time. I'll connect the call now.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// BGM19
+[sound type=bgm state=play name=Subway]
+
+//////////////////////////////////////////////SE Cardkey
+[sound type=se name=Cardkey]
+
+// Redisplay text window
+[delay sec=0.5]
+[visible show=true]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+// Rottie changes expression
+[face id=200402 type=default]
+
+// Kaede Hizumi appears in a small window
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0170 icon=true]
+Well, I suppose this is our first time meeting, President Glock from Iris Corporation.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=04_021_0180]
+Yes. Thank you for making time despite your busy schedule――
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0190 icon=true]
+Just to confirm, the person next to you is Director Shina?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0200]
+Yes! It's nice to meet you, Ms. Hizumi. My name is Shina Ninomiya.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0210 icon=true]
+Ah, I play games a lot myself, and you look just like you did in that interview... And those other two?
+[/message]
+
+[message name=Glock President charaid=601201 voice=04_021_0220]
+Yes. As you requested, these are two of our new employees.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Glock and Shina disappear
+[character id=601201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Rottie and Sayaka move
+[move id=200402 posx=0.33 sec=0.5 wait=false]
+[move id=100101 posx=0.66 sec=0.5 wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0230]
+Nice to meet you, I'm Sayaka Hiwatari!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_021_0240]
+U-Uh, I go by Rottie... I mean, Rotten Dollheart! Nice to meet you!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0250 icon=true]
+Hmm, fresh faces. Rottie, huh... You seem a bit young, though?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Rottie and Sayaka disappear
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Glock and Shina reappear
+[character id=601201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601201 type=smile]
+
+[message name=Glock President charaid=601201 voice=04_021_0260]
+Haha! Apologies, but we're keeping ages confidential for privacy reasons!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Glock disappears
+[character id=601201 anim=fade show=false wait=false]
+[delay sec=0.1]
+/////////////////////////////////////////////////////////////////////////// Shina moves
+[move id=200102 posx=0.49 sec=0.5 wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+// Shina changes expression
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0340]
+Oh, you want me to speak...?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0350 icon=true]
+Stop playing dumb, Shina.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0360 icon=true]
+'World's Odyssey' is a fascinating game. I haven't played much of 'End to Odyssey' yet.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0370]
+Thank you! I'm glad you liked the work I did at my previous company!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0380 icon=true]
+Clea Glaive... I must admit, I was shocked.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0390 icon=true]
+What was that character supposed to be?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0400 icon=true]
+Clea's backstory, her failures and successes, her struggles to reform for her company... It was all based on my life.
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0410]
+You knew that much...?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0420 icon=true]
+Even her face is somewhat similar. I almost considered suing for violation of my likeness and privacy rights!
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0430]
+W-Wait, really...?!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0440 icon=true]
+I've never revealed my real name in interviews. Yet, Clea's story in the game knows more about me than anyone else.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0450 icon=true]
+So, who exactly are you, Shina? An old acquaintance of mine?
+Unless you clear up this mystery, I won't agree to help.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Shina moves
+[move id=200102 posx=0.32 sec=0.5 wait=false]
+[delay sec=0.1]
+/////////////////////////////////////////////////////////////////////////// Sayaka appears
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0460 lipsync=false]
+(Shina... Can you answer that?! This lady is scary...)
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0470]
+I'll be direct. Our company's chairman is a Luden—a being from a parallel world.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0480 icon=true]
+Oh...?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0490]
+And in that world, we came across someone named Kaede Hizumi.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0500]
+The 'World's Odyssey' you know is actually a full remake of a game created in a parallel world. Including all the characters!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0510 icon=true]
+So, you met a version of me from a parallel world? That's quite the story.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0520 icon=true]
+...Sounds more like fiction to me.
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0530 lipsync=false]
+(It's true, though...)
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0540 icon=true]
+I've heard of parallel worlds. But meeting someone there who is exactly like me, down to the smallest detail...?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0550]
+"Could you believe it if you had enough courage to accept it?"
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0560 icon=true]
+—Ugh...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0570 lipsync=false]
+(Why did that shake her up...?)
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0580 icon=true]
+Parallel worlds... Back in the day, plenty of people claimed to come from there. Not just Ludens, but many others too.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0590]
+Some of them were real.
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0600]
+Doesn't it seem strange to you? 'World's Odyssey' is selling far too well for a game.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0610]
+It's been adapted into anime, movies, stage plays—it's the number one hit across generations. It's too perfect, too successful!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0620]
+I've been working with real parallel-world beings on game development. Using experiences that already succeeded there! That's the trick!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0630 icon=true]
+...And these two newcomers?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Shina disappears
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Rottie appears
+[character id=200402 posx=0.33 anim=fade face=panic show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0640]
+Y-Yes?!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_021_0650]
+Wh-What do you want to know...?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0660 icon=true]
+I have a knack for telling when someone is lying. So answer carefully—can you trust Director Shina?
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0670]
+Definitely!
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_021_0680]
+That was fast!
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_021_0690]
+Uh, well, I only just met her today, so it's hard to say for sure... but, yeah, I think I can trust her!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0700 icon=true]
+...Alright. I will trust your company.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Rottie and Sayaka disappear
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Glock and Shina appear
+[character id=601201 posx=0.33 anim=fade face=smile show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=smile show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601201 type=smile]
+
+[message name=Glock CEO charaid=601201 voice=04_021_0710]
+Well then...
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0720 icon=true]
+Wait. What's in it for me?
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0730]
+We'll meet whatever price you name...
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0740 icon=true]
+Is that so? Well, I could ask for an amount large enough to buy your whole company. I am more successful than your firm, after all.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0750]
+That's mean!
+[/message]
+
+// BGM3
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Glock and Shina disappear
+[character id=601201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Rottie and Sayaka appear
+[character id=200402 posx=0.33 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0760]
+Wait, hold on! We can't let this fall apart now!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_021_0770]
+Oh! I know! How about we offer her a game?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0780 icon=true]
+I already bought 'End to Odyssey'.
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_021_0790]
+...Oh, um, maybe offer the tools to make games...?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0800 icon=true]
+That could work! In my business, knowledge is just as valuable as materials.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0810]
+How about the 'Alice Code' engine?! We know the person who built it!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Rottie and Sayaka disappear
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////// Fade out screen ///////////////////////////////
+[fade type=out anim=simple sec=0.3]
+
+// Black background
+[image type=bg id=000380 show=true fade=false]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.3]
+
+// Redisplay text window
+[visible show=true]
+
+// Kaede appears
+[character id=200502 posx=0.49 anim=fade face=smile show=true wait=true]
+[delay sec=0.3]
+
+// Kaede shakes
+[shake target=chara id=200502 type=vertical sec=0.3 pow=3 fade=false wait=false]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0820]
+The world's best-selling game engine, along with its entire development process? I can work with that.
+[/message]
+
+[character id=200502 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[fade type=in anim=simple sec=2]
+
+/////////////////////////////// Fade out screen ///////////////////////////////
+[fade type=out anim=simple sec=0.3]
+
+// Display the specified background
+[image type=bg id=000470]
+
+/////////////////////////////////////////////////////////////// Scene transition (fade-in)
+[fade type=in anim=simple sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Glock and Shina appear
+[character id=601201 posx=0.33 anim=fade face=painful show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0830]
+How did we agree to this so quickly?!
+[/message]
+
+[message name=Glock CEO charaid=601201 voice=04_021_0840]
+We don't have a choice. If Kaede wants it, we'll have to make it happen.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0850 icon=true]
+Ha ha ha! I like you, Mr. CEO. I look forward to discussing this further.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0860 icon=true]
+And I'm curious to hear more about this parallel world, too...
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0870 icon=true]
+—How about we meet at the Sagami department store in three days? It's a place I've always wanted to visit.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0880]
+The Sagami department store? Understood! I'll make the arrangements.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Glock and Shina disappear
+[character id=601201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Rottie and Sayaka appear
+[character id=200402 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0890 lipsync=false]
+(A department store? Is that really happening?)
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0900 icon=true]
+I'll send over the time and specific location soon. And make sure you bring that girl along.
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_021_0910]
+You mean me?!
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0920 icon=true]
+That outfit you're wearing is incredibly valuable—it's a high-end piece that's been out of circulation for years.
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_021_0930 lipsync=false]
+(Ah... Has it really increased that much in value after just seven years? Mom, you had a good eye!)
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0940 icon=true]
+I've never seen one in such good condition. Your company seems full of talent.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=04_021_0950 icon=true]
+I'd like to take a closer look and assess things myself, as part of the negotiation.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Rottie and Sayaka disappear
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Glock and Shina appear
+[character id=601201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_021_0960]
+Got it! Three days from now at Sagami.
+[/message]
+
+[message name=Glock CEO charaid=601201 voice=04_021_0970]
+I'm glad we made so much progress today. Thank you for your time, Kaede! We look forward to working with you.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Glock and Shina disappear
+[character id=601201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Sayaka appears
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_021_0980 lipsync=false]
+(A department store? This has to be some sort of coincidence, right...?)
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

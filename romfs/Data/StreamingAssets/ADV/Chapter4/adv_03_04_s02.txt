@@ -1,0 +1,409 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+//adv_03_04_s02
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000070]
+
+/////////////////////////////////////////////////////////////////////////////// Show Mai, Rottie, and Sayaka
+[character id=200302 posx=0.24 anim=none face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=none face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=none face=default show=true wait=true]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Background 70 / Park
+// BGM 23
+
+// Rottie is about to call her mother
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+[message name=Sayaka Hiwatari charaid=100101 voice=04_903_0010]
+It might be a little early, but… 
+should we try giving your mom a call now, Rottie?
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_903_0020]
+Yeah…!
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_903_0030]
+But, I'm kind of nervous… 
+It's been seven years since she last heard my voice, right?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0040]
+It's more than that. 
+From her point of view, you suddenly disappeared one day…!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0050]
+She didn't know if you'd been kidnapped, 
+or if you left on your own… 
+No one knew, and everyone was worried sick…!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_903_0060]
+W-w-wah…!
+I-I'll call right now…! 
+Yeah!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0070]
+It's an international call, so you'll need to dial 40 first.
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_903_0080]
+What?! There's stuff like that?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0090]
+Yes.
+...But you're still young, Rottie. 
+You'll pick up these things as you go.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_903_0100 lipsync=false]
+(International calls… I'd better learn that, too...)
+[/message]
+
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////////////// Screen fades to black
+[fade type=out anim=simple sec=0.5]
+// Change BGM to BGM20
+[sound type=bgm state=play name=Home]
+[image type=bg id=000380 show=true]
+////////////////////////////////////////////////////////// Hide Mai and Sayaka
+[character id=200302 show=false anim=none wait=false]
+[character id=100101 show=false anim=none wait=false]
+// SE: Dialing tone
+[sound type=se state=play name=Call]
+// Rottie changes expression
+[face id=200402 type=confuse]
+[delay sec=1.5]
+[fade type=in anim=simple sec=0.5]
+///////////////////////////////////////////////////////////////////////////////////// Fade in from black
+
+[delay sec=0.5]
+[visible show=true]
+
+/////////////////////////// Stop SE
+[sound type=se state=stop]
+
+[delay sec=0.5]
+
+// Speaker: Midra
+// @Midra
+[message name=Midra's Voice voice=04_903_0110]
+Hello! 
+Who's calling?
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_903_0120]
+...Ah! 
+Hello? 
+Mom?
+[/message]
+
+// Midra
+
+[message name=Midra's Voice voice=04_903_0130]
+......Rottie?
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_903_0140]
+...Yeah! 
+And I'm telling you now, this isn't a prank! 
+It's me, it's me! Rottie!
+[/message]
+
+// Speaker: Midra
+// @Midra
+
+[message name=Midra's Voice voice=04_903_0150]
+......Rottie?! 
+Really?! 
+Is it really you... Rottie?!
+[/message]
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_903_0160]
+It's been a long time, 
+hasn't it...?
+[/message]
+
+// Speaker: Midra
+// @Midra
+
+[message name=Midra's Voice voice=04_903_0170]
+......Oh, oh........
+[/message]
+
+// Hide the text window
+[visible show=false]
+
+// Sound of someone collapsing over the phone
+[sound type=se name=Fall]
+[delay sec=0.3]
+[face id=200402 type=surprise]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_903_0180]
+...Wait, what?! 
+Mom?! 
+Mom!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////// Screen fades briefly
+[fade type=out anim=simple sec=0.5]
+[delay sec=0.5]
+
+[image type=bg id=000070 show=true]
+
+[face id=200402 type=sad]
+[fade type=in anim=simple sec=2]
+//////////////////////////////////////////////////////////////////////////////// Return
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_903_0190]
+Yeah... yeah... 
+It's really me. 
+I'm so sorry for worrying you, Mom...!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_903_0200]
+D-don't force yourself to come get me! 
+Mom, you can't just rush from Romania to Japan like that!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_903_0210]
+Yeah! I'm with Mai and the others, so I'm fine! 
+I'll call you again soon. Promise…! 
+Bye for now!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// End call tone
+[sound type=se name=Callend]
+[delay sec=1]
+
+////////////////////////////////////////////////////////// Show Mai and Sayaka
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_903_0220]
+Rottie, how's your mom doing? 
+Everything okay?
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_903_0230]
+...Haha. 
+Maybe not exactly okay.
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_903_0240]
+She was so shocked at first, 
+she actually fainted.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0250]
+It's no surprise. It's been seven years since her daughter called.
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_903_0260]
+...It feels so strange. 
+To me, it doesn't feel like I've been away for that long...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_903_0270]
+Next problem is... Rottie's appearance, huh?
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0280]
+Yeah… when your mom sees you, you'll still look exactly the same as when you disappeared...
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_903_0290]
+Well… I'll explain everything as it is! 
+To make sure I can explain properly, I'll go to Iris Corporation for a little research, right?
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Ringing sound
+[sound type=se state=play name=Call]
+
+[delay sec=0.5]
+// Display the text window again
+[visible show=true]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0300]
+You're handling this well.
+Ah...
+[/message]
+
+/////////////////////////// Stop SE
+[sound type=se state=stop]
+
+// Rottie changes expression
+[face id=200402 type=default]
+// Sayaka changes expression
+[face id=100101 type=surprise]
+// Mai changes expression
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0310]
+It's Rottie's mom. 
+She's calling me… Should I pick up? Hello?
+[/message]
+
+// Midra
+
+[message name=Midra's Voice voice=04_903_0320]
+Ahhh, Mai-chan!! 
+Rottie! She called me! She said she's with you...!? 
+This isn't a dream, right?!
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_903_0330]
+O-of course! 
+Yes, Midra! Yes, your daughter is safe and sound here with us...
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=thoughts]
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_903_0340]
+Haha... 
+Parents really do worry a lot, huh...
+[/message]
+
+[face id=100101 type=expectation]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_903_0350]
+Is this what they call... “love”...?
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

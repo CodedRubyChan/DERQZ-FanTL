@@ -1,0 +1,432 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+//adv_02_04_s01
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display the specified background
+[image type=bg id=000090]
+
+////////////////////////////////////////////////////////////////////////// Show Levin
+[character id=601001 posx=0.19 anim=none face=default show=true wait=true]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Background 90 / Café
+// BGM 21
+/////////////////////////////////////////////////////////////////////////// Play SE for entering the café
+[sound type=se name=Incafe]
+/////////////////////////////////////////////////////////////////////////// Show Sayaka entering
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified time
+[delay sec=0.5]
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0010]
+Good morning! 
+I thought I'd drop by around this time today. 
+Are you open yet?
+[/message]
+
+[message name=Levin charaid=601001 voice=04_902_0020]
+Ah... 
+It's you... 
+Welcome.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////// Show Mai and Rottie
+[character id=200302 posx=0.39 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.60 anim=fade face=default show=true wait=false]
+/////////////////////////////////////////////////////////////////////////// Move Sayaka
+[move id=100101 posx=0.79 sec=0.5 wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0030]
+Oh, so you've been coming here too, Saya. 
+I was going to tell you about this place later.
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=04_902_0040]
+Thanks for your patronage... Oh, 
+your companion, 
+that girl—?
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_902_0050]
+Um, nice to meet you! 
+I'm Rottie.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0060]
+She's a friend of Sayaka and mine. 
+There were some things that kept us apart for a while, but... 
+we finally reunited yesterday. Right?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0070]
+Yep! Hehe!
+[/message]
+
+[face id=601001 type=smile]
+
+[message name=Levin charaid=601001 voice=04_902_0080]
+I must say, I'm a little surprised. I wonder what Iris will think of this... 
+But... it's good news for you... 
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=04_902_0090]
+Though perhaps it's too soon to say it's all good... 
+Once you know, things will inevitably begin... 
+No, perhaps they've already begun...
+[/message]
+
+[face id=100101 type=default]
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0100]
+......
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=04_902_0110]
+In the end, I remain unchanged. 
+I'll continue to do what I must... as always. 
+As long as I'm needed...
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_902_0120]
+Is he a bit strange?
+[/message]
+[face id=200402 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0130]
+No, I think he's quite strange.
+[/message]
+
+// Levin changes expression
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=04_902_0140]
+...Now then. Nice to meet you, Rottie.
+How do you take your coffee? 
+Sugar? Milk?
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_902_0150]
+Actually... 
+I don't really like coffee...
+[/message]
+
+[message name=Levin charaid=601001 voice=04_902_0160]
+Is that so... I apologize. 
+Would orange juice suit you better?
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_902_0170]
+Yeah! Thank you!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0180]
+Mai and I will take your "special"!
+[/message]
+
+[message name=Levin charaid=601001 voice=04_902_0190]
+Understood... 
+Black coffee, to start your day with clarity... 
+Enjoy...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=expectation]
+// Rottie changes expression
+[face id=200402 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0200]
+Ahh, 
+Levin's coffee is just the best...
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0210]
+......
+[/message]
+
+// Levin changes expression
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=04_902_0220]
+...Does this coffee 
+not suit your taste?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0230]
+No, it's not that. There's just something on my mind. Levin, 
+you know Iris, right? 
+You're one of the Ludens too, aren't you? 
+Maybe you know something?
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=04_902_0240]
+......
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0250]
+Come on, Levin. Just tell us what you can. 
+Like... about the "Strain Area"...
+[/message]
+
+// BGMOFF
+
+[sound type=bgm state=stop]
+
+[face id=601001 type=painful]
+
+[message name=Levin charaid=601001 voice=04_902_0260]
+Leave.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0270]
+...Huh? 
+This is...
+[/message]
+
+// Levin changes expression
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=04_902_0280]
+I said, leave.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0290]
+What? 
+Why are you suddenly saying that...
+[/message]
+
+//////////////////////////////////////////////////////////////////// Camera shakes
+[shake type=random sec=1 pow=10 fade=true wait=false]
+
+[face id=601001 type=angry]
+// Mai changes expression
+[face id=200302 type=surprise]
+// Rottie changes expression
+[face id=200402 type=panic]
+
+[message name=Levin charaid=601001 voice=04_902_0300]
+I said leave!! 
+Do you think I'll just talk that easily!? Me, just like that!? 
+It's terrifying...!! Don't underestimate me!!
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_902_0310]
+Eek!?
+[/message]
+
+[face id=601001 type=angry]
+
+[message name=Levin charaid=601001 voice=04_902_0320]
+Are you testing me!? 
+Do you even know how dangerous this information is!? 
+It's terrifying, I tell you!!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_902_0330]
+M-Mai-chan...!
+[/message]
+
+// BGM resumes
+[sound type=bgm state=play name=Cafe]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0340]
+Yeah... we're leaving. 
+Looks like we hit a nerve.
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shakes
+[shake target=chara id=100101 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0350]
+W-wait, 
+I just need to finish this coffee... 
+Ow!! Too hot! I burnt my lips!
+[/message]
+
+// Mai changes expression
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0360]
+Here, I'll leave the money. 
+Thanks for the coffee.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Levin changes expression
+[face id=601001 type=default]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Levin charaid=601001 voice=04_902_0370]
+...Rottie.
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shakes
+[shake target=chara id=200402 type=vertical sec=0.3 pow=5 fade=false wait=false]
+
+[message name=Rottie charaid=200402 voice=04_902_0380]
+Y-yes...?
+[/message]
+
+[message name=Levin charaid=601001 voice=04_902_0390]
+Next time... I'll have some delicious apple juice 
+ready for you... 
+I look forward to your return... 
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_902_0400]
+Y-yes! 
+Thank you!
+[/message]
+
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////// Scene transition
+// Change background
+// Background 60 / Main Street
+[fade type=out anim=simple sec=0.5]
+[image type=bg id=000060 show=true fade=false]
+////////////////////////////////////////////////////////////////////////// Hide Levin, Mai, Rottie, Sayaka
+[character id=601001 anim=none show=false wait=false]
+[character id=200302 anim=none show=false wait=false]
+[character id=200402 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=true]
+
+[delay sec=1]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////// Scene transition
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////// Show Mai, Rottie, Sayaka
+[character id=200302 posx=0.24 anim=rtol face=default show=true wait=false]
+[character id=200402 posx=0.50 anim=rtol face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=true]
+
+[delay sec=0.5]
+[visible show=true]
+
+// Rottie changes expression
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_902_0410]
+M-Mai-chan, Sayaka-chan... 
+Levin is definitely a strange guy...!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_902_0420]
+Yeah, no doubt. 
+But he's not a bad guy.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0430]
+True. 
+That's what matters most.
+[/message]
+
+// Mai changes expression
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_902_0440 lipsync=false]
+(Still, the person we need to talk to directly is the President...)
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop playing the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

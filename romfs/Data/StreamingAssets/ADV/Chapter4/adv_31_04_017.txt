@@ -1,0 +1,270 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_31_04_017
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=1.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=EscapeWithHeroine]
+
+[character id=200501 posx=0.48 anim=fade face=painful show=true wait=true]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// 25 characters per line, 3 lines vertically
+// 1234567890123456789012345
+// =================
+// Chapter 4
+// Main Conversation 04_017
+// =================
+
+// Department Store Strain Area
+// Background remains as dungeon
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Show text window
+[visible show=true]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0010]
+Ugh...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[move id=200501 posx=0.31 sec=0.5 wait=false]
+[character id=100101 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0020]
+Huh?! It's Ms. Kaede!
+Ms. Kaede suddenly appeared!
+[/message]
+
+[face id=200501 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0030]
+...You're from...
+Iris Corporation...
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0040]
+We can talk!
+I'm so glad you're safe!
+[/message]
+
+[face id=200501 type=confuse]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0050]
+What are you talking about?
+I was at the department store, went to the restroom...
+That's right. Then I was sucked into a mirror... and then...
+[/message]
+
+[face id=200501 type=default]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0060]
+...I'm starting to remember.
+I was taken to this bizarre place,
+those strangely dressed women did something to me, and then...
+[/message]
+
+[face id=200501 type=surprise]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0070]
+...Wait, what's this?!
+M-my appearance is strange!
+[/message]
+
+[face id=200501 type=surprise]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0080]
+When did I change into a kimono?!
+A-and what's this on my head...
+Horns?! I have horns growing!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0090]
+W-what's that about...?
+Is this some kind of forced cosplay?
+Like Clea's...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0100]
+I have no idea what's going on, but
+for now, I'll explain what I know.
+[/message]
+
+// Time passes
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+[fade type=out anim=simple sec=0.5]
+[face id=200501 type=default]
+[delay sec=1]
+[fade type=in anim=simple sec=0.5]
+
+// Redisplay text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0110]
+...So, how is that?
+I didn't have much time,
+so I could only give a brief explanation.
+[/message]
+
+[face id=200501 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0120]
+A Strain Area connecting to a parallel world...
+So I've become Clea herself?
+Is this someone's idea of a joke?
+[/message]
+
+[face id=200501 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0130]
+Normally, I wouldn't believe it...
+But with these horns, and looking around...
+I suppose I have no choice but to believe everything.
+[/message]
+
+[face id=200501 type=smile]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0140]
+You came all the way
+to this place to save me.
+Sayaka, thank you so much.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0150]
+No, I just did what anyone would!
+[/message]
+
+[face id=200501 type=default]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0160]
+If you'd like... please use this weapon I found here.
+It's the least I can do.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0170]
+Thank you!
+I'll take good care of it!!
+[/message]
+
+[face id=200501 type=default]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0180]
+So, what will you do next?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0190]
+...Oh right!
+We still have to find the last bomb!
+We need to hurry and look for it...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0200]
+...Huh?
+But the bomb's signal... that's strange...
+It should be nearby, but... I can't see it...
+[/message]
+
+[face id=200501 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0210]
+The last bomb, huh...
+[/message]
+
+[face id=200501 type=default]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_031_0220]
+Sayaka, can I have a moment?
+*Whisper whisper...*
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_031_0230]
+...Whaaaaaaaaaat?!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

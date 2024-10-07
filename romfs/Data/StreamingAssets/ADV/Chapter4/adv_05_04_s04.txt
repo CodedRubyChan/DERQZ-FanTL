@@ -1,0 +1,307 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+//adv_05_04_s04
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display the specified background
+[image type=bg id=000520]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Background 520 / Police Station
+// BGM 21 to match the mood
+
+////////////////////////////////////////////////////////////////////////////// Show Mai, Rottie, and Sayaka
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0010]
+Sagami Police Station...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0020]
+What do we do? 
+Should Rottie turn herself in?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0030]
+Turn herself in? You're using the wrong word. 
+It's not like she did anything wrong.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0040]
+...But we should probably tell the police 
+about Rottie's situation.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0050]
+Her mother must have reported it to the police. 
+Her name is likely on the international missing persons list.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0060]
+If we think about public records, 
+we need to make sure everything is properly updated 
+so it doesn't affect her life going forward.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0070]
+I-I see...
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_905_0080]
+That sounds pretty amazing...!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0090]
+But how would we explain it? 
+Even if we tell the truth, would they believe us...?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0100]
+Even in a world where Ludens exist publicly, 
+this would be hard for anyone to process, Rottie...
+[/message]
+
+[face id=100101 type=default]
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_905_0110]
+I'm sorry for being such a difficult case!
+[/message]
+
+// Mai changes expression
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0120]
+It's not like it's your fault, Rottie. 
+We'll just have to fudge the details a bit when explaining.
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_905_0130]
+So we're going to lie? 
+I'm not really good at that... 
+What if they ask about my age...?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0140]
+Wait... 
+Something seems off inside the police station... 
+Doesn't it sound like a commotion?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0150]
+You're right. 
+Um, excuse me, 
+is something going on?
+[/message]
+
+// Speaker: Police Officer
+// @Male Mob 30
+
+[message name=Police Officer voice=04_905_0160]
+Yeah, we've got another troublesome situation. 
+This morning, we received a bomb threat for one of the stores. 
+It might just be a prank, 
+but we've been dealing with a lot of these lately.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////// Hide Mai, Rottie, and Sayaka
+[character id=200302 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[delay sec=0.3]
+
+///////////////////////////////////////////////////////////////////////////////////////// Chiri Sendou enters
+[character id=601501 posx=0.5 anim=ltor face=angry show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Chiri Sendou charaid=601501 voice=04_905_0170]
+You there, 
+keep your complaints to yourself and share them with your colleagues. 
+Don't trouble the general public.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////// Chiri exits
+[character id=601501 anim=rtol show=false wait=true]
+
+[delay sec=0.3]
+
+//////////////////////////////////////////////////////////////////////////////////////// Show Mai, Rottie, and Sayaka
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+// Speaker: Police Officer
+// @Male Mob 30
+[message name=Police Officer voice=04_905_0180]
+S-sorry about that! 
+I'll take my leave now...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0190]
+This morning's incident... 
+What do you think happened?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0200]
+I don't know, 
+but things are pretty chaotic here. 
+It doesn't seem like the right time to explain Rottie's situation.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0210]
+Let's come back another day.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0220]
+Yeah. 
+Is that okay with you, Rottie?
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=04_905_0230]
+Yes. Honestly, I'm relieved. 
+I was worried I'd get arrested the whole time!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0240]
+Ah, I get it. 
+It's that weird feeling where, 
+even though you haven't done anything wrong, 
+you feel nervous around police officers...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0250]
+Seriously, both of you need to be more confident. 
+You haven't done anything suspicious. 
+Come on, let's get out of here.
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=default]
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_905_0260]
+Yeah! 
+Escape! Escape!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_905_0270]
+That's the wrong word again! 
+You're going to get us surrounded talking like that!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+//[sound type=se state=stop]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

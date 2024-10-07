@@ -1,0 +1,213 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_10_04_s07
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000470]
+
+//////////////////////////////////////////////////////////////////////////// Akagi appears
+[character id=602601 posx=0.18 anim=none face=default show=true wait=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Background 470 / Iris Corp.
+// BGM25
+
+/////////////////////////////////////////////////////////////////////////////// Rottie, Mai, Sayaka appear
+[character id=200402 posx=0.4 anim=rtol face=default show=true wait=false]
+[character id=200302 posx=0.59 anim=rtol face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_910_0010]
+Ah, Akagi-san. 
+Good morning!
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=04_910_0020]
+Noisy right from the morning, huh~ 
+Hmm... 
+Is that the rumored girl~?
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_910_0030]
+Me!? 
+What's the rumor about?
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=04_910_0040]
+The president is gathering everyone in the company. 
+Apparently, there's an important announcement. 
+Some say it might have something to do with you.
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=04_910_0050]
+Could it be you're the president's long-lost sister? 
+Or maybe... a secret child?
+[/message]
+
+// Mai changes expression
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_910_0060]
+We're about to hear from the president soon. 
+No need to spread weird rumors.
+[/message]
+
+[face id=602601 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=04_910_0070]
+...True. 
+Only those who can hear the president directly would say that. 
+Not that I care, though?
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=04_910_0080]
+I'm not invited to hear the grand president's speech anyway. 
+So, nope.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_910_0090]
+Ah... I see.
+[/message]
+
+[face id=100101 type=default]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=04_910_0100]
+So, I'm stuck here with the rest of the lowly employees, 
+gossiping about silly rumors. 
+Ugh, I'm so jealous of you all.
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_910_0110]
+“Lowly employees,” huh... 
+It's probably Mori-san and Sashide-san, right? 
+Aren't they annoyed that you're always the one chatting them up?
+[/message]
+
+[face id=602601 type=angry]
+
+[message name=Akagi charaid=602601 voice=04_910_0120]
+How rude!!
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_910_0130]
+Mai-chan and Akagi-san seem like close friends~♪ 
+Akagi-san, 
+please be friends with me too!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_910_0140]
+Wha...? 
+Wait, Rottie...
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=04_910_0150]
+Eh... 
+You want to be... friends with me...? 
+Unlike someone else, you're such a sweet child... I'm touched...
+[/message]
+
+[face id=200302 type=painful]
+
+[message name=Mai Toyama charaid=200302 voice=04_910_0160]
+Guh... 
+Rottie, that's not fair...
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_910_0170]
+Hehe~♪ 
+That's the power of "Mebibaku," you know!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_910_0180 lipsync=false]
+(When Rottie's around, the mood just... works.)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop any playing sound effects
+//[sound type=se state=stop]
+
+// Stop the current BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//

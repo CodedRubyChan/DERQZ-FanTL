@@ -1,0 +1,178 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_30_04_016
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+//[delay sec=0.5]
+
+/////////////////////////////////////////////////////
+// Hide Ephemera
+//[dungeon id=410501 type=Enemy show=false]
+/////////////////////////////////////////////////////
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter4]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+[character id=100103 posx=0.79 anim=rtol face=surprise show=true wait=true]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// 25 characters per line, 3 lines maximum
+// 1234567890123456789012345
+//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Chapter 4
+// Main Conversation 04_016
+//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+// Department Store Strain Area
+// Background remains the same
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_030_0010]
+……Huh?
+I can see a shadow over there.
+Could that be Kaede?!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Speaker: ????
+[character id=200501 posx=0.18 anim=fade face=painful show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=???? charaid=200501 voice=04_030_0020]
+Stay……away……
+[/message]
+
+[face id=200501 type=painful]
+
+[message name=Kaede Hizumi charaid=200501 voice=04_030_0030]
+Urgh…?!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////
+[fade type=out anim=simple sec=0.5]
+
+[dungeon id=9015 type=Barricade show=false]
+[dungeon id=410501 type=Enemy show=true]
+
+[sound type=se name=Metamorphosis]
+[character id=200501 anim=none show=false wait=true]
+//[move id=100103 posx=0.49 wait=false]
+
+[fade type=in anim=simple sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=04_030_0040]
+Wait, what?
+Kaede's gone and now there's a monster instead…
+W-What the heck is going on?!
+[/message]
+
+// Speaker: ????
+[message name=???? voice=04_030_0050]
+Gwaaahhhhhh!
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_030_0060]
+I should be the one screaming here!
+What even is this thing?! This is way too much!
+This place is seriously dangerous…
+[/message]
+
+[message voice=04_030_0070]
+S-Save… me…
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_030_0080]
+It's mumbling something…
+[/message]
+
+[message voice=04_030_0090]
+M-Mother… F-Father…
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_030_0100]
+I-I've got to defeat this thing and find Kaede fast!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Start the boss battle
+[bossbattle active=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

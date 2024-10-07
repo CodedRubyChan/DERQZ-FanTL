@@ -1,0 +1,243 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_25_04_014
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter4]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Show Sayaka
+[character id=100103 posx=0.49 anim=none face=default show=true wait=true]
+[sound type=se name=Foundbomb]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Department Store Strain Area
+// Background remains as dungeon
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0010]
+...There it is!
+I found the first bomb!
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0020]
+Now all I have to do is disarm it!
+What the—this is easy.
+Everything's going smoothly!
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0030]
+...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0040]
+Not smooth at all!
+Wait, disarm a bomb?! 
+I can't do that!
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0050]
+Idiot, idiot, idiot, idiot! 
+Why didn't I think of this earlier?!
+Finding it doesn't mean anything if I can't disarm it!
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0060]
+No way... 
+I came all this way...
+[/message]
+
+//【Choice】
+// 1: Use the 'Ripuka Code'
+// 2: It's impossible for Sayaka. Give up and leave.
+
+[select]
+[link text="Use the 'Ripuka Code'" label=release]
+[link text="It's impossible for Sayaka. Give up and leave." label=buildafire]
+[/select]
+
+// If 1
+
+:release
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0070]
+The 'Ripuka Code'? 
+Can I disarm the bomb using that power?
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0080]
+...I guess there's no choice but to try.I trust my partner.
+[/message]
+
+[goto label=careful]
+
+// If 2
+
+:buildafire
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0090]
+...Haha.
+You really think I'd listen if you told me to give up?
+You're so good at pushing my buttons, partner.
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0100]
+Think, Sayaka. There must be something I can do.
+I've survived in this dangerous place so far.
+I'm not powerless. I do have a power...
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0110]
+...My power. That's right!
+What about the 'Ripuka Code'?
+Maybe I can even use it to disarm the bomb.
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0120]
+...No time to hesitate.
+I have to try.
+[/message]
+
+[goto label=careful]
+
+//【Joining Paths】
+
+:careful
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0130]
+I need to be as careful as possible...
+No sudden explosions, okay...?
+[/message]
+
+// Successfully disarm the bomb
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+[sound type=se name=Noise]
+
+[face id=100103 type=surprise]
+
+// @Mob33
+
+[message voice=04_025_0140]
+Bomb, deactivated.
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0150]
+Yes! I did it!
+Bomb disarmed! That's one down!
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0160]
+But wait, this isn't the time to celebrate.
+There's still one more bomb...
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0170]
+Should I report this to Shina and the others?
+I'm also worried about how they're doing...
+I should have enough time for that.
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0180]
+They called it a game...
+They were happy to see us struggling. So,
+they probably didn't make it unbeatable...
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_025_0190]
+Alright, let's get out of here!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

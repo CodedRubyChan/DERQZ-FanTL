@@ -1,0 +1,838 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_23_04_012
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Epilogue]
+
+// Display the specified background
+[image type=bg id=000550]
+
+///////////////////////////////////////////////////////////////////////// Display Shina
+[character id=200102 posx=0.32 anim=none face=panic show=true wait=true]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Background 550 / Department Store East Wing
+// BGM12
+
+///////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.66 anim=rtol face=panic show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0010]
+Shina!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0020]
+Sayaka! I'm so glad you're safe!
+What about Kaede-san!?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0030]
+Th-That's...
+There's a trace of her being taken into the Strain Area...!!
+[/message]
+
+////////////////////////////////////////////////////////////////////////// Move Shina and Sayaka
+[move id=200102 posx=0.49 sec=0.5 wait=false]
+[move id=100101 posx=0.74 sec=0.5 wait=false]
+
+////////////////////////////////////////////////////////////////////////// Display Senji
+[character id=601601 posx=0.24 anim=ltor face=confuse show=true wait=true]
+
+[face id=200102 type=panic]
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0040]
+Tch!! What's this?! 
+What the hell is happening? And what about Kaede?! Answer me, girl!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Arata enters, Senji disappears
+[character id=601601 anim=fade show=false wait=false]
+[move id=200102 posx=0.67 sec=0.5 wait=false]
+[move id=100101 posx=0.85 sec=0.5 wait=false]
+[character id=600201 posx=0.2 anim=fade face=smile show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0050]
+Heh heh heh.
+You're all here.
+Ohhh, what a touching reunion~!! It's me!!
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0060]
+…Arata Mizunashi.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////// Display Yurisa
+[character id=200202 posx=0.49 anim=rtol face=angry show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_023_0070]
+Arata Mizunashi?!
+You've shown up again…!
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0080]
+Yesss, we meet again.
+I've been wanting to see you, really.
+Ripuka-chan. Oooh heh heh~~~
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0090]
+It's Sayaka! 
+Is this chaos also your doing?! 
+And you're the one who took Kaede-san, aren't you?!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_023_0100]
+Correct!! 
+Ding ding!! You win!!
+Your precious little Kaede-chan is right now
+In the scary, scary Strain Area!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Yurisa, Shina, and Sayaka disappear
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+///////////////////////////////////////////////////////////////////////// Arata moves, Senji appears
+[move id=600201 posx=0.33 sec=0.5 wait=true]
+[delay sec=0.1]
+[character id=601601 posx=0.66 anim=rtol sec=0.3 face=angry show=true wait=false]
+
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0110]
+You!! Where did you take Kaede?! 
+Answer me if you value your life.
+If you stay silent, I'll end you with my own hands right now…
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////// Play "Charge" SE
+[sound type=se name=Charge]
+
+////////////////////////////////////////////////////////////////////////// Huuki appears, Arata and Senji move
+[character id=500302 posx=0.48 anim=ltor sec=0.1 face=default show=true wait=false]
+[move id=600201 posx=0.25 sec=0.1 wait=false]
+[move id=601601 posx=0.74 sec=0.1 wait=true]
+
+// Senji's expression changes
+[face id=601601 type=confuse]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+// Speaker: ???
+
+[message name=??? charaid=500302 voice=04_023_0120]
+……
+[/message]
+
+////////////////////////////////////////////////////////////////////// Character shakes
+[shake target=chara id=601601 type=horizontal sec=0.5 pow=10 fade=false wait=false]
+[face id=601601 type=painful]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0130]
+Gah…!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Arata, Huuki, and Senji disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=false]
+[character id=601601 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Yurisa
+[character id=200202 posx=0.49 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_023_0140]
+H-He took down Senji-san in an instant...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Yurisa disappears
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Arata, Huuki, and Senji
+[character id=600201 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=500302 posx=0.48 anim=fade face=default show=true wait=false]
+[character id=601601 posx=0.74 anim=fade face=painful show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0150]
+W-What kind of monster strength is that…?
+To think I couldn't even lay a finger on you...!
+Are you a monster?!
+[/message]
+
+[message name=Arata charaid=600201 voice=04_023_0160]
+Ahhh, detective. Look closely. 
+Haven't you noticed something yet?
+I mean, you're a detective, right? You should have figured it out by now!!
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0170]
+What are you babbling about…?!
+...Wha…?!
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0180]
+What's with that face…?
+It's not right…
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Arata, Huuki, and Senji disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=false]
+[character id=601601 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0190]
+Senji-san?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Sayaka disappears
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Arata, Huuki, and Senji
+[character id=600201 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=500302 posx=0.48 anim=fade face=default show=true wait=false]
+[character id=601601 posx=0.74 anim=fade face=confuse show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0200]
+Why… why do you… have the same face as my wife?!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_023_0210]
+Nahaha! Pretty good, right?
+Your dear wife wanted out of the hospital so badly, 
+so I created her spirit body!!
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0220]
+What the hell…? A spirit body?!
+[/message]
+
+// Speaker: Huuki Hizumi
+
+// Huuki's expression changes
+[face id=500302 type=thoughts]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_023_0230]
+The man's... explanation holds true.
+[/message]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_023_0240]
+I am Huuki Hizumi, Senji.
+It is unfortunate that we meet under such circumstances.
+[/message]
+
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0250]
+Who are you people?!
+And where is Kaede? Where's my daughter?!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_023_0260]
+Arata Mizunashi and,
+the 'Gliiiiiltch Girls'!!!
+Yeeehaaa!!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Huuki and Senji disappear
+[character id=500302 anim=fade show=false wait=false]
+[character id=601601 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Shina and Sayaka
+[character id=200102 posx=0.59 anim=fade face=thoughts show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=thoughts show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0270]
+………Huh?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0280]
+……Huh?
+'Glitch'... what does that even mean?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0290]
+...Ahem!! 
+You can let him go now, Huuki. Detective-san,
+Your spirit seems pretty broken already, so
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_023_0300]
+Now then, let's introduce ourselves again!
+No worries. You can do it splendidly.
+Stand tall, speak loudly! Give it your best!?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Arata, Shina, Sayaka disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Lilith and Yurisa
+[character id=500102 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=angry show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=04_023_0310]
+…I am Lilith Yamamura.
+Ugh... it hurts. My head feels like it's splitting...
+Shi...na... I want to kill her...
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=04_023_0320]
+…I absolutely won't let you do that!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Lilith and Yurisa disappear
+[character id=500102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Kiki and Huuki
+[character id=500202 posx=0.32 anim=fade face=smile show=true wait=false]
+[character id=500302 posx=0.65 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=04_023_0330]
+Kiki Amo here~ (≧▽≦)!!
+Whether you're half-dead or meeting me for the first time,
+Hello to everyone!!
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_023_0340]
+As I introduced myself earlier, I am Huuki Hizumi.
+I have been granted life by my lord.
+I stand here today to repay that debt.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Kiki and Huuki disappear
+[character id=500202 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Arata and Shina
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=sad show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0350]
+Alright, well done.
+I can feel your growth, and I'm happy for you all.
+When you get back, I'll have a nice reward for you.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0360]
+Why...
+Why do such horrible things, just like with Yamamura Hospital...
+Why?
+[/message]
+
+// Arata's expression changes
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=04_023_0370]
+Wait, wait. Don't cry.
+When I see that, I get... too excited.
+I'm starting to pant. Seriously, I can't take it!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+
+// Re-display the text window after delay
+[delay sec=1]
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=04_023_0380]
+Oh no, I'm seriously getting excited now.
+Lilith, would you mind... just a little?
+It's purely to calm down. No ulterior motives.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Shina disappears
+[character id=200102 anim=ltor show=false wait=true]
+
+///////////////////////////////////////////////////////////////////////// Display Lilith
+[character id=500102 posx=0.66 anim=ltor face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=04_023_0390]
+…I'll kill you before Shina does if you try anything weird...
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0400]
+Got it, understood... well, let's get these folks here
+to hear the plan. Ahem ahem.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Lilith disappears
+[character id=500102 anim=fade show=false wait=false]
+
+///////////////////////////////////////////////////////////////////////// Arata moves to center
+[move id=600201 posx=0.5 sec=0.5 wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0410]
+"Now, everyone...
+You will start playing a game!"
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_023_0420]
+Bwahahahaha! Yes, that's the line!!
+I always wanted to say this classic line!
+This is the perfect catchphrase!
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0430]
+From this moment on, you will all...
+Start the game.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0440]
+...It's the perfect line for someone like me.
+I was convinced by saying it. I deserve to say this.
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=04_023_0450]
+—Haa, I'm satisfied.
+And I'm tired of explaining.
+I leave the proceedings to you all!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Arata disappears
+[character id=600201 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Lilith and Sayaka
+[character id=500102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0460]
+What is wrong with these people...?!
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=04_023_0470]
+...They're telling us to play a game.
+If we don't, more people will die... terribly.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Lilith and Sayaka disappear
+[character id=500102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.1]
+
+// Display Cut-in 04
+[cutin id=000004 type=fade sec=0.5 show=true]
+
+// Re-display the text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=04_023_0480]
+The rules are simple~ (ﾟДﾟ)
+Find the bombs hidden in this department store
+and defuse them~♪
+[/message]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=04_023_0490]
+One in the East Wing, one in the West Wing.
+Find them both beautifully.
+However, the bombs are... on the Strain Area side.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0500]
+Geh!?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0510]
+Come on, get ready! Let's go, Ripuka-chan.
+With this team, only you can find the bombs,
+right?!
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=04_023_0520]
+If you can't defuse them in time,
+more and more people will die, you know?
+That might end up being Sayaka-chan's fault, huh?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// End Cut-in 04
+[cutin id=000004 type=fade sec=0.5 show=false]
+
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////// Display Arata
+[character id=600201 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=04_023_0530]
+Tick-tock, tick-tock...
+This is another common line, like a countdown.
+Heh heh. Tick-tock, tick-tock... Puhahaha!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Arata disappears
+[character id=600201 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Shina and Sayaka
+[character id=200102 posx=0.32 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0540]
+No way... Shina...!!
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0550]
+Leave this side to us. Sayaka is...
+Sorry... Please take care of the Strain Area.
+After all, Kaede-san should be over there too...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Shina and Sayaka disappear
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Lilith, Rottie, and Yurisa
+[character id=500102 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.6 anim=fade face=panic show=true wait=false]
+[character id=200202 posx=0.79 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yamamura Yurisa charaid=200202 voice=04_023_0560]
+Sh-Shina,
+I won't let you touch her even with one finger...!
+[/message]
+
+[message name=Rottie charaid=200402 voice=04_023_0570]
+I-I'm scared...
+I'm scared but... I won't run...!
+[/message]
+
+// Lilith's expression changes
+[face id=500102 type=angry]
+
+[message name=Lilith Yamamura charaid=500102 voice=04_023_0580]
+...Hmph...
+All I'm doing is trying to suppress my murderous intent...
+It's so frustrating...!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Lilith, Rottie, and Yurisa disappear
+[character id=500102 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Senji and Sayaka
+[character id=601601 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0590]
+I-I-I understand! I got it!!
+Wait, Lilith!! Bombs and Hizumi-san!
+I will definitely do something about it!!
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=04_023_0600]
+Y-You...
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_023_0610]
+Then,
+Sayaka... I'm off!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////// Senji and Sayaka disappear
+[character id=601601 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////// Display Arata and Shina
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=04_023_0620]
+Alright, have a good trip!
+Rip... Sayaka, right? Alright, alright,
+Be careful, okay...!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0630]
+...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_023_0640 lipsync=false]
+(Arata Mizunashi. As I thought...
+The real purpose is... Sayaka, right?)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for a few seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a few more seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a few more seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,204 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_24_04_013
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter4]
+
+// Wait for the specified number of seconds
+[delay sec=2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+//[delay sec=0.5]
+
+// Department Store Strain Area
+// Background remains as dungeon
+
+[character id=100103 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0010]
+Alright. I made it in!
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0020]
+The first bomb is in this area.
+I absolutely have to find it!
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0030]
+...Huh?
+For some reason, I can feel where the bomb is.
+It's deeper in...
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0040]
+But why?
+How do I even know that?
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0050]
+...I guess I shouldn't think too much about it right now.
+I don't know why, but if I have a useful ability, I'll just use it.
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0060]
+If I don't,
+a lot of people will be sacrificed...
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0070]
+...
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0080]
+Partner, are you there?
+[/message]
+
+////////////////////////////////////////////////////////////////////////////【Choice】
+// 1: Yes
+// 2: No
+
+[select]
+[link text="Yes" label=watchover]
+[link text="No" label=relyon]
+[/select]
+
+//////////////////////////////////////////////////////////// If 1
+:watchover
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0090]
+...Good. 
+So my partner is watching over me.
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0100]
+I'm not alone.
+Just knowing that gives me courage right now.
+[/message]
+
+[goto label=bomb]
+
+///////////////////////////////////////////////////////// If 2
+:relyon
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0110]
+Haha.
+Of course you're here...
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0120]
+You're always there with me.
+I can't hear your voice, but you're still super reliable.
+Thank you.
+[/message]
+
+[goto label=bomb]
+
+//【Joining Paths】
+:bomb
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0130]
+The bomb feels like it's deep inside.
+...Let's go.
+Because this is something only I can do.
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0140]
+And I have to find Hizumi-san too.
+She must be so anxious,
+and she must be way more scared than I am, right!?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=04_024_0150]
+Wait for me.
+I'm coming to rescue you right now!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

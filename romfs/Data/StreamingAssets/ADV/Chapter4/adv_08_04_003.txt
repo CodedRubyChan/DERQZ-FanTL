@@ -1,0 +1,686 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+//adv_08_04_003
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop playing current BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000470]
+
+/////////////////////////////////////////////////////////////////////////////// Shina, Iris, Alice appear
+[character id=200102 posx=0.24 anim=none face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=none face=default show=true wait=false]
+[character id=600801 posx=0.75 anim=none face=default show=true wait=true]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// No BGM
+// Background 470 / Iris Corporation
+
+// Iris, Alice, and Shina are having a conversation
+
+// Speaker: Alice
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=04_008_0010]
+According to my calculations, 
+everyone should be arriving shortly. 
+In about, say, two minutes?
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=04_008_0020]
+…Yeah.
+[/message]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=04_008_0030]
+Oh my, are you nervous? 
+But really, they aren't scary at all, are they? 
+Even Sayaka seems to be getting along quite cheerfully!
+[/message]
+
+[face id=600801 type=default]
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=04_008_0040]
+…It's fine if they get mad at me. 
+It's fine if they end up hating me. 
+If that happens… it's because of me.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=04_008_0050]
+It's just that... 
+I'm just... nervous.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0060]
+Iris… you've gotten stronger! 
+You're amazing.
+[/message]
+
+// Iris changes expression
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=04_008_0070]
+...When I was just inside the computer, 
+everything seemed... 
+so much simpler.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0080]
+I prefer the Iris you are now…! 
+You decided to face everything. 
+Let's do our best together today.
+[/message]
+
+// Alice changes expression
+[face id=600801 type=painful]
+
+[message name=Alice charaid=600801 voice=04_008_0090]
+Oh my… 
+You're being too kind to our dear mother, 
+aren't you, “Grandmother”?
+[/message]
+
+// Screen shakes
+[shake target=chara id=200102 type=horizontal sec=1 pow=20 fade=true wait=false]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0100]
+Pffft. 
+W-what a nickname...! 
+Nova must have told you, right?
+[/message]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=04_008_0110]
+Hahahaha! 
+So? Do you feel a little less nervous now?
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=04_008_0120]
+Th-thank you...
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////BGM24
+// Sayaka and others enter
+
+[face id=200102 type=default]
+[face id=600801 type=default]
+[face id=600601 type=default]
+[sound type=bgm state=play name=TalkB]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+// @Sayaka
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0130]
+Good morning!
+[/message]
+
+// @Mai Toyama
+[message name=Mai Toyama charaid=200302 voice=04_008_0140]
+Good morning.
+[/message]
+
+// @Rottie
+[message name=Rottie charaid=200402 voice=04_008_0150]
+E-excuse me…!
+[/message]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=04_008_0160]
+Hehe... 
+I'll go greet them first.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////// Alice disappears
+[character id=600801 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////// Screen darkens
+[fade type=out anim=simple sec=0.5]
+
+///////////////////////////////////////////////////////// Iris and Shina disappear
+[character id=600601 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////////// Mai and Sayaka appear
+[character id=200302 posx=0.49 anim=none face=default show=true wait=true]
+[character id=100101 posx=0.74 anim=none face=default show=true wait=false]
+
+[fade type=in anim=simple sec=0.5]
+//////////////////////////////////////////////////////////////////////////////////////////// Screen brightens
+
+[delay sec=0.5]
+////////////////////////////////////////////////////////////////////////////////////////// Alice appears
+[character id=600801 posx=0.25 anim=ltor face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=04_008_0170]
+Good day, everyone! You made it to work on time, how impressive. 
+Sayaka, good to see you! 
+And you too, Mai and Rottie!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0180]
+Whoa, 
+Alice is at the office!?
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0190]
+Uh, wait... 
+The developer of Alice Code…? Why are you at our company? 
+This place is swarming with celebrities today...
+[/message]
+
+[face id=100101 type=default]
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=04_008_0200]
+Because I heard from my comrade Nova, of course. 
+You all plan to give my mentor Iris a scolding, don't you? 
+Make her regret it?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0210]
+So, you're on the president's side, Alice? 
+Well… depending on what happens, yes.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////// Alice disappears, Shina appears
+[character id=600801 anim=fade show=false wait=true]
+[delay sec=0.5]
+[character id=200102 posx=0.24 anim=ltor face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0220]
+M-Mai-chan...! 
+I mean, 
+I understand how you feel...
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0230]
+Thanks, Shina. 
+But from the way you're talking, 
+it sounds like you're on the president's side too?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0240]
+...Uh… 
+Director Shina! It's been half a day. 
+I might have been a bother, but I did my job!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0250]
+…Yes! 
+How was your first overnight trip? 
+Did you have fun?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0260]
+It was great...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0270]
+Yeah, okay, sorry, but could we take care of our business first? 
+I'd like to introduce my friend Rottie to the president today.
+[/message]
+
+// Shina changes expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0280]
+Of course...! 
+Rottie… I'm glad you're safe. 
+Phew...
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0290]
+Do you really mean that, Shina? 
+Are you being sincere?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0300]
+…What are you implying...?
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////// Shina and Alice disappear
+[character id=200102 anim=fade show=false sec=0.3 wait=false]
+[delay sec=0.3]
+////////////////////////////////////////////////////////////////////////////////////// Rottie appears
+[character id=200402 posx=0.25 anim=fade sec=0.3 face=panic show=true wait=false]
+
+// Display the text window again
+//[delay sec=0.5]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_008_0310]
+Uh, uh, uh… uh...!! 
+Um, well...
+[/message]
+
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=04_008_0320]
+If I'm going to be the cause of everyone's fighting, 
+I think I'll head home for now! See you later!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0330]
+W-wait, wait! Rottie! 
+Stay. Just stay. 
+You're a victim too, so hold your head up high.
+[/message]
+
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=04_008_0340]
+But Mai-chan! I appreciate that you're worried about me 
+and even angry on my behalf, 
+but seeing you so tense like this... it's hard for me too.
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0350]
+…To add to that, 
+I agree with Rottie here.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0360]
+...Ugh.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////// Rottie disappears
+[character id=200402 anim=fade show=false sec=0.3 wait=true]
+[delay sec=0.5]
+////////////////////////////////////////////////////////////////////////////////////// Alice appears
+[character id=600801 posx=0.25 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=04_008_0370]
+Hahaha…! 
+Ahhh, what a delightful scene to witness first thing in the morning! 
+Mm-hmm. I love seeing this whirlpool of emotions.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0380]
+…By the way, why exactly are you here today, Alice?
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=04_008_0390]
+I just wanted to see everyone's troubled faces up close.
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0400]
+If you're done, 
+please leave now!
+[/message]
+
+[face id=600801 type=painful]
+
+[message name=Alice charaid=600801 voice=04_008_0410]
+Fiiine…! But that's the window, not the door. 
+That's mean! 
+Even Ludens can die if they land badly, you know? 
+Geez.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+// Alice changes expression
+[face id=600801 type=default]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// Mai and Sayaka disappear
+[character id=200302 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// Shina appears
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=04_008_0420]
+Well, Shina, I'll leave mother to you. 
+Hehe, were you nervous too?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0430]
+...I guess, yeah.
+[/message]
+
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=04_008_0440]
+I see. 
+It's all part of the challenge. 
+Do your best. 
+Farewell, everyone!
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////// Alice leaves
+[character id=600801 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// Shina disappears
+[character id=200102 anim=fade sec=0.3 show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// Shina, Rottie, Mai, Sayaka appear
+[character id=200102 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.4 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_008_0450]
+Ah, she's gone. 
+Mai-chan, she's famous, right? 
+I wanted to get her autograph...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0460]
+Yes. 
+She's practically a household name in the game industry.
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_008_0470]
+The game industry!? 
+Wow! 
+So she makes games, right!?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0480]
+Oh, by the way, the gorgeous lady in black right here, 
+she's a famous game director! 
+Quite the big deal!
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0490]
+...W-wait, me!? Ahem… Sayaka, please… 
+Also, this is a game company, so we're all pretty well-known here.
+[/message]
+
+[face id=200102 type=default]
+
+[face id=200402 type=surprise]
+[message name=Rottie charaid=200402 voice=04_008_0500]
+Wow! So does that mean… 
+Sayaka and Mai-chan too!?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_008_0510]
+Mai-chan!! 
+Why didn't you tell me you work at a game company!? 
+That's super important!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0520]
+Haha! 
+I've only been here for four days though~
+[/message]
+
+// Mai changes expression
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0530]
+Ugh… Rottie! 
+You're throwing me off… 
+Today, I'm trying to help you with those missing seven years...
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_008_0540]
+I'm not that worried! 
+Let's take it easy, Mai-chan!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0550]
+Got it... Shina, 
+sorry I brought this up earlier, but… 
+Can we take Rottie on a tour of the office first?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0560]
+She's not an outsider, so yes. 
+As a special case, I'll allow it...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_008_0570]
+Thank you. 
+Alright, let's go! 
+I'll show you my desk.
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_008_0580]
+Yay!! 
+Special permission!!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////// Mai and Rottie leave
+[character id=200402 anim=ltor show=false wait=false]
+[character id=200302 anim=ltor show=false wait=true]
+[delay sec=0.5]
+[move id=100101 posx=0.66 wait=false]
+[move id=200102 posx=0.33 wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0590]
+Shina, I'm sorry about everything... 
+Wait. Did Mai leave to eat?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0600]
+Munch munch… refueling. 
+Melon steamed bun and 
+sugary hot milk...
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0610]
+Sounds super sweet...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=04_008_0620]
+It's comforting. 
+Warm comfort.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_008_0630]
+Haha... 
+Shina's recovery phase, huh.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Stop any playing sound effects
+//[sound type=se state=stop]
+
+// Stop playing current BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+END

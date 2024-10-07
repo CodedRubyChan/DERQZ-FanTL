@@ -1,0 +1,437 @@
+// Script
+// Wait for the specified time
+[delay sec=0.1]
+
+//adv_06_04_s05
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Background 580 / Subway
+// BGM19
+
+[character id=200402 posx=0.25 anim=rtol face=default show=true wait=false]
+[character id=200302 posx=0.5 anim=rtol face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified time
+[delay sec=0.5]
+// Display the text window
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=04_906_0010]
+Sayaka-chan, this is the subway, right? 
+Why did you bring me here?
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0020]
+Hehe~. 
+Rottie, 
+do you hate trains?
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=04_906_0030]
+I don't particularly like or dislike them... 
+Did you just want to show me the train?
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0040]
+Is there something special you need to do...?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0050]
+Yeah. 
+There's someone I want to introduce you and Rottie to. 
+Well, someone... or something... 
+I'm not even sure if they're a person.
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_906_0060]
+W-what does that mean? 
+I don't like ghosts...!
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+////////////////////////////////////////////////////////////////////////////////////////////////// Snark appears
+// Move Rottie, Mai, and Sayaka
+[move id=200402 posx=0.4 sec=0.5 wait=false]
+[move id=200302 posx=0.59 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=true]
+[delay sec=0.5]
+[character id=601701 posx=0.2 anim=fade face=default show=true wait=false]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=04_906_0070]
+......
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=200402 type=vertical sec=0.5 pow=10 fade=false wait=false]
+
+// Rottie changes expression
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=04_906_0080]
+Ahh, there's someone here. 
+They, um, appeared out of nowhere...
+[/message]
+
+[message name=Snark charaid=601701 voice=04_906_0090]
+So, you're a friend of the little girl. 
+Can you see me as well?
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_906_0100]
+Huh? "See" you? 
+Of course I can. 
+I don't have bad eyesight or anything.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0110]
+Y-yeah, we can see you...
+[/message]
+
+[face id=200402 type=default]
+// Sayaka changes expression
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0120]
+I knew it! 
+Rottie gave off a vibe that wasn't quite ordinary 
+from the moment we met!
+[/message]
+
+[face id=601701 type=angry]
+
+[message name=Snark charaid=601701 voice=04_906_0130]
+Do not... 
+treat me like some kind of litmus test.
+[/message]
+[face id=601701 type=default]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_906_0140]
+What does that mean? 
+Did you want me to meet this person?
+[/message]
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=04_906_0150]
+Wait! 
+Now that I look closely... 
+M-Mai-chan, there's something wrong! 
+This person... their body... it's see-through! 
+A g-ghost!
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0160]
+Stop panicking, girl. 
+A spiritual Luden is not that unusual anymore, is it?
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=04_906_0170]
+An arrogant ghost... 
+Rottie... 
+I-I think they're kinda cool...!
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0180]
+Rottie, 
+I've heard that name before.
+[/message]
+
+// Snark changes expression
+[face id=601701 type=confuse]
+
+[message name=Snark charaid=601701 voice=04_906_0190]
+Girl... 
+So it's you...! 
+You were the one imprisoned in the depths of the Strain Area...
+[/message]
+
+[face id=601701 type=thoughts]
+
+[message name=Snark charaid=601701 voice=04_906_0200]
+Did they take you out of there?
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0210]
+Yes, thanks to Sayaka!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0220]
+It wasn't easy. 
+But once I heard you were Mai's friend, 
+I thought it was worth a shot.
+[/message]
+
+[face id=601701 type=thoughts]
+
+[message name=Snark charaid=601701 voice=04_906_0230]
+...I see.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0240]
+It must have been a last resort, 
+a desperate measure on their part...
+[/message]
+
+[face id=601701 type=painful]
+
+[message name=Snark charaid=601701 voice=04_906_0250]
+Rottie, 
+I apologize.
+[/message]
+
+// Rottie changes expression
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_906_0260]
+Huh? Um, okay... 
+I don't really understand, but... sure...
+[/message]
+
+// Snark changes expression
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=04_906_0270]
+And you two girls as well, 
+I commend your efforts.
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0280]
+One minute you're apologizing to Rottie, 
+and the next you're praising us? 
+What exactly is your position here?
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0290]
+You know Iris, correct?
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0300]
+!
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0310]
+That's... well, yes, 
+she's the president at our workplace. 
+The Luden girl...
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0320]
+I am the one who... 
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0330]
+Ahhhh!! 
+I got it, you're like her father or something, right!?
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0340]
+Fool. 
+I am not her guardian, 
+but more like a supervisor.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0350]
+A supervisor...
+[/message]
+
+// Snark changes expression
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=04_906_0360]
+Interpret it however you wish. 
+Personally, I have no obligation to "that"...
+[/message]
+[face id=200302 type=default]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0370]
+However, as for Rottie's case, 
+it's like a fishbone stuck in Iris's throat, 
+and you have removed it.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0380]
+I don't fully understand, but thanks! 
+So, you call the president "that," huh...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0390]
+So Rottie's existence... 
+is deeply connected to the president.
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=04_906_0400]
+You're quick to catch on. 
+Go and ask her yourself. 
+Now, I must leave.
+[/message]
+
+// Hide the text window for a moment
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////// Snark leaves
+[character id=601701 anim=fade show=false wait=true]
+[delay sec=0.5]
+// Move Rottie, Mai, and Sayaka
+[move id=200402 posx=0.25 sec=0.5 wait=false]
+[move id=200302 posx=0.49 sec=0.5 wait=false]
+[move id=100101 posx=0.74 sec=0.5 wait=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0410]
+Well, that went better than expected... 
+We learned quite a bit.
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0420]
+Sayaka, you know so many people. 
+And I guess the president does too...
+[/message]
+
+[face id=200402 type=confuse]
+
+[message name=Rottie charaid=200402 voice=04_906_0430]
+Rottie... feels left behind...
+[/message]
+
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=04_906_0440]
+Sorry, sorry. 
+Don't worry, Rottie, just stay confident. 
+No matter what happens, 
+Sayaka and I will protect you.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=04_906_0450]
+Leave it to us!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+//[sound type=se state=stop]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
