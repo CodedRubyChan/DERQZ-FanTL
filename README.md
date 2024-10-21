@@ -12,7 +12,7 @@ DERQZ Fan Translation by:
 - Credits cannot be viewed because of a Loading Loop
 
 # HOW TO (TEMPORARILY) FIX
-1. Once you reach Chapter 10, rename the "aa" folder in your patch and complete the game.
+1. Once you reach Chapter 9, rename the "aa" folder in your patch and complete the game.
 
 2. Once you completed the game, you can rename it back.
 
