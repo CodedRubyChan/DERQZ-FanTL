@@ -9,12 +9,14 @@ DERQZ Fan Translation by:
 # BUGS
 - Gallery cannot be opened because of a Loading Loop
 
-- Credits cannot be viewed because of a Loading Loop
+- Credits cannot be viewed because of a Loading Loop (Chapter 9 and 10)
 
 # HOW TO (TEMPORARILY) FIX
-1. Once you reach Chapter 9, rename the "aa" folder in your patch and complete the game.
+1. Once you reach the Credits Scene in Chapter 9, close the game, rename the "aa" folder in your patch and complete Chapter 9.
 
-2. Once you completed the game, you can rename it back.
+2. Once you finished Chapter 9, rename the folder back and you can start playing Chapter 10.
+
+3. Do the same once you reach the credits in Chapter 10.
 
 # INSTALLING THE PATCH - Emulator
 
