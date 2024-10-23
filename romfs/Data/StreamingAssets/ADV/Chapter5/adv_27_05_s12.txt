@@ -1,0 +1,313 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_27_05_s12
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkD]
+
+// Display the specified background
+[image type=bg id=000540]
+
+[character id=601801 posx=0.31 anim=fade face=painful show=true wait=false]
+[character id=200702 posx=0.67 anim=fade face=confuse show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Chapter 5 Fragment
+
+// Background 540 / Department Store
+// BGM26
+
+// Show the text window
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=05_927_0010]
+Thank goodness, thank goodness... 
+I'm sorry, Liliana... 
+I was too inexperienced to save you...
+[/message]
+
+[message name=Liliana charaid=200702 voice=05_927_0020]
+Please, stop. 
+The one who is inexperienced... is clearly me.
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=05_927_0030]
+All of this was caused by my weak heart. 
+Shizu, you bear no blame at all.
+[/message]
+
+[message name=Shizu charaid=601801 voice=05_927_0040]
+Liliana...
+[/message]
+
+[message name=Liliana charaid=200702 voice=05_927_0050]
+Shizu, I hope you will continue to stand by me. 
+From now on, I need to atone for what happened today 
+and reconsider the teachings of Aphesis.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Shizu and Liliana exit
+[character id=601801 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=true]
+[delay sec=1]
+
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0060]
+Hmph...
+[/message]
+
+// Senji Hizumi appears
+[move id=100101 posx=0.66 sec=0.5 wait=false]
+[character id=601601 posx=0.32 anim=ltor face=default show=true wait=false]
+
+[message name=Senji Hizumi charaid=601601 voice=05_927_0070]
+Hey, Sayaka. 
+Did you fix this mess again?!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0080]
+Senji-san!
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=05_927_0090]
+All of a sudden, the would-be suicides calmed down. 
+They're coming out of Sagami one by one... 
+It's because of you, isn't it?
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0100]
+Hehe... I guess I tried pretty hard♪
+[/message]
+
+[face id=601601 type=thoughts]
+
+[message name=Senji Hizumi charaid=601601 voice=05_927_0110]
+I see... 
+Good job.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=05_927_0120]
+Leave the cleanup to us. 
+You should go back to your friends and rest. 
+No amount of gratitude is enough—
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=05_927_0130]
+For now, I'm heading back to work. See you later!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Senji Hizumi exits
+[character id=601601 anim=rtol show=false wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0140]
+Haha... 
+Looks like I managed to handle this one too! 
+Alright, time to go back to Shina and the others!
+[/message]
+
+// Basilissa appears
+// Stop BGM
+[sound type=bgm state=stop]
+[character id=600301 posx=0.32 anim=fade face=default show=true wait=true]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_927_0150]
+Fufufufu...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0160]
+...Ripuka. 
+Could you not just pop up and block my way like that?
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_927_0170]
+Oh, but there's still someone you haven't saved yet...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0180]
+...Huh? 
+Uh, no. If there's someone left, I'll check on them—
+[/message]
+
+[face id=600301 type=confuse]
+
+[message name=Basilissa charaid=600301 voice=05_927_0190]
+Wait, wait...! 
+Don't play dumb!
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=05_927_0200]
+I'm talking about you.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_927_0210]
+You thought about it many times, didn't you? 
+You wanted to "kill" them. 
+Those people who kept whining about wanting to die. 
+You wanted to make it happen, didn't you?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0220]
+W-What...?!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_927_0230]
+They've bounced back now... 
+But how convenient, isn't it? 
+Who do you think they owe it to, huh?!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_927_0240]
+If anything, 
+your murderous intent has only grown stronger!
+[/message]
+
+// BGM27
+[sound type=bgm state=play name=TalkE]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0250]
+Th-That's not... 
+No, I didn't think... anything like that...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_927_0260]
+Oh, it's fine. 
+You can deny it as much as you want.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_927_0270]
+But feelings... 
+they overflow, no matter how much you try to bottle them up.
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_927_0280]
+AhahahaHAHAHA!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Basilissa exits
+[character id=600301 anim=rtol show=false wait=true]
+[delay sec=0.3]
+[move id=100101 posx=0.49 sec=1 wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0290]
+...I can't deny it.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0300]
+That feeling... 
+it was born within me.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0310]
+But why... why...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_927_0320]
+I'm scared, Shina...
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the current SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

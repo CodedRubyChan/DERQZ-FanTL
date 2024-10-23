@@ -1,0 +1,560 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+//adv_20_08_013
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=DeathEnd]
+
+// Show the specified background
+[image type=bg id=000410]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//BGM34
+//Background 410 / Collapsing Saga City
+
+[character id=100101 posx=0.6 anim=fade face=panic show=true wait=false]
+[character id=200602 posx=0.3 anim=fade face=panic show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0010]
+Saving Hinata didn't stop the Strain Area?! 
+If anything, it feels like it's getting even bigger!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0020]
+No way... More than half the city 
+is already swallowed up. 
+How many people are still alive...?
+[/message]
+
+// Sayaka shakes (surprised/yelling)
+[shake target=chara id=100101 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+
+// Change Sayaka's expression: Pained
+[face id=100101 type=painful]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0030]
+I can't see Shina anywhere, either...! 
+W-what should I do...? 
+I don't know what to do...
+[/message]
+
+// Change Hinata's expression: Pained
+[face id=200602 type=painful]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0040]
+Is this... 
+what Arata was planning...? 
+I... ended up helping him...
+[/message]
+
+// Change Hinata's expression: Panicked
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0050]
+Sayacchi, pull yourself together...! 
+If you give up too, then I...
+[/message]
+
+[move id=100101 posx=0.85 wait=false]
+[move id=200602 posx=0.64 wait=false]
+
+// Chloe and G Selica appear
+[character id=200903 posx=0.15 anim=fade face=painful show=true wait=false]
+[character id=500502 posx=0.3 anim=fade face=painful show=true wait=true]
+
+// Chloe shakes (surprised/yelling)
+[shake target=chara id=200903 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Chloe charaid=200903 voice=08_020_0060]
+Ugh... 
+*cough* 
+*cough*...
+[/message]
+
+// Change Hinata's expression: Surprised
+[face id=200602 type=surprise]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0070]
+Chloe-sama!?
+[/message]
+
+// Change Sayaka's expression: Panicked
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0080]
+Oh, thank goodness... 
+Are the others who were at Iris still okay?!
+[/message]
+
+[message name=Falena charaid=500502 voice=08_020_0090]
+Chloe-sama! 
+Please, stay with us...!!
+[/message]
+
+// Change Chloe's expression: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=08_020_0100]
+Lena, I'm sorry. I failed on my end. 
+I couldn't destroy Iris' servers. 
+...I'm so, so sorry.
+[/message]
+
+// Change Sayaka's expression: Angry
+[face id=100101 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0110]
+D-destroy Iris...? 
+Chloe, 
+what do you mean by that?!
+[/message]
+
+// Change Falena's expression: Smiling
+[face id=500502 type=smile]
+[message name=Falena charaid=500502 voice=08_020_0120]
+Chloe-sama, it's alright. 
+Look around you, 
+you don't need to lament anymore.
+[/message]
+
+// Change Chloe's expression: Smiling
+[face id=200903 type=smile]
+[message name=Chloe charaid=200903 voice=08_020_0130]
+H-haha... 
+So, this is it... 
+The world will finally end, won't it?
+[/message]
+
+// Change Falena's expression: Normal
+[face id=500502 type=default]
+[message name=Falena charaid=500502 voice=08_020_0140]
+――Yes. 
+Just as you wished, Chloe-sama.
+[/message]
+
+// Change Chloe's expression: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=08_020_0150]
+I see. That's good――. 
+A world where no one can be trusted... 
+It should just disappear――.
+[/message]
+
+// Change Sayaka's expression: Sad
+[face id=100101 type=sad]
+
+// Change Hinata's expression: Angry
+[face id=200602 type=angry]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0160]
+Chloe-sama!!! 
+Is that what you really feel...?!
+[/message]
+
+// Change Chloe's expression: Surprised
+
+[face id=200903 type=surprise]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Change Chloe's expression: Sad
+
+[face id=200903 type=sad]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+// Change Sayaka's expression: Panicked
+
+[face id=100101 type=panic]
+
+// Change Hinata's expression: Panicked
+
+[face id=200602 type=panic]
+
+// Change Falena's expression: Confused
+
+[face id=500502 type=confuse]
+
+// Change Chloe's expression: Angry
+
+[face id=200903 type=angry]
+[message name=Chloe charaid=200903 voice=08_020_0170]
+U-ugh... 
+Shut up!!
+[/message]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+// Change Chloe's expression: Pained
+
+[face id=200903 type=painful]
+[message name=Chloe charaid=200903 voice=08_020_0180]
+I'm hurting too!! I've always been hurting!! 
+But everyone just praises me 
+without knowing anything about me!!
+[/message]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[face id=200602 type=confuse]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0190]
+Ugh...?!
+[/message]
+
+// Change Sayaka's expression: Confused
+
+[face id=100101 type=confuse]
+
+// Change Falena's expression: Angry
+
+[face id=500502 type=angry]
+
+// Change Chloe's expression: Pained
+
+[face id=200903 type=painful]
+[message name=Chloe charaid=200903 voice=08_020_0200]
+If I could just... 
+meet with Komai and apologize, 
+then that would be enough――.
+[/message]
+
+// Change Falena's expression: Thoughtful
+
+[face id=500502 type=thoughts]
+[message name=Falena charaid=500502 voice=08_020_0210]
+The end of this world is near. 
+Come, Chloe-sama. Let's go somewhere quiet, 
+so no one can disturb us.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=08_020_0220]
+Yes, you're right. 
+If it's with you, Lena, the one I trust...
+[/message]
+
+// Chloe and G Selica OFF
+
+[character id=200903 anim=rtol show=false wait=false]
+[character id=500502 anim=rtol show=false wait=true]
+
+[sound type=se name=Mirror]
+// Wait for the specified seconds
+[delay sec=2]
+
+// Hinata moves
+[move id=200602 posx=0.3 sec=1.5 wait=false]
+
+// Sayaka moves
+[move id=100101 posx=0.6 sec=1.5 wait=true]
+
+// Change Sayaka's expression: Panicked
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0230]
+No... Chloe and Lena, 
+they just jumped into the Strain Area...!
+[/message]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+// Change Hinata's expression: Panicked
+
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0240]
+No way!! 
+I have to apologize, 
+to Chloe-sama and... to Komai-chan!!
+[/message]
+
+// Change Hinata's expression: Confused
+
+[face id=200602 type=confuse]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0250]
+I need to apologize too――!!
+[/message]
+
+// Change Hinata's expression: Angry
+
+[face id=200602 type=angry]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0260]
+And if I can properly apologize, 
+I want to tell them again how much I love them both.
+[/message]
+
+// Hinata shakes (surprised/yelling)
+
+[shake target=chara id=200602 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+
+// Change Hinata's expression: Pained
+
+[face id=200602 type=painful]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0270]
+So, please... 
+bring them back!! 
+I can't do it, but you can, Sayaka...
+[/message]
+
+// Change Sayaka's expression: Panicked
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0280]
+I-I'd save them if I could, 
+but the city is being swallowed, 
+and I can't find anyone from Iris or Shina...
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Sayaka and Hinata OFF
+[character id=100101 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+
+[message name=Lilith Yamamura charaid=500102 voice=08_020_0290]
+Are you giving up, Sayaka?! 
+...That's not like you.
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=08_020_0300]
+Even in this situation, 
+there are still things that can be done.
+[/message]
+
+// Show Chiri and Lilith
+[character id=601501 posx=0.35 anim=rtol face=default show=true wait=false]
+[character id=500102 posx=0.6 anim=rtol face=default show=true wait=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// BGM31
+[sound type=bgm state=play name=TalkI]
+
+// Wait for the specified seconds
+[delay sec=1.2]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0310]
+Lilith!? 
+And Chiri too...!
+[/message]
+
+// Wait for the specified seconds
+[delay sec0.5]
+
+// Move Lilith
+[move id=500102 posx=0.35 sec=1 wait=false]
+
+// Move Chiri
+[move id=601501 posx=0.15 sec=1 wait=false]
+
+// Show character: Sayaka
+// Expression: Surprised
+[character id=100101 posx=0.82 anim=fade face=surprise show=true wait=false]
+
+// Show character: Hinata
+// Expression: Surprised
+[character id=200602 posx=0.6 anim=fade face=surprise show=true wait=false]
+
+// Change Hinata's expression: Confused
+[face id=200602 type=confuse]
+
+// Change Lilith's expression: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=08_020_0320]
+Sayaka, well... with the way things are now, 
+and this weather... 
+but look at us first, okay?
+[/message]
+
+// Change Sayaka's expression: Panicked
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0330]
+Huh...?
+[/message]
+
+// Change Lilith's expression: Normal
+[face id=500102 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=08_020_0340]
+I may not know all the details, 
+but it's because of your efforts 
+that I am here now.
+[/message]
+
+[face id=601501 type=smile]
+[message name=Chiri Sendo charaid=601501 voice=08_020_0350]
+I'm late, but thank you. 
+I will work for you, and for my brother.
+[/message]
+
+// Change Lilith's expression: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=08_020_0360]
+You're the only one who can deal with Arata Mizunashi. 
+I'm counting on you, Sayaka. 
+Please, don't let us down.
+[/message]
+
+// Change Hinata's expression: Normal
+[face id=200602 type=default]
+[message name=Hinata Morikubo charaid=200602 voice=08_020_0370]
+Me too... 
+Thank you for helping. I know it's selfish, but... 
+I still want to rely on you...
+[/message]
+
+// Change Sayaka's expression: Surprised
+[face id=100101 type=surprise]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0380]
+E-everyone...
+[/message]
+
+// Change Lilith's expression: Smiling
+[face id=500102 type=smile]
+[message name=Lilith Yamamura charaid=500102 voice=08_020_0390]
+How about I sweeten the deal a bit? 
+Shina is alive.
+[/message]
+
+[face id=100101 type=surprise]
+
+// Change Sayaka's expression: Panicked
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0400]
+R-really!?!?
+[/message]
+
+// Change Lilith's expression: Normal
+[face id=500102 type=default]
+[message name=Lilith Yamamura charaid=500102 voice=08_020_0410]
+It's working, huh... Yes. 
+My "feelings for Shina" 
+are telling me she's still here.
+[/message]
+
+// Change Sayaka's expression: Normal
+
+[face id=100101 type=default]
+
+// Change Chiri's expression: Angry
+
+[face id=601501 type=angry]
+[message name=Chiri Sendo charaid=601501 voice=08_020_0420]
+I'll take care of finding the other Iris members. 
+Consider it my first step toward repaying my debt. 
+So, for now...
+[/message]
+
+/////////////////////////////////////////////////////Hinata, Chiri, Lilith OFF
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=601501 anim=fade show=false wait=false]
+[character id=500102 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Move Sayaka
+[move id=100101 posx=0.5 sec=1 wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_020_0430]
+That's right... the key to End to Odyssey. 
+Chiri protected Chloe Aaron...
+[/message]
+
+/////////////////////////////////////////////////////Sayaka OFF
+[character id=100101 anim=fade show=false wait=false]
+
+// Play SE:
+[sound type=se name=Makeblade]
+
+// Show character: Sayaka with Blade
+// Expression: Normal
+[character id=100103 posx=0.5 anim=fade face=angry show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_020_0440]
+I'll bring them back. 
+The game development isn't over yet...! 
+I'm going...!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+// Stop BGM playing
+[sound type=bgm state=stop]
+
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

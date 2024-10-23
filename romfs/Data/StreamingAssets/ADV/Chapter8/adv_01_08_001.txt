@@ -1,0 +1,533 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_01_08_001
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+// Wait for a specified number of seconds
+[delay sec=2]
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=1]
+[sound type=se name=Eyecatch]
+// Show ADV eyecatch
+[eyecatch chapter=8 title=Towards the New World...]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=1]
+//########## Eyecatch ##########//
+
+// Play the specified BGM
+[sound type=bgm state=play name=GlitchGirls]
+
+// Display the specified background
+[image type=bg id=000410]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+//BG33
+//Background 410 / Collapse - Strain Area Transformation, Sajo City
+
+// Display Character: Arata Mizunashi
+// Face: Default
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=08_001_0010]
+――If you all hate it that much, let's do this.
+Let her decide whether she wants to stay here
+or come with me.
+[/message]
+
+// Arata Mizunashi facial expression change: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=08_001_0020]
+Hey, Sayaka! Wake up already.
+Remember your 'role'――!
+[/message]
+
+// Arata Mizunashi facial expression change: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_001_0030]
+Jealousy, madness, and murderous intent strong enough to loop
+the world over and over... 
+I'm the only one who can properly use that.
+[/message]
+
+// Display Character: Sayaka Hiwatari - Half-clothed
+// Face: Sad
+[character id=100104 posx=0.66 anim=btot sec=2 face=sad show=true wait=false]
+
+// Wait for a specified number of seconds
+[delay sec=1.5]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=08_001_0040]
+...Arata Mizunashi. The answer is "No".
+Took you long enough to show up. After all,
+I belong at Iris Corp.
+[/message]
+
+// Arata Mizunashi facial expression change: Painful
+[face id=600201 type=painful]
+[message name=Arata charaid=600201 voice=08_001_0050]
+What?!
+...Huh?!
+Sayaka-chaaan, that's not your line, is it...?
+[/message]
+
+// Arata Mizunashi facial expression change: Smile
+[face id=600201 type=smile]
+[message name=Arata charaid=600201 voice=08_001_0060]
+See, the correct line here is,
+"Yes! I remember my role perfectly!
+I'll go with Arata-sama! Ahaha!"
+[/message]
+
+// Arata Mizunashi vibration (shock, yelling)
+[shake target=chara id=600201 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Arata Mizunashi facial expression change: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=08_001_0070]
+...Hey!! Who gave Sayaka-chan the wrong script?!
+I'll punish them with the pencil up the nose and kill them!
+[/message]
+
+// Sayaka Hiwatari - Half-clothed facial expression change: Angry
+[face id=100104 type=angry]
+[message name=Sayaka Hiwatari charaid=100104 voice=08_001_0080]
+Arata Mizunashi. I understand who I am.
+And I know what my 'role' is, as you say.
+But even so, I... won't go with you.
+[/message]
+
+// Arata Mizunashi facial expression change: Confuse
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=08_001_0090]
+Oh, come on, seriously?!
+You're flat-out rejecting my invitation!
+Wait, what, doesn't that seem off...?
+[/message]
+
+// Arata Mizunashi facial expression change: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=08_001_0100]
+The thing is, this scenario was created
+by the supercomputer from the uppermost world!
+I ordered a special one guaranteed to 'work' on Sayaka-chan...
+[/message]
+
+// Arata Mizunashi facial expression change: Thoughtful
+[face id=600201 type=thoughts]
+[message name=Arata charaid=600201 voice=08_001_0110]
+Maybe I didn't push hard enough...?!
+Or did I improvise a little too much?!
+No way. The script and actors were perfect...
+[/message]
+
+// Arata Mizunashi facial expression change: Confuse
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=08_001_0120]
+Which means the only possibility left is...
+Did the lines of fate change... somehow?
+[/message]
+
+//BGM25
+
+[sound type=bgm state=play name=TalkC]
+
+//@Rin Asukaze
+
+[message name=Rin Asukaze charaid=600401 voice=08_001_0130 icon=true]
+Hello, hello, hello!? Respond!
+Arata!? Araataa!
+It's an emergency! It's seriously bad!
+[/message]
+
+// Arata Mizunashi facial expression change: Smile
+[face id=600201 type=smile]
+[message name=Arata charaid=600201 voice=08_001_0140]
+...Oh, yeah, yeah... Rin-chan, what's up?
+I'm kind of in the middle of thinking, so
+how urgent is it exactly~?
+[/message]
+
+//@Rin Asukaze
+
+[message name=Rin Asukaze charaid=600401 voice=08_001_0150 icon=true]
+Listen, listen! The resistance in the uppermost world
+suddenly started moving... 
+What should I do?! Tell meee~?!
+[/message]
+
+// Sayaka Hiwatari - Half-clothed facial expression change: Surprise
+[face id=100104 type=surprise]
+[message name=Sayaka Hiwatari charaid=100104 voice=08_001_0160]
+Oh my.
+Sounds like trouble.
+You should probably deal with that first.
+[/message]
+
+// Sayaka Hiwatari - Half-clothed facial expression change: Default
+[face id=100104 type=default]
+
+// Arata Mizunashi facial expression change: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=08_001_0170]
+............Tch.
+[/message]
+
+// Arata Mizunashi facial expression change: Smile
+[face id=600201 type=smile]
+[message name=Arata charaid=600201 voice=08_001_0180]
+...Oh, I see, I see. That really does sound serious!
+It's no wonder you're panicking, Rin-chan. Yes, yes.
+Good job informing me! Good girl! So proud of you~!
+[/message]
+
+// Arata Mizunashi facial expression change: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_001_0190]
+Let's start by reverse-tracing their base.
+Then send all available drones for a carpet bombing.
+If needed, use Eni to create more.
+[/message]
+
+[message name=Rin Asukaze charaid=600401 voice=08_001_0200 icon=true]
+Ah... Reverse trace... I see. Yes, yes!
+You're amazing, Arata! Thanks for the precise instructions!
+I'll definitely crush them!
+[/message]
+
+// Arata Mizunashi facial expression change: Smile
+[face id=600201 type=smile]
+[message name=Arata charaid=600201 voice=08_001_0210]
+Good, good. Well then,
+I'll contact you again once the job's done!
+No cheating while I'm away, okay? Haha!
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sayaka & Arata
+[character id=100104 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// G Lucil, G Al, and G Clea appear
+
+// Display Character: Kiki Amo
+// Face: Angry
+[character id=500202 posx=0.25 anim=fade face=angry show=true wait=false]
+
+// Display Character: Huuki Hizumi
+// Face: Default
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=false]
+
+// Display Character: Naraku Morikubo
+// Face: Default
+[character id=500402 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=08_001_0220]
+...Like, what was that just now?! Rin-san knows
+we're busier here, doesn't she? (# ﾟДﾟ)
+And her report... it didn't even sound like a real emergency.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_001_0230]
+I suspect it's because Arata has been spending
+so much time focused on Sayaka lately.
+She probably just wanted to interrupt and disrupt the conversation.
+[/message]
+
+// Amo facial expression change: Smile
+[face id=500202 type=smile]
+[message name=Kiki Amo charaid=500202 voice=08_001_0240]
+Ah! I get it. ┐(´д｀)┌
+Seriously, she shouldn't bring personal feelings into work.
+Arata-sama, you should scold her about it later, okay?
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide G Lucil, G Al, and G Clea
+[character id=500202 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Display Character: Arata Mizunashi
+// Face: Angry
+[character id=600201 posx=0.5 anim=fade face=angry show=true wait=false]
+
+[message name=Arata charaid=600201 voice=08_001_0250]
+――Shut up... 
+I'll kill you, Al, Lucil.
+You're just "artificial," so don't speak out of line.
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Arata Mizunashi
+[character id=600201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// G Lucil, G Al, and G Clea reappear
+
+// Display Character: Kiki Amo
+// Face: Painful
+[character id=500202 posx=0.25 anim=fade face=painful show=true wait=false]
+
+// Display Character: Huuki Hizumi
+// Face: Default
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=false]
+
+// Display Character: Naraku Morikubo
+// Face: Default
+[character id=500402 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=08_001_0260]
+Y-you don't have to get that mad!
+It was just a joke, okay? (；ﾟДﾟ)
+I-I said I'm sorry...
+[/message]
+
+// Morikubo facial expression change: Thoughtful
+[face id=500402 type=thoughts]
+[message name=Naraku Morikubo charaid=500402 voice=08_001_0270]
+"Artificial"...
+Ah, yes. Quite a fitting description.
+Let's remain silent, then.
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.5]
+
+// BGM24
+[sound type=bgm state=play name=TalkB]
+
+///////////////////////////////////////////////////////////////////////////// Hide G Lucil, G Al, and G Clea
+[character id=500202 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Display Character: Sayaka Hiwatari - Half-clothed
+// Face: Panic
+[character id=100104 posx=0.3 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=08_001_0280]
+...Whoa. Seems like there's more drama than I thought.
+Looks like they're having a rough time.
+That works out well for us, though.
+[/message]
+
+// Sayaka Hiwatari - Half-clothed facial expression change: Surprise
+[face id=100104 type=surprise]
+[message name=Sayaka Hiwatari charaid=100104 voice=08_001_0290]
+By the way, it looks like someone isn't here...
+What was his name again... Oh right, Natsuo Munakata.
+Did they have a falling out?
+[/message]
+
+// Sayaka Hiwatari - Half-clothed facial expression change: Default
+[face id=100104 type=default]
+
+// Display Character: Huuki Hizumi
+// Face: Sad
+[character id=500302 posx=0.7 anim=fade face=sad show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_001_0300]
+Ah... The master pretty much drove him out.
+Breaking what was precious to him right before his eyes.
+Master deliberately weakened his own side... I can't understand it.
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sayaka and G Clea
+[character id=100104 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Display Character: Arata Mizunashi
+// Face: Painful
+[character id=600201 posx=0.5 anim=fade face=painful show=true wait=false]
+
+[message name=Arata charaid=600201 voice=08_001_0310]
+What's this, even Huuki is criticizing me now?!
+How dare someone who barely works be so cheeky...! That was a punishment!
+Damn, everyone's so useless!
+[/message]
+
+// Dimensional rip sound
+[sound type=se name=mirror]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Arata Mizunashi facial expression change: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=08_001_0320]
+――What? 
+Time's up. Dammit!!
+Remember this, Sayaka!! I'll definitely――
+[/message]
+
+// Fade out
+// BGM23 / Peaceful Scene
+// Background 450 / Shina's Apartment Room
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out
+[fade type=out anim=simple sec=1.5]
+[delay sec=1.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sayaka & Arata
+[character id=100104 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// BGM23 / Peaceful Scene
+[sound type=bgm state=play name=TalkA]
+
+// Background 450 / Shina's Apartment Room
+[image type=bg id=000450 show=true]
+
+// Display Character: Sayaka Hiwatari
+// Face: Surprise
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+// Fade in
+[fade type=in anim=simple sec=2]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_001_0330]
+So that's what he meant by time's up.
+...My consciousness...
+It's back at the apartment now.
+[/message]
+
+// Sayaka facial expression change: Default
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_001_0340]
+From how it looked,
+it seems like their side isn't working
+together very well...
+[/message]
+
+// Sayaka facial expression change: Expectation
+[face id=100101 type=expectation]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_001_0350]
+Alright! Then, everything I've done
+wasn't for nothing.
+This means we still have a chance to win!
+[/message]
+
+// Sayaka facial expression change: Default
+[face id=100101 type=default]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

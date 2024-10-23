@@ -1,0 +1,145 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_03_07_s02
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000450]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=1]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// No BGM
+// Background 450 / Home
+
+//【Choices】
+// 1: Sayaka, are you okay?
+
+[select]
+[link text="Sayaka, are you okay?" label=excite]
+[/select]
+
+:excite
+
+[character id=100105 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_903_0010]
+What's there to be okay about? 
+I'm feeling amazing right now! 
+Can't you tell just by looking?
+[/message]
+
+//【Choices】
+// 1: Clearly, something is different from usual
+
+[select]
+[link text="Clearly, something is different from usual" label=bad]
+[/select]
+
+:bad
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_903_0020]
+Being more energetic than usual, 
+is that a bad thing? 
+Haha. You're so weird, partner!
+[/message]
+
+//【Choices】
+// 1: You've been acting strange ever since you met Shina
+
+[select]
+[link text="You've been acting strange ever since you met Shina" label=goout]
+[/select]
+
+:goout
+
+[face id=100105 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_903_0030]
+That's right. It's all thanks to Shina! 
+The reason I feel so cheerful, 
+the reason I want to go outside, it's all because of Shina.
+[/message]
+
+// Sayaka expression change
+[face id=100105 type=expectation]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_903_0040]
+Ahh, I'm so excited. 
+Finally... finally, I get to kill someone. 
+Just thinking about it makes me tingle with excitement♪
+[/message]
+
+//【Choices】
+// 1: ...
+
+[select]
+[link text="..." label=justend]
+[/select]
+
+:justend
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+//[sound type=se state=stop]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

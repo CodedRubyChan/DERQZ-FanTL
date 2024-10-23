@@ -1,0 +1,1411 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_13_08_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter1]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+//[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM04
+// Background 430 / Sagami City Intersection
+
+[character id=600501 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0010]
+...Here. This is where I'll open the "gate."
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0020]
+This intersection... 
+It's where Arata Mizunashi appeared before...
+Can we really go straight to the Uppermost World from here?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0030]
+To reach the Uppermost World, 
+normally, only those with the rights of an "agent" can get there from the outside.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0040]
+However, I'll temporarily transfer the agent status to everyone here, 
+so there won't be an issue this time. It's a temporary measure. Let's get started.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Natsuo Munakata
+[character id=600501 anim=fade show=false wait=true]
+
+// Move Sayaka
+[move id=100101 posx=0.5 sec=1 wait=true]
+
+// Black background
+[image type=bg id=000380 show=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sayaka from right to left
+[character id=100101 anim=rtol show=false wait=false]
+
+[sound type=se name=Dress]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+[sound type=se state=stop]
+
+// Display character: Aphesis cultist
+// Specify face: Default
+[character id=602701 posx=0.5 anim=rtol face=default show=true wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Speaker: Sayaka Hiwatari
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0050]
+Oh... 
+I've ended up looking just like an Aphesis cultist...
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Aphesis cultist
+[character id=602701 anim=fade show=false wait=true]
+
+[sound type=se name=Dress]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+[sound type=se state=stop]
+
+// Display character: Aphesis cultist
+// Specify face: Default
+[character id=602702 posx=0.35 anim=fade face=default show=true wait=true]
+
+// Speaker: Huuki Hizumi
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_0060]
+I never thought this attire would pass over there as well. 
+It's surprising.
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Aphesis cultist
+[character id=602702 anim=fade show=false wait=true]
+
+[sound type=se name=Dress]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+[sound type=se state=stop]
+
+// Display character: Aphesis cultist
+// Specify face: Default
+[character id=602701 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Speaker: Alice
+
+[message name=Alice charaid=600801 voice=08_013_0070]
+Ohoho! 
+I feel like a villain from a tokusatsu show♪
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Aphesis cultist
+[character id=602701 anim=fade show=false wait=true]
+
+[sound type=se name=Dress]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+[sound type=se state=stop]
+
+// Display character: Aphesis cultist
+// Specify face: Default
+[character id=602702 posx=0.15 anim=fade face=default show=true wait=true]
+
+// Speaker: Levin
+
+[message name=Levin charaid=601001 voice=08_013_0080]
+Uh, what are you saying...
+You're already a villain, aren't you...?
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Aphesis cultist
+[character id=602702 anim=fade show=false wait=true]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade to black
+[fade type=out anim=simple sec=1]
+
+[delay sec=1]
+
+[character id=602701 anim=fade show=false wait=false]
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=true]
+
+[sound type=se name=Metastasis]
+
+[fade type=in anim=simple sec=4]
+
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0090]
+Alright... We've arrived. 
+This is the Uppermost World.
+[/message]
+
+// BGM09
+// Background 180 / Sagami City at Night
+
+[image type=bg id=000180 show=true]
+[sound type=bgm state=play name=Chapter7]
+
+//※ From now on, Sayaka and others will not have standing character sprites.
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0100]
+Eh... already?! T-This is it? 
+It looks exactly like Sagami City... 
+Did we really succeed?
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_0110]
+To Sayaka... 
+Does this scenery look like Sagami City? 
+To my eyes... it looks like the streets of Kannagawa...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0120]
+...What do you mean?
+[/message]
+
+// Natsuo's face: Default
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0130]
+Right now, the "filter" function is on.
+Each person sees a different view, based on what feels most comforting and familiar.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0140]
+Hehe. Levin, what kind of scenery is spreading out in front of you? 
+To me, I see my office.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0150]
+That's a secret. 
+Even I was surprised. 
+I didn't realize I found peace there...
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0160]
+The filter isn't suitable for a tour of the Uppermost World.
+I'll turn it off for everyone now. 
+This will return the view to the real landscape of this world.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+//// Background 340 / Uppermost World Passage
+// BGM08
+
+[sound type=se name=Onoff]
+
+// Wait for a specified number of seconds
+[delay sec=4]
+
+[image type=bg id=000340 show=true]
+[sound type=bgm state=play name=Chapter6]
+
+// Redisplay text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0170]
+It's true. The scenery has completely changed, 
+and there are strange white buildings everywhere now. 
+It's kind of like a complex of apartments.
+[/message]
+
+// Sayaka's face: Smile
+[face id=100101 type=smile]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0180]
+If you follow this long path, 
+you'll reach my residence. 
+Let's head there first.
+[/message]
+
+// Fade to black (time skip effect)
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+// Sayaka's face: Default
+[face id=100101 type=default]
+[delay sec=1.5]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0190]
+This path really is long.
+It looks like there are many peep windows on both sides...
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0200]
+Hehe.
+If you look through the windows, 
+you can see some bizarre sights—
+[/message]
+
+// Sayaka's face: Thoughts
+[face id=100101 type=thoughts]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0210]
+Compared to your world, 
+maybe so. 
+Believe it or not, 
+this is Japan, in this world.
+[/message]
+
+// Sayaka's face: Default
+[face id=100101 type=default]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0220]
+I live in an area where researchers gather.
+Supporting them is part of my work.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0230]
+Research... on what...?
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0240]
+Hey, Sayaka. 
+Did you peek through the small window? They're doing experiments.
+Hehe. I'm sure it'll surprise you.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+
+[sound type=se name=Peephole]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+///////////////////////////////////////////////////////////////////////////// Hide Natsuo Munakata
+[character id=600501 anim=fade show=false wait=true]
+
+// Black background
+[image type=bg id=000380 show=true]
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+
+// Show Shina's sprite
+// Display character: Shina
+// Specify face: Default
+[character id=200101 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Speaker: Agent 1
+// Female Mob 71
+
+// Shina's face: Thoughts
+[face id=200101 type=thoughts]
+[message name=Agent 1 charaid=200101 voice=08_013_0250]
+Lower World NE-6638 confirmed lost. 
+No remaining life. Predicted outcome. 
+No abnormalities in Eni readings.
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina
+[character id=200101 anim=fade show=false wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+
+// Display character: Shina
+// Specify face: Default
+[character id=200101 posx=0.8 anim=fade face=default show=true wait=true]
+
+// Speaker: Agent 2
+// Female Mob 72
+
+// Shina's face: Angry
+[face id=200101 type=angry]
+[message name=Agent 2 charaid=200101 voice=08_013_0260]
+Constructing Proxy World OE-157. "Protagonist" present. 
+Adjusted total population to 5 billion. 
+Implemented as a prototype for "Endverse," registered ID2024.
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina
+[character id=200101 anim=fade show=false wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// Display character: Shina
+// Specify face: Default
+[character id=200101 posx=0.2 anim=fade face=default show=true wait=true]
+
+// Speaker: Agent 3
+// Female Mob 73
+
+// Shina's face: Sad
+[face id=200101 type=sad]
+[message name=Agent 3 charaid=200101 voice=08_013_0270]
+Injected Agent Avatar into the designated world. 
+Observation begins. 
+May the Great Sage's blessing be upon us.
+[/message]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Temporarily hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina
+[character id=200101 anim=fade show=false wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+[sound type=se state=stop]
+
+// Background 340 / Uppermost World Passage
+[image type=bg id=000340 show=true]
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0280]
+...Wait, what?! Shina?! 
+Why is Shina here?! 
+And over there too. Oh, there's another one?!
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0290]
+They're all busy moving around. 
+And every one of them looks just like "Adventurer Shina"...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0300]
+Hey, hey... 
+Natsuo, what's going on here?
+[/message]
+
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Sayaka's face: Thoughts
+[face id=100101 type=thoughts]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0310]
+It's nothing unusual. 
+In the Uppermost World, 
+it's just a popular attire, that's all.
+[/message]
+
+// Sayaka's face: Default
+[face id=100101 type=default]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0320]
+That's just a uniform. 
+Well, I prefer an old-fashioned look, 
+so I'm not connected to it out of personal taste.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0330]
+Is that so...? It feels like even the faces are similar... 
+It was just so identical to Shina from 'World's Odyssey' 
+that I couldn't help but be surprised.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0340]
+Rather, it's more interesting that your Lower World... 
+from our perspective, the Lower World... 
+is recreating our outfits in a game.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0350]
+Hehehe! Must be a coincidence♪ 
+Shina sometimes makes odd things with her friends...
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0360 lipsync=false]
+(Could that really be just a coincidence...?)
+[/message]
+
+// @Shina Clone
+// Speaker: Agent 4
+// Female Mob 74
+
+[message name=Agent 4 charaid=200101 voice=08_013_0370]
+May the Great Sage's blessing be upon us.
+[/message]
+
+// @Shina Clone
+// Speaker: Agent 5
+// Female Mob 75
+
+[message name=Agent 5 charaid=200101 voice=08_013_0380]
+May the Great Sage's blessing be upon us.
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_0390]
+If you listen closely, 
+you can hear the name "Great Sage" 
+from all the labs. 
+I wonder where the person is.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0400]
+The most famous figure in the Uppermost World. 
+She has a huge following here...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0410]
+Uh, so... 
+Is she the one leading the research here too?
+[/message]
+
+// Natsuo's face: Smile
+[face id=600501 type=smile]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0420]
+Heh. You're perceptive. 
+As I expected, you're quite sharp, Sayaka.
+[/message]
+
+// Natsuo's face: Default
+[face id=600501 type=default]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0430]
+The person herself could be traveling anywhere 
+in the Upper or Lower World, 
+but she's likely somewhere on the move...
+[/message]
+
+// @Shina Clone
+// Speaker: Agent 6
+
+[message name=Agent 6 voice=08_013_0440]
+May the Great Sage's blessing be upon us.
+[/message]
+
+// @Shina Clone
+// Speaker: Agent 7
+
+[message name=Agent 7 voice=08_013_0450]
+May the Great Sage's blessing be upon us.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0460]
+With so many... believers, 
+I wonder where that Great Sage herself 
+is busy having fun.
+[/message]
+
+// Natsuo's face: Smile
+[face id=600501 type=smile]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0470]
+Having fun! Haha, that's an accurate way to put it. 
+Miss Luden.
+[/message]
+
+// Natsuo's face: Default
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0480]
+She's an incredibly skilled alchemist 
+who laid the "foundation" of the Uppermost World. 
+But to her, it's all just a game.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0490]
+She's that kind of person, 
+so who knows? 
+She might even appear before you, Sayaka.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0500]
+Ehh... 
+No, that can't be true.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0510]
+So then... 
+What kind of research is being done here?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0520]
+Here, we're conducting experiments 
+to transform "people" into other forms using code—
+into other beings or even machines.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0530]
+People... transformation. 
+From what I'm hearing, 
+it doesn't sound like the most ethical research—
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0540]
+These are prestigious experiments 
+personally directed by the Great Sage. 
+Similar experiments are being conducted "worldwide," 
+but this is undoubtedly the frontier of human progress.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0550]
+Oh... look! 
+Take a peek through this little window.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0560]
+...Whoa?! 
+There's someone with a rabbit's head... 
+Are they okay?
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0580]
+Over there, a bunch of people are completely flat! 
+They look just like playing cards...
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0590]
+This place is truly a "Wonderland," isn't it? 
+Ah, it's amazing! 
+I should've brought Nova and Ripuka too!
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_0600]
+Natsuo. 
+I see this as an inhumane sight... 
+What do you think?
+[/message]
+
+// Natsuo's face: Thoughts
+[face id=600501 type=thoughts]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0610]
+From a surface-level view, it might appear that way. 
+But all of this is crucial adaptation work 
+for the residents of the Uppermost World 
+to "migrate to another world."
+[/message]
+
+// Natsuo's face: Smile
+[face id=600501 type=smile]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0620]
+They are, in fact, choosing to modify themselves. 
+The ultimate goal is to evolve 
+without relying on Eni. It's a test.
+[/message]
+
+// Natsuo's face: Default
+[face id=600501 type=default]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0630]
+Someday, even the Uppermost World will meet its end. 
+The world, and transforming oneself. 
+The curiosity never dies.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0640]
+Ah, is that so—quite passionate, it seems. 
+It might be impressive, 
+but I still don't quite get it.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0650 lipsync=false]
+(Liliana... It doesn't seem like 
+the Uppermost World is a very nice place. 
+It's a pity—)
+[/message]
+
+// Screen fades out
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+[delay sec=1.5]
+
+[sound type=bgm state=play name=TalkG]
+[image type=bg id=000330 show=true]
+
+[sound type=se name=Natuoroom]
+// Wait for a specified number of seconds
+
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+// BGM29
+// Background 330 / Future World Private Room
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0660]
+Sorry to keep you waiting. 
+This is my office.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[sound type=se name=Onoff]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+
+[image type=bg id=000330 show=false black=true]
+// Wait for a specified number of seconds
+[delay sec=0.3]
+
+// Background 470 / Iris Corporation
+[image type=bg id=000470 show=true]
+// Wait for a specified number of seconds
+[delay sec=1.5]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0670]
+Now, I'll revert the filter function. 
+Feel free to relax. 
+...Don't worry, all the chairs are real.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_013_0680]
+The Uppermost World is quite impressive, isn't it? 
+The researchers... or rather, agents, right? 
+They all seem like ambitious people.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0690]
+Yes... They observe... even other Lower Worlds, 
+sending agents... and breaking the natives, 
+all for migration.
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_0700]
+What?! 
+Is that true, Natsuo...?
+[/message]
+
+// Natsuo's face: Thoughts
+[face id=600501 type=thoughts]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0710]
+...I swear, I'm against such "wrongdoings." 
+If we could make people into something like air, 
+we could migrate anywhere.
+[/message]
+
+// Natsuo's face: Painful
+[face id=600501 type=painful]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0720]
+...But there are some among us agents, 
+who misinterpret the Great Sage's mission 
+and focus only on achieving migration. 
+They're... "fanatics," to put it mildly.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0730]
+...Ah, so that's... 
+Arata Mizunashi, then.
+[/message]
+
+// Natsuo's face: Default
+
+// ??? Speaker
+[message name=??? charaid=602301 voice=08_013_0740]
+No, no, my guests. 
+That's a bit of a hasty conclusion.
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_0750]
+Who goes there...?
+[/message]
+
+// Speaker: Anjo Hajime
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0760]
+Welcome back, Natsuo-sama. 
+May I serve some drinks to the guests?
+[/message]
+
+[move id=600501 posx=0.8 sec=0.5 wait=false]
+// Show cut-in 06
+[cutin id=000006 type=ltor sec=0.5 show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0770]
+Whoa, whoa, whoa?! 
+A stranger...?!
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0780]
+Calm down. He's... a test subject. 
+Not an agent, but a very competent man.
+[/message]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0790]
+Nice to meet you. 
+I'm Anjo Hajime, 
+Natsuo-sama's assistant.
+[/message]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0800]
+Would you care for some delicious coffee? 
+Here, please.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0810]
+Huh? 
+...Huh?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+[character id=600501 anim=none show=false wait=false]
+
+// Black background
+[image type=bg id=000380 show=true]
+[cutin id=000006 type=ltor sec=0.1 show=false]
+
+// Display Anjo Hajime's character
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+[character id=602301 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Levin charaid=601001 voice=08_013_0820]
+Anjo Hajime... that's... 
+the name of the master 
+of our cafe!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+[character id=602301 anim=fade show=false wait=true]
+
+// Background 330 / Future World Private Room
+[image type=bg id=000330 show=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+[character id=600501 posx=0.8 anim=fade face=default show=true wait=false]
+// Show cut-in 06
+[cutin id=000006 type=fade sec=0.5 show=true]
+
+// Show the text window again
+[visible show=true]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0830]
+Oh my, oh my, oh my. 
+From your reaction, 
+you must have met the Lower World's me!? 
+What a coincidence!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0840]
+...Wow, this coffee is delicious. 
+Maybe even better than Levin's.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0850]
+Sayaka...! 
+How can you drink that so casually...?! 
+Also, that's uncalled for—but *gulp*
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0860]
+...It really is tasty, damn it!
+[/message]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0870]
+I'm honored. 
+It's better for manipulating Eni in this form. 
+Please give my regards 
+to my counterpart in the Lower World...
+[/message]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0880]
+Oh, right. Natsuo-sama, 
+about today's schedule. 
+Flood prevention for cities along the river. 
+Providing personnel and budget to local municipalities—
+[/message]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0890]
+And tomorrow, there's compensation 
+for residents affected by the large-scale wildfire 
+in the arid region. 
+The recovery support plan has been prepared.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_013_0900]
+Even the way he talks... 
+It's exactly the same...! 
+It's eerie...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0910]
+...Hmm. 
+So why is Arata Mizunashi, 
+so different from how everyone describes him as...
+"Arata Mizunashi" at Iris Corporation—
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0920]
+...He wasn't always like that.
+[/message]
+
+// BGM stop
+[sound type=bgm state=stop]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0930]
+Arata Mizunashi. 
+He used to be known as the Great Sage's 
+most promising disciple—
+[/message]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Background 250 (Glitch effect)
+[image type=bg id=000250 show=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+[message name=Arata charaid=600201 voice=08_013_0940]
+Heeeey!!! 
+Cut, cut, cut!!!
+[/message]
+
+// Speaker: Anjo Hajime
+[sound type=se name=Attack]
+[effect type=Attack show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+// Hide cut-in 06
+[cutin id=000006 type=ltor sec=0.2 show=false]
+
+[message name=Anjo Hajime charaid=602301 voice=08_013_0950]
+Gah?!
+[/message]
+
+// Natsuo's face: Angry
+[face id=600501 type=angry]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0960]
+Anjo!?!
+[/message]
+
+[character id=600201 posx=0.3 anim=fade face=smile show=true wait=true]
+
+// Sayaka Hiwatari
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_0970]
+Ugh...?! 
+It's him...
+[/message]
+
+// BGM27
+[sound type=bgm state=play name=TalkE]
+
+// Arata's face: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_013_0980]
+Why're you trying to wrap up my story, Natsun...? 
+Ah, Anjo, sorry... You're not dead, right?
+[/message]
+
+// Natsuo's face: Default
+[message name=Natsuo Munakata charaid=600501 voice=08_013_0990]
+...Arataaa...!
+[/message]
+
+// Arata's face: Thoughts
+[face id=600201 type=thoughts]
+[message name=Arata charaid=600201 voice=08_013_1000]
+Don't say something dumb like "why are you here?" 
+If you do, I might really abandon you—
+[/message]
+
+// Arata's face: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_013_1010]
+Who gave you this fancy place to live, huh? 
+It was me, wasn't it?! 
+I'm the one who helped you when you were lost.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1020]
+...That's right... 
+It was the Arata, brimming with passion 
+to save the Uppermost World...!
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1030]
+And now, you think that's changed?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1040]
+...Yes! 
+You're planning to completely destroy Iris's world, 
+and then relocate only a select few there—
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1050]
+That's why you're after the power 
+to break the loop in the DE-1 world, 
+the same power that was with Ripuka 
+and is now with Sayaka—!
+[/message]
+
+// Sayaka Hiwatari
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_1060]
+So... that's what this is about...?
+[/message]
+
+// Arata's face: Confused
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=08_013_1070]
+Nope. Natsun... 
+That's only a 50-point answer.
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1080]
+Out of 1000 points! 
+You're still so clueless... it's not just that.
+[/message]
+
+// Arata's face: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_013_1090]
+Sure, I'll destroy Iris's world. 
+Keeping it around is useless. 
+That's your 50 points.
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1100]
+But you see... 
+What I really want to destroy is this, 
+the Uppermost World itself!
+[/message]
+
+// Natsuo's face: Panic
+[face id=600501 type=panic]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1110]
+...What?
+[/message]
+
+// Arata's face: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=08_013_1120]
+What's with that dumb look...? 
+Even after your sister died in this Uppermost World, 
+you're still a corporate lackey. 
+How pathetic, Natsun!
+[/message]
+
+// Arata's face: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_013_1130]
+This Uppermost World, with its fools still tinkering 
+with the ideas the Great Sage thought up decades ago, 
+will come to an end—
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1140]
+That's the essence of "Code Z"! 
+The ultimate plan that I, Rin, and Sayaka can carry out... 
+Hmm, but Natsun, you're probably not needed, are you?
+[/message]
+
+// Natsuo's face: Angry
+[face id=600501 type=angry]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1150]
+...Don't be ridiculous!! Destroy the Uppermost World? 
+Do you have any idea how many billions would die...?!
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1160]
+I don't care. 
+A world that observes and invades others 
+is better off gone. 
+Even Rin agrees with me.
+[/message]
+
+// Natsuo's face: Painful
+[face id=600501 type=painful]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1170]
+...Impossible!! 
+You hate this world that much—
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1180]
+Yeah. 
+I woke up. 
+I'm not following the Great Sage's orders anymore.
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1190]
+Well... anyway, Natsun, 
+I guess I should thank you 
+for bringing Sayaka here!
+[/message]
+
+[character id=600201 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=true]
+
+// Display Afasis Cult Member
+// Face: Default
+[character id=602702 posx=0.35 anim=fade face=default show=true wait=true]
+
+// Sayaka Hiwatari
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_1200]
+...Ugh?!
+[/message]
+
+// Hide Afasis Cult Member
+[character id=602702 anim=fade show=false wait=true]
+
+// Display Afasis Cult Member
+// Face: Default
+[character id=602701 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Levin
+[message name=Levin charaid=601001 voice=08_013_1210]
+He knows, doesn't he...?
+[/message]
+
+// Hide Afasis Cult Member
+[character id=602701 anim=fade show=false wait=true]
+
+// Display Afasis Cult Member
+// Face: Default
+[character id=602702 posx=0.15 anim=fade face=default show=true wait=true]
+
+// Alice
+[message name=Alice charaid=600801 voice=08_013_1220]
+Wow. This is a pinch, a real pinch—
+[/message]
+
+// Hide Afasis Cult Member
+[character id=602702 anim=fade show=false wait=true]
+
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_013_1230]
+Excuse me. 
+...Arata, I'm sorry we kept it from you, 
+but Natsuo—
+[/message]
+
+[character id=500302 anim=fade show=false wait=true]
+
+[character id=600501 posx=0.5 anim=fade face=angry show=true wait=true]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1240]
+I'm sorry, everyone, but this is where it ends! 
+I'm sending you back to your world!
+[/message]
+
+// Natsuo's face: Angry
+[face id=600501 type=angry]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1250]
+Dimensional Rift!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+[sound type=se name=Mirror]
+
+// Scene transition (Fade out)
+[fade type=out anim=simple sec=2 color=white]
+
+[character id=600501 anim=fade show=false wait=true]
+
+// Display white background (Background 390)
+[image type=bg id=000390]
+
+// Scene transition (Fade in)
+[fade type=in anim=simple sec=0.5 color=white]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_013_1260]
+Ah... Partner~~~!!!
+[/message]
+
+// 【Choices】
+// 1: It's okay, we'll meet again later.
+// 2: Stay a little longer.
+
+[select]
+[link text="It's okay, we'll meet again later." label=partner]
+[link text="Stay a little longer." label=partner]
+[/select]
+
+// Same outcome, different dialogue
+:partner
+
+// Same outcome, different dialogue
+
+// Scene transition (Fade out)
+[fade type=out anim=simple sec=2 color=white]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Background 250 (Glitch effect)
+[image type=bg id=000250 show=true]
+
+[character id=600201 posx=0.3 anim=fade face=angry show=true wait=false]
+[character id=600501 posx=0.8 anim=fade face=panic show=true wait=true]
+
+// Scene transition (Fade in)
+[fade type=in anim=simple sec=0.5 color=white]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1270]
+Ha... 
+...Ha... 
+Partner...?
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1280]
+Tch. I thought bringing Sayaka here 
+meant you had some guts, but you're still 
+trying to get in my way!!?
+[/message]
+
+// Natsuo's face: Default
+[face id=600501 type=default]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1290]
+I am... 
+still an Agent! 
+Arata, I will expose you...
+[/message]
+
+[message name=Arata charaid=600201 voice=08_013_1300]
+What...? 
+You got all fired up because Sayaka 
+called you "Partner"? Hmph!
+[/message]
+
+// Arata's face: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=08_013_1310]
+That's enough. 
+Old friend. 
+It was kind of fun, up until now. 
+But, now... just die, okay?
+[/message]
+
+// 【Choices】
+// 1: Don't let him.
+
+[select]
+[link text="Don't let him." label=vanish]
+[/select]
+
+// Screen shake
+:vanish
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+[sound type=se name=Magic]
+// Wait for a specified number of seconds
+[delay sec=1]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Arata's face: Confused
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=08_013_1320]
+What?! 
+The Eni is disappearing... 
+What's going on? Hey, what did you—
+[/message]
+
+// Natsuo's face: Angry
+[face id=600501 type=angry]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1330]
+Anjo, retreat!!
+[/message]
+
+// Cutin 06
+[cutin id=000006 type=ltor sec=0.5 show=true]
+
+// Anjo
+[message name=Anjo Hajime charaid=602301 voice=08_013_1340]
+Y-yes, Master...!
+[/message]
+
+[cutin id=000006 type=ltor sec=0.5 show=false]
+
+// Arata's face: Smile
+[face id=600201 type=smile]
+[message name=Arata charaid=600201 voice=08_013_1350]
+What...?! 
+Trying to look cool, and then just running away. 
+Hahaha!
+[/message]
+
+// Natsuo's face: Thoughts
+[face id=600501 type=thoughts]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1360]
+Yes... 
+This place, I'll leave it to you. 
+Thanks for everything up until now...
+[/message]
+
+// BGM stops
+[sound type=bgm state=stop]
+
+// Natsuo's face: Angry
+[face id=600501 type=angry]
+[message name=Natsuo Munakata charaid=600501 voice=08_013_1370]
+But I won't let it end like this!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=600501 anim=ltor show=false wait=true]
+
+// Show the text window again
+[delay sec=1]
+[visible show=true]
+
+// Arata's face: Thoughts
+[face id=600201 type=thoughts]
+[message name=Arata charaid=600201 voice=08_013_1380]
+...Oh, is that so?
+[/message]
+
+// 【Choices】
+// 1: Have we escaped danger—
+
+[select]
+[link text="Have we escaped danger—" label=end]
+[/select]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// End scene
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END
+

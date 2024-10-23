@@ -1,0 +1,603 @@
+// Script
+// Wait for a specified amount of time
+[delay sec=0.1]
+
+//adv_12_05_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Show black background
+[image type=black show=true]
+
+// Fade in over a specified amount of time
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+// Background 380/Black Background
+// BGM24
+
+// Show text window
+[visible show=true]
+
+// @Sayaka
+[message name=Sayaka Hiwatari charaid=100101 voice=05_012_0010]
+After we repelled the enemy's attack, we took a short break to organize information, and then immediately started the meeting.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+// @Sayaka
+[message name=Sayaka Hiwatari charaid=100101 voice=05_012_0020]
+I've never done something like this with so many people... I'm excited! Well, there are some people here I'd rather not see...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=0.5]
+// Black fade-out
+
+[character id=100101 anim=none show=false wait=false]
+/////////////////////////////////////////////////////////////////////////////////////////////Background 470/Iris Corp
+[image type=bg id=000470 show=true fade=false wait=false]
+
+[character id=601201 posx=0.5 anim=none face=default show=true wait=true]
+
+// Fade in over a specified amount of time
+[fade type=in anim=simple sec=0.5]
+// Black fade-in
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=05_012_0030]
+Now, is everyone here? Kaede and Basilissa are joining online. Can you both hear me? Helloooo!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=0.5]
+// Black background
+[image type=bg id=000470 show=false fade=false wait=false]
+[character id=601201 anim=none show=false wait=false]
+
+[character id=200502 posx=0.31 anim=none face=default show=true wait=false]
+[character id=600301 posx=0.66 anim=none face=default show=true wait=true]
+[delay sec=0.3]
+
+// Fade in over a specified amount of time
+[fade type=in anim=simple sec=0.5]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kaede Hizumi charaid=200502 voice=05_012_0040]
+Yeah, loud and clear!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_012_0050]
+Long time no see, everyone at Iris Corp. We hear you just fine.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_012_0060]
+Sayaka, can you hear me too?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200502 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=100101 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_012_0070]
+Y-Yes, I can hear you... just fine...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=0.5]
+
+[character id=100101 anim=none show=false wait=false]
+
+// Background 470/Iris Corp
+[image type=bg id=000470 show=true fade=false wait=false]
+
+[character id=200102 posx=0.49 anim=none face=default show=true wait=true]
+[delay sec=0.3]
+
+// Fade in over a specified amount of time
+[fade type=in anim=simple sec=0.5]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_0080]
+Great, no technical issues. Now we can begin our strategy meeting for the future.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=05_012_0090 icon=true]
+Hey, before we start the meeting, I just want to say something!
+[/message]
+
+[face id=200502 type=smile]
+
+[message name=Kaede Hizumi charaid=200502 voice=05_012_0100 icon=true]
+Thank you all for yesterday. Thanks to you, I'm still alive. I really appreciate it.
+[/message]
+
+[face id=200502 type=default]
+
+[message name=Kaede Hizumi charaid=200502 voice=05_012_0110 icon=true]
+Let's face this crisis together. I'm counting on all of you.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[character id=601201 posx=0.67 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.32 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=05_012_0120]
+Understood. You're invaluable to us. We'll protect you. Now, Chairman, take it away.
+[/message]
+
+[message name=Iris Chairman charaid=600601 voice=05_012_0130]
+Let's skip the complicated stuff. Here's what we should focus on moving forward.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Iris and Glock
+[character id=600601 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Sumika and Yurisa
+[character id=601101 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_012_0140]
+It's simple. We need to complete the ‘End to Odyssey' DLC and launch it worldwide as quickly as possible!
+[/message]
+
+[message name=Sumika Tokiwaka charaid=601101 voice=05_012_0150]
+Once we've got ‘End to Odyssey' installed on computers worldwide...
+[/message]
+
+[message name=Sumika Tokiwaka charaid=601101 voice=05_012_0160]
+We can use the embedded security system to monitor the world legally through Iris Corp, and prevent invasions from the top layer.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=05_012_0170 icon=true]
+That's quite the plan. Considering how reckless the enemy is, such measures are necessary. I'll do everything I can to help with the game's distribution!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sumika and Yurisa
+[character id=601101 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Toyama Kouji and Toyama Mai
+[character id=601301 posx=0.27 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=05_012_0180]
+I'll do my best, but we'll need more than just manpower. Special staff will be necessary.
+[/message]
+
+[message name=Kouji Toyama charaid=601301 voice=05_012_0190]
+What? You're telling me we can't handle it on our own? What a pain...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Kouji and Mai
+[character id=601301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Iris and Akagi
+[character id=600601 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.65 anim=fade face=confuse show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=05_012_0200]
+Wait a second! I wasn't part of the previous discussions! I don't know the full details, but... worldwide surveillance?! Aren't we just a game company? Are we a spy agency or something??
+[/message]
+
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=05_012_0210]
+For real?!
+[/message]
+
+[message name=Iris Chairman charaid=600601 voice=05_012_0220]
+You could say that...
+[/message]
+
+[message name=Akagi charaid=602601 voice=05_012_0230]
+Seriously?!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Black background
+[image type=bg id=000470 show=false wait=false]
+[character id=602601 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Basilissa, Iris, and Sayaka
+[character id=600301 posx=0.24 anim=fade face=smile show=true wait=false]
+[move id=600601 posx=0.5 sec=0.5 wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+// Show text window again
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=05_012_0240]
+AHAHAHAHA! Iris, I can't believe you said that... I'm dying from laughter!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris Chairman charaid=600601 voice=05_012_0250]
+Ugh...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_012_0260 lipsync=false]
+(Please just pass out now...)
+[/message]
+
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=05_012_0270]
+Sayaka, you're not hiding your thoughts well at all!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Background 470/Iris Corp
+[image type=bg id=000470 show=true wait=true]
+[delay sec=0.3]
+
+[character id=601301 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kouji Toyama charaid=601301 voice=05_012_0280]
+Oh man, if this meeting gets any weirder, I'm gonna go back to work, Director. I've got a lot on my plate.
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_0290]
+Kouji, please stick around a little longer!
+[/message]
+
+[face id=200402 type=panic]
+
+[message name=Rottie charaid=200402 voice=05_012_0300]
+We really need you to stay!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Kouji, Shina, and Rottie
+[character id=601301 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Glock and Basilissa
+[character id=601201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=600301 posx=0.66 anim=fade face=smile show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=05_012_0820]
+Everyone is welcome to share their thoughts here!
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_012_0830]
+Well then, I have an idea.
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=05_012_0840]
+Why don't we formally offer Chloe a role in our game? She's an actress, right? It's just a job request.
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_012_0850 icon=true]
+Oh my, quite sharp! Offering her a job makes sense. It aligns perfectly with Iris's approach, don't you think?
+[/message]
+
+[message name=Glock President charaid=601201 voice=05_012_0860]
+Chairman, that sounds like a solid plan. What do you think?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Glock and Basilissa
+[character id=601201 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Iris and Shina
+[character id=600601 posx=0.32 anim=fade face=thoughts show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris Chairman charaid=600601 voice=05_012_0870]
+Offer Chloe a role in the game...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_0880]
+Let's get her to reprise her role as Celica in 'End to Odyssey.' If it's a job offer, she might be interested!
+[/message]
+
+// Shina expression change
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_0890]
+Oh, and I just had an idea! To make it even more appealing, we should tweak the game's content to suit Chloe's tastes.
+[/message]
+
+// Character movement
+[move id=600601 posx=0.24 sec=0.5 wait=false]
+[move id=200102 posx=0.49 sec=0.5 wait=false]
+[delay sec=0.1]
+[character id=200202 posx=0.74 anim=fade face=default show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_012_0900]
+As expected from you, Shina! So, let's cut the training arc from the upcoming DLC. It's too slow-paced anyway.
+[/message]
+
+// Shina expression change
+[face id=200102 type=expectation]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_0910]
+Let's make her character strong from the start so she can dominate. Chloe loves flashy stuff, so she'll totally go for it!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Iris, Shina, and Yurisa
+[character id=600601 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Sumika, Rottie, and Sayaka
+[character id=601101 posx=0.24 anim=fade face=painful show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sumika Tokiwaka charaid=601101 voice=05_012_0920]
+Ugh... major changes at this stage... Tough! But, fine. I'll make it work.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_012_0930 icon=true]
+Looks like we're making progress. How about I handle getting in touch with Chloe? I have the connections.
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_012_0940]
+You can do that? Because you're a Ludens...?
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_012_0950 icon=true]
+No, it's just connections. You might not know this, but I'm just as famous as Chloe Aaron.
+[/message]
+
+[message name=Rottie charaid=200402 voice=05_012_0960]
+That's true! Even 7-year-old Rottie knew who she was!
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_012_0970]
+I surrender...!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sumika, Rottie, and Sayaka
+[character id=601101 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Iris
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris Chairman charaid=600601 voice=05_012_0980]
+Final conclusion! Strengthen security and prioritize contacting Chloe. And after that—after that—!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=1 color=white]
+
+// Stop BGM
+[sound type=bgm state=stop]
+[image type=bg id=000390 show=true fade=false wait=true]
+[character id=600601 anim=none show=false wait=true]
+[character id=200102 posx=0.49 anim=none face=smile show=true wait=true]
+
+// Fade in over a specified amount of time
+[fade type=in anim=simple sec=0.5 color=white]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_0990]
+...Hehe.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_1000]
+Talking with everyone, and seeing everyone come together...
+[/message]
+
+// Shina expression change
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_012_1010]
+...Mizunashi... Are you seeing this?
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+// Stop all SE sounds
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// Script ends here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END
+
+

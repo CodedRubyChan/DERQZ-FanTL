@@ -1,0 +1,349 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_10_05_005
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+// [fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+// [delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkF]
+
+// Display the specified background
+// [image type=bg id=000140]
+
+// Fade in over specified seconds
+// [fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=200601 posx=0.19 anim=rtol face=panic show=true wait=false]
+[character id=100103 posx=0.79 anim=rtol face=panic show=true wait=true]
+// Background: Dungeon 02 remains
+// Found Al in the deepest part of the dungeon
+
+// BGM28
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0010]
+Huff, huff... 
+You're quick at running away, aren't you...
+[/message]
+
+// Speaker: Al
+
+[message name=Al charaid=200601 voice=05_010_0020]
+Ugh... To think I got cornered like this... 
+If that's the case, then――!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////////// Screen flash
+//////////////////////////////// Play "Materialization" SE
+[sound type=se name=Materialization]
+[fade type=out anim=simple sec=0.3 color=white]
+
+// Stop BGM
+[sound type=bgm state=stop]
+// Al changes form
+[character id=200601 anim=none show=false wait=false]
+[character id=200602 posx=0.19 anim=none face=panic show=true wait=true]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Speaker: Al
+[message name=Al charaid=200602 voice=05_010_0030]
+...Ahhh!! 
+Hey, look!! 
+What is that?!
+[/message]
+
+// Sayaka changes expression
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0040]
+...
+[/message]
+
+// Al changes expression
+[face id=200602 type=sad]
+
+// Speaker: Al
+[message name=Al charaid=200602 voice=05_010_0050]
+Come on, take a proper look over there!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0060]
+...What a waste of time with that prelude.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Glitch Al appears
+[move id=200602 posx=0.59 sec=1 wait=false]
+[character id=500402 posx=0.13 anim=ltor face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0070]
+Alright, looks like it's over.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Play BGM06
+// Screen flash
+[sound type=bgm state=play name=Chapter4]
+//////////////////////////////// Play "VsActivate" SE
+[sound type=se name=VsActivate]
+
+// Change to Glitch Al appearance
+[character id=500402 anim=fade show=false wait=false]
+[character id=500401 posx=0.13 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0080]
+Ahhh!! 
+Now it's really Naraku this time!
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0090]
+Yes, we meet again, Sayaka, 
+since this morning.
+[/message]
+
+// Speaker: Al
+[face id=200602 type=confuse]
+
+[message name=Al charaid=200602 voice=05_010_0100]
+W-who are you...? 
+Are you another one of Al's fans...?!
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0110]
+Fan, or something like that... 
+Well, let's just say I'm your client.
+For the cracking job.
+[/message]
+
+// Speaker: Al
+// Al changes expression
+[face id=200601 type=panic]
+[message name=Al charaid=200602 voice=05_010_0120]
+Whaaat?! Uh, well... 
+I managed to hack, but I couldn't destroy the data. 
+Al failed... I'll refund you.
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0130]
+I can see that. 
+And no need for a refund. 
+Consider it pocket money.
+[/message]
+
+// Speaker: Al
+[face id=200602 type=surprise]
+
+[message name=Al charaid=200602 voice=05_010_0140]
+Even though I couldn't teach Iris Corporation a lesson, 
+you're such a generous client! 
+Looking forward to more work!
+[/message]
+
+// Al changes expression
+[face id=200601 type=smile]
+// Sayaka changes expression
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0150]
+You two are having quite the casual conversation 
+right in front of someone from Iris Corp...
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0160]
+Now, Sayaka, 
+would you mind dying here for me?
+[/message]
+
+// Sayaka changes expression
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0170]
+...?! 
+Oh, you're ready to fight now? 
+Looks like you can handle it.
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0180]
+No... I don't enjoy fighting directly. 
+Hinata, how about you?
+[/message]
+
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=05_010_0190]
+...Huh? 
+How do you know Al's real name?
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0200]
+—Goodbye for now.
+[/message]
+
+// Hinata changes expression
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=05_010_0210]
+Wait, what? 
+Forced logout?! 
+Nooooo!!
+[/message]
+
+[sound type=se name=Magic]
+// Hinata exits
+[character id=200602 anim=btot show=false wait=true]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0220]
+What did you do?! 
+Could it be...?!
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0230]
+No, no. 
+I just got rid of Hinata. 
+She was in the way.
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0240]
+Now, let's see... 
+The avatar mutation command... 
+Manual, manual... Ah, here it is.
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0250]
+The power I got from Arata Mizunashi... 
+Let's try it out.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Monster SE
+
+////////////////////////////////////////////////////////////////////////////// Al disappears, Scala appears
+[fade type=out anim=simple sec=0.5]
+
+[dungeon id=9006 type=Barricade show=false]
+[dungeon id=410701 type=Enemy show=true]
+
+[sound type=se name=Metamorphosis]
+[character id=200601 anim=none show=false wait=false]
+
+[fade type=in anim=simple sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////
+
+// Show the text window again
+[delay sec=0.3]
+[visible show=true]
+
+[face id=100103 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0260]
+Ughhh!! 
+Al's remaining body turned into 
+a huge, disgusting bug!
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0270]
+Now, Sayaka, will you die or live? 
+Which will it be?
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_010_0280]
+I'll be watching from the shadows. 
+Looking forward to seeing how fate treats you.
+[/message]
+
+// Glitch Al exits
+[character id=500401 anim=rtol show=false wait=true]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_010_0290]
+She spouted some poetic nonsense and left... 
+No way I'm dying here! 
+Time to go all out!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop playing the current BGM
+[sound type=bgm state=stop]
+
+// Boss battle begins
+[bossbattle active=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

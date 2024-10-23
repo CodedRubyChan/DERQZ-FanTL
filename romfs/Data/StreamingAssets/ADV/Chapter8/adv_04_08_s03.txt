@@ -1,0 +1,360 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_04_08_s03
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000220]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM23 / For Calm Scenes
+// Background 220 / Hospital Room
+
+[character id=601901 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Liddy charaid=601901 voice=08_904_0010]
+Oh~ This is a surprise.
+I didn't expect you to actually come visit me.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0020]
+Long time no see. It's Sayaka from Iris Corp.
+I was in the area, so I thought I'd drop by.
+How are you feeling, Liddy?
+[/message]
+
+// Liddy expression change: Painful
+[face id=601901 type=painful]
+
+[message name=Liddy charaid=601901 voice=08_904_0030]
+Physically… no problem at all.
+But mentally, not quite there yet...
+Still feeling a bit down.
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0040]
+When I'm alone, I keep thinking negatively.
+Even though I know there are no answers to find,
+my mind just keeps spinning and can't look forward.
+[/message]
+
+// Liddy expression change: Thoughts
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=08_904_0050]
+*Sigh*
+I guess playing the role of Lydia is too much for me...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0060]
+...Liddy, you seem to know a lot about this world.
+I... well, I was supposed to be in the role of Ripuka, it seems.
+[/message]
+
+// Liddy expression change: Default
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=08_904_0070]
+Oh? Well, I only know that I was created.
+Are you saying we're kind of alike?
+You've piqued my interest a bit.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0080]
+If you'd like, I can lend an ear.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0090]
+I know this world was... created by the President Iris.
+I've learned a lot through different circumstances.
+[/message]
+
+// Liddy expression change: Smile
+[face id=601901 type=smile]
+
+[message name=Liddy charaid=601901 voice=08_904_0100]
+Excellent! That's quite detailed, huh?
+Hehe.
+Well then, I might just take you up on that offer and chat.
+[/message]
+
+// Liddy expression change: Default
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=08_904_0110]
+This world was based on the 'DE-1' world,
+created by Iris...
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0120]
+I'm supposedly a copy of someone named Lydia,
+who existed in the 'DE-1' world.
+So, I have Lydia's memories...
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0130]
+I'm not bothered by that. No problem at all.
+But, even as a copy... I can't help but wonder if
+I'm actually one of Iris' failed creations.
+[/message]
+
+// Sayaka expression change: Surprise
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0140]
+Why would you think that?
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Liddy charaid=601901 voice=08_904_0150]
+Well, you see. In Lydia's memories, there were friends...
+‘Arata Mizunashi,' ‘Natsuo Munakata,' ‘Rin Asukaze'
+...these were supposed to be her "friends."
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Sayaka expression change: Surprise
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0160]
+...! 
+I-I, I've definitely heard those names before.
+[/message]
+
+// Liddy expression change: Confuse
+[face id=601901 type=confuse]
+
+[message name=Liddy charaid=601901 voice=08_904_0170]
+Where did you hear them?
+...
+They shouldn't exist in this world.
+[/message]
+
+// Liddy expression change: Default
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=08_904_0180]
+Well, there are... "photos" of Arata Mizunashi at Iris Corp.
+Some traces, at least.
+Maybe Iris tried to recreate him...?
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0190]
+But when it comes to ‘Natsuo Munakata' and ‘Rin Asukaze,'
+...there's no information at all. 
+I can't help but think my memory might be glitching...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0200]
+No, I do know them.
+The woman who took over the cult was Rin Asukaze,
+and Natsuo Munakata... both are Arata's allies!
+[/message]
+
+// Liddy expression change: Thoughts
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=08_904_0210]
+Really? ...What kind of people were they?
+Natsuo Munakata was bright and fun.
+Rin Asukaze... was quiet but very kind.
+[/message]
+
+// Play BGM24
+[sound type=bgm state=play name=TalkB]
+
+// Sayaka expression change: Thoughts
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0220]
+U-um...
+That sounds completely opposite to the two I know.
+As for Rin, I'd say she's... downright cruel.
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0230]
+Then they must be different people!
+Maybe they're residents of the Uppermost World...
+[/message]
+
+// Liddy expression change: Thoughts
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=08_904_0240]
+...But still, I can't be with them.
+I'm just a fake Lydia, that's why I'm Liddy.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0250]
+So, where is the “real” Lydia of the Uppermost World...?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0260]
+Or maybe... do you want to know the truth, Liddy?
+If you do, why not ask President Iris directly—
+[/message]
+
+// Liddy expression change: Painful
+[face id=601901 type=painful]
+
+[message name=Liddy charaid=601901 voice=08_904_0270]
+But... what if it's something too shocking?
+Would you be able to handle it?
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0280]
+...Haha, now you're making a strong case for staying ignorant.
+[/message]
+
+// Liddy expression change: Default
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=08_904_0290]
+Oh, is there something you're avoiding too? 
+Anyway, I feel like I'm stuck, but once I'm discharged,
+I'll just focus on going back to my “real job.”
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0300]
+I don't really need to know my true identity.
+Everyone's doing their best to make this game, right?
+I want to go back to Enigma Corp. and help too.
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0310]
+That's admirable! I also need to get back to the company.
+I feel like I learned something important today.
+Thank you!
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_904_0320]
+Next time, I'll try to visit again,
+but I'll bring everyone from Iris Corp. along.
+Take care, Liddy.
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0330]
+...Bye.
+[/message]
+
+// Hide Sayaka
+[character id=100101 anim=ltor show=false wait=true]
+[move id=601901 posx=0.5 wait=false]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Liddy expression change: Thoughts
+[face id=601901 type=thoughts]
+
+[message name=Liddy charaid=601901 voice=08_904_0340]
+...
+[/message]
+
+// Liddy expression change: Default
+[face id=601901 type=default]
+
+[message name=Liddy charaid=601901 voice=08_904_0350]
+......
+[/message]
+
+// Background 380 (Black background)
+// Zoom screen
+// Evil Spirit appears
+
+[image type=bg id=000380 show=true]
+[move id=601901 posx=0.33 wait=false]
+[character id=602001 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=08_904_0360]
+......
+[/message]
+// Synthesized voice 08_004_0370 ,08_004_0380
+
+[message name=Liddy charaid=601901 voice=08_904_0390]
+So you're going, after all.
+[/message]
+
+[message name=Liddy charaid=601901 voice=08_904_0400]
+You “two”... I hope you can get your bodies back.
+[/message]
+
+[message name=Evil Spirit charaid=602001 voice=08_904_0410]
+......
+[/message]
+// Synthesized voice 08_004_0420 ,08_004_0430
+
+// Hide Evil Spirit
+[character id=602001 anim=ltor show=false wait=true]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

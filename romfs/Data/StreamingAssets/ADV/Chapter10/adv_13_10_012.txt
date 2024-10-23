@@ -1,0 +1,922 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_13_10_012
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkG]
+
+// Display the specified background
+[image type=bg id=000090]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Unlocks when Sayaka reaches the ●●th floor of the final dungeon
+// ※Even if this event is not read, you can still fight the final boss 'Gies'
+
+// BGM29 / Gymnopédie
+// Background 90 / Cafe
+
+// SE Cafe
+[sound type=se name=Incafe]
+
+//[character id=200103 posx=0.2 anim=fade face=default show=true wait=false]
+
+[character id=601001 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=600901 posx=0.66 anim=rtol face=default show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Levin charaid=601001 voice=10_013_0010]
+Oh, welcome.
+[/message]
+
+[message name=Levin charaid=601001 voice=10_013_0020]
+So... this might be harsh, 
+but it looks like we've gathered 
+all the "survivors" nearby, haven't we?
+[/message]
+
+// Nova expression change
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=10_013_0030]
+Yeah, that's right.
+I'll go on another patrol.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Nova OFF
+
+[character id=601001 anim=fade show=false wait=true]
+[character id=600901 anim=ltor show=false wait=true]
+
+[character id=200602 posx=0.25 anim=fade face=panic show=true wait=false]
+[character id=200102 posx=0.5 anim=fade face=panic show=true wait=false]
+[character id=500402 posx=0.75 anim=fade face=default show=true wait=true]
+
+///////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_013_0040]
+Shina...!
+I saw you make everyone disappear...!
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0050]
+N-no, it wasn't me...
+Why would I do something 
+so sad...?!
+[/message]
+
+// Shina expression change
+[face id=200102 type=panic]
+
+// Naraku expression change
+[face id=500402 type=sad]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0060]
+Hinata. Shina is... definitely innocent.
+We finally understand the situation outside of Sagami City...
+I'll connect us.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 600
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+
+[image type=bg id=000600 show=true]
+
+[character id=500202 posx=0.5 anim=fade face=sad show=true wait=true]
+
+[face id=500202 type=sad]
+
+////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=10_013_0070]
+Ahh, haha... look...
+There's no one here...!
+[/message]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=10_013_0080]
+One day, Lucil just suddenly forgot about Mita...
+and Mita disappeared too...
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=10_013_0090]
+And then!! And then... everyone disappeared!!
+When they're gone, I can't kill anyone anymore...
+P-please, help meee...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 20
+
+[character id=500202 anim=fade show=false wait=true]
+[image type=bg id=000020 show=true]
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=true]
+
+[face id=500302 type=default]
+
+/////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=10_013_0100]
+...There was a town where I am now.
+Until yesterday.
+[/message]
+
+[face id=500302 type=sad]
+
+[message name=Huuki Hizumi charaid=500302 voice=10_013_0110]
+...Kaede, and all the people in town...
+they've all vanished.
+[/message]
+
+[face id=500302 type=painful]
+
+[message name=Huuki Hizumi charaid=500302 voice=10_013_0120]
+I could do nothing...
+A lack of power!
+I am truly sorry—
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 490
+
+[character id=500302 anim=fade show=false wait=true]
+[image type=bg id=000490 show=true]
+[character id=500102 posx=0.33 anim=fade face=thoughts show=true wait=false]
+[character id=500502 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=10_013_0130]
+We were filming here, but...
+suddenly there were empty spots everywhere...
+Of course, doctors and patients too...
+[/message]
+
+[face id=500502 type=painful]
+
+[message name=Falena charaid=500502 voice=10_013_0140]
+The lead actress, the staff, everyone at the hospital...
+E-everyone... waaahhhhh!!!!
+Lady Chloeeeee!!
+[/message]
+
+// Lilith expression change
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=10_013_0150]
+We'll head over there later too...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 90 / Cafe
+
+[character id=500102 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[image type=bg id=000090 show=true]
+
+[character id=500402 posx=0.25 anim=fade face=sad show=true wait=false]
+[character id=200302 posx=0.5 anim=fade face=sad show=true wait=false]
+[character id=600601 posx=0.75 anim=fade face=sad show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0160]
+So, Arata's "trick" on the Glitch Girls...
+is that they can't disappear, huh...?
+Haha... it's truly despairing...
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=10_013_0170]
+Who's attacking us...?!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=President Iris charaid=600601 voice=10_013_0180]
+Someone who looks just like Shina...
+Who is that... tell me!!
+[/message]
+
+// Iris expression change
+[face id=600601 type=angry]
+
+[message name=President Iris charaid=600601 voice=10_013_0190]
+It's so frustrating, infuriating,
+and sad...
+I'm about to lose my mind...!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=500402 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+[character id=600301 posx=0.25 anim=ltor face=default show=true wait=false]
+[character id=600801 posx=0.5 anim=ltor face=default show=true wait=true]
+
+/////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=10_013_0200]
+Well, well...
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=confuse]
+
+[message name=Basilissa charaid=600301 voice=10_013_0210]
+Alright, let's lay it all out.
+Start from where you can, Alice.
+[/message]
+
+// Alice expression change
+[face id=600801 type=painful]
+
+[message name=Alice charaid=600801 voice=10_013_0220]
+You're really giving me a tough job...
+*sigh* Guess I'll give it my best...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=President Iris charaid=600601 voice=10_013_0230]
+No matter what I hear, I won't run away.
+I'll accept it.
+[/message]
+
+// Alice expression change
+[face id=600801 type=painful]
+
+[message name=Alice charaid=600801 voice=10_013_0240]
+Really?
+You're not going to turn into a blue monster 
+and go on a rampage? No more "Entoma" incidents?
+[/message]
+
+// Iris expression change
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=10_013_0250]
+Th-that wasn't me, that was the virus...!
+I swear, I'm fine now! Really!
+[/message]
+
+[face id=600601 type=default]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=10_013_0260]
+You've gotten stronger, Iris...
+At first, I was only planning to save you,
+but it's thanks to everyone's strength.
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=true]
+
+[character id=500402 posx=0.25 anim=rtol face=thoughts show=true wait=false]
+[character id=200602 posx=0.5 anim=rtol face=sad show=true wait=true]
+
+////////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0270]
+Hmph, ridiculous...
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_013_0280]
+Wait, Naraku...!
+The conversation hasn't even started yet...
+[/message]
+
+// Iris expression change
+[face id=600601 type=painful]
+
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0290]
+It's laughable, isn't it?
+Iris, you only created this world halfway,
+and you just recreated your friends through Eni.
+A mere solitary game!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0300]
+This world should never have been born!!
+If not, then I, and perhaps even Chloe...
+[/message]
+
+[face id=600601 type=sad]
+
+[message name=President Iris charaid=600601 voice=10_013_0310]
+...I'm sorry...
+[/message]
+
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0320]
+That's all you have to say...? It's too sad...!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200602 anim=fade show=false wait=false]
+
+// All characters exit: Naraku, Hinata, Iris, and Shina
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+
+[delay sec=0.3]
+
+// Alice, Iris, Shina, and Basilissa enter
+
+[character id=600801 posx=0.2 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.39 anim=fade face=sad show=true wait=true]
+
+//////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=10_013_0330]
+...Well, actually~. It's about that topic.
+The idea that Iris created this world...
+[/message]
+
+// Iris expression change
+[face id=600601 type=angry]
+
+[message name=President Iris charaid=600601 voice=10_013_0340]
+...Is it wrong? I was stuck in a looping world,
+saved by Shina and the others, and then killed by them...
+Over and over, again and again...!
+[/message]
+
+// Iris expression change
+[face id=600601 type=thoughts]
+
+[character id=200102 posx=0.59 anim=fade face=sad show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0350]
+Iris. In the 'DE-1' world...
+The cursed loop of World's Odyssey...
+We had no choice in the beginning...!
+[/message]
+
+[character id=600301 posx=0.79 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=10_013_0360]
+Right. We sure did slice each other's heads off
+a lot during the scenario. Shina♪
+Got crushed during "genre shifts" and all...
+[/message]
+
+// Shina expression change
+[face id=200102 type=painful]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0370]
+I couldn't help it!
+Your defense was just too high,
+I couldn't deal any damage...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0380]
+I don't want to remember that anymore... Wait, no!
+You're talking about the 'DE-1' world's memories...?
+We're this world's Shina and Ripuka. It has nothing to do with us.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_013_0390]
+Ah, sure. We'll keep talking in that framework a bit more.
+But the motive is what matters.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_013_0400]
+The 'DE-1' Iris... before breaking free from 
+Arata Mizunashi's loop, she decided...
+she wanted to create a world of her own!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_013_0410]
+Looping over and over until the count overflowed, 
+playing out the same scenario, again and again...
+Anyone would be in agony. So...
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0420]
+The President worked hard and created this world,
+the cities and people, even from Shina's parents' generation...
+Using Eni collected by parallel world Aratas! And she succeeded!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Alice, Iris, Shina, Basilissa exit
+[character id=600301 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+// Levin, Iris, Naraku, Alice
+
+[character id=601001 posx=0.19 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Levin charaid=601001 voice=10_013_0430]
+...But there was a misunderstanding
+in that story.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600601 posx=0.39 anim=fade face=confuse show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=President Iris charaid=600601 voice=10_013_0440]
+...Huh?!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=500402 posx=0.59 anim=fade face=default show=true wait=true]
+
+//////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0450]
+...Wait. Arata Mizunashi and
+the 'Arata Mizunashi' you're talking about
+are different people, right?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600801 posx=0.79 anim=fade face=default show=true wait=true]
+
+/////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=10_013_0460]
+That's right. Arata is an elite agent from the Uppermost World.
+The 'Arata Mizunashi' you're referring to 
+is from a different, lower world, just a simple programmer.
+Though, he was favored by the gods of fate.
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0470]
+Even in the Uppermost World, it took quite some time 
+to discover the world Iris created... and the reason was simple.
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=President Iris charaid=600601 voice=10_013_0480]
+...?
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0490]
+Iris, you thought you managed to create a new world 
+before breaking free from the loop. But you see,
+this is still, unmistakably, the 'DE-1' world.
+[/message]
+
+[message name=President Iris charaid=600601 voice=10_013_0500]
+...W-what...?
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0510]
+If a whole new world had been created, it would've been detected.
+But if it was just a "transformation" of the 'DE-1' world,
+then it wouldn't be considered a major anomaly.
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0520]
+In fact, even Lydia Nolan, who was in charge before,
+didn't notice anything unusual at first.
+[/message]
+
+[face id=601001 type=thoughts]
+
+[message name=Levin charaid=601001 voice=10_013_0530]
+...Do you understand why I struggled with managing the Eni?
+It was to ensure that you wouldn't notice, Iris.
+[/message]
+
+[message name=Levin charaid=601001 voice=10_013_0540]
+Creating a world, building a history, constructing cities,
+and developing NPCs... all that would require a massive amount.
+Maybe the Uppermost World could manage, but otherwise...
+how much do you think that would cost?
+[/message]
+
+[face id=601001 type=default]
+
+[message name=Levin charaid=601001 voice=10_013_0550]
+Iris, the truth is, you didn't create a whole new world.
+You only managed to make some NPCs and a few players like 'Liddy.'
+Accepting this fact will be difficult, I'm sure.
+[/message]
+
+// Iris expression change
+[face id=600601 type=painful]
+
+[message name=President Iris charaid=600601 voice=10_013_0560]
+...N-no...
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Levin, Iris, Naraku exit
+[character id=500402 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=601001 anim=fade show=false wait=true]
+
+// Alice moves, Shina enters
+[move id=600801 posx=0.33 sec=1 wait=false]
+
+[character id=200102 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0570]
+Then... the truth about this world 
+that me and President Glock were told by Iris...
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0580]
+It was a story I, Ripuka, Levin, and Nova agreed to cover up.
+We wanted President Iris to keep her confidence
+in the world she thought she created.
+[/message]
+
+[character id=600801 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+[character id=600701 posx=0.33 anim=fade face=default show=true wait=true]
+
+[message name=Alice charaid=600701 voice=10_013_0590]
+That's why I even prepared a new outfit and attitude
+to make it seem like she was really in control,
+but this is who I really am!
+[/message]
+
+// Alice expression change
+[face id=600701 type=smile]
+
+[message name=Alice charaid=600701 voice=10_013_0600]
+Ah, pretending to be a lunatic until you actually go mad...
+it's quite entertaining, isn't it?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Dialogue Options
+// 1: Absolutely
+// 2: Thanks for always being the one to explain...
+
+[select]
+[link text="Absolutely" label=too]
+[link text="Thanks for always being the one to explain..." label=death]
+[/select]
+
+// Option 1
+// @Alice: You understand, don't you?
+
+:too
+
+// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Alice charaid=600701 voice=10_013_0610]
+You understand, don't you?♪
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[goto label=true]
+
+// Option 2
+// Death end, it was quite enjoyable♪
+
+:death
+/////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Alice charaid=600701 voice=10_013_0620]
+Death end, it was quite enjoyable♪
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[goto label=true]
+
+// Converging
+
+:true
+
+// Alice exits
+[character id=600701 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+// Shina, Mai, Naraku, Hinata enter
+
+// Shina moves
+[move id=200102 posx=0.19 sec=1 wait=false]
+[delay sec=0.3]
+
+// Mai enters
+[character id=200302 posx=0.39 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_013_0630]
+I knew... but I stayed silent, Director Shina.
+[/message]
+
+// Shina expression change
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0640]
+I failed as a director, didn't I...?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Naraku enters
+[character id=500402 posx=0.59 anim=fade face=default show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0650]
+So, Iris was just a Luden...
+and all this time, I just couldn't 
+live out my loop as Komai?
+[/message]
+
+[character id=200602 posx=0.79 anim=fade face=smile show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_013_0660]
+I don't know the details, but...
+I'm glad I got to see you, Naraku.
+[/message]
+
+// Naraku expression change
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_013_0670]
+...Yeah.
+Thank you.
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_013_0680]
+And...! Sayaka! 
+You even managed to create a workplace
+for all of us...!
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=500402 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Shina, Mai, Naraku, Hinata exit
+
+// Iris enters centrally
+[character id=600601 posx=0.5 anim=fade face=painful show=true wait=true]
+
+//////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=President Iris charaid=600601 voice=10_013_0690]
+...I... 
+What I did... was it...
+worth it...?
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Iris exits
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Shina, Alice, Basilissa enter
+[character id=200102 posx=0.24 anim=fade face=sad show=true wait=false]
+[character id=600801 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=600301 posx=0.74 anim=fade face=default show=true wait=true]
+[delay sec=0.3]
+
+[face id=200102 type=default]
+
+//////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0700]
+Of course... Stand proud!
+We can finally focus on making games
+like we always wanted to...!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0710]
+Alice. If this world is still 'DE-1,' then...
+where does Arata Mizunashi's plan stand now?
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0720]
+We're at the 65,535th loop.
+There is someone out there, in the Uppermost World, 
+determined to disrupt this run.
+[/message]
+
+[message name=Alice charaid=600801 voice=10_013_0730]
+But don't worry. Where Sayaka is headed...
+there is a 'final weapon.'
+[/message]
+
+// Shina expression change
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0740 lipsync=false]
+(Sayaka... we're counting on you once more.)
+[/message]
+
+// Shina expression change
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_013_0750 lipsync=false]
+(Arata Mizunashi, where are you...?
+Please, help Sayaka... I'm begging you.)
+[/message]
+
+// Shina expression change
+[face id=200102 type=thoughts]
+
+// Basilissa expression change
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=10_013_0760]
+Don't be in such a rush, Shina. That Shina doppelganger may be tough,
+but we need to trust our Sayaka. And the Death King, too.
+...Right? I'm counting on you both.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified duration
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
+

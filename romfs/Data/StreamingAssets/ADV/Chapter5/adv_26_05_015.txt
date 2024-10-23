@@ -1,0 +1,287 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop the current SE
+[sound type=se state=stop]
+
+// adv_26_05_015
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkF]
+
+// Display the specified background
+[image type=bg id=000570]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Department store dungeon remains
+// BGM28
+
+[character id=100101 posx=0.66 anim=rtol face=panic show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0010]
+Hah... Hah... 
+I made it out... 
+But I've only saved Liliana so far...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0020]
+...And now we're on the roof?! 
+Oh no... why is this happening...?
+[/message]
+
+[character id=600301 posx=0.33 anim=ltor face=default show=true wait=false]
+
+[message name=Basilissa charaid=600301 voice=05_026_0030]
+Congrats~♪ 
+Looks like you successfully rescued the princess!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0040]
+...Where have you been this whole time?
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_026_0050]
+After helping Lilith and Shina, 
+I was rescuing other random civilians I found along the way.
+I wasn't just slacking off, you know?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0060]
+Oh... Is that so...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_026_0070]
+You're planning to save the rest, right? 
+I'll help out. 
+After all, you're probably struggling to break the brainwashing.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0080]
+Wow, you really hit the nail on the head...
+So, do you know the cause or something?
+[/message]
+
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=05_026_0090]
+Oh yes. This is my area of expertise.
+Have you heard of the "Echo Chamber" effect?
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_026_0100]
+People tend to gravitate towards those who 
+share similar opinions and beliefs.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0110]
+Ah, that makes sense... 
+Liliana's feelings must have resonated with everyone, 
+spreading outwards like that—
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200702 posx=0.25 anim=fade face=thoughts show=true wait=false]
+[move id=600301 posx=0.49 sec=0.5 wait=false]
+[move id=100101 posx=0.74 sec=0.5 wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=05_026_0120]
+This too... 
+is part of the Aphesis cult's teachings...
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0130]
+That's a lie!! 
+You've misinterpreted it! 
+Dying won't bring about any real change!
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0140]
+Oh no... 
+Liliana still... wants to die... 
+How can I break the brainwashing for everyone if—
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_026_0150]
+That's why I'm offering you a lifeline, remember? 
+Liliana, before you die, 
+why don't you listen to this song?
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// BGM30
+[sound type=bgm state=play name=TalkH]
+
+// Show the text window
+[delay sec=3]
+[visible show=true]
+
+[face id=200702 type=surprise]
+
+[message name=Liliana charaid=200702 voice=05_026_0160]
+...Th-This music... 
+It's... nostalgic...
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=05_026_0170]
+It's one of the most popular songs I've ever composed.
+[/message]
+
+[face id=200702 type=sad]
+
+[message name=Liliana charaid=200702 voice=05_026_0180]
+...Why... 
+Why won't the tears stop...
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0190]
+...Wow... 
+I didn't know you could write music like this...
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_026_0200]
+Hmm hmm hmm~♪
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0210]
+...You're really into it, aren't you...
+[/message]
+
+[message name=Liliana charaid=200702 voice=05_026_0220]
+...Everyone... 
+Mai, Rottie... 
+We used to listen to this song together...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0230]
+......
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_026_0240]
+Normally, I wouldn't stop someone who wants to die.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0250]
+?!
+[/message]
+
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=05_026_0260]
+But I can't stand it when someone who was healthy 
+just suddenly decides they want to die.
+If you can hold off for a bit longer—
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_026_0270]
+I'm working on an even better song right now. 
+I'd love for you to hear it, with your friends.
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=05_026_0280]
+...Thank you.
+[/message]
+
+[message name=Liliana charaid=200702 voice=05_026_0290]
+...Alright. 
+Today's chaos will end here.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_026_0300]
+...We... We did it?!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the current SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

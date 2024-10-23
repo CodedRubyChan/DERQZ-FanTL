@@ -1,0 +1,257 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_08_06_005
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+// BGM02
+[sound type=bgm state=play name=Chapter1_3]
+
+// Display specified background
+// Background 290 - Orphanage (now Aphesis Church Headquarters)
+[image type=bg id=000290]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Display character: Sayaka Hiwatari - Default, no highlight
+// Sayaka Expression: Default
+[character id=100105 posx=0.5 anim=rtol face=default show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0010]
+I'm here. 
+Yeah, it looks just like the picture in that book. 
+So, this is Romania...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0020]
+And over there... 
+That's the Aphesis Church headquarters.
+[/message]
+
+// Sayaka Expression Change: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0030]
+...Heh heh heh.
+[/message]
+
+// Sayaka Expression Change: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0040]
+"Enlightenment"...?
+I don't know if I can, but...
+I'm kind of excited to meet the founder.
+[/message]
+
+// Sayaka Expression Change: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0050]
+Even if they try to stop me at the entrance...
+I'll just force my way in...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Dimensional tear sound effect
+[sound type=se name=Mirror]
+
+// Wait for the specified seconds
+[delay sec=0.2]
+
+// Scene Transition (Fade Out)
+[fade type=out anim=simple sec=0.5]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Black background
+[image type=bg id=000380 show=true]
+
+// Sayaka Move
+[move id=100105 posx=0.33 wait=false]
+
+// Display character: Nohlan Sister
+// Nohlan Sister Expression: Angry
+[character id=602001 posx=0.66 anim=fade face=angry show=true wait=false]
+
+// Sayaka Expression Change: Panic
+[face id=100105 type=panic]
+
+// Scene Transition (Fade In)
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Evil Spirit charaid=602001 voice=06_008_0060]
+! Meda
+— Tesieka Kihig Sumai
+[/message]
+// Combined synthesized voice for 06_008_0070, 06_008_0080
+
+// Sayaka Expression Change: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0090]
+Again...?
+It can appear here, too, huh.
+[/message]
+
+// Sayaka Expression Change: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0100]
+Honestly, 
+you're getting annoying.
+I wonder if I can kill it... even if it looks like that...
+[/message]
+
+// Nohlan Sister Expression Change: Default
+[face id=602001 type=default]
+[message name=Evil Spirit charaid=602001 voice=06_008_0110]
+Nalkuni Kokohade Rito Hi
+[/message]
+// Combined synthesized voice for 06_008_0120, 06_008_0130
+
+// Sayaka Expression Change: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0140]
+I don't care. 
+I'm going to do what I want.
+If you want to stop me, then try it!
+[/message]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+// Slash effect
+[effect type=SlashLarge show=true wait=false auto_hide=true posx=0.6 posy=0.5 priority=FrontCutin]
+[sound type=se name=Slash]
+
+// Sayaka Move
+[move id=100105 posx=0.5 sec=0.5 wait=false]
+
+[message name=Evil Spirit charaid=602001 voice=06_008_0150]
+Ggghhh!
+[/message]
+// Combined synthesized voice for 06_008_0160, 06_008_0170
+
+// Sayaka Move
+[move id=100105 posx=0.25 wait=false]
+
+// Sayaka Expression Change: Painful
+[face id=100105 type=painful]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0180]
+What!? What's this?
+It's like there's an invisible wall.
+...So this is your power, huh?
+[/message]
+
+// Hide Nohlan Sister
+[character id=602001 anim=fade show=false wait=true]
+
+// BGM02
+[sound type=bgm state=play name=Chapter1_3]
+
+// Background 290
+[image type=bg id=000290 show=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Sayaka Move
+[move id=100105 posx=0.5 wait=true]
+
+// Sayaka Expression Change: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0190]
+So, it's force then... Fine.
+Now I really want to see what's past this point.
+If I can't come alone, maybe I'll bring someone along...?
+[/message]
+
+// Sayaka Expression Change: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0200]
+It's annoying, but... I guess I'll head back to Sagami City today.
+I know the exact location now,
+so I can come back whenever.
+[/message]
+
+// Sayaka Expression Change: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_008_0210]
+But...
+Ah, I was feeling so good before this.
+Such a hassle...
+[/message]
+
+// Hide Sayaka
+[character id=100105 anim=ltor show=false wait=true]
+
+// Display character: Nohlan Sister
+// Nohlan Sister Expression: Default
+[character id=602001 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=06_008_0220]
+— — —
+[/message]
+// Combined synthesized voice for 06_008_0230, 06_008_0240
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop any ongoing sound effects
+[sound type=se state=stop]
+
+// Stop any ongoing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+
+//##########################################################################//
+// End
+//##########################################################################//
+// END

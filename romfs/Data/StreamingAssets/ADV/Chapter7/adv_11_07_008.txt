@@ -1,0 +1,773 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_11_07_008
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkH]
+
+// Display the specified background
+[image type=bg id=000600]
+
+[character id=602501 posx=0.49 anim=none face=thoughts show=true wait=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM30
+// Background 600 / Lucil's Clothing Store
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Maruko's facial expression change
+[face id=602501 type=confuse]
+[character id=200802 posx=0.24 anim=rtol sec=0.3 face=confuse show=true wait=false]
+
+// Show text window
+[visible show=true]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0010]
+Hah... hah... 
+Ugh... 
+[/message]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0020]
+M-Manager?! 
+You suddenly came back...! 
+[/message]
+
+// Maruko's facial expression change
+[face id=602501 type=painful]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0030]
+Wha-... Gyaaah?! 
+What happened to those wounds?! Are you okay?! 
+What happened this time, Manager?! 
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0040]
+Mi-tan looks more... 
+in pain than I do... 
+It's kinda... amusing... 
+[/message]
+
+[character id=100106 posx=0.74 anim=rtol face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0050]
+The game of tag is over. Move. I'll make it easy for you. 
+With this "new sword" I just got, 
+I'll finish the job. 
+[/message]
+
+[face id=602501 type=angry]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0060]
+N-Nooo!! 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0070]
+... 
+Ugh, 
+another flashback scene... 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0080]
+Hey, miss. 
+Do you want your "upper half" blown off again? 
+[/message]
+
+// Maruko's facial expression change
+[face id=602501 type=painful]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0090]
+N-No way?! No, please stop! 
+Please don't... 
+[/message]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0100]
+We-We'll just... l-leave this store, 
+with the Manager!! 
+S-So please, just let us go!! 
+[/message]
+
+// Sayaka Blade's facial expression change
+[face id=100106 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0110]
+...You're way less defiant than "Miita"... 
+Well, but that just makes it... 
+all the more worth killing-- 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Dimensional rift SE
+[sound type=se name=Mirror]
+[delay sec=0.5]
+
+[character id=500202 anim=fade face=painful show=true posx=0.49 wait=false]
+[move id=100106 posx=0.79 sec=0.5 wait=false]
+[move id=602501 posx=0.31 sec=0.5 wait=false]
+[move id=200802 posx=0.13 sec=0.5 wait=false]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0120]
+Finally caught up! We ended up right back where we started...! 
+ヽ(`Д´)ﾉ 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0130]
+...Oh. More company. 
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0140]
+Looking at this... 
+(ﾟＡﾟ;) 
+You two really went at it, huh? 
+[/message]
+
+[face id=200802 type=painful]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0150]
+...That wasn't my intention. 
+But, I slipped up... 
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0160]
+Idiot!! 
+(*｀Д´)=○´Дﾟ);' 
+She's still Ripuka, you know! Don't let your guard down! 
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0170]
+Tch! Arata might have something to say about this later, 
+but... 
+Sayaka!! You're "cleaning up" here! 
+[/message]
+
+// Maruko's facial expression change
+[face id=602501 type=confuse]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0180]
+That line... huh?! Kiki-chan?! 
+No way... 
+Dressed like the Manager, but are you the Kiki-chan?! 
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0190]
+Yeah, yeah!! It's me, the Kiki-mora who used to stay at your store!! 
+ヽ(o・ω・o)ノ 
+[/message]
+
+// Sayaka Blade's facial expression change
+[face id=100106 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0200]
+...So that's your true form, huh? 
+That's hilarious. 
+And now you're trying to play the hero? 
+[/message]
+
+// Amo's facial expression change
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0210]
+...Throwing herself in front of a bomb to save those guys... 
+I can kinda understand Lilith's feelings now, 
+even if it's just a tiny bit... 
+[/message]
+
+// Amo's facial expression change
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0220]
+If you want a fight, you got one! 
+Bring it on! And I'll get my revenge while I'm at it! 
+(屮ﾟДﾟ)屮　щ(ﾟдﾟщ) 
+[/message]
+
+// Amo's facial expression change
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0230]
+Scared of me already? 
+Weakling, weakling! 
+щ(´ε`щ) 
+Weakling Sayaka! 
+[/message]
+
+[face id=602501 type=confuse]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0240]
+...Ahhh! 
+You didn't need to provoke her that much! 
+[/message]
+
+/////////////////////////////////////////////////////////////////////////【Choices】
+// 1: Sayaka, stop it already
+
+[select]
+[link text="Sayaka, stop it already" label=strange]
+[/select]
+
+:strange
+
+[face id=100106 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0250]
+Why? 
+Why are you saying that, partner? 
+That doesn't make any sense... 
+[/message]
+
+[face id=100106 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0260]
+Shina said it! She told me it was okay to kill! 
+That's why I came all the way here! 
+You're making it sound like I'm the bad guy! 
+[/message]
+
+// 【Choices】
+// 1: What if it wasn't Shina who said it? 
+// 2: Just wait a little longer, please
+
+[select]
+[link text="What if it wasn't Shina who said it?" label=painful]
+[link text="Just wait a little longer, please" label=painful]
+[/select]
+
+// No matter which one is chosen, the dialogue does not change
+
+:painful
+
+// No matter which one is chosen, the dialogue does not change
+
+[face id=100106 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0270]
+...I don't care anymore. 
+I hate feeling this pain. I want to feel at ease. 
+So, I... I... 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Stop BGM
+// SE: Monitor turning on sound
+
+[sound type=bgm state=stop]
+[sound type=se name=Monitor]
+[delay sec=0.5]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_011_0280]
+See that! I did it! 
+With the genius Al-sama's power, hijacking the public broadcast was no sweat... whoa!? 
+[/message]
+
+[face id=602501 type=confuse]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0290]
+Wh-What?! 
+The monitor that was supposed to be broken 
+just turned on... 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////// Black fade out
+[fade type=out anim=simple sec=0.3]
+
+[image type=bg id=000470]
+///////////////////////////////////////////////////////////////////////////// Hide characters
+[character id=200802 anim=none show=false wait=false]
+[character id=602501 anim=none show=false wait=false]
+[character id=500202 anim=none show=false wait=false]
+[character id=100106 anim=none show=false wait=true]
+[delay sec=0.1]
+/////////////////////////////////////////////////////////////////////////// Show characters
+[character id=600301 posx=0.24 anim=none face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=none face=panic show=true wait=false]
+[character id=200602 posx=0.74 anim=none face=default show=true wait=true]
+
+////////////////////////////////////////////////////////////////////// Black fade in
+[fade type=in anim=simple sec=0.3]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0300]
+Sayaka! Sayaka! 
+You're there, right?! 
+Sayaka!! 
+[/message]
+
+// [face id=100106 type=default]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0310]
+...Shina? 
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0320]
+Thank goodness! So you were there! 
+I was so worried... 
+I'm sorry I looked away, I'm so sorry...! 
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_011_0330]
+Ohhh? That's odd. 
+She's still acting like Sayaka. Even after learning 
+all of her secrets, she's hanging on. How persistent. 
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0340]
+Grr!! 
+[/message]
+
+////////////////////////////////////////////////////////////////////// Black fade out
+[fade type=out anim=simple sec=0.05]
+
+// SE: Slap sound
+[sound type=se name=Hand]
+// Basilissa's expression change
+[face id=600301 type=thoughts]
+[shake target=chara id=600301 type=horizontal sec=0.5 pow=10 fade=false wait=true]
+
+////////////////////////////////////////////////////////////////////// Black fade in
+[fade type=in anim=simple sec=0.05]
+
+// BGM: 24
+[sound type=bgm state=play name=TalkB]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_011_0350]
+Whoa!? 
+That was a powerful slap! 
+That must have hurt a lot... 
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0360]
+I'm sorry for slapping you. I apologize. 
+But Basilissa, 
+that's not what you should be saying to Sayaka, is it? 
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_011_0370]
+...I-I know. 
+...Sorry, Sayaka. 
+I guess I went a little too far, huh...? 
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0380]
+Basilissa, before working with you, 
+you promised me you wouldn't lay a hand on Sayaka. 
+...At least not while I'm around. 
+[/message]
+
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=07_011_0390]
+Well, it was hard to tell when the end would come. 
+You never know when you might... 
+OUCH!! 
+[/message]
+
+[character id=200602 anim=fade show=false wait=true]
+[character id=200202 posx=0.74 anim=fade face=angry show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=07_011_0400]
+Oops! My hand slipped. 
+More importantly, apologize to Sayaka properly, 
+right now. From the heart! 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0410]
+You don't need to apologize!! 
+I... I get it, I understand everything now... 
+The "facts" won't change. 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0420]
+I was always... 
+the enemy of the world, just a placeholder, 
+so pathetic, such an unnecessary existence... 
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0430]
+That's not true! That's not true at all! 
+Just because you learned about your origins, 
+it doesn't mean you know everything! 
+[/message]
+
+[face id=100106 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0440]
+...But Shina, you also told me "it's okay to kill." 
+You said it because you knew my "true nature"...! 
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0450]
+I never said that!! 
+Please believe me, there's been a misunderstanding...!! 
+[/message]
+
+[face id=100106 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_011_0460 lipsync=false]
+(Is it... a misunderstanding...? 
+Did I... confuse the Stranger with her...?) 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide characters
+[character id=600301 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Show characters
+[character id=601101 posx=0.24 anim=fade face=panic show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.74 anim=fade face=sad show=true wait=true]
+
+// Show text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=07_011_0470]
+...Th-That's right, Sayaka. 
+We're worried about you. 
+That's why we forced the connection to this broadcast! 
+[/message]
+
+[message name=Rottie charaid=200402 voice=07_011_0480]
+Sayaka! 
+Rottie loves you, Sayaka. 
+Your origins don't matter to me at all. 
+[/message]
+
+[message name=Rottie charaid=200402 voice=07_011_0490]
+You saved me from that place, remember? 
+That gentle, kind Sayaka is who you are, 
+the real Sayaka. 
+[/message]
+
+[message name=Rottie charaid=200402 voice=07_011_0500]
+We had fun chatting over coffee during work breaks, 
+and we shared delicious meals at family restaurants. 
+I want to spend time with you like that again, Sayaka. 
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=07_011_0510]
+Remember, Saya. 
+Not once have you been our enemy. 
+If anything, you've always been there for us, helping. 
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=07_011_0520]
+That's the life you chose, isn't it? 
+If so, then just keep being yourself. 
+We'll continue to be by your side, Saya. 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide characters
+[character id=200402 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Show characters
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.74 anim=fade face=sad show=true wait=true]
+
+// Show text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=07_011_0530]
+I come from a family of doctors, but that doesn't mean 
+I chose to walk the path of a doctor. 
+Sayaka, you have the freedom to choose your own path too! 
+[/message]
+
+// Sumika's facial expression change
+[face id=601101 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=07_011_0540]
+That's right, Sayaka. 
+Think back on all the time we spent together...! 
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0550]
+We laughed together, cried together, got angry, felt sad... 
+That's the Sayaka we all love. 
+The Sayaka who lived, right alongside us. 
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_011_0560]
+So please, 
+be yourself and come back. 
+Come back to where you belong—with us. 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_011_0570]
+... 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide characters
+[character id=601101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Show characters
+[character id=600601 posx=0.49 anim=fade face=painful show=true wait=true]
+
+// Show text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=07_011_0580]
+...I know I don't have the right to speak to you. 
+But even so, let me say this. 
+[/message]
+
+[message name=Iris President charaid=600601 voice=07_011_0590]
+I don't regret bringing you into this world, Sayaka. 
+Not anymore. 
+[/message]
+
+[message name=Iris President charaid=600601 voice=07_011_0600]
+So please, come back safely— 
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+////////////////////////////////////////////////////////////////////// Black fade out
+[fade type=out anim=simple sec=0.1]
+[sound type=se name=Monitor]
+[character id=200102 anim=none show=false wait=false]
+[character id=600601 anim=none show=false wait=true]
+[image type=bg id=000600 show=true fade=false]
+[delay sec=0.3]
+[character id=200802 posx=0.19 anim=none face=default show=true wait=false]
+[character id=602501 posx=0.39 anim=none face=confuse show=true wait=false]
+[character id=500202 posx=0.59 anim=none face=thoughts show=true wait=false]
+[character id=100106 posx=0.79 anim=none face=sad show=true wait=true]
+
+////////////////////////////////////////////////////////////////////// Black fade in
+[fade type=in anim=simple sec=0.5]
+
+// Show text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0610]
+Oh?! 
+The broadcast cut off... 
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0620]
+Sayaka, can I ask you one more time? 
+After hearing everything, after hearing the voices of your friends, 
+what do you want to do now? 
+[/message]
+
+[face id=100105 type=thoughts]
+// Hide text window
+[visible show=false]
+[delay sec=1]
+
+[character id=100106 anim=fade show=false wait=true]
+[sound type=se name=VsInactivate]
+[delay sec=0.05]
+[character id=100101 posx=0.79 anim=fade face=thoughts show=true wait=true]
+
+// Show text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_011_0630]
+...Well, I guess I've kind of cooled off now. 
+All that seething anger I felt before 
+seems to have just vanished. 
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_011_0640]
+Maybe... I should just head back. 
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0650]
+Yes, that sounds like a good idea. 
+After all, you have a place to go back to. 
+[/message]
+
+// Amou facial expression change
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0660]
+Wha... huh. 
+So it's over, just like that? 
+But the commotion we caused is making the whole area uneasy. 
+[/message]
+
+// Hide text window
+[visible show=false]
+
+// Amou facial expression change
+[face id=500202 type=thoughts]
+
+// Play "Russia" SE
+[sound type=se name=Russia]
+
+// Wait for 2 seconds
+[delay sec=2.0]
+
+// Show text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=602501 type=confuse]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=602501 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[message name=Store Clerk charaid=602501 voice=07_011_0670]
+...And, CUT! 
+That wraps up the filming in the streets! 
+Thank you all for your cooperation! 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=smile]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0680]
+...And we're done!! 
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_011_0690]
+Wh-what kind of ending is that...? 
+Tch, I'll let it slide just for today... 
+But you better remember this!! 
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0700]
+Sayaka, good job. 
+[/message]
+
+// Sayaka facial expression change
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_011_0710]
+Even though... 
+I almost killed you, you're still so composed. 
+...I apologize for everything. 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=smile]
+
+[message name=Svetlana Amou charaid=200802 voice=07_011_0720]
+It's okay! 
+I had similar experiences with the real Ripuka too, 
+back in the day... 
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for 0.5 seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over 0.5 seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for 0.5 seconds
+[delay sec=0.5]
+
+// Stop all playing sound effects
+[sound type=se state=stop]
+
+// Stop the currently playing background music
+[sound type=bgm state=stop]
+
+// Wait for 0.5 seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END
+
+

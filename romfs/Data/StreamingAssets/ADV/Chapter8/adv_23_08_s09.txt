@@ -1,0 +1,592 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_23_08_s09
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter4]
+
+// Show specified background
+[image type=bg id=000470]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+
+
+//BGM06
+// Background 470 / Iris Corporation Development Room
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Narration
+
+[message]
+Several hours earlier――
+[/message]
+
+
+
+// Hide text window
+[visible show=false]
+
+[sound type=se name=Rampaging]
+// Wait for the specified seconds
+[delay sec=4]
+
+
+
+
+
+[character id=601201 posx=0.5 anim=fade face=angry show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Glock President charaid=601201 voice=08_923_0010]
+S-stop it, Chloe! 
+Do you understand what you're trying to do!?
+[/message]
+
+// SE: Slash Sound
+
+[sound type=se name=Slash]
+[effect type=SlashLarge show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+
+[move id=601201 posx=0.33 wait=false]
+[character id=200901 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=08_923_0020]
+Of course I do. 
+I'm going to completely stop the development 
+of 'End to Odyssey'.
+[/message]
+
+[face id=200901 type=thoughts]
+
+[message name=Chloe charaid=200901 voice=08_923_0030]
+That's the real reason I came here...
+[/message]
+
+[face id=200901 type=smile]
+
+[message name=Chloe charaid=200901 voice=08_923_0040]
+...Haha, Ahahaha!!!
+The demon of the end, Celica-sama, right!?
+Sounds better than a hero!
+[/message]
+
+[move id=601201 posx=0.25 wait=false]
+[move id=200901 posx=0.5 wait=false]
+
+[character id=200502 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_923_0050]
+For someone who 'showed their true colors', 
+that's a terrible joke... 
+You seemed to enjoy the filming, didn't you?
+[/message]
+
+[face id=200901 type=angry]
+
+[message name=Chloe charaid=200901 voice=08_923_0060]
+Hah? 
+It was acting, acting. Like an idol actress should...
+[/message]
+
+[character id=601201 anim=fade show=false wait=false]
+[character id=200402 posx=0.25 anim=fade face=panic show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=08_923_0070]
+Nooo... 
+Chloe, being a bad girl and causing chaos, 
+I hate it...!
+[/message]
+
+[character id=200502 anim=fade show=false wait=false]
+[character id=200302 posx=0.75 anim=fade face=angry show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=08_923_0080]
+Guh...!! 
+How dare you, destroy my precious PC and servers, 
+the things I care about most...!
+[/message]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=200202 posx=0.5 anim=fade face=panic show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_923_0090]
+Ugh, I... I can heal living things, but 
+machines... that's out of my league...
+[/message]
+
+[character id=200402 anim=fade show=false wait=false]
+[character id=601301 posx=0.25 anim=fade face=confuse show=true wait=true]
+
+[message name=Koji Toyama charaid=601301 voice=08_923_0100]
+Hey, hey, hey, hey, hey, HEY!! 
+That Celica outfit sword is supposed to be a prop for filming!
+Why is it cutting through everything?!
+[/message]
+
+[character id=200302 anim=fade show=false wait=false]
+[character id=200901 posx=0.75 anim=fade face=smile show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=08_923_0110]
+Hehehehe!! 
+Of course, the god who created this world is still here... 
+Iris!!
+[/message]
+
+[character id=601301 anim=fade show=false wait=false]
+[character id=600601 posx=0.25 anim=fade face=thoughts show=true wait=true]
+
+[message name=Iris President charaid=600601 voice=08_923_0120]
+So... you came prepared. 
+You can control Eni... impressive. 
+Was it Arata Mizunashi who taught you?
+[/message]
+
+[face id=200901 type=angry]
+[message name=Chloe charaid=200901 voice=08_923_0130]
+Who cares!? 
+I don't need to answer that... 
+This world is going to end soon anyway.
+[/message]
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=601101 posx=0.5 anim=fade face=panic show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_923_0140]
+The world ending!? 
+How could you wish for something so catastrophic!
+[/message]
+
+[face id=200901 type=default]
+[message name=Chloe charaid=200901 voice=08_923_0150]
+Oh? I'm the one who finds it strange. 
+Don't you all know? 
+What's so precious about a made-up world?
+[/message]
+
+[face id=200901 type=smile]
+[message name=Chloe charaid=200901 voice=08_923_0160]
+I'm just a fake, just like you all. 
+Pretending to be someone's daughter or son... 
+Ah, it's hilarious! Hahaha!!
+[/message]
+
+[face id=200901 type=angry]
+
+// SE: Slash Sound
+[sound type=se name=Slash]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=601201 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+[message name=Glock President charaid=601201 voice=08_923_0170]
+...It seems she's fallen into extreme distrust of humans. 
+I never thought it would go this far. 
+Persuading her might be difficult...
+[/message]
+
+[character id=600601 anim=fade show=false wait=false]
+[character id=600301 posx=0.25 anim=fade face=smile show=true wait=true]
+
+[message name=Ripuka charaid=600301 voice=08_923_0180]
+Well, I like that! 
+Looks like we found another gem besides Sayaka.
+Hehehe♪
+[/message]
+
+[character id=601201 anim=fade show=false wait=false]
+[character id=601101 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_923_0190]
+Ripuka... 
+Please read the room...
+[/message]
+[face id=600301 type=default]
+[message name=Ripuka charaid=600301 voice=08_923_0200]
+Oh, sorry. 
+Hey Lucil, can't you do something about this? 
+Can't your code be flexible?
+[/message]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=200802 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+[message name=Svetlana Amou charaid=200802 voice=08_923_0210]
+Yeah, maybe... 
+[/message]
+
+[face id=200901 type=default]
+[message name=Chloe charaid=200901 voice=08_923_0220]
+Hey! You're plotting something, aren't you!? 
+Don't try anything funny, or you'll be the first to die!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_923_0230]
+I've already been marked...
+[/message]
+
+[message name=Ripuka charaid=600301 voice=08_923_0240]
+Oh dear... 
+By the way, are you okay standing next to me?
+[/message]
+
+[face id=200802 type=default]
+[message name=Svetlana Amou charaid=200802 voice=08_923_0250]
+Hmm? I'm fine. 
+Though, it's not like I enjoy it... 
+Besides, now's not the time for this conversation.
+[/message]
+
+[character id=200802 anim=fade show=false wait=false]
+[character id=200302 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=08_923_0260]
+Hey, President. How long are we going to let her run loose...? 
+If you and I use our powers together, 
+we can handle just one of her, right?
+[/message]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=601301 posx=0.25 anim=fade face=confuse show=true wait=true]
+
+[message name=Koji Toyama charaid=601301 voice=08_923_0270]
+Y-y-you really are my daughter, huh...? 
+You're terrifying...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=08_923_0280]
+Later, "Dad". 
+Sorry, but...
+[/message]
+
+[character id=601301 anim=fade show=false wait=false]
+[character id=600601 posx=0.25 anim=fade face=default show=true wait=true]
+
+[message name=Iris President charaid=600601 voice=08_923_0290]
+Even though this world hasn't existed for 100 years yet...
+you were all still born to your parents.
+[/message]
+
+[face id=200901 type=angry]
+[message name=Chloe charaid=200901 voice=08_923_0300]
+Oh, really? So what? 
+Does that mean you're over 100 years old in that form? 
+You Ludens...
+[/message]
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=08_923_0310]
+Chloe, you're acting all tough, 
+but do you really think you can take down the President?
+[/message]
+
+[face id=200901 type=thoughts]
+[message name=Chloe charaid=200901 voice=08_923_0320]
+Didn't I say it from the start? 
+I'm going to stop development.
+[/message]
+
+[face id=200901 type=smile]
+[message name=Chloe charaid=200901 voice=08_923_0330]
+I'm an essential member, right~? 
+Hehehe!!! 
+If I'm the one to die, how about that?
+[/message]
+
+[face id=200901 type=default]
+
+[face id=600601 type=painful]
+[message name=Iris President charaid=600601 voice=08_923_0340]
+N-no way...!?
+[/message]
+
+[character id=200302 anim=fade show=false wait=false]
+[character id=200202 posx=0.5 anim=fade face=panic show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_923_0350]
+W-wait!! 
+I'm not going to let you commit suicide in front of me, 
+Celica!! I won't let it end!
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=08_923_0360]
+That's right... 
+'Death isn't the end'...
+You said that too...!
+[/message]
+
+[face id=200901 type=angry]
+[message name=Chloe charaid=200901 voice=08_923_0370]
+Tsk. 
+Always eavesdropping on the wrong things...!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=08_923_0380]
+If you destroy the world, 
+everything will really end...
+even the fact that we were all here...
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=08_923_0390]
+But as long as this world continues, 
+we can fix it, and make it better...!
+[/message]
+
+[face id=200901 type=confuse]
+
+[message name=Chloe charaid=200901 voice=08_923_0400]
+Is that really true? 
+I heard from Arata that the Eni is 
+almost running out, though?!
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=08_923_0410]
+Ugh.........
+[/message]
+
+[face id=200901 type=angry]
+
+[message name=Chloe charaid=200901 voice=08_923_0420]
+I was dragged into this world against my will, what a pain! 
+Then try to fix all the despair I've felt now!!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Iris, Lilith, Chloe disappear
+[character id=600601 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200901 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Akagi appears
+[character id=602601 posx=0.5 anim=fade face=angry show=true wait=true]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+[message name=Akagi charaid=602601 voice=08_923_0430]
+...Ugh, that's enough, SHUT UP!!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=602601 anim=fade show=false wait=false]
+
+[character id=200302 posx=0.5 anim=fade face=panic show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=08_923_0440]
+Akagi...?
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=200302 anim=fade show=false wait=false]
+
+// Akagi appears
+[character id=602601 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+// Akagi expression change: Angry
+[face id=602601 type=angry]
+[message name=Akagi charaid=602601 voice=08_923_0450]
+I'm telling you!! 
+Today we're launching the website!! 
+We're busy!!
+[/message]
+
+// Screen shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+[message name=Akagi charaid=602601 voice=08_923_0460]
+I don't care if you're a big star or actress, 
+or if you're having problems, 
+but don't inconvenience those working hard!! 
+Do you have the right to do that!!
+[/message]
+
+[character id=602601 anim=fade show=false wait=false]
+
+[character id=200901 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+
+[message name=Chloe charaid=200901 voice=08_923_0470]
+W-what...? 
+[/message]
+
+// Show character: Sumika Tokiwa
+// Face: Angry
+[character id=601101 posx=0.25 anim=fade face=angry show=true wait=true]
+[message name=Sumika Tokiwa charaid=601101 voice=08_923_0480]
+Gotcha...!!
+[/message]
+
+// Sumika Tokiwa move
+[move id=601101 posx=0.45 sec=0.5 wait=false]
+
+// Hit effect
+[effect type=Attack show=true wait=false auto_hide=true posx=0.65 posy=0.5 priority=FrontCutin]
+// Play SE:
+[sound type=se name=Charge]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+[face id=200901 type=painful]
+[message name=Chloe charaid=200901 voice=08_923_0490]
+Ow...?!
+[/message]
+
+[character id=601101 anim=rtol show=false wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=200302 posx=0.25 anim=fade face=panic show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=08_923_0500]
+Chief... with a slipper!? 
+That's just reckless...!
+[/message]
+
+[character id=200302 anim=fade show=false wait=false]
+
+[character id=200402 posx=0.25 anim=fade face=panic show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=08_923_0510]
+H-hey...!
+I know it's not the best timing, but everyone, 
+look outside...!
+[/message]
+
+// BGM14
+// Show still image
+
+[sound type=bgm state=play name=BossChapter3_4_7_8]
+
+[image type=still id=100018 show=true]
+
+// @Koji Toyama
+
+[message name=Koji Toyama charaid=601301 voice=08_923_0520]
+W-what the hell is that!?
+It looks like... 
+a black hole!?
+[/message]
+
+// @Kaede Hizumi
+
+[message name=Kaede Hizumi charaid=200502 voice=08_923_0530]
+Oh man... it's really happening...
+Just like Chloe said, 
+the world is on the verge of destruction...
+[/message]
+
+// @Chloe
+[face id=200901 type=smile]
+[message name=Chloe charaid=200901 voice=08_923_0540]
+Lena...!
+You did it...!
+I'm coming to you...!
+[/message]
+
+// @Iris
+
+[message name=Iris President charaid=600601 voice=08_923_0550]
+Shina, Sayaka, Al...!! 
+We have to go pick them up, quickly...!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

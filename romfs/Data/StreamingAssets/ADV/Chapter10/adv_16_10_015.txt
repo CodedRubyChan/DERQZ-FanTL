@@ -1,0 +1,1296 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_16_10_015
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop current BGM
+[sound type=bgm state=stop]
+
+// Show specified background
+[image type=bg id=000130]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// No BGM
+// Background 130 / Toyama City Station
+
+// If all main events in Chapter 10 are seen, the station becomes selectable
+
+[character id=100101 posx=0.66 anim=fade face=sad show=true wait=false]
+[character id=600101 posx=0.32 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0010]
+Not a soul in sight...
+This is a serious situation.
+[/message]
+
+// Arata Mizunashi expression change
+[face id=600101 type=painful]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0020]
+Haa... Looks like "that girl" from the Uppermost World might be here...
+[/message]
+
+[face id=600101 type=thoughts]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0030]
+Hey, don't stray away from me.
+The world is getting altered rapidly.
+If you stand in the wrong place—
+[/message]
+
+// Sayaka gets surprised
+[shake target=chara id=100101 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0040]
+...Wow, it's true.
+The spot where I was standing earlier...
+it's changing colors!
+[/message]
+
+[face id=600101 type=default]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0050]
+Looks like they're trying to stop my "Overflow."
+I've got an idea.
+We're heading into the station.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0060]
+Sure, but if there's no one around,
+doesn't that mean the trains won't be running...?
+[/message]
+
+// Arata Mizunashi expression change
+[face id=600101 type=smile]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0070]
+Don't worry, I'm a programmer.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Screen fades to black
+[fade type=out anim=simple sec=1]
+
+// Arata Mizunashi expression change
+[face id=600101 type=default]
+[face id=100101 type=surprise]
+[image type=bg id=000590 show=true]
+
+[sound type=se name=Intrain]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=1]
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Fade-in complete
+
+// Arata Mizunashi expression change
+[face id=600101 type=default]
+
+// Background 590 / Inside the Subway Train
+
+[face id=100101 type=surprise]
+[delay sec=0.3]
+//////////////// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0080]
+Amazing! It's like the Strain Train...
+And it's moving on its own...
+[/message]
+
+// Arata Mizunashi expression change
+[face id=600101 type=painful]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0090]
+Nah, it's just a cheap trick running with a bot.
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0100]
+So, where are we heading?
+[/message]
+
+// Sayaka expression change
+//[face id=100101 type=default]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0110]
+My place. There's an important "Mother-Con" there...
+Ah, I mean a Mother Computer.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Screen fades to black
+[fade type=out anim=simple sec=1]
+
+// Background 40 / Arata's Room
+[image type=bg id=000040 show=true]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+[delay sec=1.5]
+
+// OpenTheDoor
+[sound type=se name=OpenTheDoor]
+[fade type=in anim=simple sec=1]
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Fade-in complete
+
+// Sayaka expression change
+[face id=100101 type=panic]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0120]
+We're here! It's a more normal room than I expected...
+But, it's so dusty...
+[/message]
+
+[face id=600101 type=smile]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0130]
+Hahaha! It's been years since I last came here.
+Thanks for keeping it safe, Shina...
+Now then...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// PC startup sound
+// BGM 1
+
+[sound type=se name=PC]
+[sound type=bgm state=play name=TitleGallery]
+
+// Arata Mizunashi expression change
+[face id=600101 type=angry]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0140]
+Give back what you've taken from this world,
+Great Sage.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0150]
+What exactly are you going to do?
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=surprise]
+
+// Arata Mizunashi expression change
+[face id=600101 type=angry]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0160]
+It's simple. Using the database ID of those who've been extracted...
+I'll 'degrade' them at the optimal timing, before the Great Sage can interfere!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Dimensional rupture SE
+[sound type=se name=Mirror]
+
+// Fade out
+[fade type=out anim=simple sec=1]
+
+[character id=100101 anim=none show=false wait=false]
+[character id=600101 anim=none show=false wait=true]
+[character id=500202 posx=0.25 anim=none face=sad show=true wait=false]
+// Background 600
+[image type=bg id=000600 show=true]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=1]
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Fade-in complete
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+[character id=200802 posx=0.5 anim=rtol face=default show=true wait=false]
+[character id=602501 posx=0.75 anim=rtol face=confuse show=true wait=true]
+
+//[face id=500202 type=sad]
+
+// Re-display the text window
+[visible show=true]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=500202 type=vertical sec=0.2 pow=10 fade=false wait=false]
+
+[message name=Kiki Amo charaid=500202 voice=10_016_0170]
+Uwaaa... Grandma!!
+Mita!!
+Where did you go...?
+[/message]
+
+// Svetlana expression change
+[face id=200802 type=sad]
+
+[message name=Svetlana Ama charaid=200802 voice=10_016_0180]
+Ah... I'm so sorry, Kikimora.
+I got pulled into another world by accident...
+And I'm sorry to you too, Mita.
+[/message]
+
+// Maruko Mita expression change
+[face id=602501 type=confuse]
+
+[message name=Eyeglass Clerk charaid=602501 voice=10_016_0190]
+...I don't even know why you're crying
+Or why you're apologizing!
+Sorry! It's too much for me to understand...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Fade out
+[fade type=out anim=simple sec=1]
+
+[character id=500202 anim=none show=false wait=false]
+[character id=200802 anim=none show=false wait=false]
+[character id=602501 anim=none show=false wait=true]
+
+[delay sec=0.5]
+// Background 500
+[image type=bg id=000500 show=true]
+
+[fade type=in anim=simple sec=1]
+
+[character id=200902 posx=0.33 anim=ltor face=confuse show=true wait=false]
+[character id=500502 posx=0.66 anim=fade face=painful show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chloe charaid=200902 voice=10_016_0200]
+Hmm... Didn't that break seem long?
+What happened to filming...?
+I feel like I've lost track of time...
+[/message]
+
+[face id=500502 type=painful]
+
+[message name=Falena charaid=500502 voice=10_016_0210]
+N-No, it's okay.
+It's only been 30 minutes. Over here, just
+30 minutes have passed, so...
+[/message]
+
+[face id=200902 type=surprise]
+
+[message name=Chloe charaid=200902 voice=10_016_0220]
+Why are you crying!? You're... crying...
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=10_016_0230]
+Let's do our best to finish the movie...
+for Komai-chan...!
+[/message]
+
+[face id=200902 type=smile]
+
+[message name=Chloe charaid=200902 voice=10_016_0240]
+...Yeah! Of course, Lena!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 480
+[visible show=false]
+
+[fade type=out anim=simple sec=1]
+
+[character id=500502 anim=none show=false wait=false]
+[character id=200902 anim=none show=false wait=true]
+
+[delay sec=0.5]
+
+[image type=bg id=000480 show=true]
+
+[fade type=in anim=simple sec=1]
+
+[character id=601301 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.48 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.74 anim=fade face=default show=true wait=true]
+
+[delay sec=0.3]
+
+[face id=602601 type=confuse]
+
+//////////// Re-display the text window
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=10_016_0250]
+Huh? Why am I here...
+Wasn't it a PV shoot or something...?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_016_0260]
+Have you been pulling all-nighters again?
+You know, when the exhaustion just hits you all at once...
+[/message]
+
+[face id=601301 type=confuse]
+
+[message name=Koji Toyama charaid=601301 voice=10_016_0270]
+I feel like I just had a horrible nightmare after a long time.
+Haa, it's terrible, just terrible.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[face id=601301 type=default]
+
+[move id=601301 posx=0.14 sec=0.5 wait=false]
+[move id=602601 posx=0.38 sec=0.5 wait=false]
+[move id=601101 posx=0.59 sec=0.5 wait=false]
+
+[character id=601201 posx=0.8 anim=rtol face=default show=true wait=true]
+
+[delay sec=0.3]
+//////// Re-display the text window
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=10_016_0280]
+...Everyone, how about we leave work early today?
+And let your families know, okay?
+[/message]
+
+// Sumika Tokiwa expression change
+[face id=601101 type=surprise]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_016_0290]
+Yeah... that sounds good.
+Wait, what's this...?
+I feel something familiar...
+[/message]
+
+// Sumika Tokiwa expression change
+[face id=601101 type=confuse]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_016_0300]
+Arata. He's... not here, right?
+[/message]
+
+// Sumika Tokiwa expression change
+[face id=601101 type=thoughts]
+
+[message name=Akagi charaid=602601 voice=10_016_0310]
+Oh, come on!
+Chief, there's no scheduled visitors.
+Feeling lonely, are you?
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=10_016_0320 lipsync=false]
+(It looks like it worked, Mizunashi...)
+[/message]
+
+[message name=Koji Toyama charaid=601301 voice=10_016_0330]
+...Also, where did the Director and
+my daughter run off to?
+Well... I'm sure they're fine anyway!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[fade type=out anim=simple sec=1]
+
+[character id=602601 anim=none show=false wait=false]
+[character id=601201 anim=none show=false wait=false]
+[character id=601101 anim=none show=false wait=false]
+[character id=601301 anim=none show=false wait=true]
+
+[delay sec=0.5]
+// Background 430
+[image type=bg id=000430 show=true]
+
+[fade type=in anim=simple sec=1]
+
+[character id=200702 posx=0.25 anim=rtol face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=rtol face=default show=true wait=false]
+[character id=601401 posx=0.74 anim=rtol face=default show=true wait=true]
+
+[face id=200702 type=confuse]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=10_016_0340]
+Ugh, I'm back...
+...I'm back in my original form.
+For the first time in 20 years...
+[/message]
+
+[message name=Rottie charaid=200402 voice=10_016_0350]
+Looks like we got pulled over here at just the right moment...
+What'll happen to the other Rotties over there?
+[/message]
+
+[message name=Sanae Toyama charaid=601401 voice=10_016_0360]
+Well, I don't think they'll disappear just because we came here, right?
+I hope my big sis is okay...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[move id=200702 posx=0.2 sec=0.5 wait=false]
+[move id=200402 posx=0.4 sec=0.5 wait=false]
+[move id=601401 posx=0.59 sec=0.5 wait=false]
+
+// Shizu appears
+[character id=601801 posx=0.79 anim=rtol face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=601801 type=smile]
+
+[message name=Shizu charaid=601801 voice=10_016_0370]
+Yo. Good work, expedition team!
+[/message]
+
+// Surprise
+[shake target=chara id=200402 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[face id=200402 type=smile]
+
+// Sanae expression change
+[face id=601401 type=confuse]
+
+[message name=Rottie charaid=200402 voice=10_016_0380]
+Wow! It's the nice Shizu!
+[/message]
+
+// Sanae expression change
+[face id=601401 type=default]
+
+[face id=601801 type=confuse]
+
+[message name=Shizu charaid=601801 voice=10_016_0390]
+That phrasing bothers me a bit...
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=10_016_0400]
+Well, well, the Acting Founder of Aphasis.
+You even knew when we'd return?
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=10_016_0410]
+Yeah. I got a strange email.
+And I've already got the next set of instructions...
+[/message]
+
+// Sanae expression change
+[face id=601401 type=angry]
+
+[message name=Sanae Toyama charaid=601401 voice=10_016_0420]
+Just so you know, I'm not volunteering as a sacrifice, okay?
+[/message]
+
+// Sanae expression change
+[face id=601401 type=default]
+
+[face id=601801 type=confuse]
+
+[message name=Shizu charaid=601801 voice=10_016_0430]
+No, no, no! I know what the cult was doing in other worlds...
+I swear on my faith that I won't do that!
+[/message]
+
+[message name=Rottie charaid=200402 voice=10_016_0440]
+Shizu, you're wonderful.
+Please, have a long chat with Mom later!
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=10_016_0450]
+O-Of course...!
+[/message]
+
+// Liliana expression change
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=10_016_0460]
+This is getting too casual.
+The Demon Lord... is still alive, after all...
+What's the next move?
+[/message]
+
+// Liliana expression change
+//[face id=200702 type=default]
+
+[face id=601801 type=smile]
+
+[message name=Shizu charaid=601801 voice=10_016_0470]
+Hehehe. That would be...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 60
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1]
+
+[character id=200402 anim=none show=false wait=false]
+[character id=601401 anim=none show=false wait=false]
+[character id=200702 anim=none show=false wait=false]
+[character id=601801 anim=none show=false wait=true]
+
+[delay sec=0.5]
+
+[image type=bg id=000430 show=true]
+////////////////////////////////////////////////////////////////////////////////
+// Screen fades to black
+[fade type=in anim=simple sec=1]
+
+[character id=200202 posx=0.24 anim=rtol face=panic show=true wait=false]
+[character id=500102 posx=0.49 anim=rtol face=default show=true wait=false]
+[character id=200502 posx=0.73 anim=rtol face=default show=true wait=true]
+
+//////// Re-display the text window
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_016_0480]
+W-W-Wait, where is Shina!?
+Where is Shina!?
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=10_016_0490]
+Calm down, will you.
+Seriously, take a breath...
+[/message]
+
+[face id=200502 type=panic]
+
+[message name=Kaede Hizumi charaid=200502 voice=10_016_0500]
+Sorry, Dad, we don't have much time before your visit with Mom.
+It's just... my friend here is in a state...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Move characters
+[move id=200202 posx=0.19 sec=0.5 wait=false]
+[move id=500102 posx=0.39 sec=0.5 wait=false]
+[move id=200502 posx=0.58 sec=0.5 wait=false]
+
+[character id=601601 posx=0.79 anim=rtol face=default show=true wait=true]
+[delay sec=0.3]
+//////////// Re-display the text window
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=10_016_0510]
+Alright, just wait.
+I'm trying to get in touch with Chiri, the security detail.
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=10_016_0520 lipsync=false]
+(But I feel like I was just having an important conversation with someone...)
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=10_016_0530 lipsync=false]
+(Natsuo... Why does that name come to mind?)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Characters exit
+[character id=500102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200502 anim=fade show=false wait=false]
+[character id=601601 anim=fade show=false wait=true]
+
+[delay sec=0.3]
+
+[character id=500302 posx=0.33 anim=fade face=sad show=true wait=false]
+[character id=600901 posx=0.66 anim=fade face=default show=true wait=true]
+
+@GClea
+[delay sec=0.3]
+//////// Re-display the text window
+[visible show=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=10_016_0540 lipsync=false]
+(......Sorry, Natsuo.
+One day, I'll come to save you as well--)
+[/message]
+
+// Background 60 / Main street
+
+// Nova expression change
+[face id=600901 type=smile]
+@Nova
+[message name=Nova charaid=600901 voice=10_016_0550]
+...Oh? 
+Looks like "that guy" managed to pull it off?
+Kept me waiting. Heh heh♪
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=500302 anim=fade show=false wait=false]
+[character id=600901 anim=fade show=false wait=true]
+
+// Background 40 / Mizunashi's room
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1]
+
+[image type=bg id=000040 show=true]
+
+[delay sec=0.5]
+
+[character id=600101 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=1]
+
+[delay sec=0.3]
+////// Re-display the text window
+[visible show=true]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0560]
+Whew... It's not perfect, but.
+For now, I've managed to restore things.
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0570]
+...I can hear people outside!
+I don't know what's going on, but,
+That's amazing!
+[/message]
+
+[face id=600101 type=painful]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0580]
+That's pretty much how people usually compliment programmers, huh...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// SE: Chime
+// Stop BGM
+[sound type=bgm state=stop]
+[delay sec=0.1]
+[sound type=se name=Chime]
+
+[delay sec=0.5]
+
+[face id=100101 type=default]
+
+/////////// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0590]
+Hm? Looks like someone is here?
+[/message]
+
+[face id=600101 type=confuse]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0600]
+..."Did I order pizza?"
+..."Who could it be at this hour?"
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0610]
+You didn't order anything, and it's still daytime, right...?
+[/message]
+
+// Arata expression change
+[face id=600101 type=painful]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0620]
+Sigh... Locking the door won't stop them anyway.
+Hey! Just come on in!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Arata expression change
+[face id=600101 type=default]
+
+// SE: Door open/close sound
+[sound type=se name=OpenTheDoor]
+
+// @Great Sage Paraninas
+// Speaker name: Shina Ninomiya? (from now on the same)
+
+[move id=600101 posx=0.59 wait=false]
+[move id=100101 posx=0.79 wait=true]
+
+[delay sec=0.3]
+
+[character id=200103 posx=0.39 anim=ltor face=smile show=true wait=true]
+
+// Sayaka expression change
+[face id=100101 type=panic]
+[delay sec=0.3]
+////////// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya? charaid=200103 voice=10_016_0630]
+Mizunashi!! 
+I-I finally found you... I'm so glad~!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601901 posx=0.19 anim=ltor face=painful show=true wait=true]
+[delay sec=0.3]
+//////////// Re-display the text window
+[visible show=true]
+
+[message name=Liddy charaid=601901 voice=10_016_0640]
+U-Ugh, Arata~~
+I've wanted to see you so much!!
+[/message]
+
+// Arata expression change
+[face id=600101 type=angry]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0650]
+Yeah... I feel the same.
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0660]
+...Yeah, I think I understand now.
+Liddy is okay, but...
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0670]
+The one next to her...
+Who are you?
+Shina doesn't usually wear glasses.
+[/message]
+
+// @Great Sage Paraninas
+// Speaker name: Shina Ninomiya?
+
+[face id=200103 type=panic]
+
+[message name=Shina Ninomiya? charaid=200103 voice=10_016_0680]
+Whoa, really? Busted?
+I could've sworn she wore them sometimes...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// SE: Door open/close sound
+[sound type=se name=OpenTheDoor]
+[sound type=bgm state=play name=Epilougue]
+
+// Arata, Sayaka, Shina?, Liddy exit
+
+[character id=600101 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200103 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+
+[delay sec=0.3]
+
+// Shina, Mai, and Liddy enter
+[character id=200302 posx=0.39 anim=ltor face=default show=true wait=false]
+[character id=200102 posx=0.19 anim=ltor face=angry show=true wait=true]
+
+[delay sec=0.3]
+
+// BGM 12
+[delay sec=0.3]
+//////// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_016_0690]
+Mizunashi!! Sayaka!! 
+Get away from "that version" of me...!!
+[/message]
+
+// Mai expression change
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=10_016_0700]
+Ugh, um...
+Are you on that side too...?
+[/message]
+
+[character id=601901 posx=0.59 anim=rtol face=default show=true wait=true]
+
+[message name=Liddy charaid=601901 voice=10_016_0710]
+Hii~. Pretty much. Lydia and Julietta have already 
+passed on, right? So until they return,
+I'll stand in for them a little longer...
+[/message]
+
+[message name=Liddy charaid=601901 voice=10_016_0720]
+I'll keep carrying out my role.
+Since you've all gotten this far, right?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Arata enters in panic
+[character id=600101 posx=0.79 anim=rtol face=panic show=true wait=true]
+
+// Arata expression change
+[delay sec=0.3]
+//////// Re-display the text window
+[visible show=true]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0730]
+Hey, hey... The Uppermost World still wants to fight?
+There's only a little time left before the overflow.
+...We're so close to winning, you know?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// @Great Sage Paraninas
+// Speaker name: Shina Ninomiya?
+
+[character id=601901 anim=fade show=false wait=false]
+
+// Shina, Mai, and Liddy exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=600101 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+
+// Shina? enters
+[character id=200103 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya? charaid=200103 voice=10_016_0740]
+Hey. 
+I created all the bugs, you know?
+I can still control them however I want.
+[/message]
+
+// Glasses Shina expression change
+[face id=200103 type=angry]
+
+// @Great Sage Paraninas
+// Speaker name: Shina Ninomiya?
+
+[message name=Shina Ninomiya? charaid=200103 voice=10_016_0750]
+"Again," I could trick Iris into...
+making her do something...?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina? exits
+[character id=200103 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+// Shina, Arata, Mai, Sayaka enter
+[character id=200102 posx=0.19 anim=fade face=angry show=true wait=false]
+[character id=600101 posx=0.39 anim=fade face=angry show=true wait=false]
+[character id=200302 posx=0.59 anim=fade face=angry show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=angry show=true wait=true]
+
+[delay sec=0.3]
+
+// Re-display the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_016_0760]
+Don't mess with me!!
+I... I won't lose to you!!!
+Right, Mizunashi?!
+[/message]
+
+[face id=600101 type=confuse]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_016_0770]
+W-Well, actually... I'm still recovering.
+It would be great if I could have a little more 
+"time," you know.
+[/message]
+
+// Mai expression change
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=10_016_0780]
+What? You're seriously saying that to the enemy...?
+Don't you think you're being a bit too soft...
+I need you to try harder.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0790]
+Honestly, I agree. 
+But, in reality... this won't be an easy opponent to defeat!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Arata, Mai, Sayaka exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=600101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Shina? and Liddy (appearing simultaneously)
+[character id=200103 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=601901 posx=0.66 anim=fade face=default show=true wait=true]
+[delay sec=0.3]
+
+// @Great Sage Paraninas
+// Speaker name: Great Sage (from now on)
+
+[face id=200103 type=smile]
+
+////////// Re-display the text window
+[visible show=true]
+
+[message name=Great Sage charaid=200103 voice=10_016_0800]
+Whew! It'd be boring if I were forced to leave so soon.
+But with the current lineup of actors, 
+it feels like the game is just about to get interesting...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Transformation SE
+[sound type=se name=VsActivate]
+[image type=still id=999999 show=true]
+
+// Cut-in 10 displayed
+[cutin id=000010 type=ltor sec=0.5 show=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Speaker name: Great Sage
+
+[message name=Great Sage charaid=200103 voice=10_016_0810]
+Now then,
+it's been years since I last said this line, 
+Liddy Melan!
+[/message]
+
+[message name=Liddy charaid=601901 voice=10_016_0820]
+!
+It's an honor to hear you call my name.
+Yes... indeed, Paraninas.
+[/message]
+
+// Speaker name: Great Sage
+
+[message name=Great Sage charaid=200103 voice=10_016_0830]
+...Ready? Here we go!
+[/message]
+
+// @Great Sage Paraninas
+// Speaker name: Great Sage
+
+[message name=Great Sage charaid=200103 voice=10_016_0840]
+"Let's take back time together," alright!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[cutin id=000010 type=fade sec=0.5 show=false]
+[character id=601901 anim=none show=false wait=false]
+[character id=200103 anim=none show=false wait=false]
+[delay sec=0.5]
+
+// Background 340 Future World Corridor
+[image type=bg id=000340 show=true]
+[character id=600201 posx=0.33 anim=fade face=thoughts show=true wait=false]
+[character id=600401 posx=0.66 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+[image type=still id=999999 show=false]
+
+[delay sec=0.3]
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=10_016_0850]
+Ahh, she finally declared war, huh, that woman...
+Now the Uppermost World won't stop...
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=10_016_0860]
+And it seems,
+my incomplete self
+has finally woken up down below.
+[/message]
+
+[message name=Rin Asukaze charaid=600401 voice=10_016_0870]
+Eh... Honestly, 
+I'd be fine with just you, Arata-kun—
+But it looks like we need more hands?
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=10_016_0880]
+Yeah. For now, should we go pick up Natsun?
+This time, from the other side.
+Heh heh heh!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////////// Screen fades out
+[fade type=out anim=simple sec=1]
+
+// Arata and Rin Asukaze exit
+[character id=600201 anim=none show=false wait=false]
+[character id=600401 anim=none show=false wait=false]
+[image type=bg id=000380 show=true]
+
+// Sayaka enters
+[character id=100101 posx=0.49 anim=none face=default show=true wait=true]
+
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=1]
+
+[delay sec=0.3]
+////////////// Re-display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0890]
+Arata Mizunashi managed to push back the Uppermost World's incursion,
+but it still seems to continue—
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0900]
+For example, even in front of my partner...
+Something might happen tomorrow...
+Stay alert.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+[delay sec=0.3]
+/////// Re-display the text window
+[visible show=true]
+
+[message name=Great Sage charaid=200103 voice=10_016_0910]
+...As long as the bugs don't disappear from all worlds,
+my dear "Gods of Death,"
+you too are not exempt...
+[/message]
+
+// @Sayaka
+// Sayaka expression change
+[face id=100101 type=angry]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_016_0920]
+Given this situation,
+let's lend each other "time" again!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Sayaka exits
+[character id=100101 anim=fade show=false wait=false]
+[sound type=se name=VsActivate]
+
+[character id=100103 posx=0.49 anim=fade face=angry show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.5]
+[visible show=true]
+
+// Sayaka expression change
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_016_0930]
+And next time...
+Let's make it an even more, more fun time!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sayaka exits
+[character id=100103 anim=fade sec=1 show=false wait=true]
+
+////// Re-display the text window
+[delay sec=1]
+[visible show=true]
+
+// Text only
+
+[message]
+To Be Continued to
+Death end re;Quest 3
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=1]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

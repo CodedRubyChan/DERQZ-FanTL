@@ -1,0 +1,244 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_07_05_003
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Background 470 / Iris Corporation
+// BGM23
+[character id=200102 posx=0.33 anim=rtol face=default show=true wait=false]
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_007_0010]
+Alright, made it to work safely!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0020]
+Yeah! Nova and the others must have been watching over us, 
+everything went smoothly...!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_007_0030]
+Ugh, it's so annoying that even just showing up to work 
+is full of danger. Maybe teleworking would be better?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0040]
+It's not really practical to stay holed up in your apartment forever...
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_007_0050]
+Huh. I see your point! So it's safer to stay on the move, 
+especially with those people after us...
+[/message]
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0060]
+Exactly. Now, let's get to work—there's a lot to be done, 
+especially dealing with those people.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0070]
+First, I'll check with Iris to see how much of the department store 
+can be repaired and who we can save...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_007_0080]
+That's part of our job too, huh… 
+Shouldn't Arata Mizunashi be the one taking responsibility?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0090]
+I wish we could ask him to handle it, honestly—
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////////////////// Stop BGM
+[sound type=bgm state=stop]
+[delay sec=0.5]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+//////////////////////////////////////////////////////////////////// Camera shake
+[shake type=horizontal sec=0.5 pow=5 fade=false wait=false]
+[face id=100101 type=surprise]
+[face id=200102 type=surprise]
+
+// No standing portrait
+[message name=Mai Toyama charaid=200302 voice=05_007_0100]
+Aaaaahhhhhhーーーーーーー!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_007_0110]
+Mai's scream?! W-what's happening...?
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[move id=200102 posx=0.49 sec=0.5 wait=false]
+[move id=100101 posx=0.74 sec=0.5 wait=false]
+[delay sec=0.1]
+
+// Rottie and Yurisa enter
+[character id=200402 posx=0.25 anim=fade face=panic show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=05_007_0120]
+Ah, Sayaka! Director Shina, 
+good morning! Sorry, sorry!
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////////////////// BGM24
+[sound type=bgm state=play name=TalkB]
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0130]
+Good morning! Is something happening in the company?
+[/message]
+
+[message name=Rottie charaid=200402 voice=05_007_0140]
+Well, someone's hacking into the VR game we've been developing...!
+[/message]
+
+[character id=200402 anim=fade show=false wait=true]
+[character id=602601 posx=0.23 anim=rtol face=smile show=true wait=true]
+
+[message name=Akagi charaid=602601 voice=05_007_0150]
+The company's network has been down since this morning... 
+Time to slack off! Yay~♪
+[/message]
+
+[character id=602601 anim=rtol show=false wait=false]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0160]
+Akagi, I'm giving you a lecture later...
+[/message]
+
+[character id=200202 posx=0.24 anim=ltor face=panic show=true wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_007_0170]
+Ahh, I've been waiting for you, Sayaka! 
+We need you to debug the game right away… 
+Mai's tied up with dealing with the hacking!
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_007_0180]
+Mai-chan isn't a security expert! 
+Have you told President Glock about this!?
+[/message]
+
+// [face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_007_0190]
+Of course, Shina! 
+The entire network team is on it, but... 
+this attack is much stronger than anything before—
+[/message]
+
+// Sumika enters
+[character id=601101 posx=0.19 anim=ltor sec=0.3 face=painful show=true wait=false]
+// Move characters
+[move id=200202 posx=0.39 sec=0.3 wait=false]
+[move id=200102 posx=0.59 sec=0.3 wait=false]
+[move id=100101 posx=0.79 sec=0.3 wait=false]
+
+[message name=Sumika Tokiwa charaid=601101 voice=05_007_0200]
+Sayaka, I'm sorry! We're short on hands! 
+They're spreading a virus through the hacking! 
+Can you help debug the data and clear the bugs?!
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_007_0210]
+Now's not the time for excuses. 
+Debugger, reporting for duty!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+// [sound type=se state=stop]
+
+// Stop playing the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

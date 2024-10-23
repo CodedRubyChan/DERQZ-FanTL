@@ -1,0 +1,368 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_04_09_004
+// ##########################################################################//
+// Start
+// ##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter8]
+
+// Display specified background
+[image type=bg id=000410]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+// ##########################################################################//
+// Start
+// ##########################################################################//
+
+// BGM10
+// Background 410 / Collapsing Sao City
+
+[character id=200901 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200601 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=09_004_0010]
+Look! There are so many people over there!
+Maybe Shina is among them!
+[/message]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_004_0020]
+Wha, whoa!? 
+Looks like everyone is moving in the same direction.
+Someone is leading them at the front!
+[/message]
+
+// Chloe and Hinata OFF
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=200601 anim=fade show=false wait=true]
+
+[character id=601601 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200501 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Senji Hizumi charaid=601601 voice=09_004_0030]
+Alright, everyone! This is the evacuation route!!
+Listen, no panicking, okay?
+We'll keep you safe from the monsters!
+[/message]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0040]
+Impressive work, police force…!
+Even the civilians are following without hesitation.
+It's all thanks to your hard work, Dad!
+[/message]
+
+[face id=200501 type=confuse]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0050]
+*Sigh* On the other hand, 
+the mercenary squads I hired with all my money…
+[/message]
+
+// Speaker: Mercenary Leader
+// Male NPC 83
+
+[face id=200501 type=default]
+
+[message name=Mercenary Leader voice=09_004_0060]
+They've made their move! Coming in from the right!
+Watch yourselves, folks! Let's go!!
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=09_004_0070]
+Don't complain. We're in the middle of a battle against actual monsters here.
+They're doing their part. If it were just us,
+we wouldn't have been able to protect all these civilians…
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=09_004_0080]
+Also… my daughter stepping up and giving her best 
+has been a huge help, too!
+[/message]
+
+[face id=200501 type=default]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0090]
+No way, Dad…
+This form is just for show. 
+All I can manage is to fire my gun.
+[/message]
+
+// Chiri and G Clea appear
+
+[move id=200501 posx=0.25 wait=false]
+
+[character id=601601 anim=fade show=false wait=false]
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601501 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0100]
+Hmm, no casualties yet, huh?
+Quite an accomplishment.
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=09_004_0110]
+We are checking again to make sure no one is left behind.
+It would help if you could spare some personnel from the mercenary squad.
+[/message]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0120]
+Sure, no problem!
+They're all here to make money, so don't hold back.
+Though I might bill the police later…
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=09_004_0130]
+…Understood.
+We'll do our best to accommodate.
+[/message]
+
+[character id=601501 anim=fade show=false wait=false]
+[character id=601601 posx=0.75 anim=fade face=smile show=true wait=true]
+
+[message name=Senji Hizumi charaid=601601 voice=09_004_0140]
+Hahaha!
+Even in a time like this,
+you've got everything figured out, huh?
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=09_004_0150]
+…Kaede, I'm proud of you.
+Not running away, and even helping others.
+I'd be in tears if this weren't such a crisis…
+[/message]
+
+[face id=601601 type=default]
+[face id=200501 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0160]
+…Do you think Mom would be proud, too?
+[/message]
+
+[face id=500302 type=smile]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0170]
+Of course.
+She'd feel nothing but pride.
+And I'm sure you're looking forward to seeing her again at the hospital, right?
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0180]
+I'm also pleased to witness 
+the 'original's' efforts firsthand.
+[/message]
+
+[face id=200501 type=smile]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0190]
+Heh, I'm at a loss here.
+Hearing that from you almost makes it feel like Mom's talking…
+[/message]
+
+// Sayaka, Chloe, and Hinata appear
+
+[face id=500302 type=default]
+
+[character id=200501 anim=fade show=false wait=false]
+[character id=100103 posx=0.15 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_004_0200]
+Nice! You two standing together look just like the real thing!
+It's almost like a real mother-daughter scene,
+Kaede and Huuki!
+[/message]
+
+[face id=601601 type=smile]
+
+[message name=Senji Hizumi charaid=601601 voice=09_004_0210]
+Yo! What a day for a reunion…!
+But we're managing here, Sayaka!
+[/message]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0220]
+Hmm, so you've made it through safely, too, huh…
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_004_0230]
+Haha, 
+it's almost natural to see you 
+on 'this side' of things!
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0240]
+Well, yeah. I repaid my debt to the Master
+before yesterday…
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0250]
+I severed ties with him.
+On my own.
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=09_004_0260]
+I've seen firsthand the abnormalities of the higher layers.
+This is just
+the result of me deciding my own path.
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_004_0270]
+I'm glad you're safe too, Chiri!
+[/message]
+
+[character id=601601 anim=fade show=false wait=false]
+[character id=601501 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Chiri Sendo charaid=601501 voice=09_004_0280]
+…Yes.
+When you see my brother again, send my regards.
+[/message]
+
+[face id=100103 type=default]
+
+[character id=500302 anim=fade show=false wait=false]
+[character id=200501 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0290]
+Ahem. By the way… Sayaka! 
+For now, could you call me 'Clea' 
+just like in the game?
+[/message]
+
+[character id=601501 anim=fade show=false wait=false]
+[character id=200601 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_004_0300]
+Wow! You're really into it!
+Then I'll proudly introduce myself as 'Al'!
+[/message]
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=200901 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=09_004_0310]
+I see…
+‘Clea.'
+It's been a long time…
+[/message]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0320]
+Yeah.
+Looks like all your memories as a hero 
+have returned, huh?
+[/message]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0330]
+In that case, should we reenact
+that old line?
+'Let's fall together,' just like before…?
+[/message]
+
+[face id=200901 type=confuse]
+
+[message name=Chloe charaid=200901 voice=09_004_0340]
+…Don't make fun of me!
+I'm… 
+I'm back to my senses now…!
+[/message]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0350]
+I see… well,
+though you still sound a little unsure…
+[/message]
+
+[face id=200901 type=default]
+
+[message name=Chloe charaid=200901 voice=09_004_0360]
+If I show even the slightest hint of betrayal again,
+don't hesitate to
+shoot me down on the spot.
+[/message]
+
+[face id=200501 type=smile]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0370]
+That's the spirit. …No, pardon me.
+Then I'll trust my old friend once more, 'Celica'!
+[/message]
+
+[message name=Chloe charaid=200901 voice=09_004_0380]
+We're looking for 
+the others from Iris Corporation.
+Shina isn't here, is she?
+[/message]
+
+[face id=200501 type=default]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_004_0390]
+Unfortunately, no. We're about to get past
+the area where the monsters have been summoned.
+Once the civilians are evacuated, let's regroup!
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_004_0400]
+Right!
+See you later at Iris Corp!
+We'll meet again, Clea!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################//
+// End
+// ##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+// ##########################################################################//
+// End
+// ##########################################################################//
+//END

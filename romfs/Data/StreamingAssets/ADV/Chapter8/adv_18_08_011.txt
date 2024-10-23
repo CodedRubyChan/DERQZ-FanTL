@@ -1,0 +1,258 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_18_08_011
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+/////////////////////////////////////////////////////
+// Boss Hidden
+//[dungeon id=411001 type=Enemy show=true]
+/////////////////////////////////////////////////////
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter8]
+
+// Show the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+
+
+//In-dungeon conversation
+//Pre-boss battle dialogue
+
+[character id=100103 posx=0.2 anim=fade face=angry show=true wait=false]
+[character id=500202 posx=0.6 anim=fade face=default show=true wait=false]
+
+[character id=500402 posx=0.8 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0010]
+You made it all the way here, huh, Sayaka (￣‐￣). 
+You should already know by now, right? 
+Just how pathetic humans are.
+[/message]
+
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0020]
+You saw it just a moment ago. 
+Give them a little push, and they'll turn on each other. 
+They're truly the worst kind of creatures (｀Д´)ﾉ.
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0030]
+And more than that, this is a world created by Iris, right?
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0040]
+There's no value in risking your life to save them. 
+It's time you accepted that truth! ヾ(*｀Д´*)ノ
+[/message]
+
+// Change Sayaka's expression: Normal
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_018_0050]
+Maybe so. But I also learned, 
+back at the department store, 
+that humans have the strength to "bounce back."
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_018_0060]
+That's an idealistic view. 
+In truly dire situations, the virtues you believe in 
+will disappear.
+[/message]
+
+[character id=500402 anim=fade show=false wait=false]
+[character id=500502 posx=0.8 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=08_018_0070]
+In reality, this world is already beyond saving… 
+Even Eni's efforts to restore the city must have 
+reached their limit, right? Just give up already…
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0080]
+That's right! Just give up and 
+come over to "our side"! 
+Stop resisting! (￣へ ￣ 凸
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0090]
+I don't like you… but I'll allow you to join us.
+[/message]
+
+// Change Sayaka's expression: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_018_0100]
+Not yet! 
+Right now, I want to safely deliver the game 
+we're making at Iris to "this world."
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_018_0110]
+That's why, 
+I won't let Arata Mizunashi interfere! 
+And for that, I'm taking Hinata back!
+[/message]
+
+
+// Change Sayaka's expression: Confused
+[face id=100103 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_018_0120]
+Also, Kiki Amo, earlier you said that humans 
+are the worst kind of creatures. 
+Then, does that mean even 
+Svetlana is the worst too?
+[/message]
+
+
+// Change Amo's expression: Surprised
+[face id=500202 type=confuse]
+[message name=Kiki Amo charaid=500202 voice=08_018_0130]
+?…Oh, yes. 
+She's a pathetic old hag…
+[/message]
+
+// Change Sayaka's expression: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_018_0140]
+Then why did you 
+go out of your way to shield Svetlana 
+from me back then!?
+[/message]
+
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0150]
+……
+[/message]
+
+// Change Sayaka's expression: Normal
+[face id=100103 type=default]
+
+[character id=500502 anim=fade show=false wait=false]
+[character id=500402 posx=0.8 anim=fade face=default show=true wait=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_018_0160]
+Interesting. Even though our emotions 
+are somewhat controlled by Arata, 
+something like that happened…
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=08_018_0170]
+Shut up ρ(・д・*). 
+Or I'll want to kill you too.
+[/message]
+
+// Change Sayaka's expression: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_018_0180]
+Everyone has someone important to them…! 
+Even everyone here at this event does! 
+And so do you!! I won't let you get in the way!!
+[/message]
+
+// Change Amo's expression: Thoughts
+[face id=500202 type=thoughts]
+[message name=Kiki Amo charaid=500202 voice=08_018_0190]
+(-゛-ﾒ)
+You're pretty cocky, Sayaka. 
+I absolutely can't forgive this…
+[/message]
+
+// Change Amo's expression: Angry
+[face id=500202 type=angry]
+[message name=Kiki Amo charaid=500202 voice=08_018_0200]
+I've decided ((｀△´))… 
+I'm going to put an end to you today… 
+I'm going to "kill" you here! 
+No one else interfere!
+[/message]
+
+[character id=500402 anim=fade show=false wait=false]
+[character id=500502 posx=0.8 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=08_018_0210]
+O-okay… 
+I guess no one can object, so do as you please…
+[/message]
+
+// Change Sayaka's expression: Normal
+[face id=100103 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_018_0220]
+I'll take you on, Lucil! 
+I have a reason I can't lose!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Start the Boss Battle
+[bossbattle active=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

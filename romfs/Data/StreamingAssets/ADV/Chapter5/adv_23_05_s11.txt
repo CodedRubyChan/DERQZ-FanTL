@@ -1,0 +1,126 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_23_05_s11
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+[character id=601701 posx=0.33 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// After starting the department store dungeon exploration, 
+// if a game over occurs or you leave, 
+// you will be sent home and can return to the dungeon from the subway as usual.
+// This event triggers during such a return.
+// It does not occur if you have never left the dungeon.
+
+// Background 580 / Subway
+// BGM19
+
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=05_923_0010]
+You're late. 
+That 'Red Woman' has already gone ahead. 
+She's headed to the deepest part of the Strain Area tied to the department store.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_923_0020]
+What?! 
+Are you talking about Ripuka?! 
+What is she planning this time...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_923_0030]
+If she finds Liliana first... 
+I really don't know what she might do...
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_923_0040]
+She's the type to say everyone dying would be fun... 
+Ugh! 
+Why do I have to worry about this?!
+[/message]
+
+[message name=Snark charaid=601701 voice=05_923_0050]
+Then hurry. 
+There's nothing else you can do, is there?
+[/message]
+
+[message name=Snark charaid=601701 voice=05_923_0060]
+The only thing I can lend you is the path ahead. 
+Now and forever.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_923_0070]
+Y-You're right! That's enough! 
+No time to complain. I need to catch up fast!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing current sound effect
+[sound type=se state=stop]
+
+/////////////////////////// Stop playing background music
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

@@ -1,0 +1,143 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_12_09_011
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display specified background
+[image type=bg id=000580]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display the text window
+//[visible show=true]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//BGM1 / Subway
+//Background 580 / Subway
+
+[character id=600301 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=601701 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.1]
+
+// Display the text window
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=09_012_0010]
+The embodiment of destruction and her little sister are off to save the world once again.
+And this time, it's the final showdown.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_012_0020]
+Snark...
+Still just an observer, huh?
+You know, you could join the fight with us!
+[/message]
+
+[face id=601701 type=thoughts]
+
+[message name=Snark charaid=601701 voice=09_012_0030]
+I refuse.
+I won't use my power to change fate.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_012_0040]
+But you're letting us use the Strain Train!
+[/message]
+
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=09_012_0050]
+Heh, it's you who's changing your fate, not me.
+I'll enjoy watching the show from the front row.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=09_012_0060]
+Expecting anything from him is a waste.
+Let's just get this done.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_012_0070]
+We might've made up, but...
+I still don't trust you.
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=09_012_0080]
+You're the grudge-holding type, huh?
+As expected from my little sister.
+You really do have potential.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_012_0090]
+Potential for what...?
+Anyway, less talking, more moving!
+Get on already!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////Stop all playing SE
+[sound type=se state=stop]
+
+// Stop all playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

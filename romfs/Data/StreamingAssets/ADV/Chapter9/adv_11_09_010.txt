@@ -1,0 +1,943 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_11_09_010
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter4]
+
+// Display the specified background
+[image type=bg id=000410]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+//BGM06
+// Background 410 - Collapsed Sakai City
+
+// Display character: Arata Mizunashi
+// Specify face: Smile
+[character id=600201 posx=0.32 anim=fade face=smile show=true wait=false]
+
+// Display character: Sayaka Hiwatari
+// Specify face: Thoughtful
+[character id=100103 posx=0.66 anim=fade face=thoughts show=true wait=truefalse]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=09_011_0010]
+Now then, Sayaka-chan.
+It's decision time, folks!
+Answer time, here we go!!
+[/message]
+
+[message name=Arata charaid=600201 voice=09_011_0020]
+...So, what's it gonna be?!
+Does it end here?
+Or do you come with me?!
+[/message]
+
+// Sayaka - Blade change expression: Expectation
+[face id=100103 type=expectation]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_011_0030]
+...Haha.
+[/message]
+
+// Sayaka - Blade change expression: Anger
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_011_0040]
+...I'll have to decline. Even if it means disappearing...
+I won't join your side. Because Shina and the others are still here...
+[/message]
+
+// Arata Mizunashi change expression: Thoughtful
+[face id=600201 type=thoughts]
+[message name=Arata charaid=600201 voice=09_011_0050]
+...
+[/message]
+
+// Arata Mizunashi change expression: Confuse
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=09_011_0060]
+...What is that?
+[/message]
+
+// Arata Mizunashi change expression: Anger
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=09_011_0070]
+...Oh, is that so!
+Ohhhhhh, is that so!
+[/message]
+
+// Arata Mizunashi change expression: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=09_011_0080]
+Alright, got it.
+Then I guess it's "I'll kill you and take it," huh?
+Your destructive factor, not a speck left... Chuu♪
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Play SE: Slash
+[sound type=se name=Slash]
+
+[effect type=BloodReturn1 show=true wait=false auto_hide=false posx=0.66 posy=0.5 priority=FrontCutin]
+
+// Hide Sayaka temporarily
+[character id=100103 anim=fade sec=0.1 show=false wait=false]
+
+// Display character: Sayaka - change appearance
+// Specify face: Painful
+[character id=100104 posx=0.66 anim=fade sec=0.1 face=painful show=true wait=true]
+
+// Shake effect for Sayaka (surprise/shout)
+[shake target=chara id=100104 type=random sec=0.5 pow=5 fade=false wait=false]
+
+// Re-show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[effect type=BloodReturn1 show=false]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=09_011_0090]
+...Aaaaahhhhh!!
+[/message]
+
+// Arata Mizunashi change expression: Thoughtful
+[face id=600201 type=thoughts]
+[message name=Arata charaid=600201 voice=09_011_0100]
+Ahhh, if it was going to end up like this, I should've
+absorbed it sooner. Well, I waited for it to grow, so be grateful?
+[/message]
+
+[message name=Arata charaid=600201 voice=09_011_0110]
+Extraction complete in 1 minute,
+...30... 8...7... 2...
+[/message]
+
+// Shake effect for Sayaka (surprise/shout)
+[shake target=chara id=100104 type=random sec=0.5 pow=5 fade=false wait=false]
+[message name=Sayaka Hiwatari charaid=100104 voice=09_011_0120]
+Ugh...uuuuhhh!!!!!!
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Arata Mizunashi change expression: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=09_011_0130]
+Alright, extraction complete.
+Haha, and now...
+[/message]
+
+// Arata Mizunashi change expression: Smile
+[face id=600201 type=smile]
+[message name=Arata charaid=600201 voice=09_011_0140]
+Overwriting it onto me!!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Play loading SE
+[sound type=se name=Completerode]
+// Screen shake effect
+[shake type=random sec=1.5 pow=25 fade=true wait=true]
+
+// Stop all SEs
+[sound type=se state=stop]
+
+// Re-show the text window
+[delay sec=0.1]
+[visible show=true]
+
+// Arata Mizunashi change expression: Default
+[face id=600201 type=default]
+[message name=Arata charaid=600201 voice=09_011_0150]
+Ahhh, ate it all up!!!
+Now the best data from Ripuka is mine...
+[/message]
+
+// Arata Mizunashi change expression: Confuse
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=09_011_0160]
+...
+Huh?
+[/message]
+
+[message name=Arata charaid=600201 voice=09_011_0170]
+W-Wait a minute,
+[/message]
+
+// Screen shake
+[shake type=random sec=1 pow=10 fade=true wait=false]
+
+// Arata Mizunashi change expression: Painful
+[face id=600201 type=painful]
+[message name=Arata charaid=600201 voice=09_011_0180]
+H-Hey?
+W-What's going on here?!
+[/message]
+
+// BGM10
+[sound type=bgm state=play name=Chapter8]
+
+// Hide Sayaka
+[character id=100104 anim=fade show=false wait=false]
+
+// Display character: Naraku Morikubo
+// Specify face: Surprise
+[character id=500402 posx=0.65 anim=fade face=confuse show=true wait=false]
+
+// Display character: Falena
+// Specify face: Surprise
+[character id=500502 posx=0.85 anim=fade face=confuse show=true wait=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0190]
+...What happened?
+[/message]
+
+// Arata Mizunashi change expression: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=09_011_0200]
+You gotta be kidding me?!
+Sayaka's power definitely came into me, but...
+[/message]
+
+[message name=Falena charaid=500502 voice=09_011_0210]
+...?
+[/message]
+
+// Arata Mizunashi change expression: Painful
+[face id=600201 type=painful]
+[message name=Arata charaid=600201 voice=09_011_0220]
+It's level 1?!
+She's in her weakest state?!
+[/message]
+
+// Naraku change expression: Thoughtful
+[face id=500402 type=thoughts]
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0230]
+...Impossible. When we fought her, her level was much higher...
+[/message]
+
+// Arata Mizunashi change expression: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=09_011_0240]
+This means I've overwritten myself to be the weakest...
+What did you do?! This is... this is a virus?!
+[/message]
+
+// Evil Spirit ON
+// Hide Naraku and Falena
+[character id=500402 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[character id=602001 posx=0.75 anim=fade face=smile show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=09_011_0250]
+――Task Accomplished
+[/message]
+//09_011_0260 ,09_011_0270 - Combined voice
+
+// Evil Spirit OFF
+[character id=602001 anim=fade show=false wait=true]
+
+// Display character: Sayaka - change appearance
+// Specify face: Surprise
+[character id=100104 posx=0.85 anim=fade face=surprise show=true wait=true]
+
+// Arata Mizunashi change expression: Painful
+[face id=600201 type=painful]
+[message name=Arata charaid=600201 voice=09_011_0280]
+...W-Who are you?!
+[/message]
+
+// Sayaka - change appearance: Smile
+[face id=100104 type=smile]
+[message name=Sayaka Hiwatari charaid=100104 voice=09_011_0290]
+Yay! I didn't do anything.
+Maybe it was my partner who did it.
+Or maybe... it was that spirit we just saw!
+[/message]
+
+// Sayaka - change appearance: Anger
+[face id=100104 type=angry]
+[message name=Sayaka Hiwatari charaid=100104 voice=09_011_0300]
+Haha. Cough... cough...
+Looks like the tables have turned!
+[/message]
+
+// Display character: Shina Ninomiya - transformed
+// Specify face: Surprise
+[character id=200101 posx=0.65 anim=fade face=surprise show=true wait=true]
+
+// @Shina Ninomiya - transformed
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0310]
+I can't believe it!
+[/message]
+
+// Arata Mizunashi change expression: Angry
+[face id=600201 type=angry]
+[message name=Arata charaid=600201 voice=09_011_0320]
+Unbelievable!
+Just a moment ago, her level was up, right?!
+Right?!
+[/message]
+
+// Screen shake
+[shake type=random sec=1 pow=10 fade=true wait=false]
+
+// Arata Mizunashi change expression: Painful
+[face id=600201 type=painful]
+[message name=Arata charaid=600201 voice=09_011_0330]
+What, what the hell is going on?!?!
+[/message]
+
+// Hide Sayaka and Shina
+[character id=100104 anim=fade show=false wait=false]
+[character id=200101 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Rin Asukaze appears
+
+// Display character: Rin Asukaze
+// Specify face: Confuse
+[character id=600401 posx=0.65 anim=fade face=confuse show=true wait=false]
+
+// Display character: Naraku Morikubo
+// Specify face: Default
+[character id=500402 posx=0.85 anim=fade face=default show=true wait=true]
+
+[message name=Rin Asukaze charaid=600401 voice=09_011_0340]
+Wait, Arata-kun?! We're behind on schedule.
+We need to destroy the Uppermost World quickly...
+[/message]
+
+// Rin Asukaze change expression: Panic
+[face id=600401 type=panic]
+[message name=Rin Asukaze charaid=600401 voice=09_011_0350]
+Eh... What... what happened?!
+Are you okay, Arata-kun?!
+[/message]
+
+// Arata Mizunashi change expression: Confuse
+[face id=600201 type=confuse]
+[message name=Arata charaid=600201 voice=09_011_0360]
+R-R-Rin-chan...
+I'm...I'm figuring it out...
+[/message]
+
+// Naraku change expression: Confuse
+[face id=500402 type=confuse]
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0370]
+Ah, Rin-san.
+Just in time. Actually――
+[/message]
+
+[character id=600401 anim=fade show=false wait=false]
+[character id=500502 posx=0.65 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=09_011_0380]
+Haha... Hey Naraku.
+They have people coming over there, too.
+[/message]
+
+[face id=500402 type=painful]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0390]
+Ugh...
+[/message]
+
+// BGM 1
+[sound type=bgm state=play name=TitleGallery]
+
+[character id=600201 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.1]
+[character id=600601 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=100104 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200301 posx=0.79 anim=fade face=default show=true wait=true]
+
+[message name=President Iris charaid=600601 voice=09_011_0400]
+Sayaka, Shina, Mai!!
+Sending the rest of the Eni!!
+Take it!!!
+[/message]
+
+// Heal SE
+[sound type=se name=heal]
+
+[face id=100104 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100104 voice=09_011_0410]
+...President!!
+[/message]
+
+[face id=200301 type=surprise]
+
+[message name=Mai Higashiyama charaid=200301 voice=09_011_0420]
+My...my arm...!
+I'm... back to normal...
+[/message]
+
+[character id=600601 anim=fade show=false wait=false]
+[character id=200101 posx=0.25 anim=fade face=smile show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0430]
+Everyone!!!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Screen flash
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.3 color=white]
+
+// Play teleport SE
+[sound type=se name=Teleport]
+[character id=200101 anim=fade show=false wait=false]
+[character id=100104 anim=fade show=false wait=false]
+[character id=200301 anim=fade show=false wait=true]
+[delay sec=0.1]
+[character id=200601 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=200201 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200901 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Re-show the text window
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_011_0440]
+Director Shina!!
+[/message]
+
+[face id=200201 type=smile]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_011_0450]
+I wanted to see you...
+Idiot!! You made it through, right Arata's crying, so I guess it worked?!
+[/message]
+
+// Chloe - transform change expression
+[face id=200901 type=confuse]
+
+[message name=Chloe charaid=200901 voice=09_011_0460]
+Sayaka, seriously,
+sneaking off...! You almost got yourself killed?
+You're so pathetic...
+[/message]
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=200901 anim=fade show=false wait=true]
+[delay sec=0.1]
+[character id=200801 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=200501 posx=0.79 anim=fade face=default show=true wait=true]
+
+[message name=Svetlana Amano charaid=200801 voice=09_011_0470]
+Kimata express...
+Key members, warp success!
+[/message]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_011_0480]
+'Shina', 'Lily', 'Al',
+'Clea', 'Lucil', 'Celica'
+Alright, finally... we're all here...!
+[/message]
+
+// Yurisa - transform change expression
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_011_0490]
+Shina, sorry for making you come out...
+But...
+[/message]
+
+[character id=200801 anim=fade show=false wait=false]
+[character id=200201 anim=fade show=false wait=true]
+[delay sec=0.1]
+[character id=600601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200101 posx=0.25 anim=fade face=default show=true wait=true]
+
+[message name=President Iris charaid=600601 voice=09_011_0500]
+Can you do it?
+Shina... Mai?
+[/message]
+
+// Shina - transform change expression
+[face id=200101 type=angry]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0510]
+Of course!!
+We'll use the strain area property to stop the city's area conversion!!
+[/message]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0520]
+Everyone,
+You've got the data, right?!
+[/message]
+
+// Kaede - transform change expression
+[face id=200501 type=angry]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_011_0530]
+Yeah. Here it is.
+CEO Glock and Ripuka protected it.
+The USB containing all the DLC data we were developing!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.3]
+// Zoom into the background
+[camera type=zoom pivot=9 fov=0.5 sec=0.1 active=true wait=true]
+
+[character id=200101 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200501 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.05]
+// Zoom into the background
+[camera type=zoom pivot=11 fov=0 sec=60 active=true wait=false]
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.3]
+
+// Re-show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0540]
+Alright!
+Lily, Al, Clea, Lucil, Celica!
+Raise your hands to the sky――!
+[/message]
+
+// Temporary hide text window
+[visible show=false]
+// Wait for a short delay
+[delay sec=0.1]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.3]
+// Background zoom
+[camera type=zoom pivot=10 fov=0.55 sec=0.1 active=true wait=true]
+
+// Display CG illustration 20
+[image type=still id=100020 show=true fade=false]
+// Wait for a short delay
+[delay sec=0.05]
+// Background zoom
+[camera type=zoom pivot=11 fov=0 sec=15 active=true wait=false]
+// Disable camera zoom
+[camera type=zoom sec=30 active=false wait=false]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.3]
+
+// Keyboard sound effect
+[sound type=se name=Keyboard]
+
+// Re-show text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0550]
+Project it as VR, Strain Area!
+It's the new DLC story!
+This world will welcome a new beginning!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Stop any currently playing SE
+[sound type=se state=stop]
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.3]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.3]
+
+// Re-show text window
+[delay sec=0.1]
+[visible show=true]
+
+// Disable camera zoom
+[camera type=zoom sec=0.1 active=false wait=false]
+
+// Code attack SE
+[sound type=se name=Laser]
+// Code attack effect
+[effect type=CodeAttack show=true wait=true auto_hide=true posx=0.5 posy=0 priority=FrontCutin]
+
+[message name=Mai Higashiyama charaid=200302 voice=09_011_0560]
+Data...
+It's been uploaded!
+To the sky...!!
+[/message]
+
+// Temporary hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.3]
+[sound type=se name=Gamedata]
+
+// Display CG illustration 20
+[image type=still id=100020 show=true fade=false]
+// Camera zoom
+[camera type=zoom pivot=10 fov=0.5 sec=0.05 active=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.3]
+
+[delay sec=0.1]
+
+// Disable camera zoom
+[camera type=zoom sec=0.3 active=false wait=true]
+
+[delay sec=2]
+
+// Stop any currently playing SE
+[sound type=se state=stop]
+
+// Display background 440
+[image type=bg id=000440 show=true]
+[image type=still id=100020 show=false]
+
+[sound type=se name=Onoff]
+
+// Wait a few seconds
+[delay sec=2.0]
+
+// Display background 430
+
+[image type=bg id=000430 show=true]
+[delay sec=2.0]
+
+[character id=600201 posx=0.19 anim=fade face=painful show=true wait=false]
+[character id=600401 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Display background 410 / Ruined Sajo City
+[image type=bg id=000410 show=true]
+
+// Re-show text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600401 type=confuse]
+
+[message name=Rin Asukaze charaid=600401 voice=09_011_0570]
+Eh... The city...
+It's starting to restore itself...?!
+[/message]
+
+[face id=500402 type=painful]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0580]
+This is bad... The gate you passed through, Rin-san,
+has closed.
+We can't summon more Strangers...
+[/message]
+
+[face id=600201 type=painful]
+
+[message name=Arata charaid=600201 voice=09_011_0590]
+Waaahhhhh?!?!
+Stop, stop it?!
+At this rate, the plan will fail?!
+[/message]
+
+[face id=600401 type=painful]
+
+[message name=Rin Asukaze charaid=600401 voice=09_011_0600]
+Arata-kun, Arata-kun?!
+Calm down!! I'll protect you!!
+I'll protect you... okay... Let's just give up on Sayaka...
+[/message]
+
+[face id=600201 type=angry]
+
+[message name=Arata charaid=600201 voice=09_011_0610]
+Ugh... uuuuuh――
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[character id=600201 anim=fade show=false wait=false]
+[move id=600401 posx=0.6 wait=false]
+[move id=500402 posx=0.8 wait=false]
+
+[character id=200601 posx=0.2 anim=fade face=surprise show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_011_0620]
+Oh! Is this... finally... game over?
+[/message]
+
+[face id=600401 type=angry]
+
+[message name=Rin Asukaze charaid=600401 voice=09_011_0630]
+You... You made my Arata-kun suffer!!
+I'll make you regret this...!!
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0640]
+Wait a moment. I'll gather the remaining Strangers
+here at once.
+For now, let's retreat to our base.
+[/message]
+
+[face id=600401 type=thoughts]
+
+[message name=Rin Asukaze charaid=600401 voice=09_011_0650]
+Hmph! You're clever...
+But you're right...
+Let's go, Arata-kun...
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0660]
+Falena! You come too.
+[/message]
+
+[character id=600401 anim=fade show=false wait=false]
+[character id=500502 posx=0.6 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=09_011_0670]
+Y-Yes... I'll go with you...
+[/message]
+
+// BGM34 plays
+[sound type=bgm state=play name=DeathEnd]
+
+[character id=500502 anim=ltor show=false wait=false]
+[character id=200901 posx=0.4 anim=fade face=sad show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=09_011_0680]
+What?!
+Why... Falena!! Come back...!!!
+[/message]
+
+[face id=200601 type=sad]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_011_0690]
+Koma-chan...!! It's over...
+The fight is over...
+Why are you still clinging to Arata?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0700]
+Heh... Hinata-chan. Why don't you come over...
+to the other side, with us?
+[/message]
+
+[face id=200601 type=confuse]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_011_0710]
+Huh...?
+[/message]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=200501 posx=0.4 anim=fade face=confuse show=true wait=true]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_011_0720]
+N-No way, I'm not going!
+I'm not going anywhere!
+[/message]
+
+// Kaede change expression
+[face id=200501 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200501 voice=09_011_0730]
+Seriously... are we still doing this?
+Can't you see there's no gain in it?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0740]
+Even if the world returns to normal, it won't matter.
+We... we don't have much time left, after all.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=09_011_0750]
+And, Falena... Gltich Celica is powerful.
+Don't think you've won just yet...
+[/message]
+
+// Hide characters
+[character id=500402 anim=fade show=false wait=false]
+[character id=200801 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Svetlana Amano charaid=200801 voice=09_011_0760]
+...You stubborn fool...
+[/message]
+
+// SE - Big Enemy Attack
+[sound type=se name=0069_BigEnemyAttack_Q]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=200501 anim=fade show=false wait=false]
+[character id=200801 anim=fade show=false wait=true]
+[delay sec=0.1]
+[character id=200201 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=100103 posx=0.49 anim=fade face=panic show=true wait=false]
+[character id=200101 posx=0.79 anim=fade face=default show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_011_0770]
+Everyone, the Strangers' forces are approaching.
+We can't afford to stay here...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_011_0780]
+Not now...!
+We can't let them escape...!
+[/message]
+
+// Shina - transform change expression
+[face id=200101 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0790]
+Right...
+Understood...
+As the director, I command you.
+[/message]
+
+// Shina - transform change expression
+[face id=200101 type=angry]
+
+// Play BGM31
+[sound type=bgm state=play name=TalkI]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0800]
+Sayaka and, Basilissa
+chase after Arata and his group!
+We'll create a path to the subway!
+[/message]
+
+// Characters appear
+[character id=200201 anim=fade show=false wait=true]
+[character id=600301 posx=0.19 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=09_011_0810]
+...Ciao♪
+Isn't it cruel to make me walk? Well,
+I know I'm not a main character in World's Odyssey.
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_011_0820]
+Huh...
+With you, huh...
+[/message]
+
+[message name=Shina Ninomiya charaid=200101 voice=09_011_0830]
+You two are the only ones who can reach the heart
+of the Strain Area...
+Please, I believe in you!
+[/message]
+
+[character id=200101 anim=fade show=false wait=false]
+[character id=200302 posx=0.85 anim=fade face=panic show=true wait=true]
+
+[message name=Mai Higashiyama charaid=200302 voice=09_011_0840]
+We weren't good enough to finish this... Sorry...
+But I know you can do it...!
+[/message]
+
+// Sayaka change expression
+[face id=100101 type=angry]
+
+// Character shake
+[shake target=chara id=100103 type=vertical sec=0.2 pow=10 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_011_0850]
+Got it!
+If Shina and Mai say so, then I'm in!
+[/message]
+
+// Sayaka - Blade change expression
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_011_0860]
+Let's go!! The final showdown!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop all SE
+[sound type=se state=stop]
+
+// Stop all BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
+
+

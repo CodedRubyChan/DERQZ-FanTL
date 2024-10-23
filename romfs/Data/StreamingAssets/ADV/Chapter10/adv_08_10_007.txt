@@ -1,0 +1,806 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_08_10_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM24 / Serious Scene
+// Background 430 / Crossroads - Normal
+
+// Unlocks after Sayaka reaches a specific floor in the final dungeon
+
+[character id=200602 posx=0.5 anim=fade face=default show=true wait=true]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0010]
+Oh. Is that...?
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata OFF
+[character id=200602 anim=fade show=false wait=true]
+
+// Basilissa and Rottie appear
+[character id=200402 posx=0.33 anim=fade face=angry show=true wait=false]
+[character id=600301 posx=0.66 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=10_008_0020]
+Oh, Basilissa! You're only supposed to see me off,
+so please let me just do that quietly!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0030]
+I know. I'm happy you're seeing me off
+outside of Iris Inc., but...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Move characters
+[move id=200402 posx=0.2 sec=0.5 wait=false]
+[move id=600301 posx=0.79 sec=0.5 wait=false]
+
+// Cut-in 06 displayed
+[cutin id=000006 type=fade sec=0.5 show=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=10_008_0040]
+If you were to bring a Stranger,
+they'd be shocked, you know...
+A pity I couldn't kill it.
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=10_008_0050]
+...Trembling.
+I-I am not a bad Stranger...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0060]
+It's hard to believe that, looking like that.
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=200402 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Rottie expression change
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=10_008_0070]
+She's more compact now, really!
+Iris helped improve her a lot...
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=10_008_0080]
+Yes, thanks to her, I can live here.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[cutin id=000006 type=fade sec=0.5 show=false]
+/////////////////////////////////////////////////////////////////////////////////////////////////// Sanae Toyama appears
+[character id=601401 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sanae Toyama charaid=601401 voice=10_008_0090]
+Hehe. But, it's sad, Rottie...We have to go now, too.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM stops
+[sound type=bgm state=stop]
+
+////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Rottie expression change
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=10_008_0100]
+Yeah, you're right, Sanae!
+My mom finally made it to Japan, and now...
+we'll be apart again.
+[/message]
+
+// Rottie - Transform expression change
+[face id=200401 type=confuse]
+
+[message name=Rottie charaid=200402 voice=10_008_0110]
+I'm such a bad daughter...
+[/message]
+
+// No sprites
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0120 lipsync=false]
+(Wh-what's going on?
+Something seems off...)
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// @Great Sage Paraninas
+[character id=600301 anim=fade show=false wait=false]
+[character id=200103 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Rottie expression change
+[face id=200402 type=confuse]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0130]
+――Sorry to keep you waiting.
+[/message]
+
+// No sprites
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0140]
+...Director Shina!?
+[/message]
+
+// @Great Sage Paraninas
+
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0150]
+Let's get straight to it: "Let's go."
+Both of you, you're ready for the journey, right?
+[/message]
+
+// Rottie expression change
+[face id=200402 type=angry]
+
+[message name=Rottie charaid=200402 voice=10_008_0160]
+Yes, if it's to save Mai...
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=200402 posx=0.25 wait=false]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sanae Toyama charaid=601401 voice=10_008_0170]
+Yes. I'm going to help my sister in that world. So...
+[/message]
+
+// @Great Sage Paraninas
+
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0180]
+Don't worry about this world.
+Leave it to me. Right, Ripuka?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Remove Rottie, Shina, and Sanae
+[character id=200402 anim=fade show=false wait=false]
+[character id=200103 anim=fade show=false wait=false]
+[character id=601401 anim=fade show=false wait=true]
+
+// Basilissa appears
+[character id=600301 posx=0.5 anim=fade face=default show=true wait=true]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=10_008_0190]
+Ah, yes, yes――
+As you wish.
+[/message]
+
+[character id=600301 anim=fade show=false wait=true]
+// Basilissa exit
+
+[character id=200103 posx=0.49 anim=fade face=default show=true wait=false]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0200]
+Well then, children of fate,
+we'll meet again at the rifts of time and branches of destiny!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+
+[character id=200402 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601401 posx=0.74 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Screen shake Mirror
+[sound type=se name=Mirror]
+
+// Background 440 / Crossroads - Slight Mutation
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+[image type=bg id=000440 show=true]
+
+// Hide everyone except Basilissa
+[character id=200402 anim=btot show=false wait=false]
+[character id=200103 anim=btot show=false wait=false]
+[character id=601401 anim=btot show=false wait=true]
+
+// Brief pause
+[delay sec=2.0]
+
+// Background 430 / Crossroads - Normal
+[image type=bg id=000430 show=true]
+
+// Brief pause
+[delay sec=2.0]
+
+[character id=200602 posx=0.66 anim=rtol face=confuse show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0210]
+U-uhh!?
+Where... where did everyone go?
+[/message]
+
+[character id=600301 posx=0.33 anim=ltor face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=10_008_0220]
+Oh, it's you, Al.
+You saw that, huh?
+[/message]
+
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0230]
+Umm, they disappeared! Four of them, th-they...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0240]
+...You're already forgetting who they were,
+aren't you?
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0250]
+Uh, huh? Wait...
+I-I at least remember Shina was here! I remember!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0260]
+That's right. But try to forget about her quickly.
+She's dangerous.
+Even I can tell you that...
+[/message]
+
+///////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Basilissa OFF
+// Stop BGM
+
+[character id=600301 anim=fade show=false wait=false]
+[move id=200602 posx=0.5 wait=false]
+
+[face id=200602 type=thoughts]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0270]
+......
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0280]
+...Huh? What was I...
+doing here again?
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0290]
+...Oh right. I need to find Naraku!
+Maybe she's at the library...?
+I'd better hurry!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_08_10_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM24 / Serious Scene
+// Background 430 / Crossroads - Normal
+
+// Unlocks after Sayaka reaches a specific floor in the final dungeon
+
+[character id=200602 posx=0.5 anim=fade face=default show=true wait=true]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0010]
+Oh. Is that...?
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata OFF
+[character id=200602 anim=fade show=false wait=true]
+
+// Basilissa and Rottie appear
+[character id=200402 posx=0.33 anim=fade face=angry show=true wait=false]
+[character id=600301 posx=0.66 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=10_008_0020]
+Oh, Basilissa! You're only supposed to see me off,
+so please let me just do that quietly!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0030]
+I know. I'm happy you're seeing me off
+outside of Iris Inc., but...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Move characters
+[move id=200402 posx=0.2 sec=0.5 wait=false]
+[move id=600301 posx=0.79 sec=0.5 wait=false]
+
+// Cut-in 06 displayed
+[cutin id=000006 type=fade sec=0.5 show=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=10_008_0040]
+If you were to bring a Stranger,
+they'd be shocked, you know...
+A pity I couldn't kill it.
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=10_008_0050]
+...Trembling.
+I-I am not a bad Stranger...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0060]
+It's hard to believe that, looking like that.[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=200402 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+// Rottie expression change
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=10_008_0070]
+She's more compact now, really!
+Iris helped improve her a lot...
+[/message]
+
+// Speaker: Girl's Heart
+// @Female Mob 20
+
+[message name=Girl's Heart voice=10_008_0080]
+Yes, thanks to her, I can live here.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[cutin id=000006 type=fade sec=0.5 show=false]
+/////////////////////////////////////////////////////////////////////////////////////////////////// Sanae Toyama appears
+[character id=601401 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sanae Toyama charaid=601401 voice=10_008_0090]
+Hehe. But, it's sad, Rottie...We have to go now, too.[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM stops
+[sound type=bgm state=stop]
+
+////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Rottie expression change
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=10_008_0100]
+Yeah, you're right, Sanae!
+My mom finally made it to Japan, and now...
+we'll be apart again.
+[/message]
+
+// Rottie - Transform expression change
+[face id=200401 type=confuse]
+
+[message name=Rottie charaid=200402 voice=10_008_0110]
+I'm such a bad daughter...
+[/message]
+
+// No sprites
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0120 lipsync=false]
+(Wh-what's going on?
+Something seems off...)
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// @Great Sage Paraninas
+[character id=600301 anim=fade show=false wait=false]
+[character id=200103 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Rottie expression change
+[face id=200402 type=confuse]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0130]
+――Sorry to keep you waiting.
+[/message]
+
+// No sprites
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0140]
+...Shina Director!?
+[/message]
+
+// @Great Sage Paraninas
+
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0150]
+Let's get straight to it: "Let's go."
+Both of you, you're ready for the journey, right?
+[/message]
+
+// Rottie expression change
+[face id=200402 type=angry]
+
+[message name=Rottie charaid=200402 voice=10_008_0160]
+Yes, if it's to save Mai...
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=200402 posx=0.25 wait=false]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sanae Toyama charaid=601401 voice=10_008_0170]
+Yes. I'm going to help my sister in that world. So...
+[/message]
+
+// @Great Sage Paraninas
+
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0180]
+Don't worry about this world.
+Leave it to me. Right, Ripuka?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Remove Rottie, Shina, and Sanae
+[character id=200402 anim=fade show=false wait=false]
+[character id=200103 anim=fade show=false wait=false]
+[character id=601401 anim=fade show=false wait=true]
+
+// Basilissa appears
+[character id=600301 posx=0.5 anim=fade face=default show=true wait=true]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=10_008_0190]
+Ah, yes, yes――
+As you wish.
+[/message]
+
+[character id=600301 anim=fade show=false wait=true]
+// Basilissa exit
+
+[character id=200103 posx=0.49 anim=fade face=default show=true wait=false]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200103 voice=10_008_0200]
+Well then, children of fate,
+we'll meet again at the rifts of time and branches of destiny!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+
+[character id=200402 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601401 posx=0.74 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+// Screen shake Mirror
+[sound type=se name=Mirror]
+
+// Background 440 / Crossroads - Slight Mutation
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+[image type=bg id=000440 show=true]
+
+// Hide everyone except Basilissa
+[character id=200402 anim=btot show=false wait=false]
+[character id=200103 anim=btot show=false wait=false]
+[character id=601401 anim=btot show=false wait=true]
+
+// Brief pause
+[delay sec=2.0]
+
+// Background 430 / Crossroads - Normal
+[image type=bg id=000430 show=true]
+
+// Brief pause
+[delay sec=2.0]
+
+[character id=200602 posx=0.66 anim=rtol face=confuse show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0210]
+U-uhh!?
+Where... where did everyone go?
+[/message]
+
+[character id=600301 posx=0.33 anim=ltor face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=10_008_0220]
+Oh, it's you, Al.
+You saw that, huh?
+[/message]
+
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0230]
+Umm, they disappeared! Four of them, th-they...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0240]
+...You're already forgetting who they were,
+aren't you?
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0250]
+Uh, huh? Wait...
+I-I at least remember Shina was here! I remember!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=10_008_0260]
+That's right. But try to forget about her quickly.
+She's dangerous.
+Even I can tell you that...
+[/message]
+
+///////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Basilissa OFF
+// Stop BGM
+
+[character id=600301 anim=fade show=false wait=false]
+[move id=200602 posx=0.5 wait=false]
+
+[face id=200602 type=thoughts]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0270]
+......
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0280]
+...Huh? What was I...
+doing here again?
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_008_0290]
+...Oh right. I need to find Naraku!
+Maybe she's at the library...?
+I'd better hurry!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

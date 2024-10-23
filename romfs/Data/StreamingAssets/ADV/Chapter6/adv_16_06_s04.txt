@@ -1,0 +1,340 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+//adv_16_06_s04
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+// Display specified background
+[image type=bg id=000290]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//BGM02
+//Background 290 / Orphanage (Now Aphesis Cult)
+
+// Show text window
+[visible show=true]
+[message]
+A few hours ago――
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=1]
+
+// Show Mai
+[character id=200302 posx=0.2 face=panic anim=rtol show=true wait=false]
+// Show Rottie
+[character id=200402 posx=0.5 face=panic anim=rtol show=true wait=false]
+// Show Liliana
+[character id=200702 posx=0.8 face=panic anim=rtol show=true wait=true]
+
+// Show text window again
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=06_916_0010]
+*Panting*...
+Looks like the poison gas won't reach here.
+[/message]
+
+// Rottie expression change
+[face id=200402 type=surprise]
+[message name=Rottie charaid=200402 voice=06_916_0020]
+...Wait, Mai-chan!
+Saya-chan isn't here!
+Saya-chan is missing!
+[/message]
+
+// Liliana expression change
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_916_0030]
+She went after those people...
+alone, into the Strain Area...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_916_0040]
+That's... that's suicidal!
+Saya, why would you do something so reckless!
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_916_0050]
+Mai-chan, we have to hurry and go save her!
+[/message]
+
+// Liliana expression change
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_916_0060]
+That's impossible!
+That room is still filled with poison gas!
+If we go, we won't make it out safely either!
+[/message]
+
+// Rottie expression change
+[face id=200402 type=angry]
+[message name=Rottie charaid=200402 voice=06_916_0070]
+Even so, even so, I have to go!
+[/message]
+
+// Liliana expression change
+[face id=200702 type=sad]
+
+// Mai expression change
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_916_0080]
+No, we can't. I'm sorry.
+I can't let you go when I know you'll die.
+[/message]
+
+// Rottie expression change
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_916_0090]
+Mai-chan!
+[/message]
+
+// Mai expression change
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_916_0100]
+I don't want to let Saya die either!
+But... but...
+[/message]
+
+// Rottie expression change
+[face id=200402 type=sad]
+[message name=Rottie charaid=200402 voice=06_916_0110]
+I was saved by Saya-chan, you know?
+She saved me from deep inside the Strain Area.
+[/message]
+
+// Rottie expression change
+[face id=200402 type=angry]
+[message name=Rottie charaid=200402 voice=06_916_0120]
+So how could Rottie just abandon Saya-chan...
+I can't do that!
+[/message]
+
+// Mai expression change
+[face id=200302 type=surprise]
+[message name=Mai Toyama charaid=200302 voice=06_916_0130]
+Rottie...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=1]
+
+// Mai expression change
+[face id=200302 type=thoughts]
+
+// Stop BGM
+[sound type=bgm state=stop]
+// Stop currently playing BGM
+
+// Wait for the specified number of seconds
+[delay sec=1]
+
+// Show text window again
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=06_916_0140]
+I'm so useless, aren't I?
+I promised I'd never make Rottie sad again,
+but here I am, making her cry.
+[/message]
+
+// Liliana expression change
+[face id=200702 type=confuse]
+
+// Rottie expression change
+[face id=200402 type=confuse]
+
+// Mai expression change
+[face id=200302 type=default]
+[message name=Mai Toyama charaid=200302 voice=06_916_0150]
+I need to let go of this pathetic, weak self.
+A promise that can't be kept is meaningless.
+[/message]
+
+// Mai expression change
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_916_0160]
+That's why, I need... I need power!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_916_0170]
+So I can stop making Rottie sad!
+So I can save my precious friends!
+I need power!
+[/message]
+
+// Hide text window
+[visible show=false]
+
+//////////////////////////////////////////////////////////////BGM13
+[sound type=bgm state=play name=BossChapter1_2_5_6]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Red screen filter
+[filter type=Red show=true]
+// Blood effect
+/////////////////////////////////////////////////////////////////Bleeding effect
+[sound type=se name=Chairprotrusions]
+[effect type=BloodLarge1 show=true wait=false auto_hide=false posx=0.5 posy=0.5 priority=FrontCutin]
+/////////////////////////////////////////////////////////////////Blood splatter effect
+[effect type=BloodReturn3 show=true wait=true auto_hide=false posx=0.5 posy=0.5 priority=FrontCutin]
+
+// Mai expression change
+[face id=200302 type=default]
+
+// Wait for the specified number of seconds
+[delay sec=0.3]
+
+// Hide blood effects
+[effect type=BloodLarge1 show=false]
+[effect type=BloodReturn3 show=false]
+// Remove screen filter
+[filter show=false]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.3]
+
+// Show text window again
+[visible show=true]
+// Rottie expression change
+[face id=200402 type=surprise]
+[message name=Rottie charaid=200402 voice=06_916_0180]
+Mai-chan?
+[/message]
+
+// Liliana expression change
+[face id=200702 type=painful]
+[message name=Liliana charaid=200702 voice=06_916_0190]
+The aura of crimson blood?!
+This is bad... is the Demon Lord's power
+awakening at this very moment...?
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_916_0200]
+Rottie, step away from Mai right now!
+Immediately! It's dangerous!
+That's not Mai anymore!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_916_0210]
+...Calm down, Liliana.
+I am me. I'm fully conscious.
+[/message]
+
+// Rottie expression change
+[face id=200402 type=panic]
+
+// Liliana expression change
+[face id=200702 type=panic]
+[message name=Liliana charaid=200702 voice=06_916_0220]
+I... impossible...
+Mai, can you control that power?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_916_0230]
+Liliana, I'm leaving Rottie to you.
+I'm going to get Saya.
+[/message]
+
+// Liliana expression change
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_916_0240 lipsync=false]
+(The consciousness is definitely still Mai's.
+Was it Rottie's tears that unlocked her awakening?)
+[/message]
+
+// Liliana expression change
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_916_0250 lipsync=false]
+(But there's no telling how long this will last.
+When the time comes, I won't hesitate...)
+[/message]
+
+// Liliana expression change
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_916_0260]
+...I'll protect Rottie, even if it costs me my life.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_916_0270]
+I leave her to you.
+I'm going.
+[/message]
+
+// Hide Mai
+[character id=200302 show=false anim=rtol wait=true]
+
+// Rottie expression change
+[face id=200402 type=angry]
+[message name=Rottie charaid=200402 voice=06_916_0280]
+Mai-chan!
+Make sure you both come back!
+You and Saya-chan, together!
+[/message]
+
+// Rottie expression change
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_916_0290]
+It's a promise, okay?
+A promise with Rottie!
+Mai-chaaaaan!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

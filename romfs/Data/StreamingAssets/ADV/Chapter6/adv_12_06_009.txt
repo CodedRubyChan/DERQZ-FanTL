@@ -1,0 +1,159 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_12_06_009
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter6]
+
+// Display specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+//[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+//Conversation event in the cult's strain area
+//Triggered by stepping on the floor
+//Asuka Zelin does not have a sprite
+
+// Display character: Sayaka Hiwatari, normal, without highlight
+// Set facial expression: Angry
+[character id=100106 posx=0.5 anim=fade face=angry show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_012_0010]
+Where are you!?
+Where did you go!?
+Stop hiding and come out!
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0020]
+Oh! You followed me! So, should we continue our talk?
+Of course, it's about him.
+I mean, I'll talk about it whether you want it or not.
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0030]
+Him, right, Arata Mizunashi.
+Lately, he's been talking non-stop about you, and it's exhausting.
+Like how he's excited to see how much you'll grow, and how you'll develop.
+[/message]
+
+// Change Sayaka's expression: Pained
+[face id=100106 type=painful]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_012_0040]
+Arata Mizunashi...
+Is he... your boyfriend!?
+[/message]
+
+// Change Sayaka's expression: Panicked
+[face id=100106 type=panic]
+[message name=Asuka Zelin charaid=600401 voice=06_012_0050]
+Well, we call each other Arata-kun and Rin-chan, so what?
+Are you jealous? Do you think it's outrageous?
+Well, good luck. Maybe you'll find someone someday too.
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0060]
+So, you see, to make him pay more attention to me,
+I have to try my best, right?
+Surprisingly, I'm pretty serious about that stuff.
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0070]
+That's why I decided to take over this Aphesis cult's headquarters.
+Oh, and yes, he did ask me to do it, too...
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0080]
+I mean, this cult is just incompetent, isn't it?
+They're all hyped about reincarnating to the uppermost world, but it's pointless.
+With Iris' technology, there's no way to make that "setting" happen.
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0090]
+Why don't they understand that?
+Or maybe they do, and they're just saying it.
+Even though it's impossible, they hint at hope to gather followers.
+[/message]
+
+// Change Sayaka's expression: Thinking
+[face id=100106 type=thoughts]
+[message name=Asuka Zelin charaid=600401 voice=06_012_0100]
+I can't stand to watch them play these childish games...
+I'm in the process of managing things properly, turning them into
+the uppermost world's obedient "slaves"—pure and well-brainwashed.
+[/message]
+
+[message name=Asuka Zelin charaid=600401 voice=06_012_0110]
+And, of course,
+Sayaka!!
+You are the prime target...!
+[/message]
+
+// Change Sayaka's expression: Angry
+[face id=100106 type=angry]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_012_0120]
+I'm not dumb enough to believe your self-serving words!
+You're just getting in the way of Liliana and the others!
+[/message]
+
+// Change Sayaka's expression: Panicked
+[face id=100106 type=panic]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_012_0130]
+...Tch.
+She disappeared without a trace.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

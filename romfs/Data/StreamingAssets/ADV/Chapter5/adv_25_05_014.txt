@@ -1,0 +1,356 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_25_05_014
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=1.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkF]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+[character id=500202 posx=0.19 anim=fade face=confuse show=true wait=false]
+[character id=500402 posx=0.39 anim=fade face=thoughts show=true wait=false]
+[character id=100103 posx=0.79 anim=fade face=panic show=true wait=true]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Department store dungeon remains
+// BGM28
+
+/////////////////////////// Stop playing current sound effect
+[sound type=se state=stop]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0010]
+Hah... Hah... 
+I destroyed all the cursed dolls...!
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=05_025_0020]
+No way?! 
+The dolls I personally put power into...?!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_025_0030]
+...This exceeds expectations...
+[/message]
+
+// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=VsActivate]
+[character id=100103 anim=none show=false wait=false]
+[character id=100102 posx=0.79 anim=none face=angry show=true wait=true]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=05_025_0040]
+Come on, what now? 
+I'm still good to go!
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=500202 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=05_025_0050]
+Naraku!! 
+Y-You handle this...!
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_025_0060]
+Oh? 
+Kiki Amo, trembling? 
+That's a sight I've never seen before.
+[/message]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=05_025_0070]
+Ugh, I hate this... She's gross! 
+I just want to run away... 
+I don't want to be near her anymore!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_025_0080]
+...I agree with that sentiment. 
+Let's retreat for now.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_025_0090]
+However, this isn't over yet, Sayaka. 
+I'll continue monitoring to see how well you handle things.
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Al and Lucille leave
+[character id=500402 anim=rtol sec=0.3 show=false wait=false]
+[character id=500202 anim=rtol sec=0.3 show=false wait=true]
+[delay sec=0.5]
+
+[move id=100102 posx=0.49 sec=1 wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+// Sayaka changes expression
+[face id=100102 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=05_025_0100]
+Spouting their last words... 
+Should I just chase them down and crush them?!
+[/message]
+
+////////////////////////////////////////////////////////////////////////////////////////【Choice】
+// 1: Save everyone quickly
+
+[select]
+[link text="Save everyone quickly" label=purpose]
+[/select]
+
+:purpose
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=VsInactivate]
+
+[character id=100102 anim=none show=false wait=true]
+[character id=100103 posx=0.49 anim=none face=panic show=true wait=true]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0110]
+R-Right, partner! 
+That's the main goal here...!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0120]
+First... 
+Liliana, can you walk on your own?!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[move id=100103 posx=0.66 wait=false]
+[character id=200701 posx=0.33 anim=fade face=thoughts show=true wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Liliana charaid=200701 voice=05_025_0130]
+........
+[/message]
+
+[message name=Liliana charaid=200701 voice=05_025_0140]
+No... 
+Please, let me die here.
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0150]
+Wha...?! 
+Even after destroying the cursed dolls, 
+the brainwashing hasn't been lifted?!
+[/message]
+
+// 【Choice】
+// 1: "We've been tricked. It's not over yet."
+
+[select]
+[link text="We've been tricked. It's not over yet." label=thirdbomb]
+[/select]
+
+:thirdbomb
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0160]
+Arata Mizunashi once made us believe there were only two bombs, 
+but there was a third...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0170]
+Are there more dolls?!
+[/message]
+
+// Liliana changes expression
+[face id=200701 type=sad]
+
+[message name=Liliana charaid=200701 voice=05_025_0180]
+Hehehe... 
+Good guess...
+[/message]
+
+[message name=Liliana charaid=200701 voice=05_025_0190]
+This false world... I can't stand it anymore... 
+More than the doll's delusions... 
+It's me who wants out the most...
+[/message]
+
+// Sayaka changes expression
+[face id=100103 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0200]
+P-Please don't say that... 
+I came all the way here to save you... 
+With everything I had...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0210]
+And remember, Shiz told me she's waiting for you. 
+So, don't say you want to die...
+[/message]
+
+// Liliana changes expression
+[face id=200701 type=painful]
+
+[message name=Liliana charaid=200701 voice=05_025_0220]
+I... I really want to die... 
+Please... don't interfere...
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0230]
+Argh!! 
+I fought so hard to get here, 
+this is driving me crazy!
+[/message]
+
+//[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0240]
+Wh-What do I do now...? 
+If you keep saying that, 
+I might just...
+[/message]
+
+// BGM stops
+[sound type=bgm state=stop]
+
+// Sayaka changes expression
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0250]
+...want to kill you instead.
+[/message]
+
+// 【Choice】
+// 1: Sayaka!
+
+[select]
+[link text="Sayaka!" label=terrible]
+[/select]
+
+:terrible
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0260]
+...Huh?! 
+W-What was I thinking...?!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0270]
+Let's get out of this Strain Area. 
+That's what's causing all of this. 
+Come on, Liliana, lean on me...
+[/message]
+
+// Liliana changes expression
+[face id=200701 type=thoughts]
+
+[message name=Liliana charaid=200701 voice=05_025_0280]
+...Here.
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0290]
+...Huh, a sword? 
+Are you giving this to me?
+[/message]
+
+[message name=Liliana charaid=200701 voice=05_025_0300]
+...Use it... to... kill me...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_025_0310]
+No, no, no! 
+I'm going to pretend I didn't hear that!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing current sound effect
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

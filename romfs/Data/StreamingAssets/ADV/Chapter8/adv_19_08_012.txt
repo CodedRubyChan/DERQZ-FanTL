@@ -1,0 +1,202 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_19_08_012
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=EscapeWithHeroine]
+
+// Show the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+
+
+//In-dungeon conversation
+//Post-boss battle dialogue
+
+[character id=100103 posx=0.6 anim=fade face=angry show=true wait=false]
+
+
+[character id=500202 posx=0.35 anim=fade face=painful show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+
+// Show text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=08_019_0010]
+M-my full power, beyond my limits...!? 
+Sayaka, who's regained herself, 
+is this strong?
+[/message]
+
+// Change Sayaka's expression: Normal
+[face id=100103 type=default]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_019_0020]
+Looks like I win, Amo.
+[/message]
+
+// G Clea appears
+
+[character id=500302 posx=0.15 anim=fade face=sad show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_019_0030]
+I'm sorry, Sayaka, 
+but could you let it go at that? 
+Even like this, she's still my comrade.
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=08_019_0040]
+Huuki... 
+Tch. Mind your own business!! 
+You'll pay for this, all of you!!
+[/message]
+
+// G Lucille OFF
+
+[character id=500202 anim=rtol show=false wait=false]
+
+// Change Huuki's expression: Normal
+[face id=500302 type=default]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+[move id=100103 posx=0.8 wait=false]
+
+[character id=200601 posx=0.6 sec=1.5 anim=btot face=painful show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=08_019_0050]
+Ugh...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_019_0060]
+I found you! 
+Hinata, it looks like you're okay. 
+Then, I have no more reason to fight here.
+[/message]
+
+// Change Huuki's expression: Sad
+[face id=500302 type=sad]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_019_0070]
+But don't relax just yet. 
+You need to get out of here quickly. 
+Outside... things have gotten really bad.
+[/message]
+
+// Change Sayaka's expression: Panicked
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_019_0080]
+R-really!? 
+Got it. 
+I'll take Hinata and get out of here right away!
+[/message]
+
+// Change Hinata's expression: Sad
+
+[face id=200601 type=sad]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200601 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200601 voice=08_019_0090]
+Ugh... Sayaka... 
+Th-thank you...
+[/message]
+
+// Change Huuki's expression: Confused
+[face id=500302 type=confuse]
+[message name=Huuki Hizumi charaid=500302 voice=08_019_0100]
+Sayaka, I can't do any more to help... 
+But I'll lend you this weapon. It's my favorite.
+[/message]
+
+
+// Change Sayaka's expression: Surprised
+[face id=100103 type=surprise]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_019_0110]
+Th-thanks...!
+[/message]
+
+// Change Sayaka's expression: Normal
+[face id=100103 type=default]
+
+// Change Huuki's expression: Smiling
+[face id=500302 type=smile]
+[message name=Huuki Hizumi charaid=500302 voice=08_019_0120]
+Alright, then. Take care out there.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+// Stop the BGM
+//[sound type=bgm state=stop]
+
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

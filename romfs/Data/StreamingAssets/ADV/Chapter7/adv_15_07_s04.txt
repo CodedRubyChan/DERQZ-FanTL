@@ -1,0 +1,546 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_15_07_s04
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+
+//BGM020
+[sound type=bgm state=play name=GameOver]
+
+// Display the specified background
+[image type=bg id=000030]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+
+// Arata's Hideout (Deep in the Strain Area)
+
+[character id=600501 posx=0.67 anim=rtol face=default show=true wait=true]
+
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0010]
+――Arata, are you not here?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0020]
+I went out of my way to come here.
+It's cruel to keep me waiting.
+[/message]
+
+
+[move id=600501 posx=0.74 sec=0.5 wait=false]
+
+[character id=600401 posx=0.49 anim=ltor face=default show=true wait=false]
+[character id=600201 posx=0.25 anim=ltor face=default show=true wait=false]
+
+
+[message name=Arata charaid=600201 voice=07_915_0030]
+Ah, yes, yes.
+I'm here, I'm here...!
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata charaid=600201 voice=07_915_0040]
+Come on, my friend!
+I was only two minutes late,
+no need to make a fuss~...
+[/message]
+
+[face id=600401 type=smile]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0050]
+Hehe, exactly.
+Natsun, you're just too uptight, aren't you?
+[/message]
+
+// Natsuo Munakata facial expression change
+[face id=600501 type=confuse]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0060]
+Rin.
+You're here too, huh...
+[/message]
+
+[face id=600401 type=default]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0070]
+What's the matter? Is it so strange that I'm with him?
+Is there a problem with two Special A Agents
+acting together, hmm?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0080]
+As you know, there are still various disruptive elements
+in our world. Having two Special A agents
+idling in the lower world is problematic.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=07_915_0090]
+There you go again...
+You're just a B-level agent, Natsun...
+right?
+[/message]
+
+// Rin Asukaze facial expression change
+[face id=600401 type=surprise]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0100]
+Indeed!
+It seems like you're really invested in this world, aren't you...
+[/message]
+
+// Natsuo Munakata facial expression change
+[face id=600501 type=thoughts]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0110]
+...Ah, maybe a little.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0120]
+After all, back when we were starting out, we first sent
+our avatars to explore and experiment in the 'DE-1' world.
+You both remember, don't you?
+[/message]
+
+[message name=Arata charaid=600201 voice=07_915_0130]
+That's right. I gave my avatar the name
+Arata Mizunashi, didn't I?
+[/message]
+
+[message name=Arata charaid=600201 voice=07_915_0140]
+But this isn't 'DE-1'.
+This is a makeshift world, cobbled together by Iris,
+imitating 'DE-1'...
+[/message]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0150]
+The residents here are nothing more than elaborate copies.
+They couldn't even replicate our avatars.
+[/message]
+
+[message name=Arata charaid=600201 voice=07_915_0160]
+But you see!? I can tell...!
+I can tell that Natsun has a reason
+to come here so eagerly.
+[/message]
+
+// Natsuo Munakata facial expression change
+[face id=600501 type=confuse]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0170]
+What nonsense are you talking about...
+I don't have any reason besides bringing you back...
+[/message]
+
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+
+[character id=600201 anim=fade show=false wait=false]
+[character id=600401 anim=fade show=false wait=true]
+
+[delay sec=0.3]
+[character id=500202 posx=0.24 anim=ltor face=default show=true wait=false]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+
+[message name=Kiki Amo charaid=500202 voice=07_915_0190]
+Arata-sama, I'm back...
+Come on, hurry up and get in here!
+[/message]
+
+[character id=601501 posx=0.49 anim=ltor face=painful show=true wait=false]
+[sound type=se name=Fallhuman]
+
+[message name=Chiri Sendo charaid=601501 voice=07_915_0200]
+Ugh...
+Ahh...
+[/message]
+
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0210]
+――!?
+Chiri!?
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_915_0220]
+This one's a cop who was guarding Chloe Aaron.
+Even after a little torture, she wouldn't talk...
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+
+[move id=600501 posx=0.8 sec=0.5 wait=false]
+[move id=601501 posx=0.59 sec=0.5 wait=false]
+[move id=500202 posx=0.39 sec=0.5 wait=false]
+[character id=600401 posx=0.19 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0230]
+Thank you, Kiki.
+This Chiri here... she even dared
+to challenge me, after I took over Aphasis!
+[/message]
+
+[face id=600401 type=angry]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0240]
+She said something was wrong with the current Aphasis,
+trying to turn the believers I gathered against me...!
+It pisses me off!
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_915_0250]
+So what are we doing with this small fry?
+Well, as long as I get to torture her, I don't care...
+!(^^)!
+[/message]
+
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0260]
+――Stop it!!
+[/message]
+
+
+[character id=600401 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=600201 posx=0.2 anim=fade face=default show=true wait=true]
+
+
+[message name=Arata charaid=600201 voice=07_915_0270]
+Ah... of course you'd want to stop it.
+Even if she's a clone,
+it's the little sister you were searching for.
+[/message]
+
+// Kiki Amo facial expression change
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_915_0280]
+...Huh?
+So that's what it was?!
+[/message]
+
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0290]
+――You've done your research, haven't you...
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=07_915_0300]
+Well, of course.
+You are my friend, after all...♪
+[/message]
+
+
+// Character vibration
+[shake target=chara id=601501 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+
+[message name=Chiri Sendo charaid=601501 voice=07_915_0310]
+...Who are you...?
+[/message]
+
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0320]
+Don't speak,
+just stay still...!
+[/message]
+
+// Arata's facial expression change
+[face id=600201 type=thoughts]
+
+[message name=Arata charaid=600201 voice=07_915_0330]
+So Iris could copy Natsun's dead sister, huh.
+Well, if she's not an agent, there's no protection...
+[/message]
+
+[character id=500202 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=600401 posx=0.39 anim=fade face=default show=true wait=true]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0340]
+We sacrificed family and friends for the upper world,
+and here's Natsun, playing with dolls in this place...
+[/message]
+
+[face id=601501 type=painful]
+
+[message name=Chiri Sendo charaid=601501 voice=07_915_0350]
+...Big brother...?
+[/message]
+
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0360]
+Yes... that's right...
+[/message]
+
+
+[message name=Arata charaid=600201 voice=07_915_0370]
+Ah, I can't watch this anymore.
+My supervisor being so soft on family is disappointing.
+――Kiki, do it.
+[/message]
+
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+
+[character id=600201 anim=fade show=false wait=false]
+[character id=600401 anim=fade show=false wait=false]
+[character id=601501 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[character id=500202 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=07_915_0380]
+Yes sir!!
+Summon!
+Go, NPC Zombie Bomb!!
+[/message]
+
+// Male NPC 80
+
+[message voice=07_915_0390]
+Ah, aaah... uuhh...
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=500202 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=600501 posx=0.5 anim=fade face=angry show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0400]
+Gah?!
+D-damn it...!!
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+// Explosion SE
+// Screen shake
+[sound type=se name=0085_Bomb_Big_C_b]
+[shake type=random sec=3 pow=25 fade=true wait=true]
+
+[delay sec=0.1]
+
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[move id=600501 posx=0.67 sec=0.5 wait=true]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Arata charaid=600201 voice=07_915_0410]
+No need to panic!
+Natsun is covered in Eni, right?
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=07_915_0420]
+Well... I wonder about Chiri Sendo...
+[/message]
+
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0430]
+Chiri!!
+Chiri... nooooo!!
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=600201 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=600401 posx=0.32 anim=fade face=smile show=true wait=false]
+[character id=500202 posx=0.66 anim=fade face=smile show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=07_915_0440]
+Done!
+Chiri's upper half is fried!
+( ^^) _旦~~
+[/message]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0450]
+Hahaha!! Serves you right,
+now you'll taste the pain of losing a loved one.
+Arata and I already walked that road...!
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=500202 anim=fade show=false wait=false]
+[character id=600401 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.67 anim=fade face=painful show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=default]
+
+[message name=Arata charaid=600201 voice=07_915_0460]
+So, Natsun...
+are you going to stop meddling in our business?
+Otherwise, next time... hmm?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0470]
+...Goodbye.
+[/message]
+
+[message name=Arata charaid=600201 voice=07_915_0480]
+Hmm?
+To your sister?
+[/message]
+
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_915_0490]
+...To you all!!
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+// Munakata OFF
+[character id=600501 anim=ltor sec=0.3 show=false wait=true]
+[delay sec=0.5]
+[character id=600401 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rin Asukaze charaid=600401 voice=07_915_0500]
+Well, well.
+Carrying a half-fried sister's remains,
+where do you think you're going?
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=07_915_0510]
+Who knows! He'll come crying back, asking to revive her.
+Let's leave him be until then.♪
+[/message]
+
+[message name=Arata charaid=600201 voice=07_915_0520]
+Hahaha...
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

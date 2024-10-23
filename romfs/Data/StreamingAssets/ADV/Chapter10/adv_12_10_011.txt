@@ -1,0 +1,255 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_12_10_011
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified time
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Unlocks when Sayaka reaches the ●●th floor of the final dungeon
+
+// BGM05
+// Background 470 / Iris Corporation - Development Room
+
+[character id=601201 posx=0.25 anim=fade face=confuse show=true wait=false]
+[character id=200102 posx=0.5 anim=rtol face=panic show=true wait=false]
+[character id=200302 posx=0.75 anim=rtol face=panic show=true wait=true]
+
+///////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=10_012_0010]
+Why are you in such a panic?
+What's going on, you two...?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0020]
+Everyone... 
+Everyone's gone...!
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0030]
+There's no one else in the company except the three of us...
+This can't be true...
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=10_012_0040]
+Huh?
+That's not strange, is it?
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0050]
+Wha-? President...?
+[/message]
+
+[message name=President Glock charaid=601201 voice=10_012_0060]
+Mai Toyama, Shina Ninomiya.
+And me. We've always been the three of us, haven't we—
+[/message]
+
+// Shina expression change
+[face id=200102 type=panic]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0070]
+Stop talking nonsense!! 
+Then whose seats are these, 
+all of them!?
+[/message]
+
+[face id=200302 type=painful]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0080]
+Rottie!! Rottie hasn't returned after seeing off Basilissa...
+And no reply from Sanae... Ahh... Dad...!
+[/message]
+
+[face id=200102 type=angry]
+
+[face id=200302 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0090]
+Mai, let's go outside.
+We need to find everyone.
+We can't stay here.
+[/message]
+
+// Shina expression change
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0100]
+Sayaka has good instincts, so she left too.
+I bet we'll find a way out there.
+[/message]
+
+[face id=601201 type=thoughts]
+
+[message name=President Glock charaid=601201 voice=10_012_0110]
+I see.
+You're planning to leave here—
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0120]
+President... what's gotten into you...?
+[/message]
+
+[message name=President Glock charaid=601201 voice=10_012_0130]
+Shina, you should know...
+I didn't even have a body until recently...
+[/message]
+
+[face id=200302 type=panic]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0140]
+Pr... President...!!
+[/message]
+
+[message name=President Glock charaid=601201 voice=10_012_0150]
+I won't be going any further.
+Please, be careful—
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Glock OFF
+[move id=200102 posx=0.33 wait=false]
+[character id=601201 anim=fade show=false wait=true]
+
+[move id=200302 posx=0.66 wait=true]
+
+[face id=200102 type=panic]
+
+// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0160]
+Glock...!!
+No... even if I reach out... 
+I can't feel him anywhere...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0170]
+I-Is it really okay...
+for us to leave...?
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Short pause
+
+[delay sec=1.5]
+
+// [Choice]
+// 1: It's okay, come to the cafe!
+
+[select]
+[link text="It's okay, come to the cafe!" label=cafe]
+[/select]
+
+:cafe
+
+[face id=200302 type=surprise]
+
+///////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0180]
+Huh...?
+No way...
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0190]
+This voice... "God of Death"...?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_012_0200]
+I-I understand!!
+Mai, let's go...!!
+[/message]
+
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=10_012_0210]
+It's not the scummy one, right...?
+I trust you!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,508 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_12_08_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000070]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+//[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM24
+// Background 70 / Park
+
+[character id=600801 posx=0.15 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.8 anim=rtol face=default show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0010]
+I'm back! Sorry to keep you waiting, Evil Spirit. Natsuo.
+[/message]
+
+// Natsuo expression change: Painful
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0020]
+Ah, ah...?
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0030]
+I see. So that's what's going on.
+I understood the situation... at a glance.
+[/message]
+
+[character id=600501 anim=fade show=false wait=false]
+[character id=601001 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Levin charaid=601001 voice=08_012_0040]
+A Nova imitation...?
+[/message]
+
+[character id=601001 anim=fade show=false wait=false]
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_012_0050]
+What is the meaning of this?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0060]
+I've brought a huge amount of Eni and two powerful helpers.
+With this, we should be able to pull it off.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0070]
+The patient's injuries are extremely severe—
+regrettably, the perpetrator did quite the thorough job...
+To fully restore Chiri Sendo—
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0080]
+A rough estimate suggests... we'd need several million Eni.
+[/message]
+
+[character id=500302 anim=fade show=false wait=false]
+[character id=601001 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Levin charaid=601001 voice=08_012_0090]
+Ugh... all my savings... in an instant...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0100]
+Lady Alice, Levin, I'll gather more again, so I'm counting on you.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0110]
+While we're at it, shall I heal "that one" as well?
+[/message]
+
+[character id=601001 anim=fade show=false wait=false]
+[character id=602001 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=08_012_0120]
+...Inayuotsuhi
+Ruamotokooiigawugotsugawuhonodarakanoko
+[/message]
+//08_012_0130 ,08_012_0140 synthesized voice
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_012_0150]
+Convenient, is it?
+Hehe.
+Well, that may be the case sometimes.
+[/message]
+
+// Alice expression change: Default
+[face id=600801 type=default]
+
+[message name=Evil Spirit charaid=602001 voice=08_012_0160]
+Rusiretsushiderokohashitawa
+Zotaiotesidomohashairisu
+[/message]
+//08_012_0170 ,08_012_0180 synthesized voice
+
+// Evil Spirit OFF
+[character id=602001 anim=fade show=false wait=true]
+
+[move id=100101 posx=0.66 wait=false]
+[move id=600801 posx=0.33 wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0190]
+S-So... is that right.
+As long as you've properly returned things to normal,
+then it's fine... but it's already gone...
+[/message]
+
+// BGM stop
+[sound type=bgm state=stop]
+
+[message name=Alice charaid=600801 voice=08_012_0200]
+Alright, let's get started!
+Leave it to me, someone who has witnessed countless lives and deaths!
+Not even Lily can match me!
+[/message]
+
+// Slowly fade to black
+[visible show=false]
+[fade type=out anim=simple sec=1]
+[delay sec=0.5]
+[character id=600801 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+[character id=600801 posx=0.5 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=1]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=08_012_0210]
+Oh, Iris, my master.
+You who challenge this world,
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0220]
+In your stead, I shall grant Chiri Sendo the breath of life once more!
+[/message]
+
+// BGM35 (Jingle)
+[sound type=bgm state=play name=Clear]
+
+[message name=Alice charaid=600801 voice=08_012_0230]
+Te-re-re-re-re
+Te-re-re~
+Run-run-run~
+[/message]
+
+[character id=601001 posx=0.8 anim=fade face=default show=true wait=true]
+
+[message name=Levin charaid=601001 voice=08_012_0240]
+What was that suspicious line and that jingle you hummed...?
+[/message]
+
+[sound type=bgm state=stop]
+
+// Scene change (fade out)
+[fade type=out anim=simple sec=2 color=white]
+
+// Temporarily hide text window
+[visible show=false]
+
+[sound type=se name=Resuscitation]
+
+[character id=600801 anim=fade show=false wait=false]
+[character id=601001 anim=fade show=false wait=true]
+
+// Display specified background: Background 390 / White Background
+[image type=bg id=000390]
+
+// Scene change (fade in)
+[fade type=in anim=simple sec=0.5 color=white]
+
+// Wait for a specified number of seconds
+[delay sec=1.5]
+
+// Show text window
+[visible show=true]
+
+// G Clea
+[message name=Huuki Hizumi charaid=500302 voice=08_012_0250]
+So this is what it means to be synthesized by Eni...
+Is this how I was born, too?
+[/message]
+
+// Scene change (fade out)
+[fade type=out anim=simple sec=0.5 color=white]
+
+// Temporarily hide text window
+[visible show=false]
+
+[character id=601501 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+// Background 70 / Park
+[image type=bg id=000070 show=true]
+
+// Scene change (fade in)
+[fade type=in anim=simple sec=0.5 color=white]
+
+// BGM26
+[sound type=bgm state=play name=TalkD]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+
+// Show text window
+[visible show=true]
+
+[message name=Chiri Sendo charaid=601501 voice=08_012_0260]
+...Why?
+[/message]
+
+[move id=601501 posx=0.33 wait=false]
+[character id=600501 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Natsuo expression change: Panic
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0270]
+Chiri! Chiri!?
+You've come back to life...!
+You're alright, aren't you? Do you recognize me!?
+[/message]
+
+// Chiri expression change: Thoughts
+[face id=601501 type=thoughts]
+
+[message name=Chiri Sendo charaid=601501 voice=08_012_0280]
+...My big brother was supposed to have died in an accident.
+But... you have the same face as the last time I saw him...
+[/message]
+
+// Chiri expression change: Default
+[face id=601501 type=default]
+
+[message name=Chiri Sendo charaid=601501 voice=08_012_0290]
+Oh... I see.
+You're my parallel world big brother?
+[/message]
+
+// Natsuo expression change: Default
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0300]
+That's right! I am...
+I am your brother.
+You're quick on the uptake, as expected from an Aphesis believer—
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0310]
+When I found you in this world...
+I was... so happy.
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=08_012_0320]
+I see.
+A brother I never knew...
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0330]
+Even if it's a version of you from another world...
+I'm just so glad to have met you...
+[/message]
+
+[move id=601501 posx=0.15 wait=false]
+[move id=600501 posx=0.5 wait=false]
+[character id=600801 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Alice charaid=600801 voice=08_012_0340]
+Hehe. It's more touching than I expected.
+I almost feel like crying too.
+[/message]
+
+[character id=600801 anim=fade show=false wait=false]
+[character id=601001 posx=0.75 anim=fade face=painful show=true wait=true]
+
+[message name=Levin charaid=601001 voice=08_012_0350]
+I feel like crying too... thinking about all the Eni I lost.
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=08_012_0360]
+All of you...
+for me—?
+[/message]
+
+[character id=601001 anim=fade show=false wait=false]
+[character id=600801 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Alice charaid=600801 voice=08_012_0370]
+I may have been the one to set things up,
+but if you're grateful, thank Sayaka here.
+She made it all happen.
+[/message]
+
+[character id=600801 anim=fade show=false wait=false]
+[character id=100101 posx=0.8 anim=fade face=confuse show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0380]
+S-Such praise... It's embarrassing!
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0390]
+Alright! 
+Now that we've had this emotional reunion,
+I'd like to discuss that "favor" you owe us.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0400]
+...I see.
+I understand.
+It must have been an unpleasant sight to witness—
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0410]
+I have committed every possible atrocity in the name of the Uppermost World.
+It's only natural that I be haunted by evil spirits—
+[/message]
+
+// Natsuo expression change: Smile
+[face id=600501 type=smile]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0420]
+But you...
+You gave back something precious to me.
+[/message]
+
+// Natsuo expression change: Default
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0430]
+Thank you. I will help you.
+Ask me anything, and I'll do what I can.
+[/message]
+
+[character id=601501 anim=fade show=false wait=false]
+[move id=600501 posx=0.15 wait=false]
+
+[character id=600801 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Alice charaid=600801 voice=08_012_0440]
+Well done, Sayaka. You've gained a valuable ally.
+That's your achievement.
+Make your wish known.
+[/message]
+
+// BGM25
+[sound type=bgm state=play name=TalkC]
+
+// Sayaka expression change: Thoughts
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0450]
+Then, if I can make a request...
+I'd like—
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0460]
+I'd like to be taken to the Uppermost World.
+I want to see what kind of place it is.
+I want to learn more about Arata Mizunashi and you all.
+[/message]
+
+[character id=600501 anim=fade show=false wait=false]
+[character id=601001 posx=0.15 anim=fade face=default show=true wait=true]
+
+[message name=Levin charaid=601001 voice=08_012_0470]
+Wha!?
+T-That's far too reckless. It's scary, really scary...
+There's no guarantee you can even return. You shouldn't do it.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0480]
+I disagree.
+I'm rather impressed by such a bold request♪
+We should act quickly; let's head there right now.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_012_0490]
+Surely, there's no chance you won't be able to return home, right, Natsuo?
+[/message]
+
+[character id=601001 anim=fade show=false wait=false]
+[character id=600501 posx=0.15 anim=fade face=default show=true wait=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0500]
+Of course. Bringing you all back would be child's play.
+I'll ensure your safe return after you've seen what you need to.
+But... are you sure?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_012_0510]
+Of course!
+Let's go to the Uppermost World!
+[/message]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=500302 posx=0.8 anim=fade face=default show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_012_0520]
+If that's the case, allow me to accompany you.
+There's nothing like expanding one's knowledge.
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_012_0530]
+Hehe.
+Things are getting exciting, aren't they, Levin?
+[/message]
+
+[character id=500302 anim=fade show=false wait=false]
+[character id=601001 posx=0.8 anim=fade face=default show=true wait=true]
+
+[message name=Levin charaid=601001 voice=08_012_0540]
+Ah, so I'm going too, huh?
+...Ah, I wonder what'll happen.
+[/message]
+
+[character id=600801 anim=fade show=false wait=false]
+[character id=601501 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Chiri Sendo charaid=601501 voice=08_012_0550]
+I still don't fully understand the situation yet...
+but I'm heading back to the police station for now.
+Take care, big brother.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_012_0560]
+Yes.
+I'll see you soon, Chiri.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop playing current SE
+[sound type=se state=stop]
+
+// Stop playing current BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

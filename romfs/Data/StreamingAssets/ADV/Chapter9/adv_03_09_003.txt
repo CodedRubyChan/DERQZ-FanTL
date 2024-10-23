@@ -1,0 +1,444 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_03_09_003
+// ##########################################################################//
+// Start
+// ##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Epilougue]
+
+// Display specified background
+[image type=bg id=000500]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// ##########################################################################//
+// Start
+// ##########################################################################//
+
+// BGM12
+// Background 500 / University Hospital
+
+// Speaker: Bleeding Man
+// Male NPC 90
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Bleeding Man voice=09_003_0010]
+Ugh… ah… I can't stop the bleeding…!
+Damn it, it hurts…! Somebody help me!
+I was attacked by a monster—argh!!
+[/message]
+
+// Speaker: Screaming Mother
+// Female NPC 90
+
+[message name=Screaming Mother voice=09_003_0020]
+Somebody!
+Please, someone help my son!
+I beg you! Please, save him!
+[/message]
+
+[character id=200601 posx=0.33 anim=fade face=panic show=true wait=false]
+[character id=200901 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_003_0030]
+Oh no, oh no…!!
+The hospital is in chaos!
+So many patients, they're even being treated on the floor…
+[/message]
+
+[message name=Chloe charaid=200901 voice=09_003_0040]
+…But look closely, Hinata.
+It's chaotic, but…
+it doesn't seem to have completely stopped functioning.
+[/message]
+
+// Hinata and Chloe OFF
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=200901 anim=fade show=false wait=true]
+
+// Yuri appears
+
+[character id=200201 posx=0.5 anim=fade face=angry show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0050]
+Ugh… everyone who's injured,
+please line up here!
+I'll treat you all at once…
+[/message]
+
+[effect type=CodeActive show=true wait=false auto_hide=true posx=0.5 posy=0 priority=Foremost]
+
+// Yurisa (Transformed) changes expression: Confused
+[face id=200201 type=confuse]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0060]
+Hah, hah… Holy light of healing.
+Release it to the promised land!
+Metivence!
+[/message]
+
+// Play SE: Healing sound
+[sound type=se name=Heal]
+
+// Speaker: Bleeding Man
+// Male NPC 90
+
+[message name=Bleeding Man voice=09_003_0070]
+It hurts…! It hurts…!
+…Wait, what? My wounds…?
+The bleeding stopped when I was hit by that light!?
+[/message]
+
+// Yurisa (Transformed) changes expression: Angry
+[face id=200201 type=angry]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0080]
+Phew…
+Alright, next…!
+[/message]
+
+[effect type=CodeActive show=true wait=false auto_hide=true posx=0.5 posy=0 priority=Foremost]
+
+// Yurisa (Transformed) changes expression: Default
+[face id=200201 type=default]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0090]
+For your child… 
+with this code…
+…Melcyn Revive!
+[/message]
+
+// Play SE: Healing sound
+[sound type=se name=Heal]
+
+// Speaker: Screaming Mother
+// Female NPC 90
+
+[message name=Screaming Mother voice=09_003_0100]
+…Oh, he's breathing…!
+Thank you, miraculous doctor…!
+[/message]
+
+// Yurisa (Transformed) changes expression: Smile
+[face id=200201 type=smile]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0110]
+Oh, no, no…
+I'm still
+just a trainee doctor…
+[/message]
+
+[move id=200201 posx=0.33 wait=false]
+[character id=602101 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0120]
+Yurisa, handle the patients in critical condition.
+Given the situation, I won't treat you like a trainee...
+[/message]
+
+// Yurisa (Transformed) changes expression: Angry
+[face id=200201 type=angry]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0130]
+Yes, Father!
+I can still keep going!
+[/message]
+
+[face id=602101 type=confuse]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0140]
+—Still, it's quite a curious look and technique.
+It suits you, though. Should I just start calling you 'Lily'…?
+[/message]
+
+// Yurisa (Transformed) changes expression: Default
+[face id=200201 type=default]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0150]
+No, Father…
+[/message]
+
+// Yurisa (Transformed) changes expression: Smile
+[face id=200201 type=smile]
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0160]
+I'm still Yurisa.
+But with Lily's power,
+I'll save every life I can!
+[/message]
+
+[face id=602101 type=smile]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0170]
+I see… That's reassuring.
+You've grown without me even noticing.
+[/message]
+
+[face id=602101 type=thoughts]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0180 lipsync=false]
+(I might've been pretending not to notice…
+Good grief—)
+[/message]
+
+[face id=602101 type=default]
+[face id=200201 type=default]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0190]
+Sugiura, what's the situation outside?
+[/message]
+
+// Sugiura appears
+
+[move id=200201 posx=0.25 wait=false]
+[move id=602101 posx=0.5 wait=false]
+[character id=602201 posx=0.74 anim=fade face=default show=true wait=true]
+
+[message name=Sugiura charaid=602201 voice=09_003_0200]
+We don't have nearly enough security staff.
+The thing is…
+there are monsters roaming all over…
+[/message]
+
+[face id=602201 type=smile]
+
+[message name=Sugiura charaid=602201 voice=09_003_0210]
+However, our…
+former resident ghost has been lending a hand—
+so right now, it's under control!
+[/message]
+
+// G Lily appears
+
+[character id=602201 anim=fade show=false wait=false]
+[character id=602101 anim=fade show=false wait=false]
+[move id=200201 posx=0.33 wait=false]
+[character id=500102 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=09_003_0220]
+I'll 'deal' with any monsters I find.
+So just keep focusing on your job.
+[/message]
+
+[face id=200201 type=smile]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0230]
+Haha, thanks, Lilith…!
+I'll be counting on you.
+Let's all protect this world together…!
+[/message]
+
+[face id=200201 type=default]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0240]
+And that way!
+Shina will definitely see you
+in a better light.
+[/message]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=09_003_0250]
+Oh… is that so?
+Then maybe,
+I'll finally win over Shina—
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0260]
+Wha—?! Y-You… I mean, you…
+N-N-Never mind, I take it back!
+[/message]
+
+[face id=500102 type=smile]
+
+[message name=Lilith Yamamura charaid=500102 voice=09_003_0270]
+…Hmph! I'm just joking.
+I don't do this
+just for praise, you know.
+[/message]
+
+[face id=200201 type=default]
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=09_003_0280]
+Even if I'm a 'former' ghost,
+I won't rest easy if the place I haunted
+is gone.
+[/message]
+
+// Sayaka, Hinata, Chloe IN
+
+[character id=500102 anim=fade show=false wait=true]
+
+[move id=200201 posx=0.25 wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200601 posx=0.75 anim=fade face=default show=true wait=true]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_003_0290]
+Amazing, everyone…
+They're not giving in to despair, even now…
+It's incredible!
+[/message]
+
+[face id=200201 type=smile]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0300]
+Sayaka, I'm glad!
+Welcome back, adventurer!
+I'm so relieved you're safe…!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0310]
+Ah!
+And the two of you as well!
+[/message]
+
+[face id=200601 type=default]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_003_0320]
+We're still alive, thanks…
+to Sayacchi!
+[/message]
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=200901 posx=0.75 anim=fade face=sad show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=09_003_0330]
+I… I know apologies won't cover it,
+but a lot happened and I've woken up—
+Please, let me help, even if it's just a little.
+[/message]
+
+[face id=200201 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0340]
+I see, I understand…!
+But… it doesn't look like Shina
+is with you…
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_003_0350]
+We got separated from Shina…
+Hasn't she come back here?
+[/message]
+
+[face id=200201 type=default]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0360]
+No. As soon as the city started falling into chaos…
+I came here to support the hospital.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0370]
+…To be honest, I want to go search for Shina right now.
+If I were just 'Lily,'
+I probably would've done so already…!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_003_0380]
+You're amazing, Yamamura-san…!
+But don't worry! I'll find Shina for sure!
+You focus on what you can do here!
+[/message]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=602101 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0390]
+Hey!
+… I don't know much about your 'game,' 
+but, Yurisa!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0400]
+Ah… Yes!
+What is it, Father?
+[/message]
+
+[message name=Enishi Yamamura charaid=602101 voice=09_003_0410]
+…If you have a bigger mission,
+find a moment and go.
+We have plenty of doctors here.
+[/message]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=602201 posx=0.85 anim=fade face=default show=true wait=true]
+
+[message name=Sugiura charaid=602201 voice=09_003_0420]
+We'll cover for the gap you leave…
+As much as we can!
+[/message]
+
+[face id=200201 type=smile]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0430]
+Thank you, Father.
+And Sugiura…!
+[/message]
+
+[character id=602101 anim=fade show=false wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_003_0440]
+Once things settle down,
+let's all meet up at Iris Corporation!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_003_0450]
+Yes! We'll all meet there, safe and sound!
+That's our true promised land!
+Please, be careful when moving—!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################//
+// End
+// ##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+// ##########################################################################//
+// End
+// ##########################################################################//
+//END

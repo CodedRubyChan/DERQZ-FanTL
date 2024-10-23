@@ -1,0 +1,798 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_16_05_009
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// BGM24 / Serious scene
+// Background 470 / Iris Corporation - Development Room
+
+[character id=200102 posx=0.49 anim=rtol face=thoughts show=true wait=false]
+[character id=100101 posx=0.75 anim=rtol face=thoughts show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0010]
+Good morning.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0020]
+Good morniiiiing...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////// Yurisa, Mai appear
+
+[move id=100101 posx=0.79 sec=0.5 wait=false]
+[move id=200102 posx=0.59 sec=0.5 wait=false]
+
+[character id=200202 posx=0.39 anim=ltor face=default show=true wait=false]
+[character id=200302 posx=0.19 anim=ltor face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=05_016_0030]
+Good morning, Director. Good morning, Saya.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0040]
+Good morning, Director Shina! And you too, Sayaka! ...Wait, you both seem down. What happened?!
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0050]
+I couldn't sleep... Something big happened last night.
+[/message]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0060]
+Last night... Did you do something wrong? If so... I won't forgive you.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0070]
+No, no, no! It's not like that at all!
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0080]
+...Lilith came to my house last night.
+[/message]
+
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=05_016_0090]
+Lilith...? You mean *that* Lilith?!
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0100]
+W-was everything alright, Shina?!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0110]
+Well, as you can see, nothing happened to us. That's why we're here.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Mai, Yurisa, Shina, Sayaka exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+//////////////////////////////////////////////////////////////////////////// Iris appears
+[character id=600601 posx=0.49 anim=ltor face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=05_016_0120]
+I've heard from Nova... It seems Arata Mizunashi is making a move.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Iris exits
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+//////////////////////////////////////////////////////////////////////////// Mai, Yurisa, Shina, Sayaka appear again
+[character id=200302 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.39 anim=fade face=thoughts show=true wait=false]
+[character id=200102 posx=0.59 anim=fade face=thoughts show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=thoughts show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0130]
+Lilith came to warn us. Even though she's still injured from the Sagami incident when she betrayed Arata Mizunashi to help us...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=05_016_0140]
+I've only met her in the hospital, so I can't help but feel there's something more behind her actions.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0150]
+As long as she doesn't harm Shina, I'll accept her as a fellow Shina fan!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0160]
+Looks like she's given up on killing Shina, at least.
+[/message]
+
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0170]
+Well, that's good!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Mai, Yurisa, Shina, Sayaka exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+//////////////////////////////////////////////////////////////////////////// Iris appears again
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=05_016_0180]
+Either way, all we can do is be more cautious than ever... Let's get back to work, everyone.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Iris exits
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+//////////////////////////////////////////////////////////////////////////// Shina, Sayaka appear again
+[character id=200102 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0190]
+Yes, you're right...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Stop BGM and play phone ring sound
+[sound type=bgm state=stop]
+[sound type=se name=Call]
+
+// Display the text window again
+[delay sec=1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0200]
+Oh, it's the phone... I'll get it.
+[/message]
+
+// Stop playing SE
+[sound type=se state=stop]
+[sound type=se name=Callend]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0210]
+...Hello? Ah, Liddy! Is this about work?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0220]
+...What? What do you mean?!
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0230]
+I'll switch to speaker mode! Keep talking!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////// Play "Callend" SE
+[sound type=se name=Callend]
+
+// Display the text window again
+[visible show=true]
+
+[delay sec=0.1]
+
+[message name=Liddy charaid=601901 voice=05_016_0240 icon=true]
+Help me...! Everyone in the office is jumping out the windows one after another...!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0250]
+What?! Why is that happening?!
+[/message]
+
+// BGM28
+[sound type=bgm state=play name=TalkF]
+
+[message name=Liddy charaid=601901 voice=05_016_0260 icon=true]
+I don't know...! They just suddenly started jumping... No one listens, they just keep going!
+[/message]
+
+// Voice of a man
+// @Male NPC60
+
+[message name=Male Voice voice=05_016_0270]
+Hahahaha!! The ideal world is on the other side!! Even the divine beast is there—!!
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_016_0280 icon=true]
+Ah... another one... My boss too... I can hear it... The sound of them hitting the ground...
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0290 lipsync=false]
+(Could this... also be Arata Mizunashi's doing...?)
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0300]
+Liddy! I'm coming to help right now!
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_016_0310 icon=true]
+Haha... You're always so dependable, Shina...
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_016_0320 icon=true]
+But it's no use, no one can save me... Only I can save myself...
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_016_0330 icon=true]
+Yes... That's why I need to jump out of this false world too...
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_016_0340 icon=true]
+Just like everyone else... Just like all of them...
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0350]
+Liddy?! Please, stop!! Listen to my voice!!
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_016_0360 icon=true]
+Is that where I should go? The highest place...? That's where I'll jump from...
+[/message]
+
+// The call ends
+[sound type=se name=Callend]
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////// Shina, Sayaka exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+//////////////////////////////////////////////////////////////////////////// Mai, Yurisa appear
+[character id=200302 posx=0.32 anim=fade face=panic show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=05_016_0370]
+What is happening?! Oh no, I can see people jumping from the building across from us too...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Jump and crash SE
+[sound type=se name=Jump]
+[delay sec=1.5]
+[sound type=se name=Ceasefunctioning]
+[delay sec=0.3]
+
+[face id=200302 type=painful]
+[face id=200202 type=painful]
+
+// Display the text window again
+[delay sec=1.5]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0380]
+Nooo!! Please, close the windows!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Mai, Yurisa exit
+[character id=200302 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Alice and Basilissa enter
+[character id=600301 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=600801 posx=0.67 anim=fade face=thoughts show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=05_016_0390]
+What an emergency. I came flying because this sounds interesting.
+[/message]
+
+// Speaker name: Alice
+
+[message name=Alice charaid=600801 voice=05_016_0400]
+You always say the most inappropriate things... It's not just Sagami City—this is happening all over Japan simultaneously.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Jump and crash SE
+[sound type=se name=Jump]
+[delay sec=1]
+[sound type=se name=Ceasefunctioning]
+
+// Display the text window again
+[delay sec=1.5]
+[visible show=true]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Move Basilissa and Alice
+[move id=600301 posx=0.24 sec=0.5 wait=false]
+[move id=600801 posx=0.5 sec=0.5 wait=false]
+/////////////////////////////////////////////////////////////////////////// Sayaka appears
+[character id=100101 posx=0.74 anim=fade face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0410]
+We have to stop this now!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_016_0420]
+Are you planning to stop them one by one?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0430]
+If it saves even one person, yes!
+[/message]
+
+[face id=600801 type=panic]
+
+[message name=Alice charaid=600801 voice=05_016_0440]
+Wait, wait! Let me explain the cause and solution first!
+[/message]
+
+[face id=600801 type=angry]
+
+[message name=Alice charaid=600801 voice=05_016_0450]
+The 'Viva Doll' is behind this!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0460]
+Isn't that the one that's been on TV a lot recently?! It's super popular right now!
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0470]
+The 'Viva Doll' is sending out a command to the nearby owners—"jump"...
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_016_0480]
+It's like they're preempting what we were trying to do in 'End to Odyssey' by using dolls instead. The enemy is quite clever.
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0490]
+How can you say that so casually?! What are you even thinking?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=600301 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Mai, Iris, Shina appear
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.74 anim=fade face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0500]
+Sorry, that's just how she is...
+[/message]
+
+// Iris changes expression
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=05_016_0510]
+N-no one's brought those dolls into the office, right?!
+[/message]
+
+[face id=200302 type=angry]
+
+[message name=Mai Toyama charaid=200302 voice=05_016_0520]
+I'll check. I'll explain this to the other staff too!
+[/message]
+
+// Mai exits
+[character id=200302 anim=rtol show=false wait=false]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0530]
+So, is there any way to stop this?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=600601 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Basilissa, Alice appear again
+[character id=600301 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=600801 posx=0.67 anim=fade face=thoughts show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=05_016_0540]
+Nova is using Nova Code to save the fallers and soften the ground beneath them ahead of time...
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0550]
+But the scale of the incident is too large, and it's not enough to handle all of it...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Jump SE
+[sound type=se name=Jump]
+[delay sec=1.5]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=05_016_0560]
+Oh, there goes another one...
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0570]
+The people brainwashed by the dolls... if they survive a fall, they keep trying to jump again.
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0580]
+Currently, those affected are heading towards the tallest building in Sagami City. Yes, it's Sagami again.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=600301 anim=fade show=false wait=false]
+[character id=600801 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Iris, Shina appear again
+[character id=600601 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.66 anim=fade face=sad show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0590]
+Liddy said it too... "Everyone is jumping together"...
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=05_016_0600]
+Ugh... I can see them outside... Those who didn't die, all broken and walking...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Iris, Shina exit
+[character id=600601 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Basilissa, Alice, Sayaka appear
+[character id=600301 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600801 posx=0.5 anim=fade face=thoughts show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_016_0610]
+Oh my, it's like a horde of zombies. And heading to the department store, how fitting... Heh, I've got an idea for a new song.
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=05_016_0620]
+Sayaka, why don't you come along with me to where they're headed?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0630]
+How can you be so relaxed in this situation?! I'm really starting to get angry here!
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_016_0640]
+You're already angry, aren't you? Alice, could you please finish the explanation?
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0650]
+Of course. We've identified the mastermind behind the suicides. They're at the department store.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////// Black fade-out
+[fade type=out anim=simple sec=0.5]
+
+// Black background
+////////////////////////////////////////////////////////////////////// Display back image
+[image type=black show=true]
+[character id=500202 posx=0.49 anim=none face=default show=true wait=true]
+
+////////////////////////////////////////////////////////////////////// Black fade-in
+[fade type=in anim=simple sec=0.5]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Alice charaid=600801 voice=05_016_0660]
+It seems to be the work of Kiki Amo.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////// Black fade-out
+[fade type=out anim=simple sec=0.5]
+
+// Background 470 / Iris Corporation - Development Room
+
+[character id=500202 anim=none show=false wait=true]
+
+[image type=bg id=000470 show=true fade=false]
+
+[character id=200202 posx=0.24 anim=none face=thoughts show=true wait=false]
+[character id=200102 posx=0.49 anim=none face=thoughts show=true wait=false]
+[character id=100101 posx=0.74 anim=none face=angry show=true wait=true]
+
+////////////////////////////////////////////////////////////////////// Black fade-in
+[fade type=in anim=simple sec=0.5]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0670]
+It's them... I won't forgive this!! I'm going to stop them!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0680]
+Sayaka, please calm down... Don't let your anger control you...!
+[/message]
+
+// Shina changes expression
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_016_0690]
+Basilissa, Lily, Sayaka... The four of us will go. We also need to find Liddy...
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_016_0700]
+R-right?! Yes, as a trainee doctor, I can do something to help!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0710]
+Honestly, I'd prefer to go alone...!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Yurisa, Shina, Sayaka exit
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Alice, Iris President appear
+[character id=600801 posx=0.33 anim=fade face=angry show=true wait=false]
+[character id=600601 posx=0.66 anim=fade face=angry show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=05_016_0720]
+This time, no way! I'll check the entire city and see what's happening in the other towns...
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0730]
+We're mobilizing everyone for this—the biggest project in Iris Corporation's history. Everyone, be careful.
+[/message]
+
+[message name=Alice charaid=600801 voice=05_016_0740]
+I'll continue working with Nova and Levin.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Alice, Iris President exit
+[character id=600801 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Basilissa, Sayaka appear
+[character id=600301 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=angry show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=05_016_0750]
+Let's go, then?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_016_0760]
+I'm going to stop this chaos...!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop all sound effects
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

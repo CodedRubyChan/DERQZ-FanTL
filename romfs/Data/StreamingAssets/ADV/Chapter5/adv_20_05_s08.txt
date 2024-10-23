@@ -1,0 +1,265 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_20_05_s08
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkE]
+
+// Display the specified background
+[image type=bg id=000520]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// After starting the exploration in the department store dungeon, 
+// if a game over occurs or if you leave, 
+// you will be sent home and can return to the dungeon from the subway as usual.
+// This event triggers during such a return.
+// It does not occur if you have never left the dungeon.
+
+// Background 520 / Sakami Police Station
+// BGM27
+
+[character id=100101 posx=0.49 anim=rtol face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0010]
+The police station... I never expected to sense the presence of a Glitch Girl here...
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0020]
+Wha!? That's Chloe over there. And Falena is with her too!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Turn off Sayaka
+// Show Chloe and G-Selica
+
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=200903 posx=0.32 anim=fade face=smile show=true wait=false]
+[character id=500502 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Chloe charaid=200903 voice=05_920_0030]
+Lena, why don't you come a little closer? If you stay by the window, your clothes might get dirty!
+[/message]
+
+// Falena changes expression
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=05_920_0040]
+Yes, thank you, Lady Chloe. Oh, it looks like the next person is ready!
+[/message]
+
+[face id=200903 type=smile]
+
+[message name=Chloe charaid=200903 voice=05_920_0050]
+Haha! How exciting! I wonder... what kind of bloom will they show us this time?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Someone jumps to their death in front of Chloe and Falena
+[sound type=se name=Jump]
+[delay sec=1.5]
+//[effect type=BloodSmall1 show=true wait=false auto_hide=false posx=0.3 posy=0.5 priority=FrontCutin]
+[effect type=BloodReturn1 show=true wait=false auto_hide=false posx=0.5 posy=0.5 priority=FrontCutin]
+
+[sound type=se name=Ceasefunctioning]
+[sound type=se name=Chairprotrusions]
+[delay sec=1.5]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0060]
+Wha!? A police officer just jumped... and landed right in front of Chloe and Falena...
+[/message]
+
+[message name=Chloe charaid=200903 voice=05_920_0070]
+Amazing! Another beautiful bloom, Lena!
+[/message]
+
+[message name=Chloe charaid=200903 voice=05_920_0080]
+So this is the sound of a soul breaking... fascinating!
+[/message]
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=05_920_0090]
+Yes, Lady Chloe, but... there's a bit of blood on your face. Here, let me clean you up.
+[/message]
+
+[effect type=BloodReturn1 show=false wait=true]
+
+[message name=Chloe charaid=200903 voice=05_920_0100]
+Haha, thank you. You know, Lena, these human imitators are surprisingly tough. Look, it's still moving.
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=05_920_0110]
+Yes, Lady Chloe. Well, among the dead, some of them are likely real humans.
+[/message]
+
+[message name=Falena charaid=500502 voice=05_920_0120]
+In any case, life is so fragile. A small gear out of place, and this is the result...
+[/message]
+
+[message name=Chloe charaid=200903 voice=05_920_0130]
+Fragile... that's why it's beautiful! But two or three aren't enough to satisfy me. Let's watch some more!
+[/message]
+
+[message name=Falena charaid=500502 voice=05_920_0140]
+Understood. I have more ready to bloom, as many as you'd like, Lady Chloe.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide characters
+[character id=200903 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show Sayaka
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0150]
+W-what's wrong with Chloe?! No, it's more than that... she seems to be... enjoying this?!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0160]
+Was Chloe always like this? Or is something... wrong with her?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=panic]
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0170]
+And the police officers around her don't even seem to care. If anything, they're helping her! This is weird! Are they even real cops!?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide characters
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show Senji Chiri
+[character id=601501 posx=0.49 anim=ltor face=angry show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Chiri Sendo charaid=601501 voice=05_920_0180]
+Who goes there?! Identify yourself!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide characters
+[character id=601501 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show Sayaka
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_920_0190]
+Wha!? I should get out of here... Staying here won't help right now!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a few seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing sound effects
+[sound type=se state=stop]
+
+/////////////////////////// Stop playing background music
+[sound type=bgm state=stop]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

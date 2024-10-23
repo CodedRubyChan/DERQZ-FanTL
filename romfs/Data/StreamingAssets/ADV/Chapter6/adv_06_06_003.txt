@@ -1,0 +1,792 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_06_06_003
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkG]
+
+// Display the specified background
+[image type=bg id=000120]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Display the text window
+[visible show=true]
+
+// BGM29
+// Background 120 - Library
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Face: Default
+[character id=100105 posx=0.7 anim=rtol face=default show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0010 lipsync=false]
+(Hmm. It's quiet here. 
+Maybe I'll be able to calm down a bit.)
+[/message]
+
+// Sayaka's expression changes: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0020 lipsync=false]
+(No one here knows me. Not a single soul.)
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0030]
+Well, what a find.
+This place is a hidden gem.♪
+[/message]
+
+// Sayaka moves
+[move id=100105 posx=0.25 wait=false]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0040 lipsync=false]
+(...Hm? 
+This book... "The History of the Aphesis Order"
+That's what it says.)
+[/message]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0050 lipsync=false]
+(...------)
+[/message]
+
+// Sayaka's expression changes: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0060 lipsync=false]
+(-----------)
+[/message]
+
+// Display character: Liliana
+// Face: Default
+[character id=200702 posx=0.66 anim=rtol face=default show=true wait=false]
+
+[message name=Liliana charaid=200702 voice=06_006_0070]
+My, how delightful.
+To see someone take an interest 
+in the Aphesis Order.
+[/message]
+
+// Sayaka shakes
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Panic
+[face id=100105 type=panic]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0080]
+...Were you following me?
+[/message]
+
+// Liliana's expression changes: Surprise
+[face id=200702 type=surprise]
+[message name=Liliana charaid=200702 voice=06_006_0090]
+No, not at all!
+I just happened to have some business 
+at this library too. This is truly just a coincidence.
+[/message]
+
+// Sayaka's expression changes: Default
+[face id=100105 type=default]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0100]
+Or perhaps, it's the guidance of the Great Sage.
+[/message]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0110]
+...The Great Sage? 
+That's part of the Order too, right?
+[/message]
+
+// Sayaka's expression changes: Default
+[face id=100105 type=default]
+
+// Liliana's expression changes: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0120]
+Yes, a legendary alchemist from the medieval period...
+She was known as 'Paraninas' in her time.
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0130]
+Originally, she was supported by a group...
+more like a fan club.
+That eventually became the Aphesis Order.
+[/message]
+
+// Liliana's expression changes: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0140]
+Now, it's grown into an organization 
+with branches worldwide. I consider it an honor 
+to be part of such a legacy.
+[/message]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0150]
+Hmm... 
+Liliana, you really are into religions, huh...
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0160]
+Yes, I'm fascinated by the truth of the world,
+and by the forces that shape it.
+[/message]
+
+// Liliana's expression changes: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0170]
+Just so you know, this library in Sagami City 
+was also funded by the Order's contributions.
+[/message]
+
+// Sayaka's expression changes: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0180]
+Huh... is that so...
+Looks like the Order has ties even to my own life...
+[/message]
+
+// Liliana's expression changes: Surprise
+[face id=200702 type=surprise]
+[message name=Liliana charaid=200702 voice=06_006_0190]
+Something seems off. 
+You look quite troubled compared to yesterday.
+Sayaka.
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0200]
+Half of that is your fault, Liliana...
+[/message]
+
+// Liliana's expression changes: Sad
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_006_0210]
+I am truly sorry.
+It seems I caused you quite a lot of trouble.
+[/message]
+
+// Sayaka's expression changes: Default
+[face id=100105 type=default]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0220]
+Allow me to make it up to you...
+by offering a solution to your troubled heart.
+[/message]
+
+// Sayaka's expression changes: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0230]
+-- If you're trying to get me to join, no thanks.
+[/message]
+
+// Liliana's expression changes: Thoughts
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_006_0240]
+Oh dear, was that Mai's idea...?
+[/message]
+
+// Sayaka's expression changes: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0250]
+No, it was at the department store... 
+with Kiki Amo and Naraku Morikubo, 
+those terrorists.
+[/message]
+
+// Liliana's expression changes: Default
+[face id=200702 type=default]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0260]
+You were swayed into throwing yourself 
+right into their schemes...
+doesn't sound like a very beneficial religion to me.
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0270]
+Haha, 
+you hit the sore spot. Yes, my heart was weak, 
+and that was true at the time.
+[/message]
+
+// Liliana's expression changes: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0280]
+But thanks to the Aphesis Order, 
+I was able to recover so quickly. 
+That's also a fact.
+[/message]
+
+// Liliana's expression changes: Sad
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_006_0290]
+But you... 
+look even more troubled now, Sayaka, 
+than I did yesterday...
+[/message]
+
+// Sayaka's expression changes: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0300]
+...
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0310]
+You saved my life.
+Fate brought us together again, and I can't just 
+ignore that. It wouldn't be right...
+[/message]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0320]
+Then how about a good story 
+to lighten the mood? It might cheer me up.
+[/message]
+
+// Liliana's expression changes: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0330]
+Gladly.
+But let's move to a quieter spot,
+we wouldn't want to disturb others.
+[/message]
+
+// Hide character: Liliana
+[character id=200702 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+// Sayaka's expression changes: Panic
+[face id=100105 type=panic]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0340 lipsync=false]
+(…Is it okay for her to be carrying 
+a spiked bat around like that?)
+[/message]
+
+// Hide character: Sayaka Hiwatari, move to the right and fade out
+[character id=100105 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Scene transition (fade out)
+[fade type=out anim=simple sec=0.5]
+
+// Hide Sayaka
+[character id=100105 anim=fade show=false wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Black background
+[image type=bg id=000380 show=true]
+
+// Scene transition (fade in)
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Text window reappears
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=06_006_0350]
+…I had a happy life. I was showered 
+with love by my kind parents, 
+living a life you'd only see in fairy tales.
+[/message]
+
+// Display still image 15
+[image type=still id=100015 show=true]
+// Wait for the specified seconds
+[delay sec=1]
+
+[message name=Liliana charaid=200702 voice=06_006_0360]
+Because of that, 
+there was never any issue in my life.
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_006_0370]
+I've always tried to cherish others, 
+to be with them, to share in their joy. 
+That's how I've always lived.
+[/message]
+
+// Liliana expression change: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0380]
+A life with more than enough blessings. 
+How could there ever be complaints? 
+It was a happiness that seemed eternal!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Scene transition (fade out)
+[fade type=out anim=simple sec=1.5]
+
+// Hide still image
+[image type=still id=100015 show=false]
+
+// Display specified background
+[image type=bg id=000120]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Liliana moves
+[move id=200702 posx=0.66 wait=false]
+
+// Scene transition (fade in)
+[fade type=in anim=simple sec=1.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Display text window
+[visible show=true]
+
+// Display character: Liliana, face: Default
+[character id=200702 posx=0.66 anim=rtol face=default show=true wait=false]
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Face: Surprise
+[character id=100105 posx=0.33 anim=rtol face=surprise show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0390]
+That's odd.
+If there were no doubts, why did you join the Aphesis Order?
+[/message]
+
+// Liliana expression change: Angry
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_006_0400]
+That's exactly why!
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_006_0410]
+Everything I wanted was within reach, 
+and my parents were always kind to me.
+[/message]
+
+// Liliana shake (Surprised shout)
+[shake target=chara id=200702 type=random sec=0.3 pow=5 fade=false wait=false]
+
+// Liliana expression change: Painful
+[face id=200702 type=painful]
+[message name=Liliana charaid=200702 voice=06_006_0420]
+…Ah, how hollow it all seemed!
+[/message]
+
+// Sayaka expression change: Panic
+[face id=100105 type=panic]
+
+[message name=Liliana charaid=200702 voice=06_006_0430]
+No conflicts, no struggles, only joy. 
+Like a "fabricated world," 
+that's how I felt, even as a child.
+[/message]
+
+// Sayaka expression change: Confuse
+
+[face id=100105 type=confuse]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0440]
+That's when I met someone.
+Someone who voiced exactly what I had been thinking, 
+loud and clear.
+[/message]
+
+// Liliana expression change: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0450]
+That was... the "Leader" of Aphesis.
+He has no name. 
+We only call him "Leader."
+[/message]
+
+// Sayaka expression change: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0460]
+More important than the Great Sage?
+[/message]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0470]
+In the Aphesis Order, yes.
+The Great Sage is an ancient figure from the medieval period.
+But the Leader is the one who guides the Order today.
+[/message]
+
+// Liliana expression change: Angry
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_006_0480]
+He said...
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_006_0490]
+This world is a lie, with no truth in it.
+A world fabricated by the Luden known as Iris, 
+a world made up to serve her whims.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0500]
+I see...
+[/message]
+
+// Liliana expression change: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0510]
+You understand, don't you?
+You work at Iris Corporation. 
+You know the Leader's words are true.
+[/message]
+
+// Liliana expression change: Thoughts
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_006_0520]
+The Leader continued, saying that
+living in a false world with a false existence 
+would lead to the soul itself becoming void.
+[/message]
+
+// Liliana expression change: Angry
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_006_0530]
+Before that happens, we must seek enlightenment 
+and aim for a utopia, 
+the 'Uppermost World.' That is true salvation.
+[/message]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0540]
+That's why I joined the Aphesis Order.
+[/message]
+
+// Sayaka expression change: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0550]
+And it made you happier?
+[/message]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0560]
+Yes...
+Most of all, 
+it brought me greater "awareness."
+[/message]
+
+// Liliana expression change: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0570]
+This world is made of ones and zeroes, 
+everything is a construct.
+It was like a fog lifting from my mind!
+[/message]
+
+// Sayaka expression change: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0580]
+So, to you, Liliana, your parents, Shizu, 
+us… even yourself are all fabrications.
+You found peace in accepting that?
+[/message]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0590]
+Exactly! If I felt empty, 
+it was because I was just something Iris created.
+Accepting that brought me peace and stability.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100105 type=default]
+
+// Liliana expression change: Thoughts
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_006_0600]
+But… 
+there's something within Mai that's different. 
+It doesn't belong to this world…
+[/message]
+
+// Liliana expression change: Sad
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_006_0610]
+The doctrine says all beings from the Uppermost World 
+are to be revered, but with Mai… 
+I want to free her from it.
+[/message]
+
+// Liliana expression change: Confuse
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_006_0620]
+Rottie is safe now, and she's come to trust you all. 
+My only concern is… what's within Mai.
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0630]
+Huh… 
+Something's possessing Mai? 
+That's... strange, but...
+[/message]
+
+// Sayaka expression change: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0640]
+Even if you think of yourself as a fabrication, 
+Liliana, you still act like a human, don't you?
+[/message]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0650]
+Yes. Because I still believe that one day 
+I will reach the Uppermost World. 
+Until then, I won't abandon my humanity.
+[/message]
+
+// Sayaka expression change: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0660]
+I see.
+I'm the opposite, though...
+[/message]
+
+// Liliana expression change: Surprise
+[face id=200702 type=surprise]
+[message name=Liliana charaid=200702 voice=06_006_0670]
+Opposite? How so?
+[/message]
+
+// Sayaka expression change: Sad
+[face id=100105 type=sad]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0680]
+Because this world was all created by the Chairman... 
+Iris, who could bend everything to her will.
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0690]
+No matter what Arata Mizunashi plots, 
+everything goes back to normal after one night...
+[/message]
+
+// Sayaka shakes (shout)
+[shake target=chara id=100105 type=random sec=0.3 pow=5 fade=false wait=false]
+
+// Sayaka expression change: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0700]
+A world like that… it's meaningless. 
+If this is all fake life...
+then I want to destroy it!
+[/message]
+
+// Liliana expression change: Thoughts
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_006_0710]
+I can partly agree.
+The Aphesis Order acknowledges 
+the futility of this world.
+[/message]
+
+// Sayaka expression change: Surprise
+[face id=100105 type=surprise]
+
+// Liliana expression change: Angry
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_006_0720]
+But the goal must be "enlightenment." 
+Don't lose sight of that.
+You'll throw away happiness and ruin yourself.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0730]
+...You've got me a little curious now. 
+About the Aphesis Order.
+[/message]
+
+// Liliana expression change: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0740]
+I'm glad.
+You're looking a bit better now.
+It was worth having this conversation.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0750]
+I read in one of your books...
+The Aphesis Order has a "headquarters" somewhere?
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0760]
+Yes, that's right.
+The headquarters, where the Leader resides,
+is in my homeland, Romania.
+[/message]
+
+// Sayaka expression change: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_006_0770]
+Thank you... for everything.
+[/message]
+
+// Liliana expression change: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_006_0780]
+You're very welcome.
+[/message]
+
+// Sayaka expression change: Default
+
+// Liliana expression change: Default
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_006_0790]
+Take care, Sayaka.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+// Scene transition (fade out)
+[fade type=out anim=simple sec=1.5]
+
+// Hide characters: Sayaka and Liliana
+[character id=100105 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Black background
+[image type=bg id=000380 show=true fade=false]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Text window appears
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_006_0800]
+Saya!
+Where are you!?
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_006_0810]
+Mai... 
+I thought she'd be here, but...
+she's not in the library...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_006_0820]
+Where else can we look?
+She's not picking up her phone either!
+Ugh, this is so frustrating...!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop any ongoing sound effects
+[sound type=se state=stop]
+
+// Stop any ongoing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+
+//##########################################################################//
+// End
+//##########################################################################//
+// END
+

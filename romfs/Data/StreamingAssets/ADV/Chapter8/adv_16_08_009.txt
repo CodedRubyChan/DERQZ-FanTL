@@ -1,0 +1,1263 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_16_08_009
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=EscapeWithHeroine]
+
+// Display the specified background
+[image type=bg id=000230]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//BGM32
+//Background 230 / Game Show
+
+[character id=200102 posx=0.2 anim=fade face=smile show=true wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.83 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+//Shina shakes (surprised/yelling)
+[shake target=chara id=200102 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0010]
+Uwaa—♪ The venue is packed with people…!!
+I can't believe so many people came!
+And everyone looks so excited!!
+[/message]
+
+// Change Shina's expression: Normal
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0020]
+Yeah, yeah! Reading magazine reviews is fun, but
+seeing real reactions like this
+makes me the happiest!
+[/message]
+
+// Change Shina's expression: Confused
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0030]
+Look, look, Sayaka!
+People are having so much fun playing
+'End to Odyssey' over there…!
+[/message]
+
+// Change Shina's expression: Normal
+[face id=200102 type=default]
+
+// Change Sayaka's expression
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0040]
+Yeah, that's true!
+But, uh, our company's sensitive data is currently…
+Shina, you didn't forget why we came here, right?
+[/message]
+
+// Change Shina's expression: Surprised
+[face id=200102 type=surprise]
+
+// Change Shina's expression: Confused
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0050]
+—Ahaha. Sorry.
+I got a bit too happy because this scene is just so wonderful.
+I'll reflect on that.
+[/message]
+
+// Change Hinata's expression: Thoughtful
+[face id=200602 type=thoughts]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0060]
+Hmm…
+I get how the director feels, though.
+[/message]
+
+// Change Hinata's expression: Normal
+[face id=200602 type=default]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0070]
+I kinda thought they'd present it
+in a messed-up, broken state just to ruin the game's reputation.
+That's what Al would do.
+[/message]
+
+// Shina shakes (surprised/yelling)
+[shake target=chara id=200102 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Change Shina's expression: Panicking
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0080]
+That's awful!
+Don't jinx it…
+Everyone at the company worked so hard…!
+[/message]
+
+// Change Hinata's expression: Sad
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0090]
+But it's just overthinking. We still don't know
+why the data leaked, but judging by the audience's reactions,
+the game seems to be just fine.
+[/message]
+
+// Change Hinata's expression: Smile
+[face id=200602 type=smile]
+
+// Change Sayaka's expression: Panicking
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0100]
+Wait, so should we be thankful to Rin Asukaze instead…?
+What does this mean… Hinata?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+
+// Change Sayaka's expression to Surprised
+[face id=100101 type=surprise]
+
+// Wait for the specified seconds
+[delay sec=1.5]
+
+// Change Hinata's expression: Surprised
+[face id=200602 type=surprise]
+
+// Screen Shake
+[shake type=random sec=1.5 pow=15 fade=true wait=false]
+
+// Show text window
+[visible show=true]
+
+// Change Hinata's expression: Panicking
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0110]
+…Pyaaaaaaaaaaaaa!?
+[/message]
+
+// Sayaka shakes (surprised/yelling)
+[shake target=chara id=100101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0120]
+Eek!
+[/message]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0130]
+Ah, Sayaka!
+Look at that! The main stage in the center!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1]
+
+/////////////////////////////////////////////////////Hide Sayaka, Shina, Hinata
+[character id=200102 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=false]
+[character id=200602 anim=none show=false wait=true]
+[delay sec=0.5]
+
+// Show Still Image 17
+[image type=still id=100017 show=true]
+
+// Show black background
+[image type=black show=true]
+
+[fade type=in anim=simple sec=2]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Camera Zoom
+[camera type=zoom pivot=10 fov=0.8 sec=2 active=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Screen Shake
+[shake type=random sec=1.5 pow=15 fade=true wait=false]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0150]
+Uoooooooooohhhh! 
+Chloe-samaaaaaa!!!!!!
+[/message]
+
+// Cancel camera zoom
+[camera type=zoom sec=4 active=false wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0160]
+…Huh!? 
+Why is Chloe here!? 
+She should still be recording at Iris Corp.!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0170]
+…Not sure, but it looks like the stage is
+about to start… We can't stop it!
+[/message]
+
+// BGM15
+
+// [sound type=bgm state=play name=FinalBoss]
+
+// Stand Image: Chloe
+// Speaker Name: Chloe?
+
+// Change Chloe's expression: Normal
+[face id=200902 type=default]
+[message name=Chloe? charaid=200902 voice=08_016_0180]
+Thank you all for coming today!
+Not just the game,
+but make sure you enjoy my stage too!!
+[/message]
+
+// Screen Shake
+[shake type=random sec=1.5 pow=15 fade=true wait=true]
+
+// Change Chloe's expression: Smile
+[face id=200902 type=smile]
+[message name=Chloe? charaid=200902 voice=08_016_0190]
+Alright, let's start with the first song—
+'Over my DEAD copy'♪
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[sound type=bgm state=play name=FinalBoss]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1]
+
+[image type=still id=100017 show=false]
+/////////////////////////////////////////////380_Event-Blackout: Display
+[image type=bg id=000380 show=true]
+
+[fade type=in anim=simple sec=0.1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Show text window
+[visible show=true]
+
+// Narration
+[message]
+30 minutes later
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=1]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1]
+
+/////////////////////////////////////////////230_Game Show of Sagami: Display
+[image type=bg id=000230 show=true]
+
+[character id=200102 posx=0.2 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=false]
+[character id=200602 posx=0.83 anim=fade face=smile show=true wait=true]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0200]
+Haaah, Chloe-sama's stage was amazing as always!
+Although, it felt like she was slightly off her game…
+But it still moved me!
+[/message]
+
+// Change Shina's expression: Angry
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0210]
+Sayaka, I checked with Sumika over the phone
+during the performance…
+Chloe is definitely at Iris Corp…
+[/message]
+
+// Change Sayaka's expression: Panicking
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0220]
+So that Chloe on stage…
+who is she?
+[/message]
+
+// Change Shina's expression: Panicking
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0230]
+It can only be…
+that person…!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Sayaka, Shina, Hinata
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Show Character: Chloe
+// Face: Normal
+[character id=200902 posx=0.5 anim=fade face=smile show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Chloe? charaid=200902 voice=08_016_0240]
+Everyone—thank you!
+I have another surprise for you today!
+[/message]
+
+// Change Chloe's expression: Normal
+[face id=200902 type=default]
+[message name=Chloe? charaid=200902 voice=08_016_0250]
+Guess what—!
+My dear friend… 
+Hinata Morikubo is here with us today!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0260]
+Huh!?
+[/message]
+
+// Change Chloe's expression: Smile
+[face id=200902 type=smile]
+[message name=Chloe? charaid=200902 voice=08_016_0270]
+Knowing Hinata, she's definitely here, right?
+Come on up to the stage!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Chloe
+[character id=200902 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Show Character: Hinata Morikubo
+// Face: Smile
+[character id=200602 posx=0.5 anim=fade face=smile show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Screen Shake
+[shake type=random sec=1.5 pow=30 fade=true wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0280]
+U-Uwaaaaaaah!?
+[/message]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0290]
+Chloe-sama called me her friend… 
+I'm coming right away!
+Wait for me, Chloe-sama!
+[/message]
+
+// Show Character: Shina Ninomiya
+// Face: Panicking
+[character id=200102 posx=0.2 anim=fade face=panic show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0300]
+Oh no! Wait, Hinata!
+That Chloe-sama isn't the real
+Chloe-sama…!
+[/message]
+
+// Hinata moves
+[move id=200602 posx=-1 sec=0.5 wait=false]
+
+// Change Shina's expression: Surprised
+[face id=200102 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0310]
+Dash, dash, dash!
+[/message]
+
+// Change Shina's expression: Panicking
+[face id=200102 type=panic]
+
+[character id=100101 posx=0.75 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0320]
+Gah!? 
+She's so quick… like an animal!
+She's slipping through the crowd so smoothly—
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Sayaka, Shina, Hinata
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Show Character: Chloe
+// Face: Normal
+[character id=200902 posx=0.75 anim=fade face=smile show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Show Character: Sayaka Hiwatari
+// Face: Smile
+[character id=200602 posx=-1 anim=fade face=smile show=true wait=true]
+
+// Hinata moves
+[move id=200602 posx=0.35 sec=0.5 wait=true]
+
+// Change Chloe's expression: Normal
+[face id=200902 type=default]
+[message name=Chloe? charaid=200902 voice=08_016_0330]
+Hinata—, thank you for coming♪
+I'm so happy to introduce my precious friend to everyone.
+[/message]
+
+// Change Hinata's expression: Confused
+[face id=200602 type=confuse]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0340]
+Ehehe…
+There's no script… It's so spontaneous… 
+…Hmm…?
+[/message]
+
+// Stand Image: Chloe
+
+// Change Chloe's expression: Surprised
+[face id=200902 type=surprise]
+[message name=Chloe? charaid=200902 voice=08_016_0350]
+What's wrong, 
+Hinata-chan?
+Are you nervous?
+[/message]
+
+// Change Hinata's expression: Thoughtful
+[face id=200602 type=thoughts]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0360]
+Umm… Ahem!
+[/message]
+
+// Change Hinata's expression: Angry
+[face id=200602 type=angry]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0370]
+I have to admit, 
+you did quite well.
+Even if it was only for a moment, you managed to fool me.
+[/message]
+
+// Change Hinata's expression: Normal
+[face id=200602 type=default]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0380]
+And your singing and dancing 
+on stage was fantastic.
+Not quite up to the real thing, but still!
+[/message]
+
+// BGM off
+[sound type=bgm state=stop]
+
+// Change Chloe's expression: Smile
+[face id=200902 type=smile]
+[message name=Chloe? charaid=200902 voice=08_016_0390]
+Hehehe.
+What's wrong, Hinata?
+I can't understand what you're saying.
+[/message]
+
+// Change Hinata's expression: Angry
+[face id=200602 type=angry]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0400]
+Don't underestimate me, the hardcore fan of Chloe-sama! 
+At this distance, it's clear to me—
+You're not Chloe-sama! You're an imposter!
+[/message]
+
+// BGM33
+
+[sound type=bgm state=play name=GlitchGirls]
+
+// Stand Image: Chloe
+
+// Change Chloe's expression: Surprised
+[face id=200902 type=surprise]
+[message name=Chloe? charaid=200902 voice=08_016_0410]
+Oh dear.
+You've started saying weird things all of a sudden.
+Look, the crowd is booing you, see?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Hinata, Chloe?
+[character id=200602 anim=fade show=false wait=false]
+[character id=200902 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Speaker Name: @Passionate Fan
+// @Male Mob 78
+
+[message name=Passionate Fan voice=08_016_0420]
+Shut up!!
+Who cares about Hinata—!!
+Get off the stage!!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Character: Chloe?
+// Face: Panicking
+[character id=200902 posx=0.75 anim=fade face=default show=true wait=false]
+
+// Show Character: Hinata
+// Face: Panicking
+[character id=200602 posx=0.35 anim=fade face=panic show=true wait=true]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0430]
+E-Everyone, look carefully!
+The real Chloe-sama's charm is way more than this!
+Wake up! Open your eyes!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Hinata, Chloe?
+[character id=200602 anim=fade show=false wait=false]
+[character id=200902 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Speaker Name: @Passionate Fan
+// @Female Mob 79
+
+[message name=Passionate Fan voice=08_016_0440]
+What—!! 
+You're the crazy one—!!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Character: Chloe?
+// Face: Smile
+[character id=200902 posx=0.75 anim=fade face=smile show=true wait=false]
+
+// Show Character: Hinata
+// Face: Angry
+[character id=200602 posx=0.35 anim=fade face=angry show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Chloe? charaid=200902 voice=08_016_0450]
+Too bad, but no one can hear you, Hinata.
+No matter how desperately you shout.
+It's sad, isn't it, Hinata?
+[/message]
+
+// Change Chloe's expression: Angry
+[face id=200902 type=angry]
+[message name=Chloe? charaid=200902 voice=08_016_0460]
+But that's understandable.
+Because you're such a… 
+bad girl, Hinata.
+[/message]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Change Hinata's expression: Panicking
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0470]
+Wha!? 
+Why am I a bad girl!? I-I,
+I haven't done anything wrong right now!
+[/message]
+
+// Change Chloe's expression: Surprised
+[face id=200902 type=surprise]
+[message name=Chloe? charaid=200902 voice=08_016_0480]
+Really?
+Put your hand on your heart and think it over.
+[/message]
+
+/// Change Chloe's expression: Confused
+[face id=200902 type=confuse]
+[message name=Chloe? charaid=200902 voice=08_016_0490]
+You're causing trouble by casting 
+suspicion on me and confusing everyone.
+You've even been slacking off on updating the fan site♪
+[/message]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=200602 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+
+// Change Hinata's expression: Sad
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0500]
+Th-That's because I've been so busy 
+with the game's development that I didn't have time…
+[/message]
+
+// Change Chloe's expression: Angry
+[face id=200902 type=angry]
+[message name=Chloe? charaid=200902 voice=08_016_0510]
+That's just an excuse, right?
+If you were a true fan,
+you'd prioritize me over everything else.
+[/message]
+
+// Change Chloe's expression: Smile
+[face id=200902 type=smile]
+[message name=Chloe? charaid=200902 voice=08_016_0520]
+You've gotten bored, haven't you?
+Just like with 'Komai-chan.'
+You're going to throw me away because you're bored, right!?
+[/message]
+
+// Change Hinata's expression: Panicking
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0530]
+W-Why are you bringing that up!? 
+N-No! That's not true!
+I haven't gotten bored or thrown you away!
+But Komai-chan… she passed away…
+[/message]
+
+// Change Chloe's expression: Surprised
+[face id=200902 type=surprise]
+[message name=Chloe? charaid=200902 voice=08_016_0540]
+Oh, right, right.
+Hinata throws things away if they die.
+No matter how much she liked them, without hesitation.
+[/message]
+
+// Screen Shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+// Change Chloe's expression: Angry
+[face id=200902 type=angry]
+[message name=Chloe? charaid=200902 voice=08_016_0550]
+Even though you were running a fan site 
+and supporting her so passionately.
+Komai-chan would be so sad if she knew!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Hinata, Chloe?
+[character id=200602 anim=fade show=false wait=false]
+[character id=200902 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Speaker Name: @Passionate Fan
+// @Male Mob 78
+
+[message name=Passionate Fan voice=08_016_0560]
+Heartless!! 
+Traitor!!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Character: Chloe?
+// Face: Smile
+[character id=200902 posx=0.75 anim=fade face=smile show=true wait=false]
+
+// Show Character: Hinata
+// Face: Panicking
+[character id=200602 posx=0.35 anim=fade face=panic show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0570]
+A-Ahh… 
+I'm, I'm a…
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Hinata, Chloe?
+[character id=200602 anim=fade show=false wait=false]
+[character id=200902 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Show Character: Kiki Amo
+// Face: Smile
+[character id=500202 posx=0.5 anim=fade face=smile show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=08_016_0580]
+Everyone!!
+We can't forgive a heartless brat like this one, can we!?
+ヽ(`Д´)ﾉ
+[/message]
+
+// Speaker Name: @Passionate Fan
+// @Male Mob 78
+
+[message name=Passionate Fan voice=08_016_0590]
+Outta here—!!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Kiki Amo
+[character id=500202 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Show Character: Shina Ninomiya
+// Face: Panicking
+[character id=200102 posx=0.35 anim=rtol face=panic show=true wait=false]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// @Shina Ninomiya
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0600]
+Kiki Amo is here too!? 
+The booing in the venue is growing unnaturally louder!
+No, this is bad, Hinata's in danger…!
+[/message]
+
+/////////////////////////////////////////////////////Hide Shina Ninomiya
+[character id=200102 anim=rtol show=false wait=true]
+
+// Show Character: Sayaka Hiwatari
+// Face: Panicking
+[character id=100101 posx=0.75 anim=rtol face=panic show=true wait=true]
+
+// @Sayaka Hiwatari
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0610]
+Damn it!!
+Move!! I can't get through!!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Sayaka Hiwatari
+[character id=100101 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Show Character: Chloe
+// Face: Angry
+[character id=200902 posx=0.75 anim=ltor face=angry show=true wait=true]
+
+// Show Character: Hinata Morikubo
+// Face: Sad
+[character id=200602 posx=0.35 anim=fade face=sad show=true wait=true]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Chloe? charaid=200902 voice=08_016_0620]
+Hey, Hinata.
+If you hear it straight from the person, maybe you'll understand…
+just how awful of a person you are.
+[/message]
+
+// Change Hinata's expression: Panicking
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0630]
+P-Person?
+What do you mean…?
+[/message]
+
+/////////////////////////////////////////////////////Hide Hinata, Chloe?
+[character id=200602 anim=fade show=false wait=false]
+[character id=200902 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0640]
+Hello, sorry to keep you waiting.
+It's me.
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// BGM34
+[sound type=bgm state=play name=DeathEnd]
+
+// Show Character: Naraku Morikubo
+// Face: Normal
+[character id=500402 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Move
+[move id=500402 posx=0.7 sec=1 wait=true]
+
+// Show Character: Hinata Morikubo
+// Face: Panicking
+[character id=200602 posx=0.35 anim=fade face=panic show=true wait=true]
+
+// Move
+[move id=200602 posx=0.35 sec=1 wait=true]
+
+// Hinata shakes (surprised/yelling)
+[shake target=chara id=100105 type=horizontal sec=0.5 pow=3 fade=false wait=false]
+
+// Change Hinata's expression: Sad
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0650]
+Ah,… You're,
+the one who hired me… Naraku?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0660]
+Yes.
+My name is Naraku Morikubo now.
+[/message]
+
+[face id=500402 type=thoughts]
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0670]
+But my name when I was alive…
+[/message]
+
+[face id=500402 type=default]
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0680]
+Was "Komai."
+[/message]
+
+[face id=200602 type=confuse]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0690]
+—Wha!? 
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0700]
+It's been a while.
+You used to always come to my signing events.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0710]
+I look and speak completely differently from my idol days,
+but that was just an act. 
+It seems like you believe me.
+[/message]
+
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0720]
+—Ah, ah… 
+Kume Kanamo-san…
+[/message]
+
+[face id=500402 type=confuse]
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0730]
+Wait, you even know my real name?
+Did I tell you that? 
+I never revealed it during my idol days, you know.
+That's creepy (laughs bitterly)
+[/message]
+
+[face id=500402 type=default]
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0740]
+Thanks to your enthusiasm, 
+I've returned to this world.
+[/message]
+
+[face id=500402 type=thoughts]
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0750]
+But I was shocked.
+I learned that you'd abandoned me, Hinata.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_016_0760]
+It was such a, such a shock…
+[/message]
+
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0770]
+A-Aaah…!!!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Hinata, Naraku Morikubo
+[character id=200602 anim=fade show=false wait=true]
+[character id=500402 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Character: Kiki Amo
+// Face: Normal
+[character id=500202 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=08_016_0780 lipsync=false]
+(Haha. That was quite the performance.
+As expected from a former idol.)
+[/message]
+
+// Change Amo's expression: Smile
+[face id=500202 type=smile]
+[message name=Kiki Amo charaid=500202 voice=08_016_0790]
+Now, fall deep into the abyss! 
+Become a pit of endless despair!
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Kiki Amo
+[character id=500202 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Character: Naraku Morikubo
+// Face: Normal
+[character id=500402 posx=0.7 anim=fade face=default show=true wait=false]
+
+// Show Character: Hinata Morikubo
+// Face: Sad
+[character id=200602 posx=0.35 anim=fade face=sad show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Screen Shake
+[shake type=random sec=1.5 pow=10 fade=true wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0800]
+U… Uuuuuu…! 
+Hiiiiyahhhhhhh!!!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////Hide Naraku Morikubo, Hinata
+[character id=500402 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+// Show Character: Shina Ninomiya
+// Face: Panicking
+[character id=200102 posx=0.35 anim=rtol face=panic show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0810]
+Hinata!!
+[/message]
+
+// BGM18
+[sound type=bgm state=play name=TownMapC]
+
+// Show Character: Sayaka Hiwatari
+// Face: Panicking
+[character id=100101 posx=0.7 anim=rtol face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0820]
+Shina… Look outside!
+There's a Strain Area… 
+forming above the city!
+[/message]
+
+// Show Still Image 18
+[image type=still id=100018 show=true]
+
+[sound type=se name=Blackhole]
+
+// Wait for the specified seconds
+[delay sec=3]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0830]
+That's…!! 
+It's like a black hole…!! 
+It's swallowing up the city…
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0840]
+Despair became the key…
+And 'End to Odyssey's' VR feature was activated to create 
+an artificial Strain Area…
+[/message]
+
+// @Hinata Morikubo
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0850]
+Waaaaaaaaah!!
+[/message]
+
+// @Hinata Morikubo
+[message name=Hinata Morikubo charaid=200602 voice=08_016_0860]
+I didn't know… I really didn't…!!! 
+Please forgive me…!
+[/message]
+
+// Hide Still Image 18
+[image type=still id=100018 show=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_016_0870]
+Hinata is…!
+She's being sucked into the Strain Area…
+[/message]
+
+[character id=100101 anim=fade show=false wait=false]
+
+// Play SE
+[sound type=se name=Makeblade]
+
+[character id=100103 posx=0.7 anim=fade face=angry show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_016_0880]
+Shina, evacuate everyone here!
+I'll… go save Hinata!
+[/message]
+
+// Change Shina's expression: Angry
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=08_016_0890]
+…Got it. I'll handle things here…!
+Let's save Hinata and everyone!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

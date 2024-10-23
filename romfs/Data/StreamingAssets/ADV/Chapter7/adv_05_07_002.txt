@@ -1,0 +1,150 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_05_07_002
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+//////////////////////////////////////////////////////////////////////Show black background
+[image type=black show=true]
+
+[character id=601701 posx=0.33 anim=none face=default show=true wait=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//BGM19 / Subway
+//Background 580 / Subway
+
+[character id=100105 posx=0.66 anim=rtol face=smile show=true wait=false]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_005_0010]
+Hey, what's up!
+[/message]
+
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_005_0020]
+I'd like to head to this place called the Rizaria Forest today. 
+Think you can take me there? 
+I've got some fun waiting for me.
+[/message]
+
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=07_005_0030]
+Sayaka, it seems the time has come 
+to see whether you lean towards light or dark. 
+Heh heh heh...
+[/message]
+
+[face id=100105 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_005_0040]
+Speaking of forests, it's all about forest bathing, right? 
+Taking in that fresh air, filling your lungs. 
+Feels so refreshing and revitalizing!
+[/message]
+
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_005_0050]
+...But honestly, 
+I'm aiming to breathe in a much better scent.
+[/message]
+
+// Sayaka expression change
+[face id=100105 type=expectation]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_005_0060]
+Something sticky, intense, 
+something that chokes you up. 
+Ah, this is bad. I can't hold back anymore...
+[/message]
+
+[face id=601701 type=default]
+
+[message name=Snark charaid=601701 voice=07_005_0070]
+Do as you please. Follow your desires. 
+There is no need to resist the nature you were born with, 
+whether you're human or not.
+[/message]
+
+[face id=100105 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_005_0080]
+Alright then, I'll hop on, so let's do this! 
+The start of a fun, fun adventure! 
+Can't wait!!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Hide the specified background
+[image type=bg id=000580 show=false fade=false]
+[character id=100105 anim=none show=false wait=false]
+[character id=601701 anim=none show=false wait=true]
+
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

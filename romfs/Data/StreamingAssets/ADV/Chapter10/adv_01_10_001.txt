@@ -1,0 +1,869 @@
+// Script
+// Wait for the specified duration
+[delay sec=0.1]
+
+// adv_01_10_001
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+// Wait for the specified duration
+[delay sec=2]
+// Fade in over a specified duration
+[fade type=in anim=simple sec=1]
+[sound type=se name=Eyecatch]
+// Display ADV eyecatch
+[eyecatch chapter=10 title=And Into the Serene World]
+// Wait for the specified duration
+[delay sec=0.5]
+// Fade out over a specified duration
+[fade type=out anim=simple sec=1]
+//########## Eyecatch ##########//
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkD]
+
+// Display specified background
+[image type=bg id=000360]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified duration
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM26 / For epilogue
+// Background 360 / Blue Sky
+// (※ Narration has no speaker name)
+
+// @Hinata Morikubo
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0010]
+――2025
+――July
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0020]
+Since then...
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0030]
+Even after driving Arata Mizunashi away,
+a lot has happened,
+but this world keeps on going, as usual.
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Black background
+[image type=bg id=000360 show=false black=true]
+
+[delay sec=0.3]
+
+// Natsuo Munakata ON
+// Male tone
+
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=true]
+
+// @Hinata Morikubo
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0040]
+"The madman from the 'Uppermost World' committed
+extreme acts of terrorism here. We will provide
+all necessary compensation for the damages."
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0050]
+Thanks to this aid, we were able to recover from
+the disaster that hit "Sagami City" more easily
+than expected. Well, Hinata and the others did work hard too!
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0060]
+... Still, that Munakata guy,
+was originally Arata's ally, right?
+He's got some nerve...
+[/message]
+
+// Natsuo Munakata OFF
+[character id=600501 anim=fade show=false wait=true]
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0070]
+But for Sagami City... or rather, this world,
+it was the first time people from the Uppermost World
+came here "officially."
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0080]
+It's like... if I had to compare it,
+it's like that gray alien everyone knows
+actually showing up... or something?
+[/message]
+
+// Background 160 / Downtown
+[image type=bg id=000160 show=true]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0090]
+Thanks to that, Sagami City now attracts tourists
+from all over the world looking for traces
+of the Uppermost World (though there really aren't any).
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0100]
+It's like... the city has developed
+way more than it was before the incident...
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 50 / Enigma Corp.
+// Shina Ninomiya, Iris, Riddie ON
+
+[image type=bg id=000160 show=false black=true]
+[delay sec=0.3]
+
+[image type=bg id=000050 show=true]
+
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.48 anim=fade face=default show=true wait=false]
+[character id=601901 posx=0.75 anim=fade face=default show=true wait=true]
+
+// @Hinata Morikubo
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0110]
+Amidst all that, Shina and the others are still
+working on the next major DLC for
+"End to Odyssey"...!
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0120]
+They're working on a new scenario, in consultation
+with Enigma Corp. again. Well, it's not really
+my concern though.
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Turn off characters
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+
+// Black background
+[image type=bg id=000050 show=false black=true]
+
+// @Hinata Morikubo
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0130]
+There's a bit of a sad story too.
+Some members of the game development team
+have already returned to their "main jobs."
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 600 / Lucille's Shop
+// Svetlana, G Lucille, Mita Maruko ON
+
+[image type=bg id=000600 show=true]
+
+[character id=200802 posx=0.2 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=602501 posx=0.75 anim=fade face=default show=true wait=true]
+
+[delay sec=0.3]
+
+// @Hinata Morikubo
+
+//// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0140]
+For example, Svetlana has
+returned to her home country, so
+it's going to be a bit tough to see her again.
+[/message]
+
+// @Hinata Morikubo
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0150]
+It looks like she even took that Kiki Amo
+kid back with her...
+I wonder if that's really okay...
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Turn off characters
+
+[character id=200802 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=false]
+[character id=602501 anim=fade show=false wait=true]
+
+// Background 490 / University Hospital
+// Chloe, G Selica ON
+
+[image type=bg id=000600 show=false black=true]
+
+[delay sec=0.3]
+
+[image type=bg id=000490 show=true]
+
+[character id=200902 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.66 anim=fade face=default show=true wait=true]
+
+// @Hinata Morikubo
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0160]
+Chloe is still in Japan, but now
+she's doing a shoot at a hospital.
+Busy as always!
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Black background
+
+[character id=200902 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+
+[image type=bg id=000490 show=false black=true]
+
+// Display Hinata
+
+[character id=200602 posx=0.5 anim=fade face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0170]
+Well, as for me... over summer vacation,
+I have university assignments, so I have to focus
+on myself...! I can't be lazy!
+[/message]
+
+// @G Ar
+// Speaker Name: ?????
+
+[message name=????? charaid=500402 voice=10_001_0180]
+No, you've been relaxing quite a lot lately.
+... You're in the way of my cleaning.
+Please step out for a moment.
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0190]
+Ugh... Fine, I get it! I'll go~~!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Background 400 / Rundown Apartment
+
+[face id=602201 type=default]
+[image type=bg id=000400 show=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0200]
+Seriously... Naraku-san, this place is way
+too cluttered. Don't you think so?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Naraku appears
+[move id=200602 posx=0.33 wait=false]
+[character id=500402 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0210]
+I can't help it, you know. This place was a haunted property.
+Some of the previous owner's belongings are still here.
+I'll have to keep working to clean it up.
+[/message]
+
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0220]
+Wha... what?!
+[/message]
+
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0230]
+Hmm... I was planning to stay over today,
+but now I'm feeling a bit scared...
+[/message]
+
+// Hinata changes expression
+[face id=200602 type=angry]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0240]
+I mean, it's not right for a girl to live alone
+in a place like this! Don't you have any money?
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0250]
+As long as it's cheap, I don't care. I'm not
+planning on sticking around for long anyway.
+[/message]
+
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0260]
+Ahh... ugh...
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0270]
+Don't worry about it.
+And I won't be jumping in front of any trains
+myself anymore, I promise.
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=sad]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0280]
+Ever since... you apologized to me that day,
+I've also reflected on how I left my fans behind
+when I died. I'm sorry for that.
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0290]
+So it's one of the few good things Arata Mizunashi did, huh?
+Turning Komai-chan into a Luden...
+[/message]
+
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0300]
+...Oh, um, sorry, Naraku-san.
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0310]
+I appreciate your concern.
+But I've never been able to get used to the name 'Komai'...
+even just hearing it.
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0320]
+Well, anyway, how about a walk? 
+It's nice out today.
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0330]
+Sure, I'm not working or anything.
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen blackout
+// Background 60
+// BGM23
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+[image type=bg id=000060 show=true]
+
+[sound type=bgm state=play name=TalkA]
+
+[fade type=in anim=simple sec=2]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Hinata changes expression
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0340]
+Hey, Naraku-san, about your body...
+that thing Arata supposedly did...
+is it really true?
+[/message]
+
+// Hinata changes expression
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0350]
+I mean... nothing's happened in these past three months,
+right?
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0360]
+Well, yeah. In fact, I feel even better
+than when I was 'alive'...
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0370]
+But it's true that he did something to me
+and the other Glitch Girls... 
+to Lilith, Huuki, and Amo. 
+He kept bragging about it, after all.
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0380]
+He's the kind of guy who'd put a bomb
+in someone's body without a second thought, you know?
+It can't be anything good...
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0390]
+Ugh...
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0400]
+...Wait! Naraku-san.
+I just thought of something!
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0410]
+What is it?
+I'll hear you out.
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0420]
+We should find Arata Mizunashi again!
+And make him remove whatever it is
+he did to you guys!
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0430]
+...How do you plan on meeting someone
+who was taken to the Uppermost World?
+Ever since Munakata left,
+there's been no contact.
+[/message]
+
+// Hinata changes expression
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0440]
+Well... uh...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM25
+
+[sound type=bgm state=play name=TalkC]
+
+// Sayaka appears
+
+[move id=200602 posx=0.25 wait=false]
+[move id=500402 posx=0.5 wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0450]
+Hey there, you two.
+What's up?
+[/message]
+
+// Hinata changes expression
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0460]
+Oh, Sayacchi! We were just chatting because it's our day off...
+Are you on summer break too?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0470]
+Nah~, summer break for working adults is in August...
+sigh, it's sad, isn't it?
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0480]
+...You say you're sad,
+but you look kind of happy.
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=default]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0490]
+Oh, you can tell?
+Look! My employee ID and business card!
+[/message]
+
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0500]
+Whoa...! Sayacchi, you're a full-time employee
+at Iris now!? You were just a part-time warrior before!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0510]
+Yup, and I can do more things now!
+Though my main job is still debugging.
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0520]
+Heh, that's awesome... 
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0530]
+Hinatan, how about visiting Iris sometime?
+It's been a while, hasn't it?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0540]
+...Huh? Really?! I can?
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0550]
+Yup. You looked like you wanted to go.
+Well, you're a regular, so 'face pass'.
+What do you think? Want to come, Naraku?
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0560]
+...No, thank you. 
+Don't go inviting outsiders and former enemies willy-nilly.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0570]
+Eh, isn't your probation period over?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0580]
+And besides, it wasn't your fault; 
+Arata brainwashed you... the city's back to normal, so it's all forgiven!
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0590]
+...Leave me out of it.
+I'm just not in the mood.
+Hinata, you can enjoy it for both of us.
+[/message]
+
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0600]
+Got it! I'm on it!
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0610]
+And just for the record,
+Hinata also hacked your company, you know...
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=default]
+
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0620]
+It was on your orders, Naraku-san!!
+[/message]
+
+// Hinata changes expression
+[face id=200602 type=default]
+
+// Sayaka changes expression
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_001_0630]
+Okay, okay, it's all water under the bridge now...
+I'm going to be late, so I'll head off.
+Alright?
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0640]
+Yup! Oh, Naraku-san,
+I'll see you back at your apartment tonight!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_001_0650]
+You'll be okay by yourself for a while, right?
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0660]
+I've been living alone for quite a while, you know.
+Even before you started staying over during summer break.
+Alright, take care.
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hide Sayaka and Hinata
+[character id=100101 anim=ltor show=false wait=false]
+[character id=200602 anim=ltor show=false wait=false]
+
+[move id=500402 posx=0.5 wait=true]
+
+// Stop BGM
+[sound type=bgm state=stop]
+[delay sec=0.5]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Naraku is alone
+[move id=500402 posx=0.5 wait=true]
+
+// BGM stops
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0670]
+Sigh.
+I guess I'll head to the library.
+There are a few things I want to look up.
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0680]
+Still...
+Has peace truly returned to this world?
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0690]
+...Not that it matters to me,
+someone who was shunned by this world.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM stops
+
+// Suddenly, "Glasses Shina" appears, disguised as the Great Sage Pararinasu
+// She will continue to appear as "Glasses Shina"
+
+// Great Sage Pararinasu
+[move id=500402 posx=0.33 wait=false]
+[character id=200103 posx=0.66 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_001_0700]
+...There's no use in being so self-deprecating, you know?
+The world is always changing.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina disappears
+[character id=200103 posx=0.5 anim=fade face=default show=false wait=true]
+
+[face id=500402 type=confuse]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_001_0710]
+...Huh? I felt someone's presence...
+But no one is here. Was it just my imagination?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen blackout
+
+// Text window hidden
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// END
+//##########################################################################//
+:end
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Stop any ongoing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// END
+//##########################################################################//
+//END
+
+

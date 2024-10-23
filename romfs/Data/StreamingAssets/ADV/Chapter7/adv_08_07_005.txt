@@ -1,0 +1,179 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_08_07_005
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter7]
+
+// Wait for the specified number of seconds
+[delay sec=2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+[character id=100106 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Background: Dungeon remains unchanged
+// BGM: 09
+
+// Sayaka/Blade expression change
+[face id=100106 type=surprise]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_008_0010]
+T-this place... I know it! I can feel it! 
+Deep in my memories... there's no doubt, 
+it's 'Lysaria Forest'!
+[/message]
+
+// @Svetlana
+// Speaker name: Lucil
+
+[message name=Lucil charaid=200801 voice=07_008_0020 icon=true]
+Hello there. Can you hear me? 
+Let me introduce myself again, I'm 'Lucil'. 
+Is my "signal" coming through clearly?
+[/message]
+
+[face id=100106 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_008_0030]
+But... 
+I can't see her! 
+Where is she hiding!?
+[/message]
+
+// @Svetlana
+// Speaker name: Lucil
+
+[message name=Lucil charaid=200801 voice=07_008_0040 icon=true]
+I can feel your murderous intent... shivers~ 
+Right now, I'm speaking to you telepathically 
+from a faraway place.
+[/message]
+
+// @Svetlana
+// Speaker name: Lucil
+
+[message name=Lucil charaid=200801 voice=07_008_0050 icon=true]
+In this forest, where "our" connection is strong... 
+I'm going to find out. 
+Whether you're truly Ripuka or not.
+[/message]
+
+// @Svetlana
+// Speaker name: Lucil
+
+[message name=Lucil charaid=200801 voice=07_008_0060 icon=true]
+For that, I'll be using my powers. 
+First, I'll take a little peek inside your head...
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=100106 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+[face id=100106 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_008_0070]
+Aaaah... ugh. 
+We... we met here for the first time! 
+And then, we fought!
+[/message]
+
+[message name=Lucil charaid=200801 voice=07_008_0080 icon=true]
+Hmmm... 
+It does seem like that, but... 
+is that really the case?
+[/message]
+
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_008_0090]
+Ahahahahahah! What are you trying to say!? 
+That's right, it's true! 
+Because I am Ripuka!!
+[/message]
+
+[face id=100106 type=default]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_008_0100]
+I'll find you now♪ 
+I'll set you free! 
+I'll kill you, you see!
+[/message]
+
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_008_0110]
+Tortured, assaulted—
+You were hurt so much, weren't you? 
+Poor Lucil♪
+[/message]
+
+[message name=Lucil charaid=200801 voice=07_008_0120 icon=true]
+Uh-huh. That's some nasty talk. 
+You have Ripuka's memories. 
+That much seems certain.
+[/message]
+
+[message name=Lucil charaid=200801 voice=07_008_0130 icon=true]
+But, 
+if you truly are Ripuka... 
+then there are some things that just don't add up.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop all playing SE
+[sound type=se state=stop]
+
+// Stop the background music
+//[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

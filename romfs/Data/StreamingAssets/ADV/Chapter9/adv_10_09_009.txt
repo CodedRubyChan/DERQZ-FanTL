@@ -1,0 +1,386 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_10_09_009
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkG]
+
+// Display the specified background
+[image type=bg id=000240]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+//[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Continuation from 09_008
+
+//BGM29 - Gymnopédie
+//Background 240 - VR Game
+
+[character id=600701 posx=0.5 anim=fade face=smile show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Alice charaid=600701 voice=09_010_0010]
+Fufufu,
+Welcome to the climax scene—
+[/message]
+
+[delay sec=0.1]
+
+//【Choice】
+//1: Is it you? Can you save Sayaka…?
+
+[select]
+[link text="Is it you? Can you save Sayaka…?" label=usual]
+[/select]
+
+:usual
+
+[face id=600701 type=default]
+
+[message name=Alice charaid=600701 voice=09_010_0020]
+No, no, the situation is different from usual,
+[/message]
+
+[message name=Alice charaid=600701 voice=09_010_0030]
+That girl is not relying on me,
+she's relying on you.
+[/message]
+
+[message name=Alice charaid=600701 voice=09_010_0040]
+A genius who can freely steal and modify memories,
+Arata Mizunashi.
+[/message]
+
+[face id=600701 type=confuse]
+
+[message name=Alice charaid=600701 voice=09_010_0050]
+Truly an elite agent from the Uppermost World.
+A prized pupil of the great sage, I'd say.
+[/message]
+
+[message name=Alice charaid=600701 voice=09_010_0060]
+Annoying as it is,
+he's a really bad match for me to face head-on—
+[/message]
+
+[face id=600701 type=default]
+
+[message name=Alice charaid=600701 voice=09_010_0070]
+But well, what happens in that world,
+you'll have to handle over there. Right?
+[/message]
+
+[message name=Alice charaid=600701 voice=09_010_0080]
+Now, it's early, but… I'm returning to my world.
+I'm bringing in backup,
+so this is a brief goodbye. See you soon.
+[/message]
+
+// Alice exits
+
+[character id=600701 posx=0.5 anim=fade face=default show=false wait=true]
+
+// Background 250 - VR Game
+
+[image type=bg id=000250 show=true]
+
+[character id=602001 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0090]
+"Even if it's a fabricated world, I want to protect it."
+[/message]
+//09_010_0100 ,09_010_0110 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0120]
+It seems that… the sincere feelings of Sayaka and Shina,
+even at the brink of death, have reached you.
+[/message]
+//09_010_0130 ,09_010_0140 - Combined voice
+
+//【Choice】
+//1: Are you talking to me?
+
+[select]
+[link text="Are you talking to me?" label=connect]
+[/select]
+
+:connect
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0150]
+Yes. The world has "connected."
+Finally, I can speak directly to you like this.
+[/message]
+//09_010_0160 ,09_010_0170 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0180]
+You can't be seen or interfered with by "living" beings
+in the Uppermost World. Fitting for the 'God of Death.'
+[/message]
+//09_010_0190 ,09_010_0200 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0210]
+Even we couldn't perceive you until now…
+But now, you can hear my voice clearly, right?
+[/message]
+//09_010_0220 ,09_010_0230 - Combined voice
+
+//【Choice】
+//1: Let's get to the point.
+
+[select]
+[link text="Let's get to the point." label=pleased]
+[/select]
+
+:pleased
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0240]
+Certainly. With pleasure.
+[/message]
+//09_010_0250 ,09_010_0260 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0270]
+No matter how strong the feelings of Sayaka or Shina are…
+They can't defeat Arata Mizunashi head-on.
+[/message]
+//09_010_0280 ,09_010_0290 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0300]
+Now then,
+let me present the divine move.
+[/message]
+//09_010_0310 ,09_010_0320 - Combined voice
+
+// No BGM
+[sound type=bgm state=stop]
+
+// Black background
+// Display Arata Mizunashi and Sayaka
+
+[image type=bg id=000380 show=true]
+
+[move id=602001 posx=0.85 wait=false]
+[character id=600201 posx=0.2 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0330]
+Arata Mizunashi intends to take all of Sayaka's
+power, which has matured until now, for himself.
+[/message]
+//09_010_0340 ,09_010_0350 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0360]
+The stronger Sayaka is…
+the more he can simply "copy" that strength and amplify his own.
+[/message]
+//09_010_0370 ,09_010_0380 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0390]
+I'll be blunt.
+She cannot win.
+[/message]
+//09_010_0400 ,09_010_0410 - Combined voice
+
+//【Choice】
+//1: I don't understand what to do…
+
+[select]
+[link text="I don't understand what to do…" label=hint]
+[/select]
+
+:hint
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0420]
+I can give you a hint.
+[/message]
+//09_010_0430 ,09_010_0440 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0450]
+What if it was the "opposite"?
+What if she wasn't strong…?
+[/message]
+//09_010_0460 ,09_010_0470 - Combined voice
+
+//【Choice】
+//1: ……
+
+[select]
+[link text="……" label=tutrial]
+[/select]
+
+:tutrial
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0480]
+Check the settings.
+Think back to the "tutorial."
+[/message]
+//09_010_0490 ,09_010_0500 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0510]
+You and Sayaka have been through death many times,
+but think carefully—
+[/message]
+//09_010_0520 ,09_010_0530 - Combined voice
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0540]
+What was the "setting"?
+[/message]
+//09_010_0550 ,09_010_0560 - Combined voice
+
+//【Choice】
+//1: I'm starting to see something.
+
+[select]
+[link text="I'm starting to see something." label=difficulty]
+[/select]
+
+:difficulty
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0570]
+How about the "difficulty"?
+[/message]
+//09_010_0580 ,09_010_0590 - Combined voice
+
+//【Choice】
+//1: I'm beginning to remember.
+
+[select]
+[link text="I'm beginning to remember." label=way]
+[/select]
+
+// Wait for the specified seconds
+:way
+[delay sec=0.5]
+
+//【Choice】
+//1: There was a way to lower Sayaka's level.
+
+[select]
+[link text="There was a way to lower Sayaka's level." label=config]
+[/select]
+
+:config
+
+[message name=Evil Spirit charaid=602001 voice=09_010_0600]
+Exactly.
+Through the configuration.
+Your specialty, isn't it? Now, do you understand?
+[/message]
+//09_010_0610 ,09_010_0620 - Combined voice
+
+// Hide all character illustrations
+[visible show=false]
+[character id=602001 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=true]
+
+// Display screenshot of options screen
+[cutin id=000011 type=fade sec=0.5 show=true]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+//【Choice】
+//1: I see, I shouldn't empower Sayaka…
+
+[select]
+[link text="I see, I shouldn't empower Sayaka…" label=understand]
+[/select]
+
+:understand
+[delay sec=0.5]
+
+//【Choice】
+//1: It's the other way around.
+
+[select]
+[link text="It's the other way around." label=inversion]
+[/select]
+
+:inversion
+[delay sec=0.5]
+
+//【Choice】
+//1: I need to "erase" what he's trying to steal!
+
+[select]
+[link text="I need to erase what he's trying to steal!" label=congratulation]
+[/select]
+
+:congratulation
+
+[cutin id=000011 type=fade sec=0.5 show=false]
+
+[delay sec=0.5]
+
+[visible show=true]
+
+// @Evil Spirit
+[message name=Evil Spirit charaid=602001 voice=09_010_0630]
+Well done.
+[/message]
+//09_010_0640 ,09_010_0650 - Combined voice
+
+// @Evil Spirit
+[message name=Evil Spirit charaid=602001 voice=09_010_0660]
+Now, continue!
+[/message]
+//09_010_0670 ,09_010_0680 - Combined voice
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Stop any currently playing SE
+[sound type=se state=stop]
+
+// Stop any currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

@@ -1,0 +1,573 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_15_05_008
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Display black background
+[image type=black show=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+// Black background
+// No BGM
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0010]
+And so, it's already been a month since we decided to do the massive overhaul of the game...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0020]
+Arata Mizunashi and his crew haven't made any moves at all, almost eerily quiet... It's been pretty peaceful. Smooth sailing, really.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0030]
+But maybe thinking that was a big mistake...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Fade out quickly
+[fade type=out anim=simple sec=0.1]
+
+// BGM23 / Peaceful scene
+// Background 450 / Shina's apartment room
+
+[sound type=bgm state=play name=TalkA]
+[image type=bg id=000450 show=true fade=false]
+
+[character id=100101 posx=0.32 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+[delay sec=0.5]
+[character id=200102 posx=0.66 anim=rtol face=default show=true wait=false]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0040]
+Sayaka, dinner's almost ready! Could you clear the table?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0050]
+Sure!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0060]
+I got some cheap meat today, so we're having steak! You can smell it cooking, right?
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0070]
+Oh wow, that's amazing! Can't wait!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Time passes
+[fade type=out anim=simple sec=1]
+[delay sec=1]
+// Change Sayaka's expression
+[face id=100101 type=default]
+// Change Shina's expression
+[face id=200102 type=default]
+
+[fade type=in anim=simple sec=1]
+
+// Display text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0080]
+Thanks for the meal!
+[/message]
+
+[face id=100101 type=expectation]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0090]
+Ahh... I'm starting to feel emotional!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0100]
+Was it that good!?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0110]
+Of course, it tasted great but...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0120]
+It's already been a month since we started the big overhaul of *End to Odyssey* and tried to bring Chloe Aaron in, hasn't it?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0130]
+Progress is good though, right?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0140]
+Yeah, thanks to Nova and the others, Arata Mizunashi hasn't made a move either. Compared to before, it's been peaceful...
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=expectation]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0150]
+This is the kind of normal life I always wanted...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0160]
+Exactly. No major incidents on the news or online either!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[move id=100101 posx=0.19 sec=0.5 wait=false]
+[move id=200102 posx=0.79 sec=0.5 wait=false]
+////////////////////////////////////////////////////////////////////////////////// Show Cut-in07
+[cutin id=000007 type=fade sec=0.5 show=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Announcer dialogue
+// @Female NPC 35
+
+[message name=Announcer voice=05_015_0170]
+Last summer's horror movie that took America by storm has arrived in Japan and is already a huge hit! Get ready for the annoyingly cute! Here's a look at 'Viva Doll'!
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0180]
+Wow, a horror movie?
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0190]
+*End to Odyssey* has a lot of horror elements too...
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=expectation]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0200]
+Heh heh. Maybe we could use this creepy doll in the game too?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=eyeright]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0210]
+You really do take inspiration from everywhere!
+[/message]
+
+// Change Shina's expression
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0220]
+Yeah, like a curse turning people into dolls... And a factory filled with scattered doll parts. What do you think?
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[move id=100101 posx=0.32 sec=0.5 wait=false]
+[move id=200102 posx=0.66 sec=0.5 wait=false]
+////////////////////////////////////////////////////////////////////////////////// End Cut-in07
+[cutin id=000007 type=fade sec=0.5 show=false]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0230]
+That's just plain scary... Shina, you're usually so kind. How do you come up with such gruesome scenarios, even in *Odyssey*...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0240]
+Well, it's what people want, Sayaka!
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0250]
+But what if another Luden like the President is born from the game again? What if a poor girl comes into existence...?
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0260]
+You're really worried about that... But something so miraculous isn't going to happen again...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Stop BGM
+// Doorbell rings
+
+[sound type=bgm state=stop]
+[sound type=se name=Chime]
+
+[face id=200102 type=surprise]
+[face id=100101 type=surprise]
+[delay sec=1]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0270]
+Huh? Could that be a delivery? Did I order something...?
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0280]
+I'll go check!
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[move id=100101 posx=0.49 sec=1 wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0290]
+Sorry for the wait... Huh!?
+[/message]
+[face id=100101 type=panic]
+
+// Display Lilith off-screen
+[character id=500102 posx=1.2 anim=none face=painful show=true wait=true]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Play SE: Door opening
+[sound type=se name=OpenTheDoor]
+
+[move id=500102 posx=0.79 sec=1 wait=false]
+[move id=100101 posx=0.39 sec=1 wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0300]
+……
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0310]
+Y-you're Lilith!?
+[/message]
+
+[character id=200102 posx=0.19 anim=ltor sec=0.3 face=panic show=true wait=true]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0320]
+No way... You're still seriously injured!
+[/message]
+
+// BGM27
+[sound type=bgm state=play name=TalkE]
+
+// Change Sayaka's expression
+[face id=100101 type=angry]
+
+// Move characters
+[move id=100101 posx=0.34 sec=1 wait=false]
+[delay sec=0.1]
+[move id=200102 posx=0.14 sec=1 wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0330]
+Shina, stay back just in case!
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0340]
+But...!
+[/message]
+
+[face id=500102 type=painful]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0350]
+It's okay...
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0360]
+I'm not here to fight... I just came to talk... for the last time.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0370]
+The last time? You're even more hurt than when I saw you in my dream. Are you really okay!?
+[/message]
+
+// Nova appears
+[move id=500102 posx=0.64 sec=0.5 wait=false]
+[character id=600901 posx=0.8 anim=rtol face=smile show=true wait=false]
+
+[message name=Nova charaid=600901 voice=05_015_0380]
+Yo!
+[/message]
+
+// Nova shows up
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0390]
+Detective!?
+[/message]
+
+// Change Nova's expression
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=05_015_0400]
+Hey, don't touch Lilith directly. If she infects you with something, it'd be trouble, little kitten.
+[/message]
+
+// Change Nova's expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=05_015_0410]
+I was watching her, and she came here. So, what's the message, Lilith?
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0420]
+...Be careful.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0430]
+Be careful...?
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0440]
+Arata... will move soon...
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0450]
+What!? Is that true!?
+[/message]
+
+// Change Lilith's expression
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0460]
+...Shina...
+[/message]
+
+// Change Lilith's expression
+[face id=500102 type=thoughts]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0470]
+I no longer... have the power to kill you...
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_015_0480]
+I wanted to kill you... but too bad.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Lilith exits
+[character id=500102 anim=ltor sec=0.3 show=false wait=true]
+[face id=100101 type=panic]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=05_015_0490]
+She can still run, huh? That's dangerous.
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0500]
+She came to warn us... even though she's in that condition.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0510]
+Should we just let her go? Maybe she was asking us for help...
+[/message]
+
+// Change Nova's expression
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=05_015_0520]
+Don't... That's exactly what they want you to do.
+[/message]
+
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0530]
+That's not...
+[/message]
+
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=05_015_0540]
+Even if Lilith doesn't mean harm, Arata could use your kindness against you. Think about it.
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0550]
+!?
+[/message]
+
+[message name=Nova charaid=600901 voice=05_015_0560]
+You get it, right? Sayaka, keep an eye on Shina for me. Who knows what she'll do.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0570]
+U-understood...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0580]
+...Shina...
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_015_0590]
+Sorry, I'm going to wash my face...
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+[face id=600901 type=default]
+[character id=200102 anim=rtol show=false wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0600 lipsync=false]
+(Shina... She's so kind. Is she suffering because of it? Is being too kind—)
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_015_0610 lipsync=false]
+(Is it... a bad thing?)
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Stop all SE
+[sound type=se state=stop]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+
+//##########################################################################//
+// End
+//##########################################################################//

@@ -1,0 +1,119 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_11_08_005
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display specified background
+[image type=bg id=000090]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM21 / Cafe Scene
+// Background 90 / Cafe
+
+[character id=100101 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=601001 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=600801 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_011_0010]
+Excuse meee!
+Levin, can you lend me some Eni so I can score some favor 
+with the enemy's top brass?
+[/message]
+
+// Levin expression change: Confuse
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=08_011_0020]
+W-What are you talking about?
+I didn't quite catch that, but you need to leave.
+I can already smell the trouble this will bring.
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_011_0030]
+Oh, this sounds interesting!
+It would be such a waste to turn down a proposal like this.
+Let's help out Sayaka!
+[/message]
+
+// Alice expression change: Default
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=08_011_0040]
+If there's a shortage of Eni, I'll handle the funding as a wealthy investor.
+Come on, let's go.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_011_0050]
+...There's no stopping Alice once she's made up her mind.
+*Sigh* I'll put out a notice for temporary closure.
+How did it come to this...
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_011_0060]
+You two are lifesavers! 
+Alright, let's head to the park together!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop playing current SE
+[sound type=se state=stop]
+
+// Stop playing current BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

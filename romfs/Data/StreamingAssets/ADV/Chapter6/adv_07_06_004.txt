@@ -1,0 +1,177 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_07_06_004
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+// BGM19
+[sound type=bgm state=play name=Subway]
+
+// Display specified background
+// Background 380 - Subway
+[image type=bg id=000580]
+
+// Display character: Snark
+// Snark Expression: Default
+[character id=601701 posx=0.33 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Display character: Sayaka Hiwatari - Default, no highlight
+// Sayaka Expression: Default
+[character id=100105 posx=0.66 anim=rtol face=default show=true wait=false]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_007_0010]
+Hey, can the Strain Train take me overseas too?
+[/message]
+
+// Snark Expression Change: Smile
+[face id=601701 type=smile]
+[message name=Snark charaid=601701 voice=06_007_0020]
+A vehicle that can travel between dimensions 
+certainly won't be stopped by a mere geographical distance.
+[/message]
+
+// Snark Expression Change: Default
+[face id=601701 type=default]
+[message name=Snark charaid=601701 voice=06_007_0030]
+No problem. 
+If that's what you want, it can take you anywhere.
+[/message]
+
+// Snark Expression Change: Confuse
+[face id=601701 type=confuse]
+
+// Sayaka Expression Change: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_007_0040]
+Then, 
+I want to go to Romania.
+[/message]
+
+// Snark Expression Change: Smile
+[face id=601701 type=smile]
+[message name=Snark charaid=601701 voice=06_007_0050]
+...Heh, heh, heh! 
+Very well.
+Do as you please.
+[/message]
+
+// Sayaka Expression Change: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_007_0060]
+Snark, you're actually laughing?
+Was that really so amusing?
+[/message]
+
+// Snark Expression Change: Default
+[face id=601701 type=default]
+[message name=Snark charaid=601701 voice=06_007_0070]
+Your appearance has begun to shift.
+It seems the urges you've kept hidden are starting to stir,
+no longer able to be suppressed.
+[/message]
+
+// Snark Expression Change: Smile
+[face id=601701 type=smile]
+[message name=Snark charaid=601701 voice=06_007_0080]
+You might finally be becoming your true self.
+Isn't that delightful?
+[/message]
+
+// Sayaka Expression Change: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_007_0090]
+My true self?
+So, this is... 
+the real me?
+[/message]
+
+// Snark Expression Change: Thoughts
+[face id=601701 type=thoughts]
+[message name=Snark charaid=601701 voice=06_007_0100]
+Who knows?
+Your journey of self-discovery is your own to enjoy.
+As for me, it hardly matters.
+[/message]
+
+// Snark Expression Change: Smile
+[face id=601701 type=smile]
+[message name=Snark charaid=601701 voice=06_007_0110]
+But if you awaken, if you become that person... 
+it will certainly be fun to watch. 
+Heh heh heh!
+[/message]
+
+// Sayaka Expression Change: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_007_0120]
+You're in quite the good mood.
+Meanwhile, you're making mine worse by the second.
+[/message]
+
+// Snark Expression Change: Default
+[face id=601701 type=default]
+[message name=Snark charaid=601701 voice=06_007_0130]
+Heh heh... 
+May your journey be an enjoyable one.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop any ongoing sound effects
+[sound type=se state=stop]
+
+// Stop any ongoing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+
+//##########################################################################//
+// End
+//##########################################################################//
+// END

@@ -1,0 +1,258 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_12_07_009
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Home]
+
+// Display the specified background
+[image type=bg id=000600]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=1]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+[sound type=se name=Russia]
+
+//BGM20
+//Background 600 / Lucil's Clothing Store
+
+// Continued from 07_008
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message]
+1 hour later
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=500202 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200802 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0010]
+Sayaka, are you calm now? 
+You're heading back to Japan, right? 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_012_0020]
+Yes. You've taken care of me... 
+...So, I'm off then. 
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0030]
+Minutechik... wait a minute. 
+If that's the case, I have a favor to ask. 
+I want you to take me to Japan with you. 
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0040]
+...Huh? 
+Why would you go to Japan too? 
+Do you know what that means? 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=thoughts]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0050]
+I think it's time for me to return to the "development scene." 
+...I've realized that. 
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_012_0060]
+Who was it again...? 
+Someone who seemed like Mita... 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0070]
+Yes, I already explained the situation to Mita. 
+I was able to leave the shop in capable hands. 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=sad]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0080]
+I guess I can't sever ties with Iris, in many ways. 
+It seems impossible to live as I did before. 
+...I just can't forgive them. 
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0090]
+Heh... 
+Can't forgive them, huh? 
+What exactly can't you forgive? 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=angry]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0100]
+Of course, the fact that someone turned Kiki into this. 
+I won't let them get away with what they did 
+to my beloved spirit. 
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0110]
+W-what do you mean? 
+Like this? This is my "now." 
+Hearing you say that doesn't make me happy at all...! 
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0120]
+And if Lucil is going to Iris, 
+that means you're on their side, right? 
+...We're definitely going to be enemies then. 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=smile]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0130]
+Yes, that's true. 
+But it doesn't contradict my intentions. 
+Even if it means fighting you, it would be for you. 
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0140]
+...Ah, I see! 
+In that case, let's end the camaraderie here! 
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0150]
+From now on, we're enemies again! 
+( X∀X) Live in fear of my shadow! 
+[/message]
+
+[face id=500202 type=default]
+
+[message name=Kiki Amo charaid=500202 voice=07_012_0160]
+I won't hold back, not even a little... 
+Goodbye, then. 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+// Hide Lucil
+[character id=500202 anim=rtol show=false wait=true]
+
+[move id=200802 posx=0.32 wait=false]
+[move id=100101 posx=0.66 wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Svetlana facial expression change
+[face id=200802 type=confuse]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0170]
+I'm sorry, Sayaka. 
+The conversation went off track. 
+So, about my trip to Japan... 
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_012_0180]
+...I don't have any reason to refuse. 
+Consider it a gesture of apology from me. 
+I'll make sure you safely get to Japan. 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_012_0190]
+I don't want to deal with any interference, 
+so instead of flying, 
+let's go back via the Strain Area. 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_012_0200]
+Roger that. 
+I don't have any local currency anyway, 
+so let's do that. 
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop all playing sound effects
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

@@ -1,0 +1,557 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_09_10_008
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkG]
+
+// Display specified background
+[image type=bg id=000120]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM29 / Gymnopédie
+// Background 120 / Library
+
+// Unlocks after Sayaka reaches a specific floor in the final dungeon
+
+[character id=500402 posx=0.5 anim=fade face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0010]
+Not too many people, not too few.
+...It feels calming here.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0020]
+Hmm? A book someone read...
+Why was it left open like this?
+Seriously. Not putting it back...
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0030]
+"History of Sagami City," huh?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0040]
+...........
+[/message]
+
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0050]
+...Haha,
+What is this book? It's weird...
+As a Sagami citizen, this is disappointing.
+[/message]
+
+// Speaker: Cat
+// Female Mob 100
+
+[message name=Cat voice=10_009_0060]
+Meow~?
+[/message]
+
+[face id=500402 type=confuse]
+
+// Surprise reaction
+[shake target=chara id=500402 type=vertical sec=0.1 pow=20 fade=false wait=false]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0070]
+Whoa, a cat...? 
+Why is it here...? 
+Is it reacting to my tail...?
+[/message]
+
+//////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=500402 posx=0.33 wait=false]
+[character id=600901 posx=0.66 anim=fade face=default show=true wait=false]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Surprise reaction
+[shake target=chara id=600901 type=vertical sec=0.2 pow=10 fade=false wait=false]
+
+[message name=Nova charaid=600901 voice=10_009_0080]
+Whoa there, stop running away, 
+don't run... Gotcha!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0090]
+...? 
+[/message]
+
+[message name=Nova charaid=600901 voice=10_009_0100]
+Ah, sorry 'bout that. This cat
+ran away from a local home. 
+I got a job to bring it back.
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0110]
+...You are Nova the Cat Detective, correct?
+I heard about you from Arata.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0120]
+You're an associate of Iris, right?
+[/message]
+
+// Nova expression change
+[face id=600901 type=smile]
+
+// Shake reaction
+[shake target=chara id=600901 type=vertical sec=0.1 pow=10 fade=false wait=false]
+
+[message name=Nova charaid=600901 voice=10_009_0130]
+...Oh. Don't need a closer look.
+You're Glitch-Al, aren't you?
+Not causing any trouble, right? Ow, this cat...
+[/message]
+
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0140]
+Yeah, well. I'm just passing the time now.
+Haha.
+[/message]
+
+// Surprise reaction
+[shake target=chara id=600901 type=vertical sec=0.3 pow=20 fade=false wait=false]
+
+// Nova expression change
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=10_009_0150]
+Ahh, the cat's playing and I can't talk...
+I'll take it back first.
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen darkens
+// Nova OFF
+// Time passes
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+[character id=600901 anim=fade show=false wait=false]
+[move id=500402 posx=0.5 wait=true]
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0160]
+...This book too.
+What is this?
+What the heck is going on...?
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Nova re-enters
+
+[move id=500402 posx=0.33 wait=false]
+[character id=600901 posx=0.66 anim=fade face=default show=true wait=false]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=10_009_0170]
+Whew, sorry for the wait.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0180]
+...I wasn't exactly waiting for you, but...
+[/message]
+
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=10_009_0190]
+Oh yeah? 
+You looked like you had 
+something you wanted to ask...
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0200]
+...Alright, I'll give it a try.
+This falsified history book about Sagami City...
+Do you know anything about it?
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=10_009_0210]
+Let's see? Lemme take a look.
+Sagami City's sightseeing spots...
+Ah, the "Kitatamura" Shrine, huh?
+[/message]
+
+// Naraku expression change
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0220]
+It's Sagami Shrine, okay?
+Getting such basic details wrong...
+As a Sagami citizen, I'm shocked.
+[/message]
+
+// Naraku expression change
+[face id=500402 type=default]
+
+// Nova expression change
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=10_009_0230]
+And all the books are wrong, huh?
+[/message]
+
+// Naraku expression change
+[face id=500402 type=sad]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0240]
+...Yes. Iris failed to create this world properly.
+The other books are all nonsense too.
+[/message]
+
+// Naraku expression change
+[face id=500402 type=default]
+// Nova expression change
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=10_009_0250]
+You seem to know a lot,
+but Iris isn't at fault for this one.
+[/message]
+
+// Nova expression change
+[face id=600901 type=default]
+
+// Naraku expression change
+[face id=500402 type=painful]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0260]
+Oh? Coming from an Iris associate,
+that's not very convincing...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata enters
+
+[move id=500402 posx=0.25 wait=false]
+[move id=600901 posx=0.5 wait=false]
+
+[character id=200602 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0270]
+Naraku! I found you!
+Hmm? Who's your friend?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0280]
+Oh, Hinata... 
+Are you done at Iris Corp?
+[/message]
+
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0290]
+Yep, all set! 
+Being with you is my priority now!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0300]
+Uh, okay...
+[/message]
+
+[face id=600901 type=smile]
+[face id=200602 type=default]
+
+[message name=Nova charaid=600901 voice=10_009_0310]
+Haha! 
+Aren't you two adorable~
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=10_009_0320]
+...Actually, perfect timing.
+Why don't you ask your friend there
+about this whole situation?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0330]
+...Hinata, do you know much about Sagami City?
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0340]
+Huh? Random, but... 
+Well, it's a sacred place for Enigma Corp and Iris Corp,
+so yeah, I know the basics!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0350]
+Why? Did something happen with that book?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0360]
+Alright. Then, what's the most famous shrine in Sagami City?
+You should be able to answer, right?
+Especially since you're close with Yurisa Yamamura.
+[/message]
+
+// Hinata expression change
+[face id=200602 type=expectation]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0370]
+...I'll just look it up on my phone.
+[/message]
+
+// Hinata expression change
+[face id=200602 type=default]
+
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0380]
+Wait, what...!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[face id=200602 type=panic]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0390]
+Wait... huh!? That's strange.
+Nothing shows up in the search...
+[/message]
+
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0400]
+...What? That can't be...
+My phone too...
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0410]
+It's connected to the internet, but...
+Is the internet itself acting up?
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0420]
+...Even on this laptop...!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Play BGM17
+[sound type=bgm state=play name=TownMapB]
+
+[face id=500402 type=default]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Naraku expression change
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0430]
+...What's going on? I just wanted
+to check some information about this book...
+[/message]
+
+// Nova expression change
+[face id=600901 type=painful]
+
+[message name=Nova charaid=600901 voice=10_009_0440]
+A book, huh? Which one?
+You're not holding anything.
+[/message]
+
+// Nova expression change
+[face id=600901 type=default]
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0450]
+...It's gone!?
+I swear I was holding it just a moment ago...
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0460]
+Naraku, calm down...
+[/message]
+
+// Naraku expression change
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0470]
+How can I calm down!?
+What do you know about this...
+Nova!?
+[/message]
+
+[face id=600901 type=default]
+
+[message name=Nova charaid=600901 voice=10_009_0480]
+I'm just a kind soul who came to rescue a cat, 
+that's all. But wow, you two...
+you're still around, huh? Guess you're qualified.
+[/message]
+
+[face id=500402 type=angry]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0490]
+What are you rambling about...!?
+[/message]
+
+// Nova expression change
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=10_009_0500]
+Well, if you don't want to disappear,
+be careful. Because, you see――
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Nova expression change
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=10_009_0510]
+This library...
+We're the only ones left here now.
+Everyone else is gone, poof.
+[/message]
+
+// Nova expression change
+[face id=600901 type=default]
+
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0520]
+Wha!?
+[/message]
+
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0530]
+It's true... There's no one else here...
+[/message]
+
+[message name=Nova charaid=600901 voice=10_009_0540]
+Seems it's closing time for this place...
+Follow me, okay?
+I won't do anything bad, promise.
+[/message]
+
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_009_0550]
+Naraku... I don't get it, but...
+I think we should go with her...
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_009_0560]
+...Alright. I trust you, Hinata.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

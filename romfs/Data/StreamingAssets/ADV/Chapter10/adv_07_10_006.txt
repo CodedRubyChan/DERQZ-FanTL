@@ -1,0 +1,306 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_07_10_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Sayaka unlocks after reaching a specific floor in the final dungeon
+
+// BGM25 / Comedy scene
+// Background 470 / Iris Company
+
+[character id=200602 posx=0.5 anim=fade face=default show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0010]
+Alright, it's about time for me to head home.
+I'm a bit worried about Naraku-san too――
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0020]
+...Huh?
+Something odd is in my view...
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0030]
+......
+[/message]
+
+[move id=200602 posx=0.33 wait=false]
+[character id=200202 posx=0.66 anim=fade face=panic show=true wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0040]
+H-hey, what are you doing peeking over my shoulder just when my screensaver turned off, Al! 
+...Ah, I said "Al" again.
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0050]
+...No problem, "Lily."
+So, um...
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0060]
+Ahem. Let me share a secret with you.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0070]
+This photo I was looking at is from...
+Director Shina's SNS account.
+[/message]
+
+// Hinata expression change
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0080]
+Oh...?
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0090]
+Yes, 'Sublimina Nina'.
+I found it while I was searching, and it turned out to be her personal account...
+[/message]
+
+// Hinata expression change
+[face id=200602 type=surprise]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0100]
+It's a cosplay account!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0110]
+Ohhh, she looks like some kind of evil swordswoman.
+Though her face seems a bit different...
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0120]
+Well, it's probably the makeup for the cosplay. 
+I think Shina looks best without makeup, but this is quite nice too...
+especially the outfit's... backside...
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0130]
+Uh, yeah, okay...
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0140]
+Hehehe... 
+Let me give it a "like"... 
+I'd love to be stabbed by this version of Shina...
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=200602 posx=0.25 wait=false]
+[move id=200202 posx=0.5 wait=false]
+[character id=200102 posx=0.75 anim=fade face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Shina expression change
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_007_0150]
+Ah, I just got a new like.
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0160]
+Y-yeah, that was me... Wait, 
+ahhhh!? Shina!?
+When did you get here!?
+[/message]
+
+// Shina expression change
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_007_0170]
+Lily, you know better than to slack off.
+There's still five more minutes till break. Let's keep at it!
+[/message]
+
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0180]
+Y-yes, ma'am...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_007_0190]
+Hinata, please keep my account a secret...
+[/message]
+
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0200]
+Y-yes! I'll do my best to erase it from my memory!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_007_0210]
+No need to bump your head or anything, okay?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_007_0220]
+And, Lily.
+Don't forget to give Sayaka her tasks. 
+Make sure to check her progress later, too.
+[/message]
+
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0230]
+Understood!
+[/message]
+
+// Shina exit
+[character id=200102 anim=ltor show=false wait=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_007_0240]
+W-well, then... I guess I'll be heading off now.
+I'll see myself out...!
+[/message]
+
+// Hinata exit
+[character id=200602 anim=rtol show=false wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0250]
+Alright, see you later!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM stops
+[sound type=bgm state=stop]
+
+[face id=200202 type=surprise]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0260]
+Ah, right, I need to give Sayaka her tasks.
+Sayaka... Sayaka...
+[/message]
+
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0270]
+.........
+[/message]
+
+[face id=200202 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0280]
+Wait... What...?
+[/message]
+
+// Yurisa expression change
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0290]
+"Sayaka,"
+Who... is that...?
+[/message]
+
+// Yurisa expression change
+[face id=200202 type=painful]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_007_0300]
+Who...?
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Dimensional rupture SE
+[sound type=se name=Mirror]
+
+// Screen shakes
+[sound type=se name=mirror]
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+// Yurisa suddenly disappears
+[character id=200202 posx=0.5 anim=fade face=default show=true wait=false]
+[image type=bg id=000380 show=true]
+
+// Black background
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

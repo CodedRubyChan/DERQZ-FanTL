@@ -1,0 +1,734 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_07_07_004
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkH]
+
+// Display the specified background
+[image type=bg id=000600]
+
+[character id=602501 posx=0.49 anim=none face=smile show=true wait=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+//BGM30
+//Background 600 / Lucil's Clothing Store
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0010]
+Dabro Pajalavati
+Come on in~
+Take a look♪
+[/message]
+
+[face id=602501 type=default]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0020]
+The famous designer 'Svetlana Amou', who also participated 
+in World's Odyssey, has her clothing store here... 'Nivesny Kurya' is right here!
+[/message]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0030]
+It's not cheap by any means, but
+we have the best clothes that are worth every penny,
+all lined up for you!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide
+[character id=602501 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Show
+[character id=500202 posx=0.19 anim=ltor face=painful show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+//@G Lucil
+//Speaker: Kiki Amo
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0040]
+...Uwaaah!! 
+It's Maruko! Maruko is here, waaah...!! 
+Orz, Orz...orz
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=100105 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_007_0050]
+......
+[/message]
+
+//Amo face change
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0060]
+Wha... what's up with Sayaka... What is she...? 
+Could it be, she's got some business at 'my store'...!? (゜д゜；)
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide
+[character id=500202 anim=rtol show=false wait=false]
+[character id=100105 anim=ltor show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show
+[character id=602501 posx=0.32 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=602501 type=smile]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0070]
+From the latest trends 
+to the classic pieces, you'll find 
+the perfect clothes for you here!
+[/message]
+
+//Show Sayaka
+[character id=100105 posx=0.66 anim=rtol face=thoughts show=true wait=false]
+
+[face id=602501 type=default]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0080]
+...Ah! Excuse me, miss, 
+are you perhaps looking for some clothes? 
+If so, please, feel free to come inside!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_007_0090]
+.................................
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_007_0100]
+......---Me?
+[/message]
+
+[face id=602501 type=thoughts]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0110]
+...Y-yes... 
+that's right, but...
+[/message]
+
+//Maruko shakes (shock, yelling)
+[shake target=chara id=602501 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+[face id=602501 type=confuse]
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0120 lipsync=false]
+(Ugh!? What...?! 
+Why do I suddenly feel a chill...? 
+Could this be what the manager warned me about...?)
+[/message]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0130 lipsync=false]
+(No, no way! 
+That would be rude to a potential customer... 
+I have to do my best! Ahem.)
+[/message]
+
+[face id=602501 type=smile]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0140]
+...Yes! We have some lovely new skirts! 
+I think they'd suit you wonderfully! 
+How about trying one on?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_007_0150]
+Please...
+[/message]
+
+[face id=602501 type=default]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0160]
+...Ah, sure...!
+[/message]
+
+[face id=100105 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_007_0170]
+---Just let me kill you, just a little?
+[/message]
+
+//Maruko shakes (shock, yelling)
+[shake target=chara id=602501 type=vertical sec=0.2 pow=3 fade=false wait=false]
+[face id=602501 type=painful]
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0180]
+....Wh-what!?
+[/message]
+
+//Screen shakes
+[face id=100105 type=painful]
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_007_0190]
+I just can't!! 
+Actually, for a while now, 
+I've been dying to kill someone!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=Makeblade]
+[character id=100105 anim=none show=false wait=false]
+[character id=100106 posx=0.66 anim=none face=painful show=true wait=true]
+[fade type=in anim=simple sec=0.3 color=white]
+[delay sec=0.5]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0200]
+So, just a little, okay? 
+Let me kill you! 
+Please!!
+[/message]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0210]
+Wh-what!? 
+Hieeee~~!!!
+[/message]
+
+//Sayaka shakes (shock, yelling)
+[shake target=chara id=100106 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0220]
+Ah...Elves... 
+A conceited race full of arrogance, 
+thinking they're superior to others...
+[/message]
+
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0230]
+Crushing that arrogance with violence, 
+and killing them... 
+is absolute ecstasy...!
+[/message]
+
+[face id=602501 type=confuse]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0240]
+Whaaa!? What do you mean, 'elves'!? 
+What are you even talking about!?? 
+Nooo~~!!
+[/message]
+
+//G Lucil appears
+[move id=100106 posx=0.8 sec=0.5 wait=false]
+[move id=602501 posx=0.6 sec=0.5 wait=false]
+
+[character id=500202 posx=0.15 anim=ltor face=angry show=true wait=false]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0250]
+Sa-Sayaka! Σ(ﾟДﾟ)!!
+What are you doing!? 
+You're acting without any sense, right in the middle of the street!
+[/message]
+
+[face id=100106 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0260]
+What do you mean? 
+As you can see... 
+I'm preparing for murder.
+[/message]
+
+[face id=500202 type=painful]
+[message name=Kiki Amo charaid=500202 voice=07_007_0270]
+I-I'm not one to talk, but this is too much! 
+What happened to you!? (ﾟﾛﾟ;)
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[sound type=se name=0048_FlyCurseBeam_A_c2]
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.8 posy=0 priority=FrontCutin]
+[sound type=se state=stop]
+
+// Screen flash
+////////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=0049_FlyCurseBeamHit_A2]
+[delay sec=1]
+[face id=100106 type=angry]
+
+[character id=200802 posx=0.4 anim=none face=angry show=true wait=true]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Svetlana appears
+
+// Speaker: Svetlana Amou
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+[sound type=se state=stop]
+[message name=Svetlana Amou charaid=200802 voice=07_007_0280]
+Padazhdyte!
+Let go of her. 
+Mi-tan has nothing to do with this.
+[/message]
+
+// Screen flash
+////////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[face id=100106 type=smile]
+[sound type=se name=0049_FlyCurseBeamHit_B]
+[fade type=in anim=simple sec=0.3 color=white]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0290]
+Aha?! 
+Ahahahahaha!! 
+Such petty magic!!
+[/message]
+[sound type=se state=stop]
+[face id=602501 type=default]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0300]
+M-Manager~~~!!
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0310]
+Mi-tan, you must have been scared... 
+But this is a customer 
+that I have to personally deal with.
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0320]
+I am... Lucil. 
+It seems you've shown up in this world as well. 
+The half-elf you're looking for is me.
+[/message]
+
+[face id=200802 type=confuse]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0330]
+Right, Basilissa! 
+...Oh? Ripuka... no?
+[/message]
+
+[face id=200802 type=thoughts]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0340]
+Hmm... Who are you?
+[/message]
+
+[face id=100106 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0350]
+That's right, 
+I am Ripuka! I am the real Ripuka! 
+Not Sayaka!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0360]
+Uh, yeah, okay. I expected an attack... 
+It was a destined event after all. 
+But this... this is unexpected. So, who are you?
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0370]
+Y-you idiot!? 
+Why would you come out now and provoke her like that, Lucil!?
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0380]
+Hmm. You... 
+You're that clumsy spirit, Kikimora, who ran away from my place, right...? 
+And now you're worried about me?
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0390]
+No way! Lucil! You crazy old hag! 
+You're practically undead! ∑(｀□´/)/!!
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0400]
+As always, you're not honest at all. 
+Well, let's not rejoice about the reunion just yet. 
+...This customer here is the real problem.
+[/message]
+
+[face id=602501 type=confuse]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0410]
+T-the manager, there are two of you!? 
+Is this some kind of magic trick!? Today, 
+what on earth is happening!?
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0420]
+Hmm... 
+Like having two New Year's days on the same day?
+[/message]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0430]
+I-I don't get it at all!
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0440]
+What are you two babbling about!? 
+Listen... this one... she's really dangerous...! 
+More than usual...!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0450]
+If Kikimora says that, 
+then she must be pretty bad...
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0460]
+Alright then, 
+"Ripuka", let me ask you just to be sure. 
+What do you want from us?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0470]
+What else!? A massacre!! 
+To start with, I want to see 
+your pretty pomegranate-red blood...!
+[/message]
+
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0480]
+And after that... hehehe!! 
+I don't even care. I'll kill!! 
+I'll kill everyone here!!!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0490]
+...Stop it!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[sound type=se name=0048_FlyCurseBeam_A_c2]
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.8 posy=0 priority=FrontCutin]
+[sound type=se state=stop]
+
+// Screen flash
+////////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=0049_FlyCurseBeamHit_A2]
+[delay sec=1]
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=100106 type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[face id=100106 type=angry]
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0500]
+Tsk!! 
+Another annoying spell... no, Code again—!
+I'll kill you!!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0510]
+Your speech... it's definitely like Ripuka, but it's like you're a different person. 
+What the hell happened!? 
+This is a real problem...
+[/message]
+
+//[face id=602501 type=confuse]
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0520]
+M-manager!! 
+Should we call the police, or just run...?!
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0530]
+...If we call the police, they might get hurt... 
+So that's not an option.
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0540]
+I'm not helping...!
+[/message]
+
+// Svetlana face change
+[face id=200802 type=thoughts]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0550]
+...You've never helped, even when you were at the shop. 
+Alright then, 
+let's ask the God first...
+[/message]
+
+// Svetlana face change
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0560]
+You. Yes, you looking at the screen. 
+... 
+I know you're there.
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: Are you talking about me?
+
+[select]
+[link text="Are you talking about me?" label=king]
+[/select]
+
+:king
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0570]
+That's right. 
+God of Death, if you don't mind. 
+I want to ask you something...
+[/message]
+
+// Svetlana face change
+[face id=200802 type=confuse]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0580]
+About Ripuka... 
+Didn't you help her before? 
+Why has she ended up like this?
+[/message]
+
+//【Choices】
+// 1: This girl isn't Ripuka!
+// 2: She's reverted back to how she was
+
+[select]
+[link text="This girl isn't Ripuka!" label=takecare]
+[link text="She's reverted back to how she was" label=takecare]
+[/select]
+
+// The outcome is the same for either choice, no change in dialogue
+
+:takecare
+
+// The outcome is the same for either choice, no change in dialogue
+
+[face id=200802 type=thoughts]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0590]
+Ugh... I still don't understand the situation. 
+I'd appreciate it if the God of Death was more put together. 
+But it can't be helped, so I'll step in.
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0600]
+First, let's make sure of one thing. 
+Is this girl truly Ripuka, or is she not? 
+In that case, let's start by...
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0610]
+Alright then, Mi-tan, 
+I'm going to step out for a bit.
+[/message]
+
+[face id=100106 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0620]
+Huh?! 
+[/message]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0630]
+E-eek!? 
+W-where are you going!? 
+Don't leave me alone!!!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0640]
+Ripuka. Is my Code still affecting you? 
+Look, your main target is escaping~. 
+Can you catch me, I wonder~?
+[/message]
+
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_007_0650]
+Hehehe...!! 
+There's no way I'll let you escape!!!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_007_0660]
+Good answer. 
+Then, "Kimata," a game of tag with Ripuka. 
+Let's begin—
+[/message]
+
+//////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+
+[sound type=se name=Mirror]
+// Character images off
+
+[character id=200802 anim=none show=false wait=false]
+[character id=100106 anim=none show=false wait=false]
+
+[move id=602501 posx=0.66 sec=0.05 wait=false]
+[move id=500202 posx=0.32 sec=0.05 wait=true]
+[delay sec=0.3]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+[face id=602501 type=confuse]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0670]
+T-they both disappeared...!? 
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0680]
+W-wait, Lucil!? 
+Σ(ﾟДﾟ；≡；ﾟдﾟ)
+Did she tear through dimensions—? What is she planning...?!
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_007_0690]
+...Ugh, that's it! 
+I'm going too—!! (・皿・) 
+I can't stand being ignored by them!!! I'll kill them!
+[/message]
+
+//////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+
+[sound type=se name=Mirror]
+// G Lucil off
+
+[character id=500202 anim=none show=false wait=false]
+
+[move id=602501 posx=0.49 sec=0.05 wait=true]
+[delay sec=0.3]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+[face id=602501 type=confuse]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0700]
+Everyone... 
+just vanished...!?
+[/message]
+
+//Speaker: @Bystander
+//Male Mob 61
+
+[message name=Bystander voice=07_007_0710]
+Um, excuse me... 
+Was all of this... 
+part of the store's performance...?
+[/message]
+
+[face id=602501 type=thoughts]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0720]
+I-I'll have to check with the manager... 
+[/message]
+
+[message name=Glasses-wearing Clerk charaid=602501 voice=07_007_0730]
+...Later...
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop all playing sound effects
+[sound type=se state=stop]
+
+// Stop the background music
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

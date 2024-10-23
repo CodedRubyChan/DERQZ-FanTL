@@ -1,0 +1,230 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_10_07_007
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter7]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+[character id=200801 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=100106 posx=0.79 anim=fade face=thoughts show=true wait=true]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Background: Dungeon remains
+// BGM: 09
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0010]
+Well done. 
+This is the deepest part of the Rizaria Forest 
+I created on top of the Strain Area.
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0020]
+Congrats. 
+We both managed to make it here alive. 
+And to the truth...
+[/message]
+
+//[face id=100106 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_010_0030]
+...
+[/message]
+
+[face id=200801 type=thoughts]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0040]
+I used the 'Lucil Code' to peek into your memories. 
+Really, Ripuka... even as a memory recreation AI, 
+she sure talked a lot... sigh
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0050]
+I watched everything that happened in the forest. 
+I finally figured out who you are. 
+You were created to be Ripuka's successor...
+[/message]
+
+[face id=200801 type=default]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0060]
+The rogue World's Odyssey, 
+while it was riddled with bugs, 
+it still tried to "maintain" that state...
+[/message]
+
+[face id=100106 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_010_0070]
+...Created without my will...
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0080]
+...Iris must have had a tough time figuring out 
+how to handle you. That girl is naturally kind.
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0090]
+While creating this world... copying the original from 'DE-1,' 
+you became an inevitable part of that process. 
+I'm sure she struggled greatly over what to do with you.
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0100]
+...But that doesn’t really matter to you, does it? 
+There's no point in hating Iris for it. 
+You’re a clone of Ripuka’s clone, 
+a former "discarded product."
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0110]
+So tell me first. 
+Now that you’ve reached the truth, what do you want? 
+Do you still want to be Ripuka? Or...
+[/message]
+
+[face id=100106 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_010_0120]
+—Well, for now... 
+I'll kill you, and then I’ll think about it. 
+I have to return the favor for showing me those weird things.
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0130]
+I see! 
+It’s too much to process right now, isn’t it? 
+If I were in your shoes, I’d probably feel the same way.
+[/message]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0140]
+But Mi-tan is waiting for me. 
+And "I" am also Svetlana. 
+I can’t let myself be killed by you.
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Show text window again
+[delay sec=1]
+[visible show=true]
+
+// Svetlana - Transformation facial expression change
+[face id=200801 type=angry]
+
+[message name=Svetlana Amou charaid=200801 voice=07_010_0150]
+Together with Kimata, 
+I’m going to give it my all.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Screen flash
+///////////////////////////////////// Hide Lucil and show Muga /////////////////////////////////////
+[fade type=out anim=simple sec=0.3 color=white]
+
+[dungeon id=9017 type=Barricade show=false]
+[dungeon id=410901 type=Enemy show=true]
+
+[sound type=se name=VsActivate]
+[character id=200801 anim=none show=false wait=false]
+[delay sec=0.3]
+
+[fade type=in anim=simple sec=0.3 color=white]
+// Wait for the specified seconds
+[delay sec=0.5]
+///////////////////////////////////// Hide Lucil and show Muga /////////////////////////////////////
+
+// BGM14
+[sound type=bgm state=play name=BossChapter3_4_7_8]
+
+// Show text window again
+[delay sec=1]
+[visible show=true]
+
+// @Svetlana
+[message name=Svetlana Amou charaid=200801 voice=07_010_0160]
+This is my... to say it like Shina would, 
+‘Vanquish Style.’ 
+Can you defeat me?
+[/message]
+
+[face id=100106 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_010_0170]
+Yeah. 
+...I’ll swat you down like the fly you are. 
+Die.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop all playing SE
+[sound type=se state=stop]
+
+// Stop the background music
+//[sound type=bgm state=stop]
+
+// Start boss battle
+[bossbattle active=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

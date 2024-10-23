@@ -1,0 +1,229 @@
+//Script
+// Wait for a specified time
+[delay sec=0.1]
+
+
+
+//adv_03_10_s01
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000530]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BGM25 / For Comedy Scenes
+//Background 530 / Convenience Store
+
+[character id=602401 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.66 anim=rtol face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Assistant charaid=602401 voice=10_903_0010]
+Welcome!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0020]
+...I'd like to buy this magazine.
+[/message]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=10_903_0030]
+Sure thing! Thank you!
+...Oh, are you a fan of Chloe Aaron?!
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0040]
+—That's none of your business.
+Don't pry into your customer's private life.
+[/message]
+
+[face id=602401 type=confuse]
+
+[message name=Assistant charaid=602401 voice=10_903_0050]
+Oh... s-sorry about that...
+[/message]
+
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0060 lipsync=false]
+(Ended up grabbing an idol magazine
+by mistake...)
+[/message]
+
+// Change the clerk's expression
+[face id=602401 type=default]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0070]
+—By the way, you seem to know a lot about idols.
+Have you heard of "Komai"?
+[/message]
+
+// Change the clerk's expression
+[face id=602401 type=confuse]
+
+[message name=Assistant charaid=602401 voice=10_903_0080]
+...Yeah, of course I have!
+She's a well-known figure!
+[/message]
+
+// Change Naraku's expression
+[face id=500402 type=sad]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0090]
+I thought so.
+After all, she's the kind of idol who'd end her own life.
+[/message]
+
+// Change Naraku's expression
+[face id=500402 type=painful]
+
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=10_903_0100]
+That's not it!
+She was known for Aguru Corp's commercial song,
+and her skills as a host—she's a local idol
+known to many! 
+[/message]
+
+[face id=602401 type=default]
+
+[message name=Assistant charaid=602401 voice=10_903_0110]
+It's such a loss... 
+I really wish she could've been even more famous...
+Oh, were you a fan too...?
+[/message]
+
+[face id=500402 type=default]
+// Change Naraku's expression
+[face id=500402 type=smile]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0120]
+...Hmm. Who knows.
+Thank you for the magazine.
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+// Black background
+
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+[character id=602401 anim=fade show=false wait=false]
+[move id=500402 posx=0.5 wait=true]
+
+[image type=bg id=000380 show=true]
+
+// Change Naraku's expression
+[face id=500402 type=sad]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_903_0130]
+...I still can't stop thinking about it, huh.
+About Chloe and Falena...
+[/message]
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for a specified time
+[delay sec=0.5]
+
+
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

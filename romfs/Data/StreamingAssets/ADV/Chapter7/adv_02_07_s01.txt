@@ -1,0 +1,256 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_02_07_s01
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000130]
+
+[character id=500202 posx=0.49 anim=none face=default show=true wait=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//BGM25 / For comedic scenes
+//Background 130 / Sakakami Station Front - Daytime
+
+// Show text window
+[visible show=true]
+
+// Amo expression change
+[face id=500202 type=painful]
+[message name=Kiki Amo charaid=500202 voice=07_902_0010]
+...Huh? 
+Ugh! Σ(OωO )!? 
+It's Sayaka...!
+[/message]
+
+[move id=500202 posx=0.32 sec=0.5 wait=false]
+[character id=100105 posx=0.66 anim=rtol face=smile show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_902_0020]
+Ohh! 
+Didn't expect to see you around here in the daytime, Kiki! 
+As cute as ever today♪
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0030]
+.........
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_902_0040]
+Everyone's doing well, it's relaxing...! 
+The weather's great today! 
+I'm in a super cheerful mood!
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0050]
+...Whaaat!? 
+∑(ﾟДﾟ)Whaat!!? S-Sayaka?!
+[/message]
+
+// Amo expression change
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0060]
+She even smiled and winked back at me. 
+Isn't her reaction different from usual? 
+It's creeping me out (;ﾟДﾟ)(ﾟДﾟ;(ﾟДﾟ;) Yikes!
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0070 lipsync=false]
+(Today she seems to be in a good mood. 
+No, it's not just that. 
+She looks super high-spirited...?)
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0080 lipsync=false]
+(I'm supposed to be her enemy, but... 
+when she acts all friendly, 
+it freaks me out.)
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0090 lipsync=false]
+(...Hmm? Smirk (・∀・) Smirk) 
+But she's wide open right now!
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0100]
+Could this be a huge chaaance!? 
+Time to cast all the brainwashing spells I want! (ˊᗜˋ*)
+[/message]
+
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_902_0110]
+Huh?
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////////// Flash screen
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=Brainwash]
+
+//////////////////////////////////////////////////////////////////////////////////// Flash screen
+[fade type=in anim=simple sec=0.3 color=white]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0120]
+Here we go! 
+Infernal Introduce! 
+Now you'll be under my control...
+[/message]
+
+[face id=100105 type=default]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_902_0130]
+A new spell? Practicing a new special move? 
+Oh, should I call it a "code" like the Glitch Girls do?
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0140]
+...
+(;￣Д￣)
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0150]
+My code activated, but it didn't work!? 
+Why!? How!? 
+This has to be some kind of mistake!?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=07_902_0160]
+Kiki, I'd love to hang out more, 
+but I've got something important to do, so I'll be off. 
+See you around!
+[/message]
+
+[character id=100105 anim=ltor sec=0.5 show=false wait=false]
+[move id=500202 posx=0.49 sec=0.5 wait=false]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0170]
+H-Hey! 
+I've still got things I want to ask you...!
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Amo expression change
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0180]
+Wait. Could it be that she was already 
+under someone else's unbelievably strong brainwashing?
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0190]
+She's already gone... 
+Tch. I feel like an idiot, flailing around all by myself! 
+ヽ(｀Д´#)ﾉ
+[/message]
+
+// Amo expression change
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0200]
+But who else could have such strong brainwashing powers 
+besides me...? 
+That's bad news if there's someone like that...
+[/message]
+
+// Amo expression change
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0210]
+...Huh? People are staring. 
+The background NPCs are looking at me weirdly... 
+Seriously?
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0220]
+I'm not some show for you to gawk at! 
+Keep staring, and I'll kill you! 
+( ♯・皿・)
+[/message]
+
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=07_902_0230]
+...Tch, worst mood ever. 
+Guess I'll head to the arcade...
+[/message]
+
+// Hide text window
+[visible show=false]
+
+[character id=500202 anim=rtol sec=0.5 show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

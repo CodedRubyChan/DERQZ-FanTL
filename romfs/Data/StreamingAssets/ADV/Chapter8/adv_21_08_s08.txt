@@ -1,0 +1,136 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_21_08_s08
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkI]
+
+// Show specified background
+[image type=bg id=000580]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+
+
+//BGM31
+// Background 580
+
+[character id=601701 posx=0.3 anim=fade face=smile show=true wait=false]
+[character id=100103 posx=0.7 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=08_921_0010]
+The time is near. 
+So close that you can almost feel its breath.
+[/message]
+
+// Change Snark's expression: Pained
+[face id=601701 type=painful]
+[message name=Snark charaid=601701 voice=08_921_0020]
+Yet, its form is still undefined. 
+Will it be an agent of destruction, or a savior?
+Which one are you?
+[/message]
+
+// Change Snark's expression: Angry
+[face id=601701 type=angry]
+[message name=Snark charaid=601701 voice=08_921_0030]
+Who are you? 
+What are you trying to become? 
+What do you wish to be?
+[/message]
+
+// Change Sayaka with Blade's expression: Expectation
+[face id=100103 type=expectation]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_921_0040]
+Sorry, but I'll have to give you the answer to your riddles later.
+[/message]
+
+// Change Snark's expression: Confused
+[face id=601701 type=confuse]
+
+// Sayaka shakes (surprised/yelling)
+[shake target=chara id=100103 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Change Sayaka with Blade's expression: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_921_0050]
+I do it because I can, 
+and I do it because I want to! 
+That's all there is to it, for now.
+[/message]
+
+// Change Snark's expression: Smile
+[face id=601701 type=smile]
+[message name=Snark charaid=601701 voice=08_921_0060]
+Will your resolve change the fate of this world? 
+Has there ever been one who bore such a burden of causality? 
+I will see this through, to the end.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+// Stop BGM playing
+[sound type=bgm state=stop]
+
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

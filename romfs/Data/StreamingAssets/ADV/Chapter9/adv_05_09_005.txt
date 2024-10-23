@@ -1,0 +1,312 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_05_09_005
+// ##########################################################################//
+// Start
+// ##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkF]
+
+// Display specified background
+[image type=bg id=000410]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+// ##########################################################################//
+// Start
+// ##########################################################################//
+
+// BGM28
+// Background 410 / Collapsing Sao City (standard)
+
+[character id=600901 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200702 posx=0.66 anim=fade face=confuse show=true wait=true]
+
+// Play SE: Slash sound
+[sound type=se name=Slash]
+
+[effect type=SlashLarge show=true wait=true auto_hide=true posx=0.35 posy=0.5 priority=FrontCutin]
+
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// Nova expression change: Painful
+[face id=600901 type=painful]
+[message name=Nova charaid=600901 voice=09_005_0010]
+Gwaaahhh!? 
+A-augh…
+[/message]
+
+[face id=200702 type=surprise]
+
+[message name=Liliana charaid=200702 voice=09_005_0020]
+N-Nova…!!
+Did the Stranger's attack
+hit you directly…?
+[/message]
+
+[message name=Nova charaid=600901 voice=09_005_0030]
+H-heeeh… haha…
+No, I… I can't…
+I'm… done…
+[/message]
+
+[face id=200702 type=panic]
+
+[message name=Liliana charaid=200702 voice=09_005_0040]
+Nova!! Stay with me!
+The wound isn't shallow…
+but you can handle this…!
+[/message]
+
+[message name=Nova charaid=600901 voice=09_005_0050]
+N-no…
+Actually… well,
+I'm… kinda… ma…so…
+[/message]
+
+[face id=200702 type=surprise]
+
+[message name=Liliana charaid=200702 voice=09_005_0060]
+…W-what are you saying…?!
+A confession, at a time like this…??
+[/message]
+
+// Nova expression change: Smile
+[face id=600901 type=smile]
+[message name=Nova charaid=600901 voice=09_005_0070]
+Yeah, I… just, you know…
+In times like this, it's crude but…
+it just kinda slipped out… Hehe—
+[/message]
+
+[move id=600901 posx=0.25 wait=false]
+[move id=200702 posx=0.5 wait=false]
+
+[character id=601801 posx=0.75 anim=fade face=confuse show=true wait=true]
+
+[message name=Shizu charaid=601801 voice=09_005_0080]
+Ah, jeez!
+Our strongest fighter just…
+completely out of commission now…!
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=09_005_0090]
+Ugh, we're totally…
+surrounded by monsters.
+Can't move forward or back…
+[/message]
+
+[face id=200702 type=confuse]
+
+[message name=Liliana charaid=200702 voice=09_005_0100]
+Ugh… is this another trial…?!
+Then I'll find a way through.
+You all run ahead.
+[/message]
+
+[message name=Liliana charaid=200702 voice=09_005_0110]
+Take… 
+Nova with you too,
+someone carry her!
+[/message]
+
+// Display cultist standing picture
+
+[character id=600901 anim=fade show=false wait=false]
+[character id=602701 posx=0.25 anim=fade face=default show=true wait=true]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=09_005_0120]
+Mai, Rottie…
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=09_005_0130]
+Shizu,
+I'm counting on you for what comes next…!
+[/message]
+
+[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=09_005_0140]
+…Sacrificing yourself, huh~?
+I'm not really into that anymore~
+and I don't wanna abandon you either.
+[/message]
+
+[message name=Shizu charaid=601801 voice=09_005_0150]
+Listen, Liliana. I don't wanna run away anymore.
+Midra-sensei is here, in this world too.
+I've decided to fight till the end!
+[/message]
+
+// Slash sound
+// Screen shake
+
+[sound type=se name=sword]
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+[character id=602701 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=true]
+
+[character id=100103 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200901 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_005_0160]
+For the weak, kindness and care!
+For the strong, a harsh revelation!
+…was that it!?
+[/message]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_005_0170]
+Ah-cha-cha-cha-cha~!
+Rushing to help out my friends in danger!
+The heroine of justice has arrived!
+[/message]
+
+[message name=Chloe charaid=200901 voice=09_005_0180]
+We're here to help!
+I can fight a little too!
+Everyone who can fight, regroup! Let's flank them!
+[/message]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=600901 posx=0.75 anim=fade face=smile show=true wait=true]
+
+[message name=Nova charaid=600901 voice=09_005_0190]
+Wow♪
+Nice timing, Sayaka…
+Sorry… I had a moment of weakness…
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_005_0200]
+This is the time
+for a detective to shine…
+Hang in there, okay!?
+[/message]
+
+// Screen darkens (time passes)
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+[character id=100103 anim=fade show=false wait=false]
+[character id=600901 anim=fade show=false wait=false]
+[character id=200601 anim=fade show=false wait=true]
+
+[character id=200702 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601801 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200901 posx=0.75 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[face id=200702 type=confuse]
+
+[message name=Liliana charaid=200702 voice=09_005_0210]
+Hah… seems I still have a lot to learn.
+…Once again,
+I had to be saved.
+[/message]
+
+[message name=Shizu charaid=601801 voice=09_005_0220]
+How about we just take note
+and repay it all at once later?
+[/message]
+
+[face id=200901 type=thoughts]
+
+[message name=Chloe charaid=200901 voice=09_005_0230]
+Why the long face…?
+In this chaos, it's normal to feel overwhelmed.
+No debts here!
+[/message]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=200601 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_005_0240]
+You should come to Iris Corp!
+It's where we're all gathering!
+[/message]
+
+[character id=601801 anim=fade show=false wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_005_0250]
+We'll find Mai and the others too!
+Just head to Iris Corp!
+[/message]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=09_005_0260]
+Understood. We have some injured here,
+so we'll head to Iris Corp slowly.
+Take care, Sayaka and everyone…
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=09_005_0270]
+And seize that revelation— 
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################//
+// End
+// ##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+// ##########################################################################//
+// End
+// ##########################################################################//
+//END

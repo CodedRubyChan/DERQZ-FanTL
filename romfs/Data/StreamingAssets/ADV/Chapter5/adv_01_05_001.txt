@@ -1,0 +1,1207 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+
+//adv_01_05_001
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Display the specified background
+[image type=bg id=000330]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//Background 330
+//BGM05
+
+
+
+// Display the text window
+[visible show=true]
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0010]
+...Hmm?
+[/message]
+
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+// Speaker: Girl with Glasses
+[character id=500402 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Girl with Glasses charaid=500402 voice=05_001_0020]
+Staaaaring...
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0030]
+...W-w-who are you?
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0040]
+Good morning, Sayaka.
+Are you awake?
+[/message]
+
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0050]
+No, your real self is still sleeping.
+Only your consciousness has joined us for this meeting—
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0060]
+...Meeting?
+Wait, is this a company?
+And are you a new employee too?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Natsuo and Arata appear
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.67 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+// Speaker: The Unsociable Man
+
+[message name=Unsociable Man charaid=600501 voice=05_001_0070]
+Well done, Naraku.
+That's enough.
+Let's just get started.
+[/message]
+
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0080]
+Geez, you made us wait~~...
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0090]
+A-Arata Mizunashi!?
+Why are you here!? Wait...
+What!? Where even is this!?
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0100]
+Sayaka-chan, mind your manners!!
+You might get pranked, you know~!
+Like having chopsticks shoved up your nose. Hahaha!
+[/message]
+
+// Speaker: The Unsociable Man
+
+// Natsuo Munakata changes expression
+[face id=600501 type=confuse]
+
+[message name=Unsociable Man charaid=600501 voice=05_001_0110]
+Be serious, Arata...
+—Right. Sayaka, we're the ones who brought you here.
+Let me explain briefly.
+[/message]
+
+// Speaker: The Unsociable Man
+
+[face id=600501 type=default]
+
+[message name=Unsociable Man charaid=600501 voice=05_001_0120]
+This place is a layer near the deepest part of the Strain Area.
+And it's close to the area of the uppermost world where we live.
+To put it simply... this is our "hideout."
+[/message]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0130]
+Unlike some idiot Ludens' shabby room with just tables and chairs,
+this place is way more stylish, right!?
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0140]
+So basically, we're right in the middle of enemy territory?
+...Wow, it's really true.
+You guys are actually here...
+[/message]
+
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+
+[character id=600201 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Display G Clea, G Lucille, G Lilly, and G Serika
+[character id=500302 posx=0.18 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.39 anim=fade face=default show=true wait=false]
+[character id=500102 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.79 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+// Speaker: Hooded Woman
+
+[face id=500502 type=default]
+
+[message name=Hooded Woman charaid=500502 voice=05_001_0150]
+Uh, hi...
+Though I think this might be our first meeting?
+[/message]
+
+// Speaker: Kiki Amo
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=05_001_0160]
+Ehehehehe♪ (・V・)
+I'd love to kill you right now,
+but let's behave and join the meeting together, okay...?
+[/message]
+
+// Speaker: Huuki Hizumi
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=05_001_0170]
+Killing someone in their spiritual form
+is beyond your ability anyway, I believe.
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=05_001_0180]
+Hah!?
+You're really annoying, old hag...
+Should I blast you away with my Code!?
+[/message]
+
+[face id=500102 type=angry]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_001_0190]
+Shut up...
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0200 lipsync=false]
+(Lilith... still badly injured...)
+[/message]
+
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+
+[character id=500302 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=false]
+[character id=500102 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+// Speaker: Natsuo
+
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0210]
+Sayaka.
+I, Natsuo Munakata, have a request.
+I want you to observe the proceedings of this meeting.
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0220]
+If it's just observing,
+I don't mind...
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0230 lipsync=false]
+(But why was I called here in the first place...?)
+[/message]
+
+///////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: I have no idea.
+// 2: Let's try to investigate a little.
+
+[select]
+[link text="I have no idea." label=partner]
+[link text="Let's try to investigate a little." label=partner]
+[/select]
+
+// Regardless of the choice, the development remains the same, only the dialogue changes.
+
+:partner
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0240 lipsync=false]
+(Partner?! You were here all along...!?)
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////【Choices】
+// 1: Shh. As an uninvited guest.
+// 2: You pulled me along, Sayaka.
+
+[select]
+[link text="Shh. As an uninvited guest." label=report]
+[link text="You pulled me along, Sayaka." label=report]
+[/select]
+
+// Regardless of the choice, the development remains the same, only the dialogue changes.
+
+:report
+
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////Arata and Naraku appear
+[character id=600201 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.74 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0250]
+Alright. Glitch Girls,
+start with yesterday's report.
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0260]
+Yes, as you wish.
+I, Naraku, will be in charge of facilitating this.
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0270]
+By the way, our individual names
+and the peculiar group name “Glitch Girls”
+were graciously bestowed upon us by Natsuo-sama—
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0280]
+Huh… The group name is Glitch Girls…
+So that's what you guys were called before, huh…
+[/message]
+
+
+// Arata Mizunashi changes expression
+[face id=600201 type=smile]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0290]
+Pfft!!
+Natsun, they're talking about you…
+[/message]
+
+// Naraku changes expression
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0300]
+I've been wondering whether the renaming process is possible.
+[/message]
+
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0310]
+You're beings that need to be bound by names.
+Even if it sounds a little weird, it doesn't matter.
+We'll talk about renaming later.
+The report!
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0320]
+My apologies.
+Everyone, please look at the materials in front of you.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Arata, Natsuo, Naraku disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Falena appears
+[character id=500502 posx=0.49 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Falena charaid=500502 voice=05_001_0330]
+Hmm, the materials are these.
+Let me hand them to you…
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0340]
+...Huh?
+Umm, sorry but,
+I don't have “hands” right now. Or a body, for that matter…
+[/message]
+
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=05_001_0350]
+Oh.
+Then…how about we just look at them together?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Falena disappears
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Arata and Naraku reappear
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.66 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0360]
+We conducted a test transforming the department store into a Strain Area,
+bypassing the hostile Luden Iris, constructing the area,
+and establishing, fixing, and checking the effects of objects placed in the area.
+[/message]
+
+// [face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0370]
+Look at the data. All the experiments were successful.
+We believe similar performance can be achieved when testing in the uppermost world.
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0380]
+However, we failed the assassination of key individuals, and no one from Iris Corporation died.
+It's a bad ending for us.
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0390]
+Hehehehe!! 
+I wonder whose fault that was~?!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Arata and Naraku disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Huuki, Kiki, Naraku, and Lilith appear
+[character id=500302 posx=0.18 anim=fade face=default show=true wait=false]
+[character id=500202 posx=0.39 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=500102 posx=0.79 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_001_0400]
+...Tsk.
+[/message]
+
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0410]
+We exhausted a significant amount of resources operating near the shallow layers of the Strain Area for this operation.
+We will need to refrain from further experiments for a while.
+[/message]
+
+// Kiki changes expression
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=05_001_0420]
+Unlike at the hospital or department store, Shina and her team were more aggressive...
+We couldn't gather Eni from the NPCs as easily.
+[/message]
+
+// Huuki changes expression
+[face id=500302 type=thoughts]
+
+[message name=Huuki Hizumi charaid=500302 voice=05_001_0430]
+And to top it off, the cult interfered as well.
+I heard the Aphesis were allies, but do their underlings think otherwise?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Huuki, Kiki, Naraku, Lilith disappear
+[character id=500302 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=false]
+[character id=500102 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Arata and Natsuo reappear
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.67 anim=fade face=painful show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0440]
+Hmm. Arata.
+I'm glad I asked everyone. 
+You skip over too many important details.
+Is it that you're belittling me?
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0450]
+Aww, Natsun, you too!? 
+You're being mean to me!!
+I'll tattle to Rin-chan, you know!?
+[/message]
+
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0460]
+The only reason I've been cooperating with your "Code Z" plan 
+is because I believe it will ultimately save the uppermost world.
+For now, anyway.
+[/message]
+
+// [face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0470]
+Normally, I would be taking you back to the uppermost world by force.
+I've been quite lenient. 
+Don't forget that, even though we're friends.
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0480]
+It's not all wasted.
+I did achieve one of my other objectives.
+Right, Sayaka-chan!?
+[/message]
+
+// Screen shakes
+
+[shake type=random sec=0.5 pow=5 fade=true wait=false]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0490]
+...Huh?! 
+Don't just call me out of nowhere like that!!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Arata and Natsuo move
+[move id=600201 posx=0.25 sec=0.5 wait=false]
+[move id=600501 posx=0.5 sec=0.5 wait=false]
+
+///////////////////////////////////////////////////////////////////////////Lilith appears
+[character id=500102 posx=0.74 anim=fade face=angry show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Lilith Yamamura charaid=500102 voice=05_001_0500]
+Shut up...!
+Stop shouting...
+It hurts my wounds...
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0510]
+...S-sorry...
+[/message]
+
+[face id=500102 type=default]
+[face id=600201 type=confuse]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0520]
+Whoa, you've become friends with Lilith?
+Huh. 
+You really are different from Ripuka.
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////BGM stops
+[sound type=bgm state=stop]
+
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0530]
+...Don't call me Ripuka!
+Yeah, I'm not Ripuka. 
+That's how it should be...
+[/message]
+
+
+[face id=600201 type=thoughts]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0540]
+If you ask me…
+Sayaka's sense of self is about 95% solid...
+[/message]
+
+[face id=600501 type=confuse]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0550]
+...Wait a minute.
+Isn't she already too far from the existence you're seeking, Arata!?
+[/message]
+
+[face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0560]
+No problem! She's fine, trust me. Right, Sayaka?
+Do you remember how many layers of Strain Areas you've cleared so far?
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0570]
+...Well, I can't recall right away, but...
+[/message]
+
+// Natsuo Munakata changes expression
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0580]
+...What?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Lilith disappears
+[character id=500102 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Huuki appears
+[character id=500302 posx=0.73 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=05_001_0590]
+So it's true, then.
+You've been collecting astronomical amounts of Eni
+to maintain your sense of self as well?
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0600]
+Astronomical? Nah, 
+just enough to handle transactions at a café or with acquaintances...
+Basically, just what I can collect.
+[/message]
+
+
+// Huuki changes expression
+[face id=500302 type=surprise]
+[face id=600501 type=confuse]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0610]
+………!
+[/message]
+
+// BGM29 starts playing
+[sound type=bgm state=play name=TalkG]
+
+[face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0620]
+See?
+She's amazing, right?
+She's still evolving, just as I thought!!
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0630]
+...I don't get what's so amazing at all!!
+[/message]
+
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0640]
+...We're from the uppermost world, so we have some resistance to the Strain Area...
+But even we can't stay here for long.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0650]
+To make this place our stronghold, we've each used 114.4 trillion Eni 
+to control and protect our bodies.
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0660]
+...114 trillion?!
+[/message]
+
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=05_001_0670]
+If you let your guard down here,
+you'll turn into a Stranger instantly.
+You've seen it, haven't you?
+People transforming.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Arata, Natsuo, Huuki disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=false]
+[character id=500302 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Kiki, Naraku, Falena appear
+[character id=500202 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.74 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Kiki Amo charaid=500202 voice=05_001_0680]
+Each of us costs 114 trillion to maintain!
+Keeping up appearances is a real pain…
+Sayaka! You must be a cheap woman, huh?! Right?!
+[/message]
+
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0690]
+No, it's the opposite. 
+Judging from her words, she's gathered only a few thousand, maybe tens of thousands of Eni,
+and she's been operating even in the deep layers with no mental or physical strain.
+[/message]
+
+[face id=500202 type=confuse]
+
+[message name=Kiki Amo charaid=500202 voice=05_001_0700]
+Hmm… (-"-)
+[/message]
+
+// Falena changes expression
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=05_001_0710]
+Whoa…
+If this were the entertainment industry, 
+her low cost would collapse the market,
+and every other agency would go bankrupt…
+[/message]
+
+// @Sayaka
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0720]
+......
+[/message]
+
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Kiki, Naraku, Falena disappear
+[character id=500202 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Arata and Natsuo reappear
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.67 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+// Natsuo Munakata changes expression
+[face id=600501 type=smile]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0730]
+Sayaka, why don't you come with us to the uppermost world right now?!
+That way, we wouldn't have to let Arata fool around in Iris's world anymore…!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0740]
+Ohohoh! Natsun, 
+you're getting all worked up and cute…
+But look, Sayaka's troubled, right? Aren't you?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+[fade type=out anim=simple sec=0.3]
+[delay sec=0.1]
+[fade type=in anim=simple sec=0.3]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+// @Sayaka
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0750]
+...Huh? 
+My vision is…fading…
+[/message]
+
+[face id=600201 type=confuse]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0760]
+Ah—oops, that's it. 
+Looks like Sayaka's body is about to wake up—
+Alright, people! Let's go over the upcoming schedule!
+[/message]
+
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Arata moves
+[move id=600201 posx=0.25 sec=0.5 wait=false]
+[character id=600501 anim=fade show=false wait=true]
+
+///////////////////////////////////////////////////////////////////////////Kiki and Naraku appear
+[character id=500202 posx=0.49 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.74 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0770]
+Alright, Naraku, you handle influencing public opinion.
+Push them towards supporting the Aphesis cult.
+Team up with Kiki.
+[/message]
+
+// [face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_001_0780]
+Understood.
+[/message]
+
+// Kiki changes expression
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=05_001_0790]
+Ugh! (-""-)
+...Ugh, stupid glasses nerd~~
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Kiki and Naraku disappear
+[character id=500202 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Huuki and Falena appear
+[character id=500302 posx=0.48 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.74 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0800]
+Falena, keep working on bringing down Chloe Aron.
+[/message]
+
+// Falena changes expression
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=05_001_0810]
+Y-You don't need to tell me… I'm on it already...
+[/message]
+
+// [face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0820]
+Huuki, you're in charge of keeping an eye on Iris Corporation.
+Keep them in check.
+[/message]
+
+
+[message name=Huuki Hizumi charaid=500302 voice=05_001_0830]
+Understood. What about Lilith and the boss?
+With her injury, I doubt she'll be able to handle any major operations…
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////BGM stops
+[sound type=bgm state=stop]
+
+[face id=600201 type=default]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0840]
+Ah, her?
+She's done for. Execution.
+It's decided.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Arata and Falena disappear
+[character id=600201 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Lilith appears, Huuki moves
+[move id=500302 posx=0.31 sec=0.5 wait=false]
+[character id=500102 posx=0.66 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_001_0850]
+…………
+[/message]
+
+// Huuki changes expression
+[face id=500302 type=sad]
+
+[message name=Huuki Hizumi charaid=500302 voice=05_001_0860]
+I-I see...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0870]
+W-Wait!
+Execution is too much…!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////Huuki and Lilith disappear
+[character id=500302 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////Arata and Natsuo appear
+[move id=500102 posx=0.74 sec=0.5 wait=false]
+
+[character id=600201 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=true]
+
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600201 type=confuse]
+
+[message name=Arata Mizunashi charaid=600201 voice=05_001_0880]
+Because she completely wasted my blood, sweat, and tears on that special bomb of mine!?
+I can't forgive her!!
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0890]
+She's also cost us 114 trillion, but your ruthless decision has put our ‘Endverse Plan' in jeopardy.
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_001_0900]
+……I see...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0910]
+Execution…no way! 
+Even Shina wouldn't allow that!!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0920]
+No matter what happened... 
+No one deserves to go through something like that!
+[/message]
+
+[face id=600501 type=thoughts]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0930]
+— I see.
+So, that's your stance…
+[/message]
+
+[face id=600501 type=smile]
+
+[message name=Natsuo Munakata charaid=600501 voice=05_001_0940]
+…You truly are,
+■■ like a ■■■■—
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+[fade type=out anim=simple sec=0.3]
+[delay sec=0.1]
+[fade type=in anim=simple sec=0.3]
+
+[delay sec=0.5]
+
+[fade type=out anim=simple sec=0.3]
+
+////////////////////////////////////////////////////////////////////////////////////Background 380
+
+[character id=500102 anim=none show=false wait=false]
+[character id=600501 anim=none show=false wait=false]
+[character id=600201 anim=none show=false wait=false]
+
+[image type=bg id=000380 show=true fade=false wait=false]
+
+[fade type=in anim=simple sec=0.05]
+[delay sec=0.5]
+
+[character id=100101 posx=0.49 anim=none face=angry show=true wait=false]
+
+////////////////////////////////////////////////////////////////////Camera shakes
+[shake type=horizontal sec=0.5 pow=20 fade=false wait=false]
+
+// Display the text window again
+[visible show=true]
+[sound type=se name=Charge]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0950]
+It shouldn't be allowed!!
+[/message]
+[face id=100101 type=panic]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0960]
+...Huh?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////BGM20
+[sound type=bgm state=play name=Home]
+///////////////////////////////////////////////////////////////////////////Background 450
+[image type=bg id=000450 show=true]
+
+// Display the text window again
+[delay sec=0.5]
+[visible show=true]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0970]
+This is…my apartment?
+[/message]
+
+[move id=100101 posx=0.32 wait=false]
+[character id=200102 posx=0.66 anim=fade face=panic show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_001_0980]
+Sayaka, are you alright!?
+You were having a terrible nightmare...
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_0990]
+...Yeah. I'm fine.
+Just a…bad dream. Hehe.
+[/message]
+
+// [Choice]
+// 1: Sayaka, I'm sorry but…
+
+[select]
+[link text="Sayaka, I'm sorry but…" label=real]
+[/select]
+
+:real
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_001_1000 lipsync=false]
+(...Yeah. It wasn't just a dream…
+But how do I explain it…)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Fade out
+[fade type=out anim=simple sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////Sayaka and Shina disappear
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########
+// Black background
+[image type=bg]
+
+// Fade in
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Display ADV eyecatch
+[eyecatch chapter=5 title=The Dream of the Cursed Killing Doll]
+// Wait for a few seconds
+[delay sec=1]
+//########## Eyecatch ##########
+
+//##########################################################################
+// End
+//##########################################################################
+:end
+
+// Fade out
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################
+// End
+//##########################################################################
+//END
+

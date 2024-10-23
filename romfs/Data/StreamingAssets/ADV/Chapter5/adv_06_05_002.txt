@@ -1,0 +1,380 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_06_05_002
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display the specified background
+[image type=bg id=000100]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Background 100 / Back Alley
+// BGM16
+
+[character id=200102 posx=0.32 anim=rtol face=default show=true wait=false]
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0010]
+Sayaka, is something going on here?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0020]
+Hmm, yeah. I feel like there's... "Mushi"? 
+Maybe... a bug or something...?
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0030]
+Huh? Wait. Isn't that... Chloe over there?!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0040]
+You're right! Even from afar, you can tell by her aura— 
+she's a real beauty. We're a lot closer than when we saw her at that shoot...♪
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[sound type=bgm state=stop]
+// Turn off the standing portraits
+[delay sec=0.3]
+
+// Stop BGM
+// Display Chloe and G-Celica
+[character id=200903 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// [No standing portrait]
+// [face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0050]
+Who's the person next to her? A fan? Or maybe her manager?
+[/message]
+
+// Camera zoom
+[camera type=zoom pivot=4 fov=0.1 sec=0.5 active=true wait=false]
+[shake type=horizontal sec=0.5 pow=10 fade=false wait=false]
+
+// [face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0060]
+…Whaaat?!
+[/message]
+
+// Disable camera zoom
+[camera type=zoom sec=30 active=false wait=false]
+// [face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0070]
+Why is she hanging out with an enemy?! 
+And they look like they're getting along, too...
+[/message]
+
+// [face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0080]
+W-what's wrong? 
+That girl next to her… don't tell me...
+[/message]
+
+// [face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0090]
+…Yeah! 
+One of the Glitch Girls… at least that's what I heard.
+[/message]
+
+// [face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0100]
+"Glitch Girls"— 
+I didn't realize that was their official name...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0110]
+Hey! Just like with Kaede, 
+we might need Chloe for completing the game, too...
+[/message]
+
+// [face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0120]
+That's… probably true, but...
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////////////////////// Screen fades to black
+[fade type=out anim=simple sec=0.5]
+
+// BGM33
+////////////////////////////////////////////////////////////////////////////////////////////// Display Still Image 13
+[sound type=bgm state=play name=GlitchGirls]
+[image type=still id=100013 show=true fade=false]
+
+[character id=200903 anim=none show=false wait=false]
+[character id=500502 anim=none show=false wait=true]
+// Disable camera zoom
+[camera type=zoom sec=0.05 active=false wait=true]
+[delay sec=0.05]
+// Camera zoom
+[camera type=zoom pivot=12 fov=0.5 sec=0.05 active=true wait=true]
+[delay sec=0.05]
+// Camera zoom
+[camera type=zoom pivot=4 fov=-0.2 sec=55 active=true wait=false]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////////////////////////////////////// Fade in from black
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0130]
+Ugh! I'm getting so bored of filming! 
+There's only so much stress I can burn off with action scenes.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0140]
+Blood and corpses… 
+The set is well-made, but… it's all fake.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0150]
+It has to be "real." 
+Don't you agree, Lena?
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=05_006_0160]
+Yes, Chloe... 
+Only the real thing is worthy of you.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0170]
+And you too, Lena...
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=05_006_0180]
+Oh my! What a gracious compliment…! 
+Wait, is that…?
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Disable camera zoom
+[camera type=zoom sec=1 active=false wait=false]
+[image type=still id=100013 show=false fade=true wait=true]
+//////////////////////////////////////////////////////////////////////////////////////// End Still Image Display
+
+[delay sec=0.1]
+
+// Display Shina and Sayaka again
+[character id=200102 posx=0.32 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// No standing portrait
+
+[message name=Falena charaid=500502 voice=05_006_0190]
+—Chloe, look over there. 
+It's a bit far, but...
+[/message]
+
+// No standing portrait
+
+[message name=Chloe charaid=200903 voice=05_006_0200]
+What is it?
+[/message]
+
+// No standing portrait
+
+[message name=Falena charaid=500502 voice=05_006_0210]
+I believe that's Shina Ninomiya, the director of *End to Odyssey.* 
+What do you think she's doing here?
+[/message]
+
+// No standing portrait
+
+[message name=Chloe charaid=200903 voice=05_006_0220]
+And she was also the director of *World's Odyssey*, right?
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////////////////////// Display Still Image 13 again
+[image type=still id=100013 show=true fade=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// No standing portrait
+
+[message name=Falena charaid=500502 voice=05_006_0230]
+Are you sure you don't want to say hello? 
+She is connected to the "film," after all.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0240]
+Nah, I don't care. She's just a stranger to me. Besides… 
+No offense to you, Lena, but I never had much attachment to Celica… 
+or even the creators.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0250]
+Right now… 
+as long as I'm working with you again, Lena, 
+that's all that matters.
+[/message]
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=05_006_0260]
+That makes me so happy! Yes, yes! 
+As long as I have you, Chloe... I don't need anything else.
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=05_006_0270]
+Exactly! Together, we'll keep pushing forward with our "plan." 
+We'll make sure to get our training done as well...
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// End Still Image Display
+/////////////////////////////////////////////////////////////////////////////////////////////// Screen fades to black
+// Stop BGM
+[fade type=out anim=simple sec=0.5]
+
+[sound type=bgm state=stop]
+[image type=still id=100013 show=false fade=false]
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=0.5]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_006_0280]
+Honestly, now is not the time to approach her, right? 
+She's a world-famous superstar having a private moment with her security detail...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0290]
+Y-yeah… it seems like we should wait for a better opportunity…
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_006_0300 lipsync=false]
+(Even though I can't hear what they're saying, 
+I have a feeling their conversation is dangerous... but I'll let it go for now...)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop playing the current BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

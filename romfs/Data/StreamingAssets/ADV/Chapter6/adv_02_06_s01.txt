@@ -1,0 +1,496 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_02_06_s01
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display the specified background
+[image type=bg id=000520]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+//BGM21
+//Background 520 / Police Station
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Face: Normal
+[character id=100105 posx=0.5 anim=fade face=default show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_902_0010 lipsync=false]
+(Is that Lilith, the one they took into custody…
+ She's talking to the police about something…)
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide character: Sayaka Hiwatari fades out while moving right
+[character id=100105 anim=ltor show=false wait=true]
+[delay sec=0.5]
+
+// Display character: Lilith Yamamura
+[character id=500102 posx=0.25 anim=fade face=default show=true wait=false]
+// Display character: Senji Hizumi
+[character id=601601 posx=0.5 anim=fade face=default show=true wait=false]
+// Display character: Senji Hizumi
+[character id=601501 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0020]
+……
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0030]
+You don't need to be so cautious.
+We just want to have a little chat.
+[/message]
+
+// Senji Hizumi's expression changes: Smile
+[face id=601601 type=smile]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0040]
+Think of it as a casual conversation.
+See? We're not even in the interrogation room.
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=06_902_0050]
+You're still a key witness, so we can't release you that easily.
+[/message]
+
+// Senji Hizumi's expression changes: Painful
+[face id=601601 type=painful]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0060]
+I can't deny that…
+But you're also under our protection.
+[/message]
+
+// Senji Hizumi's expression changes: Normal
+[face id=601601 type=default]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0070]
+You were hurt at the department store, and Yurisa Yamamura helped you.
+Then we 'protected' you… that's what it comes down to.
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0080]
+We still haven't caught those guys.
+But we have no intention of doing anything to you.
+Even if it's a bizarre situation, there's not much we can do.
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0090]
+…Enough with the pleasantries.
+You want to ask me something, right? Go ahead.
+[/message]
+
+// Senji Hizumi's expression changes: Smile
+[face id=601601 type=smile]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0100]
+Thanks, I appreciate it.
+Well then…
+[/message]
+
+// Chiri Sendo's expression changes: Angry
+[face id=601501 type=angry]
+[message name=Chiri Sendo charaid=601501 voice=06_902_0110]
+………
+[/message]
+
+// Chiri Sendo's expression changes: Normal
+[face id=601501 type=default]
+
+// Senji Hizumi's expression changes: Normal
+[face id=601601 type=default]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0120]
+We've already heard most of it from Shina Ninomiya.
+Your real identity… you're the 'resident ghost' of Yamamura Hospital, right?
+[/message]
+
+// Lilith's expression changes: Normal
+[face id=500102 type=default]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0130]
+…That's right.
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0140]
+A resident ghost, huh?
+Well, you're a Luden, but calling you a 'ghost' makes it sound less real.
+[/message]
+
+// Senji Hizumi's expression changes: Angry
+[face id=601601 type=angry]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0150]
+But I get it now.
+The person my wife was talking to in the hospital… that was you, right?
+[/message]
+
+// Lilith's expression changes: Confuse
+[face id=500102 type=confuse]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0160]
+It's not something I need to hide, is it?
+Yes, it was me.
+Though back then, I didn't have a physical form…
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0170]
+I didn't mind talking to Kuba.
+Unlike other patients… she didn't fear death,
+or curse her fate…
+[/message]
+
+// Lilith's expression changes: Smile
+[face id=500102 type=smile]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0180]
+She never brought up any of those topics.
+She always just smiled and talked happily
+about her daughter and her husband.
+[/message]
+
+// Senji Hizumi's expression changes: Smile
+[face id=601601 type=smile]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0190]
+Heh. Is that so?
+Kind of embarrassing to hear that!
+[/message]
+
+// Chiri Sendo's expression changes: Painful
+[face id=601501 type=painful]
+[message name=Chiri Sendo charaid=601501 voice=06_902_0200 lipsync=false]
+(…Is that really what you wanted to ask her?)
+[/message]
+
+// Senji Hizumi's expression changes: Normal
+[face id=601601 type=default]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0210 lipsync=false]
+(Just hold on…)
+[/message]
+
+// Chiri Sendo's expression changes: Normal
+[face id=601501 type=default]
+
+// Lilith's expression changes: Normal
+[face id=500102 type=default]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0220]
+I even saw you visiting her.
+I thought her husband was pretty rough around the edges.
+[/message]
+
+// Senji Hizumi shakes (surprised and shouting)
+[shake target=chara id=601601 type=horizontal sec=0.2 pow=5 fade=false wait=false]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0230]
+Y-you shut up!
+I'm working on it!
+[/message]
+
+// Chiri Sendo's expression changes: Smile
+[face id=601501 type=smile]
+[message name=Chiri Sendo charaid=601501 voice=06_902_0240]
+…Hehe.
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0250]
+Well, yeah.
+You sure do keep an eye on things, huh?
+Anyway…
+[/message]
+
+// Chiri Sendo's expression changes: Normal
+[face id=601501 type=default]
+
+// Senji Hizumi's expression changes: Painful
+[face id=601601 type=painful]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0260]
+Now that you have a physical form…
+How is that different from when you were just a resident ghost?
+And also…
+That man… Arata Mizunashi…
+[/message]
+
+// Senji Hizumi's expression changes: Angry
+[face id=601601 type=angry]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0270]
+…Are you 'working with' him, or were you 'working with' him?
+Which is it?
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0280]
+I see. So that's what you wanted to ask…
+Then rest assured.
+[/message]
+
+// Lilith's expression changes: Normal
+[face id=500102 type=default]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0290]
+I never knew those people to begin with.
+I was only chosen because it was convenient to get rid of Shina and Yurisa Yamamura.
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0300]
+In the end, after I protected Shina at the department store,
+I was treated like a traitor.
+They even tried to kill me.
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0310]
+That's not good…
+So, you're not on their side anymore, huh?
+[/message]
+
+// Senji Hizumi's expression changes: Smile
+[face id=601601 type=smile]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0320]
+Well, that's all I needed to hear for now.
+[/message]
+
+// Lilith's expression changes: Confused
+[face id=500102 type=confuse]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0330]
+That's it?
+You're surprisingly trusting.
+[/message]
+
+// Lilith's expression changes: Normal
+[face id=500102 type=default]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0340]
+Aren't you worried I might be lying?
+If you're too naïve, it makes me anxious, you know?
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0350]
+I get what you're saying. But if that's true, it would mean
+you tried to deceive us by protecting our side and
+even getting seriously hurt in the process, right?
+[/message]
+
+// Senji Hizumi's expression changes: Smile
+[face id=601601 type=smile]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0360]
+For better or worse, kid…
+you don't strike me as that kind of actress!
+[/message]
+
+// Chiri Sendo's expression changes: Smile
+[face id=601501 type=smile]
+[message name=Chiri Sendo charaid=601501 voice=06_902_0370]
+My superior has a good eye for people.
+And I have to agree.
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0380]
+…Is that so?
+Well, do as you like.
+[/message]
+
+// Senji Hizumi's expression changes: Normal
+[face id=601601 type=default]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0390]
+I will. For now, stay here at the police station.
+We won't do you wrong.
+[/message]
+
+// Lilith's expression changes: Normal
+[face id=500102 type=default]
+
+// Chiri Sendo's expression changes: Smile
+[face id=601501 type=smile]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0400]
+Is there anything else you're concerned about?
+I'll do my best to accommodate.
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0410]
+…Kuba?
+[/message]
+
+// Senji Hizumi's expression changes: Normal
+[face id=601601 type=default]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0420]
+Her condition has been stable for a while now.
+She's just feeling lonely with fewer people to talk to.
+[/message]
+
+// Lilith's expression changes: Smile
+[face id=500102 type=smile]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0430]
+That's good to hear. And… about Shina Ninomiya,
+Yurisa Yamamura…
+It'd be bad if something happened to them out of my sight.
+[/message]
+
+// Senji Hizumi's expression changes: Thoughtful
+[face id=601601 type=thoughts]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0440]
+We're doing what we can to have the police guard the Iris Corporation.
+It's not much against those guys… but it's better than nothing.
+[/message]
+
+// Lilith's expression changes: Thoughtful
+[face id=500102 type=thoughts]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0450]
+And… other than me, the other Ludens…
+[/message]
+
+// Senji Hizumi's expression changes: Angry
+[face id=601601 type=angry]
+[message name=Senji Hizumi charaid=601601 voice=06_902_0460]
+There was one who looked just like Kuba…
+Are you worried about your 'comrades'?
+[/message]
+
+// Lilith's expression changes: Smile
+[face id=500102 type=smile]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0470]
+They're not my comrades. Not anymore.
+If they're still sticking close to Arata Mizunashi…
+Well, it's complicated.
+[/message]
+
+// Senji Hizumi's expression changes: Default
+[face id=601601 type=default]
+
+// Chiri Sendo's expression changes: Thoughtful
+[face id=601501 type=thoughts]
+[message name=Chiri Sendo charaid=601501 voice=06_902_0480]
+It doesn't seem like there's any more new information.
+I'll return to guarding Chloe Aaron.
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=06_902_0490]
+Got it. Be careful out there.
+I'll be heading out as well.
+[/message]
+
+// Lilith's expression changes: Normal
+[face id=500102 type=default]
+[message name=Lilith Yamamura charaid=500102 voice=06_902_0500]
+Understood. 'Take care.'
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Lilith Yamamura, Senji Hizumi, and Chiri Sendo
+[character id=500102 anim=rtol show=false wait=false]
+[character id=601601 anim=ltor show=false wait=false]
+[character id=601501 anim=ltor show=false wait=true]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+[character id=100105 posx=0.5 anim=rtol face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_902_0510 lipsync=false]
+(Lilith, even caring about those who tried to kill her…)
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_902_0520 lipsync=false]
+(They're all too soft.
+It pisses me off… I want to kill them…)
+[/message]
+
+// Sayaka's expression changes: Thoughtful
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_902_0530 lipsync=false]
+(But for now… I have to hold back…)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

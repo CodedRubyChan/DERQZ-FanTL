@@ -1,0 +1,234 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_07_08_s05
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM24 / Workplace Scene
+// Background 470 / Iris Corp. Development Room
+
+[character id=100101 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200302 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_907_0010 lipsync=false]
+(Mai-san and Yamamura-san.
+They seem to be deep in conversation and busy.
+Maybe I shouldn't interrupt.)
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0020]
+Look at this test play video, Mai.
+See how the character shifts from walking to running?
+Notice that moment where it gets a bit awkward?
+[/message]
+
+// Mai expression change: Thoughts
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0030]
+...Ah, now that you mention it, it does stand out...
+And this transition from walking to running is used for 
+several characters, so it's quite important...
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0040]
+Right, exactly.
+Is there any way you can fix it quickly, Mai?
+[/message]
+
+// Mai expression change: Default
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0050]
+I wish I could just fix it quickly, but there are so many variants...
+This will take some time.
+We might need to adjust the programmers' schedule as well.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0060]
+I can't make this decision on my own...
+Could you talk to the higher-ups first?
+If they approve, I'll handle it.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0070]
+Ah, that makes sense...
+Alright.
+I'll report it.
+[/message]
+
+// Yurisa expression change: Thoughts
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0080]
+Ah... If only I knew programming like Mai.
+Then I'd be more useful to everyone. It's frustrating...
+[/message]
+
+// Mai expression change: Smile
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0090]
+You don't need to feel that way.
+You're plenty helpful in other ways, Yamamura-san.
+For instance...
+Look at how you use your skills as a trainee doctor to care for others.
+[/message]
+
+// Yurisa expression change: Smile
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0100]
+Hehe. Thanks for trying to cheer me up, Mai.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0110]
+By the way...
+This is totally unrelated to what we were just discussing...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0120]
+What is it?
+[/message]
+
+// Yurisa expression change: Thoughts
+[face id=200202 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0130]
+Um...
+I've been wondering...
+Doesn't it seem like there's something... strange attached to you, Mai?
+[/message]
+
+// Mai expression change: Surprise
+[face id=200302 type=surprise]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0140]
+! ...Well. Yamamura-san, your perceptive skills can be a bit troublesome.
+To think even you would notice my... "situation."
+[/message]
+
+// Yurisa expression change: Default
+[face id=200202 type=default]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0150]
+So you do have an idea of what it is.
+But don't worry.
+Maybe I can help you get rid of it?
+[/message]
+
+// Mai expression change: Thoughts
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0160]
+Get rid of it... This demonic power...
+[/message]
+
+// Mai expression change: Default
+[face id=200302 type=default]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0170]
+...No, it's okay.
+I've gotten used to it, for better or worse.
+Especially right now... I'm not ready to part with it.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0180]
+Is that so?
+Well, if that's how you feel, I won't push it.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_907_0190]
+...I think that's fine, too.
+[/message]
+
+// Yurisa expression change: Surprise
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=08_907_0200]
+Ah!?
+Since when were you standing there?
+Ah, you startled me.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0210]
+Ah, Saya. You've been here?
+We've both been through a lot, traveling to different places...
+I didn't know how things would turn out for a while there.
+[/message]
+
+// Yurisa expression change: Default
+[face id=200202 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_907_0220]
+Yeah. But you're okay, Mai-san.
+You can use your power responsibly, I'm sure of it.
+Just like when you rushed to help me back then.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=08_907_0230]
+...You're right.
+I hope I can continue to be like that.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

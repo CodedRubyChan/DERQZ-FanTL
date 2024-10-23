@@ -1,0 +1,262 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_04_06_s03
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop playing the current BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000540]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// No BGM
+// Background 540 / West Department Store
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Face: Surprise
+[character id=100105 posx=0.5 anim=rtol face=surprise show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0010]
+...Wow.
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0020]
+Blood. There's still blood left.
+Maybe they missed it while cleaning since it's in a corner?
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0030]
+If I look closely...
+...There are even small pieces of flesh left.
+[/message]
+
+// Sayaka's expression changes: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0040]
+Sniff, sniff...
+Ah, it smells nice.
+I don't know why, but it feels nostalgic.
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0050]
+――This time,
+I wonder how many people became victims.
+How many did I manage to save?
+[/message]
+
+//【Choices】
+// 1: Sayaka, you're doing your best.
+// Only option 1, no branching dialogue
+
+[select]
+[link text="Sayaka, you're doing your best." label=repair]
+[/select]
+
+:repair
+
+// Sayaka's expression changes: Smile[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0060]
+Well, it doesn't really matter.
+Because, in the end, the chairman will fix everything♪
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0070]
+It doesn't matter how many die or how many are saved.
+It doesn't matter that I tried my best, risking everything.
+The chairman's power... can set everything back to normal.
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0080]
+How ridiculous... What is that?
+Then, does it mean there's no point in me trying hard?
+[/message]
+
+// BGM17
+[sound type=bgm state=play name=TownMapB]
+
+// Shake Sayaka (shock, shout)
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0090]
+Hehe, hahaha...
+Ahahaha! Ahahahahaha!
+[/message]
+
+// Shake Sayaka (shock, shout)
+[shake target=chara id=100105 type=random sec=0.3 pow=5 fade=false wait=false]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0100]
+UuuuUUuuu...
+AhhhHHHHHーーーーーーーッ!
+...HahahahAAAAAーーーーッ!!!
+[/message]
+
+// Shake Sayaka (shock, shout)
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0110]
+...If nothing matters,
+then it doesn't matter what I do, does it!?
+[/message]
+
+//【Choices】
+// 1: That's not true.
+// Only option 1, no branching dialogue
+
+[select]
+[link text="That's not true." label=impetus]
+[/select]
+
+:impetus
+
+// Shake Sayaka (shock, shout)
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Angry[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0120]
+Even if I kill whoever I want to, acting on impulse!
+If I want to rip out their guts, I'll do it!
+If I want to kill, I'll kill as much as I want!
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0130]
+Because, because!
+Everything will be back to normal anyway!
+Why should I hesitate?
+[/message]
+
+// Shake Sayaka (shock, shout)
+[shake target=chara id=100105 type=random sec=0.3 pow=5 fade=false wait=false]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0140]
+Ahhhhhh～～～～!
+That's great, soooo great～～♪
+Why didn't I realize this before～～???
+[/message]
+
+//【Choices】
+// 1: Just like Ripuka from the past.
+// 2: Calm down. The current Sayaka isn't normal.
+
+[select]
+[link text="Just like Ripuka from the past." label=dear]
+[link text="Calm down. The current Sayaka isn't normal." label=abnormal]
+[/select]
+
+// Option 1
+:dear
+
+// Option 1
+// Sayaka's expression changes: Normal[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0150]
+Oh, really～♪
+Well then,
+doesn't that make you feel nostalgic and happy?
+[/message]
+
+// Option 2
+[goto label=wonder]
+// Option 2
+:abnormal
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0160]
+Am I really the one who's abnormal?
+Hey, don't you think this world is the one that's weird?
+[/message]
+
+// Convergence
+:wonder
+
+// Sayaka's expression changes: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0170]
+...I feel strange right now.
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_904_0180]
+If I end up broken like this,
+do you think the chairman would fix me too?
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

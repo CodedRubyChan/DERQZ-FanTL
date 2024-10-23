@@ -1,0 +1,322 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_18_05_011
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+// Show Snark
+[character id=601701 posx=0.5 anim=none face=smile show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show the text window
+[visible show=true]
+
+// BGM19 / Subway scene
+// Background580 / Subway
+
+// Snark changes expression
+[face id=601701 type=default]
+[message name=Snark charaid=601701 voice=05_018_0010]
+... I thought you'd be coming around this time.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Switch characters
+// Show Shina, Yurisa Yamamura, Sayaka, and Basilissa
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide Snark
+[character id=601701 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show Basilissa, Shina, Yurisa, and Sayaka
+[character id=600301 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.39 anim=fade face=angry show=true wait=false]
+[character id=200202 posx=0.59 anim=fade face=angry show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=angry show=true wait=true]
+
+[delay sec=1]
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide characters
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[move id=600301 posx=0.49 sec=0.5 wait=false]
+[move id=100101 posx=0.74 sec=0.5 wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show Snark
+[character id=601701 posx=0.25 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Snark charaid=601701 voice=05_018_0020]
+Four of you, huh? The former savior of the world and the destroyer sitting together... quite the rare sight.
+[/message]
+
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=05_018_0030]
+Who exactly are you referring to...? I'm curious, but...
+[/message]
+
+[face id=600301 type=smile]
+[message name=Basilissa charaid=600301 voice=05_018_0040]
+Ahaha! You've become quite talkative yourself. How long has it been since we last met?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=200102 posx=0.49 anim=fade face=panic show=true wait=false]
+[character id=200202 posx=0.74 anim=fade face=panic show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0050]
+Uh, Shina... What's the purpose of coming here from the department store? And who's this person? I can't keep up!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_018_0060]
+Sorry! I'll explain later, I promise! But we need to hurry, Snark... can you take us right away?!
+[/message]
+
+[face id=601701 type=thoughts]
+[message name=Snark charaid=601701 voice=05_018_0070]
+Time? You're concerned about time, even when heading to the Strain Area?
+[/message]
+
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=05_018_0080]
+Oh, right... that makes sense. Please, just take us to Kiki and the others' coordinates!
+[/message]
+
+[face id=601701 type=default]
+[message name=Snark charaid=601701 voice=05_018_0090]
+Sounds like things will be rough again this time. Get in.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Scene transition
+// Background590 / Inside the subway
+
+[visible show=false]
+
+//////////////////////////////////////////////////////////////////////
+// Black fade out
+[fade type=out anim=simple sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide characters
+[character id=200202 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=false]
+[character id=601701 anim=none show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show characters
+[character id=600301 posx=0.19 anim=none face=default show=true wait=false]
+[character id=200102 posx=0.39 anim=none face=default show=true wait=false]
+[character id=200202 posx=0.59 anim=none face=thoughts show=true wait=false]
+[character id=100101 posx=0.79 anim=none face=default show=true wait=true]
+
+[delay sec=1.0]
+[image type=bg id=000590 show=true fade=false]
+
+[sound type=se name=Intrain]
+//////////////////////////////////////////////////////////////////////
+// Black fade in
+[fade type=in anim=simple sec=0.5]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200202 type=surprise]
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0100]
+Whoa... This isn't just a regular train, right?! What's with all these devices inside?! And the scenery outside...?!
+[/message]
+
+[face id=200202 type=panic]
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0110]
+Ahh... and my body feels so weird... Like everything's buzzing...!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_018_0120]
+Oh, what a fresh reaction!
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=thoughts]
+[message name=Basilissa charaid=600301 voice=05_018_0130]
+We're being transferred as data. Our bodies are being disassembled and reassembled as we travel. I never liked this part myself.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0140]
+D-disassembled?!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_018_0150]
+Don't worry, as long as you don't lose sight of who you are, you'll be fine.
+[/message]
+
+[face id=200202 type=smile]
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0160]
+Shina... Thank you for holding my hand... it's so warm...
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=default]
+[message name=Basilissa charaid=600301 voice=05_018_0170]
+Haha, you two are adorable.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=05_018_0180]
+So that's how it works... I guess I've gotten used to it... I don't feel anything anymore.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_018_0190]
+Oh dear, quite the cold fish over here.
+[/message]
+
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=05_018_0200]
+...What are you saying?!
+[/message]
+
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=05_018_0210]
+... There's no tension here!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_018_0220]
+So, Yurisa, right? It's a short time, but can I formally introduce myself? We haven't really talked “before.”
+[/message]
+
+[face id=200202 type=default]
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0230]
+Oh, um, yes! I'm Yurisa Yamamura, the model for Lily! I'm a medical intern!
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=smile]
+[message name=Basilissa charaid=600301 voice=05_018_0240]
+Thank you! I'm Basilissa, an artist, but also a paranormal research specialist.
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_018_0250]
+Oh, I see! That explains why you're coming with us!
+[/message]
+
+[face id=600301 type=thoughts]
+[message name=Basilissa charaid=600301 voice=05_018_0260 lipsync=false]
+(...Shina, is this okay? She doesn't seem like “Lily” at all. She's fully Yurisa...)
+[/message]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=05_018_0270 lipsync=false]
+(Don't worry. I have a plan. Leave it to me.)
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=05_018_0280]
+...Huh?
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////////////////
+// Hide characters
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+///////////////////////////////////////////////////////////////////////////
+// Show Snark
+[character id=601701 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Snark's turn
+[message name=Snark charaid=601701 voice=05_018_0290]
+We're here. I've set the coordinates just as you asked. Now go.
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a few seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing sound effects
+[sound type=se state=stop]
+
+/////////////////////////// Stop playing background music
+[sound type=bgm state=stop]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

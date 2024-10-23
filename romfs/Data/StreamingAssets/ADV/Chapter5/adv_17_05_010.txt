@@ -1,0 +1,757 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_17_05_010
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=GlitchGirls]
+
+// Show specified background
+[image type=bg id=000430]
+
+// Camera zoom
+[camera type=zoom pivot=9 fov=0.5 sec=0.1 active=true wait=true]
+// Wait for specified seconds
+[delay sec=0.05]
+// Zoom into background
+[camera type=zoom pivot=11 fov=0 sec=60 active=true wait=false]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Play "Scare" sound effect
+[sound type=se name=Scare]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for 8.5 seconds
+[delay sec=8.5]
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+[sound type=se state=stop]
+// Disable camera zoom
+[camera type=zoom sec=0.1 active=false]
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for 0.6 seconds
+[delay sec=0.6]
+
+//BGM33
+//Background 430 / Intersection in front of Saku City Department Store
+
+// Play panic sound effect (loop)
+// Added Shina for smoother flow
+
+[character id=600301 posx=0.19 anim=fade face=smile show=true wait=false]
+[character id=200102 posx=0.39 anim=fade face=angry show=true wait=false]
+[character id=200202 posx=0.59 anim=fade face=sad show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=sad show=true wait=true]
+
+// Display text window
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=05_017_0010]
+A blue sky, and instead of rain, people occasionally falling—such a surreal sight♪
+[/message]
+
+//[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0020]
+Please! As we head to the department store... save as many people as you can!
+[/message]
+
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_017_0030]
+Oh no, Shina! Someone is about to jump from that building...!!
+[/message]
+
+// Shina's cut-in
+[sound type=se name=SwordSwing]
+[cutin id=000001 type=rtol sec=0.2 show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0040]
+Spider's Thread!
+[/message]
+
+[sound type=se name=Fall]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0050]
+She caught the falling person! As expected...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0060]
+I... I need more hands... Basilissa, please take care of that side!
+[/message]
+
+[cutin id=000001 type=rtol sec=0.2 show=false]
+
+[message name=Basilissa charaid=600301 voice=05_017_0070]
+Hmm, looks like they're about to get impaled by a streetlight... 'Ripuka Code'!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Camera shake
+[shake type=horizontal sec=1 pow=20 fade=true wait=false]
+// Explosion sound effect
+[sound type=se name=Bigbomb]
+
+[face id=200102 type=thoughts]
+[face id=100101 type=surprise]
+[delay sec=1]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0080]
+The streetlight got knocked down...!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_017_0090]
+The ground's been softened, I believe... Oh, yes. They stood up safely.
+Was this good enough, Shina?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0100]
+Thank you... See? You can save people too.
+[/message]
+
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=05_017_0110]
+Well, I don't want to lose all my sound work from Iris Corp if I anger you.
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=05_017_0120]
+But, look at that. Even the people we just saved are all heading to the department store...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0130]
+Sayaka, can't you create a dimensional rift or something?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0140]
+......
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Dimensional rift sound effect
+// Background 440
+[sound type=se name=Mirror]
+[image type=bg id=000440 show=true]
+
+// Display the text window again
+[delay sec=1]
+[visible show=true]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0150]
+N-no... better not. I don't know where it'll send others...
+The last time I did it, it went terribly wrong...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_017_0160]
+Then... shall we take our time and enjoy a break? After all, slow and steady wins the race. 
+The weather's just perfect for a picnic...
+[/message]
+
+[face id=200202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_017_0170]
+Please don't have a picnic while people are falling from the sky!!
+[/message]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0180]
+...Wait! That group over there...!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Liliana appears
+[character id=200702 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=05_017_0190]
+Come! Everyone, follow me! 
+The time has come to break free from this false world!
+[/message]
+
+[face id=200702 type=smile]
+
+[message name=Liliana charaid=200702 voice=05_017_0200]
+Even without wings, you can fly! Just let yourselves be guided, up high!
+Together, let's jump!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Liliana exits
+[character id=200702 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Basilissa, Shina, Sayaka appear
+[character id=600301 posx=0.24 anim=fade face=angry show=true wait=false]
+[character id=200102 posx=0.49 anim=fade face=angry show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0210]
+W-why is Liliana saying such things?!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_017_0220]
+Looks like she's leading a group of people intent on suicide. 
+Seems like she's still got some consciousness, but... some are following her.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0230]
+Is the Aphesis cult... taking advantage of this chaos?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+//////////////////////////////////////////////////////////////////////////// Characters move
+[move id=100101 posx=0.79 sec=0.5 wait=false]
+[move id=200102 posx=0.59 sec=0.5 wait=false]
+[move id=600301 posx=0.39 sec=0.5 wait=false]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Shizu appears
+[character id=601801 posx=0.18 anim=ltor face=painful show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=05_017_0240]
+Liliana... deep down... always wanted to die...
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0250]
+Shizu?! If you're nearby, please do something!
+[/message]
+
+[message name=Shizu charaid=601801 voice=05_017_0260]
+I couldn't stop her... 
+Even though I'm her partner... I was helpless...
+[/message]
+
+//[face id=601801 type=default]
+
+[message name=Shizu charaid=601801 voice=05_017_0270]
+Now, all I can do is watch from a distance... or maybe... I should join them...
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=05_017_0280]
+Oh my, has this one lost hope too?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0290]
+Don't give up! We came here to help!
+[/message]
+
+// Shizu changes expression
+[face id=601801 type=confuse]
+
+[message name=Shizu charaid=601801 voice=05_017_0300]
+You... will help her?
+[/message]
+
+//[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0310]
+We'll definitely save Liliana! Trust us!
+[/message]
+
+// Shizu changes expression
+[face id=601801 type=painful]
+
+[message name=Shizu charaid=601801 voice=05_017_0320]
+But why...?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0330]
+You don't need a reason to help people! If someone is in trouble, you do everything you can to save them! That's all there is to it.
+[/message]
+
+// Basilissa changes expression
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_017_0340]
+Oh, Shina and Sayaka, you're both so spirited! I love it when people make promises they can't keep.
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0350]
+What are you talking about?!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_017_0360]
+Because, when you get their hopes up, only to crush them later, the sound of despair is just... divine♪
+[/message]
+
+[character id=601801 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=200202 posx=0.19 anim=fade face=angry show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_017_0370]
+Read the room already…!
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0380]
+Sorry, this one's... a bit different.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0390]
+Hold on a little longer, we'll find a way to fix this!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=200202 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Shizu appears
+[character id=601801 posx=0.48 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=05_017_0400]
+...I believe in you. Please, save Liliana...
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Police sirens sound effect
+[sound type=se name=Police]
+[delay sec=3]
+
+// Stop sound effect
+[sound type=se state=stop]
+[delay sec=0.6]
+
+// Hizumi appears
+[character id=601601 posx=0.19 anim=ltor sec=0.3 face=angry show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0410]
+Hey, what are you all doing here?!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Characters move
+[move id=601801 posx=0.39 sec=0.5 wait=false]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Characters appear
+[character id=200102 posx=0.59 anim=fade face=panic show=true wait=false]
+[character id=100101 posx=0.79 anim=fade face=panic show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0420]
+Hizumi?! Are you part of this too?!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0430]
+Don't tell me you're here to… jump?!
+[/message]
+
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0440]
+Hell no! I'm always on the side that stops people from jumping…!!
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0450]
+Right now, I'm leading a squad of cops trying to stop this madness. But it's like fighting a losing battle… some of our own men even joined the crowd...
+[/message]
+
+// Shizu changes expression
+[face id=601801 type=angry]
+
+[message name=Shizu charaid=601801 voice=05_017_0460]
+What can the police even do...?
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0470]
+A follower of the Aphesis cult, huh? Last time, we saved your life, but this time… looks like you're on the wrong side.
+[/message]
+
+[face id=601801 type=confuse]
+
+[message name=Shizu charaid=601801 voice=05_017_0480]
+...That's not fair!
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0490]
+Tell me, is this mess the work of those same terrorists who set off the bombs?
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0500]
+That's right! You hit the nail on the head…
+We're on our way to stop them right now!
+[/message]
+
+// Hizumi changes expression
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0510]
+Really?! Damn it… 
+Got a bit carried away there. 
+[/message]
+
+// Hizumi changes expression
+[face id=601601 type=painful]
+
+[message name=Senji Hizumi charaid=601601 voice=05_017_0520]
+...The police have failed. But I'll keep doing what I can.
+I'm counting on you…! Good luck out there.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////// Black fade-out
+[fade type=out anim=simple sec=0.5]
+
+[character id=601801 anim=none show=false wait=false]
+[character id=100101 anim=none show=false wait=false]
+[character id=200102 anim=none show=false wait=false]
+[character id=601601 anim=none show=false wait=true]
+[delay sec=0.05]
+
+// Scene transition
+// BGM08
+// Background 540 / West wing of the department store
+[image type=bg id=000540 show=true fade=false]
+[sound type=bgm state=play name=Chapter6]
+
+[character id=500202 posx=0.24 anim=none face=default show=true wait=false]
+[character id=200702 posx=0.49 anim=none face=default show=true wait=false]
+[character id=601901 posx=0.74 anim=none face=painful show=true wait=true]
+
+[delay sec=1]
+
+////////////////////////////////////////////////////////////////////// Black fade-in
+[fade type=in anim=simple sec=1]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=05_017_0530]
+Thank you all for waiting… 
+Here we are, at the promised land—
+[/message]
+
+// Speaker name: Kikii Amo
+[message name=Kikii Amo charaid=500202 voice=05_017_0540]
+Good job, everyone! LOL
+This department store being the promised land is hilarious! 
+But still, you did a great job~!
+[/message]
+
+// Speaker name: Male Voice
+// @Male Mob61
+[message name=Male Voice voice=05_017_0550]
+Please... save me...
+[/message]
+
+[message name=Liddy charaid=601901 voice=05_017_0560]
+Oh… it's so bright… is this really...
+[/message]
+
+// Speaker name: Female Voice
+// @Female Mob62
+[message name=Female Voice voice=05_017_0570]
+Please, Liliana-sama... 
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Liliana and Liddy
+[character id=200702 anim=fade show=false wait=false]
+[character id=601901 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Show Lilith
+[move id=500202 posx=0.32 sec=0.5 wait=false]
+[character id=500102 posx=0.66 anim=fade face=painful show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_017_0580]
+...Ugh...
+[/message]
+
+[message name=Kikii Amo charaid=500202 voice=05_017_0590]
+Look who we have here! Even this traitor runaway couldn't escape in the end!
+Lilith, what a pitiful state you're in!
+[/message]
+
+// Lilith changes expression
+[face id=500102 type=smile]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_017_0600]
+Haha… it's over now… 
+I'm going to jump...
+[/message]
+
+// Kikii Amo changes expression
+[face id=500202 type=smile]
+
+[message name=Kikii Amo charaid=500202 voice=05_017_0610]
+Exactly! Once you jump, I'll make sure your soul is sent straight to hell, so you'll never come back as a ghost again!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kikii Amo charaid=500202 voice=05_017_0620]
+Alright everyone! Attention please, 
+watch your step... it's time to jump from the rooftop!♪
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+// Lilith and Kikii exit
+[character id=500202 anim=rtol show=false wait=false]
+[character id=500102 anim=rtol show=false wait=true]
+[delay sec=1]
+
+// Shina, Sayaka, and Nova appear
+[character id=600901 posx=0.2 anim=rtol sec=0.3 face=angry show=true wait=false]
+[character id=200102 posx=0.49 anim=rtol sec=0.3 face=angry show=true wait=false]
+[character id=100101 posx=0.74 anim=rtol sec=0.3 face=angry show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Shina changes expression
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0630]
+We finally caught up to them, but now...?!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=05_017_0640]
+Granny… we're too late. They rigged it so only people who accepted the suicide command can pass through!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0650]
+Detective?! Is that true…?!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=angry]
+
+[message name=Nova charaid=600901 voice=05_017_0660]
+It's so frustrating… I can't believe I can't do anything but watch!
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0670]
+Wait... there's still a way! 
+The Strain Train... we can use the Strain Area to get there!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=smile]
+
+[message name=Nova charaid=600901 voice=05_017_0680]
+...! You're right, Sayaka! 
+How could I forget about that… the Snark isn't usually helpful, so it slipped my mind. Let's have him take us there!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=600901 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Basilissa and Yurisa appear
+[character id=600301 posx=0.32 anim=fade face=thoughts show=true wait=false]
+[character id=200202 posx=0.66 anim=fade face=thoughts show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_017_0690]
+Strain Train…? It does have a nice ring to it, but what is that?
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_017_0700]
+The Snark... oh, right, Iris' boyish heart. 
+So that cosplayer has been up to something after all.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Characters exit
+[character id=600301 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Characters appear
+[character id=600901 posx=0.2 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=fade face=thoughts show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Display the text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_017_0710]
+But to take the Strain Train, we'll have to go all the way back to the subway...
+[/message]
+
+[message name=Nova charaid=600901 voice=05_017_0720]
+Don't worry, I'll drive you there in my car!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_017_0730]
+Wait, really? Is there a Strain Car too or something?!
+[/message]
+
+// Nova changes expression
+[face id=600901 type=thoughts]
+
+[message name=Nova charaid=600901 voice=05_017_0740]
+Nope, just my newly licensed compact car. Now get to the parking lot, quickly!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for a few seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////
+// END
+///////////////////////////////////////////////////////////////////////////
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Drive sound effect
+[sound type=se name=Drive]
+
+// Wait for the sound to play
+[delay sec=4.5]
+
+/////////////////////////// Stop playing sound effects
+[sound type=se state=stop]
+
+/////////////////////////// Stop playing background music
+[sound type=bgm state=stop]
+
+// Wait for a few seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script
+[exit]
+///////////////////////////////////////////////////////////////////////////
+// end
+///////////////////////////////////////////////////////////////////////////
+// END

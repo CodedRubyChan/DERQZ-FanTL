@@ -1,0 +1,373 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_08_08_s06
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM24 / Serious Scene
+// Background 470 / Iris Corp. Development Room
+
+[character id=100101 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200502 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_908_0010]
+Kaede-san, how's it going~!
+By the way, is that scary "guest" still doing okay...?
+[/message]
+
+// Kaede expression change: Smile
+[face id=200502 type=smile]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0020]
+Oh, Sayaka!
+Guest, huh... I see.
+You're here to see Chloe, aren't you?
+[/message]
+
+// Kaede expression change: Default
+[face id=200502 type=default]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0030]
+But, unfortunately, there's no room for you to get close right now.
+She's being monopolized by an eager fan. Look...
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0040]
+...and that's why, I've checked every single one of Chloe-sama's works!
+I've even memorized all the lines!
+[/message]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200903 posx=0.25 anim=fade face=thoughts show=true wait=true]
+
+[message name=Chloe charaid=200903 voice=08_908_0050]
+Heh...
+...Is that so.
+[/message]
+
+// Hinata expression change: Smile
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0060]
+I've used Al-sama's ability to gather all the information about Chloe-sama available online!
+I'm practically... a Chloe-sama expert!
+[/message]
+
+[character id=200502 anim=fade show=false wait=false]
+[character id=601101 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_908_0070]
+...It's impressive, but using that ability to hack into our systems needs to stop.
+Next time, I'll have to report it to the police.
+[/message]
+
+// Hinata expression change: Confuse
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0080]
+O-Of course! Since you kept your promise and let me meet Chloe-sama,
+I won't cause any more trouble for Iris Corp.!
+[/message]
+
+[message name=Chloe charaid=200903 voice=08_908_0090]
+Mmm. So, are we done talking now?
+Faaah... ahhh~
+I'm getting bored; this conversation is dragging on too long.
+[/message]
+
+// Hinata expression change: Smile
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0100]
+Kuuu~! That cool, composed demeanor... it's irresistible!
+Seeing it in person is just... different! My heart's racing...
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_908_0110]
+Indeed, she has an aura that goes beyond what you see on TV.
+I finally understand what people mean when they say celebrities have a presence.
+Chloe-san, you truly shine.
+[/message]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=200502 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0120]
+Yeah. Even in her smallest gestures...
+There's just something that captivates people. I can see why Al is such a big fan.
+[/message]
+
+// Chloe expression change: Smile
+[face id=200903 type=smile]
+
+[message name=Chloe charaid=200903 voice=08_908_0130]
+Haha... You're overdoing the compliments.
+And also...
+[/message]
+
+// Chloe expression change: Default
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=08_908_0140]
+Al-chan, is that true?
+Weren't you known for being a fan of Komai-chan?
+I've heard you managed a fan site for her.
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0150]
+Well, that's true...
+But after that, I also made a fan site for Chloe-sama!
+Now, I'm all about Chloe-sama!
+[/message]
+
+[message name=Chloe charaid=200903 voice=08_908_0160]
+Why?
+[/message]
+
+// Hinata expression change: Sad
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0170]
+Eh? Well, that's because...
+Komai-chan... isn't here anymore.
+She died...
+[/message]
+
+// Chloe expression change: Thoughts
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=08_908_0180]
+I see...
+...Because she died?
+So you just threw her away that easily.
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0190]
+I-I didn't throw her away!
+But if she's gone, it's...
+over...
+[/message]
+
+// Chloe expression change: Angry
+[face id=200903 type=angry]
+
+[message name=Chloe charaid=200903 voice=08_908_0200]
+Death doesn't mean it's over!
+[/message]
+
+// Hinata expression change: Surprise
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0210]
+Wh-What?!
+[/message]
+
+// Kaede expression change: Surprise
+[face id=200502 type=surprise]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0220]
+...Chloe?
+[/message]
+
+[message name=Chloe charaid=200903 voice=08_908_0230]
+Death isn't the end! It's a sweet, alluring thing...
+Why can't you understand that?!
+Death doesn't take anything away from a person!
+[/message]
+
+[message name=Chloe charaid=200903 voice=08_908_0240]
+Even my manager...
+She died, but she returned to life as a Luden!
+She came back to me! So, so...!
+[/message]
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=601101 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Chloe expression change: Default
+[face id=200903 type=default]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_908_0250]
+Okay, okay, just calm down a bit. I understand what you're saying, Chloe-san.
+After all, our director is kind of like that too, right?
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0260]
+Ah, that's true! Shina is a Luden as well...
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_908_0270]
+It's probably a miraculous rarity, but...
+Since the world is now aware of Ludens, Al-chan's view seems a bit outdated.
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0280]
+As Chloe-san says, whether death is the end or not is...
+a matter of perspective.
+[/message]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=200602 posx=0.75 anim=fade face=sad show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0290]
+Uuugh... Chloe-sama, I'm...
+I'm sorry...
+[/message]
+
+// Chloe expression change: Thoughts
+[face id=200903 type=thoughts]
+
+[message name=Chloe charaid=200903 voice=08_908_0300]
+Hmph.
+Well... as long as you understand.
+[/message]
+
+// All characters OFF
+[character id=200903 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=false]
+[character id=200502 anim=fade show=false wait=true]
+
+[character id=200502 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0310]
+...Can we talk for a moment?
+[/message]
+
+// Only Kaede and Sayaka
+
+// Kaede expression change: Thoughts
+[face id=200502 type=thoughts]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0320]
+(Sayaka, Shina told me... that Chloe has been
+influenced by Arata Mizunashi in various ways.)
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_908_0330]
+(So, does that mean her outburst earlier
+is related to that...?)
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0340]
+(I'm not sure about that.
+But I'll keep an eye on her. It's only right, given our connection to the "original world.")
+[/message]
+
+// All characters reappear
+
+[character id=200502 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[character id=200602 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200502 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Hinata expression change: Sad
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0350]
+Aaaaah...
+Uuuugh... Chloe-samaaa...
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_908_0360]
+Al-chan,
+She's probably sad because she upset her beloved Chloe-sama...
+[/message]
+
+// Hinata expression change: Smile
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_908_0370]
+More than sad... I'm just thrilled...
+that I got to see Chloe-sama's angry side up close!
+[/message]
+
+// Sumika expression change: Smile
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_908_0380]
+Oh, well... as long as you're okay.
+Alright, everyone, let's give it our best for the afternoon's work!
+[/message]
+
+// Kaede expression change: Smile
+[face id=200502 type=smile]
+
+[message name=Kaede Hizumi charaid=200502 voice=08_908_0390]
+Yeah, we're nearing the final stretch of development!
+[/message]
+
+[character id=200502 anim=fade show=false wait=false]
+[character id=200903 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Chloe charaid=200903 voice=08_908_0400]
+Alright,
+I'll do what I have to do~
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

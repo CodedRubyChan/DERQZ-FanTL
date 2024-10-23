@@ -1,0 +1,317 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+
+//adv_02_05_s01
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1]
+
+// Display the specified background
+[image type=bg id=000490]
+
+// Fade in over the specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+
+// Background 490
+// BGM 04
+
+
+[character id=200102 posx=0.32 anim=rtol face=thoughts show=true wait=false]
+[delay sec=0.1]
+[character id=100101 posx=0.66 anim=rtol face=thoughts show=true wait=true]
+
+
+// Wait for the specified number of seconds
+[delay sec=0.3]
+
+
+// Display the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0010]
+The hospital seems kind of noisy...
+[/message]
+
+//[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0020]
+This... must be because of yesterday's department store terrorist attack. The families of the injured are gathering.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0030]
+Could it be... the Chairman and the others haven't fixed the world completely...?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0040]
+...I think we still have enough Eni, but... maybe it's time to start using the degrade.
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0050]
+Degrade... that's the one where you rewind time and memories, right? It'd suck if we had to live the same day over and over with everyone...
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0060]
+You understand the degrade!? ...Did Iris explain it to you? Yes, the impact on the world would be immense...
+[/message]
+
+//[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0070]
+By the way, with the degrade... the whole world rewinds, right?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0080]
+...?
+[/message]
+
+//[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0090]
+Like, for example, if Lilith Yamamura... died from that injury...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0100]
+...That's right. With the degrade, Lilith would come back to life.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0110]
+Though, I don't think she's dead yet...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0120]
+You're right! I can still feel Lilith Yamamura's power... coming from the hospital.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0130]
+Great! That's a relief.
+[/message]
+[face id=200102 type=default]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0140]
+But... her power is really weak. Maybe she's in danger.
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0150]
+...I'm worried.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0160]
+Shina, you always think like that, even if it's an enemy, huh?
+[/message]
+
+// Shina changes expression
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0170]
+...No matter the circumstances, she protected all of us, including me.
+[/message]
+
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0180]
+Ah... no, actually. I should've protected her, but I couldn't react in time... I'm sorry...
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0190]
+It's okay! That just shows how amazing Lilith was.
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+
+///////////////////////////////////////////////////////////////////////////// Enichi and Sugiura enter
+[move id=200102 posx=0.59 wait=false]
+[move id=100101 posx=0.79 wait=true]
+
+[character id=602101 posx=0.38 anim=ltor face=default show=true wait=false]
+[character id=602201 posx=0.19 anim=ltor face=default show=true wait=true]
+
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[message name=Enichi charaid=602101 voice=05_902_0200]
+Did you two do something again? Thanks to you, my place is booming, so I won't question it too much...
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0210]
+Ah, Director...
+[/message]
+
+[face id=602101 type=angry]
+
+[message name=Enichi charaid=602101 voice=05_902_0220]
+I don't see that foolish daughter of mine... She's doing fine at your place, right?
+[/message]
+
+[face id=200102 type=default]
+[face id=100101 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0230]
+Yes, of course!
+[/message]
+
+[face id=602101 type=default]
+
+[message name=Yamamura En charaid=602101 voice=05_902_0240]
+Good. But I'd appreciate it if she doesn't end up here exhausted. I don't have the capacity to take care of my own daughter.
+[/message]
+
+
+[message name=Sugiura charaid=602201 voice=05_902_0250]
+Director, we're running out of time—
+[/message]
+
+[face id=602101 type=default]
+
+[message name=Enichi charaid=602101 voice=05_902_0260]
+Hmph. Excuse me.
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Enichi
+[character id=602101 anim=rtol show=false wait=true]
+[delay sec=0.3]
+
+
+// Show the text window again
+[delay sec=0.1]
+[visible show=true]
+
+
+[face id=602201 type=smile]
+
+[message name=Sugiura charaid=602201 voice=05_902_0270 lipsync=false]
+(He's actually worried about Yurisa. Well, I'll take my leave now...)
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=602201 anim=rtol show=false wait=true]
+[move id=200102 posx=0.32 sec=1 wait=false]
+[move id=100101 posx=0.66 sec=1 wait=true]
+
+// Show the text window again
+[delay sec=0.3]
+[visible show=true]
+
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0280]
+Do you think the Director knows about the Chairman? He did say something about us being responsible...
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_902_0290]
+...No way! I don't think so. But we did cause a lot of extra work for the hospital, so I feel bad.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_902_0300]
+Who cares? He said business is booming. And besides, it's Arata Mizunashi and the others who are at fault!
+[/message]
+
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+
+// Fade out over the specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

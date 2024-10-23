@@ -1,0 +1,250 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_22_08_014
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter8]
+
+// Show specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+
+
+// Dungeon background remains
+// Dungeon BGM remains
+// No boss battle
+// G-Selica looks like the boss but it's a fake
+
+[character id=100103 posx=0.2 anim=ltor face=panic show=true wait=false]
+[character id=500501 posx=0.6 anim=fade face=default show=true wait=false]
+[character id=200901 posx=0.8 anim=fade face=thoughts show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0010]
+Chloe! 
+Falena!
+[/message]
+
+// Falena transformation expression change
+[face id=500501 type=surprise]
+
+[message name=Falena charaid=500501 voice=08_022_0020]
+Oh, you made it here. 
+It's amazing, through such a tough dungeon... 
+I see. I understand now.
+[/message]
+
+[face id=200901 type=thoughts]
+
+[message name=Chloe charaid=200901 voice=08_022_0030]
+......
+[/message]
+
+// Falena transformation expression change
+[face id=500501 type=sad]
+
+[message name=Falena charaid=500501 voice=08_022_0040]
+Rest assured. 
+Chloe is just weak right now. 
+She's not dead.
+[/message]
+
+// Sayaka with Blade expression change: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0050]
+Falena, 
+can I ask you to give Chloe back?
+[/message]
+
+// Sayaka with Blade expression change: Sad
+[face id=100103 type=sad]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0060]
+I might not be able to overpower your feelings. 
+But still...
+[/message]
+
+// Sayaka with Blade expression change: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0070]
+There are people who care deeply about Chloe 
+and are waiting for her return outside. 
+So...
+[/message]
+
+// Falena transformation expression change
+[face id=500501 type=default]
+
+[message name=Falena charaid=500501 voice=08_022_0080]
+...Alright. 
+Please, make sure she gets back safely.
+[/message]
+
+// Sayaka with Blade expression change: Surprised
+[face id=100103 type=surprise]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0090]
+You're okay with that?
+[/message]
+
+
+[message name=Falena charaid=500501 voice=08_022_0100]
+Truth is, if you hadn't come, I planned to 
+end it all here with Chloe. 
+Arata won't keep his promises.
+[/message]
+
+// Falena expression change: Angry
+[face id=500501 type=angry]
+[message name=Falena charaid=500501 voice=08_022_0110]
+The next thing he plans to erase... 
+is both Chloe and me. He does.
+[/message]
+
+// Sayaka with Blade expression change: Panic
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0120]
+Wh-what...?! 
+But if you know that, then…!
+[/message]
+
+// Falena transformation expression change
+[face id=500501 type=sad]
+
+[message name=Falena charaid=500501 voice=08_022_0130]
+Yes, but since you're here—
+[/message]
+
+// Sayaka with Blade expression change: Thoughtful
+[face id=100103 type=thoughts]
+// Falena transformation expression change
+[face id=500501 type=default]
+
+
+[message name=Falena charaid=500501 voice=08_022_0140]
+Then this must be… 
+fate's guidance. Arata may be furious, but…
+it will surely lead to Chloe's happiness.
+[/message]
+
+// Sayaka with Blade expression change: Panic
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0150]
+Why don't you come with us, Falena!? 
+I'm sure Chloe would want that too.
+[/message]
+
+// Falena expression change: Normal
+[face id=500501 type=default]
+[message name=Falena charaid=500501 voice=08_022_0160]
+There was an incident with Lilith earlier. 
+...I've been rigged so I can't go against it. 
+Yes.
+[/message]
+
+[face id=100103 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0170 lipsync=false]
+(That's such a sad smile...)
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0180]
+...Um, do you know where Naraku is? 
+I want to help Naraku too.
+[/message]
+
+// Falena transformation expression change
+[face id=500501 type=sad]
+[message name=Falena charaid=500501 voice=08_022_0190]
+Thank you. But I'm sorry. 
+I don't know where she is.
+[/message]
+
+// Falena expression change: Normal
+[face id=500501 type=default]
+[message name=Falena charaid=500501 voice=08_022_0200]
+Now, you should go…
+The way back is dangerous, so be careful. 
+Take this sword.
+[/message]
+
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_022_0210]
+...Thanks!! 
+And thank you for taking care of Chloe. 
+I hope you'll be safe too, Falena.
+[/message]
+
+
+[message name=Falena charaid=500501 voice=08_022_0220]
+.......Yes.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+// Stop BGM playing
+//[sound type=bgm state=stop]
+
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

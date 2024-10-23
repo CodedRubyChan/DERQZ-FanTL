@@ -1,0 +1,191 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_22_05_s10
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000530]
+
+///////////////////////////////////////////////////////////////////////////
+// Display Assistant
+[character id=602401 posx=0.31 anim=none face=thoughts show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// After starting the department store dungeon exploration,
+// if a game over occurs or you leave, 
+// you will be sent home and can return to the dungeon from the subway as usual.
+// This event triggers during such a return.
+// It does not occur if you have never left the dungeon.
+
+// BGM25 / For gag scenes
+// Background 530 / Convenience Store
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Assistant charaid=602401 voice=05_922_0010]
+Welcome... Feel free to jump.
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0020]
+W-What are you saying!?
+[/message]
+
+[message name=Assistant charaid=602401 voice=05_922_0030]
+Ah, don't worry about it. 
+You see, I'm trash anyway, so there's no point in living.
+[/message]
+
+[message name=Assistant charaid=602401 voice=05_922_0040]
+I've been getting by just on vibes, 
+but you can't survive on vibes alone. 
+Yeah, I can see my limit now.
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0050]
+Th-that's not true! 
+There's still so much to enjoy in life!
+[/message]
+
+// Assistant changes expression
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=05_922_0060]
+Really? 
+So, will you hang out with me then?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0070]
+Uh, well, that's a bit...
+[/message]
+
+[face id=602401 type=thoughts]
+
+[message name=Assistant charaid=602401 voice=05_922_0080]
+See? No dreams, no hope. 
+Man, if only I had tried harder. 
+But by the time you realize that, it's already too late.
+[/message]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0090]
+Don't give up! 
+Even if you start now, you can still make it!
+[/message]
+
+[message name=Assistant charaid=602401 voice=05_922_0100]
+Alright then, I'll start now. 
+I'll show you something cool, and if I impress you, will you hang out with me?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0110]
+Something cool, huh?
+[/message]
+
+// Assistant changes expression
+[face id=602401 type=painful]
+
+[message name=Assistant charaid=602401 voice=05_922_0120]
+Yeah. From the rooftop, I can fly! 
+If I do that, will you hang out with me?
+[/message]
+
+// Screen shake effect
+[shake type=horizontal sec=2.0 pow=25 fade=true wait=false]
+
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0130]
+You idiotーーーーーーー!
+[/message]
+
+[sound type=se name=Charge]
+[move id=602401 posx=0.18 sec=0.3 wait=false]
+
+[face id=602401 type=confuse]
+
+[message name=Assistant charaid=602401 voice=05_922_0140]
+Gah!? 
+...Huh? Did I do something?
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0150]
+Huff, huff... Looks like my punch brought you back to your senses. 
+Well, no need to worry anymore!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_922_0160]
+Whew, that took more time than I expected... 
+But hey, I saved one person, so it's all good!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing current sound effect
+[sound type=se state=stop]
+
+/////////////////////////// Stop playing background music
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

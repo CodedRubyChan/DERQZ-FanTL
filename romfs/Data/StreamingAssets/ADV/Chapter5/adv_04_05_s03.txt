@@ -1,0 +1,186 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_04_05_s03
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display the specified background
+[image type=bg id=000070]
+
+[character id=200102 posx=0.32 anim=none face=default show=true wait=true]
+[character id=100101 posx=0.66 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Background 70 / Park
+// BGM23
+
+// Show the text window
+[visible show=true]
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0010]
+Ahh! The park is so relaxing. 
+I totally get why they call it a place of peace. 
+I really like parks!
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0020]
+Hehe, yeah. 
+I used to come here often with my late mother.
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0030]
+Really? Hey, Shina... 
+I've got something I've been wanting to ask you... 
+But I don't know if I should...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0040]
+Come on, Sayaka. 
+You don't have to hold back with me. 
+Aren't we closer than that?
+[/message]
+
+[face id=200102 type=default]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0050]
+...Okay, then I'll ask. 
+Shina, why haven't you... 
+asked Iris to bring your mom back?
+[/message]
+
+// [face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0060]
+I mean, with Eni or... 
+using the Degrade process... 
+It should be possible, right?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0070]
+...Yeah, Iris could bring my mother back to life.
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0080]
+But, I don't know... 
+It feels like I'd be cheating, you know?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0090]
+Cheating...? 
+But it's Iris, your grandma, isn't she?
+[/message]
+
+[face id=200102 type=panic]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0100]
+Watch how you say that! 
+It's more like... Iris is my mom!
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0110]
+Yes, we've revived people who died in the battle 
+against Arata Mizunashi, but...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0120]
+My mom died in a car accident. 
+It's just one of those tragedies 
+that happen anywhere in the world...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0130]
+I've grieved, suffered, and cried a lot... 
+but I've come to accept it now.
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0140]
+You're so strong, Shina...
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_904_0150]
+Actually, my dad had it way worse when my mom passed away. 
+I'll tell you about it sometime!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_904_0160]
+Yeah! Thanks! I'm looking forward to it!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the current SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

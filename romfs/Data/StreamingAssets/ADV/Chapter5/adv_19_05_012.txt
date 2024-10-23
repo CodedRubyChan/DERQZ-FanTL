@@ -1,0 +1,730 @@
+// Script
+// Wait for a specified amount of time
+[delay sec=0.1]
+
+//adv_19_05_012
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified amount of time
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified amount of time
+//[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Show specified background
+//[image type=bg id=000140]
+
+//////////////////////////////////////////////////////////////////////Hide black background
+[image type=black show=false]
+
+// Fade in over a specified amount of time
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+[character id=500102 posx=0.24 anim=fade face=painful show=true wait=true]
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+// Department Store Strain Area
+
+// First floor, first event point
+// Happens immediately, near the entrance
+
+// Background remains as is
+// BGM05
+
+[character id=200102 posx=0.49 anim=rtol face=panic show=true wait=false]
+[character id=100103 posx=0.74 anim=rtol face=panic show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0010]
+That's... Lilith!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_019_0020]
+Thank goodness...
+We found Lilith at least...!
+[/message]
+
+//[face id=500102 type=painful]
+////////////////////////////////////////////////////////////////////Character shake
+[shake target=chara id=500102 type=horizontal sec=1 pow=10 fade=true wait=false]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0030]
+Ugh... Aaaah....
+Ahhhh!!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0040]
+Lilith?
+Something's wrong...!
+She's writhing in pain...!
+[/message]
+
+[character id=200102 anim=fade show=false wait=true]
+[character id=600301 posx=0.49 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=05_019_0050]
+Oh, this... 
+She's done for... Everything's broken.
+I think it's time to put her out of her misery♪
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0060]
+Don't joke at a time like this...!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_019_0070]
+Oh? But...
+Is there anyone here who can help someone this far gone?
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0080]
+Lilith!
+Hold on, Lilith!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Basilissa and Sayaka
+[character id=600301 anim=fade show=false wait=false]
+[character id=100103 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Yurisa and Shina
+[character id=200202 posx=0.49 anim=fade face=sad show=true wait=false]
+[character id=200102 posx=0.74 anim=fade face=sad show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_019_0090]
+What should we do? These wounds are terrible...
+But I've never seen wounds like this before...
+I can't do anything...
+[/message]
+
+////////////////////////////////////////////////////////////////////Character shake
+[shake target=chara id=500102 type=horizontal sec=0.3 pow=20 fade=false wait=false]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0100]
+Shi... na...
+Aah... ugh...
+[/message]
+
+// Shina expression change
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_019_0110]
+Lily...
+We'll get through this together!
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0120]
+Shi... na...
+[/message]
+
+[face id=500202 type=panic]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_019_0130]
+But... Shina... I've barely even treated a Luden before...
+I can't do this...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_019_0140]
+Don't panic.
+We've done this before...
+[/message]
+
+// Shina expression change
+[face id=200102 type=thoughts]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////////////////////// Screen flash
+//////////////////////////////// Play SE "VsActivate"
+[sound type=se name=VsActivate]
+[fade type=out anim=simple sec=0.3 color=white]
+
+[character id=200102 anim=none show=false wait=false]
+[character id=200101 posx=0.74 anim=none face=default show=true wait=true]
+[delay sec=0.05]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0150]
+Come on, calm down. You're just “forgetting”.
+Remember!
+[/message]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_019_0160]
+Th-That outfit...?!
+[/message]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0170]
+You're Yurisa Yamamura... and also...
+Lily Hopes.
+[/message]
+
+// Shina (transformed) expression change
+[face id=200101 type=angry]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0180]
+The power you've sealed until now,
+it's time to unleash it!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_019_0190]
+...
+[/message]
+
+// Screen flash
+///////////////////////////////////////////////////////////////////////////////////////////// Screen flash
+//////////////////////////////// Play SE "VsActivate"
+[sound type=se name=VsActivate]
+[fade type=out anim=simple sec=0.3 color=white]
+
+[character id=200202 anim=none show=false wait=false]
+[character id=200201 posx=0.49 anim=none face=angry show=true wait=true]
+[delay sec=1]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0200]
+Yes...!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Lilith, Lily, and Shina
+[character id=500102 anim=fade show=false wait=false]
+[character id=200201 anim=fade show=false wait=false]
+[character id=200101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Basilissa and Sayaka
+[character id=600301 posx=0.32 anim=fade face=thoughts show=true wait=false]
+[character id=100103 posx=0.66 anim=fade face=panic show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0210]
+Wait... that look...
+This is bad, isn't it...!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_019_0220]
+Hmmm... She's not in the best condition, sure...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Basilissa and Sayaka
+[character id=600301 anim=fade show=false wait=false]
+[character id=100103 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Lilith and Lily
+[character id=500102 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=200201 posx=0.66 anim=fade face=angry show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0230]
+I'm sorry,
+I'll focus now...
+[/message]
+
+[face id=200201 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0240]
+The code...
+My code...
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0250]
+Melsin Revile!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Heal SE
+[sound type=se name=Heal]
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.33 posy=0 priority=FrontCutin]
+
+///////////////////////////////////////////////////////////////////////////// Hide Lilith and Lily
+[character id=500102 anim=fade show=false wait=false]
+[character id=200201 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Basilissa
+[character id=600301 posx=0.49 anim=fade face=thoughts show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=05_019_0260 lipsync=false]
+(Well, well... a Flash Idea, huh...)
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Basilissa
+[character id=600301 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Lilith, Lily, and Shina
+[character id=500102 posx=0.24 anim=fade face=painful show=true wait=false]
+[character id=200201 posx=0.49 anim=fade face=angry show=true wait=false]
+[character id=200101 posx=0.74 anim=fade face=surprise show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0270]
+... Cough... cough...
+[/message]
+
+[face id=500102 type=confuse]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0280]
+... Wh-What...
+My wounds... they're gone...
+I can move?
+[/message]
+
+[face id=200101 type=smile]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0290]
+We did it...!!
+Lily, congratulations!!
+[/message]
+
+[face id=200201 type=confuse]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0300]
+H-Haha...
+What is this...?
+[/message]
+
+[face id=200201 type=thoughts]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0310]
+Shina, I...
+In the palace of Heartis...
+In the Sky City Odyssey...
+[/message]
+
+[face id=200101 type=confuse]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0320]
+Haha... all your memories are coming back at once...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Lilith
+[character id=500102 anim=fade show=false wait=true]
+
+/////////////////////////////////////////////////////////////////////////// Move Lily and Shina. Show Basilissa and Sayaka
+[move id=200201 posx=0.19 sec=1 wait=false]
+[move id=200101 posx=0.39 sec=1 wait=true]
+[delay sec=0.3]
+[character id=600301 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=100103 posx=0.79 anim=fade face=panic show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0330]
+What the heck is going on?!
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=05_019_0340]
+Remember when Iris hid Rottie
+in the Strain Area?
+[/message]
+
+[message name=Basilissa charaid=600301 voice=05_019_0350]
+It's something similar. In another world,
+Yurisa Yamamura was really Lily Hopes,
+but she had her memories sealed away until now.
+[/message]
+
+// Shina (transformed) expression change
+[face id=200101 type=default]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0360]
+I wanted her to just be
+a normal medical intern in this world...
+[/message]
+
+// Yurisa (transformed) expression change
+[face id=200201 type=surprise]
+
+////////////////////////////////////////////////////////////////////Character shake
+[shake target=chara id=200201 type=horizontal sec=0.3 pow=20 fade=false wait=false]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0370]
+...Whoa!! Ripuka...!! Ripuka is here?!
+Everyone, get back!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////////// Show still image 14
+[image type=still id=100014 show=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0380]
+All she thinks about is killing.
+She's a dangerous murderer!
+[/message]
+
+[face id=600301 type=confuse]
+
+[message name=Basilissa charaid=600301 voice=05_019_0390]
+Oh my, my, my.
+Is that how you treat your storyteller?
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0400]
+Wait... so you really are that Ripuka.
+This fear makes it clear...
+[/message]
+
+////////////////////////////////////////////////////////////////////// Hide black background
+[image type=black show=false fade=false]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////////// Hide still image 14
+[image type=still id=100014 show=false]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Shina (transformed) expression change
+[face id=200101 type=angry]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0410]
+Lily! I'll explain later...!!
+This Ripuka isn't as bad as before!!
+Right?!
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_019_0420]
+Hmmm, is that so?
+[/message]
+
+[face id=200201 type=angry]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0430]
+...See! She's dangerous!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////Character shake
+[shake target=chara id=200201 type=horizontal sec=0.3 pow=5 fade=false wait=false]
+//////////////////////////////// Play SE "Attack"
+[sound type=se name=Attack]
+
+// Show text window again
+[delay sec=0.5]
+[visible show=true]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0440]
+Ouch... hey, Yurisa...
+Could you not kick me while I'm still
+lying here on the ground...?
+[/message]
+
+// Yurisa (transformed) expression change
+[face id=200201 type=sad]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0450]
+...Ah, sorry!!
+[/message]
+
+[face id=200201 type=default]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0460]
+Wait, Lilith... are you the me
+from the Palace of Heartis...?
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////////////////// Show still image 06
+[image type=still id=100006 show=true]
+[delay sec=0.05]
+
+///////////////////////////////////////////////////////////////////////////// Hide characters
+[character id=200201 anim=none show=false wait=false]
+[character id=200101 anim=none show=false wait=false]
+[character id=600301 anim=none show=false wait=false]
+[character id=100103 anim=none show=false wait=true]
+
+////////////////////////////////////////////////////////////////////// Hide black background
+[image type=black show=false fade=false]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0470]
+Yeah... when Arata Mizunashi captured me,
+he accessed my memories and...
+used your data for the hospital spirits...
+[/message]
+
+/////////////////////////////////////////////////////////////////////////// Show characters
+[character id=500102 posx=0.24 anim=none face=default show=true wait=false]
+[character id=600301 posx=0.49 anim=none face=default show=true wait=false]
+[character id=100103 posx=0.74 anim=none face=default show=true wait=true]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////////////////////// End still image display
+[image type=still id=100006 show=false]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500102 type=default]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0480]
+Cough, cough... Well, you did save me,
+so thanks for that—
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=05_019_0490]
+Haha, thanking people right after being revived?
+Your killing intent is awfully weak, isn't it?
+How dull.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0500]
+At least we repaid Lilith.
+But we still need to stop Kiki Amo...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Lilith and Basilissa
+[character id=500102 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Yurisa and Shina
+[character id=200201 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200101 type=painful]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0510]
+Yeah... I... I have to go... soon
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0520]
+Oh no, I knew this would happen...!
+If you transform in the Strain Area,
+your limits are close...!
+[/message]
+
+// Yurisa (transformed) expression change
+[face id=200201 type=painful]
+
+[message name=Yurisa Yamamura charaid=200201 voice=05_019_0530]
+Actu... actually, I-I'm... in trouble too...
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Shina and Yurisa
+[character id=200201 anim=fade show=false wait=false]
+[character id=200101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Lilith and Basilissa
+[character id=500102 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600301 posx=0.49 anim=fade face=smile show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=05_019_0540]
+Hahaha! Now it's just a matter
+of switching who's dying, huh?
+Fine, I'll take everyone out of here myself.
+[/message]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0550]
+Can we really trust you...
+To do that...?
+[/message]
+
+[message name=Lilith Yamamura charaid=500102 voice=05_019_0560]
+Sayaka. I'll keep an eye on her too...
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_019_0570]
+Got it. I'm counting on you!
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=05_019_0580]
+Wait? Am I really less trustworthy than
+a former enemy? How rude—
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide characters
+[character id=500102 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=false]
+[character id=100103 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////// Show Shina
+[character id=200101 posx=0.49 anim=fade face=sad show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200101 voice=05_019_0590]
+It's embarrassing as the director, but...
+Sayaka, I'm counting on you from here...!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified amount of time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified amount of time
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

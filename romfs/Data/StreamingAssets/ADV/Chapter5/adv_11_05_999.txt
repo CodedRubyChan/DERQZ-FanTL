@@ -1,0 +1,245 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// adv_11_05_999
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+/////////////////////////////////////////////////////////////////////////// Display Sayaka
+[character id=100101 posx=0.49 anim=none face=default show=true wait=true]
+
+// Display specified background
+[image type=bg id=000480]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Transition
+// Background 480 / Iris Corp VR Studio
+// BGM 16
+
+// Display text window
+[visible show=true]
+
+// Everyone's waiting outside when Sayaka steps out
+// Sayaka's expression changes to surprise
+[face id=100101 type=surprise]
+[message name=Sayaka Hiwatari charaid=100101 voice=05_011_0170]
+Huh!?  
+You're all here!  
+Were you waiting to welcome me back?  
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sayaka
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Sumika, Akagi, Yurisa, and Shina
+[character id=601101 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.38 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.79 anim=fade face=default show=true wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Shina's expression changes to smile
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=05_011_0180]
+Of course!  
+You worked really hard again, Sayaka!  
+You did great!  
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=05_011_0190]
+Heh.  
+You're getting the hang of things, aren't you?  
+[/message]
+
+// Akagi's expression changes to confused
+[face id=602601 type=confuse]
+[message name=Akagi charaid=602601 voice=05_011_0200]
+Why the condescending tone…?  
+[/message]
+
+// Sumika's expression changes to smile
+[face id=601101 type=smile]
+[message name=Sumika Tokiwa charaid=601101 voice=05_011_0210]
+Thanks to your help, we managed to take care of that nasty virus.  
+It was close,  
+but we made it through!  
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sumika, Akagi, Yurisa, and Shina
+[character id=601101 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Glock, Rottie, and Sayaka
+[character id=601201 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.5 anim=fade face=smile show=true wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Rottie charaid=200402 voice=05_011_0220]
+We all worked together!  
+We were determined to support you, Sayaka!  
+[/message]
+
+// Glock's expression changes to smile
+[face id=601201 type=smile]
+[message name=Glock President charaid=601201 voice=05_011_0230]
+Thank you, too, Rottie!  
+You really went all out with the snacks and drinks.  
+Great job!  
+[/message]
+
+// Rottie's expression changes to thoughtful
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=05_011_0240]
+I didn't do much, really...  
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_011_0250]
+Are there any snacks left?  
+I'd love to have a bite!  
+[/message]
+
+// Rottie's expression changes to smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=05_011_0260]
+Go ahead!  
+Straight from President Iris!  
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Glock
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Iris
+[character id=600601 posx=0.25 anim=fade face=painful show=true wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=05_011_0270]
+...Sayaka.  
+I'm sorry you've had to do such hard work all the time...  
+[/message]
+
+// Sayaka's expression changes to smile
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=05_011_0280]
+Whoa! Snacks directly from the President...  
+So tasty~♪  
+Are you sure I can have all this?  
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Iris President and Rottie
+[character id=600601 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Mai and Shina
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Mai's expression changes to smile
+[face id=200302 type=smile]
+[message name=Mai Toyama charaid=200302 voice=05_011_0290]
+Don't worry about it!  
+You had the hardest time, without a doubt, Sayaka!  
+[/message]
+
+// Shina's expression changes to smile
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=05_011_0300]
+Exactly.  
+Great job, Sayaka!  
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_011_0310]
+Haha, I'm flattered.  
+This is a great workplace!  
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

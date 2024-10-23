@@ -1,0 +1,130 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_03_08_s02
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000530]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM25 / For Gag Scenes
+// Background 530 / Convenience Store
+
+[character id=602401 posx=0.33 anim=fade face=smile show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Assistant charaid=602401 voice=08_903_0010]
+Welcome! Welcome!
+Oh! It's Sayaka! 
+Good to see you again today!
+[/message]
+
+// Assistant expression change: Painful
+[face id=602401 type=painful]
+[message name=Assistant charaid=602401 voice=08_903_0020]
+But, I'm sorry... Today, I've got plans with my buddies after work.
+So, if you're asking me out on a date...! Can we make it another day, please?!
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_903_0030]
+...Haha.
+[/message]
+
+// Assistant expression change: Smile
+[face id=602401 type=smile]
+[message name=Assistant charaid=602401 voice=08_903_0040]
+...Whoa!? 
+I feel like I'm getting a good response today!
+Could it be that I actually have a chance if I push a little?
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_903_0050]
+That's not it.
+It's just... I was happy.
+It feels like things are back to normal.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_903_0060]
+A little while ago, if I had heard your jokes,
+I probably would have reacted with my fists.
+[/message]
+
+// Assistant expression change: Confuse
+[face id=602401 type=confuse]
+[message name=Assistant charaid=602401 voice=08_903_0070]
+With your fists!? Are you saying you'd hit me!? 
+Wait, I'd actually welcome that! 
+Go ahead, hit me all you want!
+[/message]
+
+// Assistant expression change: Smile
+[face id=602401 type=smile]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_903_0080]
+When I say "react with my fists," I mean the "painful kind."
+If you actually enjoy it, then I won't do it.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

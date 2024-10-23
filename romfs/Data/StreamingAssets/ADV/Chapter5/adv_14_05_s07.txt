@@ -1,0 +1,163 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_14_05_s07
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000470]
+
+[character id=601201 posx=0.25 anim=none face=default show=true wait=false]
+[character id=200302 posx=0.49 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Background 470 / Iris Company
+// BGM23
+
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_914_0010]
+Excuse me~. I came to check on things. How's everything going?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=05_914_0020]
+It's going smoothly. The programming team... Even though the game content changed suddenly, we're managing.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=05_914_0030]
+Recently, Akagi switched from being a programmer to handling the web side of things, but the boss stepped in to fill the gap. That was a huge help.
+[/message]
+
+[face id=601201 type=painful]
+
+[message name=President Glock charaid=601201 voice=05_914_0040]
+Yeah, but... It's been a while since I've worked on game development. Don't expect me to be a star player here.
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=05_914_0050]
+Oh, don't be modest~. We know your skills, President. If anything, we're lucky to learn from you!
+[/message]
+
+[face id=601201 type=smile]
+
+[message name=President Glock charaid=601201 voice=05_914_0060]
+Hahaha. Well then, guess I'll push myself and live up to those expectations, even at my age.
+[/message]
+
+// Temporarily hide text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide Glock
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Display Sumika
+[character id=601101 posx=0.24 anim=fade face=default show=true wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=05_914_0070]
+Oh, Sayaka? What's up?
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_914_0080]
+Well, I was thinking maybe I could help out with something...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=05_914_0090]
+Chief, could you handle the list?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=05_914_0100]
+The content of the next DLC was moved up by about 90% to the new project, right?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=05_914_0110]
+So, could you quickly wrap up the renaming of IDs and the editing of the program's migration destinations?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=05_914_0120]
+No problem. It's already done. The reorganization of old and new data is also complete. Any other issues?
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_914_0130]
+Wow, that's impressive. I guess there's really nothing I can help with... Not that I was called in the first place...
+[/message]
+
+[face id=601101 type=smile]
+
+[message name=Sumika Tokiwa charaid=601101 voice=05_914_0140]
+Yep, we're all good here! Go help out the others if you want.
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing sound effects
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

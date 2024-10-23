@@ -1,0 +1,706 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_09_06_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+
+// Play the specified BGM
+// BGM23
+[sound type=bgm state=play name=TalkA]
+
+// Background 130 / Station Front
+[image type=bg id=000130 show=true]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Display the text window
+[visible show=true]
+
+[message]
+One day later
+[/message]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// BGM23
+// Background 130 / Station Front
+
+// Display character: Sayaka Hiwatari, normal, no highlight
+// Face: normal
+[character id=100105 posx=0.5 anim=rtol face=default show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0010]
+...Huh?
+Mai and the others...
+[/message]
+
+// Hide Sayaka
+[character id=100105 anim=fade show=false wait=false]
+
+// Display Liliana
+[character id=200702 posx=0.2 anim=fade face=default show=true wait=false]
+// Display Mai
+[character id=200302 posx=0.5 anim=fade face=panic show=true wait=false]
+// Display Rottie
+[character id=200402 posx=0.8 anim=fade face=panic show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_009_0020]
+Saya!
+So you were here!
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_009_0030]
+Yesterday, and today too,
+Mai and I have been
+looking for you!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Scene transition (Fade out)
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=1.5]
+
+// Hide Mai, Sayaka, Liliana, and Rottie
+[character id=200302 anim=fade show=false wait=false]
+[character id=100105 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Display Liliana
+[character id=200702 posx=0.15 anim=fade face=default show=true wait=false]
+// Display Mai
+[character id=200302 posx=0.37 anim=fade face=default show=true wait=false]
+// Display Rottie
+[character id=200402 posx=0.63 anim=fade face=default show=true wait=false]
+// Display Sayaka
+[character id=100105 posx=0.85 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+// Scene transition (Fade in)
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Display the text window
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=06_009_0040]
+I see.
+So that's what happened.
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0050]
+Yeah, sorry about yesterday.
+I ended up ditching you all.
+[/message]
+
+// Sayaka changes expression: thoughtful
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0060]
+But today...
+I told Shina this morning
+that I was taking the day off because I wasn't feeling well...
+[/message]
+
+// Rottie changes expression: surprised
+[face id=200402 type=surprise]
+[message name=Rottie charaid=200402 voice=06_009_0070]
+We heard that, but then Shina went home to get something she forgot,
+and she found out right away that you weren't there.
+[/message]
+
+// Mai changes expression: confused
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_009_0080]
+There have been major incidents going on for days.
+It's not a good idea to go out without saying anything.
+At least leave a note next time.
+[/message]
+
+// Rottie changes expression: normal
+[face id=200402 type=default]
+
+// Sayaka shakes (surprised/yelling)
+[shake target=chara id=100105 type=random sec=0.3 pow=5 fade=false wait=false]
+
+// Sayaka changes expression: smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0090]
+Haha. You're exaggerating.
+Can't I at least enjoy a walk?
+I'm not a kid, you know.
+[/message]
+
+// Liliana changes expression: thoughtful
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_009_0100]
+So, Sayaka,
+where exactly were you planning
+to take this "walk" to?
+[/message]
+
+// Sayaka changes expression: panic
+[face id=100105 type=panic]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0110]
+You already know...
+And wait,
+was Liliana searching for me too?
+[/message]
+
+// Liliana changes expression: normal
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_009_0120]
+No.
+I just happened to join them.
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0130]
+Another coincidence, huh.
+But actually, that's perfect.
+...More like, convenient.
+[/message]
+
+// Sayaka changes expression: normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0140]
+Mai,
+Rottie, and Liliana.
+Can you come on a little trip with me?
+[/message]
+
+// Mai changes expression: panic
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_009_0150]
+Um...
+Weren't you feeling sick and taking the day off?
+Maybe postpone it to another time?
+[/message]
+
+// Mai changes expression: normal
+[face id=200302 type=default]
+
+// Liliana changes expression: smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_009_0160]
+Come now.
+We can at least hear you out first.
+So, where exactly are we going?
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0170]
+Liliana,
+you can be so sly.
+Of course... to Romania.
+[/message]
+
+// Sayaka changes expression: normal
+[face id=100105 type=default]
+
+// Rottie shakes
+[shake target=chara id=200402 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Rottie changes expression: panic
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_009_0180]
+What?!
+[/message]
+
+// Mai changes expression: panic
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_009_0190]
+Wait... Are you serious?
+You want to go to Romania, together, now?
+Wait, are we flying... on a plane...?
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0200]
+Mai, you've been to other dimensions with me, and now this surprises you?
+It's not that unusual.
+We can just take the Strain Train and be there in no time.
+[/message]
+
+// Mai changes expression: confused
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_009_0210]
+Well... so there is a way.
+But, why Romania?
+[/message]
+
+// Sayaka changes expression: sad
+[face id=100105 type=sad]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0220]
+......
+[/message]
+
+// Liliana changes expression: panic
+[face id=200702 type=panic]
+[message name=Liliana charaid=200702 voice=06_009_0230]
+Ah, Sayaka.
+Please don't look at me...
+It was your decision, remember?
+[/message]
+
+// Mai shakes (surprised/yelling)
+[shake target=chara id=200302 type=horizontal sec=0.2 pow=5 fade=false wait=false]
+
+// Mai changes expression: angry
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_009_0240]
+...Liliana.
+You're not secretly telling her weird stuff, are you...?
+[/message]
+
+// Rottie changes expression: thoughtful
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_009_0250]
+Liliana had a bit of a sneaky look,
+so I was curious too.
+Yes!
+[/message]
+
+// Liliana changes expression: confused
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_009_0260]
+How rude.
+I'm a priest, you know?
+Helping lost souls... or bunnies, is my duty.
+[/message]
+
+// Mai changes expression: normal
+[face id=200302 type=default]
+[message name=Mai Toyama charaid=200302 voice=06_009_0270]
+Well... I'll trust you on that.
+So, who's going to explain why we're going to Romania,
+Sayaka, or Liliana?
+[/message]
+
+// Mai changes expression: normal
+[face id=200302 type=default]
+
+// Liliana changes expression: normal
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_009_0280]
+Then, I'll explain...
+[/message]
+
+// Liliana changes expression: smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_009_0290]
+The leader of the Aphesis Church knows the truth
+about this world in great detail.
+[/message]
+
+// Liliana changes expression: angry
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_009_0300]
+For example,
+that this whole world is a fabrication by Iris.
+[/message]
+
+// Rottie changes expression: normal
+[face id=200402 type=default]
+[message name=Rottie charaid=200402 voice=06_009_0310]
+Wow.
+So there's someone as knowledgeable as the President.
+[/message]
+
+// Mai shakes
+[shake target=chara id=200302 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Mai changes expression: panic
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_009_0320]
+Wait, hold on...
+That's not something you can just gloss over!
+[/message]
+
+// Mai changes expression: sad
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_009_0330]
+So, Liliana knew...
+Through the leader...?
+[/message]
+
+// Liliana changes expression: normal
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_009_0340]
+Yes. It was a great revelation that saved me.
+Now, Sayaka wants to meet the leader.
+[/message]
+
+// Mai changes expression: confused
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_009_0350]
+If that's true, it's intriguing.
+But us going there alone right now is a bit...
+[/message]
+
+// Liliana changes expression: smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_009_0360]
+It's actually the best group, don't you think?
+I'm a church member, and Mai and Rottie have connections there.
+[/message]
+
+// Liliana changes expression: normal
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_009_0370]
+It would be inconvenient to show up with too many people and overwhelm the leader.
+[/message]
+
+// Sayaka changes expression: normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0380]
+Liliana and I are heading there today and plan to be back today too...
+[/message]
+
+// Mai changes expression: sad
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_009_0390]
+Aren't you feeling sick?
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0400]
+Not physically, but in my heart.
+I need to figure out how I'm really feeling.
+[/message]
+
+// Mai changes expression: confused
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_009_0410]
+Figure out...?
+Wait, at least talk to the Chief or President first...
+[/message]
+
+// Sayaka changes expression: normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0420]
+The President withheld the "truth" until asked, right?
+Can we really trust her entirely? You were once just as cautious as I am now.
+[/message]
+
+// Mai changes expression: thoughtful
+[face id=200302 type=thoughts]
+[message name=Mai Toyama charaid=200302 voice=06_009_0430]
+Hmm...
+[/message]
+
+// Rottie changes expression: normal
+[face id=200402 type=default]
+[message name=Rottie charaid=200402 voice=06_009_0440]
+Hey, hey...
+Mai, let's go. I want to go to Romania!
+[/message]
+
+// Mai changes expression: panic
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_009_0450]
+Wait... wait a minute.
+You need to act with more responsibility as a member of Iris!
+[/message]
+
+// Rottie shakes
+[shake target=chara id=200402 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Rottie changes expression: smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_009_0460]
+But I've met the leader before!
+I want to go! I want to go!
+Let's all go to Romania today!
+[/message]
+
+// Rottie changes expression: normal
+[face id=200402 type=default]
+[message name=Rottie charaid=200402 voice=06_009_0470]
+Judging by Sayaka's tone, we can get there quickly
+and be back, right?
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_009_0480]
+I'm not even asking to see my mom!
+Just a quick visit, okay?
+Please, Mai!
+[/message]
+
+// Mai changes expression: confused
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_009_0490]
+...Ugh, fine! I get it!
+But at least let me call Sanae first!
+[/message]
+
+// SE: Phone ringing sound
+[sound type=se name=Call]
+
+// Wait for a specified number of seconds
+[delay sec=1]
+
+// Liliana changes expression: thoughtful
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_009_0500 lipsync=false]
+(Is it really just Rottie?
+I think the demon within Mai is being drawn to the church too...)
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0510 lipsync=false]
+(Well... I'll leave that to you, Liliana.)
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Scene transition (Fade out)
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Hide Mai, Sayaka, Liliana, and Rottie
+[character id=200302 anim=fade show=false wait=false]
+[character id=100105 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Scene transition (Black Background)
+
+// Black Background
+[image type=bg id=000380 show=true]
+
+[fade type=in anim=simple sec=0.5]
+// Scene transition (Fade in)
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Display the text window
+[visible show=true]
+
+// Mai Toyama icon displayed
+[message name=Mai Toyama charaid=200302 voice=06_009_0520 icon=true]
+...Ah, hello?
+It's me...
+[/message]
+
+// Background 210
+[image type=bg id=000210 show=true]
+
+// Display character: Sanae Toyama, normal
+// Face: normal
+[character id=601401 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0530]
+Hello there.
+Hey sis,
+What's up? Another heart-to-heart?
+[/message]
+
+// Mai Toyama icon displayed
+[message name=Mai Toyama charaid=200302 voice=06_009_0540 icon=true]
+Yeah. So...
+If I said I'm planning to head to Romania on a weekday,
+what would you think?
+[/message]
+
+[face id=601401 type=confuse]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0550]
+...What?! That's... bold,
+Sis...
+I'm so confused...!
+[/message]
+
+// Mai Toyama icon displayed
+[message name=Mai Toyama charaid=200302 voice=06_009_0560 icon=true]
+Right...?
+[/message]
+
+[face id=601401 type=default]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0570]
+...But, is it for work?
+You wouldn't just head to Romania for no reason.
+[/message]
+
+// Mai Toyama icon displayed
+[message name=Mai Toyama charaid=200302 voice=06_009_0580 icon=true]
+Well...
+If you count it as work...
+[/message]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0590]
+Then, do your best.
+Hmm...
+[/message]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0600]
+If it's a sudden thing, it might be tough,
+but Sis, you've kind of always lived on a whim, right?
+[/message]
+
+// Mai Toyama icon displayed
+[message name=Mai Toyama charaid=200302 voice=06_009_0610 icon=true]
+That's how you see me, huh,
+Little sister?
+[/message]
+
+[face id=601401 type=smile]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0620]
+Yup! Spending too much time planning things out
+means you might miss your chance,
+so if you decide to go, then GO!
+[/message]
+
+[message name=Sanae Toyama charaid=601401 voice=06_009_0630]
+Oh, and don't forget to bring me back a souvenir!
+...Anyway, sorry, but I need to get back to work. Talk to you later!
+[/message]
+
+[sound type=se name=Callend]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide Sanae
+[character id=601401 anim=fade show=false wait=true]
+
+// Scene transition (Fade out)
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Background 130
+[image type=bg id=000130 show=true]
+
+// Display Liliana
+[character id=200702 posx=0.15 anim=fade face=default show=true wait=false]
+// Display Mai
+[character id=200302 posx=0.37 anim=fade face=panic show=true wait=false]
+// Display Rottie
+[character id=200402 posx=0.63 anim=fade face=default show=true wait=false]
+// Display Sayaka
+[character id=100105 posx=0.85 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+// Scene transition (Fade in)
+
+// Wait for a specified number of seconds
+[delay sec=1]
+// Display the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_009_0640]
+That was... not the reaction I expected.
+[/message]
+
+// Rottie changes expression: smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_009_0650]
+Hehe, Sanae has grown up.
+Cheering you on like that!
+[/message]
+
+// Rottie changes expression: normal
+[face id=200402 type=default]
+
+// Mai changes expression: thoughtful
+[face id=200302 type=thoughts]
+[message name=Mai Toyama charaid=200302 voice=06_009_0660]
+...Alright, I'll go with you, Saya.
+But if we're going, you have to make sure everyone gets back safely.
+[/message]
+
+// Mai changes expression: smile
+[face id=200302 type=smile]
+
+// Rottie shakes
+[shake target=chara id=200402 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Rottie changes expression: smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_009_0670]
+Yay!
+Romania! Romania!
+It's gonna be fun, Liliana!
+[/message]
+
+// Liliana changes expression: smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_009_0680]
+Yes, indeed.
+I wonder what kind of encounters we'll have.
+[/message]
+
+// Sayaka changes expression: confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_009_0690]
+Alright, alright,
+I've been waiting long enough.
+Now, please board the secret subway—
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop all playing sound effects
+[sound type=se state=stop]
+
+// Stop playing the BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// The script ends here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

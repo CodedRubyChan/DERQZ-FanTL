@@ -1,0 +1,233 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_03_06_s02
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TownMapA]
+
+// Display the specified background
+[image type=bg id=000150]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// BGM16
+// Background 150 / Shrine
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Sayaka's expression: Sad
+[character id=100105 posx=0.5 anim=ltor face=sad show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0010]
+......
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.3]
+
+// Move Sayaka Hiwatari
+[move id=100105 posx=0.25 wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.3]
+
+// Display character: Huuki Hizumi
+// Huuki's expression: Smile
+[character id=500302 posx=0.7 anim=rtol face=smile show=true wait=true]
+
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0020]
+What's wrong?
+Here to make a prayer?
+If that's the case, I'll guide you.
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0030]
+Huuki…
+[/message]
+
+// Huuki's expression changes: Normal
+[face id=500302 type=default]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0040]
+What's with that look?
+There's a deep shadow etched on your face.
+You're not the same as before.
+[/message]
+
+// Sayaka's expression changes: Confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0050]
+The old me?
+...What was I like?
+Maybe I've forgotten.
+[/message]
+
+// Huuki's expression changes: Sad
+[face id=500302 type=sad]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0060]
+Don't say foolish things.
+[/message]
+
+// Huuki's expression changes: Normal
+[face id=500302 type=default]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0070]
+What exactly happened to you?
+Yesterday's incident should've been your victory.
+What's eating away at you so much?
+[/message]
+
+// Sayaka's expression changes: Sad
+[face id=100105 type=sad]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0080]
+Shut up. Don't talk to me.
+I came to this quiet place for a reason.
+[/message]
+
+// Sayaka's expression changes: Confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0090]
+If you keep being noisy,
+I'll just... shut that mouth of yours.
+[/message]
+
+// Huuki's expression changes: Surprise
+[face id=500302 type=surprise]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0100]
+What are you talking about?
+[/message]
+
+// Shake Sayaka
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0110]
+Don't you get it?
+I'm saying I'll kill you!
+[/message]
+
+// Huuki's expression changes: Smile
+[face id=500302 type=smile]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0120]
+Heh, still as spirited as ever—
+[/message]
+
+// Huuki's expression changes: Normal
+[face id=500302 type=default]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0130]
+But losing your sense of self is not commendable.
+[/message]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0140]
+Losing… myself?
+Will I… disappear?
+[/message]
+
+// Huuki's expression changes: Sad
+[face id=500302 type=sad]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0150]
+If you can find a new self by parting with the old,
+then so be it.
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+// Huuki's expression changes to Normal
+[face id=500302 type=default]
+
+// Sayaka's expression changes: Confused
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0160]
+...Enough already.
+Talking to you tires me out.
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_903_0170]
+Next time I see you, I'll kill you…!
+...That's all.
+[/message]
+
+///////////////////////////////////////////////////// Sayaka Hiwatari fades out while moving left
+[character id=100105 anim=rtol show=false wait=true]
+[delay sec=0.5]
+
+// Move Huuki
+[move id=500302 posx=0.5 wait=false]
+
+// Huuki's expression changes: Thoughtful
+[face id=500302 type=thoughts]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0180]
+Hmph...
+[/message]
+
+// Huuki's expression changes to Normal
+[face id=500302 type=default]
+[message name=Huuki Hizumi charaid=500302 voice=06_903_0190]
+...Master, is this
+all part of your plan for her?
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

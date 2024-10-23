@@ -1,0 +1,255 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_02_08_s01
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display specified background
+[image type=bg id=000090]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM21 / For Cafe Scenes
+// Background 90 / Cafe
+
+[character id=600801 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=601001 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Alice charaid=600801 voice=08_902_0010]
+Hey, Levin.
+This place seems to be doing quite well, doesn't it?
+Oh, in terms of both "money" and "Eni," that is.
+[/message]
+
+[message name=Levin charaid=601001 voice=08_902_0020]
+Thanks to Sayaka and the others... well, it's been pretty busy.
+But I'm just the "acting manager."
+I've never been serious about worrying over sales.
+[/message]
+
+[message name=Alice charaid=600801 voice=08_902_0030]
+Is that so?
+You might have a talent for business. It's a shame.
+You might be better suited to this than your actual job.
+[/message]
+
+// Levin expression change: Confuse
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=08_902_0040]
+...Alice, you're saying that on purpose, aren't you?
+Do you know how hard it is managing Eni?
+Every single day, it makes my stomach twist...
+[/message]
+
+[message name=Levin charaid=601001 voice=08_902_0050]
+Keeping the same Eni separated individually
+according to purpose without mixing them,
+you have no idea how troublesome it is...
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_902_0060]
+Hehe. You really do work hard.
+If I could take over, I would...
+[/message]
+
+[message name=Levin charaid=601001 voice=08_902_0070]
+*Sigh.*
+Please don't say things you don't mean.
+...Hm? Welcome.
+[/message]
+
+// Levin expression change: Default
+
+// Sayaka appears
+[move id=600801 posx=0.25 wait=false]
+[move id=601001 posx=0.5 wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0080]
+Hey there.
+Oh, Alice-dono is here too.
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_902_0090]
+Oh, Sayaka. It looks like you're feeling better now?
+Your wild heart has finally calmed down for the moment.
+Congratulations. Hehe.
+[/message]
+
+// Alice expression change: Thoughtful
+[face id=600801 type=thoughts]
+
+[message name=Alice charaid=600801 voice=08_902_0100]
+And about Ripuka bothering you.
+I'll apologize on her behalf.
+That's just how she is... it's normal for her.
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0110]
+Uh, okay...
+But, why are you apologizing
+on her behalf, Alice-dono?
+[/message]
+
+[message name=Alice charaid=600801 voice=08_902_0120]
+Because she sees you as nothing more than a toy,
+now and forever...
+That's just the feeling I get.
+[/message]
+
+// Levin expression change: Confuse
+[face id=601001 type=confuse]
+
+[message name=Levin charaid=601001 voice=08_902_0130]
+There you go again,
+saying unnecessary things...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0140]
+Speaking of... watching how you act reminds me of something.
+Whenever I get seriously hurt,
+there's always this person who pops up in my mind.
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0150]
+That person kind of looks and acts like you, Alice-dono.
+A little bit mean.
+With this knowing look, like they're looking down on people.
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_902_0160]
+Oh my, was that a jab? Hehe.
+[/message]
+
+// Alice expression change: Default
+[face id=600801 type=default]
+
+[message name=Alice charaid=600801 voice=08_902_0170]
+But of course we'd be similar.
+Because that person is...
+most likely, a parallel version of me. A parallel existence.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0180]
+Hmm... So, does that mean...
+the chairman of Iris created you
+based on that parallel Alice-dono?
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_902_0190]
+Yes, that's correct♪
+At least...
+――that's what Iris truly believes.
+[/message]
+
+// Sayaka expression change: Surprise
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0200]
+...Huh?
+Believes? What do you mean by――
+[/message]
+
+[message name=Levin charaid=601001 voice=08_902_0210]
+Ahem. You two. If you're not going to order something,
+can you please leave?
+This is a quiet café.
+[/message]
+
+// Alice expression change: Smile
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=08_902_0220]
+Sorry about that.
+We wouldn't want to disrupt Levin's precious business.
+Let's continue this conversation another time!
+[/message]
+
+// Alice exits
+
+[character id=600801 posx=0.5 anim=fade face=default show=false wait=false]
+[move id=601001 posx=0.33 wait=false]
+[move id=100101 posx=0.66 wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_902_0230]
+*Sigh*...
+She really is similar, huh.
+Anyway, I'm going to place my order now――
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

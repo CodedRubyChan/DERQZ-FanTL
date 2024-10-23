@@ -1,0 +1,148 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_06_09_s01
+// ##########################################################################//
+// Start
+// ##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter1_3]
+
+// Display specified background
+[image type=bg id=000530]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+// ##########################################################################//
+// Start
+// ##########################################################################//
+
+// BGM2
+// Background 530 / Convenience Store
+
+[character id=100103 posx=0.8 anim=rtol face=panic show=true wait=false]
+[character id=200901 posx=0.6 anim=rtol face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_906_0010]
+Th-there's no one here.
+Did that clerk get attacked by a Stranger…?
+No way, it can't be…
+[/message]
+
+[message name=Chloe Aaron charaid=200901 voice=09_906_0020]
+It's not like we know for sure they're dead, right…?
+Maybe they managed to evacuate safely.
+So don't lose hope yet, Sayaka.
+[/message]
+
+[character id=602401 posx=0.3 anim=ltor face=default show=true wait=true]
+
+[message name=Assistant charaid=602401 voice=09_906_0030]
+…Irasshaimase~?
+[/message]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_906_0040]
+Waaaahhhーー!? 
+You're alive! Thank goodness you're okay!
+Geez! I was so worried!
+[/message]
+
+[face id=602401 type=painful]
+
+[message name=Assistant charaid=602401 voice=09_906_0050]
+Well, I mean, there are monsters wandering around out there!
+My current hourly rate doesn't cover dealing with that.
+So I was hiding in the back.
+[/message]
+
+[message name=Assistant charaid=602401 voice=09_906_0060]
+Those things are worse than the worst complainers, seriously.
+Wait a minute, that beautiful woman over there…
+Aren't you… Chloe Aaron!?
+[/message]
+
+[face id=100103 type=default]
+[face id=602401 type=smile]
+
+[message name=Assistant charaid=602401 voice=09_906_0070]
+Whoa, it's the real Chloe! No way!
+You're a hundred billion times cuter than in magazines or online!
+Amazing! Can I have your autograph, please!?
+[/message]
+
+[face id=200901 type=confuse]
+
+[message name=Chloe Aaron charaid=200901 voice=09_906_0080]
+Uh… oh, sure.
+[/message]
+
+[message name=Assistant charaid=602401 voice=09_906_0090]
+Alright! We're open for business, temporarily!
+Serving the real Chloe Aaron is the best thing ever!
+Go ahead, bring me whatever you want!
+[/message]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=200601 posx=0.6 anim=fade face=confuse show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_906_0100]
+I mean… 
+he's certainly resourceful…
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_906_0110]
+Haha! Well, 
+it's reassuring to see someone acting like usual
+even in times like these!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################//
+// End
+// ##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+// ##########################################################################//
+// End
+// ##########################################################################//
+//END

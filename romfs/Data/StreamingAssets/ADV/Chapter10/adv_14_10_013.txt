@@ -1,0 +1,150 @@
+// Script
+// Wait for a specified duration
+[delay sec=0.1]
+
+// adv_14_10_013
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Epilougue]
+
+// Display specified background
+//[image type=bg id=000140]
+
+// Fade in over a specified duration
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified duration
+//[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Reached the final boss room of the dungeon
+
+// BGM / Remains as Dungeon BGM
+// Background / Remains as Dungeon Background
+
+// @Snark
+// Speaker: ???
+
+[character id=601701 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=100103 posx=0.66 anim=fade face=angry show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+// Snark expression change
+[face id=601701 type=painful]
+
+[message name=??? charaid=601701 voice=10_014_0010]
+At last, you've made it to the deepest depths. You've managed to 
+survive countless bugs and traversed the Strain Area!
+I commend you!
+[/message]
+
+[face id=100103 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_014_0020]
+Wait, that voice...!
+Why are you here instead of at the station?
+And what's with that form...?!
+[/message]
+
+// @Snark
+// Speaker: Jeez
+
+// Snark expression change
+[face id=601701 type=smile]
+
+[message name=Jeez charaid=601701 voice=10_014_0030]
+It's time to discard the alias.
+My true name is Jeez...
+I am the one who governs the suppressed "heart" of Iris.
+[/message]
+
+// Sayaka expression change
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_014_0040]
+The President's...!? 
+Is that what you really are...?
+[/message]
+
+// @Snark
+// Speaker: Jeez
+
+// Snark expression change
+[face id=601701 type=thoughts]
+
+[message name=Jeez charaid=601701 voice=10_014_0050]
+A heart alone cannot possess the power to fight.
+It all relies on flesh and blood!
+[/message]
+
+// @Snark
+// Speaker: Jeez
+
+// Snark expression change
+[face id=601701 type=angry]
+
+[message name=Jeez charaid=601701 voice=10_014_0060]
+Sayaka, you must fight me,
+and unleash your ultimate power—because that, 
+is the "vaccine" for the disaster currently unfolding outside.
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_014_0070]
+So I have to take that on and do something with it, right?
+I've come this far, there's no way I'm leaving empty-handed!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified duration
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Start boss battle
+[bossbattle active=true]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

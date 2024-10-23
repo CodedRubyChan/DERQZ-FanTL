@@ -1,0 +1,119 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_08_05_s05
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+[image type=bg id=000580]
+
+[character id=601701 posx=0.33 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+//////////////////////////////// Play SE "Runand"
+[sound type=se name=Runand]
+
+// After starting the VR Dungeon exploration,
+// if you reach game over or exit,
+// you will return to your home and can re-enter the dungeon from the subway.
+// This event will occur during that re-entry.
+// It won't trigger if you haven't exited once.
+
+
+// Wait for specified seconds
+[delay sec=2]
+
+// Background 580 / Subway
+// BGM19
+[character id=100101 posx=0.66 anim=rtol face=panic show=true wait=true]
+/////////////////////////// Stop SE
+[sound type=se state=stop]
+[delay sec=0.3]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_908_0010]
+Oh, Snark! Uh,  
+I want to get back to the game right away!  
+[/message]
+
+[message name=Snark charaid=601701 voice=05_908_0020]
+I don't mind. Get on.  
+[/message]
+
+// Sayaka's expression changes
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_908_0030]
+W-wait, that's it? Is that okay...?  
+Could this mean we've built some kind of trust between us...?  
+[/message]
+
+// Snark's expression changes
+[face id=601701 type=smile]
+
+[message name=Snark charaid=601701 voice=05_908_0040]
+You're the one who said you were short on time.  
+Stop wasting it on nonsense and get on.  
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_908_0050]
+Thanks a lot! Alright, let's go!  
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+

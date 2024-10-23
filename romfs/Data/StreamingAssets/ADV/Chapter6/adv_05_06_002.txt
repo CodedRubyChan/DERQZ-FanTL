@@ -1,0 +1,559 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_05_06_002
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+// BGM19
+[sound type=bgm state=play name=Subway]
+
+// Display the specified background
+// Background 470 / Iris Corporation Development Room
+[image type=bg id=000470]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Sayaka's expression: Sad
+[character id=100105 posx=0.7 anim=rtol face=sad show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0010]
+...Hey.
+[/message]
+
+// Display character: Shina Ninomiya
+// Shina's expression: Sad
+[character id=200102 posx=0.35 anim=ltor face=sad show=true wait=false]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0020]
+Oh, Sayaka...
+[/message]
+
+// Display character: Yurisa Yamamura
+// Yurisa's expression: Surprise
+[character id=200202 posx=0.15 anim=ltor face=surprise show=true wait=false]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0030]
+Did you just arrive at work?
+That's rare. 
+It's not like you to be this late, Sayaka.
+[/message]
+
+// Yurisa's expression changes: Normal
+[face id=200202 type=default]
+
+// Shina's expression changes: Panic
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0040]
+Well, you see,
+Sayaka hasn't been feeling well since yesterday.
+[/message]
+
+// Shina's expression changes: Sad
+[face id=200102 type=sad]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0050]
+That's why I even told her 
+she could take the day off today.
+[/message]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0060]
+...
+[/message]
+
+// Yurisa's expression changes: Sad
+[face id=200202 type=sad]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0070]
+...You really don't look well.
+Sayaka, you don't have to push yourself. 
+If you're struggling, please don't hesitate to rest.
+[/message]
+
+// Yurisa's expression changes: Smile
+[face id=200202 type=smile]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0080]
+Oh, how about this?
+Would you like to go to our hospital with us now?
+[/message]
+
+// Yurisa's expression changes: Normal
+[face id=200202 type=default]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0090]
+Shina and I were just on our way to visit Liddy.
+Why don't you get checked out while we're there?
+[/message]
+
+// Shina's expression changes: Smile
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0100]
+That's a great idea!
+Sayaka, let's do that.
+Come with us to the hospital, okay?
+[/message]
+
+// Shina's expression changes: Sad
+[face id=200102 type=sad]
+
+// Sayaka's expression changes: Thoughts
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0110]
+No, I'm fine.
+I don't like hospitals, and it might just mess me up more.
+[/message]
+
+// Yurisa's expression changes: Sad
+[face id=200202 type=sad]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0120]
+I see... Even if you don't want to go to the hospital,
+I still think you should at least take it easy at home today.
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0130]
+Haha,
+so what, are you saying I'm not needed? 
+Cutting me off just like that?
+[/message]
+
+// Yurisa's expression changes: Panic
+[face id=200202 type=panic]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0140]
+That's not it...
+I just don't want you to push yourself too hard, Sayaka.
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0150]
+Then stop telling me to rest.
+It's making me feel worse.
+[/message]
+
+// Shina's expression changes: Angry
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0160]
+Sayaka,
+Yurisa's just worried about you, you know?
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0170]
+But I didn't ask her to worry, did I?
+[/message]
+
+// Shina's expression changes: Panic
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0180]
+Sa-Sayaka...
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+
+// Yurisa's expression changes: Angry
+[face id=200202 type=angry]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0190]
+(...Shina, Sayaka. This is odd.
+She's never acted this way before.)
+[/message]
+
+// Shina's expression changes: Thoughts
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0200]
+(Actually... After yesterday's battle at Sagami,
+it seems Ripuka said something to her.
+She won't tell me what it was, though...)
+[/message]
+
+// Yurisa's expression changes: Panic
+[face id=200202 type=panic]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0210]
+(Oh no, that's the worst... That person, ugh...
+Especially after a tiring battle like that...)
+[/message]
+
+// Shina's expression changes: Painful
+[face id=200102 type=painful]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0220]
+(I'm sorry... I should've been paying more attention 
+to both of them...)
+[/message]
+
+// Yurisa's expression changes: Confuse
+[face id=200202 type=confuse]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0230]
+Well, I understand the situation, but it's still a problem.
+We still need to visit Liddy.
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0240]
+Go ahead then.
+She's a key executive for a company that funds us.
+She's an important sponsor, right?
+[/message]
+
+// Shina's expression changes: Panic
+[face id=200102 type=panic]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0250]
+Right. We should go now to make it for visiting hours.
+See you later, Sayaka...
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0260]
+...
+[/message]
+
+// Shina's expression changes: Confuse
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=06_005_0270]
+Oh, and feel free to leave early today.
+Resting and taking care of your health is really important!
+[/message]
+
+// Yurisa's expression changes: Sad
+[face id=200202 type=sad]
+[message name=Yurisa Yamamura charaid=200202 voice=06_005_0280]
+We'll ask Mai to look after you while we're gone.
+[/message]
+
+// Hide character: Shina, fade out while moving right
+[character id=200102 anim=ltor show=false wait=true]
+
+// Hide character: Yurisa, fade out while moving right
+[character id=200202 anim=ltor show=false wait=true]
+[delay sec=0.5]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Time lapse
+/////////////////////////////////////////////////////////////// Scene transition (fade out)
+[fade type=out anim=simple sec=1]
+
+/////////////////////////////////////////// Hide Sayaka
+[character id=100105 anim=none show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Face: Thoughts
+[character id=100105 posx=0.75 anim=fade face=thoughts show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////// Scene transition (fade in)
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Display character: Rottie
+// Rottie's expression: Smile
+[character id=200402 posx=0.35 anim=ltor face=smile show=true wait=false]
+
+// Display character: Mai Toyama
+// Mai's expression: Smile
+[character id=200302 posx=0.1 anim=ltor face=smile show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=06_005_0290]
+Hey, hey, Mai-chan!
+Rottie got praised by Mr. Koji and Akagi-chan!
+They said I was working so hard and doing a great job!
+[/message]
+
+// Rottie's expression changes: Thoughts
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_005_0300]
+Akagi-chan even said
+I'm a pro at carrying documents
+around this office!
+[/message]
+
+// Mai's expression changes: Confuse
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_005_0310]
+That's great, Rottie.
+But today, Sayaka isn't feeling well, 
+so try to keep your voice down.
+[/message]
+
+// Rottie shakes (startled)
+[shake target=chara id=200402 type=horizontal sec=0.2 pow=5 fade=false wait=false]
+
+// Rottie's expression changes: Panic
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_005_0320]
+Ah, ah! Sorry, Sayaka-chan... 
+Was I being too loud?
+[/message]
+
+// Hide character: Mai Toyama, fade out while moving right
+[character id=200302 anim=ltor show=false wait=true]
+
+// Hide character: Rottie, fade out while moving right
+[character id=200402 anim=ltor show=false wait=true]
+[delay sec=0.5]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Sayaka moves
+[move id=100105 posx=0.5 wait=false]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0330 lipsync=false]
+(...Hah, what's with all this talk about work?
+Carrying documents is something anyone can do.)
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0340 lipsync=false]
+(The hardest worker in this company is obviously me.
+Who do they think dives into the Strain Areas 
+and takes on the dangerous jobs?)
+[/message]
+
+// Sayaka's expression changes: Confuse
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0350]
+...I'm going out for a bit.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide character: Sayaka, fade out while moving right
+[character id=100105 anim=rtol show=false wait=true]
+
+/////////////////////////////////////////////////////////////// Scene transition (fade out)
+[fade type=out anim=simple sec=1]
+
+/////////////////////////////////////////// Hide Sayaka, Mai, Rottie
+[character id=100105 anim=none show=false wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Display character: Sayaka Hiwatari, normal, no highlights
+// Face: Thoughts
+[character id=100105 posx=0.3 anim=fade face=thoughts show=true wait=true]
+
+[fade type=in anim=simple sec=0.5]
+/////////////////////////////////////////////////////////////// Scene transition (fade in)
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Display character: Sumika
+// Face: Normal
+[character id=601101 posx=0.7 anim=rtol face=default show=true wait=false]
+
+// Sayaka moves
+[move id=100105 posx=0.7 sec=1 wait=false]
+
+// Sumika moves
+[move id=601101 posx=0.4 sec=1 wait=true]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+
+// Sumika shakes
+[shake target=chara id=601101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[effect type=Attack show=true wait=false auto_hide=true posx=0.4 posy=0.5 priority=FrontCutin]
+[sound type=se name=Attack]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Sumika's expression changes: Surprise
+[face id=601101 type=surprise]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0360]
+Whoa!?
+[/message]
+
+// Sayaka's expression changes: Angry
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_005_0370]
+Watch it.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Hide character: Sayaka, fade out while moving left
+[character id=100105 anim=ltor show=false wait=true]
+[delay sec=0.5]
+
+// Sumika moves
+[move id=601101 posx=0.6 sec=0.5 wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Sumika's expression changes: Panic
+[face id=601101 type=panic]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0380]
+Oops, sorry... 
+Wait, she already left! So cold today...
+[/message]
+
+// Display character: Mai Toyama
+// Face: Sad
+[character id=200302 posx=0.33 anim=fade face=sad show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_005_0390]
+Chief, Sayaka's not feeling well today.
+[/message]
+
+// Sumika's expression changes: Painful
+[face id=601101 type=painful]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0400]
+I see, that explains it...
+[/message]
+
+// Sumika's expression changes: Panic
+[face id=601101 type=panic]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0410]
+...But going out while feeling bad...?
+[/message]
+
+// Display character: Akagi
+// Face: Smile
+[character id=602601 posx=0.8 anim=fade face=smile show=true wait=true]
+
+[message name=Akagi charaid=602601 voice=06_005_0420]
+Heh!
+Deja vu, isn't it? Imagine if something happened 
+while she's out like it did with me... ow!
+[/message]
+
+// Sumika shakes
+[shake target=chara id=601101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sumika's expression changes: Angry
+[face id=601101 type=angry]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0430]
+Don't make light of a teammate's trouble!
+[/message]
+
+// Akagi's expression changes: Angry
+[face id=602601 type=angry]
+
+// Sumika's expression changes: Painful
+[face id=601101 type=painful]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0440]
+Ah, geez. Shina's out on business too.
+If something happens to our ace, it's a big deal.
+Mai, can you go check on her?
+[/message]
+
+// Akagi's expression changes: Confuse
+[face id=602601 type=confuse]
+
+// Mai's expression changes: Angry
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_005_0450]
+Understood.
+I'll go see how she's doing.
+[/message]
+
+// Hide character: Mai, fade out while moving right
+[character id=200302 anim=rtol show=false wait=true]
+
+// Display character: Rottie
+// Face: Panic
+[character id=200402 posx=0.2 anim=ltor face=panic show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=06_005_0460]
+Oh! I'll go too!
+I'm worried about Sayaka-chan as well!
+[/message]
+
+// Sumika's expression changes: Smile
+[face id=601101 type=smile]
+[message name=Sumika Tokiwagi charaid=601101 voice=06_005_0470]
+Thank you.
+I'll mark it as work-related, 
+so take care of her, both of you.
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide character: Rottie, fade out while moving right
+[character id=200402 anim=rtol show=false wait=true]
+
+// End of the scene
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

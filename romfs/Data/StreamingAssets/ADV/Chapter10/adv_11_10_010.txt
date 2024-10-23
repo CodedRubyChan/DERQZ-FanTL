@@ -1,0 +1,663 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_11_10_010
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000110]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Unlocks after Sayaka reaches a specific floor in the final dungeon
+
+// BGM24 / Serious Scene
+// Background 110 / Sagami Police Station (Interrogation Room)
+
+// Show characters: Senji Hizumi, Natsuo Munakata, Chiri Sendo
+[character id=601601 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601501 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0010]
+...Well, it's not every day that a top-tier official has to come all the way to this cramped space.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0020]
+I don't mind. In fact, it's better to talk here, away from prying eyes.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0030]
+Besides, I prefer speaking with fellow Japanese. Plus, I get to see my sister's face.
+[/message]
+
+[face id=601501 type=smile]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0040]
+Hehe...
+[/message]
+
+[face id=601501 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0050]
+I understand the situation, but shouldn't this be discussed with the mayor, or even the Prime Minister?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0060]
+I prefer to keep things low-key. After all, I'm being targeted myself—
+[/message]
+
+[face id=601501 type=confuse]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0070]
+Sounds tough...
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0080]
+Yes, indeed. Even the other day, I was chased by some wraith.
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0090]
+Now, about those documents we requested. Thanks to your support, Sagami City has been booming with tourists — on paper, at least.
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=painful]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0100]
+But in recent weeks, the number of missing persons has skyrocketed...
+[/message]
+
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0110]
+...!
+[/message]
+
+[face id=601601 type=thoughts]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0120]
+And the circumstances are peculiar... Even people who wouldn't typically go missing are vanishing, like they've been spirited away.
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0130]
+If it were the work of a crime organization or a terror group, that would almost be a relief...
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0140]
+This can't be... Could it be what I feared...?
+[/message]
+
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0150]
+...Do you have any idea what's going on...?
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0160]
+I'd appreciate it if you'd share! If this situation continues, it's a matter of survival for us...
+[/message]
+
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0170]
+...It's the work of a certain individual. Though I'm not even sure if 'human' is the right word to describe them...
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0180]
+...I find it hard to believe there's someone more deranged than Arata Mizunashi.
+[/message]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0190]
+...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM28
+[sound type=bgm state=play name=TalkF]
+
+// Hide characters
+// Background 330
+
+// Hide: Senji Hizumi, Natsuo Munakata, Chiri Sendo
+[character id=601601 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=false]
+[character id=601501 anim=fade show=false wait=true]
+
+[image type=bg id=000330 show=true]
+
+// Show: Arata Mizunashi and Rin
+[character id=600401 posx=0.66 anim=fade face=default show=true wait=false]
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=true]
+
+// @Natsuo Munakata
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Natsuo Munakata voice=10_011_0200]
+Arata Mizunashi, Rin Asukaze, and myself, Natsuo Munakata, all hold the title of "Agent."
+[/message]
+
+// @Natsuo Munakata
+
+[message name=Natsuo Munakata voice=10_011_0210]
+Arata and Rin have been kept under detention.
+[/message]
+
+// @Natsuo Munakata
+
+[message name=Natsuo Munakata voice=10_011_0220]
+They've outwitted other agents, even assassinated under the guise of accidents. I doubt they'll make a comeback. But—
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Switch back to Background 110 (Sagami Police Station Interrogation Room)
+// Hide Arata Mizunashi and Rin
+[character id=600401 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=true]
+
+[image type=bg id=000110 show=true]
+
+// Show characters: Senji Hizumi, Natsuo Munakata, Chiri Sendo
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601601 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601501 posx=0.75 anim=fade face=default show=true wait=true]
+
+[face id=600501 type=thoughts]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Senji Hizumi expression change
+[face id=601601 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0230]
+The number of agents is still high. Almost 70% of the population of the Uppermost World are agents.
+[/message]
+
+// Natsuo Munakata expression change
+[face id=600501 type=default]
+
+// Senji Hizumi expression change
+[face id=601601 type=painful]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0240]
+...Your preamble is a bit long. So?
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=default]
+
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0250]
+All agents, in one way or another, are working towards the "Endverse Project."
+[/message]
+
+// Natsuo Munakata expression change
+[face id=600501 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0260]
+And what exactly is this bizarre project?
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=default]
+
+// Natsuo Munakata expression change
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0270]
+It involves discarding the current Uppermost World and moving the entire population to another world... Even though it has more people than any other world.
+[/message]
+
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0280]
+...No way!! You're saying they were wiping out the people of this world beforehand—?!
+[/message]
+
+// Natsuo Munakata expression change
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0290]
+All agents are controlled by a single omnipotent woman. I too... am under her 'control.'
+[/message]
+
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0300]
+So what you're saying is... This mess is due to her mismanagement? Damn it!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[face id=601501 type=angry]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0310]
+"That's not the case," is it...?
+[/message]
+
+[face id=601601 type=thoughts]
+
+// Natsuo Munakata expression change
+[face id=600501 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0320]
+What...? What do you mean, Chiri?
+[/message]
+
+[face id=601501 type=painful]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0330]
+...I... I don't know...
+[/message]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0340]
+Huh...? Hey, get a grip—
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=confuse]
+
+// Shock
+[shake target=chara id=601501 type=vertical sec=0.2 pow=40 fade=false wait=false]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0350]
+...My voice... it's moving on its own—
+[/message]
+
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0360]
+Chiri...?!
+[/message]
+
+[sound type=se name=Metastasis]
+
+/ Screen vibration
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Surprised
+[shake target=chara id=601501 type=vertical sec=0.5 pow=40 fade=false wait=false]
+
+[character id=601501 anim=ltor show=false wait=true]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0370]
+...Ahhhh!!!!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[delay sec=0.7]
+
+// Chiri OFF
+[character id=200103 posx=0.75 anim=rtol face=default show=true wait=true]
+
+// @Great Sage Paraninas
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina? charaid=200103 voice=10_011_0380]
+—Apologies for the intrusion, appearing like this during a meeting. Agent Munakata.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// BGM18
+[sound type=bgm state=play name=TownMapC]
+
+[face id=600501 type=painful]
+// Screen vibration
+[shake type=random sec=0.2 pow=30 fade=false wait=false]
+[move id=600501 posx=0.35 sec=1 wait=false]
+[delay sec=0.3]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0390]
+Ah, ahhh...?!
+[/message]
+
+// Screen vibration
+[shake type=random sec=0.5 pow=40 fade=false wait=false]
+
+[face id=601601 type=confuse]
+[shake target=chara id=601601 type=vertical sec=1.0 pow=10 fade=false wait=true]
+[move id=601601 posx=0.14 sec=1 wait=false]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0400]
+Ugh...what is this woman...?! My...body is moving on its own...!
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=smile]
+
+[message name=Shina? charaid=200103 voice=10_011_0410]
+The sight of grown adults groveling is truly delightful. I actually believe this groveling culture should be shared across the world.
+[/message]
+
+// @Great Sage Paraninas
+
+// Shina expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina? charaid=200103 voice=10_011_0420]
+The one lying there... must be your sister in this world. Sorry, but I used her as a warp point. Don't worry, she's not dead.
+[/message]
+
+// Shina expression change
+[face id=200103 type=default]
+
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0430]
+Great Sage... What brings you here today...?
+[/message]
+
+// @Great Sage Paraninas
+
+// Shina expression change
+[face id=200103 type=smile]
+
+[message name=Shina? charaid=200103 voice=10_011_0440]
+I didn't permit you to ask questions.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0450]
+Ah...!
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina? charaid=200103 voice=10_011_0460]
+After Julietta... I tried to stir up Arata Mizunashi into rebelling and destroying this world, but that didn't work either.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0470]
+...So Arata's defection was also part of your plan...!
+[/message]
+
+// @Great Sage Paraninas
+
+// Shina expression change
+[face id=200103 type=confuse]
+
+[message name=Shina? charaid=200103 voice=10_011_0480]
+...Just giving simple orders is boring, don't you think? I truly discarded that boy. He was adorable, like a total loser.
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=smile]
+
+[message name=Shina? charaid=200103 voice=10_011_0490]
+I even tried to fan his hatred towards me and turn him into "Dark Arata," but still, this world endured. Now I'm even more intrigued.
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=default]
+
+[message name=Shina? charaid=200103 voice=10_011_0500]
+I will reshape this world to my liking. Of course, useful individuals have been sent to other worlds, so those dimensions will be even more colorful!
+[/message]
+
+// Shocked
+[shake target=chara id=600501 type=vertical sec=0.3 pow=20 fade=false wait=false]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0510]
+Thank you... for your generosity...
+[/message]
+
+[shake target=chara id=601601 type=vertical sec=0.3 pow=20 fade=false wait=true]
+[face id=601601 type=default]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0520]
+Hah... Munakata... I thought you had some backbone... Guess I was wrong...!
+[/message]
+
+[shake target=chara id=601601 type=vertical sec=0.2 pow=10 fade=false wait=true]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0530]
+Hey... if you're gonna mess with this town... I won't let it slide...! I never thought you were this evil, Shina...!
+[/message]
+
+[face id=601601 type=angry]
+
+// @Great Sage Paraninas
+
+// Shina expression change
+[face id=200103 type=surprise]
+
+[message name=Shina? charaid=200103 voice=10_011_0540]
+Oh? You can resist my pressure this much? You're more impressive than I thought.
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina? charaid=200103 voice=10_011_0550]
+It may not be convincing to say this while looking like this, but I am not Shina. Though I am not entirely separate either...
+[/message]
+
+// Shina expression change
+[face id=200103 type=default]
+
+[shake target=chara id=601601 type=vertical sec=0.2 pow=10 fade=false wait=true]
+
+[face id=601601 type=angry]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0560]
+What are you... rambling on about...?!
+[/message]
+
+[face id=600501 type=panic]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0570]
+Great Sage! Please, show mercy...!
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina? charaid=200103 voice=10_011_0580]
+Munakata, you're doing well. You've come to the point where you can argue against me.
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200103 type=smile]
+
+[message name=Shina? charaid=200103 voice=10_011_0590]
+The Uppermost World has been overrun with spineless people. It's been a problem. Now, detective, as a sign of respect, I will send you to be with your wife and daughter. Not the ones in this world, though.
+[/message]
+
+// Senji Hizumi expression change
+[face id=601601 type=confuse]
+
+[message name=Senji Hizumi charaid=601601 voice=10_011_0600]
+Ugh... Kaede... Kureha...!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Dimensional Rift SE
+[sound type=se name=Mirror]
+
+// Screen vibration
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+[shake target=chara id=601601 type=vertical sec=0.7 pow=50 fade=false wait=true]
+// Senji OFF
+[character id=601601 anim=rtol show=false wait=true]
+
+[delay sec=0.5]
+
+// @Great Sage Paraninas
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina? charaid=200103 voice=10_011_0610]
+And as for you... Take some time off with your sister. I can't afford any interruptions.
+[/message]
+
+[character id=601501 posx=0.14 anim=fade face=painful show=true wait=true]
+
+[message name=Chiri Sendo charaid=601501 voice=10_011_0620]
+Big... brother...
+[/message]
+
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=10_011_0630]
+Ugh... Sayaka... I'm counting on you...
+[/message]
+
+// Screen vibration
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Dimensional Rift SE
+// Stop BGM
+[sound type=se name=mirror]
+[sound type=bgm state=stop]
+
+// Turn off all characters
+[character id=600501 anim=ltor show=false wait=false]
+[character id=601501 anim=ltor show=false wait=false]
+[character id=200103 anim=ltor show=false wait=true]
+
+[delay sec=1.5]
+
+// Nova and the others appear
+[character id=600901 posx=0.25 anim=ltor face=angry show=true wait=false]
+[character id=200602 posx=0.5 anim=ltor face=sad show=true wait=false]
+[character id=500402 posx=0.75 anim=ltor face=sad show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Nova charaid=600901 voice=10_011_0640]
+...Tch, the police station's empty too... Sorry, it was a waste of time.
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_011_0650]
+Sagami City... it's turning into a ghost town...
+[/message]
+
+[face id=500402 type=confuse]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_011_0660 lipsync=false]
+(This uneasy feeling... could it be... not just Sagami City?)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified duration
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
+

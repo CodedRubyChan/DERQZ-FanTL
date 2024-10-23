@@ -1,0 +1,315 @@
+//Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+//adv_14_09_013
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter9]
+
+// Display specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//Conversation in the deepest part of the dungeon
+//Dungeon BGM continues
+
+[character id=600301 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=500401 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Display the text window
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=09_014_0010]
+Oh, you're late, Sayaka!
+Looks like I won this race by a hair!
+I've already gotten things started!
+[/message]
+
+[face id=500401 type=painful]
+
+[message name=Naraku Morikubo charaid=500401 voice=09_014_0020]
+Tch… it's tough to handle this person alone.
+[/message]
+
+[face id=500401 type=default]
+
+[message name=Naraku Morikubo charaid=500401 voice=09_014_0030]
+Falena, where are you?!
+Get back here!
+[/message]
+
+// G-Celica appears
+[move id=600301 posx=0.15 wait=false]
+[move id=500401 posx=0.45 wait=false]
+[character id=500501 posx=0.81 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500501 voice=09_014_0040]
+Y-yes… I'm back now—
+[/message]
+
+// Falena, transformed, expression change: sad
+[face id=500501 type=sad]
+[message name=Falena charaid=500501 voice=09_014_0050]
+I'm sorry. When Chloe-sama is far away,
+I just can't muster any strength…
+[/message]
+
+// Naraku, transformed, expression change: painful
+[face id=500401 type=painful]
+[message name=Naraku Morikubo charaid=500401 voice=09_014_0060]
+Ah, see? That's why you're no good.
+As a pawn, or as a manager.
+[/message]
+
+// Naraku, transformed, expression change: default
+[face id=500401 type=default]
+[message name=Naraku Morikubo charaid=500401 voice=09_014_0070]
+If you had been more dependable,
+maybe Chloe wouldn't have become so reckless—
+[/message]
+
+// Falena, transformed, expression change: painful
+[face id=500501 type=painful]
+[message name=Falena charaid=500501 voice=09_014_0080]
+U-uh… I'm sorry…
+[/message]
+
+[character id=500401 anim=fade show=false wait=false]
+[character id=500501 anim=fade show=false wait=true]
+
+[move id=600301 posx=0.33 wait=false]
+
+[character id=100103 posx=0.66 anim=fade face=panic show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0090]
+This isn't good… Ripuka!
+I'll join the fight!
+[/message]
+
+// Basilissa expression change: confused
+[face id=600301 type=confuse]
+[message name=Basilissa charaid=600301 voice=09_014_0100]
+…No, no. I've got this. I can handle these two misfits.
+They're my prey. Sayaka, you focus on Arata.
+[/message]
+
+// Sayaka, blade form, expression change: panic
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0110]
+Always trying to look cool…! I'll leave it to you,
+but we're bringing them back with us.
+Don't you dare forget that, okay?
+[/message]
+
+// Basilissa expression change: smile
+[face id=600301 type=smile]
+[message name=Basilissa charaid=600301 voice=09_014_0120]
+Yes, yes. I won't break them, I promise.
+I don't want anyone slapping me again.
+Alright then, you take care of Arata for me♪
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////Scene transition (fade out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1]
+
+//Background 330
+//BGM31
+// Sayaka, blade form, expression change: surprised
+[face id=100103 type=angry]
+//[image type=bg id=000330 show=true]
+[sound type=bgm state=play name=TalkI]
+
+[move id=100103 posx=0.74 sec=0.1 wait=false]
+
+[character id=600301 anim=none show=false wait=true]
+[character id=600201 posx=0.2 anim=fade face=angry show=true wait=false]
+[character id=600401 posx=0.39 anim=fade face=default show=true wait=true]
+[delay sec=0.1]
+
+[fade type=in anim=simple sec=1]
+///////////////////////////////////////////////////////////////Scene transition (fade in)
+
+// Wait for specified seconds
+[delay sec=0.5]
+// Display the text window
+[visible show=true]
+
+// Sayaka, blade form, expression change: surprised
+[face id=100103 type=surprise]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0130]
+Wait, I recognize this place…
+[/message]
+
+[face id=600201 type=painful]
+
+[message name=Arata charaid=600201 voice=09_014_0140]
+Gaaaaah?! Don't come this far!!
+[/message]
+
+// Sayaka, blade form, expression change: angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0150]
+I don't want to fight if you'll just surrender quietly…
+[/message]
+
+// Rin Asukaze expression change: confused
+[face id=600401 type=confuse]
+[message name=Rin Asukaze charaid=600401 voice=09_014_0160]
+Hold it, you thief! I'm the one protecting Arata-kun!
+[/message]
+
+[face id=100103 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0170]
+Rin Asukaze-san!
+[/message]
+
+// Rin Asukaze expression change: angry
+[face id=600401 type=angry]
+[message name=Rin Asukaze charaid=600401 voice=09_014_0180]
+Don't worry, Arata-kun, I'll tear Sayaka apart for you!
+[/message]
+
+[face id=600201 type=smile]
+
+[message name=Arata charaid=600201 voice=09_014_0190]
+Hehehe… Hahaha!! Really?!
+Can you do it? Will you kill her?!
+[/message]
+
+// Rin Asukaze expression change: thinking
+[face id=600401 type=thoughts]
+[effect type=CodeActive show=true wait=false auto_hide=true posx=0.4 posy=0 priority=FrontCutin]
+[sound type=se name=Code]
+
+[message name=Rin Asukaze charaid=600401 voice=09_014_0200]
+Of course. Even if you hate it, Arata-kun,
+I'll use the great sage's power! I'll change this body,
+and the environment too!! Haaaaaaah!!
+[/message]
+
+[visible show=false]
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////Screen blackout
+//Game screen
+[fade type=out anim=simple sec=1]
+
+[effect type=CodeActive show=false wait=false]
+
+// Glitch Rin appears
+// Enigma appears
+/////////////////////////////////////////////////////////////////////////////
+[dungeon id=9004 type=Barricade show=true]
+[dungeon id=411101 type=Enemy show=true]
+
+[sound type=se name=Metamorphosis]
+
+////////////////////////////////////////////////////////////////////////////
+
+[delay sec=1]
+
+[character id=600201 anim=none show=false wait=false]
+[character id=600401 anim=none show=false wait=false]
+[move id=100103 posx=0.8 sec=0.1 wait=true]
+
+[fade type=in anim=simple sec=1]
+//////////////////////////////////////////////////////////////////////////////////////////////////////////Back from blackout
+
+[visible show=true]
+
+// Sayaka, blade form, expression change
+[face id=100103 type=surprise]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0210]
+…What's with that form…?
+Arata too…
+[/message]
+
+[message name=Arata charaid=600201 voice=09_014_0220]
+Shut up!! Just adapting to the mutation!!
+[/message]
+
+[face id=600401 type=default]
+
+[message name=Rin Asukaze charaid=600401 voice=09_014_0230]
+It's not my style, but I thought you'd get a kick out of this.
+See, it's already getting fun, right?
+[/message]
+
+// Sayaka, blade form, expression change: confused
+[face id=100103 type=confuse]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0240]
+Ugh, this is unpleasant.
+Even if you mimic the look, you won't be any stronger!
+[/message]
+
+// Sayaka, blade form, expression change: angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_014_0250]
+I never thought you'd be the last one standing in my way.
+Let's finish this once and for all!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+///////////////////////////Stop all playing SE
+[sound type=se state=stop]
+
+// Stop all playing BGM
+[sound type=bgm state=stop]
+
+// Start the boss battle
+[bossbattle active=true]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

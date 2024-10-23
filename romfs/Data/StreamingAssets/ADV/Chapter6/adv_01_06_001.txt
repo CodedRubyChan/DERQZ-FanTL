@@ -1,0 +1,1023 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_01_06_001
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Display the ADV eyecatch
+[eyecatch chapter=6 title=Guided Ones]
+// Wait for the specified seconds
+[delay sec=1]
+//########## Eyecatch ##########//
+
+// Play the specified BGM
+//[sound type=bgm state=play name=GameOver]
+
+// Display the specified background (background 390 / black background)
+[image type=bg id=000390]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Display the character: Sayaka Hiwatari, normal, no highlights
+// Face: Thinking
+[character id=100105 posx=0.5 anim=fade face=thoughts show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0010]
+……
+[/message]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0020]
+…………Huh?
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0030]
+… I knew it,
+I really want to kill.
+This hand… it's trembling.
+[/message]
+
+// Sayaka's expression changes: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0040]
+Ahh... with these hands, with my own strength,
+I want to drive a blade into someone's throat.
+I want to bathe in the blood that spurts out.
+[/message]
+
+// Sayaka's expression changes: Smile
+[face id=100105 type=smile]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0050]
+In that moment, a clear,
+unmistakable intent to kill "her"
+was born inside me.
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0060]
+I can still remember it so clearly.
+It wasn't just a passing thought!
+[/message]
+
+// Sayaka's expression changes: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0070]
+If they want to die,
+then I want to silence them with my own hands…
+I want to take their life.
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0080]
+Let them silently struggle,
+gasping like a fish out of water.
+[/message]
+
+// Sayaka's expression changes: Anger
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0090]
+Die, die, die, die.
+Come on, die...
+For me—!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////// Scene transition (Fade out)
+[fade type=out anim=simple sec=1 color=white]
+
+/////////////////////////////////////////// Hide Sayaka
+[character id=100105 anim=none show=false wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Instantly switch the scene without fading
+
+// Background 80 — Night park
+[image type=bg id=000080 show=true]
+
+// Display the character: Sayaka Hiwatari, normal, no highlights
+// Face: Expectation
+[character id=100105 posx=0.7 anim=fade face=expectation show=true wait=true]
+
+[fade type=in anim=simple sec=0.5 color=white]
+/////////////////////////////////////////////////////////////// Scene transition (Fade in)
+
+// BGM 20
+[sound type=bgm state=play name=Home]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Narration
+[message]
+—2025
+—March, a certain day
+[/message]
+
+// Display the character: Liliana, normal
+[character id=200702 posx=0.33 anim=ltor face=default show=true wait=jjl]
+
+[message name=Liliana charaid=200702 voice=06_001_0100]
+… The moon is so dimly beautiful tonight.
+[/message]
+
+// Sayaka shakes
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0110]
+――Eh?!
+... Oh, right.
+It's already that time, huh.
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_001_0120]
+… Let me lend you a hand.
+See, if you rub them like this, they'll warm up.
+[/message]
+
+// Liliana moves closer
+[move id=200702 posx=0.57 sec=1 wait=true]
+
+// Sayaka's expression changes: Confusion
+[face id=100105 type=confuse]
+// Sayaka moves away
+[move id=100105 posx=0.78 sec=0.5 wait=false]
+
+// Liliana's expression changes: Surprise
+[face id=200702 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0130]
+Th-thank you, Liliana.
+But, I'm fine.
+[/message]
+
+// Liliana returns to her original position
+[move id=200702 posx=0.33 sec=1 wait=false]
+
+// Liliana's expression changes: Sadness
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_001_0140]
+… You avoided me.
+Well, of course.
+I've caused you so much trouble.
+[/message]
+
+// Display the character: Shizu
+// Face: Smile
+[character id=601801 posx=0.1 anim=ltor face=smile show=true wait=true]
+[message name=Shizu charaid=601801 voice=06_001_0150]
+Heh, don't complain, don't complain...
+[/message]
+
+[face id=601801 type=default]
+
+// Shizu's expression changes: Sadness
+[face id=601801 type=painful]
+[message name=Shizu charaid=601801 voice=06_001_0160]
+But Sayaka, it's not good to push yourself too hard.
+You've been shivering all this time, haven't you?
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+[message name=Shizu charaid=601801 voice=06_001_0170]
+Alright. I'll rub you warm.
+Come here, rub, rub. Ruuuub.
+[/message]
+
+// Shizu moves closer
+[move id=601801 posx=0.65 sec=1 wait=true]
+
+// Shizu shakes
+[shake target=chara id=601801 type=horizontal sec=0.5 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+
+// Sayaka shakes
+[shake target=chara id=100105 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Sayaka's expression changes: Confusion
+[face id=100105 type=confuse]
+
+// Liliana's expression changes: Confusion
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_001_0180]
+Shizu,
+isn't your rubbing a bit excessive?
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+[message name=Shizu charaid=601801 voice=06_001_0190]
+You're imagining things.
+I'm just showing gratitude, that's all.
+Thanks for saving Liliana. Rub rub.
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+// Shizu shakes
+[shake target=chara id=601801 type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+// Sayaka shakes
+[shake target=chara id=100105 type=random sec=0.5 pow=3 fade=false wait=false]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0200]
+Ugh!
+T-that tickles…♪
+[/message]
+
+// Liliana's expression changes: Thoughtful
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_001_0210]
+By the way, don't you think Mai is late?
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0220]
+She should be here soon...
+Oh, look!
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Sayaka, Shizu, Liliana
+[character id=100105 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////// Mai enters
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+// Display the character: Mai Toyama, normal
+[character id=200302 posx=0.5 anim=fade face=default show=true wait=true]
+[message name=Mai Toyama charaid=200302 voice=06_001_0230]
+Saya!
+Liliana!
+Shizu!
+[/message]
+
+// Mai moves
+[move id=200302 posx=0.6 wait=false]
+
+// Display the character: Liliana, normal
+[character id=200702 posx=0.35 anim=fade face=confuse show=true wait=jjl]
+[message name=Liliana charaid=200702 voice=06_001_0240]
+… Mai.
+[/message]
+
+// Mai's expression changes: Smile
+[face id=200302 type=smile]
+[message name=Mai Toyama charaid=200302 voice=06_001_0250]
+I'm so glad,
+you're all safe.
+I really am—!
+[/message]
+
+// Liliana's expression changes: Anger
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_001_0260]
+Why that expression…?
+It almost looks like you're genuinely relieved.
+Is this a new tactic of yours?
+[/message]
+
+// Display the character: Rottie, normal
+[character id=200402 posx=0.85 anim=fade face=default show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=06_001_0270]
+Huh? It's exactly as it seems, Liliana!
+Mai is really, really happy that you're safe!
+[/message]
+
+// Liliana's expression changes: Thoughtful
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_001_0280]
+Even hearing it from Rottie… I can't believe it.
+Our relationship wasn't like that.
+[/message]
+
+// Mai's expression changes: Thoughtful
+[face id=200302 type=thoughts]
+[message name=Mai Toyama charaid=200302 voice=06_001_0290]
+Heh. Yeah.
+Even I can't believe it.
+[/message]
+
+// Mai's expression changes: Smile
+[face id=200302 type=smile]
+[message name=Mai Toyama charaid=200302 voice=06_001_0300]
+Seeing you safe and mouthing off…
+It's a relief I never thought I'd feel.
+[/message]
+
+// Liliana's expression changes: Sadness
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_001_0310]
+…It's throwing me off.
+[/message]
+
+// Rottie's expression changes: Thoughtful
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_001_0320]
+If the mood is this prickly,
+maybe it'd be better if it got completely thrown off?
+[/message]
+
+// Rottie's expression changes: Smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_001_0330]
+I'd be happier if Liliana and Mai could get along.
+If we could get along by going crazy, let's go wild!
+[/message]
+
+// Rottie's expression changes: Smile
+[face id=200402 type=default]
+
+// Liliana's expression changes: Thoughtful
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_001_0340]
+… I'm not willing to concede any more.
+I don't completely dislike Mai, but…
+In this state, there's no way to fix things.
+[/message]
+
+// Liliana's expression changes: Anger
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_001_0350]
+I absolutely cannot tolerate
+Mai's… "bug."
+As long as it resides within her, I…
+[/message]
+
+// Mai's expression changes: Confusion
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_001_0360]
+Bug?
+Oh yeah, that rumor that something's been possessing me for a long time—
+[/message]
+
+// Display the character: Shizu
+// Face: Normal
+[character id=601801 posx=0.15 anim=fade face=default show=true wait=true]
+[message name=Shizu charaid=601801 voice=06_001_0370]
+The Aphasis Church won't treat you badly, you know?
+[/message]
+
+// Mai's expression changes: Thoughtful
+[face id=200302 type=thoughts]
+[message name=Mai Toyama charaid=200302 voice=06_001_0380]
+I don't want to be treated like some sacred object,
+or be turned into an experiment.
+[/message]
+
+// Mai's expression changes: Sadness
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_001_0390]
+No matter what it is, if it's a part of me...
+I won't hand it over to anyone.
+[/message]
+
+// Rottie's expression changes: Panic
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_001_0400]
+You're really stubborn, Mai! 
+But alright, I get it now!
+[/message]
+
+// Rottie's expression changes: Thoughtful
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_001_0410]
+Mai, Liliana definitely hates pineapple!
+That's not so weird! Other people feel the same!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.2]
+
+// Liliana's expression changes: Thoughtful
+[face id=200702 type=thoughts]
+// Mai's expression changes: Thoughtful
+[face id=200302 type=thoughts]
+// Shizu's expression changes: Painful
+[face id=601801 type=painful]
+
+// Wait for the specified seconds
+[delay sec=1.2]
+
+[message name=Shizu charaid=601801 voice=06_001_0420]
+Wait… huh?
+P-Pineapple?
+[/message]
+
+// Rottie's expression changes: Normal
+[face id=200402 type=default]
+[message name=Rottie charaid=200402 voice=06_001_0430]
+You remember, right? We ate sweet and sour pork recently!
+...Oh! But to you all, that was over seven years ago...
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+// Liliana's expression changes: Normal
+[face id=200702 type=default]
+// Mai's expression changes: Normal
+[face id=200302 type=default]
+
+[message name=Liliana charaid=200702 voice=06_001_0440]
+It's fine, I understand Rottie's situation.
+I do vaguely remember eating it.
+So? What about it?
+[/message]
+
+// Liliana's expression changes: Normal
+[face id=200702 type=default]
+
+// Rottie's expression changes: Smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_001_0450]
+Thanks! The sweet and sour pork was delicious,
+but you said you hated the pineapple inside, Liliana!
+[/message]
+
+// Liliana's expression changes: Thoughtful
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_001_0460]
+I don't remember that.
+[/message]
+
+// Mai's expression changes: Thoughtful
+[face id=200302 type=thoughts]
+[message name=Mai Toyama charaid=200302 voice=06_001_0470]
+Rottie…
+Am I the sweet and sour pork here?!
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+[message name=Shizu charaid=601801 voice=06_001_0480]
+Hehehe.
+And to think… calling the "Great Demon" a pineapple…
+[/message]
+
+// Rottie shakes (surprised, shouting)
+[shake target=chara id=200402 type=horizontal sec=0.2 pow=5 fade=false wait=false]
+
+// Rottie's expression changes: Panic
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_001_0490]
+G-Great Demon…?
+Did I mess up that badly…?
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_001_0500]
+No, no, it was amusing.
+For now, let's go along with Rottie's story.
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+// Mai's expression changes: Normal
+[face id=200302 type=default]
+
+// Liliana's expression changes: Normal
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_001_0510]
+I'll accept your apology.
+Shall we shake hands, sweet and sour pork?
+Hurry it up.
+[/message]
+
+// Mai's expression changes: Panic
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_001_0520]
+Please stop calling me sweet and sour pork!
+Ugh, fine. Will this do?
+[/message]
+
+// Mai's expression changes: Smile
+[face id=200302 type=smile]
+[message name=Liliana charaid=200702 voice=06_001_0530]
+……
+[/message]
+
+// Rottie shakes (surprised, shouting)
+[shake target=chara id=200402 type=vertical sec=0.2 pow=4 fade=false wait=false]
+// Rottie's expression changes: Smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_001_0540]
+Yeah! You're both looking so lovey-dovey!
+[/message]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Mai's expression changes: Sadness
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_001_0550]
+Liliana,
+are you crying?
+[/message]
+
+// Rottie's expression changes: Confusion
+[face id=200402 type=confuse]
+
+// Liliana's expression changes: Sadness
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_001_0560]
+We used to walk hand in hand a long time ago...
+But those days were just part of a false world...
+[/message]
+
+// Mai's expression changes: Smile
+[face id=200302 type=smile]
+[message name=Mai Toyama charaid=200302 voice=06_001_0570]
+The church might know a lot of things,
+but… that's just a matter of perspective.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_001_0580]
+Do you really think everything happening right now is false?
+[/message]
+
+// Liliana's expression changes: Smile
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_001_0590]
+…Heh.
+Who knows…
+[/message]
+
+// Scene goes dark
+// BGM 16
+
+// Temporarily hide the text window
+[visible show=false]
+
+/////////////////////////////////////////////////////////////// Scene transition (Fade out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+///////////////////////////////////////////////////////////////////////////// Hide Mai, Shizu, Liliana, Rottie
+[character id=200302 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// BGM changes: Town Map
+[sound type=bgm state=play name=TownMapA]
+
+// Display the character: Shizu
+[character id=601801 posx=0.33 anim=fade face=default show=true wait=false]
+
+// Display the character: Sayaka Hiwatari, normal, no highlights
+[character id=100105 posx=0.66 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+/////////////////////////////////////////////////////////////// Scene transition (Fade in)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=06_001_0600]
+Phew, looks like everything's settled over there!
+How about you, Sayaka?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0610]
+… I was just watching the moon.
+[/message]
+
+// Shizu's expression changes: Confusion
+[face id=601801 type=confuse]
+[message name=Shizu charaid=601801 voice=06_001_0620]
+A poet, huh?
+It's hazy tonight.
+I think it looks beautiful too.
+[/message]
+
+// Sayaka's expression changes: Thoughtful
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0630]
+…Actually, 
+I'm kind of hazy on myself too.
+I don't really know who I am.
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+[message name=Shizu charaid=601801 voice=06_001_0640]
+Hmm.
+People like you often come to the Aphasis Church for guidance.
+[/message]
+
+// Sayaka's expression changes: Anger
+[face id=100105 type=angry]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0650]
+……
+[/message]
+
+// Shizu shakes (surprised, shouting)
+[shake target=chara id=601801 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+
+// Shizu's expression changes: Confusion
+[face id=601801 type=confuse]
+[message name=Shizu charaid=601801 voice=06_001_0660]
+I can't help it, recruitment is like second nature!
+I just wanted to have a little chat, that's all.
+[/message]
+
+// Sayaka's expression changes: Confusion
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0670]
+Go ahead…
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+[message name=Shizu charaid=601801 voice=06_001_0680]
+Not just Liliana, but the other day too…
+You even saved me and the church followers.
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+[message name=Shizu charaid=601801 voice=06_001_0690]
+Thank you.
+I never got a chance to thank you properly until now.
+I'm glad I can finally say it!
+[/message]
+
+// Shizu's expression changes: Anger
+[face id=601801 type=angry]
+[message name=Shizu charaid=601801 voice=06_001_0700]
+But our Aphasis Church, you see?
+They believe in discarding the body, 
+leaving only the soul to ascend to the higher realms, calling it "enlightenment."
+[/message]
+
+// Shizu's expression changes: Painful
+[face id=601801 type=painful]
+[message name=Shizu charaid=601801 voice=06_001_0710]
+They close their hearts, seeking salvation, and do reckless things
+thinking that's the way.
+That part, I don't really like.
+[/message]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0720]
+…You're also interested in the higher realms, Shizu?
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+[message name=Shizu charaid=601801 voice=06_001_0730]
+Well, yeah. If this world is false,
+and over there, there's no sickness, no war, no bugs,
+just a perfect world, and they keep preaching it…
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0740]
+… It's further than the moon, isn't it?
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+[message name=Shizu charaid=601801 voice=06_001_0750]
+It's on another dimension, so distance doesn't really matter.
+[/message]
+
+[message name=Shizu charaid=601801 voice=06_001_0760]
+But that's why, in a way, it's closer than you think.
+[/message]
+
+// Sayaka's expression changes: Surprise
+[face id=100105 type=surprise]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0770]
+Could it be… 
+We could reach it through the Strain Area?
+[/message]
+
+// Shizu's expression changes: Painful
+[face id=601801 type=painful]
+[message name=Shizu charaid=601801 voice=06_001_0780]
+One of those countless doors probably leads there.
+But anyone who's set off for the higher realms…
+Has never come back, at least not to my knowledge.
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+[message name=Shizu charaid=601801 voice=06_001_0790]
+Maybe they made it, and that's why they never came back…
+I want to believe that.
+[/message]
+
+// Sayaka's expression changes: Normal
+[face id=100105 type=default]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0800]
+Now I kind of feel like going to this higher realm myself.
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+[message name=Shizu charaid=601801 voice=06_001_0810]
+Hehe, you might actually make it, Sayaka!
+[/message]
+
+// Shizu's expression changes: Normal
+[face id=601801 type=default]
+[message name=Shizu charaid=601801 voice=06_001_0820]
+You're incredibly strong, after all!
+[/message]
+
+// Sayaka's expression changes: Panic
+[face id=100105 type=panic]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0830]
+——Well, that's…
+[/message]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Mai and the others appear
+
+///////////////////////////////////////////////////////////////////////////// Hide Shizu and Sayaka Hiwatari
+[character id=601801 anim=fade show=false wait=false]
+[character id=100105 anim=fade show=false wait=true]
+
+///////////////////////////////////////////////////////////////////////////// Display Mai Toyama, Liliana, and Rottie
+[character id=200302 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200702 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_001_0840]
+Sayaka, I'm sorry.
+We got held up because of Liliana.
+[/message]
+
+// Liliana's expression changes: Confusion
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_001_0850]
+…My apologies.
+[/message]
+
+// Rottie's expression changes: Smile
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_001_0860]
+Haha!
+She's starting to sound more like the Liliana I used to know!
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Mai Toyama, Liliana, and Rottie
+[character id=200302 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Display the character: Shizu, normal
+[character id=601801 posx=0.35 anim=fade face=default show=true wait=false]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Shizu charaid=601801 voice=06_001_0870]
+Oh, looks like it's time to wrap up for today…
+Mai, thank you for organizing such a lovely time!
+[/message]
+
+// Display the character: Mai Toyama, normal
+[character id=200302 posx=0.65 anim=fade face=smile show=true wait=false]
+[message name=Mai Toyama charaid=200302 voice=06_001_0880]
+No, it's just that I wanted to see you all as soon as possible.
+Glad I didn't change my number!
+[/message]
+
+// Display the character: Liliana, confused
+[character id=200702 posx=0.15 anim=fade face=confuse show=true wait=false]
+[message name=Liliana charaid=200702 voice=06_001_0890]
+…I might change it next time, though.
+[/message]
+
+// Shizu's expression changes: Smile
+[face id=601801 type=smile]
+[message name=Shizu charaid=601801 voice=06_001_0900]
+Then let's exchange numbers too, Mai!
+Mine won't change, promise!
+[/message]
+
+// Mai's expression changes: Normal
+[face id=200302 type=default]
+[message name=Mai Toyama charaid=200302 voice=06_001_0910]
+Ah, alright then.
+[/message]
+
+// Liliana's expression changes: Confusion
+[face id=200702 type=default]
+
+// Display the character: Rottie's expression changes: Smile
+[character id=200402 posx=0.85 anim=fade face=smile show=true wait=false]
+[message name=Rottie id=200402 voice=06_001_0920]
+Shizu! Thanks a bunch!
+[/message]
+
+///////////////////////////////////////////////////////////////////////////// Hide Mai Toyama, Shizu, Liliana, Rottie
+[character id=200302 anim=fade show=false wait=false]
+[character id=601801 anim=fade show=false wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Display the character: Sayaka Hiwatari, normal, no highlights
+// Face: Sad
+[character id=100105 posx=0.5 anim=fade face=sad show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0930 lipsync=false]
+(Everyone seems to get along so well…
+But right now… I don't even want to see Shina.)
+[/message]
+
+// Sayaka moves
+[move id=100105 posx=0.75 sec=3 wait=true]
+
+// Display the character: Mai Toyama, normal
+[character id=200302 posx=0.35 anim=ltor face=default show=true wait=false]
+[message name=Mai Toyama charaid=200302 voice=06_001_0940]
+Oh!
+You're heading out, Sayaka?!
+[/message]
+
+// Sayaka's expression changes: Confusion
+[face id=100105 type=confuse]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0950]
+Yeah. I can't stick around for the second or third round.
+[/message]
+
+// Hide the character: Sayaka Hiwatari fades out while moving right
+///////////////////////////////////////////////////// Sayaka Hiwatari fades out while moving right
+[character id=100105 anim=ltor show=false wait=true]
+[delay sec=0.5]
+
+// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////// Scene transition (Fade out)
+[fade type=out anim=simple sec=1 color=black]
+
+// Instantly switch the scene without fading
+
+// Display the specified background: Background 380 / black background
+[image type=bg id=000380]
+///////////////////////////////////////////////////////////////////////////// Hide Mai Toyama
+[character id=200302 anim=fade show=false wait=false]
+
+// Display the character: Sayaka Hiwatari, normal, no highlights
+// Face: Sad
+[character id=100105 posx=0.5 anim=fade face=sad show=true wait=true]
+
+[fade type=in anim=simple sec=0.5 color=black]
+/////////////////////////////////////////////////////////////// Scene transition (Fade in)
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0960 lipsync=false]
+(When I see everyone happy like this…
+It only makes me…)
+[/message]
+
+// Sayaka's expression changes: Expectation
+[face id=100105 type=expectation]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_001_0970 lipsync=false]
+(It makes me want to kill them even more.)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

@@ -1,0 +1,356 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_06_08_s04
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkA]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM23 / Calm
+// Background 470 / Iris Corp. Development Room
+
+[character id=200802 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=602601 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0010]
+I've already gotten the new character's costume design 
+approved by Director Shina, so I've put it in the "Submission" folder on the server~
+[/message]
+
+// Speaker name: Designer Suzuki
+// @Female NPC 70
+
+[message name=Designer Suzuki voice=08_906_0020]
+! ...Thank you so much!
+...It's an honor to be able to work with you, Svetlana!
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0030]
+Oh, you're exaggerating~
+I'm looking forward to working with you too.
+[/message]
+
+// Svetlana expression change: Thoughts
+[face id=200802 type=thoughts]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0040]
+Let's see...
+The next character to design is...
+[/message]
+
+// Svetlana expression change: Default
+[face id=200802 type=default]
+
+[message name=Akagi charaid=602601 voice=08_906_0050]
+This one in the "Project" folder.
+She's a rival to Sariga-chan—
+but she dies pretty quickly.
+[/message]
+
+// Sayaka enters
+
+[move id=200802 posx=0.25 wait=false]
+[move id=602601 posx=0.5 wait=false]
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_906_0060]
+Hey, Akagi.
+And... looks like things are going smoothly,
+Lu— I mean, Svetlana!
+[/message]
+
+// Svetlana expression change: Default
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0070]
+Hmm, just call me 'Lucil.'
+It's easier for you that way, right?
+And it's good to see you doing well too.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_906_0080]
+Oh... Thanks!
+Lucil, you look like you're handling things 
+like a pro, even after coming back to Iris Corp.
+[/message]
+
+[message name=Akagi charaid=602601 voice=08_906_0090]
+Right? Even though it's been over a year since 
+she returned from her hometown.
+[/message]
+
+// Svetlana expression change: Thoughts
+[face id=200802 type=thoughts]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0100]
+It's strange how comfortable it feels.
+The only thing I miss is seeing Mi-tan.
+I hope she's managing the shop okay...
+[/message]
+
+// Svetlana expression change: Default
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0110]
+I thought I'd take it easy back home...
+But it seems I was destined to return to Iris Corp.
+How's that?
+[/message]
+
+// Akagi expression change: Smile
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=08_906_0120]
+Haha. "Senpai," talking about destiny is a bit much.
+But I'm really glad you came back.
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0130]
+By the way...
+Akagi, so you're Japanese in this world too...
+[/message]
+
+// Akagi expression change: Confuse
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=08_906_0140]
+Huh? I'm Japanese by birth and upbringing...
+What do you mean?
+I don't know much about all this world stuff with the President, though...
+[/message]
+
+// Sayaka expression change: Thoughts
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_906_0150 lipsync=false]
+(Maybe she means including the original world?
+That just makes Lucil seem even more amazing.)
+[/message]
+
+[face id=602601 type=default]
+[face id=100101 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0160]
+...Actually, Akagi.
+There's something I need to apologize for—
+[/message]
+
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=08_906_0170]
+You, Senpai? To me?
+What's up?
+I can't think of anything...
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0180]
+Well... Do you remember when 
+that spirit, Kikimora, who was staying at my shop 
+did something terrible to you?
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0190]
+The fortune-telling said so. Or maybe I'm mistaken?
+I hope that's the case, but... my fortunes 
+are usually pretty accurate, so I'm concerned.
+[/message]
+
+[message name=Akagi charaid=602601 voice=08_906_0200]
+Spirit, Kikimora...?
+Spirits are kind of like Ludens, right?
+[/message]
+
+[message name=Akagi charaid=602601 voice=08_906_0210]
+But I don't know any Ludens like that...
+I really don't know what you mean.
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0220]
+The fortune said there was a show on the main street?
+Something dangerous was used...
+humiliation, or something like that. It sounded awful...
+[/message]
+
+// Akagi expression change: Confuse
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=08_906_0230]
+...Oh!? Ahhhhhh!?
+[/message]
+
+// Akagi expression change: Painful
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=08_906_0240]
+Are you talking about that public brainwashing show!?
+So that thing was your acquaintance, Senpai!?
+[/message]
+
+[message name=Akagi charaid=602601 voice=08_906_0250]
+...It was more than just awful! 
+I got verbally abused in front of everyone!
+I nearly died right there!!
+[/message]
+
+// Svetlana expression change: Painful
+[face id=200802 type=painful]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0260]
+I'm really sorry—
+[/message]
+
+// Sayaka expression change: Angry
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_906_0270]
+Ah... so Kiki went that far, huh...
+Unforgivable...
+[/message]
+
+// Akagi expression change: Default
+[face id=602601 type=default]
+
+// Svetlana expression: Default
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0280]
+She was originally just staying with me...
+but she hated how I bowed to customers...
+Said it made me look weak, and she's always despised me for it.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+// Svetlana expression change: Sad
+[face id=200802 type=sad]
+[message name=Svetlana Amou charaid=200802 voice=08_906_0290]
+After she left...
+I checked up on her with a fortune...
+and she'd turned bad...
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=08_906_0300]
+Maybe she wanted to control others,
+and that led her to act like that... I'm really sorry...
+[/message]
+
+// Akagi expression change: Confuse
+[face id=602601 type=confuse]
+
+[message name=Akagi charaid=602601 voice=08_906_0310]
+N-No, no, no, no!? 
+Why are you apologizing for this, Senpai?
+She was just an old spirit who stayed with you, right?
+[/message]
+
+// Svetlana expression change: Default
+[face id=200802 type=default]
+[message name=Svetlana Amou charaid=200802 voice=08_906_0320]
+Maybe... but I still think I could've done something.
+I may not be her parent, but I feel responsible...
+[/message]
+
+// Akagi expression change: Painful
+[face id=602601 type=painful]
+
+[message name=Akagi charaid=602601 voice=08_906_0330]
+Okay, okay. That's enough. 
+You don't need to bow so much, it's making me nervous... 
+If she saw you like this, she might snap again!
+[/message]
+
+// Svetlana expression change: Smile
+[face id=200802 type=smile]
+[message name=Svetlana Amou charaid=200802 voice=08_906_0340]
+...Hehe. 
+You're probably right.
+[/message]
+
+// Akagi expression change: Smile
+[face id=602601 type=smile]
+
+[message name=Akagi charaid=602601 voice=08_906_0350]
+Anyway, let's focus on work!
+We're counting on your famous designer skills!
+[/message]
+
+// Svetlana expression change: Default
+[face id=200802 type=default]
+[message name=Svetlana Amou charaid=200802 voice=08_906_0360]
+Yeah.
+Leave it to me.
+[/message]
+
+// Akagi expression change: Default
+[face id=602601 type=default]
+
+[message name=Akagi charaid=602601 voice=08_906_0370]
+Whew... Sayaka, stop wasting time and get to work!
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_906_0380]
+Roger that.
+(Glad I got to hear such an interesting story~)
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

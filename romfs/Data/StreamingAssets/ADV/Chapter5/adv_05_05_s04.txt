@@ -1,0 +1,234 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_05_05_s04
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display the specified background
+[image type=bg id=000530]
+
+/////////////////////////////////////////////////////////////////////////// Convenience store clerk appears
+[character id=602401 posx=0.18 anim=none face=default show=true wait=true]
+
+// Fade in over specified seconds
+[fade type=in anim=simple sec=0.5]
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Background 530 / Convenience store
+// BGM25
+
+/////////////////////////////////////////////////////////////////////////// Shina and Sayaka appear
+[character id=200102 posx=0.49 anim=rtol face=default show=true wait=false]
+// Wait for the specified seconds
+[delay sec=0.1]
+[character id=100101 posx=0.74 anim=rtol face=default show=true wait=true]
+
+// Show the text window
+[visible show=true]
+
+[face id=602401 type=smile]
+
+[message name=Convenience Store Clerk charaid=602401 voice=05_905_0010]
+Oh, the usual beautiful ladies are here! 
+Welcome, welcome!!
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_905_0020]
+U-uhm... It's a bit embarrassing, 
+so could you maybe not say that so loudly...?
+[/message]
+
+// Convenience store clerk changes expression
+[face id=602401 type=angry]
+
+[message name=Convenience Store Clerk charaid=602401 voice=05_905_0030]
+No way! I can't do that! 
+You're really beautiful, and I believe in speaking my mind! 
+"Always tell people what you truly think!"
+[/message]
+
+[face id=602401 type=smile]
+
+[message name=Convenience Store Clerk charaid=602401 voice=05_905_0040]
+That's what my grandma used to teach me. 
+So, I stick to that! 
+I'm a total grandma's boy, you know.
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_905_0050]
+Hehe, I see... 
+Well, if that's the case, I suppose I can't really complain!
+[/message]
+
+// Sayaka changes expression
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_905_0060 lipsync=false]
+(Guess she's weak to anything related to grandmas.)
+[/message]
+
+// Convenience store clerk changes expression
+[face id=602401 type=painful]
+
+[message name=Convenience Store Clerk charaid=602401 voice=05_905_0070]
+Talking about grandma makes me miss her! 
+You remind me of her when she was young! 
+It's making me emotional!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_905_0080]
+You sure don't change much, do you, mister? 
+In a way, it brings me back to normal, I guess...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_905_0090]
+Yeah... 
+Especially after everything that's happened, right?
+[/message]
+
+[face id=602401 type=thoughts]
+
+[message name=Convenience Store Clerk charaid=602401 voice=05_905_0100]
+Hmm? 
+Did you two solve a case or something?
+[/message]
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_905_0110]
+...Huh?
+[/message]
+
+[face id=602401 type=angry]
+
+[message name=Convenience Store Clerk charaid=602401 voice=05_905_0120]
+You seem like you've just survived some real tough stuff. 
+Like a battlefield or something!
+[/message]
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_905_0130]
+W-what?! 
+Can you tell just by looking at us?!
+[/message]
+
+[face id=200102 type=panic]
+// Name of speaker: Easygoing Clerk
+[face id=602401 type=painful]
+
+[message name=Easygoing Clerk charaid=602401 voice=05_905_0140]
+Did some bad guy trick you? 
+I've been through rough times too... 
+like getting two-timed... 
+Oh man, now I'm about to cry...
+[/message]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_905_0150 lipsync=false]
+(That's not the kind of battlefield I meant!)
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=05_905_0160]
+P-please don't cry! 
+It's really not what you think!
+[/message]
+
+// Name of speaker: Easygoing Clerk
+[face id=602401 type=default]
+
+[message name=Easygoing Clerk charaid=602401 voice=05_905_0170]
+Oh, really? Haha, well, that's a relief then. 
+If you two were hurt, 
+it'd make me sad too!
+[/message]
+
+[face id=200102 type=default]
+// Name of speaker: Easygoing Clerk
+
+[message name=Easygoing Clerk charaid=602401 voice=05_905_0180]
+If you've had a bad day, 
+just eat and drink something. 
+It'll make you feel better!
+[/message]
+
+// Name of speaker: Easygoing Clerk
+[face id=602401 type=smile]
+
+[message name=Easygoing Clerk charaid=602401 voice=05_905_0190]
+Look, we've got everything here! 
+Grab whatever you want! 
+Of course, you'll have to pay for it!
+[/message]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_905_0200]
+Haha, 
+you've got that part down, at least!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=05_905_0210 lipsync=false]
+(Coming here was the right choice.)
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop the current BGM
+// [sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

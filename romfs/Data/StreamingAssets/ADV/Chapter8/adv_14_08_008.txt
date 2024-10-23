@@ -1,0 +1,1234 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//adv_14_08_008
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Cafe]
+
+// Display the specified background
+[image type=bg id=000440]
+
+// Play SE
+[sound type=se name=Metastasis]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//BGM21
+//Background 440 / Sagami Intersection - Mutation
+
+//Display Character: Sayaka Hiwatari - Normal
+//Face: Normal
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0010 lipsync=false]
+(Am I back to the original world?)
+[/message]
+
+// Screen Flash
+
+// Background 430 / Sagami Intersection
+
+[image type=bg id=000430 show=true]
+
+/////////////////////////////////////////////////////////////////////////////Hide Sayaka
+[character id=100101 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+//Display Character: Alice
+//Face: Normal
+[character id=600801 posx=0.5 anim=fade face=smile show=true wait=false]
+
+[message name=Alice charaid=600801 voice=08_014_0020]
+......Yes, an emergency landing... But still!
+What a school trip this turned out to be.
+It was a close call at the end!
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Alice
+[character id=600801 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+//Display Character: Huuki Hizumi
+//Face: Normal
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=false]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_014_0030]
+We're lucky to be alive.
+I hope Natsuo is safe too...
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Huuki Hizumi
+[character id=500302 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+//Display Character: Alice
+//Face: Normal
+[character id=600801 posx=0.35 anim=fade face=smile show=true wait=false]
+
+[message name=Alice charaid=600801 voice=08_014_0040]
+I'm sure he's not someone who would die so easily...
+Now that we're back, there's nothing more we can do.
+[/message]
+
+// Alice shake (surprised/yelling)
+[shake target=chara id=600801 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Change Alice's expression: Smile
+[face id=600801 type=smile]
+[message name=Alice charaid=600801 voice=08_014_0050]
+...Right?
+[/message]
+
+//Display Character: Levin
+//Face: Normal
+[character id=601001 posx=0.75 anim=fade face=default show=true wait=true]
+[message name=Levin charaid=601001 voice=08_014_0060]
+You're so dry... sigh.
+By the way, who are you even talking to...?
+[/message]
+
+// Change Alice's expression: Normal
+[face id=600801 type=default]
+[message name=Alice charaid=600801 voice=08_014_0070]
+It was a hectic time, but we gained a lot.
+We now know what the enemy's objective is!
+[/message]
+
+// Change Alice's expression: Thoughtful
+[face id=600801 type=thoughts]
+[message name=Alice charaid=600801 voice=08_014_0080]
+The destruction of the Uppermost World.
+That's Arata Mizunashi's goal.
+[/message]
+
+// Change Alice's expression: Pained
+[face id=600801 type=painful]
+[message name=Alice charaid=600801 voice=08_014_0090]
+Thanks to our problem child, Ripuka, 
+the 'DE-1' world suffered over 50,000 loops...
+[/message]
+
+// Change Levin's expression: Pained
+[face id=601001 type=painful]
+[message name=Levin charaid=601001 voice=08_014_0100]
+If that power were used for destruction, 
+it could deliver a decisive blow to the Uppermost World.
+[/message]
+
+// Change Alice's expression: Thoughtful
+[face id=600801 type=thoughts]
+[message name=Alice charaid=600801 voice=08_014_0110]
+We can't dismiss it as mere speculation.
+We must prevent Sayaka's power from falling into enemy hands...
+[/message]
+
+// Change Levin's expression
+[face id=601001 type=thoughts]
+[message name=Levin charaid=601001 voice=08_014_0120]
+I'm heading back to the store now...
+Please, don't invite me again.
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Levin
+[character id=601001 anim=ltor show=false wait=false]
+[delay sec=0.3]
+
+// Change Alice's expression: Normal
+[face id=600801 type=default]
+
+//Display Character: Sayaka Hiwatari
+//Face: Normal
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0130]
+I'm heading back to Iris Corp!
+I was in the middle of work...
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Sayaka
+[character id=100101 anim=ltor show=false wait=false]
+[delay sec=0.3]
+
+//Display Character: Huuki Hizumi
+//Face: Normal
+[character id=500302 posx=0.75 anim=fade face=default show=true wait=false]
+
+// Change Huuki's expression: Smile
+[face id=500302 type=smile]
+[message name=Huuki Hizumi charaid=500302 voice=08_014_0140]
+I can't spend all my time worrying about the enemy either.
+Let's call this gathering off for now—see you.
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Huuki Hizumi
+[character id=500302 anim=ltor show=false wait=false]
+[delay sec=0.3]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Alice
+[character id=600801 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+// Hide the text window once
+[visible show=false]
+
+///////////////////////////////////////////////////////////////Scene Transition (Fade Out)
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1.5]
+
+//Display Character: Sayaka Hiwatari
+[character id=100101 posx=0.5 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+///////////////////////////////////////////////////////////////Scene Transition (Fade In)
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0150]
+.........
+[/message]
+
+//【Choices】
+//1: Hey, I'm back
+
+[select]
+[link text="Hey, I'm back" label=comeback]
+[/select]
+
+//BGM25
+:comeback
+
+//BGM25
+
+[sound type=bgm state=play name=TalkC]
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0160]
+Whoa... partner?! I'm so glad... 
+Even if you can't be seen by Arata and the others,
+I was still worried!
+[/message]
+
+// Screen blackout
+// Background 60 / Sagami Main Street
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+[face id=100101 type=default]
+
+[image type=bg id=000060 show=true]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0170]
+Ripuka's lost her former power, 
+and now I'm... the chosen one. 
+That's how it was, right? What a hassle!
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0180]
+When they first approached me, I had no idea what they meant,
+but... when it comes to destruction...
+I could understand it just a little.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0190]
+The Uppermost World is attacking other worlds, right?
+A world full of people like Arata... 
+it's far too dangerous, don't you think?
+[/message]
+
+// Screen blackout
+// Background 470 / Iris Corp
+//BGM24
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+[image type=bg id=000470 show=true]
+[sound type=bgm state=play name=TalkB]
+
+[move id=100101 posx=0.32 wait=false]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0200]
+I'm back...
+[/message]
+
+//Display Character: Shina Ninomiya
+//Face: Normal
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0210]
+Ah, you went out, Sayaka!
+After Falena left, you were missing, so I was worried...
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0220 lipsync=false]
+(The ghost seems to have returned to the company, 
+but I've... become someone who suddenly disappeared...)
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0230]
+I'm glad you're safe. Actually, 
+we're really short-handed right now.
+Can you come with me for a bit?
+[/message]
+
+// Screen blackout
+// Background 480 / Iris Corp - Sound Studio
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[character id=200901 posx=0.5 anim=fade face=default show=true wait=true]
+[image type=bg id=000480 show=true]
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[message name=Chloe charaid=200901 voice=08_014_0240]
+"Hey, demons.
+Is this the extent of your strength?"
+[/message]
+
+[message name=Chloe charaid=200901 voice=08_014_0250]
+"When facing a strong opponent, you have to go steadily.
+That's the rule. But if you hold back too much, 
+it gets boring..."
+[/message]
+
+[message name=Chloe charaid=200901 voice=08_014_0260]
+"Better start crying and apologizing, or run.
+I'm coming for you soon.
+Hero Celica will crush you."
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0270 lipsync=false]
+(She's reciting that long line without a stutter...
+And her performance is so confident!
+She's amazing...)
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+// Screen blackout, time passes
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Celica
+[character id=200901 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+//Display Character: Celica
+//Face: Normal
+[character id=200901 posx=0.25 anim=fade face=default show=true wait=false]
+
+//Display Character: Koji Toyama
+//Face: Normal
+[character id=601301 posx=0.6 anim=fade face=default show=true wait=false]
+
+//Display Character: Mai Toyama
+//Face: Normal
+[character id=200302 posx=0.85 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=08_014_0280]
+That's why I said it.
+In this movie scene, due to countermeasures, 
+we deliberately won't show Chloe's feet.
+[/message]
+
+[face id=601301 type=angry]
+[message name=Koji Toyama charaid=601301 voice=08_014_0290]
+No way, I won't accept it!
+Make a slight change to the direction, 
+and show her feet! 
+I worked so hard on those shoe designs!
+[/message]
+
+[face id=200901 type=thoughts]
+[message name=Chloe charaid=200901 voice=08_014_0300]
+Will the movements change if the direction changes?
+If it improves the quality of the visuals, 
+I can accept some adjustments, but...
+[/message]
+
+[face id=200901 type=default]
+[message name=Chloe charaid=200901 voice=08_014_0310]
+If you're going to do it, please 
+do it before I change my mind.
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Celica, Koji Toyama, Mai Toyama
+[character id=200901 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Sumika Tokiwa
+//Face: Normal
+[character id=601101 posx=0.35 anim=fade face=default show=true wait=false]
+
+//Display Character: Basilissa
+//Face: Normal
+[character id=600301 posx=0.65 anim=fade face=default show=true wait=false]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_014_0320]
+No, Chloe's movements can stay the same.
+We can adjust it by changing the game camera position.
+Prepare for the next take.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=08_014_0330]
+Um... the next scene is 32.
+We're good to go anytime.
+Do we still plan to edit the audio tomorrow?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0340 lipsync=false]
+(They're in the middle of motion capture recording.
+Everyone is serious and busy.
+But they seem to be having a lot of fun.)
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Sumika Tokiwa, Basilissa
+[character id=601101 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Change Shina's expression: Smile
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0350]
+See, isn't it a great sight?
+Ripuka is working hard too.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0360 lipsync=false]
+(A somewhat complicated feeling...)
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+// Screen blackout
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Shina
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Basilissa
+//Face: Normal
+[character id=600301 posx=0.65 anim=fade face=default show=true wait=false]
+
+//Display Character: Shina
+//Face: Normal
+[character id=200102 posx=0.35 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Change Basilissa's expression: Angry
+[face id=600301 type=angry]
+[message name=Basilissa charaid=600301 voice=08_014_0370]
+Scene 33, the audio isn't well recorded.
+It's there, but there's some noise.
+Editing might not be able to remove it.
+[/message]
+
+// Change Shina's expression: Sad
+[face id=200102 type=sad]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0380]
+Oh...
+Then let's do a separate recording.
+Sayaka, make a note of it.
+[/message]
+
+// Change Shina's expression: Normal
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0390]
+And then, tell Lily to fix the script for Scene 34,
+and write Scene 35 quickly too.
+[/message]
+
+// Change Shina's expression: Surprised
+[face id=200102 type=surprise]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0400]
+And also... I just remembered...!
+Check the progress of today's website release with Akagi,
+and check with Clea... no, Kaede about the merchandise rollout too!
+[/message]
+
+/////////////////////////////////////////////////////////////////////////////Hide Shina, Basilissa
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+// Sayaka shake (surprised/yelling)
+[shake target=chara id=100101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+//Display Character: Sayaka Hiwatari
+//Face: Smile
+[character id=100101 posx=0.5 anim=fade face=smile show=true wait=true]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0410]
+Got it, got it all!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+// Screen blackout
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Sayaka, Shina, Basilissa
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Celica
+//Face: Normal
+[character id=200901 posx=0.25 anim=fade face=default show=true wait=false]
+
+//Display Character: Koji Toyama
+//Face: Normal
+[character id=601301 posx=0.6 anim=fade face=default show=true wait=false]
+
+//Display Character: Mai Toyama
+//Face: Normal
+[character id=200302 posx=0.85 anim=fade face=default show=true wait=true]
+
+[delay sec=1.5]
+
+[fade type=in anim=simple sec=2]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Chloe charaid=200901 voice=08_014_0420]
+Designer, 
+how heavy do you imagine the sword is?
+Is it heavier than this prop?
+[/message]
+
+// Change Kouji's expression: Smile
+[face id=601301 type=smile]
+[message name=Koji Toyama charaid=601301 voice=08_014_0430]
+No, you can think of it as the same.
+You can swing it as freely as you like, 
+and the visuals will be designed to fit it.
+[/message]
+
+// Change Mai's expression: Smile
+[face id=200302 type=smile]
+[message name=Mai Toyama charaid=200302 voice=08_014_0440]
+We're ready on our end.
+So... can you start?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Celica, Koji Toyama, Mai Toyama
+[character id=200901 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Basilissa
+//Face: Normal
+[character id=600301 posx=0.25 anim=fade face=default show=true wait=false]
+
+//Display Character: Sayaka
+//Face: Normal
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=false]
+
+//Display Character: Shina
+//Face: Normal
+[character id=200102 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=08_014_0450]
+Mic's ready, capture prepared.
+Take two.
+[/message]
+
+// Sayaka shake (surprised/yelling)
+[shake target=chara id=100101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Change Sayaka's expression
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0460]
+Everything's on schedule.
+[/message]
+
+// Change Sayaka's expression
+[face id=100101 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0470]
+Alright!
+Then Chloe, if you would, please!
+Ready, action!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Celica, Koji Toyama, Mai Toyama
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=1.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100101 type=expectation]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0480 lipsync=false]
+(...Yep.
+Creating is better than destroying...!
+It's so much more fun...!!)
+[/message]
+
+// Screen blackout
+
+// Hide the text window once
+[visible show=false]
+[delay sec=0.5]
+
+[fade type=out anim=simple sec=1.5]
+
+/////////////////////////////////////////////////////////////////////////////Hide Sayaka, Shina, Basilissa
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[delay sec=1.5]
+
+[sound type=bgm state=stop]
+
+[fade type=in anim=simple sec=2]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Stop BGM
+
+//No Speaker
+
+[message]
+Two hours later—
+[/message]
+
+//BGM17
+[sound type=bgm state=play name=TownMapB]
+
+// Wait for the specified seconds
+[delay sec=0.1]
+
+//Display Character: Rottie
+//Face: Panicking
+[character id=200402 posx=0.5 anim=rtol face=panic show=true wait=false]
+
+// Screen Shake
+[shake type=random sec=1 pow=10 fade=true wait=false]
+
+// Rottie shake (surprised/yelling)
+[shake target=chara id=200402 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// Rottie shake (surprised/yelling)
+[shake target=chara id=200402 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Rottie charaid=200402 voice=08_014_0490]
+E-everyone!
+Big news! Big news!
+We're in serious trouble!
+[/message]
+
+// Rottie move
+[move id=200402 posx=0.8 sec=1 wait=true]
+
+//Display Character: Mai Toyama
+//Face: Surprised
+[character id=200302 posx=0.45 anim=fade face=surprise show=true wait=false]
+[message name=Mai Toyama charaid=200302 voice=08_014_0500]
+Rottie, we're still filming.
+You shouldn't barge in like this!
+[/message]
+
+// Change Rottie's expression
+[face id=200402 type=surprise]
+[message name=Rottie charaid=200402 voice=08_014_0510]
+...I'm s-sorry.
+But it's really big news.
+I have to tell everyone right away.
+[/message]
+
+//Display Character: Shina Ninomiya
+//Face: Surprised
+[character id=200102 posx=0.25 anim=fade face=surprise show=true wait=true]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0520]
+Eh... What happened?
+[/message]
+
+// Change Shina's expression: Normal
+[face id=200102 type=default]
+
+// Change Mai's expression: Normal
+[face id=200302 type=default]
+
+// Change Rottie's expression: Panicking
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=08_014_0530]
+The thing is, at the Sagami Game Show happening right now,
+the DLC stage we've been making for "End to Odyssey" 
+has been surprise-featured!
+[/message]
+
+// Change Shina's expression: Angry
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0540]
+...W-w-what is that!?!
+I haven't heard anything about it!
+[/message]
+
+// Change Mai's expression: Angry
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=08_014_0550]
+How did that happen?
+We haven't even officially announced details about the DLC stage...
+and now it's being featured—?!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Rottie, Shina, Mai Toyama
+[character id=200402 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Basilissa
+//Face: Normal
+[character id=600301 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=08_014_0560]
+Oh~. Perhaps,
+it was hacked again?
+And the data got leaked, becoming a playable display.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Basilissa
+[character id=600301 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Sumika Tokiwa
+//Face: Surprised
+[character id=601101 posx=0.35 anim=fade face=surprise show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_014_0561]
+...Glance
+[/message]
+
+//Display Character: Hinata Morikubo
+//Face: Panicking
+[character id=200602 posx=0.65 anim=fade face=panic show=true wait=true]
+
+// Hinata shake (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_014_0570]
+...I-I know nothing!
+I swear on Al's name! 
+I didn't do it! I'm innocent!
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Sumika Tokiwa, Hinata Morikubo
+[character id=601101 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+//Display Character: Shina Ninomiya
+//Face: Thoughtful
+[character id=200102 posx=0.35 anim=fade face=thoughts show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0580]
+Could it be that Enigma Corp decided 
+to feature it on their own...?
+Though it's odd they didn't inform us...
+[/message]
+
+//Display Character: Basilissa
+//Face: Normal
+[character id=600301 posx=0.6 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=08_014_0590]
+I just checked SNS out of curiosity,
+and it's a small event, yet the buzz is unusual.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=08_014_0600]
+Oh my... heh.
+There's an interesting name listed under the hosts.
+Look, check this out.
+[/message]
+
+// Change Shina's expression: Sad
+[face id=200102 type=sad]
+
+//BGM28
+
+// Change Basilissa's expression
+[face id=600301 type=smile]
+[message name=Basilissa charaid=600301 voice=08_014_0610]
+Rin Asukaze, it says.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Shina Ninomiya, Basilissa Hinata
+[character id=200102 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=false]
+
+//Display Character: Sayaka Hiwatari
+//Face: Normal
+[character id=100101 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Change Sayaka's expression: Thoughtful
+[face id=100101 type=thoughts]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Change Sayaka's expression: Surprised
+[face id=100101 type=surprise]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+// Change Sayaka's expression: Panicking
+[face id=100101 type=panic]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0620]
+What the heck——!?
+[/message]
+
+// Sayaka move
+[move id=100101 posx=0.8 sec=1 wait=true]
+
+//Display Character: Shina Ninomiya
+//Face: Surprised
+[character id=200102 posx=0.55 anim=fade face=surprise show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0630]
+No way... since when!? 
+The host should be... Sagami originally...
+[/message]
+
+// Change Shina's expression: Angry
+[face id=200102 type=angry]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0640]
+Sayaka, I asked you before,
+Rin... that's Arata's 
+ally, right?
+[/message]
+
+// Change Sayaka's expression: Confused
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0650]
+Y-yeah...
+And didn't Basilissa work with her too...?
+[/message]
+
+//Display Character: Basilissa
+//Face: Pained
+[character id=600301 posx=0.25 anim=fade face=painful show=true wait=true]
+
+// Basilissa shake (surprised/yelling)
+[shake target=chara id=600301 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Basilissa charaid=600301 voice=08_014_0660]
+Eh? I just contributed a few songs, 
+but that's all. We severed ties. 
+I really don't know anything about this, I swear.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Sayaka, Basilissa, Shina
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+//Display Character: Sumika Tokiwa
+//Face: Pained
+[character id=601101 posx=0.65 anim=fade face=painful show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=08_014_0670]
+And very conveniently, 
+it says Chloe Aaron will be there too... 
+Of course it's a hot topic!
+[/message]
+
+// Chloe shake (surprised/yelling)
+[shake target=chara id=200901 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+//Display Character: Chloe
+//Face: Angry
+[character id=200901  posx=0.35 anim=fade face=angry show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=08_014_0680]
+What? 
+I haven't heard anything about that.
+Are we heading to the venue now?
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Sumika Tokiwa, Chloe
+[character id=200901 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+//Display Character: Shina Ninomiya
+//Face: Angry
+[character id=200102 posx=0.35 anim=fade face=angry show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0690]
+Yes.
+Considering the situation, 
+it's clearly a trap—
+[/message]
+
+//Display Character: Koji Toyama
+//Face: Angry
+[character id=601301 posx=0.65 anim=fade face=confuse show=true wait=true]
+
+// Change Kouji's expression: Confused
+[face id=601301 type=confuse]
+[message name=Koji Toyama charaid=601301 voice=08_014_0700]
+I-is everything okay, Director?
+I do feel worried, but...
+Shouldn't we leave it alone?
+[/message]
+
+// Change Shina's expression: Thoughtful
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0710]
+But if the event fails, 
+we can't let them blame us for it.
+The venue is right there, so we'll go take a look.
+[/message]
+
+// Change Shina's expression: Confused
+[face id=200102 type=confuse]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0720]
+Sayaka... you stay behind.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Koji Toyama
+[character id=601301 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+//Display Character: Sayaka Hiwatari
+//Face: Panicking
+[character id=100101 posx=0.7 anim=fade face=panic show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Sayaka shake (surprised/yelling)
+[shake target=chara id=100101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0730]
+What?! 
+Why... I can be of use!
+[/message]
+
+// Change Shina's expression: Thoughtful
+[face id=200102 type=thoughts]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0740]
+Arata Mizunashi...
+His main target is likely you, Sayaka...
+[/message]
+
+// Change Sayaka's expression: Thoughtful
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=08_014_0750]
+Uhh...
+[/message]
+
+// Change Shina's expression: Sad
+[face id=200102 type=sad]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0760]
+You're aware of that, right?
+So for now—
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Sayaka, Shina
+[character id=200102 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+//Display Character: Hinata Morikubo
+//Face: Angry
+[character id=200602 posx=0.7 anim=fade face=angry show=true wait=false]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+// Hinata shake (surprised/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=08_014_0770]
+Hinata's definitely going too!
+I'm being falsely accused of hacking,
+so I can't just sit still!
+[/message]
+
+//Display Character: Mai Toyama
+//Face: Angry
+[character id=200302 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=08_014_0780]
+Director. Please take Sayaka with you.
+Other than me, she's the strongest among us.
+You'll need a bodyguard anyway.
+[/message]
+
+//Display Character: Basilissa
+//Face: Angry
+[character id=600301 posx=0.25 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=08_014_0790]
+These are the kinds of people who would bomb a department store, right?
+If they decide to use force, it'll be trouble.
+I'm busy with overtime, so I leave it to you.
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Basilissa, Mai Toyama, Hinata Morikubo
+[character id=600301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=1]
+// Show text window
+[visible show=true]
+
+//Display Character: Shina Ninomiya
+//Face: Panicking
+[character id=200102 posx=0.5 anim=fade face=panic] show=true wait=true]
+[message name=Shina Ninomiya charaid=200102 voice=08_014_0800]
+A-alright... thanks for the support.
+Then, let's head to the venue as a group of three.
+We don't know what's waiting, so let's be extremely careful!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop any playing SE
+[sound type=se state=stop]
+
+// Stop the BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

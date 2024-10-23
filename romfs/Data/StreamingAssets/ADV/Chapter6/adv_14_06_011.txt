@@ -1,0 +1,202 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_14_06_011
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter6]
+
+// Display specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//Conversation event in the cult's strain area
+//Triggered by stepping on the floor
+//Pre-boss fight conversation
+
+[character id=600301 posx=0.33 anim=fade face=smile show=true wait=false]
+[character id=100106 posx=0.66 anim=fade face=angry show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=06_014_0010]
+You're late, so late♪
+Is this all you've got?
+I've been waiting for you, Sayaka.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0020]
+Ri...puka...!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=06_014_0030]
+That face... looks like you've learned quite a bit.
+Huuki is so impatient,
+always chatting away...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=06_014_0040]
+But hey, growth comes with pain.
+You have to accept it, even if it hurts.
+My dear, sweet Sayaka...
+[/message]
+
+// Sayaka Blade expression change: Panicked
+[face id=100106 type=panic]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0050]
+Am I... really your clone...?
+Why...? Why am I a clone...?
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=06_014_0060]
+If I could, I'd comfort you with kind words,
+but I'm not that gentle.
+Instead, I'm going to trigger your memories even more!
+[/message]
+
+// Sayaka Blade expression change: Surprised
+[face id=100106 type=surprise]
+
+[message name=Basilissa charaid=600301 voice=06_014_0070]
+That's right... even in this form.
+[/message]
+
+// Ripuka transforms into the form of the Entoma Queen
+/////////////////////////////////////Show Scorpia/////////////////////////////////////
+[fade type=out anim=simple sec=0.5]
+
+[dungeon id=410801 type=Enemy show=true]
+
+[sound type=se name=Metamorphosis]
+[character id=600301 anim=none show=false wait=true]
+
+[fade type=in anim=simple sec=0.5]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+/////////////////////////////////////Show Scorpia/////////////////////////////////////
+
+// Sayaka Blade shakes (Surprised, Shouting)
+[shake target=chara id=100106 type=horizontal sec=0.2 pow=5 fade=false wait=false]
+
+// Sayaka Blade expression change: Pained
+[face id=100106 type=painful]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0080]
+Ugh... ugh... ahhhhhh!
+That's... mine!!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=06_014_0090]
+Looks like it's working, huh?
+Go on, keep triggering those memories♪
+Don't hold back, more, more...
+[/message]
+
+// Sayaka shakes (Surprised, Shouting)
+[shake target=chara id=100106 type=random sec=0.3 pow=5 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0100]
+...RAAAAAAHHH!!
+I'll destroy it! Your world!
+Every last bit of it!!!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0110]
+I... I can't exist unless I kill someone!!
+[/message]
+
+// Sayaka Blade shakes (Surprised, Shouting)
+[shake target=chara id=100106 type=horizontal sec=0.3 pow=8 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0120]
+Ughhhh!! It hurts...!!
+[/message]
+
+// Sayaka shakes (Surprised, Shouting)
+// Screen shakes
+[shake target=chara id=100106 type=random sec=0.5 pow=10 fade=false wait=false]
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0130]
+Kill! Kill...!
+AARRGH!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=06_014_0140]
+See? You can do it, after all. Even you.
+Ah, it's so nostalgic...
+That intensity... it used to be mine...
+[/message]
+
+// Sayaka shakes (Surprised, Shouting)
+// Screen shakes
+[shake target=chara id=100106 type=random sec=0.5 pow=10 fade=false wait=false]
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_014_0150]
+I want to kill, I want to kill so badly!!
+Please, just a little!!
+Just let me kill a little!!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=06_014_0160]
+That's it. Keep it up. Now let's go.
+Cut the flesh, sever the bone♪
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Start boss battle
+[bossbattle active=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

@@ -1,0 +1,439 @@
+//Script
+// Wait for a specified time
+[delay sec=0.1]
+
+
+
+//adv_05_10_004
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified time
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Epilougue]
+
+// Wait for a specified time
+[delay sec=2]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+// Fade in over a specified time
+//[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified time
+//[delay sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+
+
+// Sayaka enters the VR dungeon... Event triggers immediately after the dungeon starts
+
+// Dungeon BGM remains playing
+// Background remains in dungeon
+
+// Speaker Name: ERROR-256
+
+
+[character id=500501 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100103 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+
+// Wait for a specified time
+[delay sec=0.5]
+
+[visible show=true]
+
+
+[message name=ERROR-256 charaid=500501 voice=10_005_0010]
+Welcome,
+to the 65,535th dimension
+[/message]
+
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_005_0020]
+...Uh, and who might you all be...?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+// Remove Sayaka and Chloe
+// As of 5:22 PM, Chloe was not disappearing, resulting in both appearing
+// Chloe exits
+[character id=500501 anim=fade show=false wait=false]
+// Sayaka exits
+[character id=100103 anim=fade show=false wait=true]
+
+
+
+
+
+
+[delay sec=0.3]
+
+// Speaker Name: ERROR-16
+[character id=500101 posx=0.49 anim=fade face=angry show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-16 charaid=500101 voice=10_005_0030]
+—I am "Anger."
+The "Anger" you abandoned.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+
+
+
+
+
+// Speaker Name: ERROR-32
+
+[character id=500101 anim=fade show=false wait=true]
+[character id=500301 posx=0.48 anim=fade face=expectation show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-32 charaid=500301 voice=10_005_0040]
+—I am "Courage."
+What you should have had.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+
+
+
+
+
+
+
+// Speaker Name: ERROR-64
+
+[character id=500301 anim=fade show=false wait=true]
+[character id=500401 posx=0.49 anim=fade face=painful show=true wait=true]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-64 charaid=500401 voice=10_005_0050]
+—I am "Sorrow."
+The pain that continues to fade away...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+
+
+
+// Speaker Name: ERROR-128
+
+[character id=500401 anim=fade show=false wait=true]
+[character id=500201 posx=0.49 anim=fade face=smile show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-128 charaid=500201 voice=10_005_0060]
+—I am "Joy."
+Killing brings ecstasy, doesn't it? (*´Д｀)
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+
+
+
+// Speaker Name: ERROR-256
+
+[character id=500201 anim=fade show=false wait=true]
+[character id=500501 posx=0.49 anim=fade face=painful show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-256 charaid=500501 voice=10_005_0070]
+—I am "Despair."
+The heaviest of all emotions...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+// Chloe exits
+[character id=500501 anim=fade show=false wait=true]
+
+
+
+
+// Sayaka appears in the center
+[character id=100103 posx=0.49 anim=fade face=default show=true wait=true]
+
+///// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_005_0080]
+I have no idea what's going on, but...
+are you the ones messing up our game, 
+the irregulars causing all this?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker Name: ERROR-32
+
+// Move Sayaka to the right
+[move id=100103 posx=0.66 sec=1 wait=false]
+
+[character id=500301 posx=0.32 anim=fade face=default show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-32 charaid=500301 voice=10_005_0090]
+That's not quite it.
+You still desire a battle.
+It is only fitting.
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker Name: ERROR-256
+
+[character id=500301 anim=fade show=false wait=true]
+[character id=500501 posx=0.32 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-256 charaid=500501 voice=10_005_0100]
+We are not from Shina's memories,
+but rather copied from yours.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker Name: ERROR-128
+
+[character id=500501 anim=fade show=false wait=true]
+[character id=500201 posx=0.32 anim=fade face=smile show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-128 charaid=500201 voice=10_005_0110]
+Heh, heh!?
+Do you know who "Shina" is?
+Do you really?
+[/message]
+
+// Change Sayaka's expression
+[face id=100103 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_005_0120]
+Huh? ...Shina?
+That's... 
+........
+[/message]
+
+// Change Sayaka's expression
+[face id=100103 type=panic]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker Name: ERROR-64
+
+[character id=500201 anim=fade show=false wait=true]
+[character id=500401 posx=0.25 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-64 charaid=500401 voice=10_005_0130]
+It doesn't really matter, does it? 
+If you make it to the deepest level,
+you might escape this curse...
+"Her" curse, that is.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker Name: ERROR-256
+
+[character id=500401 anim=fade show=false wait=true]
+[character id=500501 posx=0.32 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=ERROR-256 charaid=500501 voice=10_005_0140]
+Everything is
+under the guidance of
+the Great Sage Paraninas.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+/////////////////////////////////////Screen goes dark/////////////////////////////////////
+
+[visible show=false]
+[fade type=out anim=simple sec=1]
+[character id=500501 anim=none show=false wait=true]
+
+//////////////Remove Character Barriers//////////////
+[dungeon id=9007 type=Barricade show=false]
+[dungeon id=9008 type=Barricade show=false]
+[dungeon id=9009 type=Barricade show=false]
+[dungeon id=9010 type=Barricade show=false]
+[dungeon id=9011 type=Barricade show=false]
+//////////////Remove Character Barriers//////////////
+
+[move id=100103 posx=0.5 sec=01 wait=true]
+[delay sec=0.5]
+[fade type=in anim=simple sec=1]
+[visible show=true]
+/////////////////////////////////////Screen goes dark/////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Change Sayaka and Blade's expression
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_005_0150]
+...They vanished?
+What the heck... 
+Forget it, let's just move on...
+[/message]
+
+
+
+
+
+
+
+
+
+
+
+
+// No more in-dungeon events until the final boss
+// To fight the final boss, all main events must be read
+
+
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop the currently playing SE
+[sound type=se state=stop]
+
+
+// Stop the currently playing BGM
+//[sound type=bgm state=stop]
+
+
+// Wait for a specified time
+[delay sec=0.5]
+
+
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

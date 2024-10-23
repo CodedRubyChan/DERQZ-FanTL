@@ -1,0 +1,259 @@
+// Script
+// Wait for a specified duration
+[delay sec=0.1]
+
+// adv_15_10_014
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display specified background
+[image type=bg id=000030]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// No BGM
+// Background 30 / Strain Area Lobby
+
+// Speaker: Jeez
+
+[character id=601701 posx=0.5 anim=fade face=smile show=true wait=true]
+
+//////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+// Snark expression change
+[face id=601701 type=expectation]
+
+[message name=Jeez charaid=601701 voice=10_015_0010]
+Well done...
+Now, I shall release the power I have kept hidden,
+and give it to you...
+[/message]
+
+/////// Hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601701 anim=fade show=false wait=true]
+
+// @Arata Mizunashi
+// Speaker: ???
+
+[delay sec=0.5]
+
+[sound type=se name=Spatialoscillation]
+[shake type=random sec=2.5 pow=25 fade=true wait=false]
+[delay sec=1]
+[sound type=se name=Spatialoscillation]
+
+[delay sec=2]
+
+[sound type=se name=Landing]
+[character id=600101 posx=0.5 anim=ttob face=panic show=true wait=true]
+
+///////// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+[message name=??? charaid=600101 voice=10_015_0020]
+Ugh... haah, haah, haa...
+Thank you, Jeez... for everything.
+[/message]
+
+//// Hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[move id=600101 posx=0.33 wait=false]
+[character id=100103 posx=0.66 anim=fade face=surprise show=true wait=true]
+
+///////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+// Sayaka expression change
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_015_0030]
+Huh!?
+A guy just showed up—
+[/message]
+
+[face id=600101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_015_0040]
+But I recognize you.
+Actually, I've been seeing you
+at the office every day lately...
+[/message]
+
+// Arata Mizunashi expression change
+[face id=600101 type=confuse]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_015_0050]
+Well, that's flattering...
+Did Shina mention anything about me?
+You are...
+[/message]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_015_0060]
+I see.
+So we meet "here," huh...
+[/message]
+
+//// Hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[image type=bg id=000030 show=false]
+[delay sec=0.1]
+// Background 270 / Rizaria Forest
+[image type=bg id=000270 show=true]
+
+////////// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+// Sayaka expression change
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_015_0070]
+Yeah. Back then,
+I still went by the name Ripuka!
+[/message]
+
+[face id=600101 type=smile]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_015_0080]
+Haha!
+You're the one from the expansion content!
+[/message]
+
+///// Hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Speaker: Jeez
+
+[move id=600101 posx=0.25 wait=false]
+[move id=100103 posx=0.75 wait=false]
+
+[delay sec=0.3]
+
+[character id=601701 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Jeez charaid=601701 voice=10_015_0090]
+Save your catching up for later, Arata Mizunashi.
+You were killed by Julietta using a special method,
+and your restoration isn't complete yet.
+[/message]
+
+// Snark expression change
+[face id=601701 type=painful]
+
+[face id=600101 type=default]
+
+[message name=Jeez charaid=601701 voice=10_015_0100]
+But it's time to stop using me as a shelter.
+You'd better head back quickly.
+[/message]
+
+// Arata Mizunashi expression change
+[face id=600101 type=smile]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_015_0110]
+I know, I know!
+I've still got to follow up on Lydia's plan...!
+[/message]
+
+// Arata Mizunashi expression change
+[face id=600101 type=default]
+
+[face id=100103 type=default]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_015_0120]
+So, could you guide me back to Sagami City...?
+Let's see, your name is...
+[/message]
+
+// Sayaka expression change
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_015_0130]
+Sayaka. Sayaka Hiwatari.
+I guess it's based on your name... um...
+[/message]
+
+[face id=100103 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=10_015_0140]
+Shina. I remember.
+Yes,
+Shina is the one who chose it for me!
+[/message]
+
+[face id=600101 type=smile]
+
+[message name=Arata Mizunashi charaid=600101 voice=10_015_0150]
+I see, that's a lovely name...
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified duration
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified duration
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

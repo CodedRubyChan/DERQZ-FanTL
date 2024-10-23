@@ -1,0 +1,432 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_05_08_002
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display specified background
+[image type=bg id=000480]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM24 / For Serious Scenes
+// Background 480 / Iris Corp. Studio
+
+// Shina, Glock, Basilissa, Iris IN
+
+// No speaker name
+[message]
+――2025
+――April, Morning
+[/message]
+
+[character id=200102 posx=0.15 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.34 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.6 anim=fade face=default show=true wait=false]
+[character id=600301 posx=0.83 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0010]
+...Ah. You're here!
+[/message]
+
+[message name=Glock President charaid=601201 voice=08_005_0020]
+Good morning.
+We've been waiting for you, all four of us.
+[/message]
+
+[message name=Iris President charaid=600601 voice=08_005_0030]
+Good job.
+[/message]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=600301 anim=fade show=false wait=true]
+
+[character id=100101 posx=0.82 anim=rtol face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0040]
+G-Good morning.
+I was told to come here when I got to work.
+Everyone's gathered... kind of a serious vibe...
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0050]
+...Am I in trouble for almost being late today?
+I'm... really sorry...
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[character id=200102 posx=0.45 anim=fade face=default show=true wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0060]
+That's not it, Sayaka.
+Well, I'd appreciate it if you could get here a bit earlier,
+but that's not what this is about right now!
+[/message]
+
+[character id=600301 posx=0.2 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=08_005_0070]
+Yes.
+If anyone's in trouble here,
+it's me—
+[/message]
+
+// Basilissa expression change: Confuse
+[face id=600301 type=confuse]
+
+[message name=Basilissa charaid=600301 voice=08_005_0080]
+*Sigh* Even though I was just scolded in front of everyone,
+are we really bringing this up again?
+[/message]
+
+// Shina expression change: Angry
+[face id=200102 type=angry]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0090]
+I don't enjoy repeating this, you know.
+But until you genuinely reflect on your actions,
+we're going to have to keep doing this.
+[/message]
+
+// Basilissa expression change: Painful
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=08_005_0100]
+Ugh, how many times do I have to say it?
+I had no idea Sayaka would get that depressed...
+Ow!
+[/message]
+
+[sound type=se name=Hand]
+
+[shake target=chara id=600301 type=horizontal sec=0.5 pow=20 fade=false wait=true]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=601201 posx=0.75 anim=fade face=painful show=true wait=true]
+
+[message name=Glock President charaid=601201 voice=08_005_0110]
+Just watching makes me feel it...
+A solid slap, but it's still violence.
+Leave it at that, Shina-kun.
+[/message]
+
+// Shina expression change: Confuse
+[face id=200102 type=confuse]
+// Glock expression change: Default
+[face id=601201 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0120]
+Yes,
+I apologize, President...
+[/message]
+
+// Basilissa expression change: Default
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=08_005_0130]
+Ah, I see. Shina... since you live together,
+you're that attached to your “toy,” huh?
+I suppose I can apologize, then.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0140]
+No... Ripuka,
+just as I acknowledge you, 
+I want you to acknowledge Sayaka.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0150]
+This girl is no longer just some toy
+born from some mysterious system glitch.
+Not to anyone.
+[/message]
+
+[message name=Glock President charaid=601201 voice=08_005_0160]
+Basilissa, if you continue this attitude towards your allies,
+we may eventually have to end your contract.
+I'd appreciate your sincere cooperation here.
+[/message]
+
+// Basilissa expression change: Painful
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=08_005_0170]
+...Fine, I get it! I surrender! Sayaka, I was just curious
+and provoked you into awakening. I'm really sorry.
+I won't do such a cruel thing again. I promise.
+[/message]
+
+[character id=601201 anim=fade show=false wait=false]
+[character id=100101 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0180]
+...Out of curiosity, huh.
+That's so like you,
+I don't know what to say...
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0190]
+But well... I accept your apology.
+In the end, I'm the one who took the bait and acted out.
+Let's just get back to work, okay?
+[/message]
+
+// Shina expression change: Smile
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0200]
+...Thank you!
+To both of you...!
+[/message]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 posx=0.25 anim=fade face=default show=true wait=true]
+
+[message name=Iris President charaid=600601 voice=08_005_0210]
+I don't know how Sayaka will feel about this,
+but let me tell you about
+how Ripuka came to be.
+[/message]
+
+[message name=Iris President charaid=600601 voice=08_005_0220]
+The first Ludens I created were
+Alice, Levin, Nova, Ripuka, and Gis.
+I modeled them after fairy tales Shina once read to me.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0230]
+Wow, from fairy tales, huh...!
+So there's a Luden called Gis too.
+[/message]
+
+// Iris expression change: Default
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=08_005_0240]
+...Yes. And,
+in the “original world,”
+I was persecuted by the Aphesis cult...
+[/message]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Glock President charaid=601201 voice=08_005_0250]
+You mean the 'DE-1' world.
+The cult there was very different from the one here...
+It was an inhumane organization—unafraid to commit crimes.
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0260]
+That different, huh...
+[/message]
+
+[message name=Iris President charaid=600601 voice=08_005_0270]
+I... created Ripuka to channel
+the resentment and anger I had—
+[/message]
+
+[character id=601201 anim=fade show=false wait=false]
+[character id=600301 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=08_005_0280]
+Ta-da! Did you hear that?
+Given that backstory,
+it's only fair that my personality is like this, right?
+[/message]
+
+[character id=600601 anim=fade show=false wait=false]
+[character id=200102 posx=0.25 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0290]
+But please, don't flaunt it.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0300]
+I see... But President,
+when you created this world, couldn't you have
+made Ripuka's personality a bit better?
+[/message]
+
+// Basilissa expression change: Thoughts
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=08_005_0310]
+Better, huh...
+[/message]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 posx=0.25 anim=fade face=default show=true wait=true]
+// Basilissa expression change: Default
+[face id=600301 type=default]
+
+[message name=Iris President charaid=600601 voice=08_005_0320]
+As I've said before,
+I'm not all-powerful. Sometimes things turned out well,
+and sometimes they didn't...
+[/message]
+
+// Iris expression change: Thoughts
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=08_005_0330]
+I can't “customize” them.
+Even changing a small parameter from the original world
+would have a negative impact on the entire world.
+[/message]
+
+// Basilissa expression change: Thoughts
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=08_005_0340]
+Ah, right?
+Like... 
+that whole “fried shrimp” thing.
+[/message]
+
+// Iris expression change: Smile
+[face id=600601 type=smile]
+
+[message name=Iris President charaid=600601 voice=08_005_0350]
+...You mean the “butterfly effect,” I think!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0360]
+I get it... Even if I don't agree with everything.
+But since I'm here now, I'll continue to
+work in this world, and with this company.
+[/message]
+
+[character id=600601 anim=fade show=false wait=false]
+[character id=200102 posx=0.25 anim=fade face=smile show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0370]
+Thank you so much, Sayaka!
+And Ripuka... no, Basilissa,
+is this okay with you?
+[/message]
+
+// Basilissa expression change: Painful
+[face id=600301 type=painful]
+
+[message name=Basilissa charaid=600301 voice=08_005_0380]
+Fine, fine.
+I'm just an “employee,” after all.
+I won't ask for more.
+[/message]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=601201 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Glock President charaid=601201 voice=08_005_0390]
+Well, there might still be things
+we haven't completely settled,
+but for now—
+[/message]
+
+// Glock expression change: Smile
+[face id=601201 type=smile]
+
+[message name=Glock President charaid=601201 voice=08_005_0400]
+Let's consider this matter resolved!
+Sayaka-kun, why don't you show your face to everyone
+in the company? They've missed you.
+[/message]
+
+// Glock expression change: Default
+[face id=601201 type=default]
+
+[message name=Glock President charaid=601201 voice=08_005_0410]
+They've all been worried about you.
+Seeing you healthy will ease their concerns.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_005_0420]
+Thanks to you, even Svetlana has returned to work.
+Why don't you go talk to them?
+[/message]
+
+[character id=601201 anim=fade show=false wait=false]
+[character id=100101 posx=0.74 anim=fade face=smile show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_005_0430]
+Everyone's working here now, right?
+Okay, I'll go say hi!
+[/message]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=600601 posx=0.5 anim=fade face=smile show=true wait=true]
+
+[message name=Iris President charaid=600601 voice=08_005_0440]
+...Yes, take care!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

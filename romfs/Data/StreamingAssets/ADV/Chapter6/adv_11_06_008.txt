@@ -1,0 +1,1072 @@
+// Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// adv_11_06_008
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter1]
+
+// Display the specified background
+[image type=bg id=000310]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=1]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM04
+// Background 310 / Chapel
+
+// Display Liliana
+[character id=200702 posx=0.15 anim=fade face=sad show=true wait=false]
+// Display Mai
+[character id=200302 posx=0.37 anim=fade face=thoughts show=true wait=false]
+// Display Rottie
+[character id=200402 posx=0.63 anim=fade face=angry show=true wait=false]
+// Display Sayaka
+[character id=100105 posx=0.85 anim=fade face=thoughts show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1.5]
+
+// Show text window
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=06_011_0010]
+— So, what's going on?
+We've been kept waiting for over an hour...
+Weren't we supposed to meet the leader?
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_011_0020]
+We were told to wait in front of this door and that was it.
+Is there some kind of preparation going on?
+I don't think there used to be this kind of setup...
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=eyeright]
+
+[message name=Mai Toyama charaid=200302 voice=06_011_0030]
+Don't call it a setup...
+Liliana, is it always like this recently?
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=default]
+
+[message name=Liliana charaid=200702 voice=06_011_0040]
+N-no,
+This has never happened before.
+What on earth could be going on...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0050]
+The path to "enlightenment" seems harsh, huh?
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=eyeright]
+[message name=Mai Toyama charaid=200302 voice=06_011_0060]
+Oh. Sayaka,
+Are you seriously considering
+joining the Aphesis cult?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0070]
+I'm just... curious.
+They say this world is a fake,
+and that we should reach the uppermost world.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0080]
+I'm wondering if that's really the solution.
+If I could meet the leader and talk,
+I thought I might understand a little better.
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=default]
+[message name=Mai Toyama charaid=200302 voice=06_011_0090]
+I see. Even if you can board a train to go overseas or to another dimension,
+I... don't want to give up on this world so easily.
+[/message]
+
+// Change Rottie's expression
+[face id=200402 type=smile]
+// Change Liliana's expression
+[face id=200702 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_011_0100]
+Oh— really, is that so!
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=smile]
+[message name=Mai Toyama charaid=200302 voice=06_011_0110]
+Sanae, Rottie!
+And also... everyone at Iris Corp. Right now,
+we're making a game together!
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_011_0120]
+Wow! That's a great answer!
+[/message]
+
+// Change Sayaka's expression
+[face id=100105 type=sad]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0130]
+...just one among many, huh?
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_011_0140]
+It's fine, really.
+I don't mind if I'm not counted.
+[/message]
+
+// Change Mai's expression
+[face id=200302 type=confuse]
+[message name=Mai Toyama charaid=200302 voice=06_011_0150]
+You're all such a pain...!
+[/message]
+
+// Change Sayaka's expression
+[face id=100105 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0160 lipsync=false]
+(What I want to know, what I truly want to know...
+is whether or not this world has any value.)
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0170 lipsync=false]
+(Because if it has no value,
+I can kill. I can kill however I want.
+Without any hesitation, even these guys—)
+[/message]
+
+// Change Rottie's expression
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_011_0180]
+Sayaka.
+I know you're tired of waiting...
+But don't be angry, okay?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0190]
+...
+[/message]
+
+// Change Rottie's expression
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_011_0200]
+Hey, Liliana. Maybe the leader is
+busy today... 
+Maybe we should come back another time—
+[/message]
+
+////////////////////////////////////////////////////////////////////BGM Stop////////////////////////////////////////////////////////////////////
+
+[sound type=bgm state=stop]
+
+// Change Sayaka's expression
+[face id=100105 type=thoughts]
+// Change Liliana's expression
+[face id=200702 type=surprise]
+// Change Mai's expression
+[face id=200302 type=surprise]
+// Change Rottie's expression
+[face id=200402 type=confuse]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0210]
+Hey, Liliana,
+did you bring your friends with you?
+[/message]
+
+// Change Sayaka's expression
+[face id=100105 type=default]
+// Change Mai's expression
+[face id=200302 type=default]
+// Change Rottie's expression
+[face id=200402 type=default]
+
+// Change Liliana's expression
+[face id=200702 type=smile]
+[message name=Liliana charaid=200702 voice=06_011_0220]
+Leader!
+It's been a while.
+[/message]
+
+///////////////////////////////////////////////BGM05///////////////////////////////////////////////
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter2]
+
+// Change Rottie's expression
+[face id=200402 type=smile]
+[message name=Rottie charaid=200402 voice=06_011_0230]
+Oh, leader! Leader!
+Long time no see, it's Rottie!
+Do you remember me...?
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0240]
+...Liliana, how has the evangelism been going in Japan?
+[/message]
+
+// Change Rottie's expression
+[face id=200402 type=thoughts]
+[message name=Rottie charaid=200402 voice=06_011_0250]
+Ah, a-ah...
+Maybe this isn't going well...!
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=default]
+
+// Change Mai's expression
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_011_0260]
+Finally making an appearance, are you?
+But isn't it rude to have this meeting through the door?
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_011_0270]
+This is the head of the Aphesis cult.
+Watch your mouth, Mai!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_011_0280]
+Seems like they're ignoring Rottie too.
+Are you actually listening to us over there?
+[/message]
+
+// Change Rottie's expression
+[face id=200402 type=panic]
+[message name=Rottie charaid=200402 voice=06_011_0290]
+M-Mai,
+Rottie's fine, okay!
+Maybe they just can't tell it's me by my voice alone.
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_011_0300]
+...Ahem.
+First, allow me to present
+a report on our activities in Japan.
+[/message]
+
+// Change Sayaka's expression
+[face id=100105 type=default]
+// Change Mai's expression
+[face id=200302 type=default]
+// Change Rottie's expression
+[face id=200402 type=default]
+
+// Change Liliana's expression
+[face id=200702 type=default]
+[message name=Liliana charaid=200702 voice=06_011_0310]
+Thanks to diligent street outreach and visitations,
+the number of followers has grown significantly compared to before.
+The progress has been steady as ever.
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_011_0320]
+...But recently, things have changed.
+With the rise of a “mysterious group,”
+it has been difficult to carry out our evangelism activities as planned.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0330]
+Is that so— 
+a mysterious group...
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_011_0340]
+Yes, and my own weakness has been a significant factor.
+Spreading the words of our leader, enlightening people—
+that is my mission.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0350]
+Indeed...
+You'll need to be even more dedicated to the teachings.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0360]
+But this mysterious group...
+What can you tell me about them?
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_011_0370]
+I believe you've received detailed reports from fellow apostle Shizu...
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0380]
+The mastermind behind the group is ‘Arata Mizunashi'...
+Based on circumstantial evidence, it is possible
+they hail from the uppermost world.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0390]
+Hmm, that's fascinating!
+They might be here to guide us toward salvation—
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_011_0400]
+But with all due respect!
+Although they have indeed attacked Iris Corp...
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0410]
+The methods they used, involving women who appear to be Ludens...
+were extremely inhumane.
+Rather, they seem more like criminals.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0420]
+Crim...inal?
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=06_011_0430]
+Yes, I'm afraid so...
+Even in the uppermost world, not everyone can be 
+good, right?
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0440]
+Therefore, this report,
+and as a basis for our next steps...
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0450]
+Liliana, was it?
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_011_0460]
+...?
+Y-yes.
+[/message]
+
+///////////////////////////////////////////////////////////BGM Stop
+[sound type=bgm state=stop]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0470]
+Then, Liliana.
+You must die.
+[/message]
+
+// Change Sayaka's expression
+[face id=100105 type=surprise]
+// Change Mai's expression
+[face id=200302 type=surprise]
+// Change Rottie's expression
+[face id=200402 type=surprise]
+
+// Change Liliana's expression
+[face id=200702 type=surprise]
+[message name=Liliana charaid=200702 voice=06_011_0480]
+...What?
+[/message]
+
+///////////////////////////////////////////////////////////////////////////BGM17
+[sound type=bgm state=play name=TownMapB]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0490]
+Weak believers are not needed in our Aphesis cult.
+The death of a believer is glorified, nourishing the cult,
+intensifying the desire to ascend.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0500]
+So, if you truly care about the cult,
+right now,
+sacrifice yourself promptly here.
+[/message]
+
+// Change Sayaka's expression
+[face id=100105 type=default]
+// Change Mai's expression
+[face id=200302 type=angry]
+// Change Rottie's expression
+[face id=200402 type=angry]
+
+// Change Liliana's expression
+[face id=200702 type=confuse]
+[message name=Liliana charaid=200702 voice=06_011_0510]
+Leader,
+What are you talking about...
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=surprise]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0520]
+...Don't you get it?
+Liliana, 
+you're a lot dumber than I thought!
+[/message]
+
+[message voice=06_011_0530]
+What a shame, ah, what a shame!
+I wish you had just killed yourself 
+during that department store incident!
+[/message]
+
+// Change Liliana's expression
+[face id=200702 type=sad]
+[message name=Liliana charaid=200702 voice=06_011_0540]
+...!?!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_011_0550]
+...Liliana,
+Stop zoning out.
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0560]
+Wh-what...
+what's...
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_011_0570]
+It's simple!
+The person behind that door...
+isn't the leader! There's no way it could be!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100105 voice=06_011_0580]
+Well, well, that's unexpected.
+I'm done playing along with this farce.
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+// Generate black background in the back
+[image type=black show=true]
+
+// Hide Liliana
+[character id=200702 anim=fade show=false wait=false]
+// Hide Mai
+[character id=200302 anim=fade show=false wait=false]
+// Hide Rottie
+[character id=200402 anim=fade show=false wait=false]
+// Move Sayaka
+[move id=100105 posx=0.5 sec=2 wait=true]
+[sound type=se name=VsActivate]
+// Hide Sayaka
+[character id=100105 anim=fade show=false wait=false]
+// Show Sayaka with Blade
+[character id=100106 posx=0.5 anim=fade face=default show=true wait=true]
+
+///////////////////////////////////////////////////////////////////Sayaka with Blade
+
+[delay sec=1]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+// Change Sayaka's expression
+[face id=100106 type=angry]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_011_0590]
+Alright, it's about time for you to show yourself...!
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+[delay sec=1]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////// Hide all characters once
+// Hide Liliana
+[character id=200702 anim=none show=false wait=false]
+// Hide Mai
+[character id=200302 anim=none show=false wait=false]
+// Hide Rottie
+[character id=200402 anim=none show=false wait=false]
+// Hide Sayaka
+[character id=100106 anim=none show=false wait=false]
+
+///////////////////////////////////////////////////////////////////SE: Slash sound with Slash effect and screen shake
+// Temporarily hide background
+[image type=bg id=000310 show=false fade=false wait=false]
+
+[sound type=se name=Slash]
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+[shake type=random sec=1 pow=10 fade=false wait=false]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////// Show necessary characters and background for next scene
+// Show Asuka Zelinn
+[character id=600401 posx=0.33 anim=none face=smile show=true wait=false]
+// Show Sayaka
+// [character id=100106 posx=0.75 anim=none face=angry show=true wait=false]
+// Show Liliana
+[character id=200702 posx=0.66 anim=none face=surprise show=true wait=false]
+// Show background
+[image type=bg id=000310 show=true]
+
+// Re-display text window
+[visible show=true]
+// Asuka Zelin appears
+[message name=Girl with Glasses charaid=600401 voice=06_011_0600]
+Oh my.
+Cutting down the door in one go is dangerous!
+If you'd cut me, you'd have to pay for it, got it?
+[/message]
+
+////////////////////////////////////////////////////////////////////BGM07
+[sound type=bgm state=play name=Chapter5]
+
+// Change Liliana's expression
+[face id=200702 type=angry]
+[message name=Liliana charaid=200702 voice=06_011_0610]
+Y-you,
+Who are you!?
+Where is the leader!?
+[/message]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=confuse]
+// Speaker: Girl with Glasses
+[message name=Girl with Glasses charaid=600401 voice=06_011_0620]
+Hey, hold on.
+Don't ask two questions at once.
+I won't know which one to answer first.
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0630]
+What did you do to the leader!?
+[/message]
+// Hide text window temporarily
+[visible show=false]
+[delay sec=1]
+
+[sound type=se name=Jump]
+
+// Liliana charges
+[move id=200702 posx=-0.5 sec=1 wait=false]
+
+// Wait for the specified number of seconds
+[delay sec=0.2]
+
+// Move Asuka Zelinn
+// Only Asuka's sprite
+[move id=600401 posx=0.5 sec=0.5 wait=true]
+
+[sound type=se name=Charge]
+// Screen shake
+[shake type=horizontal sec=1 pow=5.5 fade=false wait=false]
+
+// Re-display text window
+[visible show=true]
+[message name=Girl with Glasses charaid=600401 voice=06_011_0640]
+Whoa, that's scary. Scary.
+Are you planning to smash me with that bat?
+Is your brain-splattering urge in full swing!?
+[/message]
+
+// Bring Liliana back on screen
+[move id=200702 posx=0.2 sec=1 wait=false]
+// Move Asuka Zelin to the right
+[move id=600401 posx=0.8 sec=1 wait=false]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=sad]
+[message name=Girl with Glasses charaid=600401 voice=06_011_0650]
+Oh no, I'm so scared. So scared.
+Somebody, somebody!
+Help me!
+[/message]
+
+// Clea Glaive appears
+// Hide text window temporarily
+[visible show=false]
+[delay sec=1]
+// Show Clea Glaive
+[character id=500302 posx=0.5 anim=fade face=default show=true wait=true]
+// Change Asuka Zelin's expression
+[face id=600401 type=smile]
+
+// Re-display text window
+[visible show=true]
+[message name=Huuki Hizumi charaid=500302 voice=06_011_0660]
+Finally... it's my turn.
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0670]
+You...!
+That Mizunashi Arata's henchman...
+So, you're also...
+[/message]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=angry]
+[message name=Girl with Glasses charaid=600401 voice=06_011_0680]
+You useless trash woman!!
+Don't you dare call Arata-kun by just his name!!
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+[delay sec=0.1]
+
+// Hide Asuka Zelin
+[character id=600401 anim=fade show=false wait=false]
+// Hide Huuki Hizumi
+[character id=500302 anim=fade show=false wait=false]
+// Hide Liliana
+[character id=200702 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Show Mai
+[character id=200302 posx=0.33 anim=fade face=panic show=true wait=false]
+// Show Sayaka
+[character id=100106 posx=0.66 anim=fade face=angry show=true wait=false]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_011_0690]
+S-so they're that close...?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_011_0700]
+Damn... even Huuki...!
+Joining the fray...?
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+[delay sec=1]
+
+// Turn off Sayaka
+[character id=100106 anim=rtol show=false wait=false]
+
+// Wait for the specified number of seconds
+[delay sec=0.2]
+
+// Turn off Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=1]
+
+//////////////////////////////////////////////////////////////Screen shake, show Ripuka and Sayaka
+[sound type=se name=Slash]
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+[shake type=random sec=1 pow=10 fade=false wait=false]
+
+// Show Sayaka
+[character id=100106 posx=0.55 anim=none face=panic show=true wait=false]
+// Show Ripuka
+[character id=600301 posx=0.45 anim=none face=default show=true wait=false]
+
+// Move Sayaka
+[move id=100106 posx=0.8 sec=0.25 wait=false]
+// Move Ripuka
+[move id=600301 posx=0.2 sec=0.25 wait=true]
+
+//////////////////////////////////////////////////////////////Screen shake, show Ripuka and Sayaka
+
+// Re-display text window
+[visible show=true]
+[message name=Ripuka charaid=600301 voice=06_011_0710]
+Oh, what a pity♪
+As expected, Sayaka, nice swordplay~
+It's so obvious and easy to predict, just perfect...!
+[/message]
+
+// Show Rottie from off-screen
+[character id=200402 posx=1.2 anim=none face=panic show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_011_0720]
+Wh... Ripuka...?
+No way!
+[/message]
+
+// Move Sayaka
+[move id=100106 posx=0.5 wait=false]
+// Move Rottie
+[move id=200402 posx=0.8 wait=true]
+
+[message name=Rottie charaid=200402 voice=06_011_0730]
+Wh-why is... Ripuka-san here?!
+[/message]
+
+[message name=Ripuka charaid=600301 voice=06_011_0740]
+Sorry about that. I didn't mention it,
+but you see, I'm quite the famous figure.
+I even compose hymns for the Aphesis cult.
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+[delay sec=1]
+
+// Hide Ripuka
+[character id=600301 anim=fade show=false wait=false]
+// Hide Sayaka
+[character id=100106 anim=fade show=false wait=false]
+// Hide Rottie
+[character id=200402 anim=fade show=false wait=true]
+
+// Show Liliana from off-screen
+[character id=200702 posx=-1.2 anim=none face=angry show=true wait=false]
+// Show Huuki Hizumi
+[character id=500302 posx=0.2 anim=fade face=default show=true wait=false]
+// Show Asuka Zelin
+[character id=600401 posx=0.5 anim=fade face=default show=true wait=false]
+// Show Ripuka
+[character id=600301 posx=0.8 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[visible show=true]
+// Change Ripuka's expression
+[face id=600301 type=smile]
+[message name=Ripuka charaid=600301 voice=06_011_0750]
+I can't let anyone harm my important client♪
+[/message]
+
+[message name=Girl with Glasses charaid=600401 voice=06_011_0760]
+Heh, looks like your strength is mostly gone.
+But at least you can act as a bodyguard, along with Huuki.
+I'm a little impressed.
+[/message]
+
+// Change Ripuka's expression
+[face id=600301 type=default]
+[message name=Ripuka charaid=600301 voice=06_011_0770]
+Oh yes~ And by the way, this service comes with an additional charge,
+so I'll be expecting a payment of one million later.
+In a single payment of Eni.
+[/message]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=angry]
+[message name=Girl with Glasses charaid=600401 voice=06_011_0780]
+...Huuki,
+What's going on with this?!
+[/message]
+
+// Change Huuki Hizumi's expression
+[face id=500302 type=sad]
+[message name=Huuki Hizumi charaid=500302 voice=06_011_0790]
+Oh dear, seems like she's quite particular about money.
+Shall I add it to your tab, Rin?
+[/message]
+
+// Move Liliana
+[move id=200702 posx=0.1 wait=false]
+// Move Huuki Hizumi
+[move id=500302 posx=0.37 wait=false]
+// Move Asuka Zelin
+[move id=600401 posx=0.63 wait=false]
+// Move Ripuka
+[move id=600301 posx=0.9 wait=false]
+
+[message name=Liliana charaid=200702 voice=06_011_0800]
+Stop it!! What, what...!
+My... the place I finally found...!
+The things I hold dear... what did you do to them!!
+[/message]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=confuse]
+// Speaker: Rin
+[message name=Rin charaid=600401 voice=06_011_0810]
+Noisy little girl, aren't you...
+Alright, look over here.
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+[delay sec=1]
+
+// Hide Liliana
+[character id=200702 anim=fade show=false wait=false]
+// Hide Huuki Hizumi
+[character id=500302 anim=fade show=false wait=false]
+// Hide Asuka Zelin
+[character id=600401 anim=fade show=false wait=false]
+// Hide Ripuka
+[character id=600301 anim=fade show=false wait=true]
+
+// Show Asuka Zelin
+[character id=600401 posx=0.2 anim=fade face=default show=true wait=false]
+// Show Mai
+[character id=200302 posx=0.8 anim=fade face=surprise show=true wait=true]
+
+// Re-display text window
+[visible show=true]
+[message name=Mai Toyama charaid=200302 voice=06_011_0820]
+That pen...!
+[/message]
+
+[message name=Rin charaid=600401 voice=06_011_0830]
+Mai Toyama. Does this bring back any memories?
+That's right, it's the World Key...
+The correction pen that contains the code of the end.
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+
+// Hide Mai
+[character id=200302 anim=fade show=false wait=false]
+// Move Asuka Zelin
+[move id=600401 posx=0.5 wait=true]
+
+[delay sec=0.5]
+
+//////////////////////////////////////////////////////////////////Show Cut-in08
+[cutin id=000008 type=fade sec=0.5 show=true]
+
+// Re-display text window
+[visible show=true]
+[message name=Rin charaid=600401 voice=06_011_0840]
+Well, all agents like Arata and I
+carry one of these, it's a pretty normal item...
+But if I just fiddle with it a little...
+[/message]
+
+[message name=Rin charaid=600401 voice=06_011_0850]
+There,
+I've made it visible for you.
+This is your current leader.
+[/message]
+
+// No Speaker
+// @Male Mob51
+[message voice=06_011_0860]
+Help meee...
+M-my bodyyy...
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_0870]
+Eeeeeeeeek!?!
+[/message]
+
+[message name=Rin charaid=600401 voice=06_011_0880]
+Well. The current body...
+is made of ink, though...
+[/message]
+
+[message name=Rottie charaid=200402 voice=06_011_0890]
+Ahhh, no way...
+A person...?!
+[/message]
+
+[message name=Rin charaid=600401 voice=06_011_0900]
+A person...? Oh,
+I see, for you down below, it's impossible
+to distinguish, huh?
+[/message]
+
+//////////////////////////////////////////////////////////////////Hide Cut-in08
+[cutin id=000008 type=fade sec=0.5 show=false]
+
+[message name=Rin charaid=600401 voice=06_011_0910]
+This...thing that used to be the leader was originally
+a buggy NPC. Something Aphesis-related,
+and Iris couldn't get it right.
+[/message]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=angry]
+[message name=Rin charaid=600401 voice=06_011_0920]
+The uppermost world is a sickening place...
+They create entire worlds just for experiments,
+and if someone gets in their way, they turn them into this!
+[/message]
+
+// Change Asuka Zelin's expression
+[face id=600401 type=thoughts]
+[message name=Rin charaid=600401 voice=06_011_0930]
+What Iris did is really just
+a cheap imitation of our uppermost world. It's annoying,
+but they've done a pretty good job... of this lower world.
+[/message]
+
+// Hide text window temporarily
+[visible show=false]
+// Hide Asuka Zelin
+[character id=600401 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+// Show Huuki Hizumi
+[character id=500302 posx=0.1 anim=fade face=default show=true wait=false]
+// Show Asuka Zelin
+[character id=600401 posx=0.37 anim=fade face=default show=true wait=false]
+// Show Ripuka
+[character id=600301 posx=0.63 anim=fade face=default show=true wait=false]
+// Show Sayaka
+[character id=100106 posx=0.9 anim=fade face=default show=true wait=true]
+
+// Re-display text window
+[visible show=true]
+[message name=Rin charaid=600401 voice=06_011_0940]
+But, playtime is over.
+Sayaka... you don't like this lukewarm world, do you?
+I'll give you the hellish truth you want.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_011_0950]
+Heh...
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=06_011_0960]
+Rin, sorry but it's about time.
+There seems to be some movement in the uppermost world.
+We should regroup with the master.
+[/message]
+
+[message name=Rin charaid=600401 voice=06_011_0970]
+Tch. Always getting in my way...
+my damn homeland...
+[/message]
+
+[message name=Ripuka charaid=600301 voice=06_011_0980]
+Hmm,
+Well, let's call it off for now♪
+With a poisonous melody!
+[/message]
+
+/////////////////////////////////////////////////////////////////////////Gas SE Flash screen
+[sound type=se name=Gas]
+[fade type=out anim=simple sec=0.1 color=white]
+
+// Hide Huuki Hizumi
+[character id=500302 anim=none show=false wait=false]
+// Hide Asuka Zelin
+[character id=600401 anim=none show=false wait=false]
+// Hide Ripuka
+[character id=600301 anim=none show=false wait=false]
+// Hide Sayaka
+[character id=100106 anim=none show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+// Show Liliana
+[character id=200702 posx=0.2 anim=fade face=painful show=true wait=false]
+// Show Mai
+[character id=200302 posx=0.5 anim=fade face=painful show=true wait=false]
+// Show Rottie
+[character id=200402 posx=0.8 anim=fade face=painful show=true wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+[fade type=in anim=simple sec=0.1 color=white]
+///////////////////////////////////////////////////////////////////////// Screen Flash End
+
+[message name=Rottie charaid=200402 voice=06_011_0990]
+Cough!? Cough, cough...
+[/message]
+
+[message name=Liliana charaid=200702 voice=06_011_1000]
+Ugh, ugh...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_011_1010]
+This gas...! No... everyone cover your mouths...
+Quickly... run away!!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

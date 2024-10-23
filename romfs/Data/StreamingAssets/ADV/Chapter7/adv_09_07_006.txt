@@ -1,0 +1,467 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_09_07_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter7]
+
+// Display the specified background
+[image type=bg id=000270]
+
+[character id=100106 posx=0.79 anim=none face=angry show=true wait=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Background 270 / Russian Train Area
+// BGM: 09
+
+[sound type=se name=Dream]
+
+// Wait for the specified seconds
+[delay sec=3]
+
+[sound type=se state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=200101 posx=0.19 anim=ltor face=angry show=true wait=false]
+[character id=200501 posx=0.38 anim=ltor face=angry show=true wait=true]
+
+// Show text window
+[visible show=true]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Speaker: Adventurer Shina
+
+[message name=Adventurer Shina charaid=200101 voice=07_009_0010]
+――You! 
+Trying to massacre the people of the village... 
+What are you thinking?!
+[/message]
+
+[face id=100106 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0020]
+Huh!? Shina? What's with you all of a sudden!? 
+And everyone else... What about game development? 
+Why are you all here?
+[/message]
+
+// Speaker: Merchant Clea
+[message name=Merchant Clea charaid=200501 voice=07_009_0030]
+This is bad. Everyone, stay away from her. 
+Look at that face... she's itching to kill. 
+She's completely off the rails...!
+[/message]
+
+// Speaker: Beastman Al
+
+[character id=200501 anim=fade show=false wait=true]
+[character id=200601 posx=0.39 anim=fade face=angry show=true wait=true]
+
+[message name=Beastman Al charaid=200601 voice=07_009_0040]
+It's infuriating...! 
+Enjoying hurting people is the lowest of the low! 
+I can't understand it!
+[/message]
+
+// Speaker: Mage Lucil
+
+[character id=200601 anim=fade show=false wait=true]
+[character id=200801 posx=0.39 anim=fade face=angry show=true wait=true]
+
+[message name=Mage Lucil charaid=200801 voice=07_009_0050]
+I won't let anyone get hurt! 
+I will protect the people I care about! 
+I won't let someone like you have your way!
+[/message]
+
+[face id=100106 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0060]
+Lucil!! 
+Y-you...! 
+So you were there...!
+[/message]
+
+// Only show Sayaka
+
+// @Shina Ninomiya - Transformation
+// Speaker: Adventurer Shina
+
+[character id=200801 anim=fade show=false wait=false]
+[character id=200101 anim=fade show=false wait=true]
+[move id=100106 posx=0.49 sec=0.5 wait=true]
+
+[message name=Adventurer Shina charaid=200101 voice=07_009_0070]
+Why do you want to kill so badly? 
+Why are you so thirsty for blood? 
+Why are you like this?
+[/message]
+
+[face id=100106 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0080]
+Sh-Shina!? 
+But, you said it was okay to kill these people... 
+Just earlier, you said so, so I...!
+[/message]
+
+// @Ripuka
+// Speaker: Mercenary Basilissa
+
+[message name=Mercenary Basilissa charaid=600301 voice=07_009_0090]
+Such rich, full-bodied killing intent♪ Delicious... 
+You just want to torment and kill anyone, don't you? 
+You can't wait to start your crimson nocturne, can you?
+[/message]
+
+// @Chloe - Transformation
+// Speaker: Hero Celica
+
+[message name=Hero Celica charaid=200901 voice=07_009_0100]
+That's right. I bet that's exactly what you're thinking. 
+We can't allow someone like this to exist. 
+She's nothing but a danger to everyone!
+[/message]
+
+// @Hinata Morikubo - Transformation
+// Speaker: Beastman Al
+
+[message name=Beastman Al charaid=200601 voice=07_009_0110]
+Well said, Celica! Exactly right! 
+This one is better off gone! 
+For the good of this world♪ And for everyone♪
+[/message]
+
+// @Yurisa Yamamura - Transformation
+// Speaker: Princess Lily
+
+[message name=Princess Lily charaid=200201 voice=07_009_0120]
+Always thinking about killing someone. 
+Nothing but a desire to kill. Mind and soul, 
+a killer through and through... how grotesque.
+[/message]
+
+[face id=100106 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0130]
+W-why, 
+why are you all saying this all of a sudden? 
+Even Celica and Lily...
+[/message]
+
+[face id=100106 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0140]
+I-I mean, sure, I want to kill, 
+but I don't want to hurt everyone at Iris... 
+O-or do I...? Wait, is that really how I feel...?!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Show sprites
+
+// Speaker: Adventurer Shina
+
+[move id=100106 posx=0.79 sec=0.7 wait=true]
+[character id=200101 posx=0.19 anim=fade face=angry show=true wait=false]
+[character id=600301 posx=0.39 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Adventurer Shina charaid=200101 voice=07_009_0150]
+Basilissa! 
+This bug looks tough! 
+Help me again in this "loop"!
+[/message]
+
+// Speaker: Mercenary Basilissa
+
+[face id=600301 type=smile]
+
+[message name=Mercenary Basilissa charaid=600301 voice=07_009_0160]
+Of course, darling♪ 
+I'll do anything for you, Shina~ 
+Rely on me as much as you want♪
+[/message]
+
+// Speaker: Adventurer Shina
+
+[face id=200101 type=smile]
+
+[message name=Adventurer Shina charaid=200101 voice=07_009_0170]
+Thanks! 
+I always appreciate it! 
+I'm counting on you!
+[/message]
+
+[face id=100106 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0180]
+...What? What's that about? 
+You're... that close? 
+That's wrong, no way, that can't be right.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0190]
+Oh dear, dear? 
+Are you jealous? 
+Cute little thing.
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=07_009_0200]
+Nobody could ever love someone like you. 
+Craving love will only hurt you more. 
+Haven't figured that out yet?
+[/message]
+
+[face id=100106 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0210]
+Shina, I'm feeling so miserable right now. 
+Why don't you pay attention to me instead of her? 
+Don't ignore me! Please, Shina!
+[/message]
+
+// Speaker: Hero Celica
+
+[character id=600301 anim=fade show=false wait=true]
+[character id=200901 posx=0.39 anim=fade face=smile show=true wait=true]
+
+[message name=Hero Celica charaid=200901 voice=07_009_0220]
+Too bad~ Shouting won't help you♪ 
+The more you cry, the deeper your wounds. 
+The world is just... cruel.
+[/message]
+
+[face id=100106 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0230]
+Aaaaah...!! 
+What are you all doing?! 
+Just go away! Go away! Just disappear! Leave me alone!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Black background
+////////////////////////////////////////////////////////////////////// Show dark background
+[image type=black show=true fade=false]
+[sound type=se name=Dead]
+[image type=bg id=000270 show=false fade=true wait=false]
+
+[character id=200101 anim=fade show=false wait=false]
+[character id=200901 anim=fade show=false wait=true]
+
+[delay sec=0.7]
+[move id=100106 posx=0.66 sec=0.5 wait=false]
+[character id=600301 posx=0.32 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=07_009_0240]
+...Hehe. 
+Just as you wanted, it's just the two of us now. 
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0250]
+But I should tell you, 
+this is a recreation of your memory, Sayaka. 
+If I recall, it was the 55,500th loop...
+[/message]
+
+[face id=100106 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0260]
+M-memory...? 
+55,500 loops...???
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0270]
+Yes. So, you see, there are a lot of "misremembrances" too. 
+For instance, at this point, I wasn't even wearing this outfit yet.
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0280]
+Take a good look at your own clothes too. 
+Remember who you really are.
+[/message]
+
+////////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=VsActivate]
+[character id=100106 anim=none show=false wait=false]
+[character id=100102 posx=0.66 anim=none face=painful show=true wait=true]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=07_009_0290]
+A-ah...
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=07_009_0300]
+Perfect, perfect♪ 
+Still a bit off, but... 
+you're almost back to your original form...
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=07_009_0310]
+Remember your real role, murderer. 
+That's why you were rampaging here...
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0320]
+...as "my replacement," right?
+[/message]
+
+[face id=100102 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100102 voice=07_009_0330]
+W-what the...?!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0340]
+Well, you see, I quit! 
+I stepped down from being the villain of this cursed world... 
+But then, guess what happens?
+[/message]
+
+[face id=600301 type=thoughts]
+
+[message name=Basilissa charaid=600301 voice=07_009_0350]
+With my position vacant, who do you think filled it? 
+The boss of Lysaria Forest, and the near-final boss of the story... 
+who do you think took up that role when it looped again?
+[/message]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=07_009_0360]
+It was you, Sayaka. 
+The reason you're a killer... 
+isn't entirely your fault, you know.
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[face id=600301 type=default]
+
+[message name=Basilissa charaid=600301 voice=07_009_0370]
+It's because of a certain "God of Death" 
+who took me out of this cursed world! 
+Maybe your partner's behind it, who knows?!
+[/message]
+
+[message name=Basilissa charaid=600301 voice=07_009_0380]
+But anyway, isn't it nice to be back? 
+I used to call you by a little nickname... 
+"My long-lost twin sister."
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+////////////////////////////////////////////////////////////////////// Screen flash
+[fade type=out anim=simple sec=0.3 color=white]
+[sound type=se name=VsInactivate]
+// Ripuka OFF
+[character id=600301 anim=none show=false wait=false]
+
+[character id=100102 anim=none show=false wait=true]
+[character id=100106 posx=0.49 anim=none face=thoughts show=true wait=true]
+
+[fade type=in anim=simple sec=0.3 color=white]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0390]
+...I see. 
+So, that's how it was...
+[/message]
+
+[face id=100106 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_009_0400]
+I was... 
+I was something before Iris created me... 
+just a mere...
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop all playing SE
+[sound type=se state=stop]
+
+// Stop the background music
+//[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

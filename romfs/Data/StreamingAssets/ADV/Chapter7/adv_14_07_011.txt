@@ -1,0 +1,496 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+//adv_14_07_011
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000130]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// No BGM
+// Background 130 / Saijo City Station Front - Day
+
+[character id=200802 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0010]
+Lucil-san, we've arrived in Japan! 
+Mission accomplished safely. I'm glad. 
+I called earlier, so Shiina and the others should be here soon. 
+[/message]
+
+// Svetlana facial expression change
+[face id=200802 type=smile]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0020]
+Thank you, Sayaka. 
+Actually, it looks like they're already here. 
+Look, over there! 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+// BGM01
+[sound type=bgm state=play name=TitleGallery]
+
+[character id=200802 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=200502 posx=0.15 anim=fade face=smile show=true wait=false]
+[character id=200202 posx=0.38 anim=fade face=smile show=true wait=false]
+[character id=200102 posx=0.6 anim=fade face=smile show=true wait=false]
+[character id=200602 posx=0.8 anim=fade face=smile show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0030]
+Sayakaーーー! 
+Ah, and Lucil too...! 
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=07_014_0040]
+Hey, you two. 
+Good job traveling such a long way! 
+We four came out to greet you. 
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0050]
+Haa... I think everyone's just overreacting, don't you? 
+Everyone's just being too overprotective... 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200502 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+[character id=200602 anim=fade show=false wait=true]
+[delay sec=0.3]
+
+[character id=100101 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=200102 type=sad]
+
+[sound type=se name=Jump]
+[move id=200102 posx=0.59 sec=0.2 wait=false]
+[face id=100101 type=surprise]
+//////////////////////////////////////////////////////////////////// Character Shake
+[shake target=chara id=100101 type=horizontal sec=0.3 pow=10 fade=false wait=false]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0060]
+Waaahーー! 
+Sayaka, I missed you! 
+I was really worried about you! 
+[/message]
+
+[character id=200202 posx=0.19 anim=fade face=confuse show=true wait=false]
+
+[message name=Yurisa Yamamura charaid=200202 voice=07_014_0070]
+W-Wait, Shiina!? 
+Just because you're happy to see Sayaka again 
+doesn't mean you have to hug her that tightly! 
+[/message]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0080]
+But I'm just so happy! 
+Sayaka, I'm so glad you're okay! I'm so glad! 
+Please don't ever go off on your own again! 
+[/message]
+
+[move id=200102 posx=0.49 sec=1 wait=false]
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0090]
+...Sorry, Shiina. 
+I lost sight of myself. 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0100]
+Back then, I was afraid if I stayed near you, 
+I'd end up hurting you, someone precious to me. 
+I was scared of that... I'm sorry. 
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0110]
+No need to apologize. 
+It was my fault for taking my eyes off you 
+when you were in that state. 
+[/message]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0120]
+I should have done more for you, Sayaka. 
+If I could have slowly talked to you about where you came from... 
+Maybe you wouldn't have felt so cornered. 
+[/message]
+
+[character id=200202 anim=fade show=false wait=true]
+[character id=200802 posx=0.24 anim=fade face=default show=true wait=true]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0130]
+You kept quiet for Sayaka's sake, right? 
+It wasn't an easy truth to share... 
+Am I wrong? 
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0140]
+Hahaha... 
+[/message]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0150]
+Even if that was the case... 
+It's still all my fault. 
+Sayaka, you did nothing wrong. Not a thing. 
+[/message]
+
+[face id=200802 type=smile]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0160]
+You're loved, Sayaka. 
+There's no doubt about Shiina's feelings. 
+They're definitely real. 
+[/message]
+
+[face id=200102 type=smile]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0170]
+And Lucil too... 
+I'm so glad to see you again! 
+Thank you for coming all this way. 
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0180]
+We've met again... 
+Seems like destiny is something I'll just have to believe in. 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[move id=200802 posx=0.39 sec=0.5 wait=false]
+[move id=200102 posx=0.59 sec=0.5 wait=false]
+[move id=100101 posx=0.79 sec=0.5 wait=false]
+[character id=200202 posx=0.19 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=07_014_0190]
+I heard you were injured, are you okay? 
+I've already contacted my hospital. 
+If you need to, you're welcome anytime. 
+[/message]
+
+[face id=200802 type=default]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0200]
+Thank you, Lily. 
+But I didn't come all this way for a vacation, 
+so I'm fine. I'll take your kind offer to heart. 
+[/message]
+
+[character id=200102 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=200602 posx=0.59 anim=fade face=panic show=true wait=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0210]
+Fidget... 
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0220]
+What's up, Al? 
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0230]
+The emotional reunion is great, but 
+we can't forget there's something else important! 
+It's almost time for that promise, I'm getting nervous! 
+[/message]
+
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0240]
+Wait, when did this person just blend in so easily? 
+Hinata Morikubo... I don't know her. 
+When did she become one of the group? 
+[/message]
+
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=200502 posx=0.18 anim=fade face=default show=true wait=true]
+
+[message name=Kaede Hizumi charaid=200502 voice=07_014_0250]
+A lot happened while you were gone, Sayaka! 
+I can explain if you want... 
+[/message]
+
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0260]
+Now's not the time! 
+Everyone, focus on the mission at hand! 
+First impressions are everything, there's no room for failure! 
+[/message]
+
+[face id=200802 type=confuse]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0270]
+What do you mean? 
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=07_014_0280]
+Actually, we're not just here to welcome you. 
+We have an appointment with someone else here. 
+[/message]
+
+[character id=200502 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=200202 posx=0.19 anim=fade face=default show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=07_014_0290]
+Yes, we have a meeting set with "someone," 
+and that's why we're all here, including Hinata-chan. 
+[/message]
+
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0300]
+Of course! 
+How could I miss meeting that person? 
+I'd never allow that! 
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0310]
+After all, I'm meeting my second favorite idol, 
+next to Komai-chan. Oh no, I'm getting so nervous! 
+[/message]
+
+[message name=Svetlana Amou charaid=200802 voice=07_014_0320]
+Ah, I see. 
+Looks like the person you're waiting for has arrived. 
+I could tell immediately. 
+[/message]
+
+[character id=200202 anim=fade show=false wait=true]
+[delay sec=0.05]
+[character id=200102 posx=0.19 anim=fade face=default show=true wait=true]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0330]
+You really have a knack for this... 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Hide
+[character id=200102 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=false]
+[character id=200802 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Show
+// Chloe IN
+[character id=200903 posx=0.59 anim=rtol face=default show=true wait=false]
+[character id=500502 posx=0.79 anim=rtol face=default show=true wait=true]
+[delay sec=0.5]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[character id=200602 posx=0.24 anim=none face=smile show=true wait=true]
+
+//////////////////////////////////////////////////////////////////// Character Shake
+[shake target=chara id=200602 type=vertical sec=0.5 pow=10 fade=false wait=false]
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0340]
+Kyaaaaaa! 
+It's really happening! 
+It's Chloe Aaron herself! 
+[/message]
+
+[face id=200903 type=smile]
+
+[message name=Chloe charaid=200903 voice=07_014_0350]
+Hey there. 
+Sorry to keep you waiting. 
+It's so nice to see so many of you here. Thanks. 
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=07_014_0360]
+Nice to meet you. 
+I'm Chloe Aaron. 
+[/message]
+
+[character id=200602 anim=fade show=false wait=true]
+[character id=200102 posx=0.24 anim=fade face=default show=true wait=true]
+
+[face id=200102 type=default]
+
+[message name=Shiina Ninomiya charaid=200102 voice=07_014_0370]
+Celica... 
+No, Chloe-san. 
+Thank you so much. 
+[/message]
+
+[message name=Falena charaid=500502 voice=07_014_0380]
+I am Falena, her assistant. 
+We look forward to working with you today. 
+[/message]
+
+[face id=200903 type=smile]
+
+[message name=Chloe charaid=200903 voice=07_014_0390]
+Haha. What a delightful group. 
+This should make for some great work together. 
+[/message]
+
+[face id=200903 type=default]
+
+[message name=Chloe charaid=200903 voice=07_014_0400]
+At least, that's what I'd like to think... 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=200903 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=200602 posx=0.32 anim=fade face=default show=true wait=false]
+[character id=200502 posx=0.65 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+//////////////////////////////////////////////////////////////////// Character Shake
+[shake target=chara id=200602 type=horizontal sec=0.3 pow=8 fade=false wait=false]
+[message name=Hinata Morikubo charaid=200602 voice=07_014_0410]
+Whoaaaaaa! 
+Cool and beautiful...! 
+I feel like I'm going to pass out. 
+[/message]
+
+[message name=Kaede Hizumi charaid=200502 voice=07_014_0420 lipsync=false]
+Looks like someone is still not in the best of moods. 
+Well, I suppose it makes sense... 
+She's still on the other side of things... 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=200502 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0430 lipsync=false]
+(So, this means all the important members of 
+World's Odyssey are gathered here... right?) 
+[/message]
+
+// Sayaka facial expression change
+[face id=100101 type=sad]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=07_014_0440 lipsync=false]
+(Still, I can't feel reassured. 
+I only have a sense of foreboding, 
+as if something big is going to happen.) 
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

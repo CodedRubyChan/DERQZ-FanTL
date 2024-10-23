@@ -1,0 +1,639 @@
+// Script
+// Wait for a specified time
+[delay sec=0.1]
+
+
+
+//adv_02_10_002
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the camera for ADV
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BGM24 / For Serious Scenes
+//Background 470 / Iris Corp.
+
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.75 anim=fade face=default show=true wait=true]
+
+
+[character id=200602 posx=0.25 anim=ltor face=default show=true wait=true]
+
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0010]
+Hey there~
+It's been a little while…
+[/message]
+
+
+// Shina's expression change
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_002_0020]
+Oh, Hinata-chan!
+Have you been well?
+...Is Komai-chan doing okay too?
+[/message]
+
+// Shina's expression change
+[face id=200102 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0030]
+Yes… Yes.
+Naraku-san seems
+to be doing fine too!
+[/message]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_002_0040]
+Naraku was in good condition when I saw him last.
+...But if anything happens, please don't hesitate to rely on Yamamura Hospital, okay?
+[/message]
+
+// Hinata's expression change
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0050]
+Got it! I'll keep that in mind!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata and Shina exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+
+[delay sec=0.3]
+
+// Yurisa moves to the left, position 0.32
+[move id=200202 posx=0.32 sec=1 wait=true]
+
+// Sayaka appears from the right, position 0.66
+[character id=100101 posx=0.66 anim=rtol face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_002_0060]
+I happened to bump into Hinata on my way to work,
+so I brought her along.
+That's okay, right?
+[/message]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_002_0070]
+Shina the director's in a good mood,
+so it's a-okay~♪
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Glock and Iris appear
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+
+
+[character id=200602 posx=0.24 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.75 anim=fade face=default show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Hinata's expression change
+[face id=200602 type=surprise]
+
+// Glock's expression change
+[face id=601201 type=painful]
+
+[message name=Glock CEO charaid=601201 voice=10_002_0080]
+...Ah, but please make sure to check with us too.
+Although the answer is already quite obvious~!
+[/message]
+
+// Iris's expression change
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=10_002_0090]
+You came at quite a
+difficult time, you know…
+Today is scenario meeting day.
+[/message]
+
+// Hinata's expression change
+[face id=200602 type=expectation]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0100]
+Ohhoho? A scenario, you say…!?
+[/message]
+
+[face id=200602 type=default]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0110]
+...Which means, I get to witness the birth
+of a new Odyssey scenario, known for its
+unrelenting cruelty and endless suspense…!?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Glock exits
+[character id=601201 anim=ltor show=false wait=false]
+// Iris exits
+[character id=600601 anim=ltor show=false wait=true]
+
+[delay sec=0.3]
+
+// Shina and Yurisa enter
+[character id=200102 posx=0.5 anim=rtol face=smile show=true wait=false]
+[character id=200202 posx=0.75 anim=rtol face=default show=true wait=true]
+
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_002_0120]
+Hehehe,
+As a fan site manager, you're curious too, right?
+[/message]
+
+// Hinata's expression change
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0130]
+Yes, please!
+I'd love to participate!
+At the very least, let me hear the results…!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_002_0140]
+Excellent response… hehehe…
+Alright, President, Mai-san, Koji-san,
+let's head to the meeting space!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata, Shina, Yurisa exit
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=false]
+
+// Touyama enters
+[character id=601301 posx=0.27 anim=fade face=confuse show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_002_0150]
+Haa... good grief.
+More scary stories from the ladies again…!
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Mai enters
+[character id=200302 posx=0.66 anim=fade face=smile show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_002_0160]
+No sighing allowed.
+This is a very important part of the job, you know?
+Hehe...
+[/message]
+
+// Koji and Mai exit
+[character id=601301 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=true]
+
+// Hinata appears in the center
+[character id=200602 posx=0.49 anim=fade face=default show=true wait=true]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0170]
+Ehh… Everyone's laughing weirdly…
+Is this really going to be that much fun…?
+Well, I guess I'm excited…!
+[/message]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Hinata moves to the left
+[move id=200602 posx=0.32 sec=1 wait=false]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+[delay sec=0.3]
+
+// Akagi appears
+[character id=602601 posx=0.65 anim=fade face=smile show=true wait=true]
+
+///// Re-display the text window
+[visible show=true]
+
+[message name=Akagi charaid=602601 voice=10_002_0180]
+Well, make sure you're prepared
+before you head into the meeting space.
+I'm not going, though~♪
+[/message]
+
+//// Surprise reaction
+[shake target=chara id=200602 type=vertical sec=0.1 pow=20 fade=false wait=false]
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0190]
+...Prepared for what!?
+Akagi-san, what do you mean!?
+[/message]
+
+[message name=Akagi charaid=602601 voice=10_002_0200]
+It's a seeeeecret~
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=true]
+
+[character id=200202 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Sayaka's expression change
+[face id=100101 type=surprise]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_002_0210]
+Also, Sayaka, please continue debugging
+the DLC dungeon.
+It seems there are still some odd behaviors.
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=eyeleft]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_002_0220]
+Sure thing~
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=default]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200302 anim=fade show=false wait=false]
+[character id=601101 posx=0.8 anim=rtol face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+
+[message name=Sumika Tokiwaki charaid=601101 voice=10_002_0230]
+Sayaka, you're debugging? Oh, great.
+If possible, could you focus on the VR mode?
+There seems to be some odd data creeping in…
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=surprise]
+
+[face id=200202 type=surprise]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_002_0240]
+Odd data… creeping in?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Yurisa, Sayaka, Sumika exit
+[character id=200202 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+// Hinata appears in the center
+[character id=200602 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0250]
+...........
+[/message]
+
+[face id=200602 type=angry]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0260]
+...Ugh, come on! It wasn't me, okay!?
+I haven't hacked anything…!
+I'm just standing here, see!?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata exits
+[character id=200602 anim=fade show=false wait=false]
+[face id=200602 type=default]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=600601 posx=0.5 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=10_002_0270]
+I believe you.
+That's why you should join the meeting…
+Just kidding.
+[/message]
+
+// Iris's expression change
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=10_002_0280]
+But it's going to take some time
+and be quite a challenge…
+[/message]
+
+// Iris exits
+[character id=600601 anim=fade show=false wait=false]
+
+// Hinata appears in the center
+[character id=200602 posx=0.49 anim=fade face=confuse show=true wait=true]
+
+// Hinata's expression change
+[face id=200602 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0290]
+Oh no… Looks like I'm gonna be here for a while…
+I'm a bit worried about Naraku-san, though.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata moves
+[move id=200602 posx=0.32 sec=1 wait=false]
+
+// Shina enters
+[character id=200102 posx=0.66 anim=rtol face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_002_0300]
+Hinata-chan, you're a guest here.
+If you get bored,
+you can leave whenever you want.
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_002_0310]
+Really…?
+Then, I'll try my best!
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Everyone except Sayaka disappears
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_002_0320]
+Hmm…
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=expectation]
+[message name=Sayaka Hiwatari charaid=100101 voice=10_002_0330 lipsync=false]
+(Hey, partner… Are you there?)
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=default]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//【Choices】
+//1: …I'm here.
+//2: What's up?
+// No change regardless of selection
+
+[select]
+[link text="…I'm here." label=takecare]
+[link text="What's up?" label=takecare]
+[/select]
+
+:takecare
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Sayaka's expression change
+[face id=100101 type=eyeright]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_002_0340 lipsync=false]
+(Hinata's worried about Naraku.
+Could you check on her, if you don't mind?)
+[/message]
+
+// Sayaka's expression change
+[face id=100101 type=default]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//【Choices】
+//1: Got it
+
+[select]
+[link text="Got it" label=thanks]
+[/select]
+
+:thanks
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=10_002_0350 lipsync=false]
+(Thanks! I'll leave it to you then.)
+[/message]
+
+
+// Final dungeon unlocked
+
+
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified time
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+
+
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+
+/////////////////////////// Stop any ongoing SE
+[sound type=se state=stop]
+
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+
+// Wait for a specified time
+[delay sec=0.5]
+
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

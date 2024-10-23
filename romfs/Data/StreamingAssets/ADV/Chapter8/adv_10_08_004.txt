@@ -1,0 +1,475 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_10_08_004
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkG]
+
+// Display specified background
+[image type=bg id=000070]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM29
+// Background 70 / Park
+
+[character id=100101 posx=0.32 anim=fade face=painful show=true wait=false]
+[character id=602001 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0010]
+Seriously, you're fast at running away...!
+[/message]
+
+[message name=Evil Spirit charaid=602001 voice=08_010_0020]
+Natites......
+[/message]
+// Synthesized voice for 08_010_0030, 08_010_0040
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0050]
+......The park?
+Was bringing me here your goal?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0060]
+There's... someone behind the playground equipment?
+[/message]
+
+// Claire and Munakata enter
+[character id=602001 posx=0.5 anim=fade face=default show=false wait=false]
+[move id=100101 posx=0.24 wait=false]
+
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=500302 posx=0.75 anim=fade face=default show=true wait=false]
+
+// Sayaka expression change: Thoughts
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0070]
+Natsuo Munakata and Huuki Hizumi.
+Why are you two here...? You weren't playing, right?
+[/message]
+
+// Munakata expression change: Painful
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0080]
+Ugh... haah, haah...
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0090]
+...That should be our question.
+Sayaka,
+how did you know where to find us?
+[/message]
+
+// Munakata and Sayaka expression change: Default
+[face id=600501 type=default]
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0100]
+That Evil Spirit... Though you probably can't see it, Huuki-san,
+let's just say it was a "gut feeling."
+[/message]
+
+// Evil Spirit appears
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=602001 posx=0.25 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=08_010_0110]
+......Heheheheh
+Mikiiii
+[/message]
+// Synthesized voice for 08_010_0120, 08_010_0130
+
+// Munakata expression change: Painful
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0140]
+Ugh, aaaahhh!?
+Y-You're back!? Get away from me!
+[/message]
+
+// Munakata expression change: Angry
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0150]
+A failed Luden... 
+You... ghost!
+[/message]
+
+// Display still image 16
+[image type=still id=100016 show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0160]
+Ah!?
+No way... are you one of those former agents 
+I killed all those years ago?
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0170]
+You came to laugh at me, didn't you!?
+Damn it! Get lost! Get out of here!
+Don't mess with me now!
+[/message]
+
+// Hide still image
+[image type=still id=100016 show=false]
+
+// Huuki expression change: Default
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0180]
+Calm down, Natsuo-dono!
+We are right here beside you!
+...Get a grip!
+[/message]
+
+[character id=600501 anim=fade show=false wait=false]
+[character id=100101 posx=0.49 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0190]
+Oh boy.
+Looks like Natsuo-san can "see" it.
+[/message]
+
+// Huuki expression change: Thoughts
+[face id=500302 type=thoughts]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0200]
+Is there really a spirit here...?
+How bizarre...
+[/message]
+
+[message name=Evil Spirit charaid=602001 voice=08_010_0210]
+.Nataaeotya
+.Lueminomouganeitoitani
+, Hatshitawa
+[/message]
+// Synthesized voice for 08_010_0220, 08_010_0230
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=600501 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0240]
+Stay away, stay away...
+Just leave me alone. I...
+I've got nothing left...
+[/message]
+
+[character id=602001 anim=fade show=false wait=false]
+[character id=100101 posx=0.24 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0250]
+Natsuo-san, what's in that carry case?
+You say you have "nothing," but you're 
+holding on to it pretty tightly.
+[/message]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0260]
+...If you're curious, check for yourself.
+Here, I'll open it... 
+Natsuo-dono, excuse me.
+[/message]
+
+// Munakata expression change: Painful
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0270]
+Ha, hahahaha...
+Do what you want...
+[/message]
+
+// @Senji Chiri
+
+[message name=Chiri Sendo charaid=601501 voice=08_010_0280]
+Ah,
+Ah......gaa......
+So...bright
+[/message]
+
+// Sayaka expression change: Surprise
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0290]
+Whoa――Chiri-san...?!
+And she's... just a torso... 
+but still alive...?
+[/message]
+
+// Huuki expression change: Thoughts
+[face id=500302 type=thoughts]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0300]
+......Natsuo is someone high up in the uppermost world,
+but he crossed Arata Mizunashi. 
+Even so, to do this to his "sister"......
+[/message]
+
+// Munakata expression change: Angry
+[face id=600501 type=angry]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0310]
+Enough, already!!
+She's not a sideshow...!!
+[/message]
+
+// Sayaka and Huuki expression change: Sad
+[face id=100101 type=sad]
+[face id=500302 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0320]
+I'm surprised.
+Chiri-san is... your sister?
+...I understand how you must be feeling.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0330]
+But hold on...
+You're someone from the uppermost world,
+right, Natsuo-san――?
+[/message]
+
+// Munakata expression change: Default
+[face id=600501 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0340]
+Yeah... That's right.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0350]
+But this Chiri-san... 
+she's a clone Luden created by the 
+Iris president for this world, right?
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0360]
+So why do you call her your "sister"...?
+It doesn't make sense... Feels strange.
+[/message]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0370]
+...You sound like Arata.
+That's how you see it, huh...
+Sayaka...
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0380]
+Arata is a genius but... 
+he gets the most important things wrong.
+No! 
+It's all because of the Great Sage...
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0390]
+Th-The... 
+Great Sage...?
+[/message]
+
+// Munakata expression change: Painful
+[face id=600501 type=painful]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0400]
+...I get it. I get it, so just...
+Go away!!
+I have nothing left... Aaah...!
+[/message]
+
+// Huuki expression change: Thoughts
+[face id=500302 type=thoughts]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0410]
+...Natsuo-dono, making a scene won't help...
+People might call the police.
+Please, hold on.
+[/message]
+
+// Huuki expression change: Default
+[face id=500302 type=default]
+
+[message name=Huuki Hizumi charaid=500302 voice=08_010_0420]
+We can't discuss much now, Sayaka.
+Let's talk more another time.
+[/message]
+
+// Munakata Natsuo and Claire OFF
+
+[character id=500302 anim=fade show=false wait=false]
+[character id=600501 anim=fade show=false wait=true]
+
+[move id=100101 posx=0.32 wait=false]
+[character id=602001 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=08_010_0430]
+Ita-reinenbumuzohea....
+[/message]
+// Synthesized voice for 08_010_0440, 08_010_0450
+
+[message name=Evil Spirit charaid=602001 voice=08_010_0460]
+Iiumorakataraegimirokusarainotsuiko
+ama
+?kainejawuroginoumiwayotetekehaotsugi.
+[/message]
+// Synthesized voice for 08_010_0470, 08_010_0480
+
+// Sayaka expression change: Thoughts
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0490]
+You're talkative today... even giving suggestions.
+[/message]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0500]
+But offering help just to get leverage over someone...
+You're something else...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0510]
+...Well, it's true that, 
+if I could gather a lot of Eni, 
+I might actually be able to revive Chiri-san...
+[/message]
+
+// 【Options】
+// 1: Unsure, Sayaka?
+// 2: I'll leave it up to you, Sayaka.
+
+[select]
+[link text="Unsure, Sayaka?" label=neighbor]
+[link text="I'll leave it up to you, Sayaka." label=help]
+[/select]
+
+// Option 1
+
+:neighbor
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0520]
+Chiri-san... she's an acquaintance, but helping her means helping Natsuo Munakata...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0530]
+Using the precious Eni meant to fix the city and its people...
+I'm not sure I can do that on my own judgment――
+I'd want to consult Shina, but...
+[/message]
+
+[message name=Evil Spirit charaid=602001 voice=08_010_0540]
+Namekidembuji.
+[/message]
+// Synthesized voice for 08_010_0550, 08_010_0560
+
+// Sayaka expression change: Angry
+[face id=100101 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0570]
+Hmph... easy for you to say, 
+you're the one stopping Iris Corp!
+But once this is over, 
+you're giving it all back!
+[/message]
+
+//END
+
+[goto label=end]
+
+// Option 2
+
+:help
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0580]
+...I think I should help Chiri-san.
+She's not a total stranger.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0590]
+Shina worries about me, and Toyama cares about Rottie...
+Anyone would suffer seeing their loved ones hurt.
+[/message]
+
+[move id=100101 posx=0.24 wait=false]
+[move id=602001 posx=0.5 wait=false]
+[character id=600501 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=08_010_0600]
+......
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_010_0610]
+I've got a plan to get a lot of Eni.
+Let's go, partner.
+[/message]
+
+[goto label=end]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop playing current SE
+[sound type=se state=stop]
+
+// Stop playing current BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

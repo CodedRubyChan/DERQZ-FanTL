@@ -1,0 +1,221 @@
+// Script
+// Wait for specified seconds
+[delay sec=0.1]
+
+// adv_11_05_006
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=1.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=Chapter2]
+[character id=100103 posx=0.79 anim=fade face=angry show=true wait=false]
+[character id=500401 posx=0.19 anim=fade face=default show=true wait=true]
+
+// Display specified background
+//[image type=bg id=000140]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Background: Dungeon remains unchanged
+// BGM 05
+
+/////////////////////////// Stop SE
+[sound type=se state=stop]
+
+// Display text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_011_0010]
+How about that! I took it down!  
+[/message]
+
+// Naraku's expression changes to surprise
+[face id=500401 type=surprise]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0020]
+Oh dear. You even took out my bug.  
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0030]
+And yet, you didn't finish it off.  
+Are you just playing around?  
+[/message]
+
+// Sayaka's expression changes to default
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_011_0040]
+...It's something Shina taught me.  
+Even if it's an enemy, there's no point in killing if it's unnecessary!  
+[/message]
+
+// Naraku's expression changes to default
+[face id=500401 type=default]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0050]
+Ah, how noble of you.  
+But that kindness… I see why Arata Mizunashi is so interested in you.  
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0060]
+I'd love to prepare the next test, but...  
+[/message]
+
+// Sayaka's expression changes to panic
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_011_0070]
+Wha-what?!  
+Can't you go easy on me next time...?  
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// VR chat
+//////////////////////////////// Play SE "Monitor"
+[sound type=se name=Monitor]
+[delay sec=0.5]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Face window
+
+// @Sumika Tokiwa
+
+[message name=Sumika Tokiwa charaid=601101 voice=05_011_0080 icon=true]
+Thank you, Sayaka!!  
+It looks like you've completely eliminated the bug!  
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0090]
+No.  
+There's still one more, right here.  
+[/message]
+
+// @Mai Toyama
+
+[message name=Mai Toyama charaid=200302 voice=05_011_0100 icon=true]
+…Oh, she's right?!  
+When did that happen...?  
+Chief Sumika, let me handle the input here...!  
+[/message]
+
+// Noise SE
+//////////////////////////////// Play SE "Noise"
+[sound type=se name=Noise]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=500401 type=horizontal sec=0.3 pow=3 fade=false wait=false]
+
+// Naraku's expression changes to smile
+[face id=500401 type=smile]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0110]
+Heh heh, Sayaka.  
+It's time for us to part ways for now.  
+Getting interference from outside makes it hard to continue...  
+[/message]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0120]
+Having allies is a good thing.  
+Take care of yours.  
+[/message]
+
+// Sayaka's expression changes to thoughtful
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_011_0130]
+You've got Arata Mizunashi and his team with you, don't you...?  
+[/message]
+
+// Naraku's expression changes to default
+[face id=500401 type=default]
+
+[message name=Naraku Morikubo charaid=500401 voice=05_011_0140]
+――――Heh.  
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Glitch Al disappears
+// Stop BGM
+[character id=500401 anim=fade show=false wait=true]
+[sound type=bgm state=stop]
+[delay sec=0.5]
+[move id=100103 posx=0.49 wait=true]
+
+// Display text window again
+[delay sec=0.1]
+[visible show=true]
+
+// Sayaka's expression changes to thoughtful
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_011_0150]
+...Naraku seemed a bit strange at the end.  
+Like, she seemed kind of... sad.  
+[/message]
+
+// Sayaka's expression changes to default
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_011_0160]
+Well... for now, it looks like we've handled the hacking incident.  
+Time to head back.  
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for specified seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop SE
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

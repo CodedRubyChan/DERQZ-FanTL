@@ -1,0 +1,243 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_24_05_013
+// ##########################################################################
+// Start
+// ##########################################################################
+// Fade out over specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Wait for the specified seconds
+//[delay sec=0.5]
+
+/////////////////////////////////////////////////////
+// Boss hidden
+//[dungeon id=410601 type=Enemy show=false]
+/////////////////////////////////////////////////////
+
+// Play the specified BGM
+[sound type=bgm state=play name=GlitchGirls]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+[character id=200701 posx=0.2 anim=fade face=default show=true wait=true]
+
+// Fade in over specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+// ##########################################################################
+// Start
+// ##########################################################################
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Department store dungeon remains
+// BGM33
+
+[character id=100103 posx=0.79 anim=rtol face=angry show=true wait=true]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show the text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_024_0010]
+Liliana! 
+I finally found you! 
+And all the others, too...
+[/message]
+
+[face id=200701 type=painful]
+
+[message name=Liliana charaid=200701 voice=05_024_0020]
+Ahh... Oh... Ugh...
+[/message]
+
+// Male Mob58
+
+[message name=Male Voice voice=05_024_0030]
+I have to jump... 
+Freedom is right there...
+[/message]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_024_0040]
+P-Please stop everyone! 
+Let's go back together! 
+Shiz is worried about you!
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=200701 type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[message name=Liliana charaid=200701 voice=05_024_0050]
+...Ugh... Uuuuh...
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////// Liliana hidden
+[character id=200701 anim=fade show=false wait=true]
+[delay sec=0.3]
+/////////////////////////////////////////////////////////////////////////// Naraku & Amo appear
+[character id=500202 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=500402 posx=0.39 anim=fade face=default show=true wait=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_024_0060]
+You made it through my obstacles, but it's pointless. 
+Sayaka, your voice won't reach her anymore. 
+She no longer has any will of her own.
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=05_024_0070]
+Oh Naraku... 
+You're not explaining enough, are you? 
+After all, she still has the will to commit suicide (*^_^*)
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_024_0080]
+What a bother. 
+It doesn't matter. 
+As long as the outcome doesn't change.
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_024_0090]
+What the...?! 
+I'll stop you! 
+Release the brainwashing right now!
+[/message]
+
+[face id=500202 type=smile]
+
+[message name=Kiki Amo charaid=500202 voice=05_024_0100]
+Too bad ( ﾟДﾟ) 
+We're not that soft, you know~ hehehe!
+Right, my cute little doll?!
+[/message]
+
+// Hide the text window
+[visible show=false]
+[delay sec=0.1]
+
+///////////////////////////////////////////////////////////////////////////////////// Cut-in 07
+[cutin id=000007 type=fade sec=0.5 show=true]
+
+// Show the text window
+[delay sec=0.1]
+[visible show=true]
+
+[face id=100103 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_024_0110]
+W-What is that...? 
+Kiki's doll is moving on its own and nodding!
+[/message]
+
+// Amo changes expression
+[face id=500202 type=sad]
+
+[message name=Kiki Amo charaid=500202 voice=05_024_0120]
+It's all the rage, yet nobody from Iris bought it (T_T). 
+You're so behind the trends!
+[/message]
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_024_0130]
+I don't need it! 
+That doll is the reason for the brainwashing... 
+Oh! If I destroy it...
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_024_0140]
+Correct. Especially the one Kiki is holding; 
+that's the 'Master Unit'. 
+If you destroy all of them, 
+the suicide commands on the other dolls will stop.
+[/message]
+
+//////////////////////////////////////////////////////////////////////////////// Cut-in 07 ends
+[cutin id=000007 type=fade sec=0.5 show=false]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=05_024_0150]
+Haaa?! (╬ﾟ◥益◤ﾟ)
+W-Why did you tell them that, you idiot?!
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=05_024_0160]
+Arata Mizunashi's style. It's just a game after all. 
+I gave you the way to win. 
+The rest is up to you.
+[/message]
+
+[face id=100103 type=default]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=05_024_0170]
+Got it! 
+I'll smash that cursed doll and save Liliana, 
+and everyone else!
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=05_024_0180]
+You think you can just say that...?! 
+Dolls, transform into full power mode! 
+Curse them with your faces!!
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################
+// End
+// ##########################################################################
+// Fade out over specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing current sound effect
+[sound type=se state=stop]
+
+// Stop playing BGM
+//[sound type=bgm state=stop]
+
+[dungeon id=9016 type=Barricade show=false]
+[dungeon id=410601 type=Enemy show=true]
+
+// Boss battle begins
+[bossbattle active=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+// ##########################################################################
+// End
+// ##########################################################################

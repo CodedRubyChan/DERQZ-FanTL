@@ -1,0 +1,188 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+
+
+//adv_17_08_010
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter8]
+
+// Wait for the specified seconds
+[delay sec=2]
+
+// Show the specified background
+//[image type=bg id=000140]
+
+// Fade in over the specified seconds
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified seconds
+//[delay sec=0.5]
+
+
+//In-dungeon conversation
+//BGM continues
+
+[character id=500202 posx=0.5 anim=fade face=smile show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=08_017_0010]
+Ha-ha-ha-ha! 
+Did you see that, did you see that!? m9(^Д^)9m
+[/message]
+
+// Change Amo's expression: Normal
+[face id=500202 type=default]
+[message name=Kiki Amo charaid=500202 voice=08_017_0020]
+Drawing out the negative emotions of the fools 
+at the game show was a piece of cake! （●´3｀）~♪
+[/message]
+
+// Change Amo's expression: Smile
+[face id=500202 type=smile]
+[message name=Kiki Amo charaid=500202 voice=08_017_0030]
+Using Hinata Morikubo as a sacrifice 
+was the easiest thing ever! m9ﾟ(ﾟ^Д^ﾟ)ﾟ
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=08_017_0040]
+Plus, I even took advantage of the Iris Corporation's game, 
+so it was a flawless strategy! 
+Kiki-chan, you're a real genius! y(^ｰ^)y
+[/message]
+
+[move id=500202 posx=0.25 wait=false]
+
+[character id=500402 posx=0.5 anim=fade face=default show=true wait=false]
+
+[character id=500502 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Change Amo's expression
+[face id=500202 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_017_0050]
+Yes. But this whole plan 
+was borrowed from the genius Rin Azukaze.
+[/message]
+
+// Change Amo's expression
+[face id=500202 type=confuse]
+
+[message name=Falena charaid=500502 voice=08_017_0060]
+Yeah. 
+We just… carried out what we were told to do…
+[/message]
+
+[face id=500202 type=angry]
+[message name=Kiki Amo charaid=500202 voice=08_017_0070]
+Shut up, shut up, shut up! 
+You two keep quiet! 
+They wouldn't have known if you hadn't said anything!! (-""-；)
+[/message]
+
+// Hide the text window once
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////////////////////////////////Hide Kiki, Naraku, Falena
+[character id=500202 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Show Character: Sayaka Hiwatari
+// Face: Angry
+[character id=100103 posx=0.35 anim=fade face=angry show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_017_0080]
+…Anyway, we're taking back Hinata! 
+So far, things may have gone your way, 
+but if we can save her, we'll turn the tables on you!
+[/message]
+
+
+// Show Character: Naraku Morikubo
+// Face: Thoughts
+[character id=500402 posx=0.7 anim=fade face=thoughts show=true wait=false]
+
+[message name=Naraku Morikubo charaid=500402 voice=08_017_0090]
+Bold words. But for now, your opponents 
+will be the Strangers. 
+Keep yourself entertained.
+[/message]
+
+// Change Naraku's expression: Normal
+[face id=500402 type=default]
+[message name=Naraku Morikubo charaid=500402 voice=08_017_0100]
+Oh, and we've sent some of them to Sagami City, too. 
+I suggest you take care of them properly…
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+///////////////////////////Stop SE playing
+[sound type=se state=stop]
+
+
+// Stop BGM
+//[sound type=bgm state=stop]
+
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

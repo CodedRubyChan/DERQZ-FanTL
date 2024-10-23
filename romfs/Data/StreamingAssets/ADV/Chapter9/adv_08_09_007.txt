@@ -1,0 +1,643 @@
+//Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_08_09_007
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+//[sound type=bgm state=play name=GameOver]
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display the specified background
+[image type=bg id=000480]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+//No BGM
+//Background 480 / Iris Corp Studio
+
+// Display character: President Glock
+// Set facial expression: Painful
+[character id=601201 posx=0.5 anim=fade face=painful show=true wait=true]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=President Glock charaid=601201 voice=09_008_0010]
+When you suddenly appeared in the room,
+I was genuinely startled... Seriously!
+[/message]
+
+//BGM01
+[sound type=bgm state=play name=TitleGallery]
+
+// Change Glock's expression to: Angry
+[face id=601201 type=angry]
+[message name=President Glock charaid=601201 voice=09_008_0020]
+Alright. I won't let you run rampant any longer!
+This is our precious workplace.
+Why not give up already, Kiki Amo?
+[/message]
+
+// Glock moves
+[move id=601201 posx=0.75 sec=0.5 wait=true]
+
+// Display character: Kiki Amo
+// Set facial expression: Painful
+[character id=500201 posx=0.4 anim=fade face=painful show=true wait=false]
+[message name=Kiki Amo charaid=500201 voice=09_008_0030]
+Ugh... Urgh...
+Why are you so persistent!?
+I told Chloe to do a better job!
+[/message]
+
+// Change Amo's expression to: Angry
+[face id=500202 type=angry]
+[message name=Kiki Amo charaid=500201 voice=09_008_0040]
+I even brought a massive army of Strangers!
+This doesn't make any sense! (｀Д´#)ﾉ
+[/message]
+
+// Amo's expression changes to: Sad
+[face id=500201 type=sad]
+[message name=Kiki Amo charaid=500201 voice=09_008_0050 lipsync=false]
+(After I went through the trouble
+of driving away Shina and Mai,
+and yet this happens...!)
+[/message]
+
+// Amo moves
+[move id=500201 posx=0.15 wait=false]
+
+// Display character: Basilissa
+// Set facial expression: Default
+[character id=600301 posx=0.5 anim=fade face=default show=true wait=false]
+
+[message name=Basilissa charaid=600301 voice=09_008_0060]
+Oh? Did you really think we couldn't fight at all?
+You clearly underestimated the Iris crew, didn't you?
+[/message]
+
+[face id=601201 type=confuse]
+[message name=President Glock charaid=601201 voice=09_008_0070]
+Basilissa!
+"Crew," huh... That's an interesting way to put it.
+Well, I guess it's fine.
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=09_008_0080]
+We're quite adept at handling codes, you see.
+Most of your accompanying Strangers
+have already been sent back to the Strain Area—
+[/message]
+
+[message name=President Glock charaid=601201 voice=09_008_0090]
+And besides, your specialty,
+mind control, doesn't work on the two of us.
+We were crafted directly by Iris's will as Ludens...
+[/message]
+
+[face id=600301 type=smile]
+
+[message name=Basilissa charaid=600301 voice=09_008_0100]
+Come on, keep fighting until you're the last one left.
+Let me hear your song of despair♪
+I feel like I can create a great new track!
+[/message]
+
+/////////////////////////////////////////////////////Hide Basilissa and President Glock
+[character id=600301 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+
+[character id=602601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Akagi charaid=602601 voice=09_008_0110]
+Hey... Sorry to interrupt while you're busy!
+I brought some snacks—tea and sweets.
+Feel free to have them when you're ready!
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=09_008_0120]
+If you're hungry, we've got rice balls too!
+Alright, we can keep this up as long as we need to.
+Don't underestimate us programmers!!
+[/message]
+
+[character id=602601 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+[character id=600301 posx=0.5 anim=fade face=smile show=true wait=false]
+[character id=601201 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=President Glock charaid=601201 voice=09_008_0130]
+Oh, that's a lifesaver. After handling so many codes,
+I could feel my brain burning out...
+I gladly accept your offer.
+[/message]
+
+[message name=President Glock charaid=601201 voice=09_008_0140]
+(・～・) munch munch.
+Yep, this is good.
+[/message]
+
+// Shake Kiki Amo (shocked, shouting)
+[shake target=chara id=500201 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Kiki Amo charaid=500201 voice=09_008_0150]
+Cut it out with the emoticons!!
+[/message]
+
+[face id=600301 type=angry]
+[message name=Basilissa charaid=600301 voice=09_008_0160]
+Where's the kelp?
+Hey, if there are no kelp rice balls left,
+that's unacceptable!
+[/message]
+
+[face id=601201 type=default]
+[face id=600301 type=default]
+
+[face id=500201 type=angry]
+
+[message name=Kiki Amo charaid=500201 voice=09_008_0170 lipsync=false]
+(This can't fail...!
+If I take over Iris Corp, I can use their data
+to break free from Arata's control...!)
+[/message]
+
+[message name=Kiki Amo charaid=500201 voice=09_008_0180]
+I won't let lowlifes like you
+get in my way—
+Absolutely not!!
+[/message]
+
+// Change Amo's expression to a glitched one
+[face id=500201 type=expectation]
+
+// Broken SE sound
+[sound type=se name=Broken]
+
+// Camera zoom
+[camera type=zoom pivot=0 fov=1 sec=0.1 active=true wait=false]
+
+//////////////////////////////////////////////////////////////////// Shake character
+[shake target=chara id=500201 type=random sec=1 pow=10 fade=false wait=false]
+
+// Blood SE sound
+[sound type=se name=Chairprotrusions]
+// Blood effect
+[effect type=BloodSmall1 show=true wait=false auto_hide=false posx=0.08 posy=0.7 priority=FrontCutin]
+// Blood effect
+[effect type=BloodSmall2 show=true wait=false auto_hide=false posx=0.25 posy=0.85 priority=FrontCutin]
+
+[character id=601201 anim=none show=false wait=false]
+[character id=600301 anim=none show=false wait=false]
+
+[message name=Kiki Amo charaid=500201 voice=09_008_0190]
+Just quietly disappear already!!
+[/message]
+
+[effect type=BloodSmall1 show=false]
+[effect type=BloodSmall2 show=false]
+
+// Deactivate camera zoom
+[camera type=zoom sec=0.5 active=false wait=true]
+
+[character id=601101 posx=0.6 anim=fade face=panic show=true wait=true]
+
+// Sumika Tokiwa shakes (shocked, shouting)
+[shake target=chara id=601101 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Sumika Tokiwa charaid=601101 voice=09_008_0200]
+Eek!?
+W-what's happening to this girl...!?
+[/message]
+
+// Show character: President Glock
+// Set facial expression: Painful
+[character id=601201 posx=0.8 anim=fade face=painful show=true wait=true]
+
+[message name=President Glock charaid=601201 voice=09_008_0210]
+Munch... how sad. To be driven this far...
+Arata Mizunashi really has no regard
+for the lives of his subordinates, does he?
+[/message]
+
+// Change Glock's expression to: Confused
+[face id=601201 type=confuse]
+[message name=President Glock charaid=601201 voice=09_008_0220]
+... I'd rather not have a 'dimensional rift'
+happening inside the company again, though.
+[/message]
+
+///////////////////////////Stop all SE sounds
+[sound type=se state=stop]
+// Stop BGM
+[sound type=bgm state=stop]
+
+[message name=Kiki Amo charaid=500201 voice=09_008_0230]
+You think my specialty is just 'one' thing—
+Remaining Strangers,
+all of you, "self-destruct" now!
+[/message]
+
+// Change Glock's expression to: Angry
+[face id=601201 type=angry]
+[message name=President Glock charaid=601201 voice=09_008_0240]
+!?
+[/message]
+
+//BGM28
+
+[sound type=bgm state=play name=TalkF]
+
+/////////////////////////////////////////////////////Hide Sumika Tokiwa
+[character id=601101 anim=fade show=false wait=true]
+[delay sec=0.2]
+
+[character id=602601 posx=0.6 anim=fade face=confuse show=true wait=true]
+
+[message name=Akagi charaid=602601 voice=09_008_0250]
+...W-what's that!? 
+Wait, if you do that, won't you be in danger too!?
+[/message]
+
+[message name=Kiki Amo charaid=500201 voice=09_008_0260]
+Shut up, you near-death leftover!
+Worry about yourself, not me!
+[/message]
+
+/////////////////////////////////////////////////////Hide Glock, Akagi, Kiki Amo
+[character id=500201 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+[delay sec=0.5]
+
+// Display Cutin06
+
+[cutin id=000006 type=ltor sec=0.5 show=true]
+
+[message name=Basilissa charaid=600301 voice=09_008_0270]
+Oh no. This is bad.
+There are more than I thought.
+I might not finish the Ripuka Code in time...
+[/message]
+
+[message name=President Glock charaid=601201 voice=09_008_0280]
+Urgh, cough!
+Cough, cough!
+I still haven't swallowed my rice ball...?!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+/////////////////////////////////////////////////////////////////Screen fade to black
+[fade type=out anim=simple sec=1.5]
+/////////////////////////////////////////////////////////////////Stop BGM
+[sound type=bgm state=stop]
+
+// Hide Cutin06
+// Deactivate G-Ripuka transformation
+[character id=500202 posx=0.25 anim=none face=confuse show=true wait=true]
+[cutin id=000006 type=fade sec=0.1 show=false]
+
+[image type=still id=999999 show=true fade=false wait=true]
+[delay sec=0.5]
+[fade type=in anim=simple sec=0.5]
+
+// Activate Code SE
+[sound type=se name=Code]
+// Code activation effect
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.5 posy=0 priority=FrontCutin]
+
+// Re-display text window
+[delay sec=0.5]
+[visible show=true]
+
+//Female Mob 88
+[message voice=09_008_0290]
+"Buggggg!!"
+[/message]
+
+[message voice=09_008_0300]
+"Chiki chiki chiki!!"
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// SE: Al and Clea activate Bug
+[sound type=se name=Bug]
+
+[image type=still id=999999 show=false fade=true wait=true]
+
+// Re-display text window
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Kiki Amo charaid=500202 voice=09_008_0310]
+W-what... How, why...?
+[/message]
+
+// Chloe, Hinata, Sayaka appear
+
+[character id=601201 anim=fade show=false wait=false]
+[character id=602601 anim=fade show=false wait=false]
+[character id=500202 anim=fade show=false wait=true]
+
+[character id=200901 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Chloe charaid=200901 voice=09_008_0320]
+How was it? My "Despair."
+Looks like mine ran deeper than yours.
+[/message]
+
+[message name=Hinata charaid=200601 voice=09_008_0330]
+Heh... Al's "Sorrow."
+It's a sad power, but in this moment,
+it was useful!
+[/message]
+
+//BGM01
+
+[sound type=bgm state=play name=TitleGallery]
+
+[character id=200901 anim=fade show=false wait=false]
+[character id=600301 posx=0.25 anim=fade face=smile show=true wait=true]
+
+[message name=Basilissa charaid=600301 voice=09_008_0340]
+Oh, there you are!
+You were a little late, but ♪
+You saved us!
+[/message]
+
+[face id=600301 type=default]
+[face id=100101 type=confuse]
+
+[message name=Sayaka charaid=100101 voice=09_008_0350]
+Well now...
+Looks like I didn't get to do anything again...
+[/message]
+
+[face id=100101 type=default]
+
+[character id=600301 anim=fade show=false wait=false]
+[character id=500202 posx=0.25 anim=fade face=angry  show=true wait=true]
+
+[message name=Kiki Amo charaid=500202 voice=09_008_0360]
+G-get out of the way...!
+I'll take down Sayaka if nothing else...
+[/message]
+
+// Svetlana, Kaede, Yurisa, Liliana, Nova appear
+
+[character id=200601 anim=fade show=false wait=false]
+
+// Move Sayaka
+[move id=100101 posx=0.9 sec=0.5 wait=false]
+
+[character id=200801 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Svetlana Amou charaid=200801 voice=09_008_0370]
+Kikimora. Please, stop this.
+Look around. You have no chance of winning.
+Please, just stand down.
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=09_008_0380]
+Don't underestimate me, hag!
+Surrendering isn't an option!
+Just a little more... and I'll be free from Arata!
+[/message]
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka charaid=100101 voice=09_008_0390]
+Lucil-san.
+Being gentle with Kiki won't work any longer...
+Maybe it's time to just—
+[/message]
+
+[character id=200801 anim=fade show=false wait=false]
+
+// Move Sayaka
+[move id=100101 posx=0.75 sec=0.5 wait=false]
+
+[character id=601101 posx=0.55 anim=fade face=default show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=09_008_0400]
+Hey, Sayaka!
+You're making that scary face again!
+What have you learned from Shina and everyone?
+[/message]
+
+// Change Sayaka's expression: Panicking
+[face id=100101 type=panic]
+[message name=Sayaka charaid=100101 voice=09_008_0410]
+Ugh...
+[/message]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=602601 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Akagi charaid=602601 voice=09_008_0420]
+Alright, alright,
+at least be grateful you're still alive.
+Looks like your situation's flipped from before, huh?
+[/message]
+
+[face id=100101 type=default]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=09_008_0430]
+D-damn it—
+Urgh... Uuuugh...
+[/message]
+
+[message name=Akagi charaid=602601 voice=09_008_0440]
+...I know you're struggling,
+but you should seriously try making friends.
+Like I did... you know?
+[/message]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=09_008_0450]
+Th-that's—
+I... don't need something like that!!
+[/message]
+
+[character id=602601 anim=fade show=false wait=false]
+[character id=100101 anim=fade show=false wait=true]
+
+[character id=200801 posx=0.65 anim=fade face=default show=true wait=true]
+
+[message name=Svetlana Amou charaid=200801 voice=09_008_0460]
+It's okay, there's still time...
+[/message]
+
+// Change Amo's expression to: Sad
+[face id=500202 type=sad]
+[message name=Kiki Amo charaid=500202 voice=09_008_0470]
+Haah—What a bunch of fools...
+[/message]
+
+[character id=500202 anim=fade show=false wait=false]
+[character id=200801 anim=fade show=false wait=true]
+
+[character id=200702 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=600901 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200501 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Change Liliana's expression: Thoughtful
+[face id=200702 type=thoughts]
+[message name=Liliana charaid=200702 voice=09_008_0480]
+So this person is the enemy's agent.
+She's really stubborn, isn't she?
+There are no more Strangers outside.
+We took care of them on our way in.
+[/message]
+
+[message name=Nova charaid=600901 voice=09_008_0490]
+Wow, we really fought, didn't we...!
+If this kind of day keeps going,
+even I wouldn't be able to handle it~.
+[/message]
+
+// Change Kaede's expression: Surprised
+[face id=200501 type=surprise]
+[message name=Kaede Hizumi charaid=200501 voice=09_008_0500]
+Sayaka! What, just a moment too late?
+So everyone's here now...?
+[/message]
+
+[character id=200702 anim=fade show=false wait=false]
+[character id=600901 anim=fade show=false wait=false]
+[character id=200501 anim=fade show=false wait=true]
+
+[character id=200201 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601201 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Yurisa Yamamura charaid=200201 voice=09_008_0510]
+Thank goodness.
+Iris Corp seems to be safe!
+Is everyone okay!?
+[/message]
+
+[message name=Hinata charaid=200601 voice=09_008_0520]
+For now, the company... was saved!
+And we all managed to gather here!
+Can we finally relax?
+[/message]
+
+[face id=601201 type=thoughts]
+
+[message name=President Glock charaid=601201 voice=09_008_0530]
+Well, I wouldn't say that just yet.
+Arata Mizunashi still hasn't shown up.
+That's still a big concern—
+[/message]
+
+[face id=601201 type=default]
+
+[message name=President Glock charaid=601201 voice=09_008_0540]
+But for now, the game's master data is safe.
+Here it is.
+Please keep a copy of it on your USB drives...
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[character id=200201 anim=fade show=false wait=false]
+[character id=200601 anim=fade show=false wait=false]
+[character id=601201 anim=fade show=false wait=true]
+
+[character id=100101 posx=0.24 anim=fade face=panic show=true wait=false]
+[character id=200702 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka charaid=100101 voice=09_008_0550]
+Thank you... Wait, hold on.
+Where's Shina? Why isn't she here?
+Where's Shina...!? And...!!
+[/message]
+
+// Change Liliana's expression: Panic
+[face id=200702 type=panic]
+[message name=Liliana charaid=200702 voice=09_008_0560]
+Now that you mention it.
+Mai is... Wait, she's...
+not here either—?
+[/message]
+
+// Change Sumika's expression: Panic
+[face id=601101 type=panic]
+[message name=Sumika Tokiwa charaid=601101 voice=09_008_0570]
+W-well...
+To be honest—
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+///////////////////////////Stop all SE sounds
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

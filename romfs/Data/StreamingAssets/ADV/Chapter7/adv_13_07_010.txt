@@ -1,0 +1,237 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+//adv_13_07_010
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+//[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Wait for a specified number of seconds
+//[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=Chapter7]
+
+// Display the specified background
+//[image type=bg id=000140]
+
+[character id=200801 posx=0.32 anim=fade face=confuse show=true wait=false]
+[character id=100103 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Fade in over a specified number of seconds
+//[fade type=in anim=simple sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Background: Remains as Dungeon
+// BGM: 09
+
+// Starts from a successful rescue state
+// Conversation during the journey
+
+// Show text window
+[visible show=true]
+
+[message name=Svetlana Amou charaid=200801 voice=07_013_0010]
+I'm sorry, Sayaka. 
+Because of my injuries, we're not progressing as planned. 
+We're going to be late getting back. 
+[/message]
+
+// Sayaka facial expression change
+[face id=100103 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=07_013_0020]
+Well, I mean, who caused those injuries in the first place? 
+No need to apologize. 
+[/message]
+
+// Svetlana facial expression change
+[face id=200801 type=surprise]
+
+[message name=Svetlana Amou charaid=200801 voice=07_013_0030]
+...Wait. I can sense Kikiimora up ahead. 
+Did they decide to ambush us the moment we declared hostility? 
+They're really not holding back. 
+[/message]
+
+// Sayaka facial expression change
+[face id=100103 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=07_013_0040]
+No... I don't think that's it. 
+Let's observe for a bit. 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+[character id=200801 anim=fade show=false wait=false]
+[character id=100103 anim=fade show=false wait=true]
+[delay sec=0.3]
+[character id=500202 posx=0.32 anim=fade face=angry show=true wait=false]
+[character id=500402 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=07_013_0050]
+Roaming the northern lands without permission. 
+That's not admirable. Even Natsuo Munakata 
+won't forgive you for this. 
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0060]
+Mukkkiiiiiii!! (# ﾟДﾟ) 
+That old guy?! 
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0070]
+Acting like a supervisor...! 
+I hate it when someone scolds me the most! 
+And that old guy, he's always scolding me! 
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=07_013_0080]
+Perhaps the issue lies with the one 
+who keeps doing things to get scolded? 
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0090]
+No way! 
+It's just because he's narrow-minded! 
+[/message]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0100]
+He's even more annoying than Arata! 
+I can never tell what he's thinking! 
+[/message]
+
+[face id=500402 type=default]
+
+[message name=Naraku Morikubo charaid=500402 voice=07_013_0110]
+I don't have time 
+to keep listening to your complaints. 
+I'll just deliver the message. 
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=07_013_0120]
+Lin has taken control of the Aphasis cult, 
+but it seems the Japanese police have started an investigation. 
+We need you to handle that. 
+[/message]
+
+[face id=500202 type=painful]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0130]
+Ugh... ('Д') 
+That sounds like a huge hassle. 
+[/message]
+
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0140]
+But what about stopping Lucille's trip to Japan? 
+Wouldn't that take priority? 
+[/message]
+
+[message name=Naraku Morikubo charaid=500402 voice=07_013_0150]
+Considering the low feasibility of hindrance, 
+that has been deprioritized. 
+Well then... 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+// Hide G Al
+[character id=500402 anim=ltor show=false wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[face id=500202 type=angry]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0160]
+Low feasibility... 
+Are they underestimating my power!? 
+(`皿´)!! 
+[/message]
+
+[face id=500202 type=thoughts]
+
+[message name=Kiki Amo charaid=500202 voice=07_013_0170]
+...Gone already, huh? 
+Fine. I hate getting scolded, 
+so I'll just... kill. 
+[/message]
+
+// Hide text window once
+[visible show=false]
+[delay sec=0.1]
+
+// Hide Lucille
+[character id=500202 anim=rtol show=false wait=true]
+[delay sec=0.5]
+[character id=200801 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Svetlana Amou charaid=200801 voice=07_013_0180]
+Seems like they're plotting something bad... 
+But for now, let's just focus on getting to Japan safely. 
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop all playing sound effects
+[sound type=se state=stop]
+
+// Stop the currently playing BGM
+//[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+// END

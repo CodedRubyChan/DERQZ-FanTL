@@ -1,0 +1,419 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_10_10_009
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play specified BGM (Commented out in script)
+// [sound type=bgm state=play name=GameOver]
+
+// Display specified background
+[image type=bg id=000430]
+
+// Fade in over a specified duration
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Unlocks after Sayaka reaches a specific floor in the final dungeon
+
+// Background 430 / Intersection
+
+[character id=500402 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=600901 posx=0.75 anim=fade face=default show=true wait=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_010_0010]
+.........
+[/message]
+
+// Hinata expression change
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0020]
+Uh, um... detective...?
+[/message]
+
+[message name=Nova charaid=600901 voice=10_010_0030]
+Just call me Nova~
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0040]
+Where are we heading now?
+[/message]
+
+[message name=Nova charaid=600901 voice=10_010_0050]
+To a cafe. That's where our hideout is.
+Iris is also heading there,
+rescued by Alice.
+[/message]
+
+// Hinata expression change
+[face id=200602 type=surprise]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0060]
+Re-rescued...?
+[/message]
+
+[face id=200602 type=panic]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0070]
+But I just saw her at the office earlier...
+What is happening today?!
+And this main street is so strange...!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0080]
+There's no one... there's no one here!
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_010_0090]
+Wait! 
+There's someone over there...
+Is that...
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0100]
+Director Shina?!
+[/message]
+
+[face id=600901 type=confuse]
+
+[message name=Nova charaid=600901 voice=10_010_0110]
+Oh boy... we ran into her, huh?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Screen darkens
+// BGM08
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=500402 anim=fade show=false wait=false]
+[character id=600901 anim=fade show=false wait=true]
+
+[delay sec=1.5]
+
+[sound type=bgm state=play name=Chapter6]
+
+[character id=200702 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200103 posx=0.66 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Liliana charaid=200702 voice=10_010_0120]
+To think I'd see you while still alive... 
+I never would have thought it...
+[/message]
+
+// Great Sage Paraninas
+// Speaker: Shina Ninomiya?
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0130]
+Please, enough of that.
+I don't need such formalities from someone so capable.
+It would make me feel guilty.
+[/message]
+
+[message name=Liliana charaid=200702 voice=10_010_0140]
+No... but, 
+as per the teachings of Aphesis...
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0150]
+...So the Aphesis sect in this world 
+ended up worshiping "me" too?
+[/message]
+
+// Shina with glasses expression change
+[face id=200103 type=default]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=10_010_0160]
+If it's the "Great Sage," 
+then surely you'd already know that much...
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=10_010_0170]
+Your existence is even in our textbooks.
+I'm sure it's the same in every world.
+[/message]
+
+[message name=Liliana charaid=200702 voice=10_010_0180]
+And now, 
+to see you in such a form.
+I must say, it suits you...
+[/message]
+
+// Still in glasses form
+
+// Great Sage Paraninas
+// Speaker: Shina Ninomiya?
+
+// Shina with glasses expression change
+[face id=200103 type=smile]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0190]
+Ah, there's a reason for this appearance...
+This "Avatar" works quite well.
+[/message]
+
+// Shina with glasses expression change
+[face id=200103 type=default]
+
+[face id=200702 type=confuse]
+
+[message name=Liliana charaid=200702 voice=10_010_0200]
+...A-Avatar, you say?
+What exactly is that...?
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0210]
+Hmm.
+Maybe I should act more appropriately
+with such a devoted follower...
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=thoughts]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0220]
+I am the omniscient alchemist,
+one who refines and enjoys all 'games'.
+Everything is my plaything—
+[/message]
+
+[face id=200702 type=default]
+
+[message name=Liliana charaid=200702 voice=10_010_0230]
+...Yes!
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0240]
+Now then, Liliana, I want you to head to the 'DE-2' world.
+Sorry, but you don't have a choice.
+Well... because I wish it.
+[/message]
+
+// Shina with glasses expression change
+[face id=200103 type=default]
+
+[message name=Liliana charaid=200702 voice=10_010_0250]
+No, no.
+If it means I get the chance to defeat the Demon God,
+then it's an opportunity.
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=smile]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0260]
+Ah, very perceptive.
+You're exceptional.
+Even better than I thought...!
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=eyeleft]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0270]
+However, traveling between worlds will overwhelm your memory.
+It's difficult for anyone who isn't a Luden.
+Not like someone's 'degrade,' no.
+[/message]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=confuse]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0280]
+So, you may even forget your primary goal of defeating the Demon God.
+Going to the 'DE-2' world will only cause you pain.
+[/message]
+
+// Liliana expression change
+[face id=200702 type=smile]
+
+[message name=Liliana charaid=200702 voice=10_010_0290]
+Even so, I'll be fine.
+I'll consider it part of my training.
+Besides, haven't Rottie and the others already gone ahead?
+I can't sense them anymore.
+[/message]
+
+// Liliana expression change
+[face id=200702 type=default]
+
+// Great Sage Paraninas
+
+// Shina with glasses expression change
+[face id=200103 type=smile]
+
+[message name=Shina Ninomiya? charaid=200102 voice=10_010_0300]
+Ahaha...
+Well deduced.
+To honor your spirit, I shall send you there in an instant.
+[/message]
+
+// Shina with glasses expression change
+[face id=200103 type=default]
+
+[face id=200702 type=thoughts]
+
+[message name=Liliana charaid=200702 voice=10_010_0310 lipsync=false]
+(Mai... before the Demon God possessed you,
+we could have—)
+[/message]
+
+[message name=Liliana charaid=200702 voice=10_010_0320 lipsync=false]
+(And Rottie... I'll be right there.)
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Dimensional rupture SE
+[sound type=se name=Mirror]
+
+// Background 440
+// Screen shakes
+[visible show=false]
+[sound type=se name=mirror]
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+[character id=200702 anim=fade show=false wait=false]
+[character id=200103 anim=fade show=false wait=true]
+[image type=bg id=000440 show=true]
+[delay sec=1.5]
+
+// Pause briefly
+
+// Background 430 / Intersection
+
+[image type=bg id=000430 show=true]
+
+[character id=500402 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.5 anim=fade face=confuse show=true wait=false]
+[character id=600901 posx=0.75 anim=fade face=default show=true wait=true]
+[visible show=true]
+
+// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+// Naraku expression change
+[face id=500402 type=painful]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_010_0330]
+...... Both of them disappeared.
+[/message]
+
+[message name=Nova charaid=600901 voice=10_010_0340]
+Actually, one of them is still close by.
+Just moved within this world.
+...Mind if we take a little detour?
+[/message]
+
+[face id=200602 type=angry]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_010_0350]
+I-I don't get it!
+What was that Shina?
+[/message]
+
+[face id=500402 type=thoughts]
+
+[message name=Naraku Morikubo charaid=500402 voice=10_010_0360]
+Was that... even Shina...?
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

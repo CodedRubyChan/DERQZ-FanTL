@@ -1,0 +1,771 @@
+// Script
+// Wait for a specified number of seconds
+[delay sec=0.1]
+
+// adv_09_08_003
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkC]
+
+// Display specified background
+[image type=bg id=000470]
+
+// Fade in over a specified number of seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Show text window
+[visible show=true]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// BGM25 / Comedy Scene
+// Background 470 / Iris Corp. Development Room
+
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0010]
+Alright, time to get back to my seat... 
+!? ...Oh, you're here too...? 
+In our office...!
+[/message]
+
+// G. Serika IN
+
+[move id=100101 posx=0.8 wait=false]
+[character id=500502 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.2 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=08_009_0020]
+Well... yeah, that's a pretty understandable reaction.
+I mean, I'm not here every day, so...
+Thankfully...
+[/message]
+
+// Sayaka expression change: Default
+
+[face id=100101 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0030]
+Chloe's manager: Falena.
+A true, bona fide assistant to a mega-celebrity, right? 
+No matter her position, we can't just treat her rudely.
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0040]
+Falena, here you go! 
+Would you like some warm tea? 
+We also have cold ones.
+[/message]
+
+// Falena expression change: Confuse
+
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=08_009_0050]
+Y-Yes! 
+I'm extremely grateful!
+[/message]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=200402 posx=0.2 anim=fade face=smile show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=08_009_0060]
+Hehe.
+No need to be so nervous~
+Go ahead, relax and make yourself comfortable!
+[/message]
+
+// Falena expression change: Default
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=08_009_0070]
+W-Well, if you say so...
+But I'm... technically, 
+your "enemy," you know...?
+[/message]
+
+// Rottie expression change: Default
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=08_009_0080]
+Are you actually here to do something bad?
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0090]
+N-No, nothing of the sort... Please don't look at me with those innocent eyes~
+I've got nothing to give... 
+Anyway, let me drink this tea... gulp...
+[/message]
+
+// Falena expression change: Confuse
+
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=08_009_0100]
+—Huh!? W-Wait...! 
+Is there poison in this tea?! 
+You're trying to lull me into a trap...?!
+[/message]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 posx=0.8 anim=fade face=surprise show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0110]
+What!? ...No, no, it's fine...! 
+This is actually a high-quality, store-bought tea. 
+If anything, it's good for your health!
+[/message]
+
+// Shina expression change: Default
+
+[face id=200102 type=default]
+
+[message name=Rottie charaid=200402 voice=08_009_0120]
+Exactly~ 
+I'm drinking it too, see? 
+Sluuurp...
+[/message]
+
+[sound type=se name=Takeatea]
+
+// Wait for a specified number of seconds
+
+[delay sec=1.8]
+
+// Falena expression change: Smile
+
+[face id=500502 type=smile]
+
+[message name=Falena charaid=500502 voice=08_009_0130]
+...Haha, so I'm just harmless enough to be treated so casually... 
+In the end, I guess I'm just being underestimated, huh? 
+Either way, I'm doomed...!
+[/message]
+
+// Shina expression change: Default
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0140]
+Thaaaat's not it! 
+I'm just creating a space where we can talk business freely, 
+without any barriers!
+[/message]
+
+// Falena expression change: Default
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=08_009_0150]
+...I understand. 
+You're truly sincere, Shina... 
+But, perhaps a bit too trusting...?
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0160]
+Not at all. 
+Well, 
+if it were our 'Mai' handling this, she might have something entirely different to say to you.
+[/message]
+
+// Mai and Konji IN
+
+[character id=500502 anim=fade show=false wait=false]
+[character id=200302 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=08_009_0170]
+Did someone call my name...?
+[/message]
+
+// Shina expression change: Surprise
+
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0180]
+Whoa, whoa?! 
+[/message]
+
+// Rottie expression change: Surprise
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=08_009_0190]
+Mai...! 
+Please don't just peek out from behind the partition like that! 
+You scared me...!
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=08_009_0200]
+...I'm still not on board with 
+allowing a sympathizer of Arata Mizunashi 
+into the company... 
+[/message]
+
+[character id=200402 anim=fade show=false wait=false]
+[character id=601301 posx=0.2 anim=fade face=default show=true wait=true]
+
+[message name=Konji Toyama charaid=601301 voice=08_009_0210]
+That's the director's decision. 
+Just get back to your post.
+[/message]
+
+// Mai expression change: Thoughts
+
+[face id=200302 type=thoughts]
+
+[message name=Mai Toyama charaid=200302 voice=08_009_0220]
+...Fine, fine...
+[/message]
+
+// Mai and Konji OFF
+
+[character id=200302 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+[move id=200102 posx=0.65 wait=false]
+[character id=500502 posx=0.3 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=08_009_0230]
+She gave me quite a look on her way out... 
+But honestly, that's probably the kind of reaction 
+you should be aiming for.
+[/message]
+
+// Shina expression change: Confuse
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0240]
+Thank you for your advice. 
+But, I am who I am.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0250]
+I see... Impressive. 
+By the way, are you not attending the 'Sagashi Game Show' 
+this afternoon?
+[/message]
+
+// Shina expression change: Default
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0260]
+No. It's not a big event, so... 
+we decided not to exhibit this year.
+[/message]
+
+// Falena expression change: Thoughts
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=08_009_0270]
+I see...
+[/message]
+
+// Falena expression change: Default
+
+[face id=500502 type=default]
+
+[message name=Falena charaid=500502 voice=08_009_0280]
+Well, that's probably for the best. 
+Sorry for taking up so much time. 
+Now, let's get to the main topic...
+[/message]
+
+// Fade out
+// Time lapse effect
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+
+[character id=200402 posx=0.15 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.4 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.6 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.85 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0290]
+As we discussed during contract negotiations...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0300]
+From today, Chloe Aaron will be handling 
+the motion and voice acting for 'End-to-Odyssey.'
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0310]
+She's reprising her role from 'Worlds Odyssey.' 
+Honestly, we couldn't imagine anyone else 
+taking her place, even without considering the fans.
+[/message]
+
+// Shina expression change: Default
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0320]
+With that said... given her "mental state,"
+I believe it's best if Falena stays close to her.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0330]
+Ah. I see, I see...
+[/message]
+
+// Rottie expression change: Thoughts
+
+[face id=200402 type=thoughts]
+
+[message name=Rottie charaid=200402 voice=08_009_0340]
+Chloe's beautiful and cool... 
+but, she's kinda... prickly, isn't she...? 
+Was there some kind of... incident?
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0350]
+Falena,
+Can I ask you something? 
+It's about Chloe.
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0360]
+Is there a reason why her emotions seem so unstable?
+Did you or maybe Arata Mizunashi do something?
+[/message]
+
+// Falena expression change: Confuse
+
+[face id=500502 type=confuse]
+
+[message name=Falena charaid=500502 voice=08_009_0370]
+Ohhhhh...!
+That's a pretty blunt question! 
+But it does make it easier for me to answer...
+[/message]
+
+// Flashback
+// Black background
+
+[visible show=false]
+[fade type=out anim=simple sec=1.5]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+
+[character id=200902 posx=0.5 anim=fade face=default show=true wait=true]
+
+[sound type=bgm state=play name=TalkB]
+[image type=bg id=000380 show=true]
+[fade type=in anim=simple sec=2]
+[visible show=true]
+
+// Chloe Aaron display
+// BGM24 / Serious Scene
+
+// @G. Serika
+
+[message name=Falena charaid=500502 voice=08_009_0380]
+Let me share a bit about Chloe Aaron.
+Before Arata Mizunashi entered the scene, 
+she was already a hugely popular actress as you all know.
+[/message]
+
+// @G. Serika
+
+[message name=Falena charaid=500502 voice=08_009_0390]
+But, it's undeniable that her fame was partly due 
+to her parents, who were also top stars.
+She was benefiting from their influence.
+[/message]
+
+[message name=Rottie charaid=200402 voice=08_009_0400]
+Influence... 
+Are you saying Chloe's success wasn't because of her own efforts...?
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0410]
+Yes. Her parents were pulling a lot of strings behind the scenes, 
+making sure she could thrive as an actress. 
+Some of their actions went beyond mere support...
+[/message]
+
+[message name=Rottie charaid=200402 voice=08_009_0420]
+But... but still!
+Chloe must've worked so hard to become the huge star she is today!
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0430]
+Of course! That's absolutely true.
+As her manager at the time, 
+I can personally vouch for Chloe's effort and passion.
+[/message]
+
+// BGM24
+// Background 470 / Iris Corp. Development Room
+
+[character id=200902 anim=fade show=false wait=true]
+
+[image type=bg id=000470 show=true]
+
+[character id=200402 posx=0.15 anim=fade face=default show=true wait=false]
+[character id=500502 posx=0.4 anim=fade face=default show=true wait=false]
+[character id=200102 posx=0.6 anim=fade face=default show=true wait=false]
+[character id=100101 posx=0.85 anim=fade face=default show=true wait=true]
+
+[message name=Falena charaid=500502 voice=08_009_0440]
+But then, one day... 
+something happened that caused Chloe to lose 
+her trust in her parents completely.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0450]
+Chloe was set to compete in a Japanese audition show 
+against her close friend, a local idol named 'Komai.'
+[/message]
+
+// Sayaka expression change: Thoughts
+
+[face id=100101 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0460]
+Komai? 
+I feel like I've heard that name somewhere...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0470]
+Al... that's the idol Hinata Morikubo's a huge fan of!
+[/message]
+
+// Sayaka expression change: Surprise
+
+[face id=100101 type=surprise]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0480]
+...Oh.
+[/message]
+
+// Sayaka expression change: Default
+
+[face id=100101 type=default]
+
+[message name=Falena charaid=500502 voice=08_009_0490]
+Chloe and Komai had known each other for a long time 
+through social media. They were well acquainted.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0500]
+They were genuinely happy about their first on-screen collaboration...
+but...
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0510]
+The result was a landslide victory for Chloe in every category. 
+But Chloe sensed something was off and decided 
+to dig deeper with the show staff...
+[/message]
+
+// Falena expression change: Thoughts
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=08_009_0520]
+And sure enough, the competition had been rigged from the start.
+It was all staged. 
+Komai's loss was decided long before the show even aired.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0530]
+The staff... no, the entire show was being controlled 
+by Chloe's parents from behind the scenes.
+[/message]
+
+// Rottie expression change: Sad
+
+[face id=200402 type=sad]
+
+[message name=Rottie charaid=200402 voice=08_009_0540]
+That's... such a huge setup!
+But it's terrible... Chloe and Komai had no idea 
+about any of this when they appeared on the show...
+[/message]
+
+// Falena expression change: Thoughts
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=08_009_0550]
+Yes... and discovering that her parents tampered with 
+what should have been a genuine competition 
+caused Chloe enormous heartbreak.
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+[message name=Falena charaid=500502 voice=08_009_0560]
+But it didn't end there. 
+After the show, Komai...
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0570]
+She took her own life...
+[/message]
+
+// Rottie expression change: Surprise
+// Sayaka expression change: Panic
+
+[face id=200402 type=surprise]
+[face id=100101 type=panic]
+
+[message name=Rottie charaid=200402 voice=08_009_0580]
+...What!?
+[/message]
+
+// Shina expression change: Sad
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0590]
+...The official story said it was an accident, 
+but that was just a cover...
+[/message]
+
+// Falena expression change: Confuse
+// Rottie expression change: Surprise
+// Sayaka expression change: Sad
+
+[face id=500502 type=confuse]
+[face id=200402 type=surprise]
+[face id=100101 type=sad]
+
+[message name=Falena charaid=500502 voice=08_009_0600]
+And to make things worse, 
+Chloe's manager, Raffy, died of overwork... 
+And Chloe was thrown into utter despair.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0610]
+...Oh, and that Raffy was actually... 
+well, me. I'm Raffy's... Luden form.
+[/message]
+
+// Sayaka expression change: Default
+// Shina expression change: Default
+// Rottie expression change: Default
+
+[face id=100101 type=default]
+[face id=200102 type=default]
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=08_009_0620]
+...Wow! So that's your secret!
+Please, continue to support Chloe... no matter what!
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0630]
+Of course. I intend to, no matter what form I take...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0640]
+So, Arata Mizunashi isn't directly responsible 
+for Chloe's mental state... That's surprising.
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0650]
+That's right. 
+However, Chloe's current source of comfort is...
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0660]
+Helping with Mizunashi's plan to 'break' the world...
+Code Z.
+[/message]
+
+// Rottie expression change: Surprise
+
+[face id=200402 type=surprise]
+
+[message name=Rottie charaid=200402 voice=08_009_0670]
+Eeeek!?
+That's terrible!
+How did it end up like this...?!
+[/message]
+
+[message name=Falena charaid=500502 voice=08_009_0680]
+My role was to tell Chloe that... 
+if she helped destroy this 'false world,' 
+she would get to see Komai again.
+[/message]
+
+// Rottie expression change: Default
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=08_009_0690]
+Komai is so important to Chloe...
+But breaking the world is just... wrong!
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=08_009_0700]
+Does Mizunashi hate Iris' world that much...?
+[/message]
+
+// Falena expression change: Thoughts
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502 voice=08_009_0710]
+...Mizunashi's plan does seem to focus a lot 
+on Sayaka, here. 
+There might be a connection...
+[/message]
+
+// Sayaka expression change: Panic
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0720]
+Oh no... that sounds bad...
+I mean, I appreciate all the info, 
+but are you sure you're supposed to be telling us this?
+[/message]
+
+// Stop BGM
+
+[sound type=bgm state=stop]
+
+// Shina expression change: Thoughts
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102]
+......
+[/message]
+// No voice due to time stop
+
+[message name=Rottie charaid=200402]
+......
+[/message]
+// No voice due to time stop
+
+
+// Falena expression change: Thoughts
+
+[face id=500502 type=thoughts]
+
+[message name=Falena charaid=500502]
+......
+[/message]
+// No voice due to time stop
+
+// Black background
+[character id=100101 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=false]
+[character id=500502 anim=fade show=false wait=true]
+
+[image type=bg id=000380 show=true]
+[character id=100101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0760]
+Huh?! 
+W-What is this...!!
+Everyone is frozen...?!
+[/message]
+
+// BGM27 / Horror Scene
+
+[sound type=bgm state=play name=TalkE]
+
+[move id=100101 posx=0.32 wait=false]
+[character id=602001 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Evil Spirit charaid=602001 voice=08_009_0770]
+......
+[/message]
+// Synthesized voice for 08_009_0780, 08_009_0790
+
+// Sayaka expression change: Panic
+
+[face id=100101 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=08_009_0800]
+Ahhh! 
+I-It's you...?!
+[/message]
+
+// Evil Spirit OFF
+
+[character id=602001 anim=fade show=false wait=true]
+[character id=100101 anim=fade show=false wait=true]
+[character id=100103 posx=0.5 anim=fade face=default show=true wait=true]
+
+// Sayaka expression change: Angry
+
+[face id=100103 type=angry]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=08_009_0810]
+I won't forgive you!!
+What are you trying to do?! Stop right there!!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified number of seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Stop playing current SE
+[sound type=se state=stop]
+
+// Stop playing current BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End the script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END

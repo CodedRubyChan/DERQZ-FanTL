@@ -1,0 +1,340 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_15_06_012
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+
+// Play specified BGM
+//[sound type=bgm state=play name=GameOver]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Display black background
+[image type=black show=true]
+// Show dark background
+[image type=bg id=000380]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+///////////////////////////////////////////////////////////////////SE: Slash sound, slash effect, and screen shake
+// Wait for the specified number of seconds
+[delay sec=1]
+[sound type=se name=Slash]
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.3 posy=0.6 priority=FrontCutin]
+[shake type=random sec=1 pow=10 fade=false wait=false]
+
+/////////////////////////////////////////////////////////////////Bleeding effect
+[sound type=se name=Longsword]
+[effect type=BloodSmall1 show=true wait=false auto_hide=false posx=0.3 posy=0.6 priority=FrontCutin]
+
+// Show text window
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0010]
+Die! Die! Die! Die!
+Die! Die! Die! Die!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.5]
+
+///////////////////////////////////////////////////////////////////SE: Slash sound, slash effect, and screen shake
+[sound type=se name=Slash]
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.4 posy=0.4 priority=FrontCutin]
+[shake type=random sec=1 pow=10 fade=false wait=false]
+
+/////////////////////////////////////////////////////////////////Second bleeding effect
+[sound type=se name=Longsword]
+[effect type=BloodSmall2 show=true wait=false auto_hide=false posx=0.4 posy=0.4 priority=FrontCutin]
+
+// Show text window again
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0020]
+Spill it! Your guts!
+Spill it all out, c'mon!
+Everything! More, more!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=1]
+
+// Hide bleeding effects
+[effect type=BloodSmall1 show=false]
+[effect type=BloodSmall2 show=false]
+
+///////////////////////////////////////////////////////////////////SE: Slash sound, slash effect, and screen shake
+// Wait for the specified number of seconds
+[delay sec=2]
+[sound type=se name=Slash]
+[effect type=SlashLarge show=true wait=false auto_hide=true posx=0.3 posy=0.6 priority=FrontCutin]
+
+/////////////////////////////////////////////////////////////////Bleeding effect
+[sound type=se name=Longsword]
+[effect type=BloodSmall1 show=true wait=false auto_hide=false posx=0.2 posy=0.7 priority=FrontCutin]
+/////////////////////////////////////////////////////////////////Second bleeding effect
+[effect type=BloodSmall2 show=true wait=false auto_hide=false posx=0.4 posy=0.4 priority=FrontCutin]
+
+// Screen shake
+[shake type=random sec=1 pow=10 fade=false wait=false]
+
+// Show text window again
+[visible show=true]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0030]
+Not enough! It's not enough yet!
+You've got more, right? Spill it all out!
+Here?! Your insides are right here, aren't they?!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=1]
+
+// Show Basilissa
+[character id=600301 posx=0.32 face=painful anim=fade show=true wait=false]
+// Show Sayaka
+[character id=100106 posx=0.66 face=painful anim=fade show=true wait=true]
+
+// Show text window again
+[visible show=true]
+
+[message name=Basilissa charaid=600301 voice=06_015_0040]
+Ugh!!
+Ha... ha...
+[/message]
+
+// Sayaka shakes (Surprised, Shouting)
+// Screen shake
+[shake target=chara id=100106 type=random sec=0.5 pow=10 fade=false wait=false]
+[shake type=random sec=0.5 pow=30 fade=false wait=false]
+
+// Sayaka Blade expression change: Smiling
+[face id=100106 type=smile]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0050]
+KYAHAHAHAHAH!
+This feels so good!
+This is what I've always, always wanted!
+[/message]
+
+// Sayaka Blade expression change: Default
+[face id=100106 type=default]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0060]
+Ah, it's disappearing! It's all disappearing!
+All the unnecessary stuff inside me!
+And then, then I'll become the real me!
+[/message]
+
+/////////////////////////////////////////////////////////////Show Mai in the background
+[character id=200302 posx=1.2 face=angry anim=none show=true wait=false]
+
+[message name=Mai Toyama charaid=200302 voice=06_015_0070]
+...SAYAAAAAA!!!!
+[/message]
+
+// Sayaka Blade expression change: Panicked
+[face id=100106 type=panic]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0080]
+!?
+[/message]
+
+// Hide text window
+
+[visible show=false]
+
+// Hide bleeding effects
+[effect type=BloodSmall1 show=false]
+[effect type=BloodSmall2 show=false]
+
+/////////////////////////////////////////////////////////////Move Mai into the screen
+[move id=200302 posx=0.79 sec=0.5 wait=false]
+// Wait for the specified number of seconds
+[delay sec=0.2]
+// Move Sayaka
+[move id=100106 posx=0.49 sec=0.3 wait=false]
+// Move Basilissa
+[move id=600301 posx=0.19 sec=0.3 wait=false]
+
+[delay sec=1]
+// Show text window again
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=06_015_0090]
+Saya, what are you doing?!
+Why... are you attacking Basilissa?!
+[/message]
+
+// Mai expression change
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_015_0100]
+This isn't like you at all! You're acting like...
+[/message]
+
+// Sayaka Blade expression change: Thinking
+[face id=100106 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0110]
+Like what?
+[/message]
+
+// Mai expression change: Panicked
+[face id=200302 type=panic]
+[message name=Mai Toyama charaid=200302 voice=06_015_0120]
+Saya...
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=thoughts]
+[message name=Basilissa charaid=600301 voice=06_015_0130]
+Cough! Cough... Oh dear...
+Such a shame we got interrupted.
+Saya's awakening was just a step away...
+[/message]
+
+// Sayaka Blade expression change: Confused
+[face id=100106 type=confuse]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0140]
+...
+[/message]
+
+// Mai expression change: Sad
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_015_0150]
+...Let's go home, Saya.
+Rottie and Liliana are waiting.
+And so is Shina back in Japan.
+[/message]
+
+// Sayaka Blade expression change: Angry
+[face id=100106 type=angry]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0160]
+...I can't go back.
+[/message]
+
+// Mai expression change
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_015_0170]
+Saya!
+[/message]
+
+// Sayaka expression change
+[face id=100106 type=sad]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0180]
+I'm sorry, Mai-san.
+But I can't go back. I just can't.
+I'm covered in so much blood...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0190]
+Just leave me alone.
+I'm going to stay here.
+Please... go back.
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_015_0200]
+I can't just leave you here, Saya...
+[/message]
+
+// Sayaka shakes (Surprised, Shouting)
+// Mai expression change
+[face id=200302 type=surprise]
+// Sayaka expression change
+[face id=100106 type=painful]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0210]
+Just go! Please, just leave me alone...
+[/message]
+
+// Mai expression change
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_015_0220]
+...Alright. Basilissa,
+you're coming with me.
+[/message]
+
+// Mai expression change
+[face id=200302 type=angry]
+[message name=Mai Toyama charaid=200302 voice=06_015_0230]
+...Depending on what you did to Saya,
+I won't forgive you.
+[/message]
+
+// Basilissa expression change
+[face id=600301 type=default]
+[message name=Basilissa charaid=600301 voice=06_015_0240]
+Hehe... can't tell who the real victim is, can you?
+I do like smart girls...
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=06_015_0250]
+Lean on me.
+And just... be quiet.
+[/message]
+
+// Sayaka expression change
+[face id=100106 type=sad]
+[message name=Sayaka Hiwatari charaid=100106 voice=06_015_0260]
+...
+[/message]
+
+// Mai expression change
+[face id=200302 type=sad]
+[message name=Mai Toyama charaid=200302 voice=06_015_0270]
+Saya, please... come back soon.
+[/message]
+// Hide text window
+[visible show=false]
+
+// Hide Basilissa
+[character id=600301 anim=fade show=false wait=false]
+// Hide Mai
+[character id=200302 anim=fade show=false wait=true]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Sayaka expression change
+[face id=100106 type=thoughts]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

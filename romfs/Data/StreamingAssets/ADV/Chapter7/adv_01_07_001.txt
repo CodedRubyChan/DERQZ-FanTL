@@ -1,0 +1,455 @@
+//Script
+// Wait for the specified number of seconds
+[delay sec=0.1]
+
+//adv_01_07_001
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to the ADV camera setup
+[camera type=setup]
+[delay sec=0.5]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+//########## Eyecatch ##########//
+// Black background
+[image type=bg]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Show ADV eyecatch
+[eyecatch chapter=7 title=Cruel Crimson Queen]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1]
+//########## Eyecatch ##########//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkE]
+
+////////////////////////////////////////////////////////////////////// Show background
+[image type=black show=true]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+//##########################################################################//
+//Start
+//##########################################################################//
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+[character id=600301 posx=0.32 anim=rtol face=painful show=true wait=true]
+[delay sec=0.5]
+
+//BGM27
+//Background 380 / Black background
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=600301 type=horizontal sec=1 pow=10 fade=true wait=false]
+//////////////////////////////// Play SE
+[sound type=se name=0003_ShortSword_Big_A_b]
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.3 posy=0.5 priority=FrontCutin]
+[effect type=BloodSmall1 show=true wait=true auto_hide=false posx=0.3 posy=0.5 priority=FrontCutin]
+
+// Show text window
+[visible show=true]
+
+[message name=Ripuka charaid=600301 voice=07_001_0010]
+...Guh!
+Ugh!
+Guhh, gah!
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=600301 type=horizontal sec=1 pow=10 fade=true wait=false]
+//////////////////////////////// Play SE
+[sound type=se name=0003_ShortSword_Big_D]
+[effect type=SlashSmall show=true wait=false auto_hide=true posx=0.33 posy=0.4 priority=FrontCutin]
+[effect type=BloodSmall2 show=true wait=true auto_hide=false posx=0.33 posy=0.4 priority=FrontCutin]
+[delay sec=0.1]
+
+[message name=Ripuka charaid=600301 voice=07_001_0020]
+Agh! Gyaaaah!
+Ugh... haa... haa...
+[/message]
+
+[message name=Ripuka charaid=600301 voice=07_001_0030]
+...Hold up.
+S-Stop, stop.
+Just a little... just hold up.
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=600301 type=horizontal sec=0.5 pow=5 fade=false wait=false]
+
+[message name=Ripuka charaid=600301 voice=07_001_0040]
+Ugh... 
+Just stop for a bit, okay?
+Haha, Sayaka, you're going a little too far, don't you think?
+[/message]
+
+[face id=600301 type=confuse]
+
+[message name=Ripuka charaid=600301 voice=07_001_0050]
+L-Look, see?
+There's hardly any place left to cut, right?
+[/message]
+
+[message name=Ripuka charaid=600301 voice=07_001_0060]
+My insides are... spilling out.
+How much longer are you going to keep cutting me up, I wonder.
+[/message]
+
+[message name=Ripuka charaid=600301 voice=07_001_0070]
+You... you're satisfied now, right?
+So... please. Just stop now...
+Just, put me out of my misery.
+[/message]
+
+[character id=100106 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0080]
+...Ahaha.
+Finally, I got to hear it.
+You begging me to stop!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0090]
+That's what I wanted to hear,
+so I left your head for last. Ah, it's the best.
+Well, now the real fun begins. Let's both enjoy it.
+[/message]
+
+//////////////////////////////////////////////////////////////////// Character shake
+[shake target=chara id=600301 type=horizontal sec=1 pow=20 fade=true wait=false]
+[face id=600301 type=painful]
+
+[message name=Ripuka charaid=600301 voice=07_001_0100]
+N-No, stop...
+Please, Sayaka, just stop...!!
+Noooooooo!!
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+[character id=600301 anim=fade show=false wait=false]
+[effect type=BloodSmall1 show=false wait=false]
+[effect type=BloodSmall2 show=false wait=true]
+[delay sec=0.3]
+
+// Fake Shina appears
+//Background 320 / Cult - Mutation
+[character id=200102 posx=0.32 anim=fade face=smile show=true wait=false]
+// Show specified background
+[image type=bg id=000320]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0110]
+Heeey.
+Hey Sayaka, how are you?
+Having fun bullying monsters?
+[/message]
+
+[move id=100106 posx=0.79 wait=false]
+[move id=200102 posx=0.19 wait=false]
+////////////////////////////////////////////////////////////////////////////////// Show Cutin 06
+[cutin id=000006 type=fade sec=0.5 show=true]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0120]
+Shina?
+You're here?
+Yeah, I was bullying a monster...
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0130]
+Oh... huh, you're right.
+This isn't Ripuka. It's a stranger.
+How did I not realize that until now...
+[/message]
+
+[sound type=se name=Nightmare]
+
+////////////////////////////////////////////////////////////////////////////////// End Cutin 06
+[cutin id=000006 type=rtol sec=0.3 show=false]
+
+[move id=100106 posx=0.66 wait=false]
+[move id=200102 posx=0.32 wait=false]
+
+// @Great Sage Paraninas
+[face id=200102 type=surprise]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0140]
+Ah, it ran away.
+That's what happens when you don't kill it properly~
+[/message]
+
+// Shina expression change
+[face id=200102 type=expectation]
+
+// @Great Sage Paraninas
+[face id=200102 type=smile]
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0150]
+You seemed a bit confused, seeing things maybe?
+Yeah, yeah, that happens. Don't worry, let's go-go☆
+[/message]
+
+// @Great Sage Paraninas
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0160]
+So, are you feeling a bit better now?
+See, I'm worried, and so are the others waiting outside.
+Maybe it's time to end this little hide-and-seek game?
+[/message]
+
+[face id=100106 type=panic]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0170]
+N-No! Shina! Please!
+Don't come any closer!
+[/message]
+
+// Sayaka expression change
+[face id=100106 type=painful]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0180]
+I can't... stop this killing intent...
+But... I don't want to kill you, Shina!
+[/message]
+
+// @Great Sage Paraninas
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0190]
+...Ahahaha~!!!
+I see! I see!!
+You like 'Shina' that much, huh?
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0200]
+Well, well... heheh!
+That's quite flattering, but...
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0210]
+...Looks like you're still not quite there yet~.
+But, we can't keep waiting forever. Everyone's going to get bored
+if it's the same old thing every time.
+[/message]
+
+// @Great Sage Paraninas
+// Shina expression change
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0220]
+Oh! How about this?
+I'll introduce you to someone you can... kill freely.
+Just for you, a special privilege!
+[/message]
+
+[face id=100106 type=default]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0230]
+...What?
+[/message]
+
+// @Great Sage Paraninas
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0240]
+Ah!
+You smiled, didn't you!?
+[/message]
+
+// @Great Sage Paraninas
+// [face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0250]
+Yay~ yay~☆
+Sayaka smiled! See, I know everything about you, Sayaka.
+[/message]
+
+// @Great Sage Paraninas
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0260]
+You just need to get used to 'deleting,' bit by bit.
+Sayaka,
+you can become even stronger...
+[/message]
+
+[face id=100106 type=confuse]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0270]
+...Don't tease, just tell me.
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0280]
+Good response!
+First, how about those 'Elves' in the 'Rizaria' forest?
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0290]
+Especially...
+among them,
+that 'Lucil Filarete'.
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0300]
+She's a half-human elf, so she needs to be taken out quickly.
+Please, Sayaka, help me again!
+[/message]
+
+[face id=100106 type=thoughts]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0310]
+...But, are you sure it's okay to kill them?
+Shina, what you're saying sounds different from before...
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0320]
+Listen up.
+Up until now,
+you've held on well, Sayaka!
+[/message]
+
+// @Great Sage Paraninas
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0330]
+That's why,
+now, more than ever, you want to kill, right?
+That intent you've been growing... it's time to unleash it.
+[/message]
+
+[face id=100106 type=default]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0340]
+I see... so I don't have to hold back anymore.
+Then, I guess... I'll head out.
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0350]
+Yes, yes! The time has come!
+You can get to Rizaria 
+quickly with the Strain Train!
+[/message]
+
+// @Great Sage Paraninas
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0360]
+Your wishes will be granted soon, Sayaka.
+So come on, let's go~!
+[/message]
+
+[face id=100106 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100106 voice=07_001_0370]
+Alright! I'm going out!
+Thanks, Shina!
+[/message]
+
+// @Great Sage Paraninas
+[face id=200102 type=default]
+[message name=Shina Ninomiya charaid=200102 voice=07_001_0380]
+...Good girl.
+[/message]
+
+// Hide text window
+[visible show=false]
+[delay sec=0.1]
+
+// Hide fake Shina and Sayaka
+// Stop BGM
+[character id=100106 anim=ltor show=false wait=true]
+[delay sec=0.3]
+[character id=200102 anim=rtol show=false wait=true]
+
+[sound type=bgm state=stop]
+[delay sec=1]
+
+// Natsuo Munakata appears
+[character id=600501 posx=0.5 anim=ltor face=default show=true wait=true]
+
+// Show text window again
+[delay sec=0.1]
+[visible show=true]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_001_0390]
+...So Sayaka has already left.
+I wish I could have... kept her here a bit longer.
+[/message]
+
+// Natsuo Munakata expression change
+[face id=600501 type=thoughts]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_001_0400]
+But still, I wonder――
+[/message]
+
+[face id=600501 type=confuse]
+
+[message name=Natsuo Munakata charaid=600501 voice=07_001_0410]
+Who was that girl who appeared in the middle of it all...?
+.........
+No way, could it be――
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+//End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified number of seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+//End
+//##########################################################################//
+//END

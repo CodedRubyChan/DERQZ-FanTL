@@ -1,0 +1,1554 @@
+//Script
+// Wait for a specified time
+[delay sec=0.1]
+
+
+
+//adv_06_10_005
+//##########################################################################//
+//Start
+//##########################################################################//
+// Fade out over a specified time
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera
+[camera type=setup]
+[delay sec=0.5]
+
+// Play the specified BGM
+[sound type=bgm state=play name=TalkB]
+
+// Display the specified background
+[image type=bg id=000470]
+
+// Fade in over a specified time
+[fade type=in anim=simple sec=0.5]
+
+// Wait for a specified time
+[delay sec=0.5]
+
+//##########################################################################//
+//Start
+//##########################################################################//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Unlocks when Sayaka reaches the ●●th floor of the final dungeon
+
+//An event where the Great Sage intrudes on a friendly meeting and teases them
+
+//BGM24　　/ For serious scenes
+//Background470 / Iris Corp.
+
+//Arata Minase
+
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0010]
+Okay, everyone, thank you for gathering
+in the meeting space!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+//Yurisa Yamamura, Sumika Tokiwa, Hinata Morikubo, Mai Toyama, Koji Toyama, Iris
+//Displayed in two parts
+
+[character id=200102 anim=fade show=false wait=false]
+
+[character id=200202 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.75 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+[character id=200302 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=601301 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.75 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+[character id=200302 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+
+
+[delay sec=0.5]
+
+[character id=200102 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.75 anim=fade face=surprise show=true wait=true]
+
+
+
+
+
+//Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0020]
+First, can you please distribute the materials,
+Yamamura?
+[/message]
+
+//Yurisa expression change
+[face id=200202 type=sad]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0030]
+...Even during meetings,
+I wanted to be called Lily!
+[/message]
+
+//Yurisa expression change
+[face id=200202 type=default]
+
+//Shina expression change
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0040]
+...I'll call you that later.
+[/message]
+
+//Shina expression change
+[face id=200102 type=default]
+
+[face id=200202 type=smile]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0050]
+Alright♪
+Here you go, everyone♪
+[/message]
+
+//Yurisa expression change
+[face id=200202 type=default]
+
+//Shina expression change
+[face id=200102 type=eyeleft]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0060]
+Did everyone get them?
+[/message]
+
+//Shina expression change
+[face id=200102 type=default]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0070]
+Y-yes...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0080]
+Now, let's discuss the agenda for today,
+the "fate" of Celica's sisters, Eliza and
+Eneda, who are her close friends.
+[/message]
+
+//Shina expression change
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0090]
+Eliza was
+newly designed by Koji Toyama!
+Please take a look at the sketch in the materials!
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+
+
+
+
+
+
+
+
+
+//Shina, Yurisa, ←Hinata
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+
+[delay sec=0.5]
+
+//Sumika, Iris, Mai, Toyama
+[character id=601101 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+
+[character id=601101 posx=0.19 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0100]
+Oh, it looks great~.
+She resembles Celica but,
+has a more boyish and lively vibe, right?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600601 posx=0.39 anim=fade face=smile show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=10_006_0110]
+Plus, her belly is showing, her thighs,
+big chest, and her eyes... so cute♪
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200302 posx=0.59 anim=fade face=default show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+//Mai expression change
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0120]
+It's nice.
+The design direction and
+the character's charm are easy to grasp.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601301 posx=0.74 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0130]
+Heh,
+as expected of me.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200302 anim=fade show=false wait=false]
+
+//Sumika, Iris, Mai, Toyama
+[character id=601101 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[character id=200602 posx=0.5 anim=fade face=smile show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0140]
+Whoa! That's amazing!
+...But why does Mr. Toyama look so unhappy?
+[/message]
+
+//Hinata exits
+[character id=200602 anim=fade show=false wait=false]
+
+
+
+
+
+
+
+
+
+//Toyama appears
+[character id=601301 posx=0.19 anim=fade face=default show=true wait=true]
+
+//Koji expression change
+[face id=601301 type=painful]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0150]
+I could've been happier
+if the director hadn't made me redo it fifteen times...
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+//Sumika appears
+[character id=601101 posx=0.49 anim=fade face=surprise show=true wait=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0160]
+Fifteen times...!
+Shina, did you really reject it that much?
+[/message]
+
+//Shina appears
+[character id=200102 posx=0.74 anim=fade face=default show=true wait=false]
+
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0170]
+I'm sorry! But she's the main character for this event,
+and I just couldn't get the feeling of her scent right...
+[/message]
+
+//Koji expression change
+[face id=601301 type=thoughts]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0180]
+...You always say that,
+but what do you mean by 
+"feeling her scent"?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Toyama, Sumika, Shina exits
+[character id=601301 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+
+
+
+
+
+
+
+
+
+
+
+
+[character id=200202 posx=0.19 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0190]
+Huh? You don't understand Shina's thoughts?
+She means "pheromones," right?
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=600601 posx=0.39 anim=fade face=thoughts show=true wait=true]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=10_006_0200]
+Phe-ro-mones...
+[/message]
+
+//Shina appears
+[character id=200102 posx=0.59 anim=fade face=default show=true wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0210]
+Close! But it's more about the mix of perfumes, atmosphere, body odor, sweat... 
+A blend that you can feel from the drawing.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601101 posx=0.79 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0220]
+...Anyway,
+let's get back to the main topic.
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Turn off all images of Shina, Yurisa, Iris, Sumika
+
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=true]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Suddenly, the Great Sage disguised as "Glasses Shina" appears
+//From now on, whenever they appear, it's in this disguise
+
+//@Great Sage Paraninas
+
+[character id=200103 posx=0.5 anim=fade face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_006_0230]
+...Haha! So this is what your meetings are like, huh? 
+That's hilarious~!
+[/message]
+
+//Great Sage exits
+[character id=200103 anim=fade show=false wait=true]
+
+
+//Hinata appears
+[character id=200602 posx=0.49 anim=fade face=confuse show=true wait=false]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0240]
+Huh...? 
+Uh...?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Hinata exits
+[character id=200602 anim=fade show=false wait=false]
+
+[delay sec=0.5]
+
+
+
+
+
+
+
+
+
+[character id=200102 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.5 anim=fade face=sad show=true wait=false]
+[character id=200602 posx=0.75 anim=fade face=confuse show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0250]
+Oh no, it looks like Hinata's confused...
+Sorry about that, maybe the whole "scent" topic
+was a bit too advanced.
+[/message]
+
+//Yurisa expression change
+[face id=200202 type=default]
+
+//Shina expression change
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0260]
+Honestly, my bad!
+[/message]
+
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0270]
+Yeah, I didn't quite get the scent thing...
+[/message]
+
+//Shina expression change
+[face id=200102 type=surprise]
+
+[face id=200102 type=sad]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0280]
+But that's not it. It's about the "voice"...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Hinata, Yurisa, Shina exits
+[character id=200602 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+
+
+
+
+
+
+
+//Sumika, Mai, Iris appears
+[character id=601101 posx=0.24 anim=fade face=confuse show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0290]
+Voice...? Well, everyone's talking right now...
+Or do you mean something else?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0300]
+Alright, let's get back to the main topic.
+These things tend to drag out otherwise—
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Iris appears
+[character id=600601 posx=0.74 anim=fade face=thoughts show=true wait=true]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=10_006_0310]
+........
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Sumika, Mai, Iris exits
+[character id=601101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Screen blackout
+//Time passes
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+
+//Shina, Iris, Sumika, Toyama appears
+[character id=200102 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.39 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=601301 posx=0.74 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+
+
+
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0320]
+...So, in the current DLC, Eneda ended up 
+beheaded and dead, but—
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0330]
+Her sister Eliza, who tried to revive her...
+was deceived by a demon and also sacrificed,
+dying at the beginning of the next chapter—
+[/message]
+
+//Iris expression change
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=10_006_0340]
+...That's true...
+[/message]
+
+[delay sec=0.3]
+
+//Iris expression change
+[face id=600601 type=default]
+
+//Sumika expression change
+[face id=601101 type=surprise]
+
+//Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+//Sumika expression change
+[face id=601101 type=painful]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0350]
+President...! If you have any objections to
+the director's original draft,
+please share them now.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Sumika expression change
+[face id=601101 type=default]
+
+//Koji expression change
+[face id=601301 type=painful]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0360]
+Director... you always try not to hurt insects,
+yet your scripts are filled with characters
+getting killed left and right...
+[/message]
+
+//////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Shina, Iris, Sumika, Koji exits
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+//Yurisa, Hinata, Mai, Koji exits
+[character id=200202 posx=0.19 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0370]
+From Chapter 1 at Hartis Castle, it had that
+brilliant parental murder and castle massacre.
+Truly inspiring… sigh.
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Hinata appears
+[character id=200602 posx=0.39 anim=fade face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0380]
+...The bloody narrative and tiny glimmers of hope
+for the future... As a fan, I have to admit, 
+it's impressive. Quite an essential element, I suppose.
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Mai appears
+[character id=200302 posx=0.59 anim=fade face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0390]
+A noble, graceful, and attractive female warrior,
+risking her life for her sister only to die tragically...
+It suits the role of a "sacrifice to the demon," 
+doesn't it?
+[/message]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+//Koji appears
+[character id=601301 posx=0.74 anim=fade face=default show=true wait=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0400]
+...Just following the script, but...
+is that really how you see my artwork?
+[/message]
+
+//Mai expression change
+[face id=200302 type=confuse]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0410]
+What? I mean it as a compliment. Even I can feel
+the breath of life in Eliza's character, you know...
+[/message]
+
+/////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Yurisa, Hinata, Mai, Koji exits
+[character id=200202 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+//Shina appears
+[character id=200102 posx=0.5 anim=fade face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+//Shina expression change
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0420]
+Alright! Let's proceed to decide on the details
+of her death scene, specifically the impalement!
+[/message]
+
+//Shina exits
+[character id=200102 anim=fade show=false wait=true]
+
+//Mai, Sumika, Koji appears
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0430]
+Remember the clock tower on the Godaar ruins map?
+How about she gets impaled on the giant clock hands?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601101 posx=0.49 anim=fade face=angry show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0440]
+I'd just like to point out that such a movable
+mechanism doesn't exist on that object! 
+The map's already heavy as it is…
+Adding more would be... impractical.
+[/message]
+
+//Koji appears
+[character id=601301 posx=0.69 anim=fade face=default show=true wait=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0450]
+But... does the impalement have to happen?
+[/message]
+
+//Mai, Sumika, Koji exits
+[character id=200302 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Shina appears
+[character id=200102 posx=0.49 anim=fade face=default show=true wait=true]
+
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0460]
+The model for the demon is, after all, 
+based on that famous impaling count.
+So, yes, I'd like to pay tribute to that...
+[/message]
+
+//Shina exits
+[character id=200102 anim=fade show=false wait=true]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Mai appears
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0470]
+Then maybe we just go with spears...
+Spears could be repurposed from other weapon assets.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Yurisa appears
+[character id=200202 posx=0.49 anim=fade face=default show=true wait=true]
+
+//Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0480]
+What about driving it upward from below,
+so the spear comes out through the mouth?
+[/message]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0490]
+Or how about using four spears?
+Falling from a height and ending up impaled 
+through the chest, belly, and below?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Hinata appears
+[character id=200602 posx=0.74 anim=fade face=default show=true wait=true]
+
+//Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+//Hinata expression change
+[face id=200602 type=confuse]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0500]
+Ahaha... 
+That's... gonna be quite the sight, huh?
+[/message]
+
+////////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Mai, Yurisa, Hinata exits
+[character id=200302 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+//@Great Sage Paraninas
+[character id=200103 posx=0.49 anim=fade face=default show=true wait=true]
+
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_006_0510]
+Oh, this discussion is fascinating!
+Everyone seems so passionate…
+Well, almost everyone.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200103 anim=fade show=false wait=false]
+[delay sec=0.3]
+
+//Iris, Shina appears
+[character id=600601 posx=0.32 anim=fade face=thoughts show=true wait=true]
+[character id=200102 posx=0.66 anim=fade face=confuse show=true wait=true]
+[delay sec=0.3]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Iris President charaid=600601 voice=10_006_0520]
+...I understand how this meeting works now,
+so I'll return to my seat.
+[/message]
+
+[face id=200102 type=sad]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0530]
+I-Iris... 
+I'm sorry…
+It's always the gore that gets us excited…
+[/message]
+
+[face id=600601 type=thoughts]
+
+[message name=Iris President charaid=600601 voice=10_006_0540]
+…
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0550]
+Oh no, she won't even look at me…!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Shina, Iris exits
+[character id=200102 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+//@Great Sage Paraninas
+[character id=200103 posx=0.49 anim=fade face=default show=true wait=true]
+
+///////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_006_0560]
+Oh, Iris, you're looking my way.
+As expected, you're quite reliable! 
+Hey, hey!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200103 anim=fade show=false wait=false]
+
+//Hinata
+[character id=200602 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0570]
+...........??
+[/message]
+//Hinata exits
+[character id=200602 anim=fade show=false wait=true]
+
+//@Great Sage Paraninas
+[character id=200103 posx=0.49 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_006_0580]
+Ah, was I interrupting? If so, my bad!
+I'll disappear for now!
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Great Sage exits
+[character id=200103 anim=ltor show=false wait=true]
+[delay sec=0.5]
+
+[character id=200302 posx=0.35 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.66 anim=fade face=default show=true wait=true]
+
+//Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0590]
+Was that... wind?
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0600]
+Did you feel something? I didn't.
+...Oh, hi, President!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+//Iris exits
+//Screen darkens
+//Time advances
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[character id=601101 anim=fade show=false wait=false]
+[character id=200302 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+[delay sec=1.5]
+
+// Shina, Koji, Yurisa, Sumika appears
+[character id=200102 posx=0.19 anim=fade face=default show=true wait=false]
+[character id=601301 posx=0.34 anim=fade face=default show=true wait=false]
+[character id=601101 posx=0.59 anim=fade face=default show=true wait=false]
+[character id=200202 posx=0.79 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+//////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0610]
+Hey ladies, it looks like your talks about gore 
+totally bummed out the President.
+[/message]
+
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0620]
+Did we get too carried away...? 
+I'll apologize later...
+[/message]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0630]
+Just because that style worked in "World's Odyssey," 
+you really seem fixated on it, Shina...
+What got you so interested in this?
+[/message]
+
+[face id=200102 type=thoughts]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0640]
+Hmm... 
+I guess it was when my mom died in an accident 
+when I was a kid...
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0650]
+I was lucky enough to become a Luden,
+but my mom... she survived, but the aftereffects of her injuries
+led to her passing away in the hospital.
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Koji, Yurisa, Sumika exits
+[character id=200102 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=true]
+
+[character id=200202 posx=0.32 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0660]
+...Wait! I... I spoke with someone who claimed
+to be your mother. 
+Was that... really...?
+[/message]
+
+[character id=200102 posx=0.66 anim=fade face=confuse show=true wait=false]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0670]
+Oh, that's my stepmom! 
+My dad remarried, and she's really nice!
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+[character id=200302 posx=0.49 anim=fade face=default show=true wait=true]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0680]
+I see, that clears things up.
+[/message]
+
+// Mai exits
+[character id=200302 anim=fade show=false wait=false]
+
+// Shina, Koji, Yurisa, Sumika
+[character id=200102 posx=0.19 anim=fade face=thoughts show=true wait=false]
+[character id=200202 posx=0.39 anim=fade face=surprise show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0690]
+Before my dad remarried, he was all over the place.
+Like, "Why are you the only one who survived?"
+kind of thing...
+[/message]
+
+// Yurisa expression change
+[face id=200202 type=angry]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0700]
+That's horrible!
+Even if he's your dad, that's just unforgivable...
+[/message]
+
+// Yurisa expression change
+[face id=200202 type=sad]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601101 posx=0.59 anim=fade face=thoughts show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Sumika Tokiwa charaid=601101 voice=10_006_0710]
+He probably just cared deeply for your mom, Shina...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601301 posx=0.74 anim=fade face=default show=true wait=true]
+
+// Koji expression change
+[face id=601301 type=confuse]
+
+///////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0720]
+Director... I never thought you'd had 
+such a tough life...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina, Koji, Yurisa, Sumika exits
+[character id=200102 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=601101 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+// Hinata, Shina appears
+[character id=200602 posx=0.32 anim=fade face=sad show=true wait=true]
+[character id=200102 posx=0.66 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0730]
+I feel for you... But I don't quite get how that
+ties to your fixation on dark scenarios...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0740]
+Because...
+The characters are fictional beings!
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0750]
+So, you can kill them all you want?
+[/message]
+
+// Shina expression change
+[face id=200102 type=confuse]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0760]
+No, no, no! I mean... they're fictional, 
+but they can get hurt, or even die,
+and yet people are still moved by it... isn't that fascinating?
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata, Shina exits
+[character id=200602 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+
+// Mai, Yurisa, Shina appears
+[character id=200302 posx=0.24 anim=fade face=default show=true wait=true]
+
+[delay sec=0.5]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0770]
+True. You can read just a novel and get moved to tears
+just from words on a page...
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200202 posx=0.49 anim=fade face=smile show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0780]
+I get it, Shina! You're exploring the mystery
+of the human mind and heart, aren't you?
+[/message]
+
+// Yurisa expression change
+[face id=200202 type=default]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200102 posx=0.74 anim=fade face=default show=true wait=true]
+[face id=200102 type=smile]
+
+//// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0790]
+Exactly! I want to express everything I've been through,
+the joy, the sorrow, in the games I love.
+[/message]
+
+[face id=200102 type=default]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0800]
+Especially for Mizunashi-san, who I decided to make games with!
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0810]
+You mean the Mizunashi we all look up to.
+The one in that photo up there—
+[/message]
+
+[face id=200302 type=smile]
+
+[message name=Mai Toyama charaid=200302 voice=10_006_0820]
+We'll always support you, Shina.
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+///// Hinata, Koji and others exit
+[character id=200202 anim=fade show=false wait=false] 
+[character id=200102 anim=fade show=false wait=false] 
+[character id=200302 anim=fade show=false wait=true] 
+
+// Hinata, Koji appears
+[character id=200602 posx=0.19 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0830]
+I get it now! I think I finally understand...
+[/message]
+
+/// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=601301 posx=0.34 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Koji Toyama charaid=601301 voice=10_006_0840 lipsync=false]
+(I still don't really get it, though...)
+[/message]
+
+// Shina appears
+[character id=200102 posx=0.59 anim=fade face=default show=true wait=true]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0850]
+Alright then! Yurisa, could you send the summary
+of today's meeting to everyone later?
+[/message]
+
+//// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+[character id=200202 posx=0.79 anim=fade face=default show=true wait=true]
+
+/////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Yurisa Yamamura charaid=200202 voice=10_006_0860]
+Sure! Leave it to me! I'll post it on the company chat.
+[/message]
+
+// Shina expression change
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0870]
+Everyone, thank you for your hard work today!
+Just a little longer until break time—hang in there!
+[/message]
+
+////// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Hinata, Koji, Yurisa, Shina exit
+[character id=200602 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=false]
+[character id=200202 anim=fade show=false wait=false]
+[character id=200102 anim=fade show=false wait=true]
+
+[delay sec=1.5]
+
+// Shina and Hinata appear
+[character id=200102 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200602 posx=0.66 anim=fade face=default show=true wait=true]
+
+//////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0880]
+Phew, I ended up staying longer than I planned...
+[/message]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0890]
+So, how was it? Did you get some good material for your fan site?
+[/message]
+
+// Hinata expression change
+[face id=200602 type=smile]
+
+[message name=Hinata Morikubo charaid=200602 voice=10_006_0900]
+Of course! I'll send you the draft later...
+[/message]
+
+// Shina expression change
+[face id=200102 type=smile]
+
+[message name=Shina Ninomiya charaid=200102 voice=10_006_0910]
+Great, I'm glad to hear it!
+Make sure to head home safely, okay?
+[/message]
+
+///// Temporarily hide the text window
+[visible show=false]
+[delay sec=0.3]
+
+// Shina and Hinata exit, BGM stops, black background
+[character id=200102 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+[delay sec=0.5]
+
+// @Grand Sage Paraninas appears
+[character id=200103 posx=0.5 anim=fade face=default show=true wait=true]
+
+/////////// Re-display the text window
+[delay sec=0.3]
+[visible show=true]
+
+[message name=Shina Ninomiya charaid=200103 voice=10_006_0920]
+—So that's what Shina was thinking, huh? Interesting...
+[/message]
+
+// @Grand Sage Paraninas
+[message name=Shina Ninomiya charaid=200103 voice=10_006_0930]
+—Looks like what I'm about to do might just 
+give 'him' a bit of inspiration... hehehe...
+[/message]
+
+// Hide the text window
+[visible show=false]
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over a specified duration
+[fade type=out anim=simple sec=0.5]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop currently playing SE
+[sound type=se state=stop]
+
+// Stop currently playing BGM
+[sound type=bgm state=stop]
+
+// Wait for a specified number of seconds
+[delay sec=0.5]
+
+// Hide the text window
+[visible show=false]
+
+// Script ends here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
+
+

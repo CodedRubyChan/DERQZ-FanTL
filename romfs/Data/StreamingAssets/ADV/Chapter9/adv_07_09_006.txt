@@ -1,0 +1,579 @@
+// Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+// adv_07_09_006
+// ##########################################################################//
+// Start
+// ##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+
+// Stop any playing BGM
+[sound type=bgm state=stop]
+
+// Display specified background
+[image type=bg id=000410]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// ##########################################################################//
+// Start
+// ##########################################################################//
+
+// No BGM
+// Background 410 / Collapsing City of Sao
+
+[character id=200601 posx=0.15 anim=fade face=default show=true wait=false]
+[character id=200901 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=100103 posx=0.8 anim=fade face=confuse show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0010]
+N-no way…
+The Iris Corp. meeting point is 
+completely swarmed with Strangers…!?
+[/message]
+
+[face id=200601 type=confuse]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_007_0020]
+W-whoa… this is just… creepy…
+Not even a crack for an ant to get through,
+it's packed wall-to-wall with monsters…
+[/message]
+
+[face id=200601 type=thoughts]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_007_0030]
+Maybe we should… retreat for now…?
+That's what I think…
+[/message]
+
+[message name=Chloe Aaron charaid=200901 voice=09_007_0040]
+…Wait!
+But someone's fighting in front of the company!
+[/message]
+
+// BGM25 (Comical)
+
+[sound type=bgm state=play name=TalkC]
+
+[character id=100103 anim=fade show=false wait=false]
+[character id=200601 anim=fade show=false wait=false]
+[character id=200901 anim=fade show=false wait=true]
+
+[character id=200402 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=601301 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=09_007_0050]
+Bang! Bang bang baaaang!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=09_007_0060]
+Wow, so cool, so cool!
+This gun that Iris gave me is perfect!
+[/message]
+
+[message name=Rottie charaid=200402 voice=09_007_0070]
+I'm just shooting randomly, but 
+the bullets still hit wherever I want them to!
+Bang bang baang! Yeah, I wanna carry this forever!
+[/message]
+
+[face id=601301 type=smile]
+
+[message name=Koji Toyama charaid=601301 voice=09_007_0080]
+Haha… 
+I don't mind you getting trigger-happy, kid,
+but make sure you aim at the right targets!
+[/message]
+
+[character id=601301 anim=fade show=false wait=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[message name=Rottie charaid=200402 voice=09_007_0090]
+Got it…!
+…Take that!
+[/message]
+
+[character id=200402 anim=fade show=false wait=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Cut-in 06
+[cutin id=000006 type=ltor sec=0.5 show=true]
+
+// Gunfire sound
+[sound type=se name=Gun]
+
+// Effect: Hit
+[effect type=Attack show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+
+// Enemy scream
+[sound type=se name=Scream]
+
+// Speaker name: Stranger
+// Male Mob 84
+
+[message name=Stranger voice=09_007_0100]
+Guhh?!
+[/message]
+
+// Hide Cut-in 06
+[cutin id=000006 type=ltor sec=0.5 show=false]
+
+[character id=200402 posx=0.33 anim=fade face=panic show=true wait=false]
+
+[message name=Rottie charaid=200402 voice=09_007_0110]
+Ah… aaah…!
+That hit it straight on…!
+That must've hurt… I'm so sorry…!
+[/message]
+
+[character id=601401 posx=0.66 anim=fade face=default show=true wait=true]
+
+[message name=Sanae Toyama charaid=601401 voice=09_007_0120]
+I-it's okay.
+It ran off, 
+so it doesn't look like it's dead…
+[/message]
+
+[face id=200402 type=default]
+
+[message name=Rottie charaid=200402 voice=09_007_0130]
+Really!? Thank goodness…
+…Oh, Sanae!
+It's dangerous to stand there!!
+[/message]
+
+[character id=200402 anim=rtol show=false wait=false]
+[character id=601401 anim=ltor show=false wait=true]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Show Cut-in 06
+[cutin id=000006 type=ltor sec=0.5 show=true]
+
+[character id=601301 posx=0.7 anim=fade face=default show=true wait=true]
+
+[message name=Koji Toyama charaid=601301 voice=09_007_0140]
+…Whoa there?! Hey!
+What do you think you're doing, trying to mess with my kid?!
+Full power golf club attack!!
+[/message]
+
+// Hit sound
+[sound type=se name=Attack]
+
+// Effect: Hit
+[effect type=Attack show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+
+// Enemy scream
+[sound type=se name=Scream]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+// Hide Cut-in 06
+[cutin id=000006 type=rtol sec=0.5 show=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=601401 posx=0.3 anim=fade face=default show=true wait=true]
+
+[message name=Sanae Toyama charaid=601401 voice=09_007_0150]
+Thanks, Dad!
+But I can fight too!
+If I hit with these reinforced slippers… take that!
+[/message]
+
+[character id=601401 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+// Show Cut-in 06
+[cutin id=000006 type=rtol sec=0.5 show=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hit sound
+[sound type=se name=Attack]
+
+// Effect: Hit
+[effect type=Attack show=true wait=false auto_hide=true posx=0.5 posy=0.5 priority=FrontCutin]
+
+// Enemy scream
+[sound type=se name=Scream]
+
+// Screen shake
+[shake type=random sec=1.5 pow=25 fade=true wait=false]
+
+// Hide Cut-in 06
+[cutin id=000006 type=ltor sec=0.5 show=false]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=200402 posx=0.2 anim=fade face=smile show=true wait=false]
+[character id=600601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=600801 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Rottie charaid=200402 voice=09_007_0160]
+Koji and Sanae's attacks sent so many of those
+monsters flying all at once…!
+Iris' “magic” really is incredible!
+[/message]
+
+[message name=Iris President charaid=600601 voice=09_007_0170]
+In truth… I don't want anyone getting hurt!
+But it's an emergency. The codes that make 
+everyone able to fight… it's the power to fight back…!
+[/message]
+
+[face id=600801 type=smile]
+
+[message name=Alice charaid=600801 voice=09_007_0180]
+Hehe. There's no time to complain.
+But it seems like, surprisingly, 
+everyone is enjoying it more than expected?
+[/message]
+
+// Hide Alice
+[character id=600801 anim=fade show=false wait=false]
+[character id=601401 posx=0.75 anim=fade face=default show=true wait=true]
+
+[message name=Sanae Toyama charaid=601401 voice=09_007_0190]
+My sister's and Dad's company has people 
+from all over the neighborhood 
+coming to help out!
+[/message]
+
+// No sprite
+// Speaker name: Elderly Man with Cane
+// Male Mob 86
+
+[message name=Elderly Man with Cane voice=09_007_0200]
+Hiiiyaaaahhh! 
+Divine punishment!!
+[/message]
+
+// No sprite
+// Speaker name: Woman with Shopping Cart
+// Male Mob 87
+
+[message name=Woman with Shopping Cart voice=09_007_0210]
+Come at me from anywhere!
+I'll flatten you with this cart!
+[/message]
+
+[character id=601401 anim=fade show=false wait=false]
+[character id=601301 posx=0.85 anim=fade face=confuse show=true wait=true]
+
+[message name=Koji Toyama charaid=601301 voice=09_007_0220]
+…Whoa, whoa, this is getting out of hand.
+Everyone's way too pumped up.
+Are they really gonna be okay…?!
+[/message]
+
+[character id=600601 anim=fade show=false wait=false]
+[character id=200801 posx=0.5 anim=fade face=confuse show=true wait=true]
+
+// Svetlana expression change: Smile
+[face id=200801 type=smile]
+[message name=Svetlana Amou charaid=200801 voice=09_007_0230]
+Don't worry. I'll back them up.
+Everyone… without missing a beat…
+I'll support them perfectly. V!
+[/message]
+
+// Svetlana expression change: Angry
+[face id=200801 type=angry]
+[message name=Svetlana Amou charaid=200801 voice=09_007_0240]
+—‘Lucil Code!'
+[/message]
+
+[sound type=se name=Magic]
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.5 posy=0 priority=FrontCutin]
+
+[delay sec=0.8]
+
+// Screen goes dark
+// Screen flash
+
+[visible show=false]
+
+[fade type=out anim=simple sec=1.5]
+
+[delay sec=1.5]
+[character id=200402 anim=fade show=false wait=false]
+[character id=200801 anim=fade show=false wait=false]
+[character id=601301 anim=fade show=false wait=true]
+
+[character id=200901 posx=0.2 anim=fade face=default show=true wait=false]
+[character id=200601 posx=0.5 anim=fade face=default show=true wait=false]
+[character id=200402 posx=0.82 anim=fade face=default show=true wait=true]
+
+[fade type=in anim=simple sec=2]
+
+[visible show=true]
+
+[message name=Chloe Aaron charaid=200901 voice=09_007_0250]
+Okay, 
+let's move in while we can!
+[/message]
+
+[face id=200601 type=smile]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_007_0260]
+Wohoo!… I can see it!
+That's an all-around code, huh!?
+What a brilliant maneuver, ‘Lucil'!
+[/message]
+
+[face id=200402 type=smile]
+
+[message name=Rottie charaid=200402 voice=09_007_0270]
+…Oh! Hinata!
+And Sayaka too!
+Heeey! Saaaayakaaa!
+[/message]
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=200402 anim=fade show=false wait=true]
+
+[character id=100103 posx=0.85 anim=fade face=confuse show=true wait=false]
+[character id=600601 posx=0.5 anim=fade face=default show=true wait=false]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0280]
+E-everyone, you're all so amazing!
+You're fighting full force!
+I'm starting to feel… unnecessary…!
+[/message]
+
+[face id=600601 type=smile]
+
+[message name=Iris President charaid=600601 voice=09_007_0290]
+Sayaka!
+I'm glad you're safe.
+And so are ‘Celica' and ‘Al'.
+[/message]
+
+[face id=100103 type=default]
+[face id=600601 type=default]
+[face id=200901 type=confuse]
+
+[message name=Chloe Aaron charaid=200901 voice=09_007_0300]
+Iris…
+[/message]
+
+[face id=200901 type=sad]
+
+[message name=Chloe Aaron charaid=200901 voice=09_007_0310]
+I'm sorry… about earlier!
+It's only been a few hours, 
+and yet the world's ended up like this…
+[/message]
+
+[face id=200901 type=default]
+
+[message name=Chloe Aaron charaid=200901 voice=09_007_0320]
+But I've woken up now.
+I've decided…
+I'm going to fight alongside everyone.
+[/message]
+
+[face id=600601 type=default]
+
+[message name=Iris President charaid=600601 voice=09_007_0330]
+…Thank you! With Chloe on our side,
+we can turn the tide under the Director's lead!
+We can finish the game…!
+[/message]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0340]
+But… President, 
+the problem is that Shina isn't here…!
+[/message]
+
+[message name=Iris President charaid=600601 voice=09_007_0350]
+…Yes.
+Shina and the others 
+are protecting inside Iris Corp.
+[/message]
+
+[face id=600601 type=painful]
+
+[message name=Iris President charaid=600601 voice=09_007_0360]
+We're holding off the enemy here.
+But there was just an attack from inside, by Kiki…
+I'm really worried…!
+[/message]
+
+// Sayaka-Blade expression change: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0370]
+That's what happened!? That Kiki…
+Alright, then we're heading into Iris Corp. for backup!
+[/message]
+
+[face id=600601 type=default]
+[face id=100103 type=default]
+
+[character id=600601 anim=fade show=false wait=false]
+[character id=200801 posx=0.5 anim=fade face=sad show=true wait=true]
+
+// Svetlana expression change: Smile
+[face id=200801 type=smile]
+[message name=Svetlana Amou charaid=200801 voice=09_007_0380]
+Sorry, Sayaka.
+I'd handle Kiki myself if I could.
+But I still can't leave here yet…
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200901 type=thoughts]
+[message name=Chloe Aaron charaid=200901 voice=09_007_0390]
+The main enemy force keeps pressing in…
+No wonder…!
+[/message]
+
+// Chloe expression change: Normal
+[face id=200901 type=default]
+
+// Sayaka-Blade expression change: Normal
+[face id=100103 type=default]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0400]
+Don't worry! Leave it to us!
+We'll check on things! 
+And if it's dangerous, we'll help them out!
+[/message]
+
+// Svetlana expression change: Smile
+[face id=200801 type=smile]
+[message name=Svetlana Amou charaid=200801 voice=09_007_0410]
+I'm counting on you.
+If things settle down here, 
+we'll head inside right away too!
+[/message]
+
+// Sayaka-Blade expression change: Angry
+[face id=100103 type=angry]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0420]
+Hang in there, Shina!
+We're coming to help――!
+[/message]
+
+// Stop BGM
+[sound type=bgm state=stop]
+
+[character id=200801 anim=fade show=false wait=false]
+[character id=100103 anim=ltor show=false wait=true]
+
+[move id=200901 posx=0.75 wait=true]
+[character id=200601 posx=0.25 anim=fade face=default show=true wait=false]
+[character id=600601 posx=0.5 anim=fade face=default show=true wait=true]
+
+[message name=Iris President charaid=600601 voice=09_007_0430]
+Celica!
+Al!
+…It'll be quick, so just hold my hand…
+[/message]
+
+// Hinata expression change: Panic
+[face id=200601 type=panic]
+[message name=Hinata Morikubo charaid=200601 voice=09_007_0440]
+Huh? W-what's going on…?
+[/message]
+
+[sound type=se name=Bug]
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.25 posy=0 priority=FrontCutin]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Chloe expression change: Surprise
+[face id=200901 type=surprise]
+[message name=Chloe Aaron charaid=200901 voice=09_007_0450]
+This dark, heavy power is…
+[/message]
+
+[sound type=se name=Bug]
+[effect type=CodeActive show=true wait=true auto_hide=true posx=0.75 posy=0 priority=FrontCutin]
+
+// Wait for the specified seconds
+[delay sec=1]
+
+// Iris expression change: Angry
+[face id=600601 type=angry]
+[message name=Iris President charaid=600601 voice=09_007_0460]
+Normally, this is off-limits――
+It's a ‘bug,' you two.
+You can only use it once… so use it well.
+[/message]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+[character id=200601 anim=fade show=false wait=false]
+[character id=600601 anim=fade show=false wait=false]
+[character id=200901 anim=fade show=false wait=true]
+
+[character id=100103 posx=0.5 anim=rtol face=panic show=true wait=true]
+
+// Sayaka shake (shock/shout)
+[shake target=chara id=100103 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100103 voice=09_007_0470]
+What are you doing!!?
+Let's go…!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// ##########################################################################//
+// End
+// ##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script
+[exit]
+// ##########################################################################//
+// End
+// ##########################################################################//
+// END

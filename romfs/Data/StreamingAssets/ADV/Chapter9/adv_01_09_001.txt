@@ -1,0 +1,502 @@
+//Script
+// Wait for the specified seconds
+[delay sec=0.1]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+//adv_01_09_001
+//##########################################################################//
+// Start
+//##########################################################################//
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Switch to ADV camera setup
+[camera type=setup]
+[delay sec=1.5]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+//##########Eyecatch##########//
+// Black background
+[image type=bg]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+[sound type=se name=Eyecatch]
+// Display ADV eyecatch
+[eyecatch chapter=9 title="Inheritor of 'Death'"]
+// Wait for the specified seconds
+[delay sec=0.5]
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=1]
+//##########Eyecatch##########//
+
+// Play specified BGM
+[sound type=bgm state=play name=TalkI]
+
+// Display specified background
+[image type=bg id=000410]
+
+// Fade in over the specified seconds
+[fade type=in anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+//##########################################################################//
+// Start
+//##########################################################################//
+
+// Start of Chapter 8 Event
+
+// BGM31
+// Background 410 - Collapsing Saoka City
+
+[character id=200602 posx=0.15 anim=fade face=confuse show=true wait=false]
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=false]
+[character id=200903 posx=0.83 anim=fade face=painful show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0010]
+Ah, 
+aaaah―――…!
+[/message]
+
+// Sayaka shakes (shocked/yelling)
+[shake target=chara id=100101 type=horizontal sec=0.2 pow=3 fade=false wait=false]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0020]
+Hah... hah... Hinata, I made it... 
+I brought Lady Chloe here safely...
+[/message]
+
+// Sayaka expression change: Confuse
+[face id=100101 type=confuse]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0030 lipsync=false]
+(Lilith and Chiri aren't here anymore, huh... 
+They're off doing their 'work', I guess.)
+[/message]
+
+// Chloe expression change: Confuse
+[face id=200903 type=confuse]
+[message name=Chloe charaid=200903 voice=09_001_0040]
+...I locked myself up ready to die...
+I can't believe I actually got 'rescued'.
+――Ah...
+[/message]
+
+// Hinata shakes (shocked/yelling)
+[shake target=chara id=200602 type=vertical sec=0.2 pow=3 fade=false wait=false]
+
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0050]
+...Ugh, waaaahーーー!! 
+Lady Chloe, I was so, so worried about you!
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=09_001_0060]
+.........
+[/message]
+
+// Sayaka expression change: Thoughtful
+[face id=100101 type=thoughts]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0070]
+Was it a bother? 
+But Falena asked me to do it.
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0080]
+She told me to get you out of the Strain Area, Chloe, 
+and deliver you safely. 
+A request is something I have to keep.
+[/message]
+
+// Chloe expression change: Panic
+[face id=200903 type=panic]
+[message name=Chloe charaid=200903 voice=09_001_0090]
+...H-hey...!
+Then help Lena too...
+Save... her――
+[/message]
+
+// Sayaka expression change: Sad
+[face id=100101 type=sad]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0100]
+You mean Falena, right?
+Sorry... I can't do it right now.
+But I do intend to try.
+[/message]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0110]
+She's... 
+not just a bad person.
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=09_001_0120]
+I see... You really are too kind...
+Hahahaha... 
+Even in this situation...!
+[/message]
+
+// Hinata expression change: Sad
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0130]
+...Lady Chloe...
+[/message]
+
+// Chloe expression change: Smile
+[face id=200903 type=smile]
+[message name=Chloe charaid=200903 voice=09_001_0140]
+Hehe... I mean, 
+look at this. Most of the city is getting swallowed up, right? 
+Or should I say, this whole world is?
+[/message]
+
+// Chloe expression change: Angry
+[face id=200903 type=angry]
+[message name=Chloe charaid=200903 voice=09_001_0150]
+Look over there, see... 
+The 'monsters' are just roaming around, aren't they? 
+You can hear people's screams riding on the wind too!
+[/message]
+
+// Chloe expression change: Confuse
+[face id=200903 type=confuse]
+[message name=Chloe charaid=200903 voice=09_001_0160]
+Ah, blood too... 
+It's like a hellish event straight out of 
+End to Odyssey...!!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Black background
+// Flashback
+// Show normal Chloe and Arata
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=200903 anim=fade show=false wait=false]
+[character id=200602 anim=fade show=false wait=true]
+
+[image type=bg id=000380 show=true]
+
+[character id=600201 posx=0.33 anim=fade face=default show=true wait=false]
+[character id=200903 posx=0.66 anim=fade face=default show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=1.5]
+
+// Background 410 - Collapsing Saoka City
+
+[character id=200903 anim=fade show=false wait=false]
+[character id=600201 anim=fade show=false wait=true]
+
+[image type=bg id=000410 show=true]
+
+[character id=200602 posx=0.15 anim=fade face=confuse show=true wait=false]
+[character id=100101 posx=0.49 anim=fade face=panic show=true wait=false]
+[character id=200903 posx=0.83 anim=fade face=painful show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Chloe charaid=200903 voice=09_001_0170]
+Arata's 'Erase the world'.
+Hahahaha!! I thought it was going to be 
+a much cleaner solution...
+[/message]
+
+// Chloe expression change: Confuse
+[face id=200903 type=confuse]
+[message name=Chloe charaid=200903 voice=09_001_0180]
+I wanted this... 
+I helped make it happen...
+Hahaha... it's all over!
+[/message]
+
+// Chloe expression change: Sad
+[face id=200903 type=sad]
+[message name=Chloe charaid=200903 voice=09_001_0190]
+I'm... 
+a terrible person...
+...A real demon...
+[/message]
+
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0200]
+...C- 
+[/message]
+
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0210]
+It's not just your fault, Lady Chloe! 
+The black hole forming was my fault, so...!
+[/message]
+
+// Sayaka expression change: Angry
+[face id=100101 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0220]
+No, it's not. Neither of you are at fault. 
+The one truly responsible is Arata Mizunashi, 
+who manipulated both of you and the Glitch Girls into this mess!
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=09_001_0230]
+...Is that really true...?
+[/message]
+
+// Sayaka expression change: Default
+
+[face id=100101 type=default]
+
+// Hinata expression change: Sad
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0240]
+Lady Chloe!!
+No matter what, I need to apologize...
+to you first!
+[/message]
+
+// Chloe expression change: Surprise
+[face id=200903 type=surprise]
+[message name=Chloe charaid=200903 voice=09_001_0250]
+Wha... 
+apologize...?
+[/message]
+
+// Hinata expression change: Confuse
+[face id=200602 type=confuse]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0260]
+For what I did about Komai-chan...
+I'm sorry for hurting you, Lady Chloe...!!
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=09_001_0270]
+......
+[/message]
+
+// Hinata expression change: Angry
+[face id=200602 type=angry]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0280]
+Even though I knew you were close to Komai-chan, 
+I was just so happy to see you that I didn't stop to think...!!
+[/message]
+
+// Chloe expression change: Confuse
+[face id=200903 type=confuse]
+[message name=Chloe charaid=200903 voice=09_001_0290]
+......
+[/message]
+
+// Hinata expression change: Panic
+[face id=200602 type=panic]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0300]
+More than anything, I love you, Lady Chloe... 
+and I didn't notice how sad you were...
+I'm truly sorry!!
+[/message]
+
+// Hinata expression change: Sad
+[face id=200602 type=sad]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0310]
+I need to tell Komai-chan... 
+how I really feel later...
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=09_001_0320]
+...I understand. 
+That's enough now. 
+You don't need to apologize anymore, Hinata.
+[/message]
+
+// Chloe expression change: Default
+[face id=200903 type=default]
+[message name=Chloe charaid=200903 voice=09_001_0330]
+Now I can finally see that when you say you like me 
+and Komai-chan, you truly mean it from the heart.
+[/message]
+
+// Chloe expression change: Smile
+[face id=200903 type=smile]
+[message name=Chloe charaid=200903 voice=09_001_0340]
+Thank you. For apologizing to someone like me... 
+and for still loving Komai-chan...
+[/message]
+
+// Hinata expression change: Default
+[face id=200602 type=default]
+[message name=Hinata Morikubo charaid=200602 voice=09_001_0350]
+Lady Chloe...!
+[/message]
+
+// Chloe expression change: Thoughtful
+[face id=200903 type=thoughts]
+[message name=Chloe charaid=200903 voice=09_001_0360]
+I... It's a little late, but...
+I want to do more things... 
+Is it too late?
+[/message]
+
+// Hinata expression change: Smile
+[face id=200602 type=smile]
+
+// Sayaka expression change: Smile
+[face id=100101 type=smile]
+
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0370]
+It's too soon to give up! 
+There are still things you can do, even now! 
+Right, Hinata?
+[/message]
+
+// [Choice]
+// 1: That's right. "Finish the game."
+
+[select]
+[link text="That's right. "Finish the game." label=giveup]
+[/select]
+
+// Only one choice available
+
+:giveup
+
+// Sayaka expression change: Angry
+[face id=100101 type=angry]
+[message name=Sayaka Hiwatari charaid=100101 voice=09_001_0380]
+I'm not the only one who hasn't given up on this world. 
+Everyone else is still struggling, too!
+[/message]
+
+// SE Play:
+[sound type=se name=Makeblade]
+
+[character id=100101 anim=fade show=false wait=false]
+[character id=100103 posx=0.49 anim=fade face=default show=true wait=true]
+
+// Sayaka expression change: Default
+[face id=100101 type=default]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_001_0390]
+First... we need to find Shina and the others! 
+I don't know if we have enough Eni... but
+I'm not letting this world get erased without a fight!
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Screen flash
+///////////////////////////////////////////////////////////////Scene transition (fade out)
+[fade type=out anim=simple sec=0.1 color=white]
+[fade type=in anim=simple sec=0.1 color=white]
+///////////////////////////////////////////////////////////////Scene transition (fade in)
+
+[character id=200602 anim=fade show=false wait=false]
+[character id=200601 posx=0.15 anim=fade face=default show=true wait=true]
+[character id=200903 anim=fade show=false wait=false]
+[character id=200901 posx=0.83 anim=fade face=surprise show=true wait=true]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+// Show text window
+[visible show=true]
+
+[message name=Hinata Morikubo charaid=200601 voice=09_001_0400]
+That's right, Sayaka...! 
+Wait, huh?! I look like Al's avatar again!?
+[/message]
+
+// Hinata transformation expression change
+[face id=200601 type=panic]
+
+// Sayaka blade expression change: Panic
+[face id=100103 type=panic]
+[message name=Sayaka Hiwatari charaid=100103 voice=09_001_0410]
+Ah... 
+The Strain Area's influence is reaching here too... 
+We need to hurry...!
+[/message]
+
+// Chloe transformation expression change: Angry
+[face id=200901 type=angry]
+[message name=Chloe charaid=200901 voice=09_001_0420]
+...Understood. 
+I can at least be a meat shield. 
+I'll come with you.
+[/message]
+
+// Chloe transformation expression change: Thoughtful
+[face id=200901 type=thoughts]
+[message name=Chloe charaid=200901 voice=09_001_0430 lipsync=false]
+(Lena... ugh...
+I'll do my best, okay...)
+[/message]
+
+// Chloe transformation expression change: Default
+[face id=200901 type=default]
+[message name=Chloe charaid=200901 voice=09_001_0440 lipsync=false]
+(Can I still... 
+become your beloved 'Celica'...
+even now?)
+[/message]
+
+// Hide text window
+[visible show=false]
+// Wait for the specified seconds
+[delay sec=0.5]
+
+
+//##########################################################################//
+// End
+//##########################################################################//
+:end
+
+// Fade out over the specified seconds
+[fade type=out anim=simple sec=0.5]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+/////////////////////////// Stop playing SE
+[sound type=se state=stop]
+
+// Stop playing BGM
+[sound type=bgm state=stop]
+
+// Wait for the specified seconds
+[delay sec=0.5]
+
+// Hide text window
+[visible show=false]
+
+// End script here
+[exit]
+//##########################################################################//
+// End
+//##########################################################################//
+//END
